@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-08-29T20:12:49.775482+00:00",
+  "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_SICD.nitf.part",
+  "size_bytes": 11478596733,
+  "expected_size_bytes": 11478596733,
+  "part_size_bytes": 52428800,
+  "part_count": 219,
+  "computed_multipart_etag": "f06d503551fb567303477152aee18652-219",
+  "expected_multipart_etag": "f06d503551fb567303477152aee18652-219",
+  "sha256": "56605c95701a5dd081c5faa7b1a39304a3907ed01f6eb576ea19ce4ea80e585d",
+  "passed": true
+}

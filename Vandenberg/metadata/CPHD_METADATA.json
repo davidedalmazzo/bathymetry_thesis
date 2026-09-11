@@ -1,0 +1,409 @@
+{
+  "generated_utc": "2026-08-29T13:45:00.531538+00:00",
+  "source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_CPHD.cphd",
+  "access_scope": "ASCII header + XML + memory-mapped PVP; signal block not read",
+  "signal_block_read": false,
+  "validation": {
+    "sarpy_recursive_semantic_valid": true,
+    "error": null
+  },
+  "file": {
+    "size_bytes": 140554224768,
+    "expected_size_bytes": 140554224768,
+    "expected_size_match": true,
+    "version": "CPHD/1.1.0",
+    "header": {
+      "XML_BLOCK_SIZE": "20373",
+      "XML_BLOCK_BYTE_OFFSET": "1024",
+      "SUPPORT_BLOCK_SIZE": "646560",
+      "SUPPORT_BLOCK_BYTE_OFFSET": "21440",
+      "PVP_BLOCK_SIZE": "62387424",
+      "PVP_BLOCK_BYTE_OFFSET": "668032",
+      "SIGNAL_BLOCK_SIZE": "140491169280",
+      "SIGNAL_BLOCK_BYTE_OFFSET": "63055488",
+      "CLASSIFICATION": "UNCLASSIFIED",
+      "RELEASE_INFO": ""
+    },
+    "signal_block_end_byte": 140554224768,
+    "signal_block_ends_at_eof": true,
+    "expected_signal_size_from_dimensions": 140491169280,
+    "signal_size_matches_dimensions": true,
+    "xml_bytes": 20373
+  },
+  "collection": {
+    "collector": "Umbra-10",
+    "core_name": "2025-02-16-18-55-33_Umbra-10",
+    "collect_type": "MONOSTATIC",
+    "radar_mode": "SPOTLIGHT",
+    "parameters": {
+      "collect_id": "9d8283d8-550d-4435-899f-5483d2c1abcc",
+      "rank": "30",
+      "receive_agc_settle_index": "51",
+      "ephemeris_source": "POST_PASS_SMOOTHED"
+    }
+  },
+  "global": {
+    "domain_type": "FX",
+    "sgn": -1,
+    "collection_start": "2025-02-16T18:55:33.000000Z",
+    "tx_time_1_s": 0.0029798746666666667,
+    "tx_time_2_s": 22.543776109333333,
+    "tx_time_span_s": 22.540796234666665,
+    "fx_min_hz": 9372871761.443094,
+    "fx_max_hz": 10227084963.815287
+  },
+  "data": {
+    "signal_array_format": "CF8",
+    "num_bytes_pvp": 376,
+    "num_channels": 1,
+    "channel_identifier": "Primary",
+    "num_vectors": 165924,
+    "num_samples": 105840
+  },
+  "channel": {
+    "reference_channel": "Primary",
+    "reference_vector_index": 80547,
+    "tx_polarization": "V",
+    "receive_polarization": "V",
+    "center_frequency_hz": 9799978362.62919,
+    "bandwidth_hz": 854213202.3721924
+  },
+  "dwell": {
+    "cod_time_s": 11.275433493534026,
+    "dwell_time_s": 22.540812513364376,
+    "reference_geometry_dwell_s": 22.540812513364376
+  },
+  "scene": {
+    "iarp_ecf_m": [
+      -2678174.072265625,
+      -4523660.64453125,
+      3599787.841796875
+    ],
+    "iarp_llh": {
+      "lat_deg": 34.581401673389436,
+      "lon_deg": -120.62709868658314,
+      "hae_m": 101.52475667382657
+    },
+    "reference_surface_uIAX_ecf": [
+      -0.7488267919423066,
+      0.623461545398981,
+      0.2248424716954248
+    ],
+    "reference_surface_uIAY_ecf": [
+      -0.5131559190798167,
+      -0.3307087082439928,
+      -0.7920244649030347
+    ]
+  },
+  "reference_geometry": {
+    "reference_time_s": 11.075249663282671,
+    "srp_ecf_m": [
+      -2678174.072265625,
+      -4523660.64453125,
+      3599787.841796875
+    ],
+    "side_of_track": "R",
+    "slant_range_m": 610631.0633322297,
+    "ground_range_m": 208717.30457743342,
+    "doppler_cone_angle_deg": 91.50453196865772,
+    "graze_angle_deg": 68.09146005763932,
+    "incidence_angle_deg": 21.90853994236068,
+    "azimuth_angle_deg": 105.84835572166261,
+    "arp_position_ecf_m": [
+      -2745185.3298379164,
+      -5067081.3882624945,
+      3870109.28406036
+    ],
+    "arp_velocity_ecf_mps": [
+      -3438.1217313871934,
+      -2887.7876704289833,
+      -6203.360275025953
+    ],
+    "ground_track": {
+      "velocity_enu_mps": [
+        -1487.328814380051,
+        -7511.887147327213,
+        -32.89156158766673
+      ],
+      "horizontal_speed_mps": 7657.714771148436,
+      "azimuth_clockwise_from_true_north_deg": 191.19952370205286,
+      "undirected_axis_deg_mod_180": 11.199523702052858
+    }
+  },
+  "transmit_receive": {
+    "pulse_length_s": 5.0661333333333336e-05,
+    "rf_bandwidth_hz": 854213202.3721933,
+    "center_frequency_hz": 9799978362.62919,
+    "lfm_rate_hz_per_s": -16861245967447.758,
+    "tx_polarization": "V",
+    "receive_sample_rate_hz": 3000000000.0,
+    "receive_polarization": "V"
+  },
+  "pvp_fields": {
+    "TxTime": {
+      "offset_words": 0,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "TxPos": {
+      "offset_words": 1,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "TxVel": {
+      "offset_words": 4,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "RcvTime": {
+      "offset_words": 15,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "RcvPos": {
+      "offset_words": 16,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "RcvVel": {
+      "offset_words": 19,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "SRPPos": {
+      "offset_words": 30,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "aFDOP": {
+      "offset_words": 33,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "aFRR1": {
+      "offset_words": 34,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "aFRR2": {
+      "offset_words": 35,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "FX1": {
+      "offset_words": 36,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "FX2": {
+      "offset_words": 37,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "TOA1": {
+      "offset_words": 38,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "TOA2": {
+      "offset_words": 39,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "TOAE1": {
+      "offset_words": 40,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "TOAE2": {
+      "offset_words": 41,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "TDTropoSRP": {
+      "offset_words": 42,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "SC0": {
+      "offset_words": 43,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "SCSS": {
+      "offset_words": 44,
+      "size_words": 1,
+      "format": "F8"
+    },
+    "SIGNAL": {
+      "offset_words": 45,
+      "size_words": 1,
+      "format": "I8"
+    },
+    "TxACX": {
+      "offset_words": 7,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "TxACY": {
+      "offset_words": 10,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "TxEB": {
+      "offset_words": 13,
+      "size_words": 2,
+      "format": "DCX=F8;DCY=F8;"
+    },
+    "RcvACX": {
+      "offset_words": 22,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "RcvACY": {
+      "offset_words": 25,
+      "size_words": 3,
+      "format": "X=F8;Y=F8;Z=F8;"
+    },
+    "RcvEB": {
+      "offset_words": 28,
+      "size_words": 2,
+      "format": "DCX=F8;DCY=F8;"
+    },
+    "PulseNumber": {
+      "offset_words": 46,
+      "size_words": 1,
+      "format": "U8"
+    }
+  },
+  "pvp": {
+    "endianness": "big-endian",
+    "record_bytes": 376,
+    "vectors": 165924,
+    "tx_time_s": {
+      "first": 0.0029798746666666667,
+      "last": 22.543776109333333,
+      "min": 0.0029798746666666667,
+      "max": 22.543776109333333,
+      "span_first_to_last": 22.540796234666665,
+      "strictly_monotonic": true
+    },
+    "recorded_vector_interval_s": {
+      "min": 0.00013353599999987864,
+      "median": 0.00013386666666637126,
+      "mean": 0.0001358509443215628,
+      "max": 0.004274069333333408
+    },
+    "recorded_vector_rate_hz": 7361.0088247378935,
+    "pulse_number": {
+      "first": 53,
+      "last": 168257,
+      "missing_from_contiguous_span": 2281,
+      "increment_counts": {
+        "1": 164606,
+        "2": 959,
+        "3": 181,
+        "4": 68,
+        "5": 39,
+        "6": 16,
+        "7": 11,
+        "8": 11,
+        "9": 8,
+        "10": 6,
+        "11": 5,
+        "12": 3,
+        "13": 4,
+        "15": 2,
+        "21": 1,
+        "22": 1,
+        "29": 1,
+        "32": 1
+      }
+    },
+    "nominal_pulse_interval_s": {
+      "min": 0.00013353599999987864,
+      "median": 0.0001338559999997102,
+      "mean": 0.00013401451215746188,
+      "max": 0.00013537066666913233
+    },
+    "nominal_pulse_rate_from_median_hz": 7470.714798008045,
+    "signal_flag_counts": {
+      "1": 165924
+    },
+    "samples": {
+      "indices": [
+        0,
+        80547,
+        165923
+      ],
+      "TxPos_ECF_m": [
+        [
+          -2706945.015600027,
+          -5034708.819907041,
+          3938509.6702884147
+        ],
+        [
+          -2745178.3268988975,
+          -5067075.506271531,
+          3870121.9193761256
+        ],
+        [
+          -2784427.962007003,
+          -5099771.346231109,
+          3798663.887184547
+        ]
+      ],
+      "TxVel_ECF_mps": [
+        [
+          -3469.1779984671384,
+          -2959.6530651369176,
+          -6151.749332355989
+        ],
+        [
+          -3438.1275013628497,
+          -2887.8009252382562,
+          -6203.350863830388
+        ],
+        [
+          -3405.303497033909,
+          -2812.9592885753764,
+          -6255.862614590349
+        ]
+      ],
+      "RcvTime_s": [
+        0.007074597079491691,
+        11.077286519114717,
+        22.547903416139807
+      ],
+      "SRPPos_ECF_m": [
+        [
+          -2678174.072265625,
+          -4523660.64453125,
+          3599787.841796875
+        ],
+        [
+          -2678174.072265625,
+          -4523660.64453125,
+          3599787.841796875
+        ],
+        [
+          -2678174.072265625,
+          -4523660.64453125,
+          3599787.841796875
+        ]
+      ]
+    },
+    "aFDOP": {
+      "min": -7.962108451928955e-06,
+      "max": 5.122461893235398e-06
+    },
+    "FX1": {
+      "min": 9372871761.443094,
+      "max": 9372871761.443094
+    },
+    "FX2": {
+      "min": 10227084963.815287,
+      "max": 10227084963.815287
+    }
+  }
+}

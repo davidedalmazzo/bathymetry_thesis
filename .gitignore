@@ -1,0 +1,61 @@
+# Python environments and caches
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local tools, caches and temporary products
+_tools/
+_tmp/
+tmp/
+_cache/
+outputs/
+.codex/
+.agents/
+
+# Credentials and machine-local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+secrets*.json
+
+# Raw or very large radar/oceanographic/geospatial data
+*.cphd
+*.nitf
+*.npy
+*.tif
+*.tiff
+*.nc
+*.h5
+*.hdf5
+*.vrt
+*.jsonl
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.gz
+
+# Large reproducible intermediate directories
+Vandenberg/results/sublooks_complex*/
+Vandenberg/results/block4_sliding_complex/
+Vandenberg/results/block7_enlarged_nominal*/
+Vandenberg/results/block12_backprojection/
+Vandenberg/results/block13_backprojection/
+Vandenberg/results/_to_delete/
+Block8_validation/catalog_raw/
+Block8_validation/buoy_data/open_meteo_mfwam_cache/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+

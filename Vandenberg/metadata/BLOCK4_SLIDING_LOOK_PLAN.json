@@ -1,0 +1,318 @@
+{
+  "generated_utc": "2026-08-29T22:32:03.579789+00:00",
+  "scope": "Block 4 fixed ~6 s width sliding looks; no dwell sweep",
+  "inputs": {
+    "cphd": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_CPHD.cphd",
+    "cphd_metadata": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\CPHD_METADATA.json",
+    "sicd_xml": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SICD_METADATA.xml",
+    "block3_fixed_plan": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SUBAPERTURE_PLAN_6S.json"
+  },
+  "durations_kept_distinct": {
+    "sicd_processed_aperture_duration_s": 18.068061721230308,
+    "cphd_available_slow_time_dwell_s": 22.540812513364376
+  },
+  "transform_convention": {
+    "sicd_col_sgn": -1,
+    "image_to_shifted_doppler": "fft",
+    "shifted_doppler_to_image": "ifft",
+    "fft_axis": 1
+  },
+  "window": {
+    "kind": "tukey",
+    "alpha": 0.25,
+    "normalization": "energy",
+    "length_bins": 28638,
+    "applied_scale": 1.08868111570148,
+    "enbw_bins": 1.1020792994363529
+  },
+  "sequence": {
+    "count": 11,
+    "centers_order": "chronological early to late",
+    "physical_center_time_source": "CPHD/PVP inversion of Doppler k_col",
+    "center_step_s": {
+      "values": [
+        1.16265590320582,
+        1.159843642394998,
+        1.1581176471901617,
+        1.156662650399773,
+        1.1562834043268255,
+        1.1563722689284095,
+        1.1569293828650427,
+        1.1585629440680076,
+        1.1604683574268773,
+        1.163461675843628
+      ],
+      "minimum": 1.1562834043268255,
+      "maximum": 1.163461675843628,
+      "mean": 1.1589357876649542
+    },
+    "adjacent_doppler_overlap_fraction": {
+      "values_fft_order": [
+        0.7999860325441721,
+        0.800020951183742,
+        0.7999860325441721,
+        0.800020951183742,
+        0.7999860325441721,
+        0.7999860325441721,
+        0.800020951183742,
+        0.7999860325441721,
+        0.800020951183742,
+        0.7999860325441721
+      ],
+      "minimum": 0.7999860325441721,
+      "maximum": 0.800020951183742,
+      "mean": 0.8
+    }
+  },
+  "looks_chronological": [
+    {
+      "chronological_index": 1,
+      "fft_order_index": 11,
+      "band": {
+        "start_inclusive": 68219,
+        "stop_exclusive": 96857,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        2.3536580037067862,
+        4.70723382087807,
+        7.060809638049355
+      ],
+      "effective_early_center_late_s": [
+        0.3206023073774813,
+        3.242899386518952,
+        6.144555419521809
+      ],
+      "effective_span_s": 5.823953112144327,
+      "reuses_block3_nonoverlap_look": 3
+    },
+    {
+      "chronological_index": 2,
+      "fft_order_index": 10,
+      "band": {
+        "start_inclusive": 62491,
+        "stop_exclusive": 91129,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        1.41212905299567,
+        3.7657048701669544,
+        6.119280687338239
+      ],
+      "effective_early_center_late_s": [
+        1.4928183850655081,
+        4.405555289724772,
+        7.301962450829171
+      ],
+      "effective_span_s": 5.809144065763663,
+      "reuses_block3_nonoverlap_look": null
+    },
+    {
+      "chronological_index": 3,
+      "fft_order_index": 9,
+      "band": {
+        "start_inclusive": 56764,
+        "stop_exclusive": 85402,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        0.47076447535555804,
+        2.824340292526842,
+        5.177916109698126
+      ],
+      "effective_early_center_late_s": [
+        2.6604795188205443,
+        5.56539893211977,
+        8.458250761005038
+      ],
+      "effective_span_s": 5.797771242184494,
+      "reuses_block3_nonoverlap_look": null
+    },
+    {
+      "chronological_index": 4,
+      "fft_order_index": 8,
+      "band": {
+        "start_inclusive": 51036,
+        "stop_exclusive": 79674,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        -0.47076447535555804,
+        1.882811341815726,
+        4.23638715898701
+      ],
+      "effective_early_center_late_s": [
+        3.8246979253773428,
+        6.723516579309932,
+        9.614494852082194
+      ],
+      "effective_span_s": 5.789796926704851,
+      "reuses_block3_nonoverlap_look": null
+    },
+    {
+      "chronological_index": 5,
+      "fft_order_index": 7,
+      "band": {
+        "start_inclusive": 45309,
+        "stop_exclusive": 73947,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        -1.41212905299567,
+        0.941446764175614,
+        3.295022581346898
+      ],
+      "effective_early_center_late_s": [
+        4.985760520693043,
+        7.880179229709705,
+        10.77096077810296
+      ],
+      "effective_span_s": 5.785200257409917,
+      "reuses_block3_nonoverlap_look": null
+    },
+    {
+      "chronological_index": 6,
+      "fft_order_index": 6,
+      "band": {
+        "start_inclusive": 39581,
+        "stop_exclusive": 68219,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        -2.3536580037067862,
+        -8.218653550207122e-05,
+        2.353493630635782
+      ],
+      "effective_early_center_late_s": [
+        6.1447575999443504,
+        9.03646263403653,
+        11.928723504561788
+      ],
+      "effective_span_s": 5.783965904617437,
+      "reuses_block3_nonoverlap_look": 2
+    },
+    {
+      "chronological_index": 7,
+      "fft_order_index": 5,
+      "band": {
+        "start_inclusive": 33853,
+        "stop_exclusive": 62491,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        -3.295186954417902,
+        -0.941611137246618,
+        1.4119646799246661
+      ],
+      "effective_early_center_late_s": [
+        7.302164412517819,
+        10.19283490296494,
+        13.088255484742099
+      ],
+      "effective_span_s": 5.78609107222428,
+      "reuses_block3_nonoverlap_look": null
+    },
+    {
+      "chronological_index": 8,
+      "fft_order_index": 4,
+      "band": {
+        "start_inclusive": 28126,
+        "stop_exclusive": 56764,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        -4.236551532058014,
+        -1.88297571488673,
+        0.470600102284554
+      ],
+      "effective_early_center_late_s": [
+        8.458452621250943,
+        11.349764285829982,
+        14.250033041998313
+      ],
+      "effective_span_s": 5.791580420747369,
+      "reuses_block3_nonoverlap_look": null
+    },
+    {
+      "chronological_index": 9,
+      "fft_order_index": 3,
+      "band": {
+        "start_inclusive": 22398,
+        "stop_exclusive": 51036,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        -5.17808048276913,
+        -2.824504665597846,
+        -0.4709288484265621
+      ],
+      "effective_early_center_late_s": [
+        9.614696727840263,
+        12.50832722989799,
+        15.41514835127033
+      ],
+      "effective_span_s": 5.800451623430067,
+      "reuses_block3_nonoverlap_look": null
+    },
+    {
+      "chronological_index": 10,
+      "fft_order_index": 2,
+      "band": {
+        "start_inclusive": 16671,
+        "stop_exclusive": 45309,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        -6.119445060409242,
+        -3.765869243237958,
+        -1.4122934260666742
+      ],
+      "effective_early_center_late_s": [
+        10.771162786359584,
+        13.668795587324867,
+        16.58389006990879
+      ],
+      "effective_span_s": 5.812727283549206,
+      "reuses_block3_nonoverlap_look": null
+    },
+    {
+      "chronological_index": 11,
+      "fft_order_index": 1,
+      "band": {
+        "start_inclusive": 10943,
+        "stop_exclusive": 39581,
+        "width_bins": 28638
+      },
+      "k_col_low_center_high_per_m": [
+        -7.060974011120359,
+        -4.707398193949074,
+        -2.35382237677779
+      ],
+      "effective_early_center_late_s": [
+        11.9289257627277,
+        14.832257263168495,
+        17.757373283886245
+      ],
+      "effective_span_s": 5.828447521158546,
+      "reuses_block3_nonoverlap_look": 1
+    }
+  ],
+  "independent_nonoverlap_set_retained": {
+    "chronological_indices": [
+      1,
+      6,
+      11
+    ],
+    "corresponding_block3_look_indices": [
+      3,
+      2,
+      1
+    ],
+    "note": "These are the original three disjoint ~6 s Doppler bands and remain stored separately under results/sublooks_complex for future dispersion work."
+  },
+  "guardrails": {
+    "dwell_sweep_performed": false,
+    "bathymetric_inversion_performed": false,
+    "external_oceanography_used_for_phase_branch": false
+  }
+}

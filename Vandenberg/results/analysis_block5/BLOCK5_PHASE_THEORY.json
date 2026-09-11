@@ -1,0 +1,150 @@
+{
+  "generated_utc": "2026-08-31T09:50:14.700937+00:00",
+  "scope": "Theoretical phase-slope audit; no SAR estimate is retuned",
+  "cross_convention": "F_secondary * conj(F_reference)",
+  "frozen_observed_slope_rad_per_s": -0.3509722055168202,
+  "candidate_angular_frequencies_rad_per_s": {
+    "17_902230457_s": 0.3509722055168202,
+    "13_33_s": 0.47135673722277466
+  },
+  "quasi_linear_equation": {
+    "source": "Sentinel-1 OSW ATBD v1.3 Eq. (34), derived from the Engen-Johnsen cross-spectral transform",
+    "form": "P_qlin(k,t)=C(k){A(k) exp(-i omega t)+B(k) exp(+i omega t)}",
+    "definitions": {
+      "C(k)": "stationary system transfer times azimuth-cutoff factor",
+      "A(k)": "|T(k)|^2 S(k)",
+      "B(k)": "|T(-k)|^2 S(-k)"
+    },
+    "phase": "arg C + atan2((B-A) sin(omega t), (A+B) cos(omega t))",
+    "zero_lag_phase_slope": "omega (B-A)/(A+B)",
+    "finite_lag_phase_slope": "omega (B^2-A^2)/[(A+B)^2 cos^2(omega t)+(B-A)^2 sin^2(omega t)]"
+  },
+  "limiting_cases": {
+    "only_S_plus_k": -0.47135673722277466,
+    "equal_opposite_directions": 0.0,
+    "only_S_minus_k": 0.47135673722277466
+  },
+  "small_lag_directional_ratio_diagnostics": {
+    "if_ocean_period_17_902230457_s_B_over_A": 0.0,
+    "if_ocean_period_13_33_s_B_over_A": 0.1463946183201245,
+    "warning": "These ratios apply only to the derivative at zero lag. They are not valid fits over the full 11.59-s baseline."
+  },
+  "finite_baseline_13_33_s_test": {
+    "physical_lags_s": [
+      0.0,
+      1.16265590320582,
+      2.322499545600818,
+      3.4806171927909797,
+      4.637279843190752,
+      5.793563247517579,
+      6.949935516445988,
+      8.10686489931103,
+      9.265427843379038,
+      10.425896200805916,
+      11.589357876649544
+    ],
+    "unidirectional": {
+      "reverse_to_forward_effective_weight_ratio": 0.0,
+      "phase_rad": [
+        0.0,
+        -0.5480256930478934,
+        -1.0947258080157782,
+        -1.6406123635154495,
+        -2.185813096475333,
+        -2.7308350692436685,
+        -3.2758989289406597,
+        -3.8212253880450846,
+        -4.367321837228193,
+        -4.914316415835199,
+        -5.462721915244592
+      ],
+      "fit_slope_rad_per_s": -0.4713567372227748,
+      "fit_rmse_rad": 3.1772557965168835e-15,
+      "fit_r_squared": 1.0
+    },
+    "small_lag_matched_ratio": {
+      "reverse_to_forward_effective_weight_ratio": 0.1463946183201245,
+      "phase_rad": [
+        0.0,
+        -0.4265880744973306,
+        -0.9651298122424168,
+        -1.6644374503855215,
+        -2.329882834541539,
+        -2.8279964952406824,
+        -3.241865345102862,
+        -3.683244376676627,
+        -4.262644277454319,
+        -4.980695846563176,
+        -5.6092133103043205
+      ],
+      "fit_slope_rad_per_s": -0.47966026976221104,
+      "fit_rmse_rad": 0.09951185290056017,
+      "fit_r_squared": 0.9968012519642355
+    },
+    "q_scan_range": [
+      0.0,
+      0.99
+    ],
+    "q_scan_slope_range_rad_per_s": [
+      -0.5193660236757396,
+      -0.4713567372227748
+    ],
+    "nearest_q_grid_to_observed_slope": 0.0,
+    "nearest_grid_slope_rad_per_s": -0.4713567372227748,
+    "conclusion": "For A>B and fixed positive weights, the finite-lag phase winds with the -omega branch; the observed -0.351 rad/s is outside this q-scan. A stationary bidirectional quasi-linear mixture alone does not reproduce the long-baseline slope for T=13.33 s."
+  },
+  "phase_bias_needed_if_13_33_s_unidirectional_rad_per_s": 0.12038453170595448,
+  "bias_terms": [
+    {
+      "term": "Directional mixture S(k)/S(-k) and MTF asymmetry",
+      "effect": "Changes the instantaneous phase through A=|T(k)|^2S(k), B=|T(-k)|^2S(-k); generally makes phase nonlinear in lag, not simply omega*t."
+    },
+    {
+      "term": "Complex nonlinear contribution P_nlin(k,t)",
+      "effect": "Vector-adds to P_qlin. Its time-dependent phase and amplitude change Im(P* dP/dt)/|P|^2. OSW removes it using a wind/direction/wave-age LUT before inversion."
+    },
+    {
+      "term": "Velocity bunching / shift MTF and RAR MTF",
+      "effect": "The total MTF controls A/B and detectability. Its phase cancels in the ideal same-k stationary quadratic term, but unequal look filters or time variation can leave differential phase."
+    },
+    {
+      "term": "Stationary system transfer U(k) and azimuth cutoff",
+      "effect": "A constant arg U is an intercept and cancels in relative phase. Look-dependent U, filtering, or residual registration makes it a slope/ramp bias."
+    },
+    {
+      "term": "Finite spectral patch",
+      "effect": "The estimator measures arg of a weighted sum over k, mixing omega(k), directions, MTF, and peak drift. Arg(sum) is not the mean of component phases."
+    },
+    {
+      "term": "Six-second overlapping temporal windows",
+      "effect": "They temporally average the evolving scene and correlate adjacent estimates; a symmetric identical window mainly changes amplitude, while unequal effective windows can shift phase."
+    },
+    {
+      "term": "Advection/current and finite-depth dispersion",
+      "effect": "The observed wave-pattern frequency can include k dot U_current and omega(k,h); it need not be the intrinsic deep-water frequency."
+    },
+    {
+      "term": "Common image translation / phase ramp",
+      "effect": "A look-dependent shift contributes -2*pi*k dot Delta_x to phase. The near-zero land-control slope constrains, but cannot exclude ocean-specific motion or decorrelation."
+    },
+    {
+      "term": "Noise, clutter, speckle, and decorrelation",
+      "effect": "Ideal cross-spectra suppress the co-spectrum speckle pedestal, but finite ensemble size and loss of coherence perturb phase; OSW estimates clutter noise and weights looks accordingly."
+    }
+  ],
+  "applicability_warning": "Sentinel-1 OSW is a C-band open-ocean operational formulation. Its structural equation is relevant here, but its calibrated MTF/nonlinear lookup tables cannot be transferred directly to this Umbra X-band nearshore acquisition.",
+  "sources": [
+    {
+      "citation": "Engen, G. and Johnsen, H. (1995), SAR-ocean wave inversion using image cross spectra, IEEE TGRS 33(4), 1047-1056",
+      "url": "https://doi.org/10.1109/36.406690"
+    },
+    {
+      "citation": "Sentinel-1 Ocean Swell Wave Spectra (OSW) Algorithm Definition, v1.3 (2020), especially Eqs. 16, 34-39",
+      "url": "https://sentinels.copernicus.eu/documents/247904/349449/S-1_L2_OSW_Detailed_Algorithm_Definition.pdf"
+    },
+    {
+      "citation": "Monteban et al. (2019), Spatiotemporal Observations of Wave Dispersion Within Sea Ice Using Sentinel-1 SAR TOPS Mode",
+      "url": "https://doi.org/10.1029/2019JC015311"
+    }
+  ]
+}

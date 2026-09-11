@@ -1,0 +1,153 @@
+{
+  "verified_at_utc": "2026-08-29T20:13:55.425299+00:00",
+  "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_SICD.nitf",
+  "size_bytes": 11478596733,
+  "expected_size_bytes": 11478596733,
+  "exact_size_match": true,
+  "multipart_etag": "f06d503551fb567303477152aee18652-219",
+  "expected_multipart_etag": "f06d503551fb567303477152aee18652-219",
+  "multipart_etag_match": true,
+  "sha256": "56605c95701a5dd081c5faa7b1a39304a3907ed01f6eb576ea19ce4ea80e585d",
+  "nitf_header_file_length_bytes": 11478596733,
+  "nitf_header_length_matches_file": true,
+  "nitf_version": "02.10",
+  "image_segment_collections": [
+    [
+      0,
+      1
+    ]
+  ],
+  "image_segments": [
+    {
+      "index": 0,
+      "iid1": "SICD001",
+      "rows": 11595,
+      "cols": 107800,
+      "image_mode": "P",
+      "compression": "NC",
+      "pixel_value_type": "R",
+      "bits_per_pixel": 32
+    },
+    {
+      "index": 1,
+      "iid1": "SICD002",
+      "rows": 1715,
+      "cols": 107800,
+      "image_mode": "P",
+      "compression": "NC",
+      "pixel_value_type": "R",
+      "bits_per_pixel": 32
+    }
+  ],
+  "sarpy": {
+    "sicd_count": 1,
+    "stitched_data_shapes": [
+      [
+        13310,
+        107800
+      ]
+    ],
+    "recursive_semantic_valid": false,
+    "pixel_type": "RE32F_IM32F",
+    "collection_core_name": "2025-02-16-18-55-33_Umbra-10",
+    "collect_id": "9d8283d8-550d-4435-899f-5483d2c1abcc"
+  },
+  "validation_interpretation": {
+    "range_extracted_xml_xsd_valid": true,
+    "sarpy_recursive_semantic_valid": false,
+    "sarpy_false_is_expected_and_nonblocking": true,
+    "known_reasons": [
+      "SarPy 2.0.1 endpoint validation assumes a positive TxFMRate; this product is a consistent negative-rate downchirp.",
+      "Grid Row/Col declare SVA weighting without sampled WgtFunct values."
+    ],
+    "downchirp_abs_rate_times_pulse_length_hz": 854213202.3721933,
+    "declared_tx_rf_bandwidth_hz": 854213202.3721933,
+    "downchirp_bandwidth_consistent": true,
+    "sva_without_wgtfunct_confirmed": true,
+    "blocking_rule": "The documented SVA/WgtFunct omission and SarPy downchirp-sign validator limitation do not block structural/data integrity checks."
+  },
+  "metadata_comparison": {
+    "range_extracted_xml": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SICD_METADATA.xml",
+    "canonical_xml_exact_match_after_parse_and_serialize": true,
+    "range_extracted_c14n_bytes": 30875,
+    "reader_serialized_c14n_bytes": 30875
+  },
+  "stitched_pixel_read_samples": [
+    {
+      "row_col_start": [
+        0,
+        0
+      ],
+      "shape": [
+        8,
+        8
+      ],
+      "dtype": "complex64",
+      "finite_count": 64,
+      "sample_count": 64,
+      "nonzero_count": 64,
+      "mean_intensity": 0.000141208030981943
+    },
+    {
+      "row_col_start": [
+        1140,
+        53900
+      ],
+      "shape": [
+        8,
+        8
+      ],
+      "dtype": "complex64",
+      "finite_count": 64,
+      "sample_count": 64,
+      "nonzero_count": 64,
+      "mean_intensity": 3.1843245029449463
+    },
+    {
+      "row_col_start": [
+        6651,
+        53896
+      ],
+      "shape": [
+        8,
+        8
+      ],
+      "dtype": "complex64",
+      "finite_count": 64,
+      "sample_count": 64,
+      "nonzero_count": 64,
+      "mean_intensity": 4.9508819580078125
+    },
+    {
+      "row_col_start": [
+        12190,
+        53900
+      ],
+      "shape": [
+        8,
+        8
+      ],
+      "dtype": "complex64",
+      "finite_count": 64,
+      "sample_count": 64,
+      "nonzero_count": 64,
+      "mean_intensity": 4.498186111450195
+    },
+    {
+      "row_col_start": [
+        13302,
+        107792
+      ],
+      "shape": [
+        8,
+        8
+      ],
+      "dtype": "complex64",
+      "finite_count": 64,
+      "sample_count": 64,
+      "nonzero_count": 64,
+      "mean_intensity": 0.00018827567691914737
+    }
+  ],
+  "passed": true
+}

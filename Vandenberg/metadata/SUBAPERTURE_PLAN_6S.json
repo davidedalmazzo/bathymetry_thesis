@@ -1,0 +1,194 @@
+{
+  "generated_utc": "2026-08-29T14:04:56.270609+00:00",
+  "metadata_only": true,
+  "sicd_pixels_read": false,
+  "sicd_xml": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SICD_METADATA.xml",
+  "cphd_json": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\CPHD_METADATA.json",
+  "mode": "tiled",
+  "overlap_fraction": 0.0,
+  "requested_nominal_duration_s": 6.0,
+  "support": {
+    "start": 10780,
+    "stop": 97020,
+    "fft_size": 107800,
+    "bin_spacing_per_m": 0.00016437307100403562,
+    "requested_lower_per_m": -7.087766821694015,
+    "requested_upper_per_m": 7.087766821694015,
+    "realized_lower_per_m": -7.087766821694016,
+    "realized_upper_per_m": 7.087766821694016,
+    "size": 86240
+  },
+  "looks": [
+    {
+      "original_sicd_identifier": "2025-02-16-18-55-33_Umbra-10",
+      "collect_id": "9d8283d8-550d-4435-899f-5483d2c1abcc",
+      "grid_type": "RGAZIM",
+      "range_axis": 0,
+      "fft_axis": 1,
+      "sicd_col_sgn": -1,
+      "image_to_spectrum_transform": "fft",
+      "spectrum_to_image_transform": "ifft",
+      "durations": {
+        "processed_aperture_duration_s": 18.068061721230308,
+        "sicd_timeline_collect_duration_s": 22.547940446666665,
+        "cphd_slow_time_dwell_s": 22.540812513364376
+      },
+      "duration_usage_rule": "SICD bandwidth fractions use processed_aperture_duration_s only; CPHD dwell is provenance for later slow-time mapping",
+      "processed_support": {
+        "start": 10780,
+        "stop": 97020,
+        "fft_size": 107800,
+        "bin_spacing_per_m": 0.00016437307100403562,
+        "requested_lower_per_m": -7.087766821694015,
+        "requested_upper_per_m": 7.087766821694015,
+        "realized_lower_per_m": -7.087766821694016,
+        "realized_upper_per_m": 7.087766821694016
+      },
+      "band": {
+        "start": 10943,
+        "stop": 39581,
+        "support_start": 10780,
+        "support_stop": 97020,
+        "requested_nominal_duration_s": 6.0,
+        "requested_bandwidth_fraction": 0.3320776789770365,
+        "realized_bandwidth_fraction": 0.33207328385899815,
+        "realized_nominal_duration_s": 5.9999205887360105,
+        "center_fraction_in_support": 0.16792671614100185,
+        "nominal_center_time_from_collect_start_s": 3.0392718070536024,
+        "timing_model": "nominal_linear_bandwidth_to_processed_time"
+      },
+      "window": {
+        "kind": "tukey",
+        "length": 28638,
+        "tukey_alpha": 0.25,
+        "normalization": "energy",
+        "applied_scale": 1.08868111570148,
+        "coherent_gain": 0.952562712883102,
+        "rms_gain": 0.9999999999999999,
+        "energy_sum": 28637.999999999996,
+        "enbw_bins": 1.1020792994363529
+      },
+      "native_weight": {
+        "name": "SVA",
+        "samples_present": false,
+        "warning": "Native SVA weighting is declared without WgtFunct samples; exact deweighting is unavailable"
+      },
+      "complex_phase_preserved": true,
+      "look_index": 1
+    },
+    {
+      "original_sicd_identifier": "2025-02-16-18-55-33_Umbra-10",
+      "collect_id": "9d8283d8-550d-4435-899f-5483d2c1abcc",
+      "grid_type": "RGAZIM",
+      "range_axis": 0,
+      "fft_axis": 1,
+      "sicd_col_sgn": -1,
+      "image_to_spectrum_transform": "fft",
+      "spectrum_to_image_transform": "ifft",
+      "durations": {
+        "processed_aperture_duration_s": 18.068061721230308,
+        "sicd_timeline_collect_duration_s": 22.547940446666665,
+        "cphd_slow_time_dwell_s": 22.540812513364376
+      },
+      "duration_usage_rule": "SICD bandwidth fractions use processed_aperture_duration_s only; CPHD dwell is provenance for later slow-time mapping",
+      "processed_support": {
+        "start": 10780,
+        "stop": 97020,
+        "fft_size": 107800,
+        "bin_spacing_per_m": 0.00016437307100403562,
+        "requested_lower_per_m": -7.087766821694015,
+        "requested_upper_per_m": 7.087766821694015,
+        "realized_lower_per_m": -7.087766821694016,
+        "realized_upper_per_m": 7.087766821694016
+      },
+      "band": {
+        "start": 39581,
+        "stop": 68219,
+        "support_start": 10780,
+        "support_stop": 97020,
+        "requested_nominal_duration_s": 6.0,
+        "requested_bandwidth_fraction": 0.3320776789770365,
+        "realized_bandwidth_fraction": 0.33207328385899815,
+        "realized_nominal_duration_s": 5.9999205887360105,
+        "center_fraction_in_support": 0.5,
+        "nominal_center_time_from_collect_start_s": 9.039192395789613,
+        "timing_model": "nominal_linear_bandwidth_to_processed_time"
+      },
+      "window": {
+        "kind": "tukey",
+        "length": 28638,
+        "tukey_alpha": 0.25,
+        "normalization": "energy",
+        "applied_scale": 1.08868111570148,
+        "coherent_gain": 0.952562712883102,
+        "rms_gain": 0.9999999999999999,
+        "energy_sum": 28637.999999999996,
+        "enbw_bins": 1.1020792994363529
+      },
+      "native_weight": {
+        "name": "SVA",
+        "samples_present": false,
+        "warning": "Native SVA weighting is declared without WgtFunct samples; exact deweighting is unavailable"
+      },
+      "complex_phase_preserved": true,
+      "look_index": 2
+    },
+    {
+      "original_sicd_identifier": "2025-02-16-18-55-33_Umbra-10",
+      "collect_id": "9d8283d8-550d-4435-899f-5483d2c1abcc",
+      "grid_type": "RGAZIM",
+      "range_axis": 0,
+      "fft_axis": 1,
+      "sicd_col_sgn": -1,
+      "image_to_spectrum_transform": "fft",
+      "spectrum_to_image_transform": "ifft",
+      "durations": {
+        "processed_aperture_duration_s": 18.068061721230308,
+        "sicd_timeline_collect_duration_s": 22.547940446666665,
+        "cphd_slow_time_dwell_s": 22.540812513364376
+      },
+      "duration_usage_rule": "SICD bandwidth fractions use processed_aperture_duration_s only; CPHD dwell is provenance for later slow-time mapping",
+      "processed_support": {
+        "start": 10780,
+        "stop": 97020,
+        "fft_size": 107800,
+        "bin_spacing_per_m": 0.00016437307100403562,
+        "requested_lower_per_m": -7.087766821694015,
+        "requested_upper_per_m": 7.087766821694015,
+        "realized_lower_per_m": -7.087766821694016,
+        "realized_upper_per_m": 7.087766821694016
+      },
+      "band": {
+        "start": 68219,
+        "stop": 96857,
+        "support_start": 10780,
+        "support_stop": 97020,
+        "requested_nominal_duration_s": 6.0,
+        "requested_bandwidth_fraction": 0.3320776789770365,
+        "realized_bandwidth_fraction": 0.33207328385899815,
+        "realized_nominal_duration_s": 5.9999205887360105,
+        "center_fraction_in_support": 0.8320732838589981,
+        "nominal_center_time_from_collect_start_s": 15.039112984525623,
+        "timing_model": "nominal_linear_bandwidth_to_processed_time"
+      },
+      "window": {
+        "kind": "tukey",
+        "length": 28638,
+        "tukey_alpha": 0.25,
+        "normalization": "energy",
+        "applied_scale": 1.08868111570148,
+        "coherent_gain": 0.952562712883102,
+        "rms_gain": 0.9999999999999999,
+        "energy_sum": 28637.999999999996,
+        "enbw_bins": 1.1020792994363529
+      },
+      "native_weight": {
+        "name": "SVA",
+        "samples_present": false,
+        "warning": "Native SVA weighting is declared without WgtFunct samples; exact deweighting is unavailable"
+      },
+      "complex_phase_preserved": true,
+      "look_index": 3
+    }
+  ]
+}

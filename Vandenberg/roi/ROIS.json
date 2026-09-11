@@ -1,0 +1,353 @@
+{
+  "generated_utc": "2026-08-29T20:19:18.224098+00:00",
+  "selection_scope": "GEC used for geographic ROI localization only; no GEC spectrum is used for SICD wave metrics.",
+  "sicd_xml": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SICD_METADATA.xml",
+  "sicd_dimensions_rows_cols": [
+    13310,
+    107800
+  ],
+  "gec_dimensions_cols_rows": [
+    16001,
+    16001
+  ],
+  "gec_model_transformation_tag_34264": [
+    -7.034374817897602e-07,
+    -3.332483805614478e-06,
+    0.0,
+    -120.59480929832426,
+    -2.7562364641923338e-06,
+    5.818005107785454e-07,
+    0.0,
+    34.59879516557386,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "shared_projection_hae_m": 101.52475667382657,
+  "roi_shape_reason": "Ocean ROIs use 1200 x 9600 SICD pixels (approximately 0.54 km square) after full-aperture SICD refinement to exclude land. Land control retains 1536 x 12288 pixels (approximately 0.69 km square) for robust registration.",
+  "doppler_decomposition_rule": "For every selected range row, all 107800 SICD azimuth columns must be transformed before any ROI column crop.",
+  "rois": {
+    "nearshore": {
+      "kind": "ocean_nearshore",
+      "gec_center_col_row": [
+        13000,
+        12300
+      ],
+      "sicd_center_row_col_override": [
+        10000,
+        82800
+      ],
+      "shape_rows_cols": [
+        1200,
+        9600
+      ],
+      "description": "Open water immediately seaward of the central rocky coast; refined on full-aperture SICD intensity to exclude the terrain displaced by constant-HAE projection.",
+      "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+      "initial_gec_center_lon_lat_deg": [
+        -120.6449435363966,
+        34.57012023782194
+      ],
+      "selected_center_lon_lat_deg": [
+        -120.64679691911917,
+        34.569636382251765
+      ],
+      "selected_center_gec_col_row": [
+        13280.449767722997,
+        12796.957807090685
+      ],
+      "initial_gec_projected_sicd_center_row_col": [
+        9652.427976397594,
+        81283.90703852421
+      ],
+      "selection_stage": "full_aperture_SICD_intensity_refinement",
+      "projection_hae_m": 101.52475667382657,
+      "ground_to_sicd_residual_m": 0.0002129202203557209,
+      "ground_to_sicd_iterations": 3,
+      "sicd_center_row_col": [
+        10000,
+        82800
+      ],
+      "sicd_bounds": {
+        "row_start_inclusive": 9400,
+        "row_stop_exclusive": 10600,
+        "col_start_inclusive": 78000,
+        "col_stop_exclusive": 87600,
+        "rows": 1200,
+        "cols": 9600
+      },
+      "corner_lat_lon_hae": [
+        [
+          34.57156032400505,
+          -120.64332833760245,
+          101.52475667231712
+        ],
+        [
+          34.56677075394755,
+          -120.64450212940174,
+          101.52475667395976
+        ],
+        [
+          34.567710125876474,
+          -120.65025363027719,
+          101.524756674163
+        ],
+        [
+          34.57250134145468,
+          -120.64907983946158,
+          101.52475667284004
+        ]
+      ],
+      "corner_gec_col_row": [
+        [
+          12401.859093028514,
+          11941.575434285116
+        ],
+        [
+          14136.633857648661,
+          11927.617739268095
+        ],
+        [
+          14159.124581272064,
+          13648.76040402621
+        ],
+        [
+          12423.778325587395,
+          13662.839027436035
+        ]
+      ],
+      "local_ground_jacobian_EN_m_per_pixel": [
+        [
+          -0.4401875657651662,
+          -0.01122125430306822
+        ],
+        [
+          0.08698885954146114,
+          -0.055362006267786756
+        ]
+      ],
+      "local_row_ground_spacing_m": 0.44870051787198395,
+      "local_col_ground_spacing_m": 0.0564877711202043,
+      "local_row_axis_bearing_deg_clockwise_from_north": 281.17862730319644,
+      "local_col_axis_bearing_deg_clockwise_from_north": 191.45798292805307,
+      "approximate_ground_extent_row_col_m": [
+        538.4406214463808,
+        542.2826027539612
+      ]
+    },
+    "offshore": {
+      "kind": "ocean_offshore",
+      "gec_center_col_row": [
+        11500,
+        14800
+      ],
+      "sicd_center_row_col_override": [
+        11500,
+        75800
+      ],
+      "shape_rows_cols": [
+        1200,
+        9600
+      ],
+      "description": "Open water farther seaward; refined on full-aperture SICD intensity to exclude all coastline pixels.",
+      "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+      "initial_gec_center_lon_lat_deg": [
+        -120.65221958968795,
+        34.57570909379517
+      ],
+      "selected_center_lon_lat_deg": [
+        -120.65312238385125,
+        34.57430496412605
+      ],
+      "selected_center_gec_col_row": [
+        12042.451823224996,
+        14956.403826453321
+      ],
+      "initial_gec_projected_sicd_center_row_col": [
+        11388.550257531871,
+        72811.42616976511
+      ],
+      "selection_stage": "full_aperture_SICD_intensity_refinement",
+      "projection_hae_m": 101.52475667382657,
+      "ground_to_sicd_residual_m": 0.0007238784323439423,
+      "ground_to_sicd_iterations": 3,
+      "sicd_center_row_col": [
+        11500,
+        75800
+      ],
+      "sicd_bounds": {
+        "row_start_inclusive": 10900,
+        "row_stop_exclusive": 12100,
+        "col_start_inclusive": 71000,
+        "col_stop_exclusive": 80600,
+        "rows": 1200,
+        "cols": 9600
+      },
+      "corner_lat_lon_hae": [
+        [
+          34.57622991711543,
+          -120.64965623329431,
+          101.5247566741846
+        ],
+        [
+          34.571440079498466,
+          -120.65084102135691,
+          101.5247566726822
+        ],
+        [
+          34.57237770327624,
+          -120.65657670483776,
+          101.52475667406321
+        ],
+        [
+          34.57716919005452,
+          -120.65539193687337,
+          101.52475667308869
+        ]
+      ],
+      "corner_gec_col_row": [
+        [
+          11163.65732133553,
+          14101.793952362414
+        ],
+        [
+          12899.191830098118,
+          14090.97560667674
+        ],
+        [
+          12921.3305888118,
+          15807.446137916411
+        ],
+        [
+          11185.224483566772,
+          15818.391170070106
+        ]
+      ],
+      "local_ground_jacobian_EN_m_per_pixel": [
+        [
+          -0.4389531991561822,
+          -0.01132564824465039
+        ],
+        [
+          0.08682735723253453,
+          -0.05536515863755518
+        ]
+      ],
+      "local_row_ground_spacing_m": 0.4474582673428139,
+      "local_col_ground_spacing_m": 0.056511689933350984,
+      "local_row_axis_bearing_deg_clockwise_from_north": 281.1889820309276,
+      "local_col_axis_bearing_deg_clockwise_from_north": 191.5610810973859,
+      "approximate_ground_extent_row_col_m": [
+        536.9499208113767,
+        542.5122233601694
+      ]
+    },
+    "land_control": {
+      "kind": "land_control",
+      "gec_center_col_row": [
+        7600,
+        8500
+      ],
+      "shape_rows_cols": [
+        1536,
+        12288
+      ],
+      "description": "Persistent terrestrial infrastructure, roads, and surrounding terrain near the central facility.",
+      "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+      "initial_gec_center_lon_lat_deg": [
+        -120.6284815355336,
+        34.58279307278762
+      ],
+      "selected_center_lon_lat_deg": [
+        -120.6284815355336,
+        34.58279307278762
+      ],
+      "selected_center_gec_col_row": [
+        7600.000000000552,
+        8500.000000001477
+      ],
+      "initial_gec_projected_sicd_center_row_col": [
+        7000.743480298111,
+        51656.14957380258
+      ],
+      "selection_stage": "GEC_geographic_localization",
+      "projection_hae_m": 101.52475667382657,
+      "ground_to_sicd_residual_m": 4.075989708778171e-05,
+      "ground_to_sicd_iterations": 2,
+      "sicd_center_row_col": [
+        7001,
+        51656
+      ],
+      "sicd_bounds": {
+        "row_start_inclusive": 6233,
+        "row_stop_exclusive": 7769,
+        "col_start_inclusive": 45512,
+        "col_stop_exclusive": 57800,
+        "rows": 1536,
+        "cols": 12288
+      },
+      "corner_lat_lon_hae": [
+        [
+          34.58524057030778,
+          -120.62398943688878,
+          101.52475667366411
+        ],
+        [
+          34.579125636026895,
+          -120.62555504162708,
+          101.52475667287713
+        ],
+        [
+          34.580342469368986,
+          -120.63295951202183,
+          101.52475667313377
+        ],
+        [
+          34.58646013006972,
+          -120.63139406551998,
+          101.52475667412715
+        ]
+      ],
+      "corner_gec_col_row": [
+        [
+          6477.493048592397,
+          7388.971290607694
+        ],
+        [
+          8696.375681007728,
+          7390.399512692962
+        ],
+        [
+          8722.72938160525,
+          9606.744030712427
+        ],
+        [
+          6502.909357314796,
+          9605.561161069409
+        ]
+      ],
+      "local_ground_jacobian_EN_m_per_pixel": [
+        [
+          -0.44258548358816335,
+          -0.011690203570361704
+        ],
+        [
+          0.08803888376735126,
+          -0.05522177698318064
+        ]
+      ],
+      "local_row_ground_spacing_m": 0.45125686181815516,
+      "local_col_ground_spacing_m": 0.05644559781503459,
+      "local_row_axis_bearing_deg_clockwise_from_north": 281.25039319724584,
+      "local_col_axis_bearing_deg_clockwise_from_north": 191.9527910378803,
+      "approximate_ground_extent_row_col_m": [
+        693.1305397526863,
+        693.603505951145
+      ]
+    }
+  }
+}

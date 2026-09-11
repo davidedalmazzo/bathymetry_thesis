@@ -1,0 +1,62 @@
+{
+  "sources": {
+    "engen_johnsen": {
+      "citation": "G. Engen and H. Johnsen, SAR-ocean wave inversion using image cross spectra, IEEE TGRS 33(4), 1995, DOI 10.1109/36.406690",
+      "role": "nonlinear ocean-to-SAR image cross-spectrum and directional ambiguity removal"
+    },
+    "sentinel1_osw_atbd": {
+      "local_pdf": "D:\\Dati Tesi\\Umbra\\tmp\\pdfs\\S1_OSW_ATBD_2020_v1.3.pdf",
+      "equations_used": [
+        34,
+        35,
+        36,
+        37
+      ]
+    }
+  },
+  "quasi_linear_single_component": {
+    "equation": "P_ql(k,t)=C(k)[A(k) exp(-i omega t)+B(k) exp(+i omega t)]",
+    "definitions": "C=U exp[-(k_y lambda_c/2pi)^2]/2; A=|T(k)|^2 S(k); B=|T(-k)|^2 S(-k)",
+    "phase_rate": "d arg(P_ql)/dt = omega (B^2-A^2)/(A^2+B^2+2AB cos(2 omega t)) for stationary C",
+    "one_direction_limit": "B=0 gives exactly -omega; arg(C) is a constant intercept",
+    "mtf_note": "In Eq. 34 the stationary MTF enters as |T|^2. Its own complex phase therefore cannot by itself change the ideal temporal slope. Through A/B and P_nlin, however, its k_y-dependent shift term changes component mixing and nonlinearity."
+  },
+  "general_bias_terms": {
+    "equation": "P=C(t)[A exp(-i omega t)+B exp(+i omega t)]+N(t); dphi/dt=Im(conj(P) dP/dt)/|P|^2",
+    "terms": [
+      "opposite-direction mixture B/A=S(-k)|T(-k)|^2 / [S(k)|T(k)|^2]",
+      "nonlinear transform contribution N=P_nlin, explicitly subtracted by Sentinel-1 before quasi-linear inversion",
+      "look-dependent system/MTF phase d arg(C)/dt, possible for sliding Doppler sub-apertures even though stationary C only shifts phi0",
+      "current/advection k dot U, which changes the actual encounter frequency rather than the SAR MTF",
+      "six-second symmetric look averaging changes amplitude by a real sinc for one stationary tone; overlap changes covariance, not the ideal slope"
+    ],
+    "single_component_plus_stationary_nonlinear_term": "For P=A exp(-i omega t)+N, dphi/dt=-omega[A^2+A Re(N* exp(-i omega t))]/[A^2+|N|^2+2A Re(N* exp(-i omega t))]."
+  },
+  "umbra_geometry_order_of_magnitude": {
+    "slant_range_m": 610403.7510692304,
+    "platform_speed_m_per_s": 7657.75057715643,
+    "R_over_V_s": 79.71058144543186,
+    "incidence_angle_deg": 21.842925232944808,
+    "frozen_peak_lambda_m": 130.6028192373831,
+    "peak_angle_from_local_range_deg": 21.342903574547677,
+    "peak_k_azimuth_rad_per_m": 0.01750925197811765,
+    "omega_13_33_rad_per_s": 0.47135673722277466,
+    "ATBD_shift_MTF_geometric_core_m_per_m_surface_amplitude": 37.226056968844695,
+    "dimensionless_shift_modulation_per_m_surface_amplitude": 0.6518004116192643,
+    "frozen_NDBC_partition_Hm0_m_context_only": 1.6374321527158247,
+    "equivalent_narrow_sinusoid_amplitude_m_context_only": 0.578919689459123,
+    "ATBD_core_dimensionless_shift_parameter_context_only": 0.377340091883953,
+    "finite_depth_kh_at_10_627m": 0.5112578485382481,
+    "finite_depth_LOS_orbital_velocity_amplitude_m_per_s_context_only": 0.32323016742754707,
+    "finite_depth_velocity_bunching_parameter_context_only": 0.4511235062245533,
+    "caveat": "The ATBD tuning/switch factor u_h is unavailable for Umbra and was set to unity only for an unfitted geometric scale. The NDBC Hm0 is the already-frozen context, not a refit or a period-selection input."
+  },
+  "can_0_120_rad_per_s_be_reached": {
+    "required_extra_rate_at_frozen_peak_rad_per_s": 0.12038453170595448,
+    "fraction_of_13_33s_omega": 0.2554000445930994,
+    "stationary_N_over_A_required_if_in_phase": 0.34300303503715796,
+    "stationary_N_over_A_required_if_quadrature": 0.5856646096847221,
+    "uniform_advection_speed_along_k_required_m_per_s": 2.5023230200459223,
+    "assessment": "A uniform-current explanation alone requires about 2.5 m/s along k and is not the economical explanation. Umbra's R/V and nonzero k_az give an unfitted velocity-bunching parameter of order 0.4 for the frozen sea-state scale, large enough that tens-of-percent nonlinear cross-spectral terms are plausible. This establishes order-of-magnitude plausibility, not a prediction of +0.120 rad/s: the full P_nlin lookup, X-band RAR MTF/wind dependence, and look-dependent transfer are unavailable."
+  }
+}

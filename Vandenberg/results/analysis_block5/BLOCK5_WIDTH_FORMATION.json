@@ -1,0 +1,232 @@
+{
+  "generated_utc": "2026-08-31T09:59:16.823631+00:00",
+  "scope": "Moderate local look-width sensitivity, not a dwell sweep",
+  "source_sicd": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_SICD.nitf",
+  "source_sicd_size_bytes": 11478596733,
+  "widths_s": [
+    5.5,
+    6.0,
+    6.5
+  ],
+  "common_chronological_indices": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "physical_center_times_s": [
+    4.405555289724772,
+    5.56539893211977,
+    6.723516579309932,
+    7.880179229709705,
+    9.03646263403653,
+    10.19283490296494,
+    11.349764285829982,
+    12.50832722989799,
+    13.668795587324867
+  ],
+  "edge_centers_excluded": [
+    1,
+    11
+  ],
+  "edge_exclusion_reason": "6.5-s support exceeds the processed SICD support at centers 1 and 11",
+  "formation_records": [
+    {
+      "width_s": 5.5,
+      "width_bins": 26252,
+      "realized_nominal_width_s": 5.500031960873586,
+      "bands": [
+        {
+          "start_inclusive": 63684,
+          "stop_exclusive": 89936
+        },
+        {
+          "start_inclusive": 57957,
+          "stop_exclusive": 84209
+        },
+        {
+          "start_inclusive": 52229,
+          "stop_exclusive": 78481
+        },
+        {
+          "start_inclusive": 46502,
+          "stop_exclusive": 72754
+        },
+        {
+          "start_inclusive": 40774,
+          "stop_exclusive": 67026
+        },
+        {
+          "start_inclusive": 35046,
+          "stop_exclusive": 61298
+        },
+        {
+          "start_inclusive": 29319,
+          "stop_exclusive": 55571
+        },
+        {
+          "start_inclusive": 23591,
+          "stop_exclusive": 49843
+        },
+        {
+          "start_inclusive": 17864,
+          "stop_exclusive": 44116
+        }
+      ],
+      "window": {
+        "kind": "tukey",
+        "length": 26252,
+        "tukey_alpha": 0.25,
+        "normalization": "energy",
+        "applied_scale": 1.0886828433371178,
+        "coherent_gain": 0.9525612012567507,
+        "rms_gain": 0.9999999999999998,
+        "energy_sum": 26251.99999999999,
+        "enbw_bins": 1.1020827972345622
+      },
+      "source": "new nearshore-only formation from full SICD azimuth extent",
+      "azimuth_pre_crop_before_doppler_decomposition": false,
+      "spectrum_shape": [
+        9,
+        129,
+        129
+      ]
+    },
+    {
+      "width_s": 6.0,
+      "width_bins": 28638,
+      "realized_nominal_width_s": 5.9999205887360105,
+      "bands": [
+        {
+          "start_inclusive": 62491,
+          "stop_exclusive": 91129
+        },
+        {
+          "start_inclusive": 56764,
+          "stop_exclusive": 85402
+        },
+        {
+          "start_inclusive": 51036,
+          "stop_exclusive": 79674
+        },
+        {
+          "start_inclusive": 45309,
+          "stop_exclusive": 73947
+        },
+        {
+          "start_inclusive": 39581,
+          "stop_exclusive": 68219
+        },
+        {
+          "start_inclusive": 33853,
+          "stop_exclusive": 62491
+        },
+        {
+          "start_inclusive": 28126,
+          "stop_exclusive": 56764
+        },
+        {
+          "start_inclusive": 22398,
+          "stop_exclusive": 51036
+        },
+        {
+          "start_inclusive": 16671,
+          "stop_exclusive": 45309
+        }
+      ],
+      "window": {
+        "kind": "tukey",
+        "length": 28638,
+        "tukey_alpha": 0.25,
+        "normalization": "energy",
+        "applied_scale": 1.08868111570148,
+        "coherent_gain": 0.952562712883102,
+        "rms_gain": 0.9999999999999999,
+        "energy_sum": 28637.999999999996,
+        "enbw_bins": 1.1020792994363529
+      },
+      "source": "reused Block-4 complex looks",
+      "azimuth_pre_crop_before_doppler_decomposition": false,
+      "spectrum_shape": [
+        9,
+        129,
+        129
+      ]
+    },
+    {
+      "width_s": 6.5,
+      "width_bins": 31026,
+      "realized_nominal_width_s": 6.500228234727407,
+      "bands": [
+        {
+          "start_inclusive": 61297,
+          "stop_exclusive": 92323
+        },
+        {
+          "start_inclusive": 55570,
+          "stop_exclusive": 86596
+        },
+        {
+          "start_inclusive": 49842,
+          "stop_exclusive": 80868
+        },
+        {
+          "start_inclusive": 44115,
+          "stop_exclusive": 75141
+        },
+        {
+          "start_inclusive": 38387,
+          "stop_exclusive": 69413
+        },
+        {
+          "start_inclusive": 32659,
+          "stop_exclusive": 63685
+        },
+        {
+          "start_inclusive": 26932,
+          "stop_exclusive": 57958
+        },
+        {
+          "start_inclusive": 21204,
+          "stop_exclusive": 52230
+        },
+        {
+          "start_inclusive": 15477,
+          "stop_exclusive": 46503
+        }
+      ],
+      "window": {
+        "kind": "tukey",
+        "length": 31026,
+        "tukey_alpha": 0.25,
+        "normalization": "energy",
+        "applied_scale": 1.0886796526792029,
+        "coherent_gain": 0.9525639929842911,
+        "rms_gain": 0.9999999999999999,
+        "energy_sum": 31025.999999999993,
+        "enbw_bins": 1.1020763373842826
+      },
+      "source": "new nearshore-only formation from full SICD azimuth extent",
+      "azimuth_pre_crop_before_doppler_decomposition": false,
+      "spectrum_shape": [
+        9,
+        129,
+        129
+      ]
+    }
+  ],
+  "output_npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block5\\BLOCK5_WIDTH_SENSITIVITY_SPECTRA.npz",
+  "recovery_note": "The numerical formation and NPZ write completed; only JSON serialization of WindowMetrics failed. This manifest was reconstructed from the verified NPZ and immutable plans without repeating radar processing.",
+  "temporary_work_directory_empty_after_success": true,
+  "guardrails": {
+    "full_dwell_sweep_performed": false,
+    "bathymetric_inversion_performed": false,
+    "complex_sublook_files_persisted": false,
+    "only_derived_spectrum_crops_persisted": true
+  }
+}

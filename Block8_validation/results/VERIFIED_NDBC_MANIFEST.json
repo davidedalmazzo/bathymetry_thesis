@@ -1,0 +1,7 @@
+{
+  "generated_utc": "2026-09-01T09:09:53.430988+00:00",
+  "rows": 6,
+  "direction_reference": "https://www.ndbc.noaa.gov/faq/measdes.shtml",
+  "output_csv": "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\verified_ndbc_spectra.csv",
+  "output_sha256": "8a6b2ba3c3391662a081c613ce021482c989120616747f116d97abb80b35ec19"
+}

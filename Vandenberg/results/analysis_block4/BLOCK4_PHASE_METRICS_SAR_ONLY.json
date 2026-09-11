@@ -1,0 +1,1857 @@
+{
+  "generated_utc": "2026-08-29T22:43:38.410286+00:00",
+  "scope": "Block 4 fixed-width sliding-look temporal phase; nearshore primary plus land control",
+  "inputs": {
+    "sliding_manifest": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\BLOCK4_SLIDING_MANIFEST.json",
+    "sliding_plan": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\BLOCK4_SLIDING_LOOK_PLAN.json",
+    "rois": "D:\\Dati Tesi\\Umbra\\Vandenberg\\roi\\ROIS.json",
+    "block3_metrics": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\BLOCK3_SPECTRAL_METRICS.json"
+  },
+  "time_axis": {
+    "source": "CPHD/PVP Doppler-to-TxTime inversion",
+    "physical_slow_time_centers_s": [
+      3.242899386518952,
+      4.405555289724772,
+      5.56539893211977,
+      6.723516579309932,
+      7.880179229709705,
+      9.03646263403653,
+      10.19283490296494,
+      11.349764285829982,
+      12.50832722989799,
+      13.668795587324867,
+      14.832257263168495
+    ],
+    "mean_center_step_s": 1.1589357876649542,
+    "mean_effective_window_span_s": 5.800829948175832,
+    "overlap_correlation_hac_lag": 4
+  },
+  "phase_model": "phi(t)=omega_p*t+phi_0",
+  "cross_convention": "F_secondary * conj(F_reference)",
+  "external_data_used_for_unwrapping_or_fit": false,
+  "results": {
+    "nearshore": {
+      "roi": {
+        "kind": "ocean_nearshore",
+        "gec_center_col_row": [
+          13000,
+          12300
+        ],
+        "sicd_center_row_col_override": [
+          10000,
+          82800
+        ],
+        "shape_rows_cols": [
+          1200,
+          9600
+        ],
+        "description": "Open water immediately seaward of the central rocky coast; refined on full-aperture SICD intensity to exclude the terrain displaced by constant-HAE projection.",
+        "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+        "initial_gec_center_lon_lat_deg": [
+          -120.6449435363966,
+          34.57012023782194
+        ],
+        "selected_center_lon_lat_deg": [
+          -120.64679691911917,
+          34.569636382251765
+        ],
+        "selected_center_gec_col_row": [
+          13280.449767722997,
+          12796.957807090685
+        ],
+        "initial_gec_projected_sicd_center_row_col": [
+          9652.427976397594,
+          81283.90703852421
+        ],
+        "selection_stage": "full_aperture_SICD_intensity_refinement",
+        "projection_hae_m": 101.52475667382657,
+        "ground_to_sicd_residual_m": 0.0002129202203557209,
+        "ground_to_sicd_iterations": 3,
+        "sicd_center_row_col": [
+          10000,
+          82800
+        ],
+        "sicd_bounds": {
+          "row_start_inclusive": 9400,
+          "row_stop_exclusive": 10600,
+          "col_start_inclusive": 78000,
+          "col_stop_exclusive": 87600,
+          "rows": 1200,
+          "cols": 9600
+        },
+        "corner_lat_lon_hae": [
+          [
+            34.57156032400505,
+            -120.64332833760245,
+            101.52475667231712
+          ],
+          [
+            34.56677075394755,
+            -120.64450212940174,
+            101.52475667395976
+          ],
+          [
+            34.567710125876474,
+            -120.65025363027719,
+            101.524756674163
+          ],
+          [
+            34.57250134145468,
+            -120.64907983946158,
+            101.52475667284004
+          ]
+        ],
+        "corner_gec_col_row": [
+          [
+            12401.859093028514,
+            11941.575434285116
+          ],
+          [
+            14136.633857648661,
+            11927.617739268095
+          ],
+          [
+            14159.124581272064,
+            13648.76040402621
+          ],
+          [
+            12423.778325587395,
+            13662.839027436035
+          ]
+        ],
+        "local_ground_jacobian_EN_m_per_pixel": [
+          [
+            -0.4401875657651662,
+            -0.01122125430306822
+          ],
+          [
+            0.08698885954146114,
+            -0.055362006267786756
+          ]
+        ],
+        "local_row_ground_spacing_m": 0.44870051787198395,
+        "local_col_ground_spacing_m": 0.0564877711202043,
+        "local_row_axis_bearing_deg_clockwise_from_north": 281.17862730319644,
+        "local_col_axis_bearing_deg_clockwise_from_north": 191.45798292805307,
+        "approximate_ground_extent_row_col_m": [
+          538.4406214463808,
+          542.2826027539612
+        ]
+      },
+      "fixed_physical_target_from_nearshore_block3": {
+        "k_east_cycles_per_m": 0.007888587526182843,
+        "k_north_cycles_per_m": 0.0011364765399986194,
+        "wavelength_m": 125.47002843394186,
+        "wavevector_bearing_deg_mod_180": 81.80203705496223
+      },
+      "fixed_patch_center": {
+        "method": "fixed Block-3 nearshore look-2 peak bin",
+        "crop_index_row_col": [
+          60,
+          63
+        ],
+        "fft_bin_offset_row_col": [
+          -4,
+          -1
+        ],
+        "nearest_integer_bin_k_east_cycles_per_m": 0.00763840281305268,
+        "nearest_integer_bin_k_north_cycles_per_m": 0.0003333370207515183,
+        "nearest_integer_bin_wavelength_m": 130.7929385226695
+      },
+      "primary_fixed_patch_phase": {
+        "patch_radius_bins": 2,
+        "patch_shape": [
+          5,
+          5
+        ],
+        "patch_weight": "Gaussian sigma=1 bin",
+        "cross_convention": "F_secondary * conj(F_reference)",
+        "reference_chronological_index": 1,
+        "wrapped_phase_relative_reference_rad": [
+          9.064399549683811e-18,
+          -0.3791652159636278,
+          -0.8038339653742889,
+          -1.3004149107237466,
+          -1.73227401389794,
+          -2.0897653791002346,
+          -2.3894131561893426,
+          -2.7757156845331576,
+          3.055697506017282,
+          2.5981770975092884,
+          2.161433655813672
+        ],
+        "direct_reference_magnitude_squared_coherence": [
+          1.0,
+          0.9783466128093926,
+          0.926830675541928,
+          0.8410549223061119,
+          0.7764300752813115,
+          0.7231117865904889,
+          0.6809649445531906,
+          0.6364700999373305,
+          0.5846915031050223,
+          0.5645414699738707,
+          0.5594814712605151
+        ],
+        "adjacent_cross_phase_rad": [
+          -0.3791652159636278,
+          -0.4199337375680229,
+          -0.4810582246835263,
+          -0.3991458249596029,
+          -0.3414846929199025,
+          -0.28976969817749837,
+          -0.36687701229574815,
+          -0.4157235096885887,
+          -0.4232133723611612,
+          -0.4160396666006171
+        ],
+        "adjacent_magnitude_squared_coherence": [
+          0.9783466128093926,
+          0.9814909205289468,
+          0.9726467076136271,
+          0.9824144130642872,
+          0.9887965474950433,
+          0.9915259145769163,
+          0.9876995485912026,
+          0.9822528463636873,
+          0.983346006255838,
+          0.9806474937076586
+        ],
+        "direct_temporal_wrapped_step_rad": [
+          -0.3791652159636278,
+          -0.4246687494106611,
+          -0.49658094534945774,
+          -0.4318591031741934,
+          -0.35749136520229463,
+          -0.29964777708910795,
+          -0.38630252834381507,
+          -0.4517721166291466,
+          -0.4575204085079938,
+          -0.43674344169561646
+        ],
+        "direct_step_minus_adjacent_cross_phase_rad": [
+          0.0,
+          -0.004735011842638192,
+          -0.015522720665931411,
+          -0.032713278214590524,
+          -0.01600667228239211,
+          -0.00987807891160958,
+          -0.019425516048066915,
+          -0.03604860694055795,
+          -0.034307036146832615,
+          -0.020703775094999377
+        ],
+        "unwrapping_criteria": {
+          "maximum_abs_direct_temporal_step_rad": 0.49658094534945774,
+          "maximum_abs_adjacent_cross_phase_rad": 0.4810582246835263,
+          "minimum_adjacent_magnitude_squared_coherence": 0.9726467076136271,
+          "maximum_abs_direct_step_minus_adjacent_cross_phase_rad": 0.03604860694055795,
+          "required_maximum_abs_step_rad": 1.5707963267948966,
+          "required_minimum_adjacent_coherence": 0.5,
+          "required_maximum_step_consistency_error_rad": 0.25
+        },
+        "temporal_unwrapping_justified": true,
+        "unwrapped_phase_relative_reference_rad": [
+          9.064399549683811e-18,
+          -0.3791652159636278,
+          -0.8038339653742889,
+          -1.3004149107237466,
+          -1.73227401389794,
+          -2.0897653791002346,
+          -2.3894131561893426,
+          -2.7757156845331576,
+          -3.227487801162305,
+          -3.6850082096702987,
+          -4.121751651365916
+        ],
+        "fit_direct_reference_phase": {
+          "intercept_rad": 1.125810002490738,
+          "slope_rad_per_s": -0.3509722055168202,
+          "predicted_phase_rad": [
+            -0.012357547464961538,
+            -0.42041745407025877,
+            -0.8274903352962935,
+            -1.233957440178575,
+            -1.639913881628314,
+            -2.045737218247397,
+            -2.451591743871691,
+            -2.857641801003048,
+            -3.2642651927126574,
+            -3.6715573315512504,
+            -4.0799000419563844
+          ],
+          "residual_phase_rad": [
+            0.012357547464961547,
+            0.04125223810663098,
+            0.023656369922004594,
+            -0.0664574705451717,
+            -0.09236013226962592,
+            -0.04402816085283767,
+            0.06217858768234841,
+            0.08192611646989034,
+            0.03677739155035242,
+            -0.013450878119048326,
+            -0.04185160940953114
+          ],
+          "residual_rmse_rad": 0.05322565472149437,
+          "residual_max_abs_rad": 0.09236013226962592,
+          "r_squared": 0.9982882440018105,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.047237291637647345,
+          "ols_slope_standard_error_rad_per_s": 0.004844449364096476,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.03446745734377837,
+          "hac_slope_standard_error_rad_per_s": 0.0035383612880704415,
+          "slope_standard_error_selected_rad_per_s": 0.004844449364096476,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.3619311113456242,
+            -0.34001329968801614
+          ],
+          "slope_resolved_from_zero_at_95_percent": true,
+          "period_s": 17.902230457045317,
+          "period_1sigma_fit_only_s": 0.24710346742652653,
+          "period_95_percent_ci_fit_only_s": [
+            17.360169132239896,
+            18.479233938627722
+          ],
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        },
+        "adjacent_linked_cumulative_phase_rad": [
+          0.0,
+          -0.3791652159636278,
+          -0.7990989535316506,
+          -1.2801571782151768,
+          -1.6793030031747798,
+          -2.0207876960946822,
+          -2.3105573942721804,
+          -2.6774344065679285,
+          -3.093157916256517,
+          -3.516371288617678,
+          -3.932410955218295
+        ],
+        "fit_adjacent_linked_phase": {
+          "intercept_rad": 1.0445355031701302,
+          "slope_rad_per_s": -0.33376594410468263,
+          "predicted_phase_rad": [
+            -0.03783387220786394,
+            -0.4258888174102369,
+            -0.8130051257280173,
+            -1.1995453556267353,
+            -1.5855999571480401,
+            -1.9715279792457596,
+            -2.357485661321124,
+            -2.743629289055523,
+            -3.1303181438870817,
+            -3.517642960807274,
+            -3.905966845474839
+          ],
+          "residual_phase_rad": [
+            0.03783387220786394,
+            0.04672360144660909,
+            0.013906172196366695,
+            -0.08061182258844157,
+            -0.09370304602673962,
+            -0.04925971684892261,
+            0.046928267048943706,
+            0.06619488248759442,
+            0.0371602276305647,
+            0.001271672189596007,
+            -0.026444109743456234
+          ],
+          "residual_rmse_rad": 0.05237863916356274,
+          "residual_max_abs_rad": 0.09370304602673962,
+          "r_squared": 0.9981671918934303,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.0464855729196532,
+          "ols_slope_standard_error_rad_per_s": 0.004767356390746076,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.04241458420082371,
+          "hac_slope_standard_error_rad_per_s": 0.003899587813179074,
+          "slope_standard_error_selected_rad_per_s": 0.004767356390746076,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.34455045351162067,
+            -0.3229814346977446
+          ],
+          "slope_resolved_from_zero_at_95_percent": true,
+          "period_s": 18.825124067208375,
+          "period_1sigma_fit_only_s": 0.268889253423188,
+          "period_95_percent_ci_fit_only_s": [
+            18.235893301378788,
+            19.45370424482625
+          ],
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        }
+      },
+      "conjugate_peak_check": {
+        "center_crop_index_row_col": [
+          68,
+          65
+        ],
+        "fit": {
+          "intercept_rad": -1.1258100024907371,
+          "slope_rad_per_s": 0.35097220551682007,
+          "predicted_phase_rad": [
+            0.012357547464962204,
+            0.4204174540702592,
+            0.8274903352962937,
+            1.2339574401785753,
+            1.639913881628314,
+            2.045737218247397,
+            2.45159174387169,
+            2.857641801003048,
+            3.2642651927126574,
+            3.6715573315512495,
+            4.079900041956384
+          ],
+          "residual_phase_rad": [
+            -0.012357547464962213,
+            -0.04125223810663142,
+            -0.023656369922004705,
+            0.06645747054517126,
+            0.09236013226962592,
+            0.04402816085283723,
+            -0.06217858768234752,
+            -0.08192611646989034,
+            -0.03677739155035331,
+            0.013450878119048326,
+            0.041851609409530255
+          ],
+          "residual_rmse_rad": 0.05322565472149423,
+          "residual_max_abs_rad": 0.09236013226962592,
+          "r_squared": 0.9982882440018105,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.04723729163764722,
+          "ols_slope_standard_error_rad_per_s": 0.004844449364096463,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.03446745734377819,
+          "hac_slope_standard_error_rad_per_s": 0.0035383612880704233,
+          "slope_standard_error_selected_rad_per_s": 0.004844449364096463,
+          "slope_95_percent_ci_rad_per_s": [
+            0.340013299688016,
+            0.3619311113456241
+          ],
+          "slope_resolved_from_zero_at_95_percent": true,
+          "period_s": 17.90223045704532,
+          "period_1sigma_fit_only_s": 0.247103467426526,
+          "period_95_percent_ci_fit_only_s": [
+            17.3601691322399,
+            18.47923393862773
+          ],
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        },
+        "slope_sum_with_primary_rad_per_s": -1.1102230246251565e-16,
+        "period_difference_s": -3.552713678800501e-15
+      },
+      "estimator_sensitivity": {
+        "gaussian_patch_radius_1_to_5_bins": {
+          "1": {
+            "intercept_rad": 1.1205531224613094,
+            "slope_rad_per_s": -0.3502359659353746,
+            "predicted_phase_rad": [
+              -0.015226876607389306,
+              -0.4224307899171451,
+              -0.8286497483453603,
+              -1.23426420117581,
+              -1.6393690617999452,
+              -2.0443410968093945,
+              -2.449344255398416,
+              -2.854542535325171,
+              -3.260312947137761,
+              -3.666750703238601,
+              -4.074236827106484
+            ],
+            "residual_phase_rad": [
+              0.015226876607389304,
+              0.04312725142097723,
+              0.02322908368344634,
+              -0.06816364247318529,
+              -0.09315219025362853,
+              -0.04430922841059104,
+              0.060090593533697056,
+              0.07779355171340097,
+              0.03412209708740077,
+              -0.011409116641231343,
+              -0.036555276267700165
+            ],
+            "residual_rmse_rad": 0.05240733652346471,
+            "residual_max_abs_rad": 0.09315219025362853,
+            "r_squared": 0.9983334143948366,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.046511041569423935,
+            "ols_slope_standard_error_rad_per_s": 0.0047699683437160455,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.035056174824969956,
+            "hac_slope_standard_error_rad_per_s": 0.0034909167671035492,
+            "slope_standard_error_selected_rad_per_s": 0.0047699683437160455,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.3610263839904325,
+              -0.33944554788031667
+            ],
+            "slope_resolved_from_zero_at_95_percent": true,
+            "period_s": 17.939863173101294,
+            "period_1sigma_fit_only_s": 0.24432836073174813,
+            "period_95_percent_ci_fit_only_s": [
+              17.403673487049343,
+              18.510142043150147
+            ],
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          },
+          "2": {
+            "intercept_rad": 1.125810002490738,
+            "slope_rad_per_s": -0.3509722055168202,
+            "predicted_phase_rad": [
+              -0.012357547464961538,
+              -0.42041745407025877,
+              -0.8274903352962935,
+              -1.233957440178575,
+              -1.639913881628314,
+              -2.045737218247397,
+              -2.451591743871691,
+              -2.857641801003048,
+              -3.2642651927126574,
+              -3.6715573315512504,
+              -4.0799000419563844
+            ],
+            "residual_phase_rad": [
+              0.012357547464961547,
+              0.04125223810663098,
+              0.023656369922004594,
+              -0.0664574705451717,
+              -0.09236013226962592,
+              -0.04402816085283767,
+              0.06217858768234841,
+              0.08192611646989034,
+              0.03677739155035242,
+              -0.013450878119048326,
+              -0.04185160940953114
+            ],
+            "residual_rmse_rad": 0.05322565472149437,
+            "residual_max_abs_rad": 0.09236013226962592,
+            "r_squared": 0.9982882440018105,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.047237291637647345,
+            "ols_slope_standard_error_rad_per_s": 0.004844449364096476,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.03446745734377837,
+            "hac_slope_standard_error_rad_per_s": 0.0035383612880704415,
+            "slope_standard_error_selected_rad_per_s": 0.004844449364096476,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.3619311113456242,
+              -0.34001329968801614
+            ],
+            "slope_resolved_from_zero_at_95_percent": true,
+            "period_s": 17.902230457045317,
+            "period_1sigma_fit_only_s": 0.24710346742652653,
+            "period_95_percent_ci_fit_only_s": [
+              17.360169132239896,
+              18.479233938627722
+            ],
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          },
+          "3": {
+            "intercept_rad": 1.1276785501488977,
+            "slope_rad_per_s": -0.35132006482106737,
+            "predicted_phase_rad": [
+              -0.011617072531139971,
+              -0.42008141981000535,
+              -0.827557763438519,
+              -1.2344277303197886,
+              -1.6407865276343443,
+              -2.047012088193969,
+              -2.4532688686711825,
+              -2.859721374452727,
+              -3.2667477830619864,
+              -3.6744436016159945,
+              -4.0831910329902055
+            ],
+            "residual_phase_rad": [
+              0.011617072531139964,
+              0.04099306055709939,
+              0.023819161695317725,
+              -0.06594787730191909,
+              -0.09175607180122647,
+              -0.043522358218941015,
+              0.062419604632564685,
+              0.08167832631717431,
+              0.036218978627496234,
+              -0.013833593597327276,
+              -0.041686303441403894
+            ],
+            "residual_rmse_rad": 0.05296115334637648,
+            "residual_max_abs_rad": 0.09175607180122647,
+            "r_squared": 0.9983085347863204,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.047002549037290814,
+            "ols_slope_standard_error_rad_per_s": 0.0048203751929999,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.034105304988831804,
+            "hac_slope_standard_error_rad_per_s": 0.0035111022264823605,
+            "slope_standard_error_selected_rad_per_s": 0.0048203751929999,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.3622245110912869,
+              -0.34041561855084784
+            ],
+            "slope_resolved_from_zero_at_95_percent": true,
+            "period_s": 17.884504576701897,
+            "period_1sigma_fit_only_s": 0.24538883722606356,
+            "period_95_percent_ci_fit_only_s": [
+              17.346107496287335,
+              18.457394328518646
+            ],
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          },
+          "4": {
+            "intercept_rad": 1.1277432256986493,
+            "slope_rad_per_s": -0.3513268980827284,
+            "predicted_phase_rad": [
+              -0.01157455656143691,
+              -0.42004684857231056,
+              -0.8275311177159186,
+              -1.2344089983181057,
+              -1.640775699411205,
+              -2.047009161157886,
+              -2.4532738434293906,
+              -2.8597342548121314,
+              -3.2667685801851376,
+              -3.674472328523082,
+              -4.083227710135356
+            ],
+            "residual_phase_rad": [
+              0.011574556561436914,
+              0.04097528124188177,
+              0.023826990105687784,
+              -0.06592334585047754,
+              -0.09173219356739004,
+              -0.043503250541777394,
+              0.062439779963300523,
+              0.08169359711931623,
+              0.036220798092947426,
+              -0.013851737476922032,
+              -0.041720475648033606
+            ],
+            "residual_rmse_rad": 0.052958706064704555,
+            "residual_max_abs_rad": 0.09173219356739004,
+            "r_squared": 0.9983087565197121,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.04700037709673581,
+            "ols_slope_standard_error_rad_per_s": 0.004820152448306549,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.03409131809213027,
+            "hac_slope_standard_error_rad_per_s": 0.0035107010671936306,
+            "slope_standard_error_selected_rad_per_s": 0.004820152448306549,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.3622308404694443,
+              -0.34042295569601244
+            ],
+            "slope_resolved_from_zero_at_95_percent": true,
+            "period_s": 17.88415672545533,
+            "period_1sigma_fit_only_s": 0.24536795302761774,
+            "period_95_percent_ci_fit_only_s": [
+              17.345804402067746,
+              18.456996515799844
+            ],
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          },
+          "5": {
+            "intercept_rad": 1.1277436080545375,
+            "slope_rad_per_s": -0.3513268995896181,
+            "predicted_phase_rad": [
+              -0.011574179092240344,
+              -0.4200464728551083,
+              -0.8275307437464727,
+              -1.2344086260938152,
+              -1.640775328929878,
+              -2.0470087924189504,
+              -2.4532734764329804,
+              -2.8597338895590863,
+              -3.2667682166779195,
+              -3.674471966764561,
+              -4.083227350130045
+            ],
+            "residual_phase_rad": [
+              0.011574179092240327,
+              0.04097513461706165,
+              0.023827062335387006,
+              -0.0659231588656386,
+              -0.09173201994154523,
+              -0.04350306992469477,
+              0.0624399933982982,
+              0.08169377386476784,
+              0.03622081515511644,
+              -0.013851893370465884,
+              -0.041720816360554025
+            ],
+            "residual_rmse_rad": 0.05295870604916408,
+            "residual_max_abs_rad": 0.09173201994154523,
+            "r_squared": 0.9983087565351864,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.04700037708294377,
+            "ols_slope_standard_error_rad_per_s": 0.004820152446892098,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.03409120598413905,
+            "hac_slope_standard_error_rad_per_s": 0.003510699037238193,
+            "slope_standard_error_selected_rad_per_s": 0.004820152446892098,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.3622308419731344,
+              -0.34042295720610183
+            ],
+            "slope_resolved_from_zero_at_95_percent": true,
+            "period_s": 17.884156648747705,
+            "period_1sigma_fit_only_s": 0.24536795085078145,
+            "period_95_percent_ci_fit_only_s": [
+              17.345804330061966,
+              18.45699643392606
+            ],
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          }
+        },
+        "patch_period_range_s": [
+          17.884156648747705,
+          17.939863173101294
+        ],
+        "single_center_bin": {
+          "intercept_rad": 0.939732803275938,
+          "slope_rad_per_s": -0.3082368069315218,
+          "predicted_phase_rad": [
+            -0.05984814882485456,
+            -0.41822149198910097,
+            -0.775727992860761,
+            -1.1327024784817032,
+            -1.4892284805378804,
+            -1.8456375849954907,
+            -2.2020740807941426,
+            -2.5586822996137193,
+            -2.9157940421224255,
+            -3.2734931031607544,
+            -3.632114815109991
+          ],
+          "residual_phase_rad": [
+            0.05984814882485456,
+            0.052757598787851634,
+            -0.01614811498312485,
+            -0.12120668764076536,
+            -0.11885916668999918,
+            -0.04163047051825797,
+            0.07491491227549396,
+            0.1168606757581192,
+            0.08493083055111272,
+            0.00385459049824588,
+            -0.09532231686355175
+          ],
+          "residual_rmse_rad": 0.08133024430952893,
+          "residual_max_abs_rad": 0.12120668764076536,
+          "r_squared": 0.9948361213054118,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.07217986306627555,
+          "ols_slope_standard_error_rad_per_s": 0.00740245004760829,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.06173687042727969,
+          "hac_slope_standard_error_rad_per_s": 0.006301478131073606,
+          "slope_standard_error_selected_rad_per_s": 0.00740245004760829,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.3249823123289748,
+            -0.29149130153406877
+          ],
+          "slope_resolved_from_zero_at_95_percent": true,
+          "period_s": 20.384279767651062,
+          "period_1sigma_fit_only_s": 0.4895379440198782,
+          "period_95_percent_ci_fit_only_s": [
+            19.333930090383536,
+            21.555309795222907
+          ],
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        },
+        "adjacent_linked": {
+          "intercept_rad": 1.0445355031701302,
+          "slope_rad_per_s": -0.33376594410468263,
+          "predicted_phase_rad": [
+            -0.03783387220786394,
+            -0.4258888174102369,
+            -0.8130051257280173,
+            -1.1995453556267353,
+            -1.5855999571480401,
+            -1.9715279792457596,
+            -2.357485661321124,
+            -2.743629289055523,
+            -3.1303181438870817,
+            -3.517642960807274,
+            -3.905966845474839
+          ],
+          "residual_phase_rad": [
+            0.03783387220786394,
+            0.04672360144660909,
+            0.013906172196366695,
+            -0.08061182258844157,
+            -0.09370304602673962,
+            -0.04925971684892261,
+            0.046928267048943706,
+            0.06619488248759442,
+            0.0371602276305647,
+            0.001271672189596007,
+            -0.026444109743456234
+          ],
+          "residual_rmse_rad": 0.05237863916356274,
+          "residual_max_abs_rad": 0.09370304602673962,
+          "r_squared": 0.9981671918934303,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.0464855729196532,
+          "ols_slope_standard_error_rad_per_s": 0.004767356390746076,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.04241458420082371,
+          "hac_slope_standard_error_rad_per_s": 0.003899587813179074,
+          "slope_standard_error_selected_rad_per_s": 0.004767356390746076,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.34455045351162067,
+            -0.3229814346977446
+          ],
+          "slope_resolved_from_zero_at_95_percent": true,
+          "period_s": 18.825124067208375,
+          "period_1sigma_fit_only_s": 0.268889253423188,
+          "period_95_percent_ci_fit_only_s": [
+            18.235893301378788,
+            19.45370424482625
+          ],
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        },
+        "note": "Only the fixed-patch radius-2 direct-reference estimator is primary. Peak drift is not used to retune the phase bin."
+      },
+      "separate_peak_drift_diagnostic_not_used_for_phase": [
+        {
+          "chronological_index": 1,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            -1
+          ],
+          "k_east_cycles_per_m": 0.007995911465086077,
+          "k_north_cycles_per_m": 0.0021424291747136033,
+          "wavelength_m": 120.80272644898008,
+          "wavevector_bearing_deg_mod_180": 75.00046027376962,
+          "power": 7094397304832.0
+        },
+        {
+          "chronological_index": 2,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            1,
+            -1
+          ],
+          "k_east_cycles_per_m": 0.006175687924831256,
+          "k_north_cycles_per_m": 0.002511367958016245,
+          "wavelength_m": 149.9972225854331,
+          "wavevector_bearing_deg_mod_180": 67.8706879330906,
+          "power": 7600129703936.0
+        },
+        {
+          "chronological_index": 3,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            1,
+            -1
+          ],
+          "k_east_cycles_per_m": 0.006175687924831256,
+          "k_north_cycles_per_m": 0.002511367958016245,
+          "wavelength_m": 149.9972225854331,
+          "wavevector_bearing_deg_mod_180": 67.8706879330906,
+          "power": 9144157339648.0
+        },
+        {
+          "chronological_index": 4,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            0
+          ],
+          "k_east_cycles_per_m": 0.00763840281305268,
+          "k_north_cycles_per_m": 0.0003333370207515183,
+          "wavelength_m": 130.7929385226695,
+          "wavevector_bearing_deg_mod_180": 87.50121920525808,
+          "power": 11673384517632.0
+        },
+        {
+          "chronological_index": 5,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            0
+          ],
+          "k_east_cycles_per_m": 0.00763840281305268,
+          "k_north_cycles_per_m": 0.0003333370207515183,
+          "wavelength_m": 130.7929385226695,
+          "wavevector_bearing_deg_mod_180": 87.50121920525808,
+          "power": 16739686416384.0
+        },
+        {
+          "chronological_index": 6,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            0
+          ],
+          "k_east_cycles_per_m": 0.00763840281305268,
+          "k_north_cycles_per_m": 0.0003333370207515183,
+          "wavelength_m": 130.7929385226695,
+          "wavevector_bearing_deg_mod_180": 87.50121920525808,
+          "power": 21368850612224.0
+        },
+        {
+          "chronological_index": 7,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            0
+          ],
+          "k_east_cycles_per_m": 0.00763840281305268,
+          "k_north_cycles_per_m": 0.0003333370207515183,
+          "wavelength_m": 130.7929385226695,
+          "wavevector_bearing_deg_mod_180": 87.50121920525808,
+          "power": 24221249961984.0
+        },
+        {
+          "chronological_index": 8,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            0
+          ],
+          "k_east_cycles_per_m": 0.00763840281305268,
+          "k_north_cycles_per_m": 0.0003333370207515183,
+          "wavelength_m": 130.7929385226695,
+          "wavevector_bearing_deg_mod_180": 87.50121920525808,
+          "power": 20500317208576.0
+        },
+        {
+          "chronological_index": 9,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            1,
+            -1
+          ],
+          "k_east_cycles_per_m": 0.006175687924831256,
+          "k_north_cycles_per_m": 0.002511367958016245,
+          "wavelength_m": 149.9972225854331,
+          "wavevector_bearing_deg_mod_180": 67.8706879330906,
+          "power": 17252195762176.0
+        },
+        {
+          "chronological_index": 10,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            1,
+            -1
+          ],
+          "k_east_cycles_per_m": 0.006175687924831256,
+          "k_north_cycles_per_m": 0.002511367958016245,
+          "wavelength_m": 149.9972225854331,
+          "wavevector_bearing_deg_mod_180": 67.8706879330906,
+          "power": 18343467679744.0
+        },
+        {
+          "chronological_index": 11,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            1,
+            -1
+          ],
+          "k_east_cycles_per_m": 0.006175687924831256,
+          "k_north_cycles_per_m": 0.002511367958016245,
+          "wavelength_m": 149.9972225854331,
+          "wavevector_bearing_deg_mod_180": 67.8706879330906,
+          "power": 15130433683456.0
+        }
+      ],
+      "spectrum_crop_npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block4\\nearshore_sliding_spectrum_crops.npz"
+    },
+    "land_control": {
+      "roi": {
+        "kind": "land_control",
+        "gec_center_col_row": [
+          7600,
+          8500
+        ],
+        "shape_rows_cols": [
+          1536,
+          12288
+        ],
+        "description": "Persistent terrestrial infrastructure, roads, and surrounding terrain near the central facility.",
+        "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+        "initial_gec_center_lon_lat_deg": [
+          -120.6284815355336,
+          34.58279307278762
+        ],
+        "selected_center_lon_lat_deg": [
+          -120.6284815355336,
+          34.58279307278762
+        ],
+        "selected_center_gec_col_row": [
+          7600.000000000552,
+          8500.000000001477
+        ],
+        "initial_gec_projected_sicd_center_row_col": [
+          7000.743480298111,
+          51656.14957380258
+        ],
+        "selection_stage": "GEC_geographic_localization",
+        "projection_hae_m": 101.52475667382657,
+        "ground_to_sicd_residual_m": 4.075989708778171e-05,
+        "ground_to_sicd_iterations": 2,
+        "sicd_center_row_col": [
+          7001,
+          51656
+        ],
+        "sicd_bounds": {
+          "row_start_inclusive": 6233,
+          "row_stop_exclusive": 7769,
+          "col_start_inclusive": 45512,
+          "col_stop_exclusive": 57800,
+          "rows": 1536,
+          "cols": 12288
+        },
+        "corner_lat_lon_hae": [
+          [
+            34.58524057030778,
+            -120.62398943688878,
+            101.52475667366411
+          ],
+          [
+            34.579125636026895,
+            -120.62555504162708,
+            101.52475667287713
+          ],
+          [
+            34.580342469368986,
+            -120.63295951202183,
+            101.52475667313377
+          ],
+          [
+            34.58646013006972,
+            -120.63139406551998,
+            101.52475667412715
+          ]
+        ],
+        "corner_gec_col_row": [
+          [
+            6477.493048592397,
+            7388.971290607694
+          ],
+          [
+            8696.375681007728,
+            7390.399512692962
+          ],
+          [
+            8722.72938160525,
+            9606.744030712427
+          ],
+          [
+            6502.909357314796,
+            9605.561161069409
+          ]
+        ],
+        "local_ground_jacobian_EN_m_per_pixel": [
+          [
+            -0.44258548358816335,
+            -0.011690203570361704
+          ],
+          [
+            0.08803888376735126,
+            -0.05522177698318064
+          ]
+        ],
+        "local_row_ground_spacing_m": 0.45125686181815516,
+        "local_col_ground_spacing_m": 0.05644559781503459,
+        "local_row_axis_bearing_deg_clockwise_from_north": 281.25039319724584,
+        "local_col_axis_bearing_deg_clockwise_from_north": 191.9527910378803,
+        "approximate_ground_extent_row_col_m": [
+          693.1305397526863,
+          693.603505951145
+        ]
+      },
+      "fixed_physical_target_from_nearshore_block3": {
+        "k_east_cycles_per_m": 0.007888587526182843,
+        "k_north_cycles_per_m": 0.0011364765399986194,
+        "wavelength_m": 125.47002843394186,
+        "wavevector_bearing_deg_mod_180": 81.80203705496223
+      },
+      "fixed_patch_center": {
+        "method": "nearest land-control FFT bin to the fixed nearshore physical EN wavevector",
+        "crop_index_row_col": [
+          59,
+          62
+        ],
+        "fft_bin_offset_row_col": [
+          -5,
+          -2
+        ],
+        "nearest_integer_bin_k_east_cycles_per_m": 0.007620379591338745,
+        "nearest_integer_bin_k_north_cycles_per_m": 0.0013341951669343655,
+        "nearest_integer_bin_wavelength_m": 129.2608396133934
+      },
+      "primary_fixed_patch_phase": {
+        "patch_radius_bins": 2,
+        "patch_shape": [
+          5,
+          5
+        ],
+        "patch_weight": "Gaussian sigma=1 bin",
+        "cross_convention": "F_secondary * conj(F_reference)",
+        "reference_chronological_index": 1,
+        "wrapped_phase_relative_reference_rad": [
+          -1.648563004339073e-17,
+          0.17742167867671174,
+          0.4312191985475327,
+          0.528862078739235,
+          0.557604718834449,
+          0.501068561610347,
+          0.39466353976303925,
+          0.3049815374038567,
+          0.281348060778186,
+          0.22475352165502638,
+          0.328077993404207
+        ],
+        "direct_reference_magnitude_squared_coherence": [
+          0.9999999999999997,
+          0.936582294062379,
+          0.6217728064777048,
+          0.5588694277128651,
+          0.5386852581176084,
+          0.5484507704042001,
+          0.5757807869049313,
+          0.578139626783747,
+          0.577799604581925,
+          0.575695639471802,
+          0.5137174318191884
+        ],
+        "adjacent_cross_phase_rad": [
+          0.17742167867671174,
+          0.19648794180186843,
+          0.07952614625950763,
+          0.02583897680835152,
+          -0.03722301896428932,
+          -0.07990837358202846,
+          -0.07148608459022017,
+          -0.011396371917166939,
+          -0.03675534639555781,
+          0.08716324598229837
+        ],
+        "adjacent_magnitude_squared_coherence": [
+          0.936582294062379,
+          0.8246574331620647,
+          0.9943240556553254,
+          0.9991448168886091,
+          0.9980355821323497,
+          0.995363794613846,
+          0.9968285595478276,
+          0.9996337816934824,
+          0.9985243471251467,
+          0.9908562507051802
+        ],
+        "direct_temporal_wrapped_step_rad": [
+          0.17742167867671177,
+          0.253797519870821,
+          0.09764288019170227,
+          0.02874264009521399,
+          -0.056536157224102,
+          -0.10640502184730771,
+          -0.08968200235918257,
+          -0.02363347662567067,
+          -0.05659453912315965,
+          0.10332447174918065
+        ],
+        "direct_step_minus_adjacent_cross_phase_rad": [
+          2.7755575615628914e-17,
+          0.057309578068952566,
+          0.018116733932194637,
+          0.0029036632868624686,
+          -0.01931313825981268,
+          -0.026496648265279255,
+          -0.018195917768962403,
+          -0.01223710470850373,
+          -0.01983919272760184,
+          0.01616122576688228
+        ],
+        "unwrapping_criteria": {
+          "maximum_abs_direct_temporal_step_rad": 0.253797519870821,
+          "maximum_abs_adjacent_cross_phase_rad": 0.19648794180186843,
+          "minimum_adjacent_magnitude_squared_coherence": 0.8246574331620647,
+          "maximum_abs_direct_step_minus_adjacent_cross_phase_rad": 0.057309578068952566,
+          "required_maximum_abs_step_rad": 1.5707963267948966,
+          "required_minimum_adjacent_coherence": 0.5,
+          "required_maximum_step_consistency_error_rad": 0.25
+        },
+        "temporal_unwrapping_justified": true,
+        "unwrapped_phase_relative_reference_rad": [
+          -1.648563004339073e-17,
+          0.17742167867671174,
+          0.4312191985475327,
+          0.528862078739235,
+          0.557604718834449,
+          0.501068561610347,
+          0.39466353976303925,
+          0.3049815374038567,
+          0.281348060778186,
+          0.22475352165502638,
+          0.328077993404207
+        ],
+        "fit_direct_reference_phase": {
+          "intercept_rad": 0.2843783035073603,
+          "slope_rad_per_s": 0.006054358925817259,
+          "predicted_phase_rad": [
+            0.3040119803536587,
+            0.31105111649888695,
+            0.3180732262077735,
+            0.3250848861221857,
+            0.332087736963793,
+            0.33908829171355354,
+            0.3460893844815078,
+            0.353093850217197,
+            0.3601082061187363,
+            0.3671340980766522,
+            0.37417811265864237
+          ],
+          "residual_phase_rad": [
+            -0.3040119803536587,
+            -0.1336294378221752,
+            0.1131459723397592,
+            0.20377719261704924,
+            0.22551698187065594,
+            0.16198026989679343,
+            0.04857415528153147,
+            -0.04811231281334033,
+            -0.07876014534055026,
+            -0.14238057642162583,
+            -0.04610011925443536
+          ],
+          "residual_rmse_rad": 0.15810745377281826,
+          "residual_max_abs_rad": 0.3040119803536587,
+          "r_squared": 0.019287852096246172,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.14031894850391377,
+          "ols_slope_standard_error_rad_per_s": 0.014390495671616939,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.18694430823837677,
+          "hac_slope_standard_error_rad_per_s": 0.01695591539674823,
+          "slope_standard_error_selected_rad_per_s": 0.01695591539674823,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.032302586540737116,
+            0.044411304392371634
+          ],
+          "slope_resolved_from_zero_at_95_percent": false,
+          "period_s": null,
+          "period_1sigma_fit_only_s": null,
+          "period_95_percent_ci_fit_only_s": null,
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        },
+        "adjacent_linked_cumulative_phase_rad": [
+          0.0,
+          0.17742167867671174,
+          0.3739096204785802,
+          0.45343576673808783,
+          0.47927474354643934,
+          0.44205172458215003,
+          0.36214335100012157,
+          0.2906572664099014,
+          0.2792608944927345,
+          0.2425055480971767,
+          0.3296687940794751
+        ],
+        "fit_adjacent_linked_phase": {
+          "intercept_rad": 0.22788464832086633,
+          "slope_rad_per_s": 0.009291172939395981,
+          "predicted_phase_rad": [
+            0.25801498734607503,
+            0.2688174244117699,
+            0.2795937322759208,
+            0.290354003620131,
+            0.3011007563375354,
+            0.3118439854140895,
+            0.322588040147025,
+            0.3333372711218928,
+            0.34410167979640444,
+            0.3548837919959543,
+            0.365693715634577
+          ],
+          "residual_phase_rad": [
+            -0.25801498734607503,
+            -0.09139574573505818,
+            0.09431588820265935,
+            0.16308176311795686,
+            0.17817398720890393,
+            0.13020773916806055,
+            0.03955531085309655,
+            -0.042680004711991404,
+            -0.06484078530366993,
+            -0.11237824389877762,
+            -0.036024921555101896
+          ],
+          "residual_rmse_rad": 0.12814526091775646,
+          "residual_max_abs_rad": 0.25801498734607503,
+          "r_squared": 0.06586522809448692,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.11372777082082501,
+          "ols_slope_standard_error_rad_per_s": 0.01166342116434886,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.1516868101136124,
+          "hac_slope_standard_error_rad_per_s": 0.013738022837167208,
+          "slope_standard_error_selected_rad_per_s": 0.013738022837167208,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.021786393824387136,
+            0.0403687397031791
+          ],
+          "slope_resolved_from_zero_at_95_percent": false,
+          "period_s": null,
+          "period_1sigma_fit_only_s": null,
+          "period_95_percent_ci_fit_only_s": null,
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        }
+      },
+      "conjugate_peak_check": {
+        "center_crop_index_row_col": [
+          69,
+          66
+        ],
+        "fit": {
+          "intercept_rad": -0.2843783035073603,
+          "slope_rad_per_s": -0.0060543589258172555,
+          "predicted_phase_rad": [
+            -0.3040119803536586,
+            -0.3110511164988869,
+            -0.31807322620777345,
+            -0.3250848861221857,
+            -0.332087736963793,
+            -0.3390882917135535,
+            -0.3460893844815078,
+            -0.35309385021719697,
+            -0.36010820611873623,
+            -0.36713409807665215,
+            -0.3741781126586423
+          ],
+          "residual_phase_rad": [
+            0.3040119803536586,
+            0.1336294378221751,
+            -0.11314597233975915,
+            -0.20377719261704924,
+            -0.22551698187065594,
+            -0.1619802698967936,
+            -0.04857415528153136,
+            0.048112312813340385,
+            0.07876014534055015,
+            0.14238057642162577,
+            0.046100119254435246
+          ],
+          "residual_rmse_rad": 0.15810745377281823,
+          "residual_max_abs_rad": 0.3040119803536586,
+          "r_squared": 0.019287852096246616,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.14031894850391374,
+          "ols_slope_standard_error_rad_per_s": 0.014390495671616935,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.18694430823837663,
+          "hac_slope_standard_error_rad_per_s": 0.016955915396748213,
+          "slope_standard_error_selected_rad_per_s": 0.016955915396748213,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.04441130439237159,
+            0.032302586540737074
+          ],
+          "slope_resolved_from_zero_at_95_percent": false,
+          "period_s": null,
+          "period_1sigma_fit_only_s": null,
+          "period_95_percent_ci_fit_only_s": null,
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        },
+        "slope_sum_with_primary_rad_per_s": 3.469446951953614e-18,
+        "period_difference_s": null
+      },
+      "estimator_sensitivity": {
+        "gaussian_patch_radius_1_to_5_bins": {
+          "1": {
+            "intercept_rad": 0.32028913806089604,
+            "slope_rad_per_s": 0.006646844998220127,
+            "predicted_phase_rad": [
+              0.34184418762791063,
+              0.3495721812027854,
+              0.35728148211595595,
+              0.3649793106065323,
+              0.3726674679589701,
+              0.3803531045215448,
+              0.3880393317533521,
+              0.39572926203514247,
+              0.4034300503450441,
+              0.41114350364219965,
+              0.4188768530629017
+            ],
+            "residual_phase_rad": [
+              -0.34184418762791063,
+              -0.1473927116811559,
+              0.12998575634384157,
+              0.229673693533884,
+              0.25267365177678514,
+              0.1800204320148846,
+              0.05118750616263662,
+              -0.05857175456087438,
+              -0.09270092281272835,
+              -0.1602048307643727,
+              -0.04282663238498413
+            ],
+            "residual_rmse_rad": 0.17751406428839528,
+            "residual_max_abs_rad": 0.34184418762791063,
+            "r_squared": 0.01845802032161803,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.15754214144384662,
+            "ols_slope_standard_error_rad_per_s": 0.016156830768167454,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.208974095430409,
+            "hac_slope_standard_error_rad_per_s": 0.018916263646924017,
+            "slope_standard_error_selected_rad_per_s": 0.018916263646924017,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.036144716304048335,
+              0.04943840630048858
+            ],
+            "slope_resolved_from_zero_at_95_percent": false,
+            "period_s": null,
+            "period_1sigma_fit_only_s": null,
+            "period_95_percent_ci_fit_only_s": null,
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          },
+          "2": {
+            "intercept_rad": 0.2843783035073603,
+            "slope_rad_per_s": 0.006054358925817259,
+            "predicted_phase_rad": [
+              0.3040119803536587,
+              0.31105111649888695,
+              0.3180732262077735,
+              0.3250848861221857,
+              0.332087736963793,
+              0.33908829171355354,
+              0.3460893844815078,
+              0.353093850217197,
+              0.3601082061187363,
+              0.3671340980766522,
+              0.37417811265864237
+            ],
+            "residual_phase_rad": [
+              -0.3040119803536587,
+              -0.1336294378221752,
+              0.1131459723397592,
+              0.20377719261704924,
+              0.22551698187065594,
+              0.16198026989679343,
+              0.04857415528153147,
+              -0.04811231281334033,
+              -0.07876014534055026,
+              -0.14238057642162583,
+              -0.04610011925443536
+            ],
+            "residual_rmse_rad": 0.15810745377281826,
+            "residual_max_abs_rad": 0.3040119803536587,
+            "r_squared": 0.019287852096246172,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.14031894850391377,
+            "ols_slope_standard_error_rad_per_s": 0.014390495671616939,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.18694430823837677,
+            "hac_slope_standard_error_rad_per_s": 0.01695591539674823,
+            "slope_standard_error_selected_rad_per_s": 0.01695591539674823,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.032302586540737116,
+              0.044411304392371634
+            ],
+            "slope_resolved_from_zero_at_95_percent": false,
+            "period_s": null,
+            "period_1sigma_fit_only_s": null,
+            "period_95_percent_ci_fit_only_s": null,
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          },
+          "3": {
+            "intercept_rad": 0.2793751183465184,
+            "slope_rad_per_s": 0.006199519368884906,
+            "predicted_phase_rad": [
+              0.29947953590458765,
+              0.3066874436958605,
+              0.3138779168217663,
+              0.3210576896069691,
+              0.32822844211138824,
+              0.3353968434724326,
+              0.34256579575129564,
+              0.34973820186879956,
+              0.35692073528062146,
+              0.36411508133946746,
+              0.3713279845338153
+            ],
+            "residual_phase_rad": [
+              -0.29947953590458765,
+              -0.1319761538996972,
+              0.11181842680219128,
+              0.20044767349153658,
+              0.22148982077302604,
+              0.15938197547651034,
+              0.04835372623745349,
+              -0.0463705884061944,
+              -0.07670781369999341,
+              -0.1399929357356787,
+              -0.046964595134563025
+            ],
+            "residual_rmse_rad": 0.15562915742886302,
+            "residual_max_abs_rad": 0.29947953590458765,
+            "r_squared": 0.02084003441725868,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.1381194827053906,
+            "ols_slope_standard_error_rad_per_s": 0.014164928110065304,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.18418468177511957,
+            "hac_slope_standard_error_rad_per_s": 0.016711397447104582,
+            "slope_standard_error_selected_rad_per_s": 0.016711397447104582,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.03160428806645035,
+              0.04400332680422017
+            ],
+            "slope_resolved_from_zero_at_95_percent": false,
+            "period_s": null,
+            "period_1sigma_fit_only_s": null,
+            "period_95_percent_ci_fit_only_s": null,
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          },
+          "4": {
+            "intercept_rad": 0.27921695002517494,
+            "slope_rad_per_s": 0.006188880780851745,
+            "predicted_phase_rad": [
+              0.299286867712638,
+              0.3064824064867323,
+              0.3136605405139438,
+              0.32082799256260425,
+              0.3279864398095924,
+              0.33514253994784854,
+              0.3422991900585295,
+              0.3494592880809456,
+              0.35662949601889515,
+              0.36381149633296095,
+              0.37101202193784716
+            ],
+            "residual_phase_rad": [
+              -0.299286867712638,
+              -0.13189075596717278,
+              0.11173010800970651,
+              0.2003181464779729,
+              0.22134958619719136,
+              0.15928452784451846,
+              0.04833193874894015,
+              -0.04633147876831056,
+              -0.0766444437055876,
+              -0.13990462827331535,
+              -0.04695613285130068
+            ],
+            "residual_rmse_rad": 0.15552875035680908,
+            "residual_max_abs_rad": 0.299286867712638,
+            "r_squared": 0.020796324101106767,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.1380303723286388,
+            "ols_slope_standard_error_rad_per_s": 0.014155789340821267,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.18406811825118932,
+            "hac_slope_standard_error_rad_per_s": 0.016700931207522442,
+            "slope_standard_error_selected_rad_per_s": 0.016700931207522442,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.031591250375645225,
+              0.043969011937348715
+            ],
+            "slope_resolved_from_zero_at_95_percent": false,
+            "period_s": null,
+            "period_1sigma_fit_only_s": null,
+            "period_95_percent_ci_fit_only_s": null,
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          },
+          "5": {
+            "intercept_rad": 0.2792149021454896,
+            "slope_rad_per_s": 0.006188684295159796,
+            "predicted_phase_rad": [
+              0.29928418264962275,
+              0.30647949297846744,
+              0.31365739911299834,
+              0.3208246236081115,
+              0.32798284358743846,
+              0.3351387165325498,
+              0.34229513943262535,
+              0.34945501013497116,
+              0.3566249904318789,
+              0.36380676273051654,
+              0.3710070597318303
+            ],
+            "residual_phase_rad": [
+              -0.29928418264962275,
+              -0.13188969555925917,
+              0.11172876597264608,
+              0.2003165167354125,
+              0.22134794490500143,
+              0.15928328596254082,
+              0.048331532564410695,
+              -0.04633119885354181,
+              -0.07664377736490624,
+              -0.1399033853194816,
+              -0.04695580639319619
+            ],
+            "residual_rmse_rad": 0.15552743292548898,
+            "residual_max_abs_rad": 0.29928418264962275,
+            "r_squared": 0.0207953760640468,
+            "degrees_of_freedom": 9,
+            "ols_intercept_standard_error_rad": 0.13802920312014702,
+            "ols_slope_standard_error_rad_per_s": 0.014155669431928568,
+            "newey_west_hac_lag": 4,
+            "hac_intercept_standard_error_rad": 0.1840665586307414,
+            "hac_slope_standard_error_rad_per_s": 0.01670078991297464,
+            "slope_standard_error_selected_rad_per_s": 0.01670078991297464,
+            "slope_95_percent_ci_rad_per_s": [
+              -0.0315911272308638,
+              0.043968495821183395
+            ],
+            "slope_resolved_from_zero_at_95_percent": false,
+            "period_s": null,
+            "period_1sigma_fit_only_s": null,
+            "period_95_percent_ci_fit_only_s": null,
+            "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+          }
+        },
+        "patch_period_range_s": null,
+        "single_center_bin": {
+          "intercept_rad": 0.31045178660141426,
+          "slope_rad_per_s": 0.017393254290990968,
+          "predicted_phase_rad": [
+            0.366856360271237,
+            0.3870787300486176,
+            0.407252185458583,
+            0.4273956201950456,
+            0.4475137478023405,
+            0.4676252790862497,
+            0.48773835601477167,
+            0.5078611229676626,
+            0.5280123028659567,
+            0.5481966241033309,
+            0.5684330088891016
+          ],
+          "residual_phase_rad": [
+            -0.366856360271237,
+            -0.16100880736418183,
+            0.14671605113817865,
+            0.23758184068639776,
+            0.25929003707408743,
+            0.1910631784913726,
+            0.06413081422823697,
+            -0.04437250624473571,
+            -0.08917181186572193,
+            -0.17311043368819606,
+            -0.0642620021841952
+          ],
+          "residual_rmse_rad": 0.18837697629023986,
+          "residual_max_abs_rad": 0.366856360271237,
+          "r_squared": 0.10261175160691394,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.167182878508524,
+          "ols_slope_standard_error_rad_per_s": 0.017145542460206446,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.22388585243344458,
+          "hac_slope_standard_error_rad_per_s": 0.0203674699016921,
+          "slope_standard_error_selected_rad_per_s": 0.0203674699016921,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.028681163635198664,
+            0.0634676722171806
+          ],
+          "slope_resolved_from_zero_at_95_percent": false,
+          "period_s": null,
+          "period_1sigma_fit_only_s": null,
+          "period_95_percent_ci_fit_only_s": null,
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        },
+        "adjacent_linked": {
+          "intercept_rad": 0.22788464832086633,
+          "slope_rad_per_s": 0.009291172939395981,
+          "predicted_phase_rad": [
+            0.25801498734607503,
+            0.2688174244117699,
+            0.2795937322759208,
+            0.290354003620131,
+            0.3011007563375354,
+            0.3118439854140895,
+            0.322588040147025,
+            0.3333372711218928,
+            0.34410167979640444,
+            0.3548837919959543,
+            0.365693715634577
+          ],
+          "residual_phase_rad": [
+            -0.25801498734607503,
+            -0.09139574573505818,
+            0.09431588820265935,
+            0.16308176311795686,
+            0.17817398720890393,
+            0.13020773916806055,
+            0.03955531085309655,
+            -0.042680004711991404,
+            -0.06484078530366993,
+            -0.11237824389877762,
+            -0.036024921555101896
+          ],
+          "residual_rmse_rad": 0.12814526091775646,
+          "residual_max_abs_rad": 0.25801498734607503,
+          "r_squared": 0.06586522809448692,
+          "degrees_of_freedom": 9,
+          "ols_intercept_standard_error_rad": 0.11372777082082501,
+          "ols_slope_standard_error_rad_per_s": 0.01166342116434886,
+          "newey_west_hac_lag": 4,
+          "hac_intercept_standard_error_rad": 0.1516868101136124,
+          "hac_slope_standard_error_rad_per_s": 0.013738022837167208,
+          "slope_standard_error_selected_rad_per_s": 0.013738022837167208,
+          "slope_95_percent_ci_rad_per_s": [
+            -0.021786393824387136,
+            0.0403687397031791
+          ],
+          "slope_resolved_from_zero_at_95_percent": false,
+          "period_s": null,
+          "period_1sigma_fit_only_s": null,
+          "period_95_percent_ci_fit_only_s": null,
+          "uncertainty_note": "Selected 1-sigma is max(OLS, Newey-West HAC). It is fit-only; estimator and overlapping-window systematics are reported separately."
+        },
+        "note": "Only the fixed-patch radius-2 direct-reference estimator is primary. Peak drift is not used to retune the phase bin."
+      },
+      "separate_peak_drift_diagnostic_not_used_for_phase": [
+        {
+          "chronological_index": 1,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            1,
+            -3
+          ],
+          "k_east_cycles_per_m": 0.007052728808795908,
+          "k_north_cycles_per_m": 0.005875457543934331,
+          "wavelength_m": 108.9391938324598,
+          "wavevector_bearing_deg_mod_180": 50.20313894021813,
+          "power": 2.491448036635443e+16
+        },
+        {
+          "chronological_index": 2,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            -2
+          ],
+          "k_east_cycles_per_m": 0.008182982612353399,
+          "k_north_cycles_per_m": 0.004162490114220741,
+          "wavelength_m": 108.92268553890587,
+          "wavevector_bearing_deg_mod_180": 63.03863384379614,
+          "power": 1.6982253443743744e+16
+        },
+        {
+          "chronological_index": 3,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            -2
+          ],
+          "k_east_cycles_per_m": 0.008182982612353399,
+          "k_north_cycles_per_m": 0.004162490114220741,
+          "wavelength_m": 108.92268553890587,
+          "wavevector_bearing_deg_mod_180": 63.03863384379614,
+          "power": 1.1088517857804288e+16
+        },
+        {
+          "chronological_index": 4,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            2,
+            2
+          ],
+          "k_east_cycles_per_m": 0.004234665942194456,
+          "k_north_cycles_per_m": -0.0008964598682112061,
+          "wavelength_m": 231.02615206386224,
+          "wavevector_bearing_deg_mod_180": 101.95279103788029,
+          "power": 1.6094484777402368e+16
+        },
+        {
+          "chronological_index": 5,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            2,
+            2
+          ],
+          "k_east_cycles_per_m": 0.004234665942194456,
+          "k_north_cycles_per_m": -0.0008964598682112061,
+          "wavelength_m": 231.02615206386224,
+          "wavevector_bearing_deg_mod_180": 101.95279103788029,
+          "power": 1.884260993807155e+16
+        },
+        {
+          "chronological_index": 6,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            2,
+            2
+          ],
+          "k_east_cycles_per_m": 0.004234665942194456,
+          "k_north_cycles_per_m": -0.0008964598682112061,
+          "wavelength_m": 231.02615206386224,
+          "wavevector_bearing_deg_mod_180": 101.95279103788029,
+          "power": 1.9175295957336064e+16
+        },
+        {
+          "chronological_index": 7,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            -2
+          ],
+          "k_east_cycles_per_m": 0.008182982612353399,
+          "k_north_cycles_per_m": 0.004162490114220741,
+          "wavelength_m": 108.92268553890587,
+          "wavevector_bearing_deg_mod_180": 63.03863384379614,
+          "power": 1.7938282025320448e+16
+        },
+        {
+          "chronological_index": 8,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            -2
+          ],
+          "k_east_cycles_per_m": 0.008182982612353399,
+          "k_north_cycles_per_m": 0.004162490114220741,
+          "wavelength_m": 108.92268553890587,
+          "wavevector_bearing_deg_mod_180": 63.03863384379614,
+          "power": 1.4092360002568192e+16
+        },
+        {
+          "chronological_index": 9,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            -3
+          ],
+          "k_east_cycles_per_m": 0.008464284122860726,
+          "k_north_cycles_per_m": 0.005576637587863929,
+          "wavelength_m": 98.65608893992062,
+          "wavevector_bearing_deg_mod_180": 56.62137473524365,
+          "power": 1.2329982449680384e+16
+        },
+        {
+          "chronological_index": 10,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            -3
+          ],
+          "k_east_cycles_per_m": 0.008464284122860726,
+          "k_north_cycles_per_m": 0.005576637587863929,
+          "wavelength_m": 98.65608893992062,
+          "wavevector_bearing_deg_mod_180": 56.62137473524365,
+          "power": 6744540689989632.0
+        },
+        {
+          "chronological_index": 11,
+          "offset_from_fixed_patch_center_row_col_bins": [
+            0,
+            -3
+          ],
+          "k_east_cycles_per_m": 0.008464284122860726,
+          "k_north_cycles_per_m": 0.005576637587863929,
+          "wavelength_m": 98.65608893992062,
+          "wavevector_bearing_deg_mod_180": 56.62137473524365,
+          "power": 4601178063110144.0
+        }
+      ],
+      "spectrum_crop_npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block4\\land_control_sliding_spectrum_crops.npz"
+    }
+  },
+  "independent_nonoverlap_set": {
+    "chronological_indices": [
+      1,
+      6,
+      11
+    ],
+    "corresponding_block3_look_indices": [
+      3,
+      2,
+      1
+    ],
+    "note": "These are the original three disjoint ~6 s Doppler bands and remain stored separately under results/sublooks_complex for future dispersion work."
+  },
+  "guardrails": {
+    "dwell_sweep_performed": false,
+    "bathymetric_inversion_performed": false,
+    "external_branch_forcing_performed": false
+  }
+}

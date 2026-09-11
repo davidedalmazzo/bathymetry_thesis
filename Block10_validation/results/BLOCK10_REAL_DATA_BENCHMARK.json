@@ -1,0 +1,42 @@
+{
+  "role": "real-data benchmark only; never used to set synthetic parameters",
+  "source_csv": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.csv",
+  "source_sha256": "daa84904817b0aee593dfbe0435051e8069f0f0a07c592567639aa337e972940",
+  "independent_half_plane": "frozen_peak_lobe_flag side only",
+  "unique_sample_count": 22,
+  "k_range_rad_per_m": [
+    0.0328089604833533,
+    0.07801792424569033
+  ],
+  "wavelength_range_m": [
+    80.53515096598672,
+    191.5082103978139
+  ],
+  "omega_obs_range_rad_per_s": [
+    0.345942178024993,
+    0.4228640881115073
+  ],
+  "angle_from_range_range_deg": [
+    0.2793556248566489,
+    56.03497249106259
+  ],
+  "weighted_fit": {
+    "intercept_rad_per_s": 0.28032287522596083,
+    "domega_obs_dk_m_per_s": 1.683018447648656,
+    "rmse_rad_per_s": 0.010162503363073491,
+    "r_squared": 0.8018913827229099,
+    "weights": "1/max(OLS,HAC4 slope standard error)^2"
+  },
+  "weighted_standardized_k_plus_angle": {
+    "intercept_rad_per_s": 0.37380261824235467,
+    "coefficient_per_1sd_k_rad_per_m": 0.02224388641605148,
+    "coefficient_per_1sd_angle_deg": -0.0009009405596183196,
+    "angle_to_k_effect_magnitude_ratio": 0.04050283942145061,
+    "r_squared": 0.7983025466359341
+  },
+  "spearman_omega_vs_angle": {
+    "rho": 0.11778076651797446,
+    "nominal_p_value_not_used": 0.6016587289584636
+  },
+  "interpretation": "The unique-bin ridge is much flatter than finite-depth dispersion. After k is included, the standardized angle effect is small relative to the k effect; overlapping patches preclude independent-bin inference."
+}

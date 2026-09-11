@@ -1,0 +1,3649 @@
+{
+  "generated_utc": "2026-09-01T13:35:02.772471+00:00",
+  "scope": "Block 10 minimal physical ocean-to-SAR forward model",
+  "guardrails": {
+    "blocks_4_to_9_modified": false,
+    "block8_shortlist_modified": false,
+    "new_radar_download": false,
+    "real_data_dwell_sweep": false,
+    "bathymetric_inversion": false,
+    "Vandenberg_17p902_retuned": false,
+    "synthetic_calibrated_to_real_benchmark": false
+  },
+  "real_data_benchmark": {
+    "role": "real-data benchmark only; never used to set synthetic parameters",
+    "source_csv": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.csv",
+    "source_sha256": "daa84904817b0aee593dfbe0435051e8069f0f0a07c592567639aa337e972940",
+    "independent_half_plane": "frozen_peak_lobe_flag side only",
+    "unique_sample_count": 22,
+    "k_range_rad_per_m": [
+      0.0328089604833533,
+      0.07801792424569033
+    ],
+    "wavelength_range_m": [
+      80.53515096598672,
+      191.5082103978139
+    ],
+    "omega_obs_range_rad_per_s": [
+      0.345942178024993,
+      0.4228640881115073
+    ],
+    "angle_from_range_range_deg": [
+      0.2793556248566489,
+      56.03497249106259
+    ],
+    "weighted_fit": {
+      "intercept_rad_per_s": 0.28032287522596083,
+      "domega_obs_dk_m_per_s": 1.683018447648656,
+      "rmse_rad_per_s": 0.010162503363073491,
+      "r_squared": 0.8018913827229099,
+      "weights": "1/max(OLS,HAC4 slope standard error)^2"
+    },
+    "weighted_standardized_k_plus_angle": {
+      "intercept_rad_per_s": 0.37380261824235467,
+      "coefficient_per_1sd_k_rad_per_m": 0.02224388641605148,
+      "coefficient_per_1sd_angle_deg": -0.0009009405596183196,
+      "angle_to_k_effect_magnitude_ratio": 0.04050283942145061,
+      "r_squared": 0.7983025466359341
+    },
+    "spearman_omega_vs_angle": {
+      "rho": 0.11778076651797446,
+      "nominal_p_value_not_used": 0.6016587289584636
+    },
+    "interpretation": "The unique-bin ridge is much flatter than finite-depth dispersion. After k is included, the standardized angle effect is small relative to the k effect; overlapping patches preclude independent-bin inference."
+  },
+  "frozen_truth": {
+    "frozen_before_forward_processing": true,
+    "depth_m": 10.0,
+    "gravity_m_per_s2": 9.80665,
+    "amplitude_rule": "a_j=0.012/k_j, equal component steepness ka=0.012",
+    "amplitudes_not_tuned_to_Vandenberg": true,
+    "radar_geometry": {
+      "incidence_angle_deg": 21.842925232944808,
+      "slant_range_m": 610403.7510692304,
+      "platform_speed_m_per_s": 7657.75057715643,
+      "range_bearing_toward_sensor_deg": 101.91931056749142,
+      "grid_row_positive_bearing_deg": 281.9193113543813,
+      "azimuth_positive_bearing_deg": 191.18580265546754,
+      "los_radial_velocity_positive": "toward_sensor",
+      "azimuth_mapping_sign": 1,
+      "range_over_velocity_s": 79.71058144543186,
+      "mapping_equation": "y_SAR = y + (R/V) u_LOS for u_LOS positive toward sensor",
+      "sign_derivation": "Positive velocity toward the sensor is negative range-rate; zero-Doppler location shifts in positive along-track image coordinate by +(R/V)u_LOS."
+    },
+    "grid": {
+      "range_samples": 768,
+      "azimuth_samples": 512,
+      "range_pixel_spacing_m": 8.0,
+      "azimuth_pixel_spacing_m": 8.0
+    },
+    "angle_cases": {
+      "range_0deg": {
+        "equivalent_Hm0_m_for_six_discrete_components": 1.781762040621235,
+        "components": [
+          {
+            "component_id": "K1",
+            "range_fft_mode": 32,
+            "azimuth_fft_mode": 0,
+            "k_range_rad_per_m": 0.032724923474893676,
+            "k_azimuth_rad_per_m": 0.0,
+            "k_rad_per_m": 0.032724923474893676,
+            "wavelength_m": 192.0,
+            "omega_rad_per_s": 0.3184750731597486,
+            "period_s": 19.728970449212866,
+            "angle_from_range_deg": 0.0,
+            "amplitude_m": 0.3666929888837269,
+            "steepness_ka": 0.012,
+            "phase_rad": 0.17
+          },
+          {
+            "component_id": "K2",
+            "range_fft_mode": 38,
+            "azimuth_fft_mode": 0,
+            "k_range_rad_per_m": 0.03886084662643624,
+            "k_azimuth_rad_per_m": 0.0,
+            "k_rad_per_m": 0.03886084662643624,
+            "wavelength_m": 161.6842105263158,
+            "omega_rad_per_s": 0.3755875584891217,
+            "period_s": 16.728949522329742,
+            "angle_from_range_deg": 0.0,
+            "amplitude_m": 0.3087940959020858,
+            "steepness_ka": 0.012,
+            "phase_rad": -0.83
+          },
+          {
+            "component_id": "K3",
+            "range_fft_mode": 46,
+            "azimuth_fft_mode": 0,
+            "k_range_rad_per_m": 0.04704207749515966,
+            "k_azimuth_rad_per_m": 0.0,
+            "k_rad_per_m": 0.04704207749515966,
+            "wavelength_m": 133.56521739130437,
+            "omega_rad_per_s": 0.44978794280351747,
+            "period_s": 13.969216844757204,
+            "angle_from_range_deg": 0.0,
+            "amplitude_m": 0.25509077487563614,
+            "steepness_ka": 0.012,
+            "phase_rad": 1.21
+          },
+          {
+            "component_id": "K4",
+            "range_fft_mode": 55,
+            "azimuth_fft_mode": 0,
+            "k_range_rad_per_m": 0.056245962222473515,
+            "k_azimuth_rad_per_m": 0.0,
+            "k_rad_per_m": 0.056245962222473515,
+            "wavelength_m": 111.7090909090909,
+            "omega_rad_per_s": 0.530280878828185,
+            "period_s": 11.848787233407649,
+            "angle_from_range_deg": 0.0,
+            "amplitude_m": 0.2133486480778047,
+            "steepness_ka": 0.012,
+            "phase_rad": -1.74
+          },
+          {
+            "component_id": "K5",
+            "range_fft_mode": 65,
+            "azimuth_fft_mode": 0,
+            "k_range_rad_per_m": 0.06647250080837779,
+            "k_azimuth_rad_per_m": 0.0,
+            "k_rad_per_m": 0.06647250080837779,
+            "wavelength_m": 94.52307692307693,
+            "omega_rad_per_s": 0.6156812705694555,
+            "period_s": 10.205256530490438,
+            "angle_from_range_deg": 0.0,
+            "amplitude_m": 0.18052577914275783,
+            "steepness_ka": 0.012,
+            "phase_rad": 2.13
+          },
+          {
+            "component_id": "K6",
+            "range_fft_mode": 76,
+            "azimuth_fft_mode": 0,
+            "k_range_rad_per_m": 0.07772169325287248,
+            "k_azimuth_rad_per_m": 0.0,
+            "k_rad_per_m": 0.07772169325287248,
+            "wavelength_m": 80.8421052631579,
+            "omega_rad_per_s": 0.7044617949231886,
+            "period_s": 8.919128549568365,
+            "angle_from_range_deg": 0.0,
+            "amplitude_m": 0.1543970479510429,
+            "steepness_ka": 0.012,
+            "phase_rad": -2.51
+          }
+        ]
+      },
+      "vandenberg_like_22deg": {
+        "equivalent_Hm0_m_for_six_discrete_components": 1.7532489664904407,
+        "components": [
+          {
+            "component_id": "K1",
+            "range_fft_mode": 30,
+            "azimuth_fft_mode": 8,
+            "k_range_rad_per_m": 0.03067961575771282,
+            "k_azimuth_rad_per_m": 0.01227184630308513,
+            "k_rad_per_m": 0.03304295741496885,
+            "wavelength_m": 190.15202629330113,
+            "omega_rad_per_s": 0.3214634678993693,
+            "period_s": 19.545565622860977,
+            "angle_from_range_deg": 21.80140948635181,
+            "amplitude_m": 0.36316361908222716,
+            "steepness_ka": 0.012,
+            "phase_rad": 0.17
+          },
+          {
+            "component_id": "K2",
+            "range_fft_mode": 36,
+            "azimuth_fft_mode": 10,
+            "k_range_rad_per_m": 0.03681553890925539,
+            "k_azimuth_rad_per_m": 0.015339807878856412,
+            "k_rad_per_m": 0.03988350048502667,
+            "wavelength_m": 157.53846153846155,
+            "omega_rad_per_s": 0.3849895181152556,
+            "period_s": 16.320406170898835,
+            "angle_from_range_deg": 22.619864948040426,
+            "amplitude_m": 0.3008762985712631,
+            "steepness_ka": 0.012,
+            "phase_rad": -0.83
+          },
+          {
+            "component_id": "K3",
+            "range_fft_mode": 43,
+            "azimuth_fft_mode": 12,
+            "k_range_rad_per_m": 0.04397411591938838,
+            "k_azimuth_rad_per_m": 0.018407769454627694,
+            "k_rad_per_m": 0.04767146785223349,
+            "wavelength_m": 131.80180074705228,
+            "omega_rad_per_s": 0.45539641159388394,
+            "period_s": 13.797177903067979,
+            "angle_from_range_deg": 22.714412353167237,
+            "amplitude_m": 0.2517228971676772,
+            "steepness_ka": 0.012,
+            "phase_rad": 1.21
+          },
+          {
+            "component_id": "K4",
+            "range_fft_mode": 52,
+            "azimuth_fft_mode": 14,
+            "k_range_rad_per_m": 0.05317800064670223,
+            "k_azimuth_rad_per_m": 0.021475731030398976,
+            "k_rad_per_m": 0.05735073474743549,
+            "wavelength_m": 109.55718936906116,
+            "omega_rad_per_s": 0.5397163144613277,
+            "period_s": 11.641644209793096,
+            "angle_from_range_deg": 21.991129917177126,
+            "amplitude_m": 0.20923881887209117,
+            "steepness_ka": 0.012,
+            "phase_rad": -1.74
+          },
+          {
+            "component_id": "K5",
+            "range_fft_mode": 61,
+            "azimuth_fft_mode": 17,
+            "k_range_rad_per_m": 0.06238188537401607,
+            "k_azimuth_rad_per_m": 0.0260776733940559,
+            "k_rad_per_m": 0.06761319895156516,
+            "wavelength_m": 92.92838387487859,
+            "omega_rad_per_s": 0.6249328716310654,
+            "period_s": 10.054176364223837,
+            "angle_from_range_deg": 22.686526674230286,
+            "amplitude_m": 0.1774801397667373,
+            "steepness_ka": 0.012,
+            "phase_rad": 2.13
+          },
+          {
+            "component_id": "K6",
+            "range_fft_mode": 71,
+            "azimuth_fft_mode": 20,
+            "k_range_rad_per_m": 0.07260842395992036,
+            "k_azimuth_rad_per_m": 0.030679615757712823,
+            "k_rad_per_m": 0.07882399414508527,
+            "wavelength_m": 79.71158243535096,
+            "omega_rad_per_s": 0.712866124584588,
+            "period_s": 8.813976552527333,
+            "angle_from_range_deg": 22.905769658417185,
+            "amplitude_m": 0.1522379083951585,
+            "steepness_ka": 0.012,
+            "phase_rad": -2.51
+          }
+        ]
+      }
+    }
+  },
+  "frozen_truth_sha256": "faee7b8feb385452c41368594f53b417266454d80d4b8a331f63fe54ecd0d11a",
+  "physical_formulation": {
+    "surface": "eta=sum a cos(k dot x-omega t+phi)",
+    "dispersion": "omega^2=g k tanh(k h0), h0=10 m",
+    "surface_horizontal_velocity": "u_h=a omega coth(kh) cos(psi) k_hat",
+    "surface_vertical_velocity": "w=a omega sin(psi)",
+    "LOS_projection": "u_LOS=sin(incidence) u_range + cos(incidence) w, positive toward sensor",
+    "RAR": "10 [max(n dot LOS,0)/cos(incidence)]^2",
+    "bunching": "y_SAR=y+(R/V)u_LOS",
+    "jacobian": "J=1+(R/V) partial u_LOS/partial y; M3/M4 use conservative forward splatting and retain multi-source folds",
+    "temporal_look": "rectangular slow-time brightness average by Gauss-Legendre quadrature"
+  },
+  "model_definitions": {
+    "M0": "pure wave snapshots",
+    "M1": "RAR/tilt only",
+    "M2": "velocity displacement only",
+    "M3": "velocity displacement + density/Jacobian",
+    "M4": "RAR + displacement + density/Jacobian"
+  },
+  "nominal_models": {
+    "range_0deg": {
+      "M0": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": -0.00011457547140751127,
+        "bias_max_abs_rad_per_s": 0.0038605604551941175,
+        "rmse_rad_per_s": 0.002403760533570817,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04225136694894782,
+          "domega_dk_m_per_s": 8.589912757621686
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.0427655457117757,
+          "domega_hat_dk_m_per_s": 8.57808917970245
+        },
+        "constantness_ratio_std_hat_over_std_truth": 0.9987043785086822,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.9999141109652264,
+        "minimum_independent_coherence": 0.9924317546405057,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              128,
+              96
+            ],
+            "k_rad_per_m": 0.032724923474893676,
+            "wavelength_m": 192.0,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3184750731597486,
+            "signed_phase_slope_rad_per_s": -0.31778222453476607,
+            "omega_hat_aligned_rad_per_s": 0.31778222453476607,
+            "omega_hat_absolute_rad_per_s": 0.31778222453476607,
+            "bias_aligned_rad_per_s": -0.0006928486249825339,
+            "fit_standard_error_rad_per_s": 0.00010453396215607324,
+            "fit_r_squared": 0.999999439461368,
+            "minimum_adjacent_coherence": 0.9999847276094849,
+            "minimum_independent_coherence": 0.9987938221449473,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              134,
+              96
+            ],
+            "k_rad_per_m": 0.03886084662643624,
+            "wavelength_m": 161.6842105263158,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3755875584891217,
+            "signed_phase_slope_rad_per_s": -0.37524542918753506,
+            "omega_hat_aligned_rad_per_s": 0.37524542918753506,
+            "omega_hat_absolute_rad_per_s": 0.37524542918753506,
+            "bias_aligned_rad_per_s": -0.00034212930158661337,
+            "fit_standard_error_rad_per_s": 0.00017079677158771418,
+            "fit_r_squared": 0.9999989364143776,
+            "minimum_adjacent_coherence": 0.9999906502687952,
+            "minimum_independent_coherence": 0.9995245386465362,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              142,
+              96
+            ],
+            "k_rad_per_m": 0.04704207749515966,
+            "wavelength_m": 133.56521739130437,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.44978794280351747,
+            "signed_phase_slope_rad_per_s": -0.4536485032587116,
+            "omega_hat_aligned_rad_per_s": 0.4536485032587116,
+            "omega_hat_absolute_rad_per_s": 0.4536485032587116,
+            "bias_aligned_rad_per_s": 0.0038605604551941175,
+            "fit_standard_error_rad_per_s": 0.00012114368731373518,
+            "fit_r_squared": 0.9999996156525208,
+            "minimum_adjacent_coherence": 0.9999141109652264,
+            "minimum_independent_coherence": 0.9924317546405057,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              151,
+              96
+            ],
+            "k_rad_per_m": 0.056245962222473515,
+            "wavelength_m": 111.7090909090909,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.530280878828185,
+            "signed_phase_slope_rad_per_s": -0.5288163395071886,
+            "omega_hat_aligned_rad_per_s": 0.5288163395071886,
+            "omega_hat_absolute_rad_per_s": 0.5288163395071886,
+            "bias_aligned_rad_per_s": -0.0014645393209963276,
+            "fit_standard_error_rad_per_s": 6.481165543258706e-05,
+            "fit_r_squared": 0.9999999224105766,
+            "minimum_adjacent_coherence": 0.9999729456538543,
+            "minimum_independent_coherence": 0.9991290116990716,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              161,
+              96
+            ],
+            "k_rad_per_m": 0.06647250080837779,
+            "wavelength_m": 94.52307692307693,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.6156812705694555,
+            "signed_phase_slope_rad_per_s": -0.6119253265503496,
+            "omega_hat_aligned_rad_per_s": 0.6119253265503496,
+            "omega_hat_absolute_rad_per_s": 0.6119253265503496,
+            "bias_aligned_rad_per_s": -0.00375594401910595,
+            "fit_standard_error_rad_per_s": 0.00013972362379064963,
+            "fit_r_squared": 0.9999997297863378,
+            "minimum_adjacent_coherence": 0.9999468164593119,
+            "minimum_independent_coherence": 0.9967439713238195,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              172,
+              96
+            ],
+            "k_rad_per_m": 0.07772169325287248,
+            "wavelength_m": 80.8421052631579,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.7044617949231886,
+            "signed_phase_slope_rad_per_s": -0.7061692429062209,
+            "omega_hat_aligned_rad_per_s": 0.7061692429062209,
+            "omega_hat_absolute_rad_per_s": 0.7061692429062209,
+            "bias_aligned_rad_per_s": 0.0017074479830322398,
+            "fit_standard_error_rad_per_s": 0.00018992104189690298,
+            "fit_r_squared": 0.999999626488865,
+            "minimum_adjacent_coherence": 0.9999651389871772,
+            "minimum_independent_coherence": 0.9977294297530851,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      },
+      "M1": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": -5.054463149284372e-05,
+        "bias_max_abs_rad_per_s": 0.0034485766032983922,
+        "rmse_rad_per_s": 0.0021279028235424175,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04225136694894782,
+          "domega_dk_m_per_s": 8.589912757621686
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.042654258710424865,
+          "domega_hat_dk_m_per_s": 8.581385991149544
+        },
+        "constantness_ratio_std_hat_over_std_truth": 0.9991054834591437,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.999936772765663,
+        "minimum_independent_coherence": 0.9941990043627701,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              128,
+              96
+            ],
+            "k_rad_per_m": 0.032724923474893676,
+            "wavelength_m": 192.0,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3184750731597486,
+            "signed_phase_slope_rad_per_s": -0.3175030224867254,
+            "omega_hat_aligned_rad_per_s": 0.3175030224867254,
+            "omega_hat_absolute_rad_per_s": 0.3175030224867254,
+            "bias_aligned_rad_per_s": -0.0009720506730231948,
+            "fit_standard_error_rad_per_s": 0.00014885762595052933,
+            "fit_r_squared": 0.9999988661914334,
+            "minimum_adjacent_coherence": 0.9999749733895755,
+            "minimum_independent_coherence": 0.9980609818059194,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              134,
+              96
+            ],
+            "k_rad_per_m": 0.03886084662643624,
+            "wavelength_m": 161.6842105263158,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3755875584891217,
+            "signed_phase_slope_rad_per_s": -0.37551604616293466,
+            "omega_hat_aligned_rad_per_s": 0.37551604616293466,
+            "omega_hat_absolute_rad_per_s": 0.37551604616293466,
+            "bias_aligned_rad_per_s": -7.151232618701764e-05,
+            "fit_standard_error_rad_per_s": 0.00017616353637732717,
+            "fit_r_squared": 0.9999988689680215,
+            "minimum_adjacent_coherence": 0.9999934707964296,
+            "minimum_independent_coherence": 0.9998439952511721,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              142,
+              96
+            ],
+            "k_rad_per_m": 0.04704207749515966,
+            "wavelength_m": 133.56521739130437,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.44978794280351747,
+            "signed_phase_slope_rad_per_s": -0.45323651940681586,
+            "omega_hat_aligned_rad_per_s": 0.45323651940681586,
+            "omega_hat_absolute_rad_per_s": 0.45323651940681586,
+            "bias_aligned_rad_per_s": 0.0034485766032983922,
+            "fit_standard_error_rad_per_s": 6.820221929501708e-05,
+            "fit_r_squared": 0.9999998732017783,
+            "minimum_adjacent_coherence": 0.999936772765663,
+            "minimum_independent_coherence": 0.9941990043627701,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              151,
+              96
+            ],
+            "k_rad_per_m": 0.056245962222473515,
+            "wavelength_m": 111.7090909090909,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.530280878828185,
+            "signed_phase_slope_rad_per_s": -0.5295388874689977,
+            "omega_hat_aligned_rad_per_s": 0.5295388874689977,
+            "omega_hat_absolute_rad_per_s": 0.5295388874689977,
+            "bias_aligned_rad_per_s": -0.0007419913591872884,
+            "fit_standard_error_rad_per_s": 3.2442615844127646e-05,
+            "fit_r_squared": 0.9999999804007565,
+            "minimum_adjacent_coherence": 0.999980174324765,
+            "minimum_independent_coherence": 0.9994828804829431,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              161,
+              96
+            ],
+            "k_rad_per_m": 0.06647250080837779,
+            "wavelength_m": 94.52307692307693,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.6156812705694555,
+            "signed_phase_slope_rad_per_s": -0.612264871967266,
+            "omega_hat_aligned_rad_per_s": 0.612264871967266,
+            "omega_hat_absolute_rad_per_s": 0.612264871967266,
+            "bias_aligned_rad_per_s": -0.003416398602189563,
+            "fit_standard_error_rad_per_s": 0.00010680172928010822,
+            "fit_r_squared": 0.9999998405393652,
+            "minimum_adjacent_coherence": 0.9999584115004518,
+            "minimum_independent_coherence": 0.9971893432256532,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              172,
+              96
+            ],
+            "k_rad_per_m": 0.07772169325287248,
+            "wavelength_m": 80.8421052631579,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.7044617949231886,
+            "signed_phase_slope_rad_per_s": -0.7059119034915202,
+            "omega_hat_aligned_rad_per_s": 0.7059119034915202,
+            "omega_hat_absolute_rad_per_s": 0.7059119034915202,
+            "bias_aligned_rad_per_s": 0.0014501085683316095,
+            "fit_standard_error_rad_per_s": 0.00015638312656610572,
+            "fit_r_squared": 0.9999997476239346,
+            "minimum_adjacent_coherence": 0.9999773442925318,
+            "minimum_independent_coherence": 0.9983176785344521,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      },
+      "M2": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": -0.00011457547140751127,
+        "bias_max_abs_rad_per_s": 0.0038605604551941175,
+        "rmse_rad_per_s": 0.002403760533570817,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04225136694894782,
+          "domega_dk_m_per_s": 8.589912757621686
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.0427655457117757,
+          "domega_hat_dk_m_per_s": 8.57808917970245
+        },
+        "constantness_ratio_std_hat_over_std_truth": 0.9987043785086822,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.9999141109652264,
+        "minimum_independent_coherence": 0.9924317546405057,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              128,
+              96
+            ],
+            "k_rad_per_m": 0.032724923474893676,
+            "wavelength_m": 192.0,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3184750731597486,
+            "signed_phase_slope_rad_per_s": -0.31778222453476607,
+            "omega_hat_aligned_rad_per_s": 0.31778222453476607,
+            "omega_hat_absolute_rad_per_s": 0.31778222453476607,
+            "bias_aligned_rad_per_s": -0.0006928486249825339,
+            "fit_standard_error_rad_per_s": 0.00010453396215607324,
+            "fit_r_squared": 0.999999439461368,
+            "minimum_adjacent_coherence": 0.9999847276094849,
+            "minimum_independent_coherence": 0.9987938221449473,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              134,
+              96
+            ],
+            "k_rad_per_m": 0.03886084662643624,
+            "wavelength_m": 161.6842105263158,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3755875584891217,
+            "signed_phase_slope_rad_per_s": -0.37524542918753506,
+            "omega_hat_aligned_rad_per_s": 0.37524542918753506,
+            "omega_hat_absolute_rad_per_s": 0.37524542918753506,
+            "bias_aligned_rad_per_s": -0.00034212930158661337,
+            "fit_standard_error_rad_per_s": 0.00017079677158771418,
+            "fit_r_squared": 0.9999989364143776,
+            "minimum_adjacent_coherence": 0.9999906502687952,
+            "minimum_independent_coherence": 0.9995245386465362,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              142,
+              96
+            ],
+            "k_rad_per_m": 0.04704207749515966,
+            "wavelength_m": 133.56521739130437,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.44978794280351747,
+            "signed_phase_slope_rad_per_s": -0.4536485032587116,
+            "omega_hat_aligned_rad_per_s": 0.4536485032587116,
+            "omega_hat_absolute_rad_per_s": 0.4536485032587116,
+            "bias_aligned_rad_per_s": 0.0038605604551941175,
+            "fit_standard_error_rad_per_s": 0.00012114368731373518,
+            "fit_r_squared": 0.9999996156525208,
+            "minimum_adjacent_coherence": 0.9999141109652264,
+            "minimum_independent_coherence": 0.9924317546405057,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              151,
+              96
+            ],
+            "k_rad_per_m": 0.056245962222473515,
+            "wavelength_m": 111.7090909090909,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.530280878828185,
+            "signed_phase_slope_rad_per_s": -0.5288163395071886,
+            "omega_hat_aligned_rad_per_s": 0.5288163395071886,
+            "omega_hat_absolute_rad_per_s": 0.5288163395071886,
+            "bias_aligned_rad_per_s": -0.0014645393209963276,
+            "fit_standard_error_rad_per_s": 6.481165543258706e-05,
+            "fit_r_squared": 0.9999999224105766,
+            "minimum_adjacent_coherence": 0.9999729456538543,
+            "minimum_independent_coherence": 0.9991290116990716,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              161,
+              96
+            ],
+            "k_rad_per_m": 0.06647250080837779,
+            "wavelength_m": 94.52307692307693,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.6156812705694555,
+            "signed_phase_slope_rad_per_s": -0.6119253265503496,
+            "omega_hat_aligned_rad_per_s": 0.6119253265503496,
+            "omega_hat_absolute_rad_per_s": 0.6119253265503496,
+            "bias_aligned_rad_per_s": -0.00375594401910595,
+            "fit_standard_error_rad_per_s": 0.00013972362379064963,
+            "fit_r_squared": 0.9999997297863378,
+            "minimum_adjacent_coherence": 0.9999468164593119,
+            "minimum_independent_coherence": 0.9967439713238195,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              172,
+              96
+            ],
+            "k_rad_per_m": 0.07772169325287248,
+            "wavelength_m": 80.8421052631579,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.7044617949231886,
+            "signed_phase_slope_rad_per_s": -0.7061692429062209,
+            "omega_hat_aligned_rad_per_s": 0.7061692429062209,
+            "omega_hat_absolute_rad_per_s": 0.7061692429062209,
+            "bias_aligned_rad_per_s": 0.0017074479830322398,
+            "fit_standard_error_rad_per_s": 0.00018992104189690298,
+            "fit_r_squared": 0.999999626488865,
+            "minimum_adjacent_coherence": 0.9999651389871772,
+            "minimum_independent_coherence": 0.9977294297530851,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      },
+      "M3": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": -0.00011457547140751127,
+        "bias_max_abs_rad_per_s": 0.0038605604551941175,
+        "rmse_rad_per_s": 0.002403760533570817,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04225136694894782,
+          "domega_dk_m_per_s": 8.589912757621686
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.0427655457117757,
+          "domega_hat_dk_m_per_s": 8.57808917970245
+        },
+        "constantness_ratio_std_hat_over_std_truth": 0.9987043785086822,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.9999141109652264,
+        "minimum_independent_coherence": 0.9924317546405057,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              128,
+              96
+            ],
+            "k_rad_per_m": 0.032724923474893676,
+            "wavelength_m": 192.0,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3184750731597486,
+            "signed_phase_slope_rad_per_s": -0.31778222453476607,
+            "omega_hat_aligned_rad_per_s": 0.31778222453476607,
+            "omega_hat_absolute_rad_per_s": 0.31778222453476607,
+            "bias_aligned_rad_per_s": -0.0006928486249825339,
+            "fit_standard_error_rad_per_s": 0.00010453396215607324,
+            "fit_r_squared": 0.999999439461368,
+            "minimum_adjacent_coherence": 0.9999847276094849,
+            "minimum_independent_coherence": 0.9987938221449473,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              134,
+              96
+            ],
+            "k_rad_per_m": 0.03886084662643624,
+            "wavelength_m": 161.6842105263158,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3755875584891217,
+            "signed_phase_slope_rad_per_s": -0.37524542918753506,
+            "omega_hat_aligned_rad_per_s": 0.37524542918753506,
+            "omega_hat_absolute_rad_per_s": 0.37524542918753506,
+            "bias_aligned_rad_per_s": -0.00034212930158661337,
+            "fit_standard_error_rad_per_s": 0.00017079677158771418,
+            "fit_r_squared": 0.9999989364143776,
+            "minimum_adjacent_coherence": 0.9999906502687952,
+            "minimum_independent_coherence": 0.9995245386465362,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              142,
+              96
+            ],
+            "k_rad_per_m": 0.04704207749515966,
+            "wavelength_m": 133.56521739130437,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.44978794280351747,
+            "signed_phase_slope_rad_per_s": -0.4536485032587116,
+            "omega_hat_aligned_rad_per_s": 0.4536485032587116,
+            "omega_hat_absolute_rad_per_s": 0.4536485032587116,
+            "bias_aligned_rad_per_s": 0.0038605604551941175,
+            "fit_standard_error_rad_per_s": 0.00012114368731373518,
+            "fit_r_squared": 0.9999996156525208,
+            "minimum_adjacent_coherence": 0.9999141109652264,
+            "minimum_independent_coherence": 0.9924317546405057,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              151,
+              96
+            ],
+            "k_rad_per_m": 0.056245962222473515,
+            "wavelength_m": 111.7090909090909,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.530280878828185,
+            "signed_phase_slope_rad_per_s": -0.5288163395071886,
+            "omega_hat_aligned_rad_per_s": 0.5288163395071886,
+            "omega_hat_absolute_rad_per_s": 0.5288163395071886,
+            "bias_aligned_rad_per_s": -0.0014645393209963276,
+            "fit_standard_error_rad_per_s": 6.481165543258706e-05,
+            "fit_r_squared": 0.9999999224105766,
+            "minimum_adjacent_coherence": 0.9999729456538543,
+            "minimum_independent_coherence": 0.9991290116990716,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              161,
+              96
+            ],
+            "k_rad_per_m": 0.06647250080837779,
+            "wavelength_m": 94.52307692307693,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.6156812705694555,
+            "signed_phase_slope_rad_per_s": -0.6119253265503496,
+            "omega_hat_aligned_rad_per_s": 0.6119253265503496,
+            "omega_hat_absolute_rad_per_s": 0.6119253265503496,
+            "bias_aligned_rad_per_s": -0.00375594401910595,
+            "fit_standard_error_rad_per_s": 0.00013972362379064963,
+            "fit_r_squared": 0.9999997297863378,
+            "minimum_adjacent_coherence": 0.9999468164593119,
+            "minimum_independent_coherence": 0.9967439713238195,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              172,
+              96
+            ],
+            "k_rad_per_m": 0.07772169325287248,
+            "wavelength_m": 80.8421052631579,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.7044617949231886,
+            "signed_phase_slope_rad_per_s": -0.7061692429062209,
+            "omega_hat_aligned_rad_per_s": 0.7061692429062209,
+            "omega_hat_absolute_rad_per_s": 0.7061692429062209,
+            "bias_aligned_rad_per_s": 0.0017074479830322398,
+            "fit_standard_error_rad_per_s": 0.00018992104189690298,
+            "fit_r_squared": 0.999999626488865,
+            "minimum_adjacent_coherence": 0.9999651389871772,
+            "minimum_independent_coherence": 0.9977294297530851,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      },
+      "M4": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": -5.054463149284372e-05,
+        "bias_max_abs_rad_per_s": 0.0034485766032983922,
+        "rmse_rad_per_s": 0.0021279028235424175,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04225136694894782,
+          "domega_dk_m_per_s": 8.589912757621686
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.042654258710424865,
+          "domega_hat_dk_m_per_s": 8.581385991149544
+        },
+        "constantness_ratio_std_hat_over_std_truth": 0.9991054834591437,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.999936772765663,
+        "minimum_independent_coherence": 0.9941990043627701,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              128,
+              96
+            ],
+            "k_rad_per_m": 0.032724923474893676,
+            "wavelength_m": 192.0,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3184750731597486,
+            "signed_phase_slope_rad_per_s": -0.3175030224867254,
+            "omega_hat_aligned_rad_per_s": 0.3175030224867254,
+            "omega_hat_absolute_rad_per_s": 0.3175030224867254,
+            "bias_aligned_rad_per_s": -0.0009720506730231948,
+            "fit_standard_error_rad_per_s": 0.00014885762595052933,
+            "fit_r_squared": 0.9999988661914334,
+            "minimum_adjacent_coherence": 0.9999749733895755,
+            "minimum_independent_coherence": 0.9980609818059194,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              134,
+              96
+            ],
+            "k_rad_per_m": 0.03886084662643624,
+            "wavelength_m": 161.6842105263158,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.3755875584891217,
+            "signed_phase_slope_rad_per_s": -0.37551604616293466,
+            "omega_hat_aligned_rad_per_s": 0.37551604616293466,
+            "omega_hat_absolute_rad_per_s": 0.37551604616293466,
+            "bias_aligned_rad_per_s": -7.151232618701764e-05,
+            "fit_standard_error_rad_per_s": 0.00017616353637732717,
+            "fit_r_squared": 0.9999988689680215,
+            "minimum_adjacent_coherence": 0.9999934707964296,
+            "minimum_independent_coherence": 0.9998439952511721,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              142,
+              96
+            ],
+            "k_rad_per_m": 0.04704207749515966,
+            "wavelength_m": 133.56521739130437,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.44978794280351747,
+            "signed_phase_slope_rad_per_s": -0.45323651940681586,
+            "omega_hat_aligned_rad_per_s": 0.45323651940681586,
+            "omega_hat_absolute_rad_per_s": 0.45323651940681586,
+            "bias_aligned_rad_per_s": 0.0034485766032983922,
+            "fit_standard_error_rad_per_s": 6.820221929501708e-05,
+            "fit_r_squared": 0.9999998732017783,
+            "minimum_adjacent_coherence": 0.999936772765663,
+            "minimum_independent_coherence": 0.9941990043627701,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              151,
+              96
+            ],
+            "k_rad_per_m": 0.056245962222473515,
+            "wavelength_m": 111.7090909090909,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.530280878828185,
+            "signed_phase_slope_rad_per_s": -0.5295388874689977,
+            "omega_hat_aligned_rad_per_s": 0.5295388874689977,
+            "omega_hat_absolute_rad_per_s": 0.5295388874689977,
+            "bias_aligned_rad_per_s": -0.0007419913591872884,
+            "fit_standard_error_rad_per_s": 3.2442615844127646e-05,
+            "fit_r_squared": 0.9999999804007565,
+            "minimum_adjacent_coherence": 0.999980174324765,
+            "minimum_independent_coherence": 0.9994828804829431,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              161,
+              96
+            ],
+            "k_rad_per_m": 0.06647250080837779,
+            "wavelength_m": 94.52307692307693,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.6156812705694555,
+            "signed_phase_slope_rad_per_s": -0.612264871967266,
+            "omega_hat_aligned_rad_per_s": 0.612264871967266,
+            "omega_hat_absolute_rad_per_s": 0.612264871967266,
+            "bias_aligned_rad_per_s": -0.003416398602189563,
+            "fit_standard_error_rad_per_s": 0.00010680172928010822,
+            "fit_r_squared": 0.9999998405393652,
+            "minimum_adjacent_coherence": 0.9999584115004518,
+            "minimum_independent_coherence": 0.9971893432256532,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              172,
+              96
+            ],
+            "k_rad_per_m": 0.07772169325287248,
+            "wavelength_m": 80.8421052631579,
+            "angle_from_range_deg": 0.0,
+            "omega_truth_rad_per_s": 0.7044617949231886,
+            "signed_phase_slope_rad_per_s": -0.7059119034915202,
+            "omega_hat_aligned_rad_per_s": 0.7059119034915202,
+            "omega_hat_absolute_rad_per_s": 0.7059119034915202,
+            "bias_aligned_rad_per_s": 0.0014501085683316095,
+            "fit_standard_error_rad_per_s": 0.00015638312656610572,
+            "fit_r_squared": 0.9999997476239346,
+            "minimum_adjacent_coherence": 0.9999773442925318,
+            "minimum_independent_coherence": 0.9983176785344521,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      }
+    },
+    "vandenberg_like_22deg": {
+      "M0": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": -1.3838078723682479e-05,
+        "bias_max_abs_rad_per_s": 0.0002806765798132882,
+        "rmse_rad_per_s": 0.0001494747614686407,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04385851758330274,
+          "domega_dk_m_per_s": 8.55836828889758
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.043787563414483,
+          "domega_hat_dk_m_per_s": 8.559424736140198
+        },
+        "constantness_ratio_std_hat_over_std_truth": 1.0001233512961798,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.9999920040465199,
+        "minimum_independent_coherence": 0.9992389007322313,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              126,
+              104
+            ],
+            "k_rad_per_m": 0.03304295741496885,
+            "wavelength_m": 190.15202629330113,
+            "angle_from_range_deg": 21.80140948635181,
+            "omega_truth_rad_per_s": 0.3214634678993693,
+            "signed_phase_slope_rad_per_s": -0.3215261880598642,
+            "omega_hat_aligned_rad_per_s": 0.3215261880598642,
+            "omega_hat_absolute_rad_per_s": 0.3215261880598642,
+            "bias_aligned_rad_per_s": 6.272016049491125e-05,
+            "fit_standard_error_rad_per_s": 6.807376102104409e-06,
+            "fit_r_squared": 0.9999999976836136,
+            "minimum_adjacent_coherence": 0.999997976721631,
+            "minimum_independent_coherence": 0.999809108069786,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              132,
+              106
+            ],
+            "k_rad_per_m": 0.03988350048502667,
+            "wavelength_m": 157.53846153846155,
+            "angle_from_range_deg": 22.619864948040426,
+            "omega_truth_rad_per_s": 0.3849895181152556,
+            "signed_phase_slope_rad_per_s": -0.3849596752816266,
+            "omega_hat_aligned_rad_per_s": 0.3849596752816266,
+            "omega_hat_absolute_rad_per_s": 0.3849596752816266,
+            "bias_aligned_rad_per_s": -2.984283362900131e-05,
+            "fit_standard_error_rad_per_s": 1.2194591679036934e-05,
+            "fit_r_squared": 0.9999999948450042,
+            "minimum_adjacent_coherence": 0.9999920040465199,
+            "minimum_independent_coherence": 0.9992389007322313,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              139,
+              108
+            ],
+            "k_rad_per_m": 0.04767146785223349,
+            "wavelength_m": 131.80180074705228,
+            "angle_from_range_deg": 22.714412353167237,
+            "omega_truth_rad_per_s": 0.45539641159388394,
+            "signed_phase_slope_rad_per_s": -0.45511573501407065,
+            "omega_hat_aligned_rad_per_s": 0.45511573501407065,
+            "omega_hat_absolute_rad_per_s": 0.45511573501407065,
+            "bias_aligned_rad_per_s": -0.0002806765798132882,
+            "fit_standard_error_rad_per_s": 2.6907593926814094e-06,
+            "fit_r_squared": 0.9999999997473588,
+            "minimum_adjacent_coherence": 0.9999922572035208,
+            "minimum_independent_coherence": 0.999296815503465,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              148,
+              110
+            ],
+            "k_rad_per_m": 0.05735073474743549,
+            "wavelength_m": 109.55718936906116,
+            "angle_from_range_deg": 21.991129917177126,
+            "omega_truth_rad_per_s": 0.5397163144613277,
+            "signed_phase_slope_rad_per_s": -0.5397709320586224,
+            "omega_hat_aligned_rad_per_s": 0.5397709320586224,
+            "omega_hat_absolute_rad_per_s": 0.5397709320586224,
+            "bias_aligned_rad_per_s": 5.461759729463722e-05,
+            "fit_standard_error_rad_per_s": 3.174349847287901e-06,
+            "fit_r_squared": 0.9999999998206738,
+            "minimum_adjacent_coherence": 0.9999935468997735,
+            "minimum_independent_coherence": 0.9994239157903653,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              157,
+              113
+            ],
+            "k_rad_per_m": 0.06761319895156516,
+            "wavelength_m": 92.92838387487859,
+            "angle_from_range_deg": 22.686526674230286,
+            "omega_truth_rad_per_s": 0.6249328716310654,
+            "signed_phase_slope_rad_per_s": -0.6251318275582044,
+            "omega_hat_aligned_rad_per_s": 0.6251318275582044,
+            "omega_hat_absolute_rad_per_s": 0.6251318275582044,
+            "bias_aligned_rad_per_s": 0.00019895592713903287,
+            "fit_standard_error_rad_per_s": 7.1012526548132716e-06,
+            "fit_r_squared": 0.9999999993228148,
+            "minimum_adjacent_coherence": 0.999999381548379,
+            "minimum_independent_coherence": 0.999959893293515,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              167,
+              116
+            ],
+            "k_rad_per_m": 0.07882399414508527,
+            "wavelength_m": 79.71158243535096,
+            "angle_from_range_deg": 22.905769658417185,
+            "omega_truth_rad_per_s": 0.712866124584588,
+            "signed_phase_slope_rad_per_s": -0.7127773218407596,
+            "omega_hat_aligned_rad_per_s": 0.7127773218407596,
+            "omega_hat_absolute_rad_per_s": 0.7127773218407596,
+            "bias_aligned_rad_per_s": -8.880274382838671e-05,
+            "fit_standard_error_rad_per_s": 7.834202650021738e-06,
+            "fit_r_squared": 0.9999999993786429,
+            "minimum_adjacent_coherence": 0.9999997509487963,
+            "minimum_independent_coherence": 0.9999819264927122,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      },
+      "M1": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": -4.112315053493114e-06,
+        "bias_max_abs_rad_per_s": 0.00021861425375013788,
+        "rmse_rad_per_s": 0.00012755300539171797,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04385851758330274,
+          "domega_dk_m_per_s": 8.55836828889758
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.04383782118883288,
+          "domega_hat_dk_m_per_s": 8.558675036172142
+        },
+        "constantness_ratio_std_hat_over_std_truth": 1.0000335413567734,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.9999923225091846,
+        "minimum_independent_coherence": 0.9992721950864949,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              126,
+              104
+            ],
+            "k_rad_per_m": 0.03304295741496885,
+            "wavelength_m": 190.15202629330113,
+            "angle_from_range_deg": 21.80140948635181,
+            "omega_truth_rad_per_s": 0.3214634678993693,
+            "signed_phase_slope_rad_per_s": -0.3215597732376965,
+            "omega_hat_aligned_rad_per_s": 0.3215597732376965,
+            "omega_hat_absolute_rad_per_s": 0.3215597732376965,
+            "bias_aligned_rad_per_s": 9.630533832721833e-05,
+            "fit_standard_error_rad_per_s": 1.1143386401452975e-05,
+            "fit_r_squared": 0.999999993805061,
+            "minimum_adjacent_coherence": 0.9999968698915006,
+            "minimum_independent_coherence": 0.9997059936825423,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              132,
+              106
+            ],
+            "k_rad_per_m": 0.03988350048502667,
+            "wavelength_m": 157.53846153846155,
+            "angle_from_range_deg": 22.619864948040426,
+            "omega_truth_rad_per_s": 0.3849895181152556,
+            "signed_phase_slope_rad_per_s": -0.38495962580665233,
+            "omega_hat_aligned_rad_per_s": 0.38495962580665233,
+            "omega_hat_absolute_rad_per_s": 0.38495962580665233,
+            "bias_aligned_rad_per_s": -2.98923086032854e-05,
+            "fit_standard_error_rad_per_s": 1.3524969801040287e-05,
+            "fit_r_squared": 0.9999999936576774,
+            "minimum_adjacent_coherence": 0.9999923225091846,
+            "minimum_independent_coherence": 0.9992721950864949,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              139,
+              108
+            ],
+            "k_rad_per_m": 0.04767146785223349,
+            "wavelength_m": 131.80180074705228,
+            "angle_from_range_deg": 22.714412353167237,
+            "omega_truth_rad_per_s": 0.45539641159388394,
+            "signed_phase_slope_rad_per_s": -0.4551777973401338,
+            "omega_hat_aligned_rad_per_s": 0.4551777973401338,
+            "omega_hat_absolute_rad_per_s": 0.4551777973401338,
+            "bias_aligned_rad_per_s": -0.00021861425375013788,
+            "fit_standard_error_rad_per_s": 4.014073641778481e-06,
+            "fit_r_squared": 0.9999999995622243,
+            "minimum_adjacent_coherence": 0.9999933263927155,
+            "minimum_independent_coherence": 0.9993943351328773,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              148,
+              110
+            ],
+            "k_rad_per_m": 0.05735073474743549,
+            "wavelength_m": 109.55718936906116,
+            "angle_from_range_deg": 21.991129917177126,
+            "omega_truth_rad_per_s": 0.5397163144613277,
+            "signed_phase_slope_rad_per_s": -0.5397371503337293,
+            "omega_hat_aligned_rad_per_s": 0.5397371503337293,
+            "omega_hat_absolute_rad_per_s": 0.5397371503337293,
+            "bias_aligned_rad_per_s": 2.0835872401536726e-05,
+            "fit_standard_error_rad_per_s": 1.1085400127537479e-06,
+            "fit_r_squared": 0.9999999999777708,
+            "minimum_adjacent_coherence": 0.9999954615771025,
+            "minimum_independent_coherence": 0.9996012250510126,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              157,
+              113
+            ],
+            "k_rad_per_m": 0.06761319895156516,
+            "wavelength_m": 92.92838387487859,
+            "angle_from_range_deg": 22.686526674230286,
+            "omega_truth_rad_per_s": 0.6249328716310654,
+            "signed_phase_slope_rad_per_s": -0.6251157018923064,
+            "omega_hat_aligned_rad_per_s": 0.6251157018923064,
+            "omega_hat_absolute_rad_per_s": 0.6251157018923064,
+            "bias_aligned_rad_per_s": 0.000182830261240996,
+            "fit_standard_error_rad_per_s": 5.5742544163695825e-06,
+            "fit_r_squared": 0.9999999995818103,
+            "minimum_adjacent_coherence": 0.9999994293470347,
+            "minimum_independent_coherence": 0.9999603230286566,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              167,
+              116
+            ],
+            "k_rad_per_m": 0.07882399414508527,
+            "wavelength_m": 79.71158243535096,
+            "angle_from_range_deg": 22.905769658417185,
+            "omega_truth_rad_per_s": 0.712866124584588,
+            "signed_phase_slope_rad_per_s": -0.7127899857846507,
+            "omega_hat_aligned_rad_per_s": 0.7127899857846507,
+            "omega_hat_absolute_rad_per_s": 0.7127899857846507,
+            "bias_aligned_rad_per_s": -7.613879993728645e-05,
+            "fit_standard_error_rad_per_s": 5.431256269588017e-06,
+            "fit_r_squared": 0.9999999997017446,
+            "minimum_adjacent_coherence": 0.9999995941578685,
+            "minimum_independent_coherence": 0.9999622062667457,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      },
+      "M2": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": 0.00012200237068068127,
+        "bias_max_abs_rad_per_s": 0.0019613483967010348,
+        "rmse_rad_per_s": 0.001005254988657378,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04385851758330274,
+          "domega_dk_m_per_s": 8.55836828889758
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.04113440870956578,
+          "domega_hat_dk_m_per_s": 8.611011359725682
+        },
+        "constantness_ratio_std_hat_over_std_truth": 1.00605774599052,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.9997944659109337,
+        "minimum_independent_coherence": 0.9806614961759342,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              126,
+              104
+            ],
+            "k_rad_per_m": 0.03304295741496885,
+            "wavelength_m": 190.15202629330113,
+            "angle_from_range_deg": 21.80140948635181,
+            "omega_truth_rad_per_s": 0.3214634678993693,
+            "signed_phase_slope_rad_per_s": -0.32090471362986217,
+            "omega_hat_aligned_rad_per_s": 0.32090471362986217,
+            "omega_hat_absolute_rad_per_s": 0.32090471362986217,
+            "bias_aligned_rad_per_s": -0.0005587542695071335,
+            "fit_standard_error_rad_per_s": 8.757165385288715e-06,
+            "fit_r_squared": 0.9999999961470424,
+            "minimum_adjacent_coherence": 0.9999848623472203,
+            "minimum_independent_coherence": 0.9985565858877219,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              132,
+              106
+            ],
+            "k_rad_per_m": 0.03988350048502667,
+            "wavelength_m": 157.53846153846155,
+            "angle_from_range_deg": 22.619864948040426,
+            "omega_truth_rad_per_s": 0.3849895181152556,
+            "signed_phase_slope_rad_per_s": -0.38486113879979744,
+            "omega_hat_aligned_rad_per_s": 0.38486113879979744,
+            "omega_hat_absolute_rad_per_s": 0.38486113879979744,
+            "bias_aligned_rad_per_s": -0.00012837931545817138,
+            "fit_standard_error_rad_per_s": 3.3481807880207156e-05,
+            "fit_r_squared": 0.9999999611362465,
+            "minimum_adjacent_coherence": 0.9999362284703786,
+            "minimum_independent_coherence": 0.9938916517086112,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              139,
+              108
+            ],
+            "k_rad_per_m": 0.04767146785223349,
+            "wavelength_m": 131.80180074705228,
+            "angle_from_range_deg": 22.714412353167237,
+            "omega_truth_rad_per_s": 0.45539641159388394,
+            "signed_phase_slope_rad_per_s": -0.4541680775631242,
+            "omega_hat_aligned_rad_per_s": 0.4541680775631242,
+            "omega_hat_absolute_rad_per_s": 0.4541680775631242,
+            "bias_aligned_rad_per_s": -0.0012283340307597257,
+            "fit_standard_error_rad_per_s": 1.370608802788948e-05,
+            "fit_r_squared": 0.999999995073623,
+            "minimum_adjacent_coherence": 0.9999654024131995,
+            "minimum_independent_coherence": 0.9967718109670063,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              148,
+              110
+            ],
+            "k_rad_per_m": 0.05735073474743549,
+            "wavelength_m": 109.55718936906116,
+            "angle_from_range_deg": 21.991129917177126,
+            "omega_truth_rad_per_s": 0.5397163144613277,
+            "signed_phase_slope_rad_per_s": -0.5397915599778275,
+            "omega_hat_aligned_rad_per_s": 0.5397915599778275,
+            "omega_hat_absolute_rad_per_s": 0.5397915599778275,
+            "bias_aligned_rad_per_s": 7.524551649973343e-05,
+            "fit_standard_error_rad_per_s": 6.099372215257899e-06,
+            "fit_r_squared": 0.9999999993435883,
+            "minimum_adjacent_coherence": 0.9999942699986506,
+            "minimum_independent_coherence": 0.9995334337427056,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              157,
+              113
+            ],
+            "k_rad_per_m": 0.06761319895156516,
+            "wavelength_m": 92.92838387487859,
+            "angle_from_range_deg": 22.686526674230286,
+            "omega_truth_rad_per_s": 0.6249328716310654,
+            "signed_phase_slope_rad_per_s": -0.6255437595576737,
+            "omega_hat_aligned_rad_per_s": 0.6255437595576737,
+            "omega_hat_absolute_rad_per_s": 0.6255437595576737,
+            "bias_aligned_rad_per_s": 0.00061088792660835,
+            "fit_standard_error_rad_per_s": 9.676033535827664e-06,
+            "fit_r_squared": 0.9999999987410211,
+            "minimum_adjacent_coherence": 0.9999918029681604,
+            "minimum_independent_coherence": 0.9992621174136033,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              167,
+              116
+            ],
+            "k_rad_per_m": 0.07882399414508527,
+            "wavelength_m": 79.71158243535096,
+            "angle_from_range_deg": 22.905769658417185,
+            "omega_truth_rad_per_s": 0.712866124584588,
+            "signed_phase_slope_rad_per_s": -0.714827472981289,
+            "omega_hat_aligned_rad_per_s": 0.714827472981289,
+            "omega_hat_absolute_rad_per_s": 0.714827472981289,
+            "bias_aligned_rad_per_s": 0.0019613483967010348,
+            "fit_standard_error_rad_per_s": 6.240112273671389e-05,
+            "fit_r_squared": 0.9999999607698624,
+            "minimum_adjacent_coherence": 0.9997944659109337,
+            "minimum_independent_coherence": 0.9806614961759342,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      },
+      "M3": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": 5.5651266463729865e-06,
+        "bias_max_abs_rad_per_s": 0.0005290228493863292,
+        "rmse_rad_per_s": 0.00030686398312644586,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04385851758330274,
+          "domega_dk_m_per_s": 8.55836828889758
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.043114691310361344,
+          "domega_hat_dk_m_per_s": 8.572229400125694
+        },
+        "constantness_ratio_std_hat_over_std_truth": 1.001588115835628,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.9999444426339351,
+        "minimum_independent_coherence": 0.9948014695780304,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              126,
+              104
+            ],
+            "k_rad_per_m": 0.03304295741496885,
+            "wavelength_m": 190.15202629330113,
+            "angle_from_range_deg": 21.80140948635181,
+            "omega_truth_rad_per_s": 0.3214634678993693,
+            "signed_phase_slope_rad_per_s": -0.32140098007414686,
+            "omega_hat_aligned_rad_per_s": 0.32140098007414686,
+            "omega_hat_absolute_rad_per_s": 0.32140098007414686,
+            "bias_aligned_rad_per_s": -6.248782522244589e-05,
+            "fit_standard_error_rad_per_s": 2.0178557096361957e-05,
+            "fit_r_squared": 0.9999999797232396,
+            "minimum_adjacent_coherence": 0.9999916244793136,
+            "minimum_independent_coherence": 0.9992171011202514,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              132,
+              106
+            ],
+            "k_rad_per_m": 0.03988350048502667,
+            "wavelength_m": 157.53846153846155,
+            "angle_from_range_deg": 22.619864948040426,
+            "omega_truth_rad_per_s": 0.3849895181152556,
+            "signed_phase_slope_rad_per_s": -0.38490196481710326,
+            "omega_hat_aligned_rad_per_s": 0.38490196481710326,
+            "omega_hat_absolute_rad_per_s": 0.38490196481710326,
+            "bias_aligned_rad_per_s": -8.755329815235413e-05,
+            "fit_standard_error_rad_per_s": 2.7764273409284074e-05,
+            "fit_r_squared": 0.9999999732688174,
+            "minimum_adjacent_coherence": 0.9999731721651282,
+            "minimum_independent_coherence": 0.9974331533863812,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              139,
+              108
+            ],
+            "k_rad_per_m": 0.04767146785223349,
+            "wavelength_m": 131.80180074705228,
+            "angle_from_range_deg": 22.714412353167237,
+            "omega_truth_rad_per_s": 0.45539641159388394,
+            "signed_phase_slope_rad_per_s": -0.4548673887444976,
+            "omega_hat_aligned_rad_per_s": 0.4548673887444976,
+            "omega_hat_absolute_rad_per_s": 0.4548673887444976,
+            "bias_aligned_rad_per_s": -0.0005290228493863292,
+            "fit_standard_error_rad_per_s": 1.7769767814948522e-05,
+            "fit_r_squared": 0.9999999921131864,
+            "minimum_adjacent_coherence": 0.9999816862582028,
+            "minimum_independent_coherence": 0.9982972769980807,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              148,
+              110
+            ],
+            "k_rad_per_m": 0.05735073474743549,
+            "wavelength_m": 109.55718936906116,
+            "angle_from_range_deg": 21.991129917177126,
+            "omega_truth_rad_per_s": 0.5397163144613277,
+            "signed_phase_slope_rad_per_s": -0.5397113059372888,
+            "omega_hat_aligned_rad_per_s": 0.5397113059372888,
+            "omega_hat_absolute_rad_per_s": 0.5397113059372888,
+            "bias_aligned_rad_per_s": -5.0085240389519115e-06,
+            "fit_standard_error_rad_per_s": 8.325966921416812e-07,
+            "fit_r_squared": 0.9999999999811159,
+            "minimum_adjacent_coherence": 0.999995973413693,
+            "minimum_independent_coherence": 0.9996747037515002,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              157,
+              113
+            ],
+            "k_rad_per_m": 0.06761319895156516,
+            "wavelength_m": 92.92838387487859,
+            "angle_from_range_deg": 22.686526674230286,
+            "omega_truth_rad_per_s": 0.6249328716310654,
+            "signed_phase_slope_rad_per_s": -0.6252017264167381,
+            "omega_hat_aligned_rad_per_s": 0.6252017264167381,
+            "omega_hat_absolute_rad_per_s": 0.6252017264167381,
+            "bias_aligned_rad_per_s": 0.00026885478567273413,
+            "fit_standard_error_rad_per_s": 6.333893778582201e-06,
+            "fit_r_squared": 0.9999999994461092,
+            "minimum_adjacent_coherence": 0.9999979640995121,
+            "minimum_independent_coherence": 0.9998167926745032,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              167,
+              116
+            ],
+            "k_rad_per_m": 0.07882399414508527,
+            "wavelength_m": 79.71158243535096,
+            "angle_from_range_deg": 22.905769658417185,
+            "omega_truth_rad_per_s": 0.712866124584588,
+            "signed_phase_slope_rad_per_s": -0.7133147330555936,
+            "omega_hat_aligned_rad_per_s": 0.7133147330555936,
+            "omega_hat_absolute_rad_per_s": 0.7133147330555936,
+            "bias_aligned_rad_per_s": 0.0004486084710055849,
+            "fit_standard_error_rad_per_s": 2.136443992312141e-05,
+            "fit_r_squared": 0.9999999953573213,
+            "minimum_adjacent_coherence": 0.9999444426339351,
+            "minimum_independent_coherence": 0.9948014695780304,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      },
+      "M4": {
+        "all_components_valid": true,
+        "valid_component_count": 6,
+        "bias_mean_rad_per_s": 4.499576949130538e-05,
+        "bias_max_abs_rad_per_s": 0.0005298164159233121,
+        "rmse_rad_per_s": 0.00031051202557728577,
+        "truth_linear_fit": {
+          "intercept_rad_per_s": 0.04385851758330274,
+          "domega_dk_m_per_s": 8.55836828889758
+        },
+        "recovered_linear_fit": {
+          "intercept_rad_per_s": 0.04313963145170856,
+          "domega_hat_dk_m_per_s": 8.572497423555271
+        },
+        "constantness_ratio_std_hat_over_std_truth": 1.0016158827629593,
+        "quasi_constant": false,
+        "minimum_adjacent_coherence": 0.9999341474980125,
+        "minimum_independent_coherence": 0.9938352732498346,
+        "components": [
+          {
+            "component_id": "K1",
+            "crop_center_row_col": [
+              126,
+              104
+            ],
+            "k_rad_per_m": 0.03304295741496885,
+            "wavelength_m": 190.15202629330113,
+            "angle_from_range_deg": 21.80140948635181,
+            "omega_truth_rad_per_s": 0.3214634678993693,
+            "signed_phase_slope_rad_per_s": -0.3214343437568643,
+            "omega_hat_aligned_rad_per_s": 0.3214343437568643,
+            "omega_hat_absolute_rad_per_s": 0.3214343437568643,
+            "bias_aligned_rad_per_s": -2.9124142504999284e-05,
+            "fit_standard_error_rad_per_s": 1.7446980947885595e-05,
+            "fit_r_squared": 0.9999999848324357,
+            "minimum_adjacent_coherence": 0.9999933008378603,
+            "minimum_independent_coherence": 0.9993748872224215,
+            "valid": true
+          },
+          {
+            "component_id": "K2",
+            "crop_center_row_col": [
+              132,
+              106
+            ],
+            "k_rad_per_m": 0.03988350048502667,
+            "wavelength_m": 157.53846153846155,
+            "angle_from_range_deg": 22.619864948040426,
+            "omega_truth_rad_per_s": 0.3849895181152556,
+            "signed_phase_slope_rad_per_s": -0.3849484683042834,
+            "omega_hat_aligned_rad_per_s": 0.3849484683042834,
+            "omega_hat_absolute_rad_per_s": 0.3849484683042834,
+            "bias_aligned_rad_per_s": -4.104981097219351e-05,
+            "fit_standard_error_rad_per_s": 2.4409632056429154e-05,
+            "fit_r_squared": 0.9999999793442625,
+            "minimum_adjacent_coherence": 0.9999791681053843,
+            "minimum_independent_coherence": 0.9980116293484469,
+            "valid": true
+          },
+          {
+            "component_id": "K3",
+            "crop_center_row_col": [
+              139,
+              108
+            ],
+            "k_rad_per_m": 0.04767146785223349,
+            "wavelength_m": 131.80180074705228,
+            "angle_from_range_deg": 22.714412353167237,
+            "omega_truth_rad_per_s": 0.45539641159388394,
+            "signed_phase_slope_rad_per_s": -0.4549308050327745,
+            "omega_hat_aligned_rad_per_s": 0.4549308050327745,
+            "omega_hat_absolute_rad_per_s": 0.4549308050327745,
+            "bias_aligned_rad_per_s": -0.000465606561109444,
+            "fit_standard_error_rad_per_s": 1.6566195151678312e-05,
+            "fit_r_squared": 0.999999993141663,
+            "minimum_adjacent_coherence": 0.999984713211554,
+            "minimum_independent_coherence": 0.9985822870026664,
+            "valid": true
+          },
+          {
+            "component_id": "K4",
+            "crop_center_row_col": [
+              148,
+              110
+            ],
+            "k_rad_per_m": 0.05735073474743549,
+            "wavelength_m": 109.55718936906116,
+            "angle_from_range_deg": 21.991129917177126,
+            "omega_truth_rad_per_s": 0.5397163144613277,
+            "signed_phase_slope_rad_per_s": -0.5397121447784116,
+            "omega_hat_aligned_rad_per_s": 0.5397121447784116,
+            "omega_hat_absolute_rad_per_s": 0.5397121447784116,
+            "bias_aligned_rad_per_s": -4.169682916166373e-06,
+            "fit_standard_error_rad_per_s": 6.413183415302219e-07,
+            "fit_r_squared": 0.9999999999872924,
+            "minimum_adjacent_coherence": 0.9999957565482052,
+            "minimum_independent_coherence": 0.9996521900311345,
+            "valid": true
+          },
+          {
+            "component_id": "K5",
+            "crop_center_row_col": [
+              157,
+              113
+            ],
+            "k_rad_per_m": 0.06761319895156516,
+            "wavelength_m": 92.92838387487859,
+            "angle_from_range_deg": 22.686526674230286,
+            "omega_truth_rad_per_s": 0.6249328716310654,
+            "signed_phase_slope_rad_per_s": -0.6252129800295927,
+            "omega_hat_aligned_rad_per_s": 0.6252129800295927,
+            "omega_hat_absolute_rad_per_s": 0.6252129800295927,
+            "bias_aligned_rad_per_s": 0.0002801083985273234,
+            "fit_standard_error_rad_per_s": 6.512442572501157e-06,
+            "fit_r_squared": 0.9999999994160605,
+            "minimum_adjacent_coherence": 0.9999975293095712,
+            "minimum_independent_coherence": 0.9997785011073375,
+            "valid": true
+          },
+          {
+            "component_id": "K6",
+            "crop_center_row_col": [
+              167,
+              116
+            ],
+            "k_rad_per_m": 0.07882399414508527,
+            "wavelength_m": 79.71158243535096,
+            "angle_from_range_deg": 22.905769658417185,
+            "omega_truth_rad_per_s": 0.712866124584588,
+            "signed_phase_slope_rad_per_s": -0.7133959410005113,
+            "omega_hat_aligned_rad_per_s": 0.7133959410005113,
+            "omega_hat_absolute_rad_per_s": 0.7133959410005113,
+            "bias_aligned_rad_per_s": 0.0005298164159233121,
+            "fit_standard_error_rad_per_s": 2.4107752284075208e-05,
+            "fit_r_squared": 0.9999999940978799,
+            "minimum_adjacent_coherence": 0.9999341474980125,
+            "minimum_independent_coherence": 0.9938352732498346,
+            "valid": true
+          }
+        ],
+        "spatial_spectral_resolution": {
+          "delta_k_range_rad_per_m": 0.0010226538585904274,
+          "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+          "patch_radius_bins": 2
+        }
+      }
+    }
+  },
+  "nominal_diagnostics": {
+    "range_0deg": {
+      "look_width_s": 6.0,
+      "temporal_average": "9-point Gauss-Legendre quadrature of a rectangular look",
+      "quadrature_order": 9,
+      "beta_scale": 1.0,
+      "per_look": [
+        {
+          "center_time_s": 3.242899386518952,
+          "maximum_abs_u_los_m_per_s": 0.7342014908790588,
+          "maximum_abs_azimuth_displacement_m": 58.523624420166016,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 4.405555289724772,
+          "maximum_abs_u_los_m_per_s": 0.7350143194198608,
+          "maximum_abs_azimuth_displacement_m": 58.588417053222656,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 5.56539893211977,
+          "maximum_abs_u_los_m_per_s": 0.7356116771697998,
+          "maximum_abs_azimuth_displacement_m": 58.63603210449219,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 6.723516579309932,
+          "maximum_abs_u_los_m_per_s": 0.7356535196304321,
+          "maximum_abs_azimuth_displacement_m": 58.639366149902344,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 7.880179229709705,
+          "maximum_abs_u_los_m_per_s": 0.7332902550697327,
+          "maximum_abs_azimuth_displacement_m": 58.450992584228516,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 9.03646263403653,
+          "maximum_abs_u_los_m_per_s": 0.7349151372909546,
+          "maximum_abs_azimuth_displacement_m": 58.580509185791016,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 10.19283490296494,
+          "maximum_abs_u_los_m_per_s": 0.73517906665802,
+          "maximum_abs_azimuth_displacement_m": 58.60154724121094,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 11.349764285829982,
+          "maximum_abs_u_los_m_per_s": 0.7330378890037537,
+          "maximum_abs_azimuth_displacement_m": 58.43087387084961,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 12.50832722989799,
+          "maximum_abs_u_los_m_per_s": 0.7334475517272949,
+          "maximum_abs_azimuth_displacement_m": 58.46352767944336,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 13.668795587324867,
+          "maximum_abs_u_los_m_per_s": 0.73281329870224,
+          "maximum_abs_azimuth_displacement_m": 58.41297149658203,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        },
+        {
+          "center_time_s": 14.832257263168495,
+          "maximum_abs_u_los_m_per_s": 0.7316327691078186,
+          "maximum_abs_azimuth_displacement_m": 58.318870544433594,
+          "minimum_mapping_jacobian": 1.0,
+          "maximum_fold_fraction": 0.0,
+          "maximum_near_caustic_fraction": 0.0
+        }
+      ]
+    },
+    "vandenberg_like_22deg": {
+      "look_width_s": 6.0,
+      "temporal_average": "9-point Gauss-Legendre quadrature of a rectangular look",
+      "quadrature_order": 9,
+      "beta_scale": 1.0,
+      "per_look": [
+        {
+          "center_time_s": 3.242899386518952,
+          "maximum_abs_u_los_m_per_s": 0.8067113161087036,
+          "maximum_abs_azimuth_displacement_m": 64.30342864990234,
+          "minimum_mapping_jacobian": -0.27699899673461914,
+          "maximum_fold_fraction": 0.0027643839518229165,
+          "maximum_near_caustic_fraction": 0.004549662272135417
+        },
+        {
+          "center_time_s": 4.405555289724772,
+          "maximum_abs_u_los_m_per_s": 0.8058366775512695,
+          "maximum_abs_azimuth_displacement_m": 64.23371124267578,
+          "minimum_mapping_jacobian": -0.2793295383453369,
+          "maximum_fold_fraction": 0.0027516682942708335,
+          "maximum_near_caustic_fraction": 0.004486083984375
+        },
+        {
+          "center_time_s": 5.56539893211977,
+          "maximum_abs_u_los_m_per_s": 0.8046290278434753,
+          "maximum_abs_azimuth_displacement_m": 64.13744354248047,
+          "minimum_mapping_jacobian": -0.28126096725463867,
+          "maximum_fold_fraction": 0.0027618408203125,
+          "maximum_near_caustic_fraction": 0.004422505696614583
+        },
+        {
+          "center_time_s": 6.723516579309932,
+          "maximum_abs_u_los_m_per_s": 0.803594708442688,
+          "maximum_abs_azimuth_displacement_m": 64.05500030517578,
+          "minimum_mapping_jacobian": -0.28330206871032715,
+          "maximum_fold_fraction": 0.0027745564778645835,
+          "maximum_near_caustic_fraction": 0.004346211751302083
+        },
+        {
+          "center_time_s": 7.880179229709705,
+          "maximum_abs_u_los_m_per_s": 0.8021631240844727,
+          "maximum_abs_azimuth_displacement_m": 63.940887451171875,
+          "minimum_mapping_jacobian": -0.28499162197113037,
+          "maximum_fold_fraction": 0.0027949015299479165,
+          "maximum_near_caustic_fraction": 0.0042572021484375
+        },
+        {
+          "center_time_s": 9.03646263403653,
+          "maximum_abs_u_los_m_per_s": 0.800922155380249,
+          "maximum_abs_azimuth_displacement_m": 63.84196853637695,
+          "minimum_mapping_jacobian": -0.2865903377532959,
+          "maximum_fold_fraction": 0.00281524658203125,
+          "maximum_near_caustic_fraction": 0.004193623860677083
+        },
+        {
+          "center_time_s": 10.19283490296494,
+          "maximum_abs_u_los_m_per_s": 0.7992851138114929,
+          "maximum_abs_azimuth_displacement_m": 63.71147918701172,
+          "minimum_mapping_jacobian": -0.2880537509918213,
+          "maximum_fold_fraction": 0.0028254191080729165,
+          "maximum_near_caustic_fraction": 0.004107157389322917
+        },
+        {
+          "center_time_s": 11.349764285829982,
+          "maximum_abs_u_los_m_per_s": 0.7978203296661377,
+          "maximum_abs_azimuth_displacement_m": 63.59471893310547,
+          "minimum_mapping_jacobian": -0.28919053077697754,
+          "maximum_fold_fraction": 0.0028559366861979165,
+          "maximum_near_caustic_fraction": 0.004046122233072917
+        },
+        {
+          "center_time_s": 12.50832722989799,
+          "maximum_abs_u_los_m_per_s": 0.7959564328193665,
+          "maximum_abs_azimuth_displacement_m": 63.44614791870117,
+          "minimum_mapping_jacobian": -0.2904165983200073,
+          "maximum_fold_fraction": 0.002838134765625,
+          "maximum_near_caustic_fraction": 0.004079182942708333
+        },
+        {
+          "center_time_s": 13.668795587324867,
+          "maximum_abs_u_los_m_per_s": 0.794288158416748,
+          "maximum_abs_azimuth_displacement_m": 63.313167572021484,
+          "minimum_mapping_jacobian": -0.29116833209991455,
+          "maximum_fold_fraction": 0.00286865234375,
+          "maximum_near_caustic_fraction": 0.00412750244140625
+        },
+        {
+          "center_time_s": 14.832257263168495,
+          "maximum_abs_u_los_m_per_s": 0.7922235727310181,
+          "maximum_abs_azimuth_displacement_m": 63.148597717285156,
+          "minimum_mapping_jacobian": -0.29208850860595703,
+          "maximum_fold_fraction": 0.00286865234375,
+          "maximum_near_caustic_fraction": 0.004170735677083333
+        }
+      ]
+    }
+  },
+  "bunching_strength_sweep": [
+    {
+      "beta_scale": 0.0,
+      "beta_s": 0.0,
+      "look_width_s": 6.0,
+      "domega_hat_dk_m_per_s": 8.558675036172142,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.00012755300539171797,
+      "constantness_ratio": 1.0000335413567734,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9999923225091846,
+      "minimum_independent_coherence": 0.9992721950864949,
+      "maximum_abs_azimuth_displacement_m": 0.0,
+      "minimum_mapping_jacobian": 1.0,
+      "maximum_fold_fraction": 0.0,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.3215597732376965,
+          "omega_hat_aligned_rad_per_s": 0.3215597732376965,
+          "omega_hat_absolute_rad_per_s": 0.3215597732376965,
+          "bias_aligned_rad_per_s": 9.630533832721833e-05,
+          "fit_standard_error_rad_per_s": 1.1143386401452975e-05,
+          "fit_r_squared": 0.999999993805061,
+          "minimum_adjacent_coherence": 0.9999968698915006,
+          "minimum_independent_coherence": 0.9997059936825423,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.38495962580665233,
+          "omega_hat_aligned_rad_per_s": 0.38495962580665233,
+          "omega_hat_absolute_rad_per_s": 0.38495962580665233,
+          "bias_aligned_rad_per_s": -2.98923086032854e-05,
+          "fit_standard_error_rad_per_s": 1.3524969801040287e-05,
+          "fit_r_squared": 0.9999999936576774,
+          "minimum_adjacent_coherence": 0.9999923225091846,
+          "minimum_independent_coherence": 0.9992721950864949,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.4551777973401338,
+          "omega_hat_aligned_rad_per_s": 0.4551777973401338,
+          "omega_hat_absolute_rad_per_s": 0.4551777973401338,
+          "bias_aligned_rad_per_s": -0.00021861425375013788,
+          "fit_standard_error_rad_per_s": 4.014073641778481e-06,
+          "fit_r_squared": 0.9999999995622243,
+          "minimum_adjacent_coherence": 0.9999933263927155,
+          "minimum_independent_coherence": 0.9993943351328773,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5397371503337293,
+          "omega_hat_aligned_rad_per_s": 0.5397371503337293,
+          "omega_hat_absolute_rad_per_s": 0.5397371503337293,
+          "bias_aligned_rad_per_s": 2.0835872401536726e-05,
+          "fit_standard_error_rad_per_s": 1.1085400127537479e-06,
+          "fit_r_squared": 0.9999999999777708,
+          "minimum_adjacent_coherence": 0.9999954615771025,
+          "minimum_independent_coherence": 0.9996012250510126,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6251157018923064,
+          "omega_hat_aligned_rad_per_s": 0.6251157018923064,
+          "omega_hat_absolute_rad_per_s": 0.6251157018923064,
+          "bias_aligned_rad_per_s": 0.000182830261240996,
+          "fit_standard_error_rad_per_s": 5.5742544163695825e-06,
+          "fit_r_squared": 0.9999999995818103,
+          "minimum_adjacent_coherence": 0.9999994293470347,
+          "minimum_independent_coherence": 0.9999603230286566,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7127899857846507,
+          "omega_hat_aligned_rad_per_s": 0.7127899857846507,
+          "omega_hat_absolute_rad_per_s": 0.7127899857846507,
+          "bias_aligned_rad_per_s": -7.613879993728645e-05,
+          "fit_standard_error_rad_per_s": 5.431256269588017e-06,
+          "fit_r_squared": 0.9999999997017446,
+          "minimum_adjacent_coherence": 0.9999995941578685,
+          "minimum_independent_coherence": 0.9999622062667457,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "beta_scale": 0.25,
+      "beta_s": 19.927645361357964,
+      "look_width_s": 6.0,
+      "domega_hat_dk_m_per_s": 8.557667329722308,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.00012343991503378706,
+      "constantness_ratio": 0.999914349304201,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9999921312366575,
+      "minimum_independent_coherence": 0.9992663249493698,
+      "maximum_abs_azimuth_displacement_m": 16.072856903076172,
+      "minimum_mapping_jacobian": 0.6770372986793518,
+      "maximum_fold_fraction": 0.0,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.3215209504983877,
+          "omega_hat_aligned_rad_per_s": 0.3215209504983877,
+          "omega_hat_absolute_rad_per_s": 0.3215209504983877,
+          "bias_aligned_rad_per_s": 5.7482599018388036e-05,
+          "fit_standard_error_rad_per_s": 1.3202272772803488e-05,
+          "fit_r_squared": 0.9999999913100356,
+          "minimum_adjacent_coherence": 0.9999961548808165,
+          "minimum_independent_coherence": 0.9996352101353636,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.38503525105669717,
+          "omega_hat_aligned_rad_per_s": 0.38503525105669717,
+          "omega_hat_absolute_rad_per_s": 0.38503525105669717,
+          "bias_aligned_rad_per_s": 4.5732941441556374e-05,
+          "fit_standard_error_rad_per_s": 1.3796102528202818e-05,
+          "fit_r_squared": 0.9999999934077028,
+          "minimum_adjacent_coherence": 0.9999921312366575,
+          "minimum_independent_coherence": 0.9992663249493698,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.4551505978807305,
+          "omega_hat_aligned_rad_per_s": 0.4551505978807305,
+          "omega_hat_absolute_rad_per_s": 0.4551505978807305,
+          "bias_aligned_rad_per_s": -0.00024581371315346434,
+          "fit_standard_error_rad_per_s": 1.2433505363615064e-06,
+          "fit_r_squared": 0.9999999999328386,
+          "minimum_adjacent_coherence": 0.9999931750240646,
+          "minimum_independent_coherence": 0.999378158723785,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5396917968751377,
+          "omega_hat_aligned_rad_per_s": 0.5396917968751377,
+          "omega_hat_absolute_rad_per_s": 0.5396917968751377,
+          "bias_aligned_rad_per_s": -2.451758619004263e-05,
+          "fit_standard_error_rad_per_s": 1.7501383726659165e-07,
+          "fit_r_squared": 0.9999999999991737,
+          "minimum_adjacent_coherence": 0.9999960631175377,
+          "minimum_independent_coherence": 0.9996569245555772,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6250584153198656,
+          "omega_hat_aligned_rad_per_s": 0.6250584153198656,
+          "omega_hat_absolute_rad_per_s": 0.6250584153198656,
+          "bias_aligned_rad_per_s": 0.0001255436888002448,
+          "fit_standard_error_rad_per_s": 7.791766402683962e-06,
+          "fit_r_squared": 0.9999999991923408,
+          "minimum_adjacent_coherence": 0.999999525276336,
+          "minimum_independent_coherence": 0.9999627388374818,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7127699891945694,
+          "omega_hat_aligned_rad_per_s": 0.7127699891945694,
+          "omega_hat_absolute_rad_per_s": 0.7127699891945694,
+          "bias_aligned_rad_per_s": -9.61353900186257e-05,
+          "fit_standard_error_rad_per_s": 1.2193630583326497e-05,
+          "fit_r_squared": 0.999999998494573,
+          "minimum_adjacent_coherence": 0.9999953328375417,
+          "minimum_independent_coherence": 0.9995680488555472,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "beta_scale": 0.5,
+      "beta_s": 39.85529072271593,
+      "look_width_s": 6.0,
+      "domega_hat_dk_m_per_s": 8.560032427154416,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.00015520570609692223,
+      "constantness_ratio": 1.0001885634264418,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9999829977693142,
+      "minimum_independent_coherence": 0.9984169557939824,
+      "maximum_abs_azimuth_displacement_m": 32.145713806152344,
+      "minimum_mapping_jacobian": 0.3540745973587036,
+      "maximum_fold_fraction": 0.0,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.32150373832423135,
+          "omega_hat_aligned_rad_per_s": 0.32150373832423135,
+          "omega_hat_absolute_rad_per_s": 0.32150373832423135,
+          "bias_aligned_rad_per_s": 4.027042486204335e-05,
+          "fit_standard_error_rad_per_s": 1.5611427945118124e-05,
+          "fit_r_squared": 0.9999999878595335,
+          "minimum_adjacent_coherence": 0.9999955072972883,
+          "minimum_independent_coherence": 0.9995765739864293,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.3850420983608527,
+          "omega_hat_aligned_rad_per_s": 0.3850420983608527,
+          "omega_hat_absolute_rad_per_s": 0.3850420983608527,
+          "bias_aligned_rad_per_s": 5.258024559706698e-05,
+          "fit_standard_error_rad_per_s": 1.650007589677612e-05,
+          "fit_r_squared": 0.999999990570907,
+          "minimum_adjacent_coherence": 0.9999895993703267,
+          "minimum_independent_coherence": 0.99902193059194,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.45508010787341135,
+          "omega_hat_aligned_rad_per_s": 0.45508010787341135,
+          "omega_hat_absolute_rad_per_s": 0.45508010787341135,
+          "bias_aligned_rad_per_s": -0.00031630372047258826,
+          "fit_standard_error_rad_per_s": 6.323607356083691e-06,
+          "fit_r_squared": 0.9999999989739776,
+          "minimum_adjacent_coherence": 0.9999916101652296,
+          "minimum_independent_coherence": 0.9992306653495652,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5397206731209477,
+          "omega_hat_aligned_rad_per_s": 0.5397206731209477,
+          "omega_hat_absolute_rad_per_s": 0.5397206731209477,
+          "bias_aligned_rad_per_s": 4.358659620007366e-06,
+          "fit_standard_error_rad_per_s": 1.8192043008052977e-06,
+          "fit_r_squared": 0.9999999999402381,
+          "minimum_adjacent_coherence": 0.9999960462813645,
+          "minimum_independent_coherence": 0.9996638153032019,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.625131333471608,
+          "omega_hat_aligned_rad_per_s": 0.625131333471608,
+          "omega_hat_absolute_rad_per_s": 0.625131333471608,
+          "bias_aligned_rad_per_s": 0.00019846184054261862,
+          "fit_standard_error_rad_per_s": 8.704630049306894e-06,
+          "fit_r_squared": 0.999999998994718,
+          "minimum_adjacent_coherence": 0.9999991587401963,
+          "minimum_independent_coherence": 0.9999311765088211,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7128398123396325,
+          "omega_hat_aligned_rad_per_s": 0.7128398123396325,
+          "omega_hat_absolute_rad_per_s": 0.7128398123396325,
+          "bias_aligned_rad_per_s": -2.631224495552864e-05,
+          "fit_standard_error_rad_per_s": 1.5446641768727293e-05,
+          "fit_r_squared": 0.9999999975858928,
+          "minimum_adjacent_coherence": 0.9999829977693142,
+          "minimum_independent_coherence": 0.9984169557939824,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "beta_scale": 1.0,
+      "beta_s": 79.71058144543186,
+      "look_width_s": 6.0,
+      "domega_hat_dk_m_per_s": 8.572497423555271,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.00031051202557728577,
+      "constantness_ratio": 1.0016158827629593,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9999341474980125,
+      "minimum_independent_coherence": 0.9938352732498346,
+      "maximum_abs_azimuth_displacement_m": 63.52474594116211,
+      "minimum_mapping_jacobian": -0.2824208736419678,
+      "maximum_fold_fraction": 0.0027618408203125,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.3214343437568643,
+          "omega_hat_aligned_rad_per_s": 0.3214343437568643,
+          "omega_hat_absolute_rad_per_s": 0.3214343437568643,
+          "bias_aligned_rad_per_s": -2.9124142504999284e-05,
+          "fit_standard_error_rad_per_s": 1.7446980947885595e-05,
+          "fit_r_squared": 0.9999999848324357,
+          "minimum_adjacent_coherence": 0.9999933008378603,
+          "minimum_independent_coherence": 0.9993748872224215,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.3849484683042834,
+          "omega_hat_aligned_rad_per_s": 0.3849484683042834,
+          "omega_hat_absolute_rad_per_s": 0.3849484683042834,
+          "bias_aligned_rad_per_s": -4.104981097219351e-05,
+          "fit_standard_error_rad_per_s": 2.4409632056429154e-05,
+          "fit_r_squared": 0.9999999793442625,
+          "minimum_adjacent_coherence": 0.9999791681053843,
+          "minimum_independent_coherence": 0.9980116293484469,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.4549308050327745,
+          "omega_hat_aligned_rad_per_s": 0.4549308050327745,
+          "omega_hat_absolute_rad_per_s": 0.4549308050327745,
+          "bias_aligned_rad_per_s": -0.000465606561109444,
+          "fit_standard_error_rad_per_s": 1.6566195151678312e-05,
+          "fit_r_squared": 0.999999993141663,
+          "minimum_adjacent_coherence": 0.999984713211554,
+          "minimum_independent_coherence": 0.9985822870026664,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5397121447784116,
+          "omega_hat_aligned_rad_per_s": 0.5397121447784116,
+          "omega_hat_absolute_rad_per_s": 0.5397121447784116,
+          "bias_aligned_rad_per_s": -4.169682916166373e-06,
+          "fit_standard_error_rad_per_s": 6.413183415302219e-07,
+          "fit_r_squared": 0.9999999999872924,
+          "minimum_adjacent_coherence": 0.9999957565482052,
+          "minimum_independent_coherence": 0.9996521900311345,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6252129800295927,
+          "omega_hat_aligned_rad_per_s": 0.6252129800295927,
+          "omega_hat_absolute_rad_per_s": 0.6252129800295927,
+          "bias_aligned_rad_per_s": 0.0002801083985273234,
+          "fit_standard_error_rad_per_s": 6.512442572501157e-06,
+          "fit_r_squared": 0.9999999994160605,
+          "minimum_adjacent_coherence": 0.9999975293095712,
+          "minimum_independent_coherence": 0.9997785011073375,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7133959410005113,
+          "omega_hat_aligned_rad_per_s": 0.7133959410005113,
+          "omega_hat_absolute_rad_per_s": 0.7133959410005113,
+          "bias_aligned_rad_per_s": 0.0005298164159233121,
+          "fit_standard_error_rad_per_s": 2.4107752284075208e-05,
+          "fit_r_squared": 0.9999999940978799,
+          "minimum_adjacent_coherence": 0.9999341474980125,
+          "minimum_independent_coherence": 0.9938352732498346,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "beta_scale": 1.5,
+      "beta_s": 119.56587216814779,
+      "look_width_s": 6.0,
+      "domega_hat_dk_m_per_s": 8.594167142072747,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.0007168396839529662,
+      "constantness_ratio": 1.0040964824454925,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9998483381479526,
+      "minimum_independent_coherence": 0.9857729420249777,
+      "maximum_abs_azimuth_displacement_m": 96.43714141845703,
+      "minimum_mapping_jacobian": -0.9377763271331787,
+      "maximum_fold_fraction": 0.039751688639322914,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.3213341122858374,
+          "omega_hat_aligned_rad_per_s": 0.3213341122858374,
+          "omega_hat_absolute_rad_per_s": 0.3213341122858374,
+          "bias_aligned_rad_per_s": -0.00012935561353188962,
+          "fit_standard_error_rad_per_s": 2.124463173075551e-05,
+          "fit_r_squared": 0.9999999775459584,
+          "minimum_adjacent_coherence": 0.9999897761952785,
+          "minimum_independent_coherence": 0.999041733391369,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.384758242928495,
+          "omega_hat_aligned_rad_per_s": 0.384758242928495,
+          "omega_hat_absolute_rad_per_s": 0.384758242928495,
+          "bias_aligned_rad_per_s": -0.00023127518676063774,
+          "fit_standard_error_rad_per_s": 3.467361769605468e-05,
+          "fit_r_squared": 0.9999999582974125,
+          "minimum_adjacent_coherence": 0.9999613854492001,
+          "minimum_independent_coherence": 0.9962886818940238,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.45467177941059195,
+          "omega_hat_aligned_rad_per_s": 0.45467177941059195,
+          "omega_hat_absolute_rad_per_s": 0.45467177941059195,
+          "bias_aligned_rad_per_s": -0.0007246321832919955,
+          "fit_standard_error_rad_per_s": 2.31101071276184e-05,
+          "fit_r_squared": 0.9999999866129623,
+          "minimum_adjacent_coherence": 0.9999730422459303,
+          "minimum_independent_coherence": 0.997472281406072,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5397310078616927,
+          "omega_hat_aligned_rad_per_s": 0.5397310078616927,
+          "omega_hat_absolute_rad_per_s": 0.5397310078616927,
+          "bias_aligned_rad_per_s": 1.4693400364973463e-05,
+          "fit_standard_error_rad_per_s": 2.1080843233065723e-06,
+          "fit_r_squared": 0.9999999999160465,
+          "minimum_adjacent_coherence": 0.9999948775883584,
+          "minimum_independent_coherence": 0.9995904381292179,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6252687279144454,
+          "omega_hat_aligned_rad_per_s": 0.6252687279144454,
+          "omega_hat_absolute_rad_per_s": 0.6252687279144454,
+          "bias_aligned_rad_per_s": 0.0003358562833800649,
+          "fit_standard_error_rad_per_s": 9.594037371457137e-06,
+          "fit_r_squared": 0.9999999987656074,
+          "minimum_adjacent_coherence": 0.9999942457622669,
+          "minimum_independent_coherence": 0.9994758940592082,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.714407171815536,
+          "omega_hat_aligned_rad_per_s": 0.714407171815536,
+          "omega_hat_absolute_rad_per_s": 0.714407171815536,
+          "bias_aligned_rad_per_s": 0.001541047230948056,
+          "fit_standard_error_rad_per_s": 4.988124341206053e-05,
+          "fit_r_squared": 0.9999999749712976,
+          "minimum_adjacent_coherence": 0.9998483381479526,
+          "minimum_independent_coherence": 0.9857729420249777,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "beta_scale": 2.0,
+      "beta_s": 159.4211628908637,
+      "look_width_s": 6.0,
+      "domega_hat_dk_m_per_s": 8.632982584194162,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.0015161940690858237,
+      "constantness_ratio": 1.008542599690413,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9997183691667332,
+      "minimum_independent_coherence": 0.9738005095764499,
+      "maximum_abs_azimuth_displacement_m": 128.58285522460938,
+      "minimum_mapping_jacobian": -1.5837016105651855,
+      "maximum_fold_fraction": 0.10637410481770833,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.3212147511056765,
+          "omega_hat_aligned_rad_per_s": 0.3212147511056765,
+          "omega_hat_absolute_rad_per_s": 0.3212147511056765,
+          "bias_aligned_rad_per_s": -0.00024871679369281585,
+          "fit_standard_error_rad_per_s": 2.3502767018381494e-05,
+          "fit_r_squared": 0.9999999725034157,
+          "minimum_adjacent_coherence": 0.9999850281713699,
+          "minimum_independent_coherence": 0.998582285635142,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.3844701498484621,
+          "omega_hat_aligned_rad_per_s": 0.3844701498484621,
+          "omega_hat_absolute_rad_per_s": 0.3844701498484621,
+          "bias_aligned_rad_per_s": -0.0005193682667934962,
+          "fit_standard_error_rad_per_s": 4.778180974977853e-05,
+          "fit_r_squared": 0.9999999206554036,
+          "minimum_adjacent_coherence": 0.999935880569329,
+          "minimum_independent_coherence": 0.9938963176717547,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.4543203510175635,
+          "omega_hat_aligned_rad_per_s": 0.4543203510175635,
+          "omega_hat_absolute_rad_per_s": 0.4543203510175635,
+          "bias_aligned_rad_per_s": -0.0010760605763204256,
+          "fit_standard_error_rad_per_s": 3.096712380318241e-05,
+          "fit_r_squared": 0.9999999759861502,
+          "minimum_adjacent_coherence": 0.9999557225088377,
+          "minimum_independent_coherence": 0.9958494117498493,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5397304253772236,
+          "omega_hat_aligned_rad_per_s": 0.5397304253772236,
+          "omega_hat_absolute_rad_per_s": 0.5397304253772236,
+          "bias_aligned_rad_per_s": 1.4110915895870768e-05,
+          "fit_standard_error_rad_per_s": 3.4124877416765064e-06,
+          "fit_r_squared": 0.9999999997732949,
+          "minimum_adjacent_coherence": 0.9999924552363735,
+          "minimum_independent_coherence": 0.9993657463018416,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6253376611216134,
+          "omega_hat_aligned_rad_per_s": 0.6253376611216134,
+          "omega_hat_absolute_rad_per_s": 0.6253376611216134,
+          "bias_aligned_rad_per_s": 0.0004047894905480076,
+          "fit_standard_error_rad_per_s": 3.2917226554557934e-06,
+          "fit_r_squared": 0.9999999998394367,
+          "minimum_adjacent_coherence": 0.999987357609597,
+          "minimum_independent_coherence": 0.9988876381433387,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7163503035807437,
+          "omega_hat_aligned_rad_per_s": 0.7163503035807437,
+          "omega_hat_absolute_rad_per_s": 0.7163503035807437,
+          "bias_aligned_rad_per_s": 0.003484178996155718,
+          "fit_standard_error_rad_per_s": 6.42324118605389e-05,
+          "fit_r_squared": 0.9999999585206353,
+          "minimum_adjacent_coherence": 0.9997183691667332,
+          "minimum_independent_coherence": 0.9738005095764499,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "beta_scale": 3.0,
+      "beta_s": 239.13174433629558,
+      "look_width_s": 6.0,
+      "domega_hat_dk_m_per_s": 8.816583554909375,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.005615245162967755,
+      "constantness_ratio": 1.0297689714530787,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9994074450738801,
+      "minimum_independent_coherence": 0.9441085329857922,
+      "maximum_abs_azimuth_displacement_m": 192.87428283691406,
+      "minimum_mapping_jacobian": -2.8755526542663574,
+      "maximum_fold_fraction": 0.1997960408528646,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.320922043743955,
+          "omega_hat_aligned_rad_per_s": 0.320922043743955,
+          "omega_hat_absolute_rad_per_s": 0.320922043743955,
+          "bias_aligned_rad_per_s": -0.0005414241554143051,
+          "fit_standard_error_rad_per_s": 2.82619128483494e-05,
+          "fit_r_squared": 0.9999999601748245,
+          "minimum_adjacent_coherence": 0.9999719521663718,
+          "minimum_independent_coherence": 0.9973073456314067,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.3836130891480802,
+          "omega_hat_aligned_rad_per_s": 0.3836130891480802,
+          "omega_hat_absolute_rad_per_s": 0.3836130891480802,
+          "bias_aligned_rad_per_s": -0.001376428967175436,
+          "fit_standard_error_rad_per_s": 7.60019226967136e-05,
+          "fit_r_squared": 0.9999997982567338,
+          "minimum_adjacent_coherence": 0.9998656635438042,
+          "minimum_independent_coherence": 0.987370503700941,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.4531529108919081,
+          "omega_hat_aligned_rad_per_s": 0.4531529108919081,
+          "omega_hat_absolute_rad_per_s": 0.4531529108919081,
+          "bias_aligned_rad_per_s": -0.00224350070197582,
+          "fit_standard_error_rad_per_s": 4.935017287935545e-05,
+          "fit_r_squared": 0.9999999385961061,
+          "minimum_adjacent_coherence": 0.9998991820135193,
+          "minimum_independent_coherence": 0.9906141690703592,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5397690762040754,
+          "omega_hat_aligned_rad_per_s": 0.5397690762040754,
+          "omega_hat_absolute_rad_per_s": 0.5397690762040754,
+          "bias_aligned_rad_per_s": 5.276174274770895e-05,
+          "fit_standard_error_rad_per_s": 2.8055262984951925e-05,
+          "fit_r_squared": 0.9999999861081555,
+          "minimum_adjacent_coherence": 0.9999644881019468,
+          "minimum_independent_coherence": 0.9968148353970601,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.625363359695933,
+          "omega_hat_aligned_rad_per_s": 0.625363359695933,
+          "omega_hat_absolute_rad_per_s": 0.625363359695933,
+          "bias_aligned_rad_per_s": 0.00043048806486767344,
+          "fit_standard_error_rad_per_s": 3.599498257509258e-05,
+          "fit_r_squared": 0.9999999829791456,
+          "minimum_adjacent_coherence": 0.9999255753883898,
+          "minimum_independent_coherence": 0.9935355401711943,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.726348586282972,
+          "omega_hat_aligned_rad_per_s": 0.726348586282972,
+          "omega_hat_absolute_rad_per_s": 0.726348586282972,
+          "bias_aligned_rad_per_s": 0.013482461698384074,
+          "fit_standard_error_rad_per_s": 8.553128079641464e-06,
+          "fit_r_squared": 0.9999999987520354,
+          "minimum_adjacent_coherence": 0.9994074450738801,
+          "minimum_independent_coherence": 0.9441085329857922,
+          "valid": true
+        }
+      ]
+    }
+  ],
+  "look_width_experiment": [
+    {
+      "look_width_s": 6.0,
+      "nominal_temporal_passband_scale_rad_per_s": 1.0471975511965976,
+      "domega_hat_dk_m_per_s": 8.572497423555271,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.00031051202557728577,
+      "constantness_ratio": 1.0016158827629593,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9999341474980125,
+      "minimum_independent_coherence": 0.9938352732498346,
+      "spatial_resolution_note": "This intensity-domain forward model keeps the spatial grid/FFT resolution fixed; raw-SAR aperture-dependent PSF broadening is not modeled.",
+      "delta_k_range_rad_per_m": 0.0010226538585904274,
+      "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.3214343437568643,
+          "omega_hat_aligned_rad_per_s": 0.3214343437568643,
+          "omega_hat_absolute_rad_per_s": 0.3214343437568643,
+          "bias_aligned_rad_per_s": -2.9124142504999284e-05,
+          "fit_standard_error_rad_per_s": 1.7446980947885595e-05,
+          "fit_r_squared": 0.9999999848324357,
+          "minimum_adjacent_coherence": 0.9999933008378603,
+          "minimum_independent_coherence": 0.9993748872224215,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.3849484683042834,
+          "omega_hat_aligned_rad_per_s": 0.3849484683042834,
+          "omega_hat_absolute_rad_per_s": 0.3849484683042834,
+          "bias_aligned_rad_per_s": -4.104981097219351e-05,
+          "fit_standard_error_rad_per_s": 2.4409632056429154e-05,
+          "fit_r_squared": 0.9999999793442625,
+          "minimum_adjacent_coherence": 0.9999791681053843,
+          "minimum_independent_coherence": 0.9980116293484469,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.4549308050327745,
+          "omega_hat_aligned_rad_per_s": 0.4549308050327745,
+          "omega_hat_absolute_rad_per_s": 0.4549308050327745,
+          "bias_aligned_rad_per_s": -0.000465606561109444,
+          "fit_standard_error_rad_per_s": 1.6566195151678312e-05,
+          "fit_r_squared": 0.999999993141663,
+          "minimum_adjacent_coherence": 0.999984713211554,
+          "minimum_independent_coherence": 0.9985822870026664,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5397121447784116,
+          "omega_hat_aligned_rad_per_s": 0.5397121447784116,
+          "omega_hat_absolute_rad_per_s": 0.5397121447784116,
+          "bias_aligned_rad_per_s": -4.169682916166373e-06,
+          "fit_standard_error_rad_per_s": 6.413183415302219e-07,
+          "fit_r_squared": 0.9999999999872924,
+          "minimum_adjacent_coherence": 0.9999957565482052,
+          "minimum_independent_coherence": 0.9996521900311345,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6252129800295927,
+          "omega_hat_aligned_rad_per_s": 0.6252129800295927,
+          "omega_hat_absolute_rad_per_s": 0.6252129800295927,
+          "bias_aligned_rad_per_s": 0.0002801083985273234,
+          "fit_standard_error_rad_per_s": 6.512442572501157e-06,
+          "fit_r_squared": 0.9999999994160605,
+          "minimum_adjacent_coherence": 0.9999975293095712,
+          "minimum_independent_coherence": 0.9997785011073375,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7133959410005113,
+          "omega_hat_aligned_rad_per_s": 0.7133959410005113,
+          "omega_hat_absolute_rad_per_s": 0.7133959410005113,
+          "bias_aligned_rad_per_s": 0.0005298164159233121,
+          "fit_standard_error_rad_per_s": 2.4107752284075208e-05,
+          "fit_r_squared": 0.9999999940978799,
+          "minimum_adjacent_coherence": 0.9999341474980125,
+          "minimum_independent_coherence": 0.9938352732498346,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "look_width_s": 4.0,
+      "nominal_temporal_passband_scale_rad_per_s": 1.5707963267948966,
+      "domega_hat_dk_m_per_s": 8.57626741982469,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.00038463493955674313,
+      "constantness_ratio": 1.002042938895902,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9999111847726604,
+      "minimum_independent_coherence": 0.9916847355325005,
+      "spatial_resolution_note": "This intensity-domain forward model keeps the spatial grid/FFT resolution fixed; raw-SAR aperture-dependent PSF broadening is not modeled.",
+      "delta_k_range_rad_per_m": 0.0010226538585904274,
+      "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.321449237805236,
+          "omega_hat_aligned_rad_per_s": 0.321449237805236,
+          "omega_hat_absolute_rad_per_s": 0.321449237805236,
+          "bias_aligned_rad_per_s": -1.4230094133316218e-05,
+          "fit_standard_error_rad_per_s": 1.8295464612335374e-05,
+          "fit_r_squared": 0.9999999833208678,
+          "minimum_adjacent_coherence": 0.9999930974624943,
+          "minimum_independent_coherence": 0.9993569747365546,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.38495863885487913,
+          "omega_hat_aligned_rad_per_s": 0.38495863885487913,
+          "omega_hat_absolute_rad_per_s": 0.38495863885487913,
+          "bias_aligned_rad_per_s": -3.087926037648181e-05,
+          "fit_standard_error_rad_per_s": 2.3337829780894024e-05,
+          "fit_r_squared": 0.9999999811161396,
+          "minimum_adjacent_coherence": 0.9999799454434211,
+          "minimum_independent_coherence": 0.9980862186187374,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.4549553261667535,
+          "omega_hat_aligned_rad_per_s": 0.4549553261667535,
+          "omega_hat_absolute_rad_per_s": 0.4549553261667535,
+          "bias_aligned_rad_per_s": -0.00044108542713044985,
+          "fit_standard_error_rad_per_s": 1.567356034384661e-05,
+          "fit_r_squared": 0.999999993855764,
+          "minimum_adjacent_coherence": 0.9999855689266423,
+          "minimum_independent_coherence": 0.9986608753067951,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5396913671349373,
+          "omega_hat_aligned_rad_per_s": 0.5396913671349373,
+          "omega_hat_absolute_rad_per_s": 0.5396913671349373,
+          "bias_aligned_rad_per_s": -2.4947326390467595e-05,
+          "fit_standard_error_rad_per_s": 1.2143964105227126e-06,
+          "fit_r_squared": 0.999999999968727,
+          "minimum_adjacent_coherence": 0.9999963643889027,
+          "minimum_independent_coherence": 0.9997006161926499,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6252216250360059,
+          "omega_hat_aligned_rad_per_s": 0.6252216250360059,
+          "omega_hat_absolute_rad_per_s": 0.6252216250360059,
+          "bias_aligned_rad_per_s": 0.0002887534049405005,
+          "fit_standard_error_rad_per_s": 8.082262587168067e-06,
+          "fit_r_squared": 0.9999999991200692,
+          "minimum_adjacent_coherence": 0.9999971713638437,
+          "minimum_independent_coherence": 0.999742891093245,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7136458366750937,
+          "omega_hat_aligned_rad_per_s": 0.7136458366750937,
+          "omega_hat_absolute_rad_per_s": 0.7136458366750937,
+          "bias_aligned_rad_per_s": 0.0007797120905057575,
+          "fit_standard_error_rad_per_s": 3.067748485722833e-05,
+          "fit_r_squared": 0.9999999904566579,
+          "minimum_adjacent_coherence": 0.9999111847726604,
+          "minimum_independent_coherence": 0.9916847355325005,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "look_width_s": 3.0,
+      "nominal_temporal_passband_scale_rad_per_s": 2.0943951023931953,
+      "domega_hat_dk_m_per_s": 8.577279122960402,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.0004070142034570179,
+      "constantness_ratio": 1.0021574838516487,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9999049734231565,
+      "minimum_independent_coherence": 0.9911045958358543,
+      "spatial_resolution_note": "This intensity-domain forward model keeps the spatial grid/FFT resolution fixed; raw-SAR aperture-dependent PSF broadening is not modeled.",
+      "delta_k_range_rad_per_m": 0.0010226538585904274,
+      "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.3214543082875768,
+          "omega_hat_aligned_rad_per_s": 0.3214543082875768,
+          "omega_hat_absolute_rad_per_s": 0.3214543082875768,
+          "bias_aligned_rad_per_s": -9.159611792486366e-06,
+          "fit_standard_error_rad_per_s": 1.8598537492498907e-05,
+          "fit_r_squared": 0.9999999827632413,
+          "minimum_adjacent_coherence": 0.9999930232109704,
+          "minimum_independent_coherence": 0.9993503944778055,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.38496175188167375,
+          "omega_hat_aligned_rad_per_s": 0.38496175188167375,
+          "omega_hat_absolute_rad_per_s": 0.38496175188167375,
+          "bias_aligned_rad_per_s": -2.77662335818607e-05,
+          "fit_standard_error_rad_per_s": 2.297486916416894e-05,
+          "fit_r_squared": 0.9999999816978077,
+          "minimum_adjacent_coherence": 0.9999801748295762,
+          "minimum_independent_coherence": 0.9981081659333126,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.454962659586777,
+          "omega_hat_aligned_rad_per_s": 0.454962659586777,
+          "omega_hat_absolute_rad_per_s": 0.454962659586777,
+          "bias_aligned_rad_per_s": -0.0004337520071069356,
+          "fit_standard_error_rad_per_s": 1.542466896829957e-05,
+          "fit_r_squared": 0.999999994047519,
+          "minimum_adjacent_coherence": 0.9999857994235594,
+          "minimum_independent_coherence": 0.9986819040009162,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5396850099890776,
+          "omega_hat_aligned_rad_per_s": 0.5396850099890776,
+          "omega_hat_absolute_rad_per_s": 0.5396850099890776,
+          "bias_aligned_rad_per_s": -3.130447225008215e-05,
+          "fit_standard_error_rad_per_s": 1.431236913336873e-06,
+          "fit_r_squared": 0.9999999999587279,
+          "minimum_adjacent_coherence": 0.9999965251075073,
+          "minimum_independent_coherence": 0.9997132856828161,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6252244764275269,
+          "omega_hat_aligned_rad_per_s": 0.6252244764275269,
+          "omega_hat_absolute_rad_per_s": 0.6252244764275269,
+          "bias_aligned_rad_per_s": 0.0002916047964615087,
+          "fit_standard_error_rad_per_s": 8.521112138099803e-06,
+          "fit_r_squared": 0.9999999990256201,
+          "minimum_adjacent_coherence": 0.9999970582927928,
+          "minimum_independent_coherence": 0.999731870994399,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7137140363593072,
+          "omega_hat_aligned_rad_per_s": 0.7137140363593072,
+          "omega_hat_absolute_rad_per_s": 0.7137140363593072,
+          "bias_aligned_rad_per_s": 0.0008479117747192122,
+          "fit_standard_error_rad_per_s": 3.2246880272774956e-05,
+          "fit_r_squared": 0.9999999894557576,
+          "minimum_adjacent_coherence": 0.9999049734231565,
+          "minimum_independent_coherence": 0.9911045958358543,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "look_width_s": 2.0,
+      "nominal_temporal_passband_scale_rad_per_s": 3.141592653589793,
+      "domega_hat_dk_m_per_s": 8.577940344248775,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.0004221025245702024,
+      "constantness_ratio": 1.002232337585105,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9999009033379503,
+      "minimum_independent_coherence": 0.9907245251992132,
+      "spatial_resolution_note": "This intensity-domain forward model keeps the spatial grid/FFT resolution fixed; raw-SAR aperture-dependent PSF broadening is not modeled.",
+      "delta_k_range_rad_per_m": 0.0010226538585904274,
+      "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.32145790065552265,
+          "omega_hat_aligned_rad_per_s": 0.32145790065552265,
+          "omega_hat_absolute_rad_per_s": 0.32145790065552265,
+          "bias_aligned_rad_per_s": -5.567243846649195e-06,
+          "fit_standard_error_rad_per_s": 1.8817366539428563e-05,
+          "fit_r_squared": 0.9999999823553599,
+          "minimum_adjacent_coherence": 0.9999929692617082,
+          "minimum_independent_coherence": 0.9993456004287142,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.3849638663673177,
+          "omega_hat_aligned_rad_per_s": 0.3849638663673177,
+          "omega_hat_absolute_rad_per_s": 0.3849638663673177,
+          "bias_aligned_rad_per_s": -2.565174793789371e-05,
+          "fit_standard_error_rad_per_s": 2.2723995778341246e-05,
+          "fit_r_squared": 0.9999999820937913,
+          "minimum_adjacent_coherence": 0.9999803262203383,
+          "minimum_independent_coherence": 0.9981226932561781,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.45496757583447656,
+          "omega_hat_aligned_rad_per_s": 0.45496757583447656,
+          "omega_hat_absolute_rad_per_s": 0.45496757583447656,
+          "bias_aligned_rad_per_s": -0.0004288357594073866,
+          "fit_standard_error_rad_per_s": 1.5268415902479462e-05,
+          "fit_r_squared": 0.9999999941664334,
+          "minimum_adjacent_coherence": 0.9999859442166577,
+          "minimum_independent_coherence": 0.9986952466109401,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5396807487570774,
+          "omega_hat_aligned_rad_per_s": 0.5396807487570774,
+          "omega_hat_absolute_rad_per_s": 0.5396807487570774,
+          "bias_aligned_rad_per_s": -3.556570425033989e-05,
+          "fit_standard_error_rad_per_s": 1.581447467060221e-06,
+          "fit_r_squared": 0.9999999999508452,
+          "minimum_adjacent_coherence": 0.9999966267844052,
+          "minimum_independent_coherence": 0.9997213428673726,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6252265198490783,
+          "omega_hat_aligned_rad_per_s": 0.6252265198490783,
+          "omega_hat_absolute_rad_per_s": 0.6252265198490783,
+          "bias_aligned_rad_per_s": 0.00029364821801292074,
+          "fit_standard_error_rad_per_s": 8.81188073733484e-06,
+          "fit_r_squared": 0.9999999989603382,
+          "minimum_adjacent_coherence": 0.9999969819630934,
+          "minimum_independent_coherence": 0.9997243754006907,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7137588395095822,
+          "omega_hat_aligned_rad_per_s": 0.7137588395095822,
+          "omega_hat_absolute_rad_per_s": 0.7137588395095822,
+          "bias_aligned_rad_per_s": 0.000892714924994209,
+          "fit_standard_error_rad_per_s": 3.318433285655904e-05,
+          "fit_r_squared": 0.9999999888327422,
+          "minimum_adjacent_coherence": 0.9999009033379503,
+          "minimum_independent_coherence": 0.9907245251992132,
+          "valid": true
+        }
+      ]
+    },
+    {
+      "look_width_s": 1.5,
+      "nominal_temporal_passband_scale_rad_per_s": 4.1887902047863905,
+      "domega_hat_dk_m_per_s": 8.578162533407308,
+      "truth_domega_dk_m_per_s": 8.55836828889758,
+      "rmse_rad_per_s": 0.0004272397666899419,
+      "constantness_ratio": 1.0022574909235462,
+      "quasi_constant": false,
+      "valid_component_count": 6,
+      "minimum_adjacent_coherence": 0.9998995434998462,
+      "minimum_independent_coherence": 0.9905970863137542,
+      "spatial_resolution_note": "This intensity-domain forward model keeps the spatial grid/FFT resolution fixed; raw-SAR aperture-dependent PSF broadening is not modeled.",
+      "delta_k_range_rad_per_m": 0.0010226538585904274,
+      "delta_k_azimuth_rad_per_m": 0.0015339807878856412,
+      "components": [
+        {
+          "component_id": "K1",
+          "crop_center_row_col": [
+            126,
+            104
+          ],
+          "k_rad_per_m": 0.03304295741496885,
+          "wavelength_m": 190.15202629330113,
+          "angle_from_range_deg": 21.80140948635181,
+          "omega_truth_rad_per_s": 0.3214634678993693,
+          "signed_phase_slope_rad_per_s": -0.32145913705303003,
+          "omega_hat_aligned_rad_per_s": 0.32145913705303003,
+          "omega_hat_absolute_rad_per_s": 0.32145913705303003,
+          "bias_aligned_rad_per_s": -4.3308463392732754e-06,
+          "fit_standard_error_rad_per_s": 1.8893645222280766e-05,
+          "fit_r_squared": 0.9999999822122162,
+          "minimum_adjacent_coherence": 0.9999929500841378,
+          "minimum_independent_coherence": 0.999343907633141,
+          "valid": true
+        },
+        {
+          "component_id": "K2",
+          "crop_center_row_col": [
+            132,
+            106
+          ],
+          "k_rad_per_m": 0.03988350048502667,
+          "wavelength_m": 157.53846153846155,
+          "angle_from_range_deg": 22.619864948040426,
+          "omega_truth_rad_per_s": 0.3849895181152556,
+          "signed_phase_slope_rad_per_s": -0.3849645720618874,
+          "omega_hat_aligned_rad_per_s": 0.3849645720618874,
+          "omega_hat_absolute_rad_per_s": 0.3849645720618874,
+          "bias_aligned_rad_per_s": -2.494605336822442e-05,
+          "fit_standard_error_rad_per_s": 2.26320585710812e-05,
+          "fit_r_squared": 0.9999999822381735,
+          "minimum_adjacent_coherence": 0.9999803753981735,
+          "minimum_independent_coherence": 0.9981275567392474,
+          "valid": true
+        },
+        {
+          "component_id": "K3",
+          "crop_center_row_col": [
+            139,
+            108
+          ],
+          "k_rad_per_m": 0.04767146785223349,
+          "wavelength_m": 131.80180074705228,
+          "angle_from_range_deg": 22.714412353167237,
+          "omega_truth_rad_per_s": 0.45539641159388394,
+          "signed_phase_slope_rad_per_s": -0.4549692509211952,
+          "omega_hat_aligned_rad_per_s": 0.4549692509211952,
+          "omega_hat_absolute_rad_per_s": 0.4549692509211952,
+          "bias_aligned_rad_per_s": -0.00042716067268872004,
+          "fit_standard_error_rad_per_s": 1.5210417739896826e-05,
+          "fit_r_squared": 0.9999999942097653,
+          "minimum_adjacent_coherence": 0.9999859931121088,
+          "minimum_independent_coherence": 0.9986996255456251,
+          "valid": true
+        },
+        {
+          "component_id": "K4",
+          "crop_center_row_col": [
+            148,
+            110
+          ],
+          "k_rad_per_m": 0.05735073474743549,
+          "wavelength_m": 109.55718936906116,
+          "angle_from_range_deg": 21.991129917177126,
+          "omega_truth_rad_per_s": 0.5397163144613277,
+          "signed_phase_slope_rad_per_s": -0.5396793100062294,
+          "omega_hat_aligned_rad_per_s": 0.5396793100062294,
+          "omega_hat_absolute_rad_per_s": 0.5396793100062294,
+          "bias_aligned_rad_per_s": -3.700445509835504e-05,
+          "fit_standard_error_rad_per_s": 1.6310089888058768e-06,
+          "fit_r_squared": 0.9999999999477698,
+          "minimum_adjacent_coherence": 0.9999966609493718,
+          "minimum_independent_coherence": 0.9997239902295572,
+          "valid": true
+        },
+        {
+          "component_id": "K5",
+          "crop_center_row_col": [
+            157,
+            113
+          ],
+          "k_rad_per_m": 0.06761319895156516,
+          "wavelength_m": 92.92838387487859,
+          "angle_from_range_deg": 22.686526674230286,
+          "omega_truth_rad_per_s": 0.6249328716310654,
+          "signed_phase_slope_rad_per_s": -0.6252272207376426,
+          "omega_hat_aligned_rad_per_s": 0.6252272207376426,
+          "omega_hat_absolute_rad_per_s": 0.6252272207376426,
+          "bias_aligned_rad_per_s": 0.0002943491065772186,
+          "fit_standard_error_rad_per_s": 8.894849555553847e-06,
+          "fit_r_squared": 0.999999998941727,
+          "minimum_adjacent_coherence": 0.9999969570279452,
+          "minimum_independent_coherence": 0.9997218082427147,
+          "valid": true
+        },
+        {
+          "component_id": "K6",
+          "crop_center_row_col": [
+            167,
+            116
+          ],
+          "k_rad_per_m": 0.07882399414508527,
+          "wavelength_m": 79.71158243535096,
+          "angle_from_range_deg": 22.905769658417185,
+          "omega_truth_rad_per_s": 0.712866124584588,
+          "signed_phase_slope_rad_per_s": -0.7137739157946728,
+          "omega_hat_aligned_rad_per_s": 0.7137739157946728,
+          "omega_hat_absolute_rad_per_s": 0.7137739157946728,
+          "bias_aligned_rad_per_s": 0.000907791210084774,
+          "fit_standard_error_rad_per_s": 3.348952093245846e-05,
+          "fit_r_squared": 0.9999999886255309,
+          "minimum_adjacent_coherence": 0.9998995434998462,
+          "minimum_independent_coherence": 0.9905970863137542,
+          "valid": true
+        }
+      ]
+    }
+  ],
+  "first_mechanism_destroying_dispersion": null,
+  "simple_model_explains_Vandenberg_flattening": false,
+  "frozen_short_look_prediction": {
+    "frozen_before_any_new_Vandenberg_short_look_processing": true,
+    "criterion": {
+      "declared_before_synthetic_results": true,
+      "metric": "domega_hat/dk for M4, Vandenberg-like angle",
+      "trigger": "mean slope for 1.5 and 2 s exceeds the 6 s slope by at least max(0.5 m/s, 10% of truth slope), with all six components valid",
+      "reason": "This tests a material predicted re-emergence of dispersion rather than responding to small numerical fluctuations."
+    },
+    "synthetic_result": {
+      "M4_6s_domega_hat_dk_m_per_s": 8.572497423555271,
+      "M4_mean_1p5_2s_domega_hat_dk_m_per_s": 8.57805143882804,
+      "increase_m_per_s": 0.0055540152727697745,
+      "required_increase_m_per_s": 0.855836828889758,
+      "all_short_width_components_valid": true
+    },
+    "prediction_triggered": false,
+    "prediction": "No material short-look increase in domega_hat/dk is predicted by this model.",
+    "authorized_real_action": "Do not process new Vandenberg short looks; the predeclared trigger failed."
+  },
+  "conditional_real_short_look_test": {
+    "prediction_hash_before_real_check": "eb307bb858c66d0e6d5b3259d2185ec5aa69fcf832079626abf9c20969e007ac",
+    "prediction_triggered": false,
+    "performed": false,
+    "reason": "The frozen predeclared synthetic trigger failed; no new Vandenberg short-look processing is authorized by Block 10."
+  },
+  "limitations": [
+    "not a raw-SAR phase-history simulator",
+    "no hydrodynamic modulation",
+    "no coherent speckle",
+    "no moving-scatterer phase-history/focusing or range migration",
+    "no higher-order coherent velocity-bunching operator",
+    "no full two-scale Bragg RAR/MTF or wind dependence",
+    "fixed spatial grid resolution across look widths"
+  ],
+  "plots": [
+    "D:\\Dati Tesi\\Umbra\\Block10_validation\\plots\\BLOCK10_M0_M4_DISPERSION.png",
+    "D:\\Dati Tesi\\Umbra\\Block10_validation\\plots\\BLOCK10_BUNCHING_STRENGTH.png",
+    "D:\\Dati Tesi\\Umbra\\Block10_validation\\plots\\BLOCK10_LOOK_WIDTH.png",
+    "D:\\Dati Tesi\\Umbra\\Block10_validation\\plots\\BLOCK10_REAL_BENCHMARK.png"
+  ]
+}

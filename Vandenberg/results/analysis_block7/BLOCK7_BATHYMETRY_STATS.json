@@ -1,0 +1,468 @@
+{
+  "generated_utc": "2026-08-31T12:34:44.701142+00:00",
+  "dataset": {
+    "title": "2009-2011 CA Coastal California TopoBathy Merged Project DEM (Smoothed with Voids)",
+    "catalog_id": "NOAA InPort 49417",
+    "nominal_horizontal_resolution_m": 1.0,
+    "tile_crs_wkt": "COMPD_CS[\"NAD83_NSRS2007_UTM_zone_10N + NAVD88 height\",PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]],VERT_CS[\"NAVD88 height\",VERT_DATUM[\"North American Vertical Datum 1988\",2005,AUTHORITY[\"EPSG\",\"5103\"]],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Gravity-related height\",UP],AUTHORITY[\"EPSG\",\"5703\"]]]",
+    "horizontal_reference": "Tile WKT: NAD83 / UTM zone 10N (EPSG:26910; product label includes NAD83(NSRS2007))",
+    "vertical_reference": "NAVD88 height, metres, EPSG:5703",
+    "tidal_datum": "None in delivered raster. Source bathymetry originally on several datums, including MLLW where applicable, was transformed with VDatum to NAVD88 during merging.",
+    "publication": "2014-03; downloaded COG conversion dated 2024-07-23",
+    "source_age": "Statewide inputs vary. Topographic lidar 2009-2011; bathymetric lidar mainly 2009-2010; acoustic source dates vary and local per-cell acquisition age is not encoded in the GeoTIFF.",
+    "product_identity_warning": "This 1 m OCM/NOAA California Topobathy product covers Point Arguello. The official California CUDEM 1/9 arc-second tile set begins near 36.75 N and does not cover this ROI; the DEM is therefore not relabelled as CUDEM."
+  },
+  "download_scope": {
+    "tile_count": 9,
+    "tiles": [
+      "10SGD140250.tif",
+      "10SGD140265.tif",
+      "10SGD140280.tif",
+      "10SGD155250.tif",
+      "10SGD155265.tif",
+      "10SGD155280.tif",
+      "10SGD170250.tif",
+      "10SGD170265.tif",
+      "10SGD170280.tif"
+    ],
+    "mosaic_extent_utm_m": [
+      713999.9999999992,
+      718499.9999999992,
+      3825000.000000001,
+      3829500.000000001
+    ]
+  },
+  "roi_statistics": [
+    {
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 540.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 1.0,
+      "elevation_NAVD88_percentiles_m": [
+        -18.873125076293945,
+        -17.750457763671875,
+        -16.440616607666016,
+        -15.342499732971191,
+        -14.331250190734863
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        14.331250190734863,
+        15.342499732971191,
+        16.440616607666016,
+        17.750457763671875,
+        18.873125076293945
+      ],
+      "depth_median_m": 16.440616607666016,
+      "depth_min_max_m": [
+        13.676880836486816,
+        19.618762969970703
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.965471591846558,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.6563851448226998,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "rot_k_0540x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 720.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 1.0,
+      "elevation_NAVD88_percentiles_m": [
+        -19.706876754760742,
+        -18.21876287460327,
+        -16.440616607666016,
+        -14.963749885559082,
+        -13.829371213912964
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        13.829371213912964,
+        14.963749885559082,
+        16.440616607666016,
+        18.21876287460327,
+        19.706876754760742
+      ],
+      "depth_median_m": 16.440616607666016,
+      "depth_min_max_m": [
+        13.08187484741211,
+        20.5050106048584
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.91874154636722,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.622541959753029,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "rot_k_0720x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 900.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 1.0,
+      "elevation_NAVD88_percentiles_m": [
+        -20.5524959564209,
+        -18.685620307922363,
+        -16.440616607666016,
+        -14.634998321533203,
+        -13.318124771118164
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        13.318124771118164,
+        14.634998321533203,
+        16.440616607666016,
+        18.685620307922363,
+        20.5524959564209
+      ],
+      "depth_median_m": 16.440616607666016,
+      "depth_min_max_m": [
+        12.388748168945312,
+        21.399368286132812
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.864857896618604,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.5927419753749703,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "rot_k_0900x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 1080.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 1.0,
+      "elevation_NAVD88_percentiles_m": [
+        -21.397499084472656,
+        -19.139376640319824,
+        -16.440616607666016,
+        -14.303750038146973,
+        -12.818124771118164
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        12.818124771118164,
+        14.303750038146973,
+        16.440616607666016,
+        19.139376640319824,
+        21.397499084472656
+      ],
+      "depth_median_m": 16.440616607666016,
+      "depth_min_max_m": [
+        11.793749809265137,
+        22.336864471435547
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.828166022730215,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.5663787060531575,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "rot_k_1080x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 1260.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 1.0,
+      "elevation_NAVD88_percentiles_m": [
+        -22.212499618530273,
+        -19.606250762939453,
+        -16.440616607666016,
+        -13.994375228881836,
+        -12.216873168945312
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        12.216873168945312,
+        13.994375228881836,
+        16.440616607666016,
+        19.606250762939453,
+        22.212499618530273
+      ],
+      "depth_median_m": 16.440616607666016,
+      "depth_min_max_m": [
+        11.065000534057617,
+        23.256872177124023
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.803970909459977,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.532206491722981,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "rot_k_1260x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 1440.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 0.9999914910272882,
+      "elevation_NAVD88_percentiles_m": [
+        -23.028761100769042,
+        -20.076857566833496,
+        -16.44061851501465,
+        -13.692500114440918,
+        -11.75999641418457
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        11.75999641418457,
+        13.692500114440918,
+        16.44061851501465,
+        20.076857566833496,
+        23.028761100769042
+      ],
+      "depth_median_m": 16.44061851501465,
+      "depth_min_max_m": [
+        6.38798713684082,
+        24.1825008392334
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.787354192060624,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.5094413144615735,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "rot_k_1440x0650"
+    }
+  ],
+  "nearshore_anchored_roi_statistics": [
+    {
+      "center_utm_e_n_m": [
+        715953.5478643774,
+        3827706.5057207528
+      ],
+      "L_parallel_m": 540.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 0.9999773617368075,
+      "elevation_NAVD88_percentiles_m": [
+        -14.885009765625,
+        -14.0,
+        -13.093125343322754,
+        -12.129375457763672,
+        -11.219517421722415
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        11.219517421722413,
+        12.129375457763672,
+        13.093125343322754,
+        14.0,
+        14.885009765625
+      ],
+      "depth_median_m": 13.093125343322754,
+      "depth_min_max_m": [
+        6.38798713684082,
+        15.751250267028809
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -6.980941715701029,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.9549303765725232,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "nearshore_anchored_0540x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715864.9603398285,
+        3827690.6233250173
+      ],
+      "L_parallel_m": 720.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 0.9999830056251381,
+      "elevation_NAVD88_percentiles_m": [
+        -16.173749923706055,
+        -14.970627546310425,
+        -13.696255683898926,
+        -12.417686700820923,
+        -11.359369850158691
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        11.359369850158691,
+        12.417686700820923,
+        13.696255683898926,
+        14.970627546310425,
+        16.173749923706055
+      ],
+      "depth_median_m": 13.696255683898926,
+      "depth_min_max_m": [
+        6.38798713684082,
+        17.07561683654785
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -7.173524251608428,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.9154762595639203,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "nearshore_anchored_0720x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715776.3728152796,
+        3827674.7409292813
+      ],
+      "L_parallel_m": 900.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 0.9999863969638023,
+      "elevation_NAVD88_percentiles_m": [
+        -17.75500946044922,
+        -16.086402893066406,
+        -14.307508945465088,
+        -12.766250610351562,
+        -11.47434720993042
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        11.47434720993042,
+        12.766250610351562,
+        14.307508945465088,
+        16.086402893066406,
+        17.75500946044922
+      ],
+      "depth_median_m": 14.30750846862793,
+      "depth_min_max_m": [
+        6.38798713684082,
+        18.73873519897461
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -7.553358197476109,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.8446181329048739,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "nearshore_anchored_0900x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715687.7852907309,
+        3827658.8585335454
+      ],
+      "L_parallel_m": 1080.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 0.9999886599457946,
+      "elevation_NAVD88_percentiles_m": [
+        -19.516250610351562,
+        -17.291404724121094,
+        -14.966875076293945,
+        -13.09000015258789,
+        -11.581870079040527
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        11.581870079040527,
+        13.09000015258789,
+        14.966875076293945,
+        17.291404724121094,
+        19.516250610351562
+      ],
+      "depth_median_m": 14.966875076293945,
+      "depth_min_max_m": [
+        6.38798713684082,
+        20.5050106048584
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.040991425452129,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.7149433414378057,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "nearshore_anchored_1080x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715599.197766182,
+        3827642.97613781
+      ],
+      "L_parallel_m": 1260.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 0.9999902773861725,
+      "elevation_NAVD88_percentiles_m": [
+        -21.307498931884766,
+        -18.685622215270996,
+        -15.734375,
+        -13.392498254776001,
+        -11.67377524375916
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        11.673775243759156,
+        13.392498254776001,
+        15.734375,
+        18.685622215270996,
+        21.307498931884766
+      ],
+      "depth_median_m": 15.734375,
+      "depth_min_max_m": [
+        6.38798713684082,
+        22.336864471435547
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.469409331639914,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.589439336588279,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "nearshore_anchored_1260x0650"
+    },
+    {
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 1440.0,
+      "L_perpendicular_m": 650.0,
+      "sample_spacing_m": 2.0,
+      "valid_fraction": 0.9999914910272882,
+      "elevation_NAVD88_percentiles_m": [
+        -23.028761100769042,
+        -20.076857566833496,
+        -16.44061851501465,
+        -13.692500114440918,
+        -11.75999641418457
+      ],
+      "depth_positive_down_NAVD88_percentiles_m": [
+        11.75999641418457,
+        13.692500114440918,
+        16.44061851501465,
+        20.076857566833496,
+        23.028761100769042
+      ],
+      "depth_median_m": 16.44061851501465,
+      "depth_min_max_m": [
+        6.38798713684082,
+        24.1825008392334
+      ],
+      "depth_plane_gradient_m_per_km_parallel_k": -8.787354192060624,
+      "depth_plane_gradient_m_per_km_perpendicular_k": 1.5094413144615735,
+      "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+      "roi": "nearshore_anchored_1440x0650"
+    }
+  ],
+  "original_roi_statistics": {
+    "center_utm_e_n_m": [
+      716210.6102416331,
+      3827777.093742074
+    ],
+    "L_parallel_m": 540,
+    "L_perpendicular_m": 540,
+    "sample_spacing_m": 2.0,
+    "valid_fraction": 0.9826391252842418,
+    "elevation_NAVD88_percentiles_m": [
+      -13.006875038146973,
+      -12.148746252059937,
+      -11.003045558929443,
+      -7.192598462104797,
+      -4.999558806419373
+    ],
+    "depth_positive_down_NAVD88_percentiles_m": [
+      4.999558806419373,
+      7.192598462104797,
+      11.003045558929443,
+      12.148746252059937,
+      13.006875038146973
+    ],
+    "depth_median_m": 11.003046035766602,
+    "depth_min_max_m": [
+      -7.180927753448486,
+      13.640625
+    ],
+    "depth_plane_gradient_m_per_km_parallel_k": -16.414455171052843,
+    "depth_plane_gradient_m_per_km_perpendicular_k": 1.719301702416244,
+    "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+    "roi": "original_center_540x540"
+  }
+}

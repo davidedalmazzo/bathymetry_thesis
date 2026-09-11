@@ -1,0 +1,12 @@
+{
+  "generated_utc": "2026-09-01T10:29:40.293885+00:00",
+  "top_rows": 16,
+  "all_ranked_rows": 111,
+  "decision_A": "2025-12-02-16-00-55_UMBRA-07",
+  "decision_B": "2025-04-26-14-43-09_UMBRA-08",
+  "decision_C": "2023-07-13-15-18-26_UMBRA-04",
+  "hard_conclusion": "No scene meets all ideal validation gates; no >1 GB download authorized.",
+  "top_csv_sha256": "169c828e5b22359e78a7cc51f4a725d09e4aaae91dfe2d309e18a2ea03996136",
+  "all_csv_sha256": "f9a58350d909629d13e656aa833330b6ec2b1fe1845b4429015982f754851602",
+  "checkpoint_sha256": "b1a76ab0ff3d6b2007a8e2cd39ff7e69e67b13e1f966a6e6eadff724c9997327"
+}

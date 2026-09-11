@@ -1,0 +1,35 @@
+{
+  "generated_utc": "2026-09-01T10:51:59.303525+00:00",
+  "guard_hashes_before": {
+    "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\CHECKPOINT_8.md": "b1a76ab0ff3d6b2007a8e2cd39ff7e69e67b13e1f966a6e6eadff724c9997327",
+    "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\top16_candidates.csv": "169c828e5b22359e78a7cc51f4a725d09e4aaae91dfe2d309e18a2ea03996136",
+    "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\ranked_candidates_all.csv": "f9a58350d909629d13e656aa833330b6ec2b1fe1845b4429015982f754851602",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block4\\BLOCK4_PHASE_METRICS_SAR_ONLY.json": "c399af008e2159ede9b6e27b8bf99dffdd17b7f808aa263ea569d20438df8fcd",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.csv": "daa84904817b0aee593dfbe0435051e8069f0f0a07c592567639aa337e972940",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.npz": "07ead9456189ccb54f17d8d7b99dfd38365ea47156b69cd4e139fd4c05e260a9"
+  },
+  "guard_hashes_after": {
+    "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\CHECKPOINT_8.md": "b1a76ab0ff3d6b2007a8e2cd39ff7e69e67b13e1f966a6e6eadff724c9997327",
+    "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\top16_candidates.csv": "169c828e5b22359e78a7cc51f4a725d09e4aaae91dfe2d309e18a2ea03996136",
+    "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\ranked_candidates_all.csv": "f9a58350d909629d13e656aa833330b6ec2b1fe1845b4429015982f754851602",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block4\\BLOCK4_PHASE_METRICS_SAR_ONLY.json": "c399af008e2159ede9b6e27b8bf99dffdd17b7f808aa263ea569d20438df8fcd",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.csv": "daa84904817b0aee593dfbe0435051e8069f0f0a07c592567639aa337e972940",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.npz": "07ead9456189ccb54f17d8d7b99dfd38365ea47156b69cd4e139fd4c05e260a9"
+  },
+  "guards_unchanged": true,
+  "synthetic_truth_sha256_before_and_after": "b32ac94c62274e479695737ad807763debb570ac396dc0755ee83a34a75864e3",
+  "artifacts": {
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\results\\BLOCK9_REAL_DATA_RECHECK.json": "d47a72ae1acce298ebfd0e67f6b1ad73ce5e4d93f60d24366ea7aa5024dbd2ad",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\results\\BLOCK9_REAL_DATA_RECHECK.md": "47ec7c053631db4056cf46d914626a85de0d93a41dca05a279bc6e46b3e574bb",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\results\\BLOCK9_SYNTHETIC_TRUTH.json": "b32ac94c62274e479695737ad807763debb570ac396dc0755ee83a34a75864e3",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\results\\BLOCK9_SYNTHETIC_TRUTH.csv": "add14ab11a12df4fd8855101c588eceed15da35e6a2758b5aad35dcae38cdd41",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\results\\BLOCK9_SYNTHETIC_VALIDATION_SUMMARY.json": "222e7ce8fbbd73c39616d3836a33937a755d078ffe414fb71ed6d11e824e5e6c",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\results\\CHECKPOINT_9.md": "c8318356fe3edf514f4cf1c54199754ff6abf2b12cec3a094848d2838587d71f",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\results\\BLOCK9_TEST_SUITE_RESULT.json": "65846cf1e7f8ca6adc37602401c1b3d099c630e9243ac7e2e39b2c38ba12b847",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\plots\\BLOCK9_SYNTHETIC_DISPERSION_RECOVERY.png": "7c438a835b31bc4eb36e0353b9ec76aa2e8033d9e09e611b99a061aedba9b697",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\plots\\BLOCK9_NEGATIVE_CONTROLS.png": "9e808da8314f43df68ea80e26298d4b0e4b3bd5c440c7c40322ba34a4a0cc2dd",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\plots\\BLOCK9_PROGRESSIVE_REALISM.png": "fdc92f673062342bd3e1a7eba35295a7604057f2b7eb9b71d9bf7716a4ad43d3",
+    "D:\\Dati Tesi\\Umbra\\Block9_validation\\plots\\BLOCK9_REAL_DATA_RECHECK.png": "a5e28cee48e659735728e5e87d2d4439540463256d82c2f4dd6a3105dd467c2f"
+  },
+  "decision": "AUTHORIZED TO RETURN TO REAL DATA"
+}

@@ -1,0 +1,2796 @@
+{
+  "generated_utc": "2026-08-29T20:30:13.364811+00:00",
+  "scope": "Block 3 fixed three-look analysis only",
+  "guardrails": {
+    "dwell_sweep_5_to_16_s_performed": false,
+    "bathymetric_inversion_performed": false,
+    "cross_phase_to_period_conversion_performed": false,
+    "gec_used_for_wave_spectrum": false,
+    "small_azimuth_crop_before_doppler_decomposition": false
+  },
+  "durations_kept_distinct": {
+    "sicd_processed_aperture_duration_s": 18.068061721230308,
+    "cphd_available_slow_time_dwell_s": 22.540812513364376
+  },
+  "time_mapping": {
+    "source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\CPHD_DOPPLER_TIME_MAPPING.json",
+    "look_effective_centers_s": {
+      "1": 14.832257263168499,
+      "2": 9.036462634036535,
+      "3": 3.2428993865189475
+    },
+    "ordering": "look 1 late, look 2 central, look 3 early"
+  },
+  "cross_spectrum_convention": "F_secondary * conj(F_reference)",
+  "cross_spectrum_domain_choice": {
+    "chosen_domain": "intensity images derived from the preserved complex sub-looks",
+    "primary_source": "Li, Mouche, Stopa & Chapron (2019), JGR Oceans, doi:10.1029/2018JC014638, section 2.2.1",
+    "source_url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2018JC014638",
+    "source_method_summary": "The SLC azimuth spectrum is divided into three non-overlapping parts, inverse transformed into sub-look intensity images, and 2-D image cross-spectra are then formed."
+  },
+  "results": {
+    "nearshore": {
+      "roi": {
+        "kind": "ocean_nearshore",
+        "gec_center_col_row": [
+          13000,
+          12300
+        ],
+        "sicd_center_row_col_override": [
+          10000,
+          82800
+        ],
+        "shape_rows_cols": [
+          1200,
+          9600
+        ],
+        "description": "Open water immediately seaward of the central rocky coast; refined on full-aperture SICD intensity to exclude the terrain displaced by constant-HAE projection.",
+        "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+        "initial_gec_center_lon_lat_deg": [
+          -120.6449435363966,
+          34.57012023782194
+        ],
+        "selected_center_lon_lat_deg": [
+          -120.64679691911917,
+          34.569636382251765
+        ],
+        "selected_center_gec_col_row": [
+          13280.449767722997,
+          12796.957807090685
+        ],
+        "initial_gec_projected_sicd_center_row_col": [
+          9652.427976397594,
+          81283.90703852421
+        ],
+        "selection_stage": "full_aperture_SICD_intensity_refinement",
+        "projection_hae_m": 101.52475667382657,
+        "ground_to_sicd_residual_m": 0.0002129202203557209,
+        "ground_to_sicd_iterations": 3,
+        "sicd_center_row_col": [
+          10000,
+          82800
+        ],
+        "sicd_bounds": {
+          "row_start_inclusive": 9400,
+          "row_stop_exclusive": 10600,
+          "col_start_inclusive": 78000,
+          "col_stop_exclusive": 87600,
+          "rows": 1200,
+          "cols": 9600
+        },
+        "corner_lat_lon_hae": [
+          [
+            34.57156032400505,
+            -120.64332833760245,
+            101.52475667231712
+          ],
+          [
+            34.56677075394755,
+            -120.64450212940174,
+            101.52475667395976
+          ],
+          [
+            34.567710125876474,
+            -120.65025363027719,
+            101.524756674163
+          ],
+          [
+            34.57250134145468,
+            -120.64907983946158,
+            101.52475667284004
+          ]
+        ],
+        "corner_gec_col_row": [
+          [
+            12401.859093028514,
+            11941.575434285116
+          ],
+          [
+            14136.633857648661,
+            11927.617739268095
+          ],
+          [
+            14159.124581272064,
+            13648.76040402621
+          ],
+          [
+            12423.778325587395,
+            13662.839027436035
+          ]
+        ],
+        "local_ground_jacobian_EN_m_per_pixel": [
+          [
+            -0.4401875657651662,
+            -0.01122125430306822
+          ],
+          [
+            0.08698885954146114,
+            -0.055362006267786756
+          ]
+        ],
+        "local_row_ground_spacing_m": 0.44870051787198395,
+        "local_col_ground_spacing_m": 0.0564877711202043,
+        "local_row_axis_bearing_deg_clockwise_from_north": 281.17862730319644,
+        "local_col_axis_bearing_deg_clockwise_from_north": 191.45798292805307,
+        "approximate_ground_extent_row_col_m": [
+          538.4406214463808,
+          542.2826027539612
+        ]
+      },
+      "full_aperture_intensity_statistics": {
+        "mean": 9.680701843859609,
+        "standard_deviation": 10.38257319934438,
+        "percentiles_1_50_99_99_9": [
+          0.09040276698768139,
+          6.406531810760498,
+          48.60614791870117,
+          78.67755919647277
+        ]
+      },
+      "intensity_statistics": [
+        {
+          "look_index": 1,
+          "mean": 4.047336176143402,
+          "standard_deviation": 4.8371731482000815,
+          "percentiles_1_50_99_99_9": [
+            0.03330317799001932,
+            2.4709503650665283,
+            23.04520034790039,
+            40.372884979252376
+          ]
+        },
+        {
+          "look_index": 2,
+          "mean": 3.427718260459323,
+          "standard_deviation": 4.2531706187050515,
+          "percentiles_1_50_99_99_9": [
+            0.027541896998882296,
+            2.0489518642425537,
+            20.268978157043456,
+            37.30861339569208
+          ]
+        },
+        {
+          "look_index": 3,
+          "mean": 2.211244014196907,
+          "standard_deviation": 2.801549843492448,
+          "percentiles_1_50_99_99_9": [
+            0.017710828837007284,
+            1.31251859664917,
+            13.33254285812377,
+            25.10468538284414
+          ]
+        }
+      ],
+      "peak_search": {
+        "wavelength_band_m": [
+          40.0,
+          500.0
+        ],
+        "spatial_preprocessing": "global plane removal + energy-normalized 2-D Tukey(alpha=0.1)",
+        "conjugate_pair_treatment": "centro-symmetric power average; one half-plane retained",
+        "candidates_by_look": [
+          [
+            {
+              "crop_index_row_col": [
+                60,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                -4,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.36386192184718863,
+                0.490584176060429
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -3.636138078152811,
+                -1.509415823939571
+              ],
+              "k_east_cycles_per_m": 0.007158213342045186,
+              "k_north_cycles_per_m": 0.0013891599656811896,
+              "wavenumber_magnitude_cycles_per_m": 0.00729176135515179,
+              "wavelength_m": 137.14107624949602,
+              "wavevector_bearing_deg_mod_180": 79.01739918914718,
+              "crest_orientation_deg_mod_180": 169.01739918914717,
+              "power": 12412980302033.312,
+              "smoothed_power": 7317974131032.342,
+              "annular_prominence_db": 8.20429872488157,
+              "wavevector_difference_from_range_axis_deg": 22.16122811404925,
+              "wavevector_difference_from_azimuth_axis_deg": 67.5594162610941,
+              "crest_difference_from_range_axis_deg": 67.83877188595073,
+              "crest_difference_from_azimuth_axis_deg": 22.4405837389059
+            },
+            {
+              "crop_index_row_col": [
+                76,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                12,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.06924280848854791,
+                0.31901979739010866
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                11.930757191511452,
+                -1.6809802026098914
+              ],
+              "k_east_cycles_per_m": -0.02111568012672374,
+              "k_north_cycles_per_m": 0.007442767137622629,
+              "wavenumber_magnitude_cycles_per_m": 0.02238898679884803,
+              "wavelength_m": 44.66481708102363,
+              "wavevector_bearing_deg_mod_180": 109.41632297487904,
+              "crest_orientation_deg_mod_180": 19.41632297487905,
+              "power": 1113563914624.051,
+              "smoothed_power": 515406986790.6222,
+              "annular_prominence_db": 15.829426410789305,
+              "wavevector_difference_from_range_axis_deg": 8.237695671682602,
+              "wavevector_difference_from_azimuth_axis_deg": 82.04165995317402,
+              "crest_difference_from_range_axis_deg": 81.76230432831738,
+              "crest_difference_from_azimuth_axis_deg": 7.958340046825981
+            },
+            {
+              "crop_index_row_col": [
+                76,
+                59
+              ],
+              "fft_bin_offset_row_col": [
+                12,
+                -5
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.4334400296592276,
+                -0.018745486088481818
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                12.433440029659227,
+                -5.0187454860884815
+              ],
+              "k_east_cycles_per_m": -0.020837395294702125,
+              "k_north_cycles_per_m": 0.013666551318424138,
+              "wavenumber_magnitude_cycles_per_m": 0.024919303112382475,
+              "wavelength_m": 40.1295331370281,
+              "wavevector_bearing_deg_mod_180": 123.25953018450458,
+              "crest_orientation_deg_mod_180": 33.25953018450457,
+              "power": 556148760353.754,
+              "smoothed_power": 227945168771.20926,
+              "annular_prominence_db": 13.50481814967049,
+              "wavevector_difference_from_range_axis_deg": 22.08090288130815,
+              "wavevector_difference_from_azimuth_axis_deg": 68.1984527435485,
+              "crest_difference_from_range_axis_deg": 67.91909711869187,
+              "crest_difference_from_azimuth_axis_deg": 21.8015472564515
+            },
+            {
+              "crop_index_row_col": [
+                58,
+                54
+              ],
+              "fft_bin_offset_row_col": [
+                -6,
+                -10
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.21207063389655498,
+                0.03326455912488128
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -5.787929366103445,
+                -9.96673544087512
+              ],
+              "k_east_cycles_per_m": 0.014098519434154405,
+              "k_north_cycles_per_m": 0.01589535126853118,
+              "wavenumber_magnitude_cycles_per_m": 0.021246892530090728,
+              "wavelength_m": 47.06570613014391,
+              "wavevector_bearing_deg_mod_180": 41.5716999560975,
+              "crest_orientation_deg_mod_180": 131.5716999560975,
+              "power": 34611140545.04615,
+              "smoothed_power": 18042739865.196075,
+              "annular_prominence_db": 0.6600396793571334,
+              "wavevector_difference_from_range_axis_deg": 59.60692734709894,
+              "wavevector_difference_from_azimuth_axis_deg": 30.11371702804442,
+              "crest_difference_from_range_axis_deg": 30.393072652901054,
+              "crest_difference_from_azimuth_axis_deg": 59.88628297195558
+            }
+          ],
+          [
+            {
+              "crop_index_row_col": [
+                60,
+                63
+              ],
+              "fft_bin_offset_row_col": [
+                -4,
+                -1
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.048316810838927686,
+                -0.45379969331749404
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -4.048316810838927,
+                -1.4537996933174941
+              ],
+              "k_east_cycles_per_m": 0.007888587526182843,
+              "k_north_cycles_per_m": 0.0011364765399986194,
+              "wavenumber_magnitude_cycles_per_m": 0.007970030870969997,
+              "wavelength_m": 125.47002843394186,
+              "wavevector_bearing_deg_mod_180": 81.80203705496223,
+              "crest_orientation_deg_mod_180": 171.80203705496223,
+              "power": 21368848240745.0,
+              "smoothed_power": 8827826782416.637,
+              "annular_prominence_db": 11.11875017498165,
+              "wavevector_difference_from_range_axis_deg": 19.37659024823421,
+              "wavevector_difference_from_azimuth_axis_deg": 70.34405412690916,
+              "crest_difference_from_range_axis_deg": 70.62340975176579,
+              "crest_difference_from_azimuth_axis_deg": 19.655945873090843
+            },
+            {
+              "crop_index_row_col": [
+                65,
+                63
+              ],
+              "fft_bin_offset_row_col": [
+                1,
+                -1
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.4729333342771558,
+                0.08535177124202552
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                0.5270666657228442,
+                -0.9146482287579745
+              ],
+              "k_east_cycles_per_m": -0.000632384496884341,
+              "k_north_cycles_per_m": 0.0018491382686525364,
+              "wavenumber_magnitude_cycles_per_m": 0.00195428311370051,
+              "wavelength_m": 511.69658735190194,
+              "wavevector_bearing_deg_mod_180": 161.11988878894095,
+              "crest_orientation_deg_mod_180": 71.11988878894095,
+              "power": 1459279319901.1252,
+              "smoothed_power": 1529744159291.7222,
+              "annular_prominence_db": 0.09179001727165766,
+              "wavevector_difference_from_range_axis_deg": 59.94126148574452,
+              "wavevector_difference_from_azimuth_axis_deg": 30.338094139112115,
+              "crest_difference_from_range_axis_deg": 30.05873851425548,
+              "crest_difference_from_azimuth_axis_deg": 59.661905860887885
+            }
+          ],
+          [
+            {
+              "crop_index_row_col": [
+                60,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                -4,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.14937107454116966,
+                0.37555868884459404
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -3.8506289254588304,
+                -1.624441311155406
+              ],
+              "k_east_cycles_per_m": 0.007589757238364821,
+              "k_north_cycles_per_m": 0.0015181176798743875,
+              "wavenumber_magnitude_cycles_per_m": 0.007740096654904148,
+              "wavelength_m": 129.19735302871146,
+              "wavevector_bearing_deg_mod_180": 78.68886089426752,
+              "crest_orientation_deg_mod_180": 168.68886089426752,
+              "power": 7094397049292.613,
+              "smoothed_power": 3863188176138.2324,
+              "annular_prominence_db": 10.378169086097873,
+              "wavevector_difference_from_range_axis_deg": 22.489766408928915,
+              "wavevector_difference_from_azimuth_axis_deg": 67.23087796621445,
+              "crest_difference_from_range_axis_deg": 67.51023359107108,
+              "crest_difference_from_azimuth_axis_deg": 22.76912203378555
+            },
+            {
+              "crop_index_row_col": [
+                64,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                0,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.42411624073455906,
+                0.33477339469637524
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                0.42411624073455906,
+                -1.6652266053036247
+              ],
+              "k_east_cycles_per_m": -0.00017665344619717508,
+              "k_north_cycles_per_m": 0.0031690213160592037,
+              "wavenumber_magnitude_cycles_per_m": 0.003173941168593228,
+              "wavelength_m": 315.0657012471424,
+              "wavevector_bearing_deg_mod_180": 176.809414759286,
+              "crest_orientation_deg_mod_180": 86.80941475928603,
+              "power": 2089626180953.6292,
+              "smoothed_power": 1088846502642.6389,
+              "annular_prominence_db": 1.2690159884856835,
+              "wavevector_difference_from_range_axis_deg": 75.63078745608956,
+              "wavevector_difference_from_azimuth_axis_deg": 14.64856816876707,
+              "crest_difference_from_range_axis_deg": 14.369212543910407,
+              "crest_difference_from_azimuth_axis_deg": 75.35143183123296
+            },
+            {
+              "crop_index_row_col": [
+                72,
+                56
+              ],
+              "fft_bin_offset_row_col": [
+                8,
+                -8
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.10245886692276301,
+                -0.19295451385002912
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                7.897541133077237,
+                -8.19295451385003
+              ],
+              "k_east_cycles_per_m": -0.011446238156140447,
+              "k_north_cycles_per_m": 0.017735518945494418,
+              "wavenumber_magnitude_cycles_per_m": 0.021108410650569523,
+              "wavelength_m": 47.374481032896675,
+              "wavevector_bearing_deg_mod_180": 147.16240803256383,
+              "crest_orientation_deg_mod_180": 57.16240803256383,
+              "power": 9436707616.693665,
+              "smoothed_power": 6140658069.8244915,
+              "annular_prominence_db": -2.3792693308786923,
+              "wavevector_difference_from_range_axis_deg": 45.983780729367396,
+              "wavevector_difference_from_azimuth_axis_deg": 44.29557489548924,
+              "crest_difference_from_range_axis_deg": 44.016219270632604,
+              "crest_difference_from_azimuth_axis_deg": 45.70442510451076
+            }
+          ]
+        ]
+      },
+      "three_look_peak_stability": {
+        "robust": true,
+        "reason": "All three thresholds passed.",
+        "thresholds": {
+          "maximum_relative_wavelength_span": 0.2,
+          "maximum_orientation_span_deg": 12.0,
+          "minimum_annular_prominence_db_each_look": 3.0
+        },
+        "score": 8.0784039988702,
+        "relative_wavelength_span": 0.09033503815639714,
+        "orientation_span_deg": 3.1131761606947066,
+        "minimum_prominence_db": 8.20429872488157,
+        "mean_wavelength_m": 130.6028192373831,
+        "wavelength_standard_deviation_m": 4.867226501545913,
+        "mean_wavevector_bearing_deg_mod_180": 79.83572372864876,
+        "mean_crest_orientation_deg_mod_180": 169.83572372864876,
+        "matched_candidates": [
+          {
+            "crop_index_row_col": [
+              60,
+              62
+            ],
+            "fft_bin_offset_row_col": [
+              -4,
+              -2
+            ],
+            "subbin_parabolic_offset_row_col": [
+              0.36386192184718863,
+              0.490584176060429
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              -3.636138078152811,
+              -1.509415823939571
+            ],
+            "k_east_cycles_per_m": 0.007158213342045186,
+            "k_north_cycles_per_m": 0.0013891599656811896,
+            "wavenumber_magnitude_cycles_per_m": 0.00729176135515179,
+            "wavelength_m": 137.14107624949602,
+            "wavevector_bearing_deg_mod_180": 79.01739918914718,
+            "crest_orientation_deg_mod_180": 169.01739918914717,
+            "power": 12412980302033.312,
+            "smoothed_power": 7317974131032.342,
+            "annular_prominence_db": 8.20429872488157,
+            "wavevector_difference_from_range_axis_deg": 22.16122811404925,
+            "wavevector_difference_from_azimuth_axis_deg": 67.5594162610941,
+            "crest_difference_from_range_axis_deg": 67.83877188595073,
+            "crest_difference_from_azimuth_axis_deg": 22.4405837389059
+          },
+          {
+            "crop_index_row_col": [
+              60,
+              63
+            ],
+            "fft_bin_offset_row_col": [
+              -4,
+              -1
+            ],
+            "subbin_parabolic_offset_row_col": [
+              -0.048316810838927686,
+              -0.45379969331749404
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              -4.048316810838927,
+              -1.4537996933174941
+            ],
+            "k_east_cycles_per_m": 0.007888587526182843,
+            "k_north_cycles_per_m": 0.0011364765399986194,
+            "wavenumber_magnitude_cycles_per_m": 0.007970030870969997,
+            "wavelength_m": 125.47002843394186,
+            "wavevector_bearing_deg_mod_180": 81.80203705496223,
+            "crest_orientation_deg_mod_180": 171.80203705496223,
+            "power": 21368848240745.0,
+            "smoothed_power": 8827826782416.637,
+            "annular_prominence_db": 11.11875017498165,
+            "wavevector_difference_from_range_axis_deg": 19.37659024823421,
+            "wavevector_difference_from_azimuth_axis_deg": 70.34405412690916,
+            "crest_difference_from_range_axis_deg": 70.62340975176579,
+            "crest_difference_from_azimuth_axis_deg": 19.655945873090843
+          },
+          {
+            "crop_index_row_col": [
+              60,
+              62
+            ],
+            "fft_bin_offset_row_col": [
+              -4,
+              -2
+            ],
+            "subbin_parabolic_offset_row_col": [
+              0.14937107454116966,
+              0.37555868884459404
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              -3.8506289254588304,
+              -1.624441311155406
+            ],
+            "k_east_cycles_per_m": 0.007589757238364821,
+            "k_north_cycles_per_m": 0.0015181176798743875,
+            "wavenumber_magnitude_cycles_per_m": 0.007740096654904148,
+            "wavelength_m": 129.19735302871146,
+            "wavevector_bearing_deg_mod_180": 78.68886089426752,
+            "crest_orientation_deg_mod_180": 168.68886089426752,
+            "power": 7094397049292.613,
+            "smoothed_power": 3863188176138.2324,
+            "annular_prominence_db": 10.378169086097873,
+            "wavevector_difference_from_range_axis_deg": 22.489766408928915,
+            "wavevector_difference_from_azimuth_axis_deg": 67.23087796621445,
+            "crest_difference_from_range_axis_deg": 67.51023359107108,
+            "crest_difference_from_azimuth_axis_deg": 22.76912203378555
+          }
+        ],
+        "mean_wavevector_difference_from_range_axis_deg": 21.342903574547677,
+        "mean_wavevector_difference_from_azimuth_axis_deg": 68.37774080059569,
+        "mean_crest_difference_from_range_axis_deg": 68.65709642545232,
+        "mean_crest_difference_from_azimuth_axis_deg": 21.62225919940431,
+        "orientation_semantics": "The 2-D FFT peak gives the modulation wavevector; visible crest/stripe orientation is perpendicular (+90 degrees, modulo 180)."
+      },
+      "cross_spectra": {
+        "computed": true,
+        "input_domain": "detrended and spatially windowed sub-look intensity",
+        "period_conversion_performed": false,
+        "selected_peak": {
+          "crop_index_row_col": [
+            60,
+            63
+          ],
+          "fft_bin_offset_row_col": [
+            -4,
+            -1
+          ],
+          "subbin_parabolic_offset_row_col": [
+            -0.048316810838927686,
+            -0.45379969331749404
+          ],
+          "fft_bin_offset_subpixel_row_col": [
+            -4.048316810838927,
+            -1.4537996933174941
+          ],
+          "k_east_cycles_per_m": 0.007888587526182843,
+          "k_north_cycles_per_m": 0.0011364765399986194,
+          "wavenumber_magnitude_cycles_per_m": 0.007970030870969997,
+          "wavelength_m": 125.47002843394186,
+          "wavevector_bearing_deg_mod_180": 81.80203705496223,
+          "crest_orientation_deg_mod_180": 171.80203705496223,
+          "power": 21368848240745.0,
+          "smoothed_power": 8827826782416.637,
+          "annular_prominence_db": 11.11875017498165,
+          "wavevector_difference_from_range_axis_deg": 19.37659024823421,
+          "wavevector_difference_from_azimuth_axis_deg": 70.34405412690916,
+          "crest_difference_from_range_axis_deg": 70.62340975176579,
+          "crest_difference_from_azimuth_axis_deg": 19.655945873090843
+        },
+        "pairs": {
+          "1-2": {
+            "reference_look": 1,
+            "secondary_look": 2,
+            "formula": "F_secondary * conj(F_reference)",
+            "effective_reference_center_s": 14.832257263168499,
+            "effective_secondary_center_s": 9.036462634036535,
+            "effective_secondary_minus_reference_s": -5.795794629131963,
+            "raw_bin_phase_rad": 1.8401690764597942,
+            "locally_smoothed_phase_rad": 1.991056972201039,
+            "local_magnitude_squared_coherence": 0.8535177116707282
+          },
+          "2-3": {
+            "reference_look": 2,
+            "secondary_look": 3,
+            "formula": "F_secondary * conj(F_reference)",
+            "effective_reference_center_s": 9.036462634036535,
+            "effective_secondary_center_s": 3.2428993865189475,
+            "effective_secondary_minus_reference_s": -5.7935632475175876,
+            "raw_bin_phase_rad": 1.8872680555137487,
+            "locally_smoothed_phase_rad": 2.0897653791002346,
+            "local_magnitude_squared_coherence": 0.7231117865904889
+          },
+          "1-3": {
+            "reference_look": 1,
+            "secondary_look": 3,
+            "formula": "F_secondary * conj(F_reference)",
+            "effective_reference_center_s": 14.832257263168499,
+            "effective_secondary_center_s": 3.2428993865189475,
+            "effective_secondary_minus_reference_s": -11.58935787664955,
+            "raw_bin_phase_rad": -2.5557481752060434,
+            "locally_smoothed_phase_rad": -2.161433655813672,
+            "local_magnitude_squared_coherence": 0.5594814712605146
+          }
+        },
+        "phase_closure": {
+          "identity": "phi13 ~= wrap(phi12 + phi23)",
+          "selected_same_k_bin": [
+            60,
+            63
+          ],
+          "raw_phi12_rad": 1.8401690764597942,
+          "raw_phi23_rad": 1.8872680555137487,
+          "raw_phi13_rad": -2.5557481752060434,
+          "raw_wrapped_phi12_plus_phi23_rad": -2.555748175206044,
+          "raw_closure_error_rad": 2.4492935982947064e-16,
+          "locally_smoothed_closure_error_rad": 0.04092930006464115,
+          "upper_quartile_joint_amplitude_field_closure_rms_rad": 2.221205174490302e-08,
+          "upper_quartile_joint_amplitude_field_closure_max_abs_rad": 9.124046634874238e-08
+        },
+        "npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\nearshore_cross_spectra.npz",
+        "figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\nearshore_cross_spectra.png"
+      },
+      "artifacts": {
+        "intensity_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\nearshore_three_look_intensity.png",
+        "normalized_difference_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\nearshore_sublook_differences.png",
+        "power_spectrum_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\nearshore_three_look_power_spectrum.png",
+        "spectrum_crop_npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\nearshore_spectrum_crops.npz",
+        "complex_master_arrays": [
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\nearshore_look1_complex64.npy",
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\nearshore_look2_complex64.npy",
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\nearshore_look3_complex64.npy"
+        ]
+      }
+    },
+    "offshore": {
+      "roi": {
+        "kind": "ocean_offshore",
+        "gec_center_col_row": [
+          11500,
+          14800
+        ],
+        "sicd_center_row_col_override": [
+          11500,
+          75800
+        ],
+        "shape_rows_cols": [
+          1200,
+          9600
+        ],
+        "description": "Open water farther seaward; refined on full-aperture SICD intensity to exclude all coastline pixels.",
+        "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+        "initial_gec_center_lon_lat_deg": [
+          -120.65221958968795,
+          34.57570909379517
+        ],
+        "selected_center_lon_lat_deg": [
+          -120.65312238385125,
+          34.57430496412605
+        ],
+        "selected_center_gec_col_row": [
+          12042.451823224996,
+          14956.403826453321
+        ],
+        "initial_gec_projected_sicd_center_row_col": [
+          11388.550257531871,
+          72811.42616976511
+        ],
+        "selection_stage": "full_aperture_SICD_intensity_refinement",
+        "projection_hae_m": 101.52475667382657,
+        "ground_to_sicd_residual_m": 0.0007238784323439423,
+        "ground_to_sicd_iterations": 3,
+        "sicd_center_row_col": [
+          11500,
+          75800
+        ],
+        "sicd_bounds": {
+          "row_start_inclusive": 10900,
+          "row_stop_exclusive": 12100,
+          "col_start_inclusive": 71000,
+          "col_stop_exclusive": 80600,
+          "rows": 1200,
+          "cols": 9600
+        },
+        "corner_lat_lon_hae": [
+          [
+            34.57622991711543,
+            -120.64965623329431,
+            101.5247566741846
+          ],
+          [
+            34.571440079498466,
+            -120.65084102135691,
+            101.5247566726822
+          ],
+          [
+            34.57237770327624,
+            -120.65657670483776,
+            101.52475667406321
+          ],
+          [
+            34.57716919005452,
+            -120.65539193687337,
+            101.52475667308869
+          ]
+        ],
+        "corner_gec_col_row": [
+          [
+            11163.65732133553,
+            14101.793952362414
+          ],
+          [
+            12899.191830098118,
+            14090.97560667674
+          ],
+          [
+            12921.3305888118,
+            15807.446137916411
+          ],
+          [
+            11185.224483566772,
+            15818.391170070106
+          ]
+        ],
+        "local_ground_jacobian_EN_m_per_pixel": [
+          [
+            -0.4389531991561822,
+            -0.01132564824465039
+          ],
+          [
+            0.08682735723253453,
+            -0.05536515863755518
+          ]
+        ],
+        "local_row_ground_spacing_m": 0.4474582673428139,
+        "local_col_ground_spacing_m": 0.056511689933350984,
+        "local_row_axis_bearing_deg_clockwise_from_north": 281.1889820309276,
+        "local_col_axis_bearing_deg_clockwise_from_north": 191.5610810973859,
+        "approximate_ground_extent_row_col_m": [
+          536.9499208113767,
+          542.5122233601694
+        ]
+      },
+      "full_aperture_intensity_statistics": {
+        "mean": 4.311125821120455,
+        "standard_deviation": 4.686121684898427,
+        "percentiles_1_50_99_99_9": [
+          0.0393558482080698,
+          2.820611357688904,
+          22.00077537536619,
+          35.74644903946029
+        ]
+      },
+      "intensity_statistics": [
+        {
+          "look_index": 1,
+          "mean": 1.8892525895907344,
+          "standard_deviation": 2.235456379639835,
+          "percentiles_1_50_99_99_9": [
+            0.015470074098557234,
+            1.1599828004837036,
+            10.60070231437683,
+            18.473790033342112
+          ]
+        },
+        {
+          "look_index": 2,
+          "mean": 1.524859594569298,
+          "standard_deviation": 1.8401205546457124,
+          "percentiles_1_50_99_99_9": [
+            0.012793959910050034,
+            0.9366302490234375,
+            8.7431875514984,
+            15.844811474802114
+          ]
+        },
+        {
+          "look_index": 3,
+          "mean": 0.8937438738867506,
+          "standard_deviation": 1.0671774714782187,
+          "percentiles_1_50_99_99_9": [
+            0.007639498668722809,
+            0.5537978708744049,
+            5.071358795166013,
+            9.155691175460873
+          ]
+        }
+      ],
+      "peak_search": {
+        "wavelength_band_m": [
+          40.0,
+          500.0
+        ],
+        "spatial_preprocessing": "global plane removal + energy-normalized 2-D Tukey(alpha=0.1)",
+        "conjugate_pair_treatment": "centro-symmetric power average; one half-plane retained",
+        "candidates_by_look": [
+          [
+            {
+              "crop_index_row_col": [
+                61,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                -3,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.2827756944843888,
+                0.18304052645685914
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -3.2827756944843887,
+                -1.816959473543141
+              ],
+              "k_east_cycles_per_m": 0.006639738285974226,
+              "k_north_cycles_per_m": 0.0020602717371526616,
+              "wavenumber_magnitude_cycles_per_m": 0.006952038847499487,
+              "wavelength_m": 143.84269448662252,
+              "wavevector_bearing_deg_mod_180": 72.76119081836546,
+              "crest_orientation_deg_mod_180": 162.76119081836546,
+              "power": 2181760712646.2498,
+              "smoothed_power": 836381701367.8984,
+              "annular_prominence_db": 6.051237464899141,
+              "wavevector_difference_from_range_axis_deg": 28.42779121256214,
+              "wavevector_difference_from_azimuth_axis_deg": 61.200109720979555,
+              "crest_difference_from_range_axis_deg": 61.57220878743786,
+              "crest_difference_from_azimuth_axis_deg": 28.799890279020445
+            },
+            {
+              "crop_index_row_col": [
+                67,
+                64
+              ],
+              "fft_bin_offset_row_col": [
+                3,
+                0
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.06215036525630489,
+                0.41919260874115466
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                3.0621503652563047,
+                0.41919260874115466
+              ],
+              "k_east_cycles_per_m": -0.005737216150454875,
+              "k_north_cycles_per_m": 0.0003849315310234235,
+              "wavenumber_magnitude_cycles_per_m": 0.005750114906731542,
+              "wavelength_m": 173.90956810781648,
+              "wavevector_bearing_deg_mod_180": 93.8384377786699,
+              "crest_orientation_deg_mod_180": 3.8384377786699133,
+              "power": 1714378767346.1885,
+              "smoothed_power": 717330667323.0911,
+              "annular_prominence_db": 4.468303061798905,
+              "wavevector_difference_from_range_axis_deg": 7.350544252257706,
+              "wavevector_difference_from_azimuth_axis_deg": 82.277356681284,
+              "crest_difference_from_range_axis_deg": 82.64945574774231,
+              "crest_difference_from_azimuth_axis_deg": 7.7226433187159955
+            },
+            {
+              "crop_index_row_col": [
+                69,
+                60
+              ],
+              "fft_bin_offset_row_col": [
+                5,
+                -4
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.08895244367681385,
+                0.13536940002131875
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                4.911047556323187,
+                -3.8646305999786814
+              ],
+              "k_east_cycles_per_m": -0.0075784905473558406,
+              "k_north_cycles_per_m": 0.00882137824005531,
+              "wavenumber_magnitude_cycles_per_m": 0.011629713368371687,
+              "wavelength_m": 85.98664200268361,
+              "wavevector_bearing_deg_mod_180": 139.33395841391686,
+              "crest_orientation_deg_mod_180": 49.33395841391686,
+              "power": 308542547709.8303,
+              "smoothed_power": 139505781705.74347,
+              "annular_prominence_db": 1.9142203933185895,
+              "wavevector_difference_from_range_axis_deg": 38.144976382989256,
+              "wavevector_difference_from_azimuth_axis_deg": 52.22712268346905,
+              "crest_difference_from_range_axis_deg": 51.855023617010744,
+              "crest_difference_from_azimuth_axis_deg": 37.77287731653095
+            },
+            {
+              "crop_index_row_col": [
+                74,
+                61
+              ],
+              "fft_bin_offset_row_col": [
+                10,
+                -3
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.22616605642874282,
+                0.01806722675016726
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                10.226166056428744,
+                -2.9819327732498326
+              ],
+              "k_east_cycles_per_m": -0.0175923187542916,
+              "k_north_cycles_per_m": 0.00920908426489269,
+              "wavenumber_magnitude_cycles_per_m": 0.019856910941797923,
+              "wavelength_m": 50.36030039773428,
+              "wavevector_bearing_deg_mod_180": 117.63079307795948,
+              "crest_orientation_deg_mod_180": 27.63079307795948,
+              "power": 142496948773.47675,
+              "smoothed_power": 92749932053.44736,
+              "annular_prominence_db": 11.098178778394585,
+              "wavevector_difference_from_range_axis_deg": 16.441811047031877,
+              "wavevector_difference_from_azimuth_axis_deg": 73.93028801942643,
+              "crest_difference_from_range_axis_deg": 73.55818895296812,
+              "crest_difference_from_azimuth_axis_deg": 16.069711980573572
+            },
+            {
+              "crop_index_row_col": [
+                63,
+                52
+              ],
+              "fft_bin_offset_row_col": [
+                -1,
+                -12
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.4024817494253311,
+                0.14792616360006364
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -1.402481749425331,
+                -11.852073836399937
+              ],
+              "k_east_cycles_per_m": 0.006798341131026509,
+              "k_north_cycles_per_m": 0.020908373294944927,
+              "wavenumber_magnitude_cycles_per_m": 0.021985848084041994,
+              "wavelength_m": 45.483803771291896,
+              "wavevector_bearing_deg_mod_180": 18.011893816173533,
+              "crest_orientation_deg_mod_180": 108.01189381617354,
+              "power": 3311555561.7310057,
+              "smoothed_power": 1643995909.5705738,
+              "annular_prominence_db": -4.179590782223326,
+              "wavevector_difference_from_range_axis_deg": 83.17708821475406,
+              "wavevector_difference_from_azimuth_axis_deg": 6.450812718787631,
+              "crest_difference_from_range_axis_deg": 6.822911785245935,
+              "crest_difference_from_azimuth_axis_deg": 83.54918728121237
+            }
+          ],
+          [
+            {
+              "crop_index_row_col": [
+                69,
+                65
+              ],
+              "fft_bin_offset_row_col": [
+                5,
+                1
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.369722852493871,
+                0.1784790595518566
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                4.630277147506129,
+                1.1784790595518566
+              ],
+              "k_east_cycles_per_m": -0.008870046757152618,
+              "k_north_cycles_per_m": -0.00040276604336769077,
+              "wavenumber_magnitude_cycles_per_m": 0.008879186334330626,
+              "wavelength_m": 112.62293214115624,
+              "wavevector_bearing_deg_mod_180": 87.4001316498601,
+              "crest_orientation_deg_mod_180": 177.4001316498601,
+              "power": 776184155036.6368,
+              "smoothed_power": 506282059561.9894,
+              "annular_prominence_db": 5.628748939481745,
+              "wavevector_difference_from_range_axis_deg": 13.788850381067505,
+              "wavevector_difference_from_azimuth_axis_deg": 75.83905055247419,
+              "crest_difference_from_range_axis_deg": 76.2111496189325,
+              "crest_difference_from_azimuth_axis_deg": 14.160949447525809
+            },
+            {
+              "crop_index_row_col": [
+                67,
+                63
+              ],
+              "fft_bin_offset_row_col": [
+                3,
+                -1
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.1578003298548561,
+                0.3956527840814903
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                2.8421996701451437,
+                -0.6043472159185097
+              ],
+              "k_east_cycles_per_m": -0.0049697812770232,
+              "k_north_cycles_per_m": 0.002153679904875117,
+              "wavenumber_magnitude_cycles_per_m": 0.005416369916661273,
+              "wavelength_m": 184.6254992525352,
+              "wavevector_bearing_deg_mod_180": 113.42974124857888,
+              "crest_orientation_deg_mod_180": 23.429741248578864,
+              "power": 575520672915.2499,
+              "smoothed_power": 348709014902.9986,
+              "annular_prominence_db": 1.7805469310650757,
+              "wavevector_difference_from_range_axis_deg": 12.240759217651274,
+              "wavevector_difference_from_azimuth_axis_deg": 78.13133984880704,
+              "crest_difference_from_range_axis_deg": 77.75924078234874,
+              "crest_difference_from_azimuth_axis_deg": 11.868660151192955
+            },
+            {
+              "crop_index_row_col": [
+                72,
+                65
+              ],
+              "fft_bin_offset_row_col": [
+                8,
+                1
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.3010260273859573,
+                0.059248182351713516
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                8.301026027385957,
+                1.0592481823517135
+              ],
+              "k_east_cycles_per_m": -0.015525139682671017,
+              "k_north_cycles_per_m": 0.0011829446583083738,
+              "wavenumber_magnitude_cycles_per_m": 0.015570141946400702,
+              "wavelength_m": 64.22549026479278,
+              "wavevector_bearing_deg_mod_180": 94.35725706927654,
+              "crest_orientation_deg_mod_180": 4.357257069276557,
+              "power": 707432791421.1145,
+              "smoothed_power": 345677450317.1458,
+              "annular_prominence_db": 12.547892500296436,
+              "wavevector_difference_from_range_axis_deg": 6.831724961651062,
+              "wavevector_difference_from_azimuth_axis_deg": 82.79617597189065,
+              "crest_difference_from_range_axis_deg": 83.16827503834895,
+              "crest_difference_from_azimuth_axis_deg": 7.203824028109352
+            },
+            {
+              "crop_index_row_col": [
+                75,
+                60
+              ],
+              "fft_bin_offset_row_col": [
+                11,
+                -4
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.4354406574901016,
+                0.20535349565531333
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                11.435440657490101,
+                -3.7946465043446866
+              ],
+              "k_east_cycles_per_m": -0.019508093983361587,
+              "k_north_cycles_per_m": 0.011130059103579403,
+              "wavenumber_magnitude_cycles_per_m": 0.022459829618962816,
+              "wavelength_m": 44.52393526421504,
+              "wavevector_bearing_deg_mod_180": 119.70629040564563,
+              "crest_orientation_deg_mod_180": 29.706290405645632,
+              "power": 86291919797.56735,
+              "smoothed_power": 39588186856.57504,
+              "annular_prominence_db": 12.333484349140136,
+              "wavevector_difference_from_range_axis_deg": 18.517308374718027,
+              "wavevector_difference_from_azimuth_axis_deg": 71.85479069174028,
+              "crest_difference_from_range_axis_deg": 71.48269162528197,
+              "crest_difference_from_azimuth_axis_deg": 18.145209308259723
+            }
+          ],
+          [
+            {
+              "crop_index_row_col": [
+                61,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                -3,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.18108000631042367,
+                -0.09264084764010805
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -3.181080006310424,
+                -2.092640847640108
+              ],
+              "k_east_cycles_per_m": 0.006552789549035927,
+              "k_north_cycles_per_m": 0.0025967383768689283,
+              "wavenumber_magnitude_cycles_per_m": 0.007048553119035022,
+              "wavelength_m": 141.87308843561703,
+              "wavevector_bearing_deg_mod_180": 68.38257557089558,
+              "crest_orientation_deg_mod_180": 158.3825755708956,
+              "power": 426582664838.6251,
+              "smoothed_power": 231801668458.1366,
+              "annular_prominence_db": 6.119648916458363,
+              "wavevector_difference_from_range_axis_deg": 32.80640646003202,
+              "wavevector_difference_from_azimuth_axis_deg": 56.82149447350969,
+              "crest_difference_from_range_axis_deg": 57.19359353996799,
+              "crest_difference_from_azimuth_axis_deg": 33.17850552649031
+            },
+            {
+              "crop_index_row_col": [
+                56,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                -8,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.46863373553612897,
+                -0.24642788011286584
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -7.5313662644638715,
+                -2.246427880112866
+              ],
+              "k_east_cycles_per_m": 0.014545438462785875,
+              "k_north_cycles_per_m": 0.0012510825632804706,
+              "wavenumber_magnitude_cycles_per_m": 0.01459914338770721,
+              "wavelength_m": 68.49716955599061,
+              "wavevector_bearing_deg_mod_180": 85.08397339896098,
+              "crest_orientation_deg_mod_180": 175.08397339896098,
+              "power": 57437100947.66723,
+              "smoothed_power": 94369960835.41974,
+              "annular_prominence_db": 11.163929813061538,
+              "wavevector_difference_from_range_axis_deg": 16.105008631966626,
+              "wavevector_difference_from_azimuth_axis_deg": 73.52289230157507,
+              "crest_difference_from_range_axis_deg": 73.89499136803337,
+              "crest_difference_from_azimuth_axis_deg": 16.47710769842493
+            },
+            {
+              "crop_index_row_col": [
+                76,
+                66
+              ],
+              "fft_bin_offset_row_col": [
+                12,
+                2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.25106801530481404,
+                0.20845447587302166
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                11.748931984695187,
+                2.2084544758730216
+              ],
+              "k_east_cycles_per_m": -0.022227331862536424,
+              "k_north_cycles_per_m": 0.0003917915416340998,
+              "wavenumber_magnitude_cycles_per_m": 0.02223078456418988,
+              "wavelength_m": 44.98266793565328,
+              "wavevector_bearing_deg_mod_180": 91.00982328976976,
+              "crest_orientation_deg_mod_180": 1.0098232897697699,
+              "power": 63847090452.50417,
+              "smoothed_power": 24772869627.04951,
+              "annular_prominence_db": 13.957296583266585,
+              "wavevector_difference_from_range_axis_deg": 10.179158741157849,
+              "wavevector_difference_from_azimuth_axis_deg": 79.44874219238386,
+              "crest_difference_from_range_axis_deg": 79.82084125884217,
+              "crest_difference_from_azimuth_axis_deg": 10.551257807616139
+            },
+            {
+              "crop_index_row_col": [
+                77,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                13,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.2224128019188507,
+                0.05384902985908872
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                12.77758719808115,
+                -1.9461509701409112
+              ],
+              "k_east_cycles_per_m": -0.02261819177971791,
+              "k_north_cycles_per_m": 0.008288420998138948,
+              "wavenumber_magnitude_cycles_per_m": 0.02408901247512005,
+              "wavelength_m": 41.51270215135776,
+              "wavevector_bearing_deg_mod_180": 110.12532543865134,
+              "crest_orientation_deg_mod_180": 20.125325438651345,
+              "power": 23986765162.524666,
+              "smoothed_power": 8368348761.207833,
+              "annular_prominence_db": 10.70784424691206,
+              "wavevector_difference_from_range_axis_deg": 8.93634340772374,
+              "wavevector_difference_from_azimuth_axis_deg": 81.43575565873456,
+              "crest_difference_from_range_axis_deg": 81.06365659227626,
+              "crest_difference_from_azimuth_axis_deg": 8.564244341265436
+            },
+            {
+              "crop_index_row_col": [
+                65,
+                53
+              ],
+              "fft_bin_offset_row_col": [
+                1,
+                -11
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.4802043715009223,
+                -0.2096082774551709
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                1.4802043715009223,
+                -11.209608277455171
+              ],
+              "k_east_cycles_per_m": 0.0013087180065689242,
+              "k_north_cycles_per_m": 0.020822580075219813,
+              "wavenumber_magnitude_cycles_per_m": 0.02086366659553538,
+              "wavelength_m": 47.930213772395604,
+              "wavevector_bearing_deg_mod_180": 3.59636109322774,
+              "crest_orientation_deg_mod_180": 93.59636109322774,
+              "power": 1419849782.5560646,
+              "smoothed_power": 929989319.1614432,
+              "annular_prominence_db": -1.821744153431384,
+              "wavevector_difference_from_range_axis_deg": 82.40737906230015,
+              "wavevector_difference_from_azimuth_axis_deg": 7.964720004158167,
+              "crest_difference_from_range_axis_deg": 7.592620937699863,
+              "crest_difference_from_azimuth_axis_deg": 82.03527999584185
+            },
+            {
+              "crop_index_row_col": [
+                69,
+                54
+              ],
+              "fft_bin_offset_row_col": [
+                5,
+                -10
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.42610023879768777,
+                -0.11520539047955237
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                4.573899761202313,
+                -10.115205390479552
+              ],
+              "k_east_cycles_per_m": -0.00472757021362782,
+              "k_north_cycles_per_m": 0.019998317582988884,
+              "wavenumber_magnitude_cycles_per_m": 0.02054951644868714,
+              "wavelength_m": 48.66294554896388,
+              "wavevector_bearing_deg_mod_180": 166.69954344281842,
+              "crest_orientation_deg_mod_180": 76.69954344281842,
+              "power": 1036470505.0882721,
+              "smoothed_power": 500832290.3772147,
+              "annular_prominence_db": -4.703440001636564,
+              "wavevector_difference_from_range_axis_deg": 65.51056141189082,
+              "wavevector_difference_from_azimuth_axis_deg": 24.861537654567485,
+              "crest_difference_from_range_axis_deg": 24.48943858810918,
+              "crest_difference_from_azimuth_axis_deg": 65.13846234543252
+            }
+          ]
+        ]
+      },
+      "three_look_peak_stability": {
+        "robust": true,
+        "reason": "All three thresholds passed.",
+        "thresholds": {
+          "maximum_relative_wavelength_span": 0.2,
+          "maximum_orientation_span_deg": 12.0,
+          "minimum_annular_prominence_db_each_look": 3.0
+        },
+        "score": 6.961957809173353,
+        "relative_wavelength_span": 0.19871554915065084,
+        "orientation_span_deg": 9.580964966994287,
+        "minimum_prominence_db": 10.70784424691206,
+        "mean_wavelength_m": 45.46564593776903,
+        "wavelength_standard_deviation_m": 3.672883783154171,
+        "mean_wavevector_bearing_deg_mod_180": 115.82900059184124,
+        "mean_crest_orientation_deg_mod_180": 25.829000591841236,
+        "matched_candidates": [
+          {
+            "crop_index_row_col": [
+              74,
+              61
+            ],
+            "fft_bin_offset_row_col": [
+              10,
+              -3
+            ],
+            "subbin_parabolic_offset_row_col": [
+              0.22616605642874282,
+              0.01806722675016726
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              10.226166056428744,
+              -2.9819327732498326
+            ],
+            "k_east_cycles_per_m": -0.0175923187542916,
+            "k_north_cycles_per_m": 0.00920908426489269,
+            "wavenumber_magnitude_cycles_per_m": 0.019856910941797923,
+            "wavelength_m": 50.36030039773428,
+            "wavevector_bearing_deg_mod_180": 117.63079307795948,
+            "crest_orientation_deg_mod_180": 27.63079307795948,
+            "power": 142496948773.47675,
+            "smoothed_power": 92749932053.44736,
+            "annular_prominence_db": 11.098178778394585,
+            "wavevector_difference_from_range_axis_deg": 16.441811047031877,
+            "wavevector_difference_from_azimuth_axis_deg": 73.93028801942643,
+            "crest_difference_from_range_axis_deg": 73.55818895296812,
+            "crest_difference_from_azimuth_axis_deg": 16.069711980573572
+          },
+          {
+            "crop_index_row_col": [
+              75,
+              60
+            ],
+            "fft_bin_offset_row_col": [
+              11,
+              -4
+            ],
+            "subbin_parabolic_offset_row_col": [
+              0.4354406574901016,
+              0.20535349565531333
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              11.435440657490101,
+              -3.7946465043446866
+            ],
+            "k_east_cycles_per_m": -0.019508093983361587,
+            "k_north_cycles_per_m": 0.011130059103579403,
+            "wavenumber_magnitude_cycles_per_m": 0.022459829618962816,
+            "wavelength_m": 44.52393526421504,
+            "wavevector_bearing_deg_mod_180": 119.70629040564563,
+            "crest_orientation_deg_mod_180": 29.706290405645632,
+            "power": 86291919797.56735,
+            "smoothed_power": 39588186856.57504,
+            "annular_prominence_db": 12.333484349140136,
+            "wavevector_difference_from_range_axis_deg": 18.517308374718027,
+            "wavevector_difference_from_azimuth_axis_deg": 71.85479069174028,
+            "crest_difference_from_range_axis_deg": 71.48269162528197,
+            "crest_difference_from_azimuth_axis_deg": 18.145209308259723
+          },
+          {
+            "crop_index_row_col": [
+              77,
+              62
+            ],
+            "fft_bin_offset_row_col": [
+              13,
+              -2
+            ],
+            "subbin_parabolic_offset_row_col": [
+              -0.2224128019188507,
+              0.05384902985908872
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              12.77758719808115,
+              -1.9461509701409112
+            ],
+            "k_east_cycles_per_m": -0.02261819177971791,
+            "k_north_cycles_per_m": 0.008288420998138948,
+            "wavenumber_magnitude_cycles_per_m": 0.02408901247512005,
+            "wavelength_m": 41.51270215135776,
+            "wavevector_bearing_deg_mod_180": 110.12532543865134,
+            "crest_orientation_deg_mod_180": 20.125325438651345,
+            "power": 23986765162.524666,
+            "smoothed_power": 8368348761.207833,
+            "annular_prominence_db": 10.70784424691206,
+            "wavevector_difference_from_range_axis_deg": 8.93634340772374,
+            "wavevector_difference_from_azimuth_axis_deg": 81.43575565873456,
+            "crest_difference_from_range_axis_deg": 81.06365659227626,
+            "crest_difference_from_azimuth_axis_deg": 8.564244341265436
+          }
+        ],
+        "mean_wavevector_difference_from_range_axis_deg": 14.640018560913632,
+        "mean_wavevector_difference_from_azimuth_axis_deg": 75.73208050554467,
+        "mean_crest_difference_from_range_axis_deg": 75.35998143908637,
+        "mean_crest_difference_from_azimuth_axis_deg": 14.267919494455327,
+        "orientation_semantics": "The 2-D FFT peak gives the modulation wavevector; visible crest/stripe orientation is perpendicular (+90 degrees, modulo 180)."
+      },
+      "cross_spectra": {
+        "computed": true,
+        "input_domain": "detrended and spatially windowed sub-look intensity",
+        "period_conversion_performed": false,
+        "selected_peak": {
+          "crop_index_row_col": [
+            75,
+            60
+          ],
+          "fft_bin_offset_row_col": [
+            11,
+            -4
+          ],
+          "subbin_parabolic_offset_row_col": [
+            0.4354406574901016,
+            0.20535349565531333
+          ],
+          "fft_bin_offset_subpixel_row_col": [
+            11.435440657490101,
+            -3.7946465043446866
+          ],
+          "k_east_cycles_per_m": -0.019508093983361587,
+          "k_north_cycles_per_m": 0.011130059103579403,
+          "wavenumber_magnitude_cycles_per_m": 0.022459829618962816,
+          "wavelength_m": 44.52393526421504,
+          "wavevector_bearing_deg_mod_180": 119.70629040564563,
+          "crest_orientation_deg_mod_180": 29.706290405645632,
+          "power": 86291919797.56735,
+          "smoothed_power": 39588186856.57504,
+          "annular_prominence_db": 12.333484349140136,
+          "wavevector_difference_from_range_axis_deg": 18.517308374718027,
+          "wavevector_difference_from_azimuth_axis_deg": 71.85479069174028,
+          "crest_difference_from_range_axis_deg": 71.48269162528197,
+          "crest_difference_from_azimuth_axis_deg": 18.145209308259723
+        },
+        "pairs": {
+          "1-2": {
+            "reference_look": 1,
+            "secondary_look": 2,
+            "formula": "F_secondary * conj(F_reference)",
+            "effective_reference_center_s": 14.832257263168499,
+            "effective_secondary_center_s": 9.036462634036535,
+            "effective_secondary_minus_reference_s": -5.795794629131963,
+            "raw_bin_phase_rad": 1.561248567709264,
+            "locally_smoothed_phase_rad": 1.704330420070102,
+            "local_magnitude_squared_coherence": 0.24823405243348354
+          },
+          "2-3": {
+            "reference_look": 2,
+            "secondary_look": 3,
+            "formula": "F_secondary * conj(F_reference)",
+            "effective_reference_center_s": 9.036462634036535,
+            "effective_secondary_center_s": 3.2428993865189475,
+            "effective_secondary_minus_reference_s": -5.7935632475175876,
+            "raw_bin_phase_rad": -0.7224097448061085,
+            "locally_smoothed_phase_rad": -0.3872318173242661,
+            "local_magnitude_squared_coherence": 0.03229580970374385
+          },
+          "1-3": {
+            "reference_look": 1,
+            "secondary_look": 3,
+            "formula": "F_secondary * conj(F_reference)",
+            "effective_reference_center_s": 14.832257263168499,
+            "effective_secondary_center_s": 3.2428993865189475,
+            "effective_secondary_minus_reference_s": -11.58935787664955,
+            "raw_bin_phase_rad": 0.8388388229031554,
+            "locally_smoothed_phase_rad": 2.4717830319680956,
+            "local_magnitude_squared_coherence": 0.01925527448177184
+          }
+        },
+        "phase_closure": {
+          "identity": "phi13 ~= wrap(phi12 + phi23)",
+          "selected_same_k_bin": [
+            75,
+            60
+          ],
+          "raw_phi12_rad": 1.561248567709264,
+          "raw_phi23_rad": -0.7224097448061085,
+          "raw_phi13_rad": 0.8388388229031554,
+          "raw_wrapped_phi12_plus_phi23_rad": 0.8388388229031555,
+          "raw_closure_error_rad": -1.1102230246251565e-16,
+          "locally_smoothed_closure_error_rad": 1.1546844292222598,
+          "upper_quartile_joint_amplitude_field_closure_rms_rad": 2.225142436456581e-08,
+          "upper_quartile_joint_amplitude_field_closure_max_abs_rad": 9.020317543618309e-08
+        },
+        "npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\offshore_cross_spectra.npz",
+        "figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\offshore_cross_spectra.png"
+      },
+      "artifacts": {
+        "intensity_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\offshore_three_look_intensity.png",
+        "normalized_difference_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\offshore_sublook_differences.png",
+        "power_spectrum_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\offshore_three_look_power_spectrum.png",
+        "spectrum_crop_npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\offshore_spectrum_crops.npz",
+        "complex_master_arrays": [
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\offshore_look1_complex64.npy",
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\offshore_look2_complex64.npy",
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\offshore_look3_complex64.npy"
+        ]
+      }
+    },
+    "land_control": {
+      "roi": {
+        "kind": "land_control",
+        "gec_center_col_row": [
+          7600,
+          8500
+        ],
+        "shape_rows_cols": [
+          1536,
+          12288
+        ],
+        "description": "Persistent terrestrial infrastructure, roads, and surrounding terrain near the central facility.",
+        "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+        "initial_gec_center_lon_lat_deg": [
+          -120.6284815355336,
+          34.58279307278762
+        ],
+        "selected_center_lon_lat_deg": [
+          -120.6284815355336,
+          34.58279307278762
+        ],
+        "selected_center_gec_col_row": [
+          7600.000000000552,
+          8500.000000001477
+        ],
+        "initial_gec_projected_sicd_center_row_col": [
+          7000.743480298111,
+          51656.14957380258
+        ],
+        "selection_stage": "GEC_geographic_localization",
+        "projection_hae_m": 101.52475667382657,
+        "ground_to_sicd_residual_m": 4.075989708778171e-05,
+        "ground_to_sicd_iterations": 2,
+        "sicd_center_row_col": [
+          7001,
+          51656
+        ],
+        "sicd_bounds": {
+          "row_start_inclusive": 6233,
+          "row_stop_exclusive": 7769,
+          "col_start_inclusive": 45512,
+          "col_stop_exclusive": 57800,
+          "rows": 1536,
+          "cols": 12288
+        },
+        "corner_lat_lon_hae": [
+          [
+            34.58524057030778,
+            -120.62398943688878,
+            101.52475667366411
+          ],
+          [
+            34.579125636026895,
+            -120.62555504162708,
+            101.52475667287713
+          ],
+          [
+            34.580342469368986,
+            -120.63295951202183,
+            101.52475667313377
+          ],
+          [
+            34.58646013006972,
+            -120.63139406551998,
+            101.52475667412715
+          ]
+        ],
+        "corner_gec_col_row": [
+          [
+            6477.493048592397,
+            7388.971290607694
+          ],
+          [
+            8696.375681007728,
+            7390.399512692962
+          ],
+          [
+            8722.72938160525,
+            9606.744030712427
+          ],
+          [
+            6502.909357314796,
+            9605.561161069409
+          ]
+        ],
+        "local_ground_jacobian_EN_m_per_pixel": [
+          [
+            -0.44258548358816335,
+            -0.011690203570361704
+          ],
+          [
+            0.08803888376735126,
+            -0.05522177698318064
+          ]
+        ],
+        "local_row_ground_spacing_m": 0.45125686181815516,
+        "local_col_ground_spacing_m": 0.05644559781503459,
+        "local_row_axis_bearing_deg_clockwise_from_north": 281.25039319724584,
+        "local_col_axis_bearing_deg_clockwise_from_north": 191.9527910378803,
+        "approximate_ground_extent_row_col_m": [
+          693.1305397526863,
+          693.603505951145
+        ]
+      },
+      "full_aperture_intensity_statistics": {
+        "mean": 35.738139274257804,
+        "standard_deviation": 10029.39211547367,
+        "percentiles_1_50_99_99_9": [
+          0.027055838927626613,
+          2.2662287950515747,
+          151.88495880126948,
+          2308.3291982430237
+        ]
+      },
+      "intensity_statistics": [
+        {
+          "look_index": 1,
+          "mean": 7.771097413826428,
+          "standard_deviation": 1918.2554646451986,
+          "percentiles_1_50_99_99_9": [
+            0.008830133881419898,
+            0.7566952109336853,
+            32.625548782348346,
+            496.16776654053047
+          ]
+        },
+        {
+          "look_index": 2,
+          "mean": 13.266647092303337,
+          "standard_deviation": 4765.980102728461,
+          "percentiles_1_50_99_99_9": [
+            0.008739825980737805,
+            0.7290616631507874,
+            31.04849113464286,
+            525.8884569702359
+          ]
+        },
+        {
+          "look_index": 3,
+          "mean": 16.20194036766903,
+          "standard_deviation": 2133.391213465604,
+          "percentiles_1_50_99_99_9": [
+            0.008243900621309877,
+            0.6862861514091492,
+            77.11433395385598,
+            1146.022089355618
+          ]
+        }
+      ],
+      "peak_search": {
+        "wavelength_band_m": [
+          40.0,
+          500.0
+        ],
+        "spatial_preprocessing": "global plane removal + energy-normalized 2-D Tukey(alpha=0.1)",
+        "conjugate_pair_treatment": "centro-symmetric power average; one half-plane retained",
+        "candidates_by_look": [
+          [
+            {
+              "crop_index_row_col": [
+                65,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                1,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.2013271011293799,
+                -0.20041250100628247
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                0.7986728988706201,
+                -2.2004125010062823
+              ],
+              "k_east_cycles_per_m": -0.0005083916143281051,
+              "k_north_cycles_per_m": 0.003350367179826062,
+              "wavenumber_magnitude_cycles_per_m": 0.0033887198575826205,
+              "wavelength_m": 295.09668607229185,
+              "wavevector_bearing_deg_mod_180": 171.3716431613664,
+              "crest_orientation_deg_mod_180": 81.37164316136636,
+              "power": 8796105977098944.0,
+              "smoothed_power": 6671161036736929.0,
+              "annular_prominence_db": 2.170658155756951,
+              "wavevector_difference_from_range_axis_deg": 70.12124996412055,
+              "wavevector_difference_from_azimuth_axis_deg": 20.58114787651391,
+              "crest_difference_from_range_axis_deg": 19.878750035879477,
+              "crest_difference_from_azimuth_axis_deg": 69.41885212348606
+            },
+            {
+              "crop_index_row_col": [
+                73,
+                53
+              ],
+              "fft_bin_offset_row_col": [
+                9,
+                -11
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.03001154786765503,
+                -0.20183956950478257
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                9.030011547867655,
+                -11.201839569504783
+              ],
+              "k_east_cycles_per_m": -0.009595266395096827,
+              "k_north_cycles_per_m": 0.01853940078142052,
+              "wavenumber_magnitude_cycles_per_m": 0.020875308824709882,
+              "wavelength_m": 47.90348293273202,
+              "wavevector_bearing_deg_mod_180": 152.6356892406713,
+              "crest_orientation_deg_mod_180": 62.6356892406713,
+              "power": 4904422629722625.0,
+              "smoothed_power": 4219025831093478.5,
+              "annular_prominence_db": 2.183967647538088,
+              "wavevector_difference_from_range_axis_deg": 51.385296043425456,
+              "wavevector_difference_from_azimuth_axis_deg": 39.317101797209006,
+              "crest_difference_from_range_axis_deg": 38.614703956574544,
+              "crest_difference_from_azimuth_axis_deg": 50.682898202790994
+            },
+            {
+              "crop_index_row_col": [
+                66,
+                52
+              ],
+              "fft_bin_offset_row_col": [
+                2,
+                -12
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.0967831837430244,
+                -0.15427883631629047
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                1.9032168162569756,
+                -12.15427883631629
+              ],
+              "k_east_cycles_per_m": 0.0007325211849779476,
+              "k_north_cycles_per_m": 0.017756661875757907,
+              "wavenumber_magnitude_cycles_per_m": 0.0177717649167559,
+              "wavelength_m": 56.269031504977974,
+              "wavevector_bearing_deg_mod_180": 2.362301426944769,
+              "crest_orientation_deg_mod_180": 92.36230142694477,
+              "power": 4752931244265873.0,
+              "smoothed_power": 4184732784798924.0,
+              "annular_prominence_db": 2.1062493862026597,
+              "wavevector_difference_from_range_axis_deg": 81.11190822969894,
+              "wavevector_difference_from_azimuth_axis_deg": 9.590489610935535,
+              "crest_difference_from_range_axis_deg": 8.888091770301074,
+              "crest_difference_from_azimuth_axis_deg": 80.40951038906445
+            },
+            {
+              "crop_index_row_col": [
+                59,
+                59
+              ],
+              "fft_bin_offset_row_col": [
+                -5,
+                -5
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.05794473298786917,
+                0.23534222414757036
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -4.9420552670121305,
+                -4.76465777585243
+              ],
+              "k_east_cycles_per_m": 0.008316289803950766,
+              "k_north_cycles_per_m": 0.005261144018710019,
+              "wavenumber_magnitude_cycles_per_m": 0.00984074755742183,
+              "wavelength_m": 101.61829618785478,
+              "wavevector_bearing_deg_mod_180": 57.68127989109775,
+              "crest_orientation_deg_mod_180": 147.68127989109774,
+              "power": 4601177912175761.0,
+              "smoothed_power": 3843202757211678.0,
+              "annular_prominence_db": 0.7650980105323355,
+              "wavevector_difference_from_range_axis_deg": 43.56911330614809,
+              "wavevector_difference_from_azimuth_axis_deg": 45.72848885321744,
+              "crest_difference_from_range_axis_deg": 46.4308866938519,
+              "crest_difference_from_azimuth_axis_deg": 44.27151114678256
+            },
+            {
+              "crop_index_row_col": [
+                52,
+                57
+              ],
+              "fft_bin_offset_row_col": [
+                -12,
+                -7
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.04525435924426199,
+                0.20247393313548315
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -11.954745640755737,
+                -6.797526066864517
+              ],
+              "k_east_cycles_per_m": 0.018786939087823903,
+              "k_north_cycles_per_m": 0.0060403877472767105,
+              "wavenumber_magnitude_cycles_per_m": 0.019734116763287287,
+              "wavelength_m": 50.67366388853884,
+              "wavevector_bearing_deg_mod_180": 72.17633262161006,
+              "crest_orientation_deg_mod_180": 162.17633262161007,
+              "power": 4639288388428370.0,
+              "smoothed_power": 3600383407319394.0,
+              "annular_prominence_db": 1.3654860717638737,
+              "wavevector_difference_from_range_axis_deg": 29.074060575635784,
+              "wavevector_difference_from_azimuth_axis_deg": 60.22354158372974,
+              "crest_difference_from_range_axis_deg": 60.92593942436423,
+              "crest_difference_from_azimuth_axis_deg": 29.77645841627023
+            },
+            {
+              "crop_index_row_col": [
+                50,
+                61
+              ],
+              "fft_bin_offset_row_col": [
+                -14,
+                -3
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.0309327836191734,
+                -0.06649506534710135
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -14.030932783619173,
+                -3.0664950653471013
+              ],
+              "k_east_cycles_per_m": 0.020668047425849323,
+              "k_north_cycles_per_m": 0.0001437535315720612,
+              "wavenumber_magnitude_cycles_per_m": 0.020668547347963192,
+              "wavelength_m": 48.382693914797365,
+              "wavevector_bearing_deg_mod_180": 89.60149414867348,
+              "crest_orientation_deg_mod_180": 179.60149414867348,
+              "power": 4274389513547583.5,
+              "smoothed_power": 3299405597047648.0,
+              "annular_prominence_db": 0.9947357996883837,
+              "wavevector_difference_from_range_axis_deg": 11.64889904857236,
+              "wavevector_difference_from_azimuth_axis_deg": 77.64870311079318,
+              "crest_difference_from_range_axis_deg": 78.35110095142764,
+              "crest_difference_from_azimuth_axis_deg": 12.351296889206822
+            },
+            {
+              "crop_index_row_col": [
+                79,
+                65
+              ],
+              "fft_bin_offset_row_col": [
+                15,
+                1
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.0015407800511302737,
+                -0.08560508250276956
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                14.99845921994887,
+                0.9143949174972305
+              ],
+              "k_east_cycles_per_m": -0.021428375486195497,
+              "k_north_cycles_per_m": 0.0031887496627379585,
+              "wavenumber_magnitude_cycles_per_m": 0.021664334755283753,
+              "wavelength_m": 46.158814073721246,
+              "wavevector_bearing_deg_mod_180": 98.46405432422874,
+              "crest_orientation_deg_mod_180": 8.464054324228755,
+              "power": 4054194768189568.5,
+              "smoothed_power": 3290378927427710.0,
+              "annular_prominence_db": 1.1245626868149663,
+              "wavevector_difference_from_range_axis_deg": 2.786338873017101,
+              "wavevector_difference_from_azimuth_axis_deg": 86.51126328634842,
+              "crest_difference_from_range_axis_deg": 87.21366112698291,
+              "crest_difference_from_azimuth_axis_deg": 3.488736713651548
+            },
+            {
+              "crop_index_row_col": [
+                58,
+                52
+              ],
+              "fft_bin_offset_row_col": [
+                -6,
+                -12
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.3890982163330433,
+                -0.2867778868691771
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -6.389098216333044,
+                -12.286777886869178
+              ],
+              "k_east_cycles_per_m": 0.012474854718191281,
+              "k_north_cycles_per_m": 0.015466125859596908,
+              "wavenumber_magnitude_cycles_per_m": 0.01987015473882555,
+              "wavelength_m": 50.326734398602184,
+              "wavevector_bearing_deg_mod_180": 38.88937290796175,
+              "crest_orientation_deg_mod_180": 128.88937290796176,
+              "power": 2928662671403007.5,
+              "smoothed_power": 2738412507165638.0,
+              "annular_prominence_db": 0.1769872531643123,
+              "wavevector_difference_from_range_axis_deg": 62.36102028928409,
+              "wavevector_difference_from_azimuth_axis_deg": 26.936581870081454,
+              "crest_difference_from_range_axis_deg": 27.638979710715915,
+              "crest_difference_from_azimuth_axis_deg": 63.063418129918546
+            }
+          ],
+          [
+            {
+              "crop_index_row_col": [
+                65,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                1,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.2499770548833059,
+                -0.3339642546906639
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                0.7500229451166941,
+                -2.333964254690664
+              ],
+              "k_east_cycles_per_m": -0.0004021512035354243,
+              "k_north_cycles_per_m": 0.0035246914778558724,
+              "wavenumber_magnitude_cycles_per_m": 0.0035475591051559387,
+              "wavelength_m": 281.88395749252595,
+              "wavevector_bearing_deg_mod_180": 173.49096018115773,
+              "crest_orientation_deg_mod_180": 83.49096018115773,
+              "power": 2.2106895513312652e+16,
+              "smoothed_power": 1.9026591183012704e+16,
+              "annular_prominence_db": 1.382835655025637,
+              "wavevector_difference_from_range_axis_deg": 72.24056698391189,
+              "wavevector_difference_from_azimuth_axis_deg": 18.46183085672257,
+              "crest_difference_from_range_axis_deg": 17.75943301608811,
+              "crest_difference_from_azimuth_axis_deg": 71.53816914327743
+            },
+            {
+              "crop_index_row_col": [
+                65,
+                53
+              ],
+              "fft_bin_offset_row_col": [
+                1,
+                -11
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.11333879234673609,
+                -0.1095378937086993
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                1.1133387923467362,
+                -11.1095378937087
+              ],
+              "k_east_cycles_per_m": 0.0015535905018471004,
+              "k_north_cycles_per_m": 0.016043212794751946,
+              "wavenumber_magnitude_cycles_per_m": 0.016118260459029754,
+              "wavelength_m": 62.0414344675626,
+              "wavevector_bearing_deg_mod_180": 5.531154482391749,
+              "crest_orientation_deg_mod_180": 95.53115448239174,
+              "power": 1.8279569349516412e+16,
+              "smoothed_power": 1.6417349325763612e+16,
+              "annular_prominence_db": 1.1752407729666474,
+              "wavevector_difference_from_range_axis_deg": 84.2807612851459,
+              "wavevector_difference_from_azimuth_axis_deg": 6.421636555488561,
+              "crest_difference_from_range_axis_deg": 5.7192387148541,
+              "crest_difference_from_azimuth_axis_deg": 83.57836344451144
+            },
+            {
+              "crop_index_row_col": [
+                59,
+                59
+              ],
+              "fft_bin_offset_row_col": [
+                -5,
+                -5
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.16301356245591506,
+                0.46569873797018047
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -4.836986437544085,
+                -4.534301262029819
+              ],
+              "k_east_cycles_per_m": 0.008103179704079075,
+              "k_north_cycles_per_m": 0.004966782599656534,
+              "wavenumber_magnitude_cycles_per_m": 0.009504233304630624,
+              "wavelength_m": 105.21627236494531,
+              "wavevector_bearing_deg_mod_180": 58.494100758985624,
+              "crest_orientation_deg_mod_180": 148.4941007589856,
+              "power": 1.709584385451552e+16,
+              "smoothed_power": 1.6046887680115412e+16,
+              "annular_prominence_db": 0.5387505628037257,
+              "wavevector_difference_from_range_axis_deg": 42.75629243826022,
+              "wavevector_difference_from_azimuth_axis_deg": 46.541309721105335,
+              "crest_difference_from_range_axis_deg": 47.24370756173977,
+              "crest_difference_from_azimuth_axis_deg": 43.45869027889469
+            },
+            {
+              "crop_index_row_col": [
+                74,
+                52
+              ],
+              "fft_bin_offset_row_col": [
+                10,
+                -12
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.14688737628618756,
+                -0.09466363596987601
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                9.853112623713812,
+                -12.094663635969876
+              ],
+              "k_east_cycles_per_m": -0.010505966334206014,
+              "k_north_cycles_per_m": 0.020047944706745816,
+              "wavenumber_magnitude_cycles_per_m": 0.022633943880380366,
+              "wavelength_m": 44.181429683000296,
+              "wavevector_bearing_deg_mod_180": 152.3435706372879,
+              "crest_orientation_deg_mod_180": 62.34357063728791,
+              "power": 1.7156365870761238e+16,
+              "smoothed_power": 1.602334839137686e+16,
+              "annular_prominence_db": 1.0598109128284539,
+              "wavevector_difference_from_range_axis_deg": 51.09317744004207,
+              "wavevector_difference_from_azimuth_axis_deg": 39.60922040059239,
+              "crest_difference_from_range_axis_deg": 38.90682255995793,
+              "crest_difference_from_azimuth_axis_deg": 50.39077959940761
+            },
+            {
+              "crop_index_row_col": [
+                69,
+                58
+              ],
+              "fft_bin_offset_row_col": [
+                5,
+                -6
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.057936877788091624,
+                -0.01603154826340337
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                5.057936877788092,
+                -6.0160315482634035
+              ],
+              "k_east_cycles_per_m": -0.00544723891625997,
+              "k_north_cycles_per_m": 0.01001896829096191,
+              "wavenumber_magnitude_cycles_per_m": 0.011404040399179464,
+              "wavelength_m": 87.68821970079581,
+              "wavevector_bearing_deg_mod_180": 151.46740177155002,
+              "crest_orientation_deg_mod_180": 61.467401771550016,
+              "power": 1.716829949320362e+16,
+              "smoothed_power": 1.5657951078563348e+16,
+              "annular_prominence_db": 0.4798025292874346,
+              "wavevector_difference_from_range_axis_deg": 50.217008574304174,
+              "wavevector_difference_from_azimuth_axis_deg": 40.48538926633029,
+              "crest_difference_from_range_axis_deg": 39.782991425695826,
+              "crest_difference_from_azimuth_axis_deg": 49.51461073366971
+            },
+            {
+              "crop_index_row_col": [
+                73,
+                64
+              ],
+              "fft_bin_offset_row_col": [
+                9,
+                0
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.015125697751581096,
+                -0.15467841496558468
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                8.98487430224842,
+                -0.15467841496558468
+              ],
+              "k_east_cycles_per_m": -0.012639135795770485,
+              "k_north_cycles_per_m": 0.002903597834046671,
+              "wavenumber_magnitude_cycles_per_m": 0.012968370523925021,
+              "wavelength_m": 77.11069005586516,
+              "wavevector_bearing_deg_mod_180": 102.93811050186505,
+              "crest_orientation_deg_mod_180": 12.938110501865054,
+              "power": 1.7891737320405824e+16,
+              "smoothed_power": 1.5540486442423908e+16,
+              "annular_prominence_db": 0.5377315878578359,
+              "wavevector_difference_from_range_axis_deg": 1.6877173046192127,
+              "wavevector_difference_from_azimuth_axis_deg": 89.01468053601525,
+              "crest_difference_from_range_axis_deg": 88.31228269538079,
+              "crest_difference_from_azimuth_axis_deg": 0.9853194639847516
+            },
+            {
+              "crop_index_row_col": [
+                51,
+                58
+              ],
+              "fft_bin_offset_row_col": [
+                -13,
+                -6
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.06707909113073257,
+                0.2538329445618218
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -12.932920908869267,
+                -5.746167055438178
+              ],
+              "k_east_cycles_per_m": 0.019871938707616613,
+              "k_north_cycles_per_m": 0.004261312766729318,
+              "wavenumber_magnitude_cycles_per_m": 0.020323698838921073,
+              "wavelength_m": 49.20364191211796,
+              "wavevector_bearing_deg_mod_180": 77.8968623981385,
+              "crest_orientation_deg_mod_180": 167.8968623981385,
+              "power": 1.7350452367431996e+16,
+              "smoothed_power": 1.5055709607054046e+16,
+              "annular_prominence_db": 0.7018192890734726,
+              "wavevector_difference_from_range_axis_deg": 23.353530799107347,
+              "wavevector_difference_from_azimuth_axis_deg": 65.94407136025819,
+              "crest_difference_from_range_axis_deg": 66.64646920089265,
+              "crest_difference_from_azimuth_axis_deg": 24.055928639741808
+            },
+            {
+              "crop_index_row_col": [
+                79,
+                57
+              ],
+              "fft_bin_offset_row_col": [
+                15,
+                -7
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.2152168264876699,
+                -0.010644642026946483
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                15.21521682648767,
+                -7.010644642026946
+              ],
+              "k_east_cycles_per_m": -0.01950501523864484,
+              "k_north_cycles_per_m": 0.014460695832825244,
+              "wavenumber_magnitude_cycles_per_m": 0.024280801951938425,
+              "wavelength_m": 41.18480114369395,
+              "wavevector_bearing_deg_mod_180": 126.55262645943372,
+              "crest_orientation_deg_mod_180": 36.552626459433725,
+              "power": 1.6715905479234112e+16,
+              "smoothed_power": 1.4940462697057004e+16,
+              "annular_prominence_db": 0.836465246733862,
+              "wavevector_difference_from_range_axis_deg": 25.302233262187883,
+              "wavevector_difference_from_azimuth_axis_deg": 65.40016457844658,
+              "crest_difference_from_range_axis_deg": 64.69776673781212,
+              "crest_difference_from_azimuth_axis_deg": 24.599835421553422
+            }
+          ],
+          [
+            {
+              "crop_index_row_col": [
+                65,
+                62
+              ],
+              "fft_bin_offset_row_col": [
+                1,
+                -2
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.4478068908712685,
+                -0.35520371338371354
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                0.5521931091287315,
+                -2.3552037133837134
+              ],
+              "k_east_cycles_per_m": -0.00011692875545333131,
+              "k_north_cycles_per_m": 0.0034956117018088593,
+              "wavenumber_magnitude_cycles_per_m": 0.0034975667976001393,
+              "wavelength_m": 285.9130526645414,
+              "wavevector_bearing_deg_mod_180": 178.08416159727824,
+              "crest_orientation_deg_mod_180": 88.08416159727824,
+              "power": 3.549773107970856e+16,
+              "smoothed_power": 2.5279113327033224e+16,
+              "annular_prominence_db": 4.034836533769406,
+              "wavevector_difference_from_range_axis_deg": 76.8337684000324,
+              "wavevector_difference_from_azimuth_axis_deg": 13.868629440602035,
+              "crest_difference_from_range_axis_deg": 13.166231599967603,
+              "crest_difference_from_azimuth_axis_deg": 76.13137055939794
+            },
+            {
+              "crop_index_row_col": [
+                51,
+                58
+              ],
+              "fft_bin_offset_row_col": [
+                -13,
+                -6
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.019615109952592004,
+                -0.008288049308898478
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -12.980384890047407,
+                -6.008288049308899
+              ],
+              "k_east_cycles_per_m": 0.020012671773986808,
+              "k_north_cycles_per_m": 0.004617807323229859,
+              "wavenumber_magnitude_cycles_per_m": 0.020538529061444582,
+              "wavelength_m": 48.6889785051464,
+              "wavevector_bearing_deg_mod_180": 77.0067465314597,
+              "crest_orientation_deg_mod_180": 167.0067465314597,
+              "power": 2.785913586521293e+16,
+              "smoothed_power": 1.7780915379115704e+16,
+              "annular_prominence_db": 4.608819206719636,
+              "wavevector_difference_from_range_axis_deg": 24.243646665786144,
+              "wavevector_difference_from_azimuth_axis_deg": 65.0539554935794,
+              "crest_difference_from_range_axis_deg": 65.75635333421386,
+              "crest_difference_from_azimuth_axis_deg": 24.946044506420606
+            },
+            {
+              "crop_index_row_col": [
+                60,
+                59
+              ],
+              "fft_bin_offset_row_col": [
+                -4,
+                -5
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.4064776113215335,
+                -0.16409878203943348
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                -4.406477611321534,
+                -5.164098782039433
+              ],
+              "k_east_cycles_per_m": 0.0076726556763652976,
+              "k_north_cycles_per_m": 0.0059860538000246185,
+              "wavenumber_magnitude_cycles_per_m": 0.00973152019084633,
+              "wavelength_m": 102.75886813045106,
+              "wavevector_bearing_deg_mod_180": 52.03935156415365,
+              "crest_orientation_deg_mod_180": 142.03935156415366,
+              "power": 2.4914479520473924e+16,
+              "smoothed_power": 1.6154023912154276e+16,
+              "annular_prominence_db": 2.6149701459804136,
+              "wavevector_difference_from_range_axis_deg": 49.211041633092194,
+              "wavevector_difference_from_azimuth_axis_deg": 40.08656052627333,
+              "crest_difference_from_range_axis_deg": 40.78895836690782,
+              "crest_difference_from_azimuth_axis_deg": 49.91343947372664
+            },
+            {
+              "crop_index_row_col": [
+                73,
+                65
+              ],
+              "fft_bin_offset_row_col": [
+                9,
+                1
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.2563916896394525,
+                -0.14330500803534965
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                8.743608310360548,
+                0.8566949919646504
+              ],
+              "k_east_cycles_per_m": -0.012583076369874458,
+              "k_north_cycles_per_m": 0.0014012715926291597,
+              "wavenumber_magnitude_cycles_per_m": 0.012660859884162783,
+              "wavelength_m": 78.9835768778138,
+              "wavevector_bearing_deg_mod_180": 96.35436862619343,
+              "crest_orientation_deg_mod_180": 6.354368626193434,
+              "power": 2.2148501925558764e+16,
+              "smoothed_power": 1.462413941237453e+16,
+              "annular_prominence_db": 2.5573640825521853,
+              "wavevector_difference_from_range_axis_deg": 4.896024571052408,
+              "wavevector_difference_from_azimuth_axis_deg": 84.40157758831313,
+              "crest_difference_from_range_axis_deg": 85.10397542894759,
+              "crest_difference_from_azimuth_axis_deg": 5.598422411686869
+            },
+            {
+              "crop_index_row_col": [
+                74,
+                52
+              ],
+              "fft_bin_offset_row_col": [
+                10,
+                -12
+              ],
+              "subbin_parabolic_offset_row_col": [
+                0.06658971664922796,
+                -0.2553440241962712
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                10.066589716649228,
+                -12.25534402419627
+              ],
+              "k_east_cycles_per_m": -0.01076210142325312,
+              "k_north_cycles_per_m": 0.020338961687353177,
+              "wavenumber_magnitude_cycles_per_m": 0.023010784201413198,
+              "wavelength_m": 43.45788440963196,
+              "wavevector_bearing_deg_mod_180": 152.1150174547442,
+              "crest_orientation_deg_mod_180": 62.11501745474419,
+              "power": 2.244524270943937e+16,
+              "smoothed_power": 1.453209359145065e+16,
+              "annular_prominence_db": 3.814869094209409,
+              "wavevector_difference_from_range_axis_deg": 50.86462425749835,
+              "wavevector_difference_from_azimuth_axis_deg": 39.83777358313611,
+              "crest_difference_from_range_axis_deg": 39.13537574250165,
+              "crest_difference_from_azimuth_axis_deg": 50.16222641686389
+            },
+            {
+              "crop_index_row_col": [
+                69,
+                59
+              ],
+              "fft_bin_offset_row_col": [
+                5,
+                -5
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.21315745614089435,
+                -0.045064813904791653
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                4.786842543859105,
+                -5.045064813904792
+              ],
+              "k_east_cycles_per_m": -0.00533770867761709,
+              "k_north_cycles_per_m": 0.008564869739621509,
+              "wavenumber_magnitude_cycles_per_m": 0.010091983332516607,
+              "wavelength_m": 99.08855049115832,
+              "wavevector_bearing_deg_mod_180": 148.06844501793915,
+              "crest_orientation_deg_mod_180": 58.068445017939155,
+              "power": 2.0482791066481276e+16,
+              "smoothed_power": 1.2779682920317856e+16,
+              "annular_prominence_db": 1.6858931743034526,
+              "wavevector_difference_from_range_axis_deg": 46.81805182069331,
+              "wavevector_difference_from_azimuth_axis_deg": 43.88434601994115,
+              "crest_difference_from_range_axis_deg": 43.18194817930669,
+              "crest_difference_from_azimuth_axis_deg": 46.11565398005885
+            },
+            {
+              "crop_index_row_col": [
+                79,
+                56
+              ],
+              "fft_bin_offset_row_col": [
+                15,
+                -8
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.19645715140034764,
+                -0.32766116636715503
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                14.803542848599653,
+                -8.327661166367156
+              ],
+              "k_east_cycles_per_m": -0.01855343590983479,
+              "k_north_cycles_per_m": 0.016200135023479455,
+              "wavenumber_magnitude_cycles_per_m": 0.024630760419429052,
+              "wavelength_m": 40.59963975822637,
+              "wavevector_bearing_deg_mod_180": 131.12619104597337,
+              "crest_orientation_deg_mod_180": 41.12619104597337,
+              "power": 1.8731477027482924e+16,
+              "smoothed_power": 1.240640316091428e+16,
+              "annular_prominence_db": 3.2521336393990685,
+              "wavevector_difference_from_range_axis_deg": 29.87579784872753,
+              "wavevector_difference_from_azimuth_axis_deg": 60.82659999190693,
+              "crest_difference_from_range_axis_deg": 60.12420215127247,
+              "crest_difference_from_azimuth_axis_deg": 29.17340000809307
+            },
+            {
+              "crop_index_row_col": [
+                65,
+                52
+              ],
+              "fft_bin_offset_row_col": [
+                1,
+                -12
+              ],
+              "subbin_parabolic_offset_row_col": [
+                -0.032343019574261174,
+                -0.23342417553399272
+              ],
+              "fft_bin_offset_subpixel_row_col": [
+                0.9676569804257388,
+                -12.233424175533992
+              ],
+              "k_east_cycles_per_m": 0.0020753793463426937,
+              "k_north_cycles_per_m": 0.01758902110821893,
+              "wavenumber_magnitude_cycles_per_m": 0.017711037885358296,
+              "wavelength_m": 56.46196493242778,
+              "wavevector_bearing_deg_mod_180": 6.729379904289861,
+              "crest_orientation_deg_mod_180": 96.72937990428986,
+              "power": 1.878986785685427e+16,
+              "smoothed_power": 1.2014535139657572e+16,
+              "annular_prominence_db": 3.0588242617651034,
+              "wavevector_difference_from_range_axis_deg": 85.47898670704402,
+              "wavevector_difference_from_azimuth_axis_deg": 5.223411133590446,
+              "crest_difference_from_range_axis_deg": 4.521013292955985,
+              "crest_difference_from_azimuth_axis_deg": 84.77658886640955
+            }
+          ]
+        ]
+      },
+      "three_look_peak_stability": {
+        "robust": false,
+        "reason": "Best triplet did not pass all wavelength/orientation/prominence thresholds.",
+        "thresholds": {
+          "maximum_relative_wavelength_span": 0.2,
+          "maximum_orientation_span_deg": 12.0,
+          "minimum_annular_prominence_db_each_look": 3.0
+        },
+        "score": 0.8293796710028465,
+        "relative_wavelength_span": 0.04621240078629164,
+        "orientation_span_deg": 6.712518435911846,
+        "minimum_prominence_db": 1.382835655025637,
+        "mean_wavelength_m": 287.63123207645305,
+        "wavelength_standard_deviation_m": 5.529204553958822,
+        "mean_wavevector_bearing_deg_mod_180": 174.3137237015132,
+        "mean_crest_orientation_deg_mod_180": 84.3137237015132,
+        "matched_candidates": [
+          {
+            "crop_index_row_col": [
+              65,
+              62
+            ],
+            "fft_bin_offset_row_col": [
+              1,
+              -2
+            ],
+            "subbin_parabolic_offset_row_col": [
+              -0.2013271011293799,
+              -0.20041250100628247
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              0.7986728988706201,
+              -2.2004125010062823
+            ],
+            "k_east_cycles_per_m": -0.0005083916143281051,
+            "k_north_cycles_per_m": 0.003350367179826062,
+            "wavenumber_magnitude_cycles_per_m": 0.0033887198575826205,
+            "wavelength_m": 295.09668607229185,
+            "wavevector_bearing_deg_mod_180": 171.3716431613664,
+            "crest_orientation_deg_mod_180": 81.37164316136636,
+            "power": 8796105977098944.0,
+            "smoothed_power": 6671161036736929.0,
+            "annular_prominence_db": 2.170658155756951,
+            "wavevector_difference_from_range_axis_deg": 70.12124996412055,
+            "wavevector_difference_from_azimuth_axis_deg": 20.58114787651391,
+            "crest_difference_from_range_axis_deg": 19.878750035879477,
+            "crest_difference_from_azimuth_axis_deg": 69.41885212348606
+          },
+          {
+            "crop_index_row_col": [
+              65,
+              62
+            ],
+            "fft_bin_offset_row_col": [
+              1,
+              -2
+            ],
+            "subbin_parabolic_offset_row_col": [
+              -0.2499770548833059,
+              -0.3339642546906639
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              0.7500229451166941,
+              -2.333964254690664
+            ],
+            "k_east_cycles_per_m": -0.0004021512035354243,
+            "k_north_cycles_per_m": 0.0035246914778558724,
+            "wavenumber_magnitude_cycles_per_m": 0.0035475591051559387,
+            "wavelength_m": 281.88395749252595,
+            "wavevector_bearing_deg_mod_180": 173.49096018115773,
+            "crest_orientation_deg_mod_180": 83.49096018115773,
+            "power": 2.2106895513312652e+16,
+            "smoothed_power": 1.9026591183012704e+16,
+            "annular_prominence_db": 1.382835655025637,
+            "wavevector_difference_from_range_axis_deg": 72.24056698391189,
+            "wavevector_difference_from_azimuth_axis_deg": 18.46183085672257,
+            "crest_difference_from_range_axis_deg": 17.75943301608811,
+            "crest_difference_from_azimuth_axis_deg": 71.53816914327743
+          },
+          {
+            "crop_index_row_col": [
+              65,
+              62
+            ],
+            "fft_bin_offset_row_col": [
+              1,
+              -2
+            ],
+            "subbin_parabolic_offset_row_col": [
+              -0.4478068908712685,
+              -0.35520371338371354
+            ],
+            "fft_bin_offset_subpixel_row_col": [
+              0.5521931091287315,
+              -2.3552037133837134
+            ],
+            "k_east_cycles_per_m": -0.00011692875545333131,
+            "k_north_cycles_per_m": 0.0034956117018088593,
+            "wavenumber_magnitude_cycles_per_m": 0.0034975667976001393,
+            "wavelength_m": 285.9130526645414,
+            "wavevector_bearing_deg_mod_180": 178.08416159727824,
+            "crest_orientation_deg_mod_180": 88.08416159727824,
+            "power": 3.549773107970856e+16,
+            "smoothed_power": 2.5279113327033224e+16,
+            "annular_prominence_db": 4.034836533769406,
+            "wavevector_difference_from_range_axis_deg": 76.8337684000324,
+            "wavevector_difference_from_azimuth_axis_deg": 13.868629440602035,
+            "crest_difference_from_range_axis_deg": 13.166231599967603,
+            "crest_difference_from_azimuth_axis_deg": 76.13137055939794
+          }
+        ],
+        "mean_wavevector_difference_from_range_axis_deg": 73.06333050426736,
+        "mean_wavevector_difference_from_azimuth_axis_deg": 17.639067336367106,
+        "mean_crest_difference_from_range_axis_deg": 16.936669495732644,
+        "mean_crest_difference_from_azimuth_axis_deg": 72.3609326636329,
+        "orientation_semantics": "The 2-D FFT peak gives the modulation wavevector; visible crest/stripe orientation is perpendicular (+90 degrees, modulo 180)."
+      },
+      "cross_spectra": {
+        "computed": false,
+        "reason": "ROI is not ocean."
+      },
+      "artifacts": {
+        "intensity_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\land_control_three_look_intensity.png",
+        "normalized_difference_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\land_control_sublook_differences.png",
+        "power_spectrum_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\land_control_three_look_power_spectrum.png",
+        "spectrum_crop_npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\land_control_spectrum_crops.npz",
+        "complex_master_arrays": [
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\land_control_look1_complex64.npy",
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\land_control_look2_complex64.npy",
+          "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\land_control_look3_complex64.npy"
+        ]
+      }
+    }
+  },
+  "land_control_deterministic_terms": {
+    "domain": "log1p of 8-column block-averaged land intensity; approximately isotropic ground pixels",
+    "cross_convention": "F_secondary * conj(F_reference)",
+    "pairs": {
+      "1-2": {
+        "integer_displacement_secondary_relative_to_reference_row_col": [
+          0.0,
+          0.0
+        ],
+        "subpixel_displacement_secondary_relative_to_reference_row_col": [
+          -0.007904345726693046,
+          -0.06531804434248767
+        ],
+        "correlation_peak": 0.16693443059921265,
+        "correlation_peak_to_median_ratio": 390.8779296875,
+        "phase_ramp_model": "-2*pi*(f_row*d_row + f_col*d_col) for F_secondary*conj(F_reference)",
+        "phase_ramp_removed_residual_resultant": 0.44700868290950924,
+        "phase_ramp_removed_residual_mean_phase_rad": -1.8199847847953502e-06,
+        "registration_preprocessing": "log1p(intensity)",
+        "zero_shift_log_intensity_pearson_correlation": 0.6675977110862732,
+        "raw_candidate_log_intensity_pearson_correlation": 0.6675977110862732,
+        "multiscale_log_intensity_phase_correlation_shifts_display_pixels": {
+          "1.0": [
+            -0.0077763135908444055,
+            -0.06520934005089854
+          ],
+          "2.0": [
+            -0.005762532701783206,
+            -0.054106557470869905
+          ],
+          "4.0": [
+            -0.003814799349979249,
+            -0.034844035819007045
+          ],
+          "8.0": [
+            -0.005909019300370035,
+            0.0037501759068831603
+          ]
+        },
+        "raw_intensity_phase_correlation_diagnostic": {
+          "integer_displacement_secondary_relative_to_reference_row_col": [
+            0.0,
+            0.0
+          ],
+          "subpixel_displacement_secondary_relative_to_reference_row_col": [
+            0.0024102166145163533,
+            -0.011703139314624592
+          ],
+          "correlation_peak": 0.9353480935096741,
+          "correlation_peak_to_median_ratio": 610472.4375,
+          "phase_ramp_model": "-2*pi*(f_row*d_row + f_col*d_col) for F_secondary*conj(F_reference)",
+          "phase_ramp_removed_residual_resultant": 0.9707829059494093,
+          "phase_ramp_removed_residual_mean_phase_rad": 1.2707075195828408e-17
+        },
+        "display_column_block_average_factor": 8,
+        "original_sicd_pixel_displacement_row_col": [
+          -0.007904345726693046,
+          -0.5225443547399014
+        ],
+        "ground_displacement_east_north_m": [
+          0.009606998557349223,
+          0.028159938046577574
+        ],
+        "ground_displacement_magnitude_m": 0.029753596960165964,
+        "ground_displacement_bearing_deg": 18.837504586453335,
+        "effective_secondary_minus_reference_s": -5.795794629131963
+      },
+      "2-3": {
+        "integer_displacement_secondary_relative_to_reference_row_col": [
+          0.0,
+          0.0
+        ],
+        "subpixel_displacement_secondary_relative_to_reference_row_col": [
+          -0.002514194926887564,
+          -0.07521081033522813
+        ],
+        "correlation_peak": 0.14872708916664124,
+        "correlation_peak_to_median_ratio": 346.7151184082031,
+        "phase_ramp_model": "-2*pi*(f_row*d_row + f_col*d_col) for F_secondary*conj(F_reference)",
+        "phase_ramp_removed_residual_resultant": 0.4020317731232381,
+        "phase_ramp_removed_residual_mean_phase_rad": 1.1903367776584333e-05,
+        "registration_preprocessing": "log1p(intensity)",
+        "zero_shift_log_intensity_pearson_correlation": 0.6467478275299072,
+        "raw_candidate_log_intensity_pearson_correlation": 0.06757637113332748,
+        "multiscale_log_intensity_phase_correlation_shifts_display_pixels": {
+          "1.0": [
+            -0.002457735688276791,
+            -0.07524181591267148
+          ],
+          "2.0": [
+            -0.004546058795591286,
+            -0.06857960344613032
+          ],
+          "4.0": [
+            -0.008538741417966912,
+            -0.041576196347186886
+          ],
+          "8.0": [
+            0.013419858153888811,
+            -0.01600487086335475
+          ]
+        },
+        "raw_intensity_phase_correlation_diagnostic": {
+          "integer_displacement_secondary_relative_to_reference_row_col": [
+            165.0,
+            138.0
+          ],
+          "subpixel_displacement_secondary_relative_to_reference_row_col": [
+            165.00710945173532,
+            137.97083597393407
+          ],
+          "correlation_peak": 0.7559863328933716,
+          "correlation_peak_to_median_ratio": 14039.708984375,
+          "phase_ramp_model": "-2*pi*(f_row*d_row + f_col*d_col) for F_secondary*conj(F_reference)",
+          "phase_ramp_removed_residual_resultant": 0.7198568775636189,
+          "phase_ramp_removed_residual_mean_phase_rad": -6.03489537547495e-07
+        },
+        "display_column_block_average_factor": 8,
+        "original_sicd_pixel_displacement_row_col": [
+          -0.002514194926887564,
+          -0.601686482681825
+        ],
+        "ground_displacement_east_north_m": [
+          0.008146583645636887,
+          0.0330048498455134
+        ],
+        "ground_displacement_magnitude_m": 0.033995395841499534,
+        "ground_displacement_bearing_deg": 13.865167102238631,
+        "effective_secondary_minus_reference_s": -5.7935632475175876
+      },
+      "1-3": {
+        "integer_displacement_secondary_relative_to_reference_row_col": [
+          0.0,
+          0.0
+        ],
+        "subpixel_displacement_secondary_relative_to_reference_row_col": [
+          -0.011263952816583583,
+          -0.28879594335715486
+        ],
+        "correlation_peak": 0.10502380132675171,
+        "correlation_peak_to_median_ratio": 242.58657836914062,
+        "phase_ramp_model": "-2*pi*(f_row*d_row + f_col*d_col) for F_secondary*conj(F_reference)",
+        "phase_ramp_removed_residual_resultant": 0.31628370689105806,
+        "phase_ramp_removed_residual_mean_phase_rad": 4.7927774606740774e-05,
+        "registration_preprocessing": "log1p(intensity)",
+        "zero_shift_log_intensity_pearson_correlation": 0.5636116862297058,
+        "raw_candidate_log_intensity_pearson_correlation": 0.04559026286005974,
+        "multiscale_log_intensity_phase_correlation_shifts_display_pixels": {
+          "1.0": [
+            -0.011316708333469414,
+            -0.2889865687511243
+          ],
+          "2.0": [
+            -0.015015124820995221,
+            -0.2228703073353573
+          ],
+          "4.0": [
+            -0.017929938033531285,
+            -0.09978166407752895
+          ],
+          "8.0": [
+            -0.001381816187823523,
+            -0.047132587994433914
+          ]
+        },
+        "raw_intensity_phase_correlation_diagnostic": {
+          "integer_displacement_secondary_relative_to_reference_row_col": [
+            165.0,
+            138.0
+          ],
+          "subpixel_displacement_secondary_relative_to_reference_row_col": [
+            164.97205356934631,
+            138.0428476152797
+          ],
+          "correlation_peak": 0.7233872413635254,
+          "correlation_peak_to_median_ratio": 12938.6455078125,
+          "phase_ramp_model": "-2*pi*(f_row*d_row + f_col*d_col) for F_secondary*conj(F_reference)",
+          "phase_ramp_removed_residual_resultant": 0.7118264394708503,
+          "phase_ramp_removed_residual_mean_phase_rad": 3.4949045316373586e-05
+        },
+        "display_column_block_average_factor": 8,
+        "original_sicd_pixel_displacement_row_col": [
+          -0.011263952816583583,
+          -2.310367546857239
+        ],
+        "ground_displacement_east_north_m": [
+          0.031993928949560206,
+          0.12659093558894846
+        ],
+        "ground_displacement_magnitude_m": 0.13057134625527458,
+        "ground_displacement_bearing_deg": 14.18362111440543,
+        "effective_secondary_minus_reference_s": -11.58935787664955
+      }
+    },
+    "shift_closure_13_minus_12_plus_23_original_pixels": [
+      -0.0008454121630029725,
+      -1.1861367094355124
+    ],
+    "shift_closure_ground_east_north_m": [
+      0.014240346746574097,
+      0.06542614769685748
+    ],
+    "shift_closure_ground_magnitude_m": 0.06695795903336416,
+    "complex_sublook_note": "The three complex sub-looks occupy disjoint Doppler bands, so land registration and deterministic phase-ramp checks are performed on their intensity images. Log compression prevents a few extreme point scatterers from dominating phase correlation; raw-intensity results are retained as diagnostics."
+  }
+}

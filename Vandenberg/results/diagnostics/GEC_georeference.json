@@ -1,0 +1,68 @@
+{
+  "source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+  "source_size_col_row": [
+    16001,
+    16001
+  ],
+  "overview": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\diagnostics\\GEC_overview_grid.png",
+  "detail_crops_source_boxes_col0_row0_col1_row1": {
+    "GEC_detail_coast_ocean.png": [
+      8000,
+      8000,
+      16001,
+      16001
+    ],
+    "GEC_detail_land.png": [
+      4500,
+      5500,
+      10500,
+      11500
+    ]
+  },
+  "overview_scale_source_pixels_per_pixel": 10.0,
+  "model_transformation_tag_34264": [
+    -7.034374817897602e-07,
+    -3.332483805614478e-06,
+    0.0,
+    -120.59480929832426,
+    -2.7562364641923338e-06,
+    5.818005107785454e-07,
+    0.0,
+    34.59879516557386,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0
+  ],
+  "coordinate_reference_system": "EPSG:4326 (from GeoKeyDirectoryTag)",
+  "pixel_to_lonlat": {
+    "lon": "m00*col + m01*row + m03",
+    "lat": "m10*col + m11*row + m13"
+  },
+  "corners_lonlat": {
+    "upper_left": [
+      -120.59480929832426,
+      34.59879516557386
+    ],
+    "upper_right": [
+      -120.6060642980329,
+      34.55469538214678
+    ],
+    "lower_left": [
+      -120.6481290392141,
+      34.60810397374632
+    ],
+    "lower_right": [
+      -120.65938403892274,
+      34.56400419031924
+    ],
+    "center": [
+      -120.6270966686235,
+      34.58139967794655
+    ]
+  }
+}

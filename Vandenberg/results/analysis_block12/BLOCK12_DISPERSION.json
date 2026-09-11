@@ -1,0 +1,84 @@
+{
+  "generated_utc": "2026-09-01T21:28:13.343916+00:00",
+  "scope": "Dispersion inversion on the resolved lobe of the backprojected support",
+  "grid": {
+    "shape": [
+      288,
+      130
+    ],
+    "spacing_m": 5.0,
+    "length_parallel_m": 1440.0,
+    "length_perpendicular_m": 650.0,
+    "bearing_deg": 79.8357237,
+    "center_easting_northing_m": [
+      715510.6102416331,
+      3827627.093742074
+    ],
+    "utm_zone": 10,
+    "surface_hae_m": -36.376,
+    "pixel_count": 37440
+  },
+  "selection": {
+    "bin_count": 22,
+    "wavelength_bounds_m": [
+      60.0,
+      300.0
+    ],
+    "minimum_power_fraction": 0.15,
+    "minimum_r_squared": 0.97,
+    "minimum_smoothed_coherence": 0.25
+  },
+  "peak": {
+    "wavelength_m": 130.9090909090909,
+    "omega_rad_per_s": 0.4120656492031189,
+    "period_s": 15.248020113616473,
+    "r_squared": 0.994455797996389,
+    "smoothed_coherence": 0.6456638768897924
+  },
+  "models": {
+    "linear_dispersion_free_depth": {
+      "parameters": {
+        "depth_m": 7.105389994330574
+      },
+      "weighted_rms_rad_per_s": 0.032573996263773816
+    },
+    "dispersion_at_dem_depth_plus_current": {
+      "parameters": {
+        "current_along_k_m_per_s": -3.2211169164096964
+      },
+      "weighted_rms_rad_per_s": 0.033042886315508314
+    },
+    "free_depth_plus_current": {
+      "parameters": {
+        "depth_m": 12.025546074738571,
+        "current_along_k_m_per_s": -2.066075979521538
+      },
+      "weighted_rms_rad_per_s": 0.031222701976048654
+    },
+    "pure_scale_at_dem_depth": {
+      "parameters": {
+        "scale": 0.7265707584823835
+      },
+      "weighted_rms_rad_per_s": 0.031036650775322763
+    }
+  },
+  "per_bin_depth_m": {
+    "median": 6.919233467478672,
+    "p25": 6.43465605761067,
+    "p75": 7.814478582654343,
+    "trend_vs_log_wavelength_m": 3.1176876266212092
+  },
+  "dem_reference": {
+    "median_depth_m": 16.441,
+    "p10_p90_m": [
+      11.76,
+      23.03
+    ],
+    "note": "depth is -elevation on NAVD88; no tidal reduction applied"
+  },
+  "buoy_omega_rad_per_s": 0.47123891676382035,
+  "caveats": [
+    "Free depth, depth-plus-current and a pure scale on the DEM depth fit within a few per cent of each other; this selection cannot separate them.",
+    "A pure scale on omega produces a drift of the per-bin depth with wavelength, which is present, so a single physical depth is not established."
+  ]
+}

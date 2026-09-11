@@ -1,0 +1,88 @@
+{
+  "frozen_before_processing": true,
+  "depth_m": 10.0,
+  "gravity_m_per_s2": 9.80665,
+  "spatial_grid": {
+    "range_samples": 1024,
+    "range_pixel_spacing_m": 8.0,
+    "range_length_m": 8192.0
+  },
+  "components": [
+    {
+      "component_id": "K1",
+      "range_fft_mode": 43,
+      "azimuth_fft_mode": 0,
+      "wavelength_m": 190.51162790697674,
+      "k_rad_per_m": 0.032980586939541284,
+      "omega_rad_per_s": 0.3208776382693721,
+      "period_s": 19.58125016460307,
+      "propagation_angle_deg_from_positive_range": 0.0,
+      "amplitude": 1.0,
+      "phase_rad": 0.17
+    },
+    {
+      "component_id": "K2",
+      "range_fft_mode": 51,
+      "azimuth_fft_mode": 0,
+      "wavelength_m": 160.62745098039215,
+      "k_rad_per_m": 0.03911651009108385,
+      "omega_rad_per_s": 0.37794130475718063,
+      "period_s": 16.62476481954361,
+      "propagation_angle_deg_from_positive_range": 0.0,
+      "amplitude": 1.0,
+      "phase_rad": -0.83
+    },
+    {
+      "component_id": "K3",
+      "range_fft_mode": 60,
+      "azimuth_fft_mode": 0,
+      "wavelength_m": 136.53333333333333,
+      "k_rad_per_m": 0.04601942363656924,
+      "omega_rad_per_s": 0.4406437176485163,
+      "period_s": 14.259105611920761,
+      "propagation_angle_deg_from_positive_range": 0.0,
+      "amplitude": 1.0,
+      "phase_rad": 1.21
+    },
+    {
+      "component_id": "K4",
+      "range_fft_mode": 70,
+      "azimuth_fft_mode": 0,
+      "wavelength_m": 117.02857142857142,
+      "k_rad_per_m": 0.05368932757599744,
+      "omega_rad_per_s": 0.508256055498261,
+      "period_s": 12.362243871388728,
+      "propagation_angle_deg_from_positive_range": 0.0,
+      "amplitude": 1.0,
+      "phase_rad": -1.74
+    },
+    {
+      "component_id": "K5",
+      "range_fft_mode": 82,
+      "azimuth_fft_mode": 0,
+      "wavelength_m": 99.90243902439025,
+      "k_rad_per_m": 0.06289321230331128,
+      "omega_rad_per_s": 0.5862909111795126,
+      "period_s": 10.716839008366922,
+      "propagation_angle_deg_from_positive_range": 0.0,
+      "amplitude": 1.0,
+      "phase_rad": 2.13
+    },
+    {
+      "component_id": "K6",
+      "range_fft_mode": 99,
+      "azimuth_fft_mode": 0,
+      "wavelength_m": 82.74747474747475,
+      "k_rad_per_m": 0.07593204900033923,
+      "omega_rad_per_s": 0.6907045369918942,
+      "period_s": 9.096777233495027,
+      "propagation_angle_deg_from_positive_range": 0.0,
+      "amplitude": 1.0,
+      "phase_rad": -2.51
+    }
+  ],
+  "explicit_exclusions": {
+    "17p902_s_used_as_truth": false,
+    "13p33_s_used_as_truth": false
+  }
+}

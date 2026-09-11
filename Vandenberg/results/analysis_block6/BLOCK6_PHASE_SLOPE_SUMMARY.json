@@ -1,0 +1,376 @@
+{
+  "generated_utc": "2026-08-31T10:45:24.787172+00:00",
+  "scope": "Block 6 SAR-only 2-D phase-slope map and theory; nearshore only",
+  "frozen_inputs": {
+    "T_SAR_s": 17.902230457045317,
+    "slope_rad_per_s": -0.3509722055168202,
+    "lambda_SAR_m": 130.6028192373831,
+    "theta_SAR_deg_mod_180": 79.83572372864876,
+    "block4_sha256": "c399af008e2159ede9b6e27b8bf99dffdd17b7f808aa263ea569d20438df8fcd",
+    "NDBC_comparison_changed": false
+  },
+  "time_axis": {
+    "source": "CPHD/PVP Doppler-to-TxTime inversion",
+    "physical_slow_time_centers_s": [
+      3.242899386518952,
+      4.405555289724772,
+      5.56539893211977,
+      6.723516579309932,
+      7.880179229709705,
+      9.03646263403653,
+      10.19283490296494,
+      11.349764285829982,
+      12.50832722989799,
+      13.668795587324867,
+      14.832257263168495
+    ],
+    "mean_center_step_s": 1.1589357876649542,
+    "mean_effective_window_span_s": 5.800829948175832,
+    "overlap_correlation_hac_lag": 4
+  },
+  "local_axes": {
+    "kx_definition": "projection of EN wavevector on positive local SICD Grid Row/range direction",
+    "ky_definition": "projection of EN wavevector on positive local SICD Grid Col/azimuth direction",
+    "positive_range_bearing_deg": 281.17862730319644,
+    "positive_azimuth_bearing_deg": 191.45798292805307,
+    "axis_separation_deg": 89.72064437514337
+  },
+  "criteria": {
+    "patch": "same Gaussian 5x5, sigma=1 bin as frozen Block 4",
+    "cross_convention": "F_secondary * conj(F_reference)",
+    "minimum_adjacent_magnitude_squared_coherence": 0.7,
+    "minimum_each_independent_anchor_pair_coherence": 0.25,
+    "independent_anchor_chronological_indices": [
+      1,
+      6,
+      11
+    ],
+    "maximum_phase_step_rad": 1.5707963267948966,
+    "maximum_step_consistency_error_rad": 0.25,
+    "wavelength_bounds_m": [
+      40.0,
+      500.0
+    ],
+    "fit_error": "max(OLS standard error, Newey-West HAC lag-4 standard error)"
+  },
+  "counts": {
+    "coherence_and_unwrap_valid_all_wavenumbers": 73,
+    "map_rows_40_to_500m": 68,
+    "high_quality_rows": 48,
+    "primary_lobe_rows": 22,
+    "conjugate_lobe_rows": 22
+  },
+  "frozen_peak_reproduction": {
+    "crop_index_row_col": [
+      60,
+      63
+    ],
+    "slope_map_rad_per_s": -0.3509722055168202,
+    "absolute_difference_from_frozen_rad_per_s": 0.0,
+    "r_squared": 0.9982882440018105,
+    "selected_slope_standard_error_rad_per_s": 0.0048444493640964655,
+    "minimum_adjacent_coherence": 0.9726467076136279,
+    "minimum_independent_anchor_coherence": 0.5594814712605148,
+    "bias_vs_13_33s_compatibility_rad_per_s": 0.11975240807130855
+  },
+  "hermitian_conjugate_check": {
+    "conjugate_center_row_col": [
+      68,
+      65
+    ],
+    "frozen_plus_conjugate_slope_rad_per_s": -1.1102230246251565e-16,
+    "maximum_abs_slope_antisymmetry_error_over_map_rad_per_s": 1.6653345369377348e-16
+  },
+  "orientation_analysis": {
+    "selection": {
+      "map_wavelength_bounds_m": [
+        40.0,
+        500.0
+      ],
+      "minimum_r_squared_for_primary_lobe": 0.95,
+      "maximum_selected_slope_standard_error_rad_per_s": 0.04,
+      "minimum_power_fraction_of_frozen_peak": 0.05,
+      "lobe_definition": "8-connected high-quality component containing the frozen Block-4 bin; no new maximum was selected",
+      "primary_lobe_bin_count": 22,
+      "near_peak_annulus_fractional_k_bounds": [
+        0.85,
+        1.15
+      ],
+      "near_peak_annulus_bin_count": 7
+    },
+    "primary_lobe_ranges": {
+      "wavelength_m": [
+        80.53515096598672,
+        191.5082103978139
+      ],
+      "angle_from_range_deg": [
+        0.2793556248566489,
+        56.03497249106259
+      ],
+      "aligned_slope_rad_per_s": [
+        -0.4228640881115073,
+        -0.345942178024993
+      ],
+      "bias_vs_h13_33_dispersion_rad_per_s": [
+        -0.023843518053738855,
+        0.3145370977824811
+      ]
+    },
+    "spearman_descriptive": {
+      "bias13_vs_k_magnitude": {
+        "spearman_rho": 0.9830604178430267,
+        "nominal_p_value_not_used_for_inference": 3.2743195754713333e-16,
+        "sample_count": 22
+      },
+      "bias13_vs_abs_k_azimuth": {
+        "spearman_rho": 0.26900263974263733,
+        "nominal_p_value_not_used_for_inference": 0.22606627041728772,
+        "sample_count": 22
+      },
+      "bias13_vs_angle_from_range": {
+        "spearman_rho": 0.013590088444381669,
+        "nominal_p_value_not_used_for_inference": 0.9521358526910886,
+        "sample_count": 22
+      },
+      "near_peak_annulus_slope_vs_abs_k_azimuth": {
+        "spearman_rho": -0.7142857142857144,
+        "nominal_p_value_not_used_for_inference": 0.07134356146753766,
+        "sample_count": 7
+      },
+      "near_peak_annulus_slope_vs_angle_from_range": {
+        "spearman_rho": -0.7142857142857144,
+        "nominal_p_value_not_used_for_inference": 0.07134356146753766,
+        "sample_count": 7
+      }
+    },
+    "standardized_multivariable_models": {
+      "bias13_from_k_magnitude_and_abs_k_azimuth": {
+        "sample_count": 22,
+        "predictors": [
+          "k_magnitude_cycles_per_m",
+          "abs_k_azimuth_cycles_per_m"
+        ],
+        "predictor_means": [
+          0.008816426432189007,
+          0.0036042931206337254
+        ],
+        "predictor_standard_deviations": [
+          0.0021073806661191905,
+          0.002379120889634615
+        ],
+        "intercept": 0.15748377343269063,
+        "coefficient_per_predictor_1sd": {
+          "k_magnitude_cycles_per_m": 0.09440820944643827,
+          "abs_k_azimuth_cycles_per_m": -0.00026544687928080346
+        },
+        "standard_error": {
+          "intercept": 0.0027386547321348723,
+          "k_magnitude_cycles_per_m": 0.0030567278609194303,
+          "abs_k_azimuth_cycles_per_m": 0.0030567278609194308
+        },
+        "r_squared": 0.9834897542906385,
+        "residual_rmse": 0.011937519218625361,
+        "inference_warning": "Neighbouring 5x5 spectral patches overlap, so binwise standard errors are descriptive and anti-conservative; effect sizes, not p-values, are used for the conclusion."
+      },
+      "bias13_from_k_magnitude_and_angle_from_range": {
+        "sample_count": 22,
+        "predictors": [
+          "k_magnitude_cycles_per_m",
+          "angle_from_range_deg"
+        ],
+        "predictor_means": [
+          0.008816426432189007,
+          25.077773190726763
+        ],
+        "predictor_standard_deviations": [
+          0.0021073806661191905,
+          17.080926447490913
+        ],
+        "intercept": 0.15748377343269063,
+        "coefficient_per_predictor_1sd": {
+          "k_magnitude_cycles_per_m": 0.09429474998315941,
+          "angle_from_range_deg": -0.0012386955566163448
+        },
+        "standard_error": {
+          "intercept": 0.0027250915800673004,
+          "k_magnitude_cycles_per_m": 0.002789272555211966,
+          "angle_from_range_deg": 0.0027892725552119664
+        },
+        "r_squared": 0.9836528828975319,
+        "residual_rmse": 0.011878398809406939,
+        "inference_warning": "Neighbouring 5x5 spectral patches overlap, so binwise standard errors are descriptive and anti-conservative; effect sizes, not p-values, are used for the conclusion."
+      },
+      "observed_slope_from_k_magnitude_and_abs_k_azimuth": {
+        "sample_count": 22,
+        "predictors": [
+          "k_magnitude_cycles_per_m",
+          "abs_k_azimuth_cycles_per_m"
+        ],
+        "predictor_means": [
+          0.008816426432189007,
+          0.0036042931206337254
+        ],
+        "predictor_standard_deviations": [
+          0.0021073806661191905,
+          0.002379120889634615
+        ],
+        "intercept": -0.37482238472761525,
+        "coefficient_per_predictor_1sd": {
+          "k_magnitude_cycles_per_m": -0.021029076423532876,
+          "abs_k_azimuth_cycles_per_m": 5.722880023954248e-05
+        },
+        "standard_error": {
+          "intercept": 0.0022953558667276803,
+          "k_magnitude_cycles_per_m": 0.002561943331601332,
+          "abs_k_azimuth_cycles_per_m": 0.0025619433316013324
+        },
+        "r_squared": 0.8079759534866024,
+        "residual_rmse": 0.010005224262529174,
+        "inference_warning": "Neighbouring 5x5 spectral patches overlap, so binwise standard errors are descriptive and anti-conservative; effect sizes, not p-values, are used for the conclusion."
+      }
+    },
+    "angle_binned_bias13": [
+      {
+        "angle_from_range_bounds_deg": [
+          0,
+          15
+        ],
+        "sample_count": 8,
+        "median_rad_per_s": 0.1460257213895204,
+        "minimum_rad_per_s": 0.0021416034463656586,
+        "maximum_rad_per_s": 0.24285327292766784
+      },
+      {
+        "angle_from_range_bounds_deg": [
+          15,
+          30
+        ],
+        "sample_count": 5,
+        "median_rad_per_s": 0.2158370980750377,
+        "minimum_rad_per_s": 0.02080839508976412,
+        "maximum_rad_per_s": 0.3145370977824811
+      },
+      {
+        "angle_from_range_bounds_deg": [
+          30,
+          45
+        ],
+        "sample_count": 7,
+        "median_rad_per_s": 0.18001474803709677,
+        "minimum_rad_per_s": -0.023843518053738855,
+        "maximum_rad_per_s": 0.2924565632251735
+      },
+      {
+        "angle_from_range_bounds_deg": [
+          45,
+          60
+        ],
+        "sample_count": 2,
+        "median_rad_per_s": 0.11731287898704276,
+        "minimum_rad_per_s": 0.04719924129725006,
+        "maximum_rad_per_s": 0.18742651667683546
+      },
+      {
+        "angle_from_range_bounds_deg": [
+          60,
+          75
+        ],
+        "sample_count": 0,
+        "median_rad_per_s": null,
+        "minimum_rad_per_s": null,
+        "maximum_rad_per_s": null
+      },
+      {
+        "angle_from_range_bounds_deg": [
+          75,
+          90
+        ],
+        "sample_count": 0,
+        "median_rad_per_s": null,
+        "minimum_rad_per_s": null,
+        "maximum_rad_per_s": null
+      }
+    ],
+    "interpretation": "The +0.120 rad/s value is one bin, not a constant field correction. Across the connected lobe the diagnostic bias varies mainly with |k| because the measured phase-rate ridge is much flatter than the finite-depth dispersion curve. After controlling for |k|, the standardized |k_az| coefficient is negligible relative to its descriptive standard error. The seven-bin near-peak annulus hints at a more-negative slope away from range, but overlapping patches and the small effective sample do not establish a systematic orientation law."
+  },
+  "theory": {
+    "sources": {
+      "engen_johnsen": {
+        "citation": "G. Engen and H. Johnsen, SAR-ocean wave inversion using image cross spectra, IEEE TGRS 33(4), 1995, DOI 10.1109/36.406690",
+        "role": "nonlinear ocean-to-SAR image cross-spectrum and directional ambiguity removal"
+      },
+      "sentinel1_osw_atbd": {
+        "local_pdf": "D:\\Dati Tesi\\Umbra\\tmp\\pdfs\\S1_OSW_ATBD_2020_v1.3.pdf",
+        "equations_used": [
+          34,
+          35,
+          36,
+          37
+        ]
+      }
+    },
+    "quasi_linear_single_component": {
+      "equation": "P_ql(k,t)=C(k)[A(k) exp(-i omega t)+B(k) exp(+i omega t)]",
+      "definitions": "C=U exp[-(k_y lambda_c/2pi)^2]/2; A=|T(k)|^2 S(k); B=|T(-k)|^2 S(-k)",
+      "phase_rate": "d arg(P_ql)/dt = omega (B^2-A^2)/(A^2+B^2+2AB cos(2 omega t)) for stationary C",
+      "one_direction_limit": "B=0 gives exactly -omega; arg(C) is a constant intercept",
+      "mtf_note": "In Eq. 34 the stationary MTF enters as |T|^2. Its own complex phase therefore cannot by itself change the ideal temporal slope. Through A/B and P_nlin, however, its k_y-dependent shift term changes component mixing and nonlinearity."
+    },
+    "general_bias_terms": {
+      "equation": "P=C(t)[A exp(-i omega t)+B exp(+i omega t)]+N(t); dphi/dt=Im(conj(P) dP/dt)/|P|^2",
+      "terms": [
+        "opposite-direction mixture B/A=S(-k)|T(-k)|^2 / [S(k)|T(k)|^2]",
+        "nonlinear transform contribution N=P_nlin, explicitly subtracted by Sentinel-1 before quasi-linear inversion",
+        "look-dependent system/MTF phase d arg(C)/dt, possible for sliding Doppler sub-apertures even though stationary C only shifts phi0",
+        "current/advection k dot U, which changes the actual encounter frequency rather than the SAR MTF",
+        "six-second symmetric look averaging changes amplitude by a real sinc for one stationary tone; overlap changes covariance, not the ideal slope"
+      ],
+      "single_component_plus_stationary_nonlinear_term": "For P=A exp(-i omega t)+N, dphi/dt=-omega[A^2+A Re(N* exp(-i omega t))]/[A^2+|N|^2+2A Re(N* exp(-i omega t))]."
+    },
+    "umbra_geometry_order_of_magnitude": {
+      "slant_range_m": 610403.7510692304,
+      "platform_speed_m_per_s": 7657.75057715643,
+      "R_over_V_s": 79.71058144543186,
+      "incidence_angle_deg": 21.842925232944808,
+      "frozen_peak_lambda_m": 130.6028192373831,
+      "peak_angle_from_local_range_deg": 21.342903574547677,
+      "peak_k_azimuth_rad_per_m": 0.01750925197811765,
+      "omega_13_33_rad_per_s": 0.47135673722277466,
+      "ATBD_shift_MTF_geometric_core_m_per_m_surface_amplitude": 37.226056968844695,
+      "dimensionless_shift_modulation_per_m_surface_amplitude": 0.6518004116192643,
+      "frozen_NDBC_partition_Hm0_m_context_only": 1.6374321527158247,
+      "equivalent_narrow_sinusoid_amplitude_m_context_only": 0.578919689459123,
+      "ATBD_core_dimensionless_shift_parameter_context_only": 0.377340091883953,
+      "finite_depth_kh_at_10_627m": 0.5112578485382481,
+      "finite_depth_LOS_orbital_velocity_amplitude_m_per_s_context_only": 0.32323016742754707,
+      "finite_depth_velocity_bunching_parameter_context_only": 0.4511235062245533,
+      "caveat": "The ATBD tuning/switch factor u_h is unavailable for Umbra and was set to unity only for an unfitted geometric scale. The NDBC Hm0 is the already-frozen context, not a refit or a period-selection input."
+    },
+    "can_0_120_rad_per_s_be_reached": {
+      "required_extra_rate_at_frozen_peak_rad_per_s": 0.12038453170595448,
+      "fraction_of_13_33s_omega": 0.2554000445930994,
+      "stationary_N_over_A_required_if_in_phase": 0.34300303503715796,
+      "stationary_N_over_A_required_if_quadrature": 0.5856646096847221,
+      "uniform_advection_speed_along_k_required_m_per_s": 2.5023230200459223,
+      "assessment": "A uniform-current explanation alone requires about 2.5 m/s along k and is not the economical explanation. Umbra's R/V and nonzero k_az give an unfitted velocity-bunching parameter of order 0.4 for the frozen sea-state scale, large enough that tens-of-percent nonlinear cross-spectral terms are plausible. This establishes order-of-magnitude plausibility, not a prediction of +0.120 rad/s: the full P_nlin lookup, X-band RAR MTF/wind dependence, and look-dependent transfer are unavailable."
+    }
+  },
+  "duration_guardrail": {
+    "SICD_processed_aperture_duration_s": 18.068061721230308,
+    "CPHD_available_dwell_s": 22.540812513364376,
+    "kept_distinct": true
+  },
+  "guardrails": {
+    "dwell_sweep_performed": false,
+    "bathymetric_inversion_performed": false,
+    "T_SAR_retuned": false,
+    "NDBC_reanalysis_performed": false,
+    "diagnostic_depths_are_not_bathymetry": true
+  },
+  "artifacts": {
+    "map_csv": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.csv",
+    "map_npz": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.npz",
+    "map_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.png",
+    "orientation_figure": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block6\\BLOCK6_ORIENTATION_DIAGNOSTIC.png"
+  }
+}

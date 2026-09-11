@@ -1,0 +1,127 @@
+{
+  "generated_utc": "2026-08-29T22:47:28.302455+00:00",
+  "ordering_guardrail": {
+    "sar_only_metrics_generated_utc": "2026-08-29T22:43:38.410286+00:00",
+    "sar_only_metrics_sha256": "c399af008e2159ede9b6e27b8bf99dffdd17b7f808aa263ea569d20438df8fcd",
+    "external_data_used_for_sar_phase_branch_or_fit": false,
+    "statement": "The SAR-only JSON was finalized before this external file was inspected; this comparison does not modify its phases, unwrap, slope, or uncertainty."
+  },
+  "source": {
+    "provider": "NOAA National Data Buoy Center; station data submitted by Scripps CDIP",
+    "station": "46218 Harvest, CA (CDIP 071)",
+    "station_latitude_deg": 34.45199966430664,
+    "station_longitude_deg": -120.77999877929688,
+    "water_depth_m_from_station_page": 550.0,
+    "local_file": "D:\\Dati Tesi\\Umbra\\Vandenberg\\external\\46218h2025.nc",
+    "local_file_size_bytes": 984228,
+    "local_file_sha256": "21edae605ed08dc07f05fdb09c1776582225f2bcf830137d4d6df460e396fb64",
+    "download_url": "https://dods.ndbc.noaa.gov/thredds/fileServer/data/stdmet/46218/46218h2025.nc",
+    "station_history_url": "https://www.ndbc.noaa.gov/station_history.php?station=46218",
+    "measurement_description_url": "https://www.ndbc.noaa.gov/obsdes.shtml",
+    "distance_from_nearshore_roi_center_km": 17.890261902999544
+  },
+  "sicd_time": {
+    "collect_start_utc": "2025-02-16T18:55:33.000000000",
+    "collect_duration_s": 22.547940446666665,
+    "collect_midpoint_utc": "2025-02-16T18:55:44.273970223"
+  },
+  "nearest_buoy_record": {
+    "index": 2240,
+    "time_utc": "2025-02-16T18:56:00+00:00",
+    "time_difference_from_sicd_midpoint_s": 15.726029872894287,
+    "significant_wave_height_m": 2.0199999809265137,
+    "dominant_wave_period_s": 13.329999923706055,
+    "average_wave_period_s": 7.309999942779541,
+    "mean_wave_direction_from_deg_true": 252.0
+  },
+  "buoy_record_neighborhood": [
+    {
+      "time_utc": "2025-02-16T16:56:00+00:00",
+      "significant_wave_height_m": 2.1600000858306885,
+      "dominant_wave_period_s": 12.5,
+      "average_wave_period_s": 7.610000133514404,
+      "mean_wave_direction_from_deg_true": 278.0
+    },
+    {
+      "time_utc": "2025-02-16T17:26:00+00:00",
+      "significant_wave_height_m": 1.9700000286102295,
+      "dominant_wave_period_s": 11.760000228881836,
+      "average_wave_period_s": 7.300000190734863,
+      "mean_wave_direction_from_deg_true": 288.0
+    },
+    {
+      "time_utc": "2025-02-16T17:56:00+00:00",
+      "significant_wave_height_m": 1.9700000286102295,
+      "dominant_wave_period_s": 14.289999961853027,
+      "average_wave_period_s": 7.239999771118164,
+      "mean_wave_direction_from_deg_true": 290.0
+    },
+    {
+      "time_utc": "2025-02-16T18:26:00+00:00",
+      "significant_wave_height_m": 2.049999952316284,
+      "dominant_wave_period_s": 11.760000228881836,
+      "average_wave_period_s": 7.159999847412109,
+      "mean_wave_direction_from_deg_true": 272.0
+    },
+    {
+      "time_utc": "2025-02-16T18:56:00+00:00",
+      "significant_wave_height_m": 2.0199999809265137,
+      "dominant_wave_period_s": 13.329999923706055,
+      "average_wave_period_s": 7.309999942779541,
+      "mean_wave_direction_from_deg_true": 252.0
+    },
+    {
+      "time_utc": "2025-02-16T19:26:00+00:00",
+      "significant_wave_height_m": 2.0,
+      "dominant_wave_period_s": 14.289999961853027,
+      "average_wave_period_s": 7.269999980926514,
+      "mean_wave_direction_from_deg_true": 257.0
+    },
+    {
+      "time_utc": "2025-02-16T19:56:00+00:00",
+      "significant_wave_height_m": 2.009999990463257,
+      "dominant_wave_period_s": 11.760000228881836,
+      "average_wave_period_s": 7.190000057220459,
+      "mean_wave_direction_from_deg_true": 271.0
+    },
+    {
+      "time_utc": "2025-02-16T20:26:00+00:00",
+      "significant_wave_height_m": 1.9299999475479126,
+      "dominant_wave_period_s": 14.289999961853027,
+      "average_wave_period_s": 7.420000076293945,
+      "mean_wave_direction_from_deg_true": 271.0
+    },
+    {
+      "time_utc": "2025-02-16T20:56:00+00:00",
+      "significant_wave_height_m": 1.8899999856948853,
+      "dominant_wave_period_s": 10.529999732971191,
+      "average_wave_period_s": 6.699999809265137,
+      "mean_wave_direction_from_deg_true": 283.0
+    }
+  ],
+  "comparison": {
+    "sar_period_s": 17.902230457045317,
+    "sar_period_fit_only_95_percent_ci_s": [
+      17.360169132239896,
+      18.479233938627722
+    ],
+    "ndbc_dominant_period_s": 13.329999923706055,
+    "ndbc_average_period_s": 7.309999942779541,
+    "sar_minus_ndbc_dominant_period_s": 4.572230533339262,
+    "sar_to_ndbc_dominant_period_ratio": 1.3430030427238047,
+    "sar_minus_ndbc_average_period_s": 10.592230514265776,
+    "sar_to_ndbc_average_period_ratio": 2.4490055536495947,
+    "period_label_warning": "NDBC DPD is the period of maximum nondirectional spectral energy; APD is the average over all waves. Neither is automatically an isolated swell partition period.",
+    "sar_wavevector_bearing_deg_mod_180": 79.83572372864876,
+    "ndbc_mean_wave_direction_from_deg_true": 252.0,
+    "ndbc_inferred_propagation_to_deg_true": 72.0,
+    "undirected_axis_difference_sar_vs_ndbc_deg": 7.835723728648759,
+    "direction_warning": "NDBC MWD is the direction waves come from at the dominant-period band; the SAR wavevector is undirected. Modulo 180 permits an axis comparison, not a signed propagation validation."
+  },
+  "conclusion": "The frozen SAR period is substantially longer than both the coincident NDBC dominant and average periods, while the undirected propagation axes are close. No alternate SAR unwrap branch was selected to improve this agreement.",
+  "guardrails": {
+    "sar_unwrap_changed_after_external_comparison": false,
+    "dwell_sweep_performed": false,
+    "bathymetric_inversion_performed": false
+  }
+}

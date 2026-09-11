@@ -1,0 +1,34 @@
+{
+  "generated_utc": "2026-08-31T09:23:34.932523+00:00",
+  "scope": "Immutable SAR-only inputs for Block 5 physical identification",
+  "source_files": {
+    "block4_sar_only": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block4\\BLOCK4_PHASE_METRICS_SAR_ONLY.json",
+    "block4_sar_only_sha256": "c399af008e2159ede9b6e27b8bf99dffdd17b7f808aa263ea569d20438df8fcd",
+    "block3_spectral_metrics": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block3\\BLOCK3_SPECTRAL_METRICS.json",
+    "block3_spectral_metrics_sha256": "4ee5a47ee86ff51d6c39358c61ab4f02a1aeef1eb0146c186498ee0995e87d90"
+  },
+  "external_data_used_to_select_or_fit_these_values": false,
+  "frozen_sar_only": {
+    "omega_rad_per_s": -0.3509722055168202,
+    "T_SAR_s": 17.902230457045317,
+    "T_SAR_reported_s": 17.902,
+    "fit_only_period_95_percent_ci_s": [
+      17.360169132239896,
+      18.479233938627722
+    ],
+    "lambda_SAR_m": 130.6028192373831,
+    "theta_SAR_wavevector_bearing_deg_mod_180": 79.83572372864876,
+    "cross_spectrum_convention": "F_secondary * conj(F_reference)"
+  },
+  "guardrails": {
+    "T_SAR_must_not_be_retuned_to_external_data": true,
+    "no_full_dwell_sweep": true,
+    "no_bathymetric_inversion": true,
+    "dispersion_depth_is_diagnostic_forward_compatibility_only": true,
+    "sensitivity_look_widths_s": [
+      5.5,
+      6.0,
+      6.5
+    ]
+  }
+}

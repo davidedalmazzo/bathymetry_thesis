@@ -1,0 +1,168 @@
+{
+  "generated_utc": "2026-08-29T14:06:22.716464+00:00",
+  "input_scope": "synthetic arrays plus local SICD XML metadata; no SICD pixels",
+  "full_sicd_downloaded": false,
+  "cross_spectrum_convention": "C_secondary,reference(k) = F_secondary(k) * conj(F_reference(k)); a +phi Fourier phase advance in secondary is recovered as +phi at the positive-frequency peak",
+  "group_1_fft_ifft": {
+    "round_trip_relative_errors": {
+      "sgn_-1_axis_0": 2.777113820312193e-16,
+      "sgn_-1_axis_1": 2.5179070942476748e-16,
+      "sgn_1_axis_0": 2.8217369304069575e-16,
+      "sgn_1_axis_1": 2.5676456136239e-16
+    },
+    "col_sgn": -1,
+    "positive_tone_bin": 29,
+    "expected_shifted_peak_index": 157,
+    "fft_peak_index": 157,
+    "wrong_ifft_peak_index": 99,
+    "ours_vs_explicit_fft_relative_error": 0.0,
+    "ours_vs_wrong_ifft_relative_error": 256.0019531175495,
+    "ours_vs_sarpy_fft_sicd_relative_error": 0.0
+  },
+  "group_2_split_recombine_window": {
+    "partition_edges": [
+      26,
+      77,
+      128,
+      179,
+      231
+    ],
+    "sublook_count": 4,
+    "recombine_relative_error": 2.636335943116653e-16,
+    "rect_window": {
+      "kind": "rect",
+      "length": 1024,
+      "tukey_alpha": null,
+      "normalization": "energy",
+      "applied_scale": 1.0,
+      "coherent_gain": 1.0,
+      "rms_gain": 1.0,
+      "energy_sum": 1024.0,
+      "enbw_bins": 1.0
+    },
+    "tukey_window": {
+      "kind": "tukey",
+      "length": 1024,
+      "tukey_alpha": 0.25,
+      "normalization": "energy",
+      "applied_scale": 1.0891940760581642,
+      "coherent_gain": 0.9521141043335126,
+      "rms_gain": 0.9999999999999999,
+      "energy_sum": 1023.9999999999998,
+      "enbw_bins": 1.1031180796997457
+    },
+    "native_weight": {
+      "name": "SVA",
+      "samples_present": false,
+      "warning": "Native SVA weighting is declared without WgtFunct samples; exact deweighting is unavailable"
+    }
+  },
+  "group_3_axis": {
+    "grid_type": "RGAZIM",
+    "range_axis": 0,
+    "azimuth_axis": 1,
+    "col_sgn": -1,
+    "known_col_tone_bin": 41,
+    "col_transform_peak_index": 169,
+    "expected_col_peak_index": 169,
+    "row_transform_peak_indices_unique": [
+      16
+    ],
+    "negative_band_rejected_energy_ratio": 4.8053858821628575e-15,
+    "positive_band_retained_energy_ratio": 1.0
+  },
+  "group_4_band_location_duration": {
+    "tone_locations": {
+      "-47": {
+        "expected_index": 81,
+        "measured_index": 81,
+        "band": "negative"
+      },
+      "47": {
+        "expected_index": 175,
+        "measured_index": 175,
+        "band": "positive"
+      }
+    },
+    "processed_support": {
+      "start": 10780,
+      "stop": 97020,
+      "fft_size": 107800,
+      "bin_spacing_per_m": 0.00016437307100403562,
+      "requested_lower_per_m": -7.087766821694015,
+      "requested_upper_per_m": 7.087766821694015,
+      "realized_lower_per_m": -7.087766821694016,
+      "realized_upper_per_m": 7.087766821694016,
+      "size": 86240
+    },
+    "processed_aperture_duration_s": 18.068061721230308,
+    "sicd_timeline_collect_duration_s": 22.547940446666665,
+    "cphd_slow_time_dwell_s": 22.540812513364376,
+    "six_second_requested_fraction": 0.3320776789770365,
+    "six_second_realized_bins": 28638,
+    "six_second_realized_nominal_duration_s": 5.9999205887360105,
+    "nonoverlap_band_centers_s": [
+      3.0392718070536024,
+      9.039192395789613,
+      15.039112984525623
+    ],
+    "half_overlap_band_count": 5,
+    "twenty_second_sicd_request_rejected": true,
+    "twenty_second_rejection_message": "nominal SICD duration 20 s exceeds processed aperture duration 18.0680617212 s; CPHD dwell cannot be substituted"
+  },
+  "group_5_cross_spectrum": {
+    "definition": "C_secondary,reference(k) = F_secondary(k) * conj(F_reference(k)); a +phi Fourier phase advance in secondary is recovered as +phi at the positive-frequency peak",
+    "intensity_wave": {
+      "imposed_positive_peak_phase_rad": 0.63,
+      "measured_positive_peak_phase_rad": 0.6299999999999991,
+      "positive_peak_wrapped_error_rad": 8.881784197001252e-16,
+      "measured_negative_peak_phase_rad": -0.6299999999999991,
+      "negative_peak_wrapped_error_rad": 8.881784197001252e-16,
+      "swapped_order_positive_peak_phase_rad": -0.629999999999999,
+      "swapped_order_wrapped_error_rad": 9.992007221626409e-16
+    },
+    "col_sgn_minus_one_end_to_end": {
+      "imposed_phase_rad": 0.71,
+      "measured_phase_rad": 0.71,
+      "wrapped_error_rad": 0.0,
+      "correct_recovered_peak_indices": [
+        76,
+        83,
+        159,
+        166
+      ],
+      "wrong_ifft_peak_indices": [
+        90,
+        97,
+        173,
+        180
+      ],
+      "low_band_bounds": [
+        58,
+        98
+      ],
+      "high_band_bounds": [
+        148,
+        188
+      ],
+      "intensity_images_used": true
+    }
+  },
+  "thresholds": {
+    "round_trip_max_relative_error": 8e-15,
+    "split_recombine_max_relative_error": 8e-15,
+    "cross_phase_max_abs_error_rad": 3e-13,
+    "wrong_transform_min_relative_error": 0.99
+  },
+  "checks": {
+    "round_trip": true,
+    "fft_not_ifft": true,
+    "sarpy_match": true,
+    "split_recombine": true,
+    "axis": true,
+    "band_location": true,
+    "duration_separation": true,
+    "cross_phase": true
+  },
+  "all_checks_passed": true
+}

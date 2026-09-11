@@ -1,0 +1,40 @@
+{
+  "verified_utc": "2026-08-29T13:27:37Z",
+  "source": {
+    "provider": "Umbra Open Data Program public S3 bucket",
+    "task_id": "f2f8c71e-6aec-4358-acda-93c5e68e8b4b",
+    "public_prefix": "sar-data/task-data/f2f8c71e-6aec-4358-acda-93c5e68e8b4b/2025-02-16-18-55-44_UMBRA-10/",
+    "stac_url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/f2f8c71e-6aec-4358-acda-93c5e68e8b4b/2025-02-16-18-55-44_UMBRA-10/2025-02-16-18-55-44_UMBRA-10.stac.v2.json"
+  },
+  "identity": {
+    "collect_id": "9d8283d8-550d-4435-899f-5483d2c1abcc",
+    "stac_item_id": "dd6036ea-f3cc-4219-83d6-4571f538b0ca",
+    "platform": "Umbra-10",
+    "start_datetime": "2025-02-16T18:55:33Z",
+    "stac_datetime": "2025-02-16T18:55:44.300000Z",
+    "end_datetime": "2025-02-16T18:55:55.600001Z",
+    "same_collect_as_local_cphd": true
+  },
+  "sicd_public_asset": {
+    "key": "sar-data/task-data/f2f8c71e-6aec-4358-acda-93c5e68e8b4b/2025-02-16-18-55-44_UMBRA-10/2025-02-16-18-55-44_UMBRA-10_SICD.nitf",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/f2f8c71e-6aec-4358-acda-93c5e68e8b4b/2025-02-16-18-55-44_UMBRA-10/2025-02-16-18-55-44_UMBRA-10_SICD.nitf",
+    "content_length_bytes": 11478596733,
+    "http_status": 200,
+    "accept_ranges": "bytes",
+    "content_type": "binary/octet-stream",
+    "last_modified": "2026-07-01T22:01:22Z",
+    "etag": "f06d503551fb567303477152aee18652-219",
+    "storage_class": "INTELLIGENT_TIERING",
+    "server_side_encryption": "AES256"
+  },
+  "stac_internal_asset": {
+    "name": "2025-02-16-18-55-33_UMBRA-10_SICD_MM.nitf",
+    "href": "s3://prod-prod-processed-sar-data/2025-02-16/9d8283d8-550d-4435-899f-5483d2c1abcc/dd6036ea-f3cc-4219-83d6-4571f538b0ca/2025-02-16-18-55-33_UMBRA-10_SICD_MM.nitf",
+    "note": "This internal production key is not exposed verbatim under the public prefix; the public bucket uses the 18-55-44 SICD key."
+  },
+  "download_status": {
+    "full_sicd_local": false,
+    "full_download_started": false,
+    "metadata_only_http_ranges_retrieved": true
+  }
+}

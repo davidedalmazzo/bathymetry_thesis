@@ -1,0 +1,19 @@
+{
+  "frozen_before_any_new_Vandenberg_short_look_processing": true,
+  "criterion": {
+    "declared_before_synthetic_results": true,
+    "metric": "domega_hat/dk for M4, Vandenberg-like angle",
+    "trigger": "mean slope for 1.5 and 2 s exceeds the 6 s slope by at least max(0.5 m/s, 10% of truth slope), with all six components valid",
+    "reason": "This tests a material predicted re-emergence of dispersion rather than responding to small numerical fluctuations."
+  },
+  "synthetic_result": {
+    "M4_6s_domega_hat_dk_m_per_s": 8.572497423555271,
+    "M4_mean_1p5_2s_domega_hat_dk_m_per_s": 8.57805143882804,
+    "increase_m_per_s": 0.0055540152727697745,
+    "required_increase_m_per_s": 0.855836828889758,
+    "all_short_width_components_valid": true
+  },
+  "prediction_triggered": false,
+  "prediction": "No material short-look increase in domega_hat/dk is predicted by this model.",
+  "authorized_real_action": "Do not process new Vandenberg short looks; the predeclared trigger failed."
+}

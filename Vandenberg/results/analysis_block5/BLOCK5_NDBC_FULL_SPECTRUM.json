@@ -1,0 +1,291 @@
+{
+  "generated_utc": "2026-08-31T09:43:14.494094+00:00",
+  "scope": "Complete NDBC 46218 directional spectrum nearest SICD acquisition",
+  "source": {
+    "url": "https://dods.ndbc.noaa.gov/thredds/fileServer/data/swden/46218/46218w9999.nc",
+    "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\external\\46218w9999.nc",
+    "bytes": 153486944,
+    "sha256": "eb296c36049de144043c1a8b39a59df1ebeb50453541d23a0a784badcee0d20d",
+    "global_attributes": {
+      "institution": "NOAA National Data Buoy Center and Participators in Data Assembly Center",
+      "url": "http://dods.ndbc.noaa.gov",
+      "quality": "Automated QC checks with daily manual QC",
+      "conventions": "COARDS",
+      "station": "46218",
+      "comment": "Harvest, CA (071)",
+      "location": "34.451 N 120.769 W "
+    },
+    "station_latitude_deg": 34.45100021362305,
+    "station_longitude_deg": -120.76899719238281,
+    "record_count": 119536,
+    "frequency_count": 64,
+    "variables_used": [
+      "spectral_wave_density",
+      "mean_wave_dir",
+      "principal_wave_dir",
+      "wave_spectrum_r1",
+      "wave_spectrum_r2"
+    ]
+  },
+  "timing": {
+    "sicd_acquisition_utc": "2025-02-16T18:55:44.274000+00:00",
+    "nearest_spectral_record_index": 106088,
+    "nearest_spectral_record_utc": "2025-02-16T19:00:00+00:00",
+    "offset_record_minus_acquisition_s": 255.7260000705719,
+    "note": "The full spectral product is hourly; the separate standard-meteorological record at 18:56 UTC is not substituted for it."
+  },
+  "frozen_sar": {
+    "omega_rad_per_s": -0.3509722055168202,
+    "T_SAR_s": 17.902230457045317,
+    "T_SAR_reported_s": 17.902,
+    "fit_only_period_95_percent_ci_s": [
+      17.360169132239896,
+      18.479233938627722
+    ],
+    "lambda_SAR_m": 130.6028192373831,
+    "theta_SAR_wavevector_bearing_deg_mod_180": 79.83572372864876,
+    "cross_spectrum_convention": "F_secondary * conj(F_reference)"
+  },
+  "requested_frequencies": {
+    "f1_from_reported_17_902_s": 0.055859680482627634,
+    "f1_from_exact_frozen_T_SAR": 0.05585896139586651,
+    "f2_from_13_33_s": 0.07501875468867217
+  },
+  "bulk_from_integrated_spectrum": {
+    "m0_m2": 0.2467740050370098,
+    "Hm0_m": 1.9870541212035864
+  },
+  "target_f1": {
+    "target_frequency_hz": 0.055859680482627634,
+    "target_period_s": 17.902,
+    "nearest_bin_index": 6,
+    "nearest_bin": {
+      "frequency_hz": 0.054999999701976776,
+      "period_s": 18.181818280338256,
+      "frequency_offset_hz": -0.000859680780650858,
+      "spectral_wave_density_m2_per_hz": 0.13199999928474426,
+      "variance_in_bin_m2": 0.0006599998587369926,
+      "fraction_total_variance": 0.0026745112745485875,
+      "equivalent_single_bin_Hm0_m": 0.10276184963201024,
+      "alpha1_direction_from_deg": 260.0,
+      "alpha1_propagation_to_deg": 80.0,
+      "alpha2_principal_from_deg": 320.0,
+      "r1": 0.28999999165534973,
+      "r2": 0.27000001072883606,
+      "axial_direction_difference_from_SAR_deg": 0.16427627135124112
+    },
+    "bracketing_bins": [
+      {
+        "frequency_hz": 0.054999999701976776,
+        "period_s": 18.181818280338256,
+        "spectral_wave_density_m2_per_hz": 0.13199999928474426,
+        "alpha1_direction_from_deg": 260.0,
+        "alpha1_propagation_to_deg": 80.0,
+        "r1": 0.28999999165534973,
+        "axial_direction_difference_from_SAR_deg": 0.16427627135124112
+      },
+      {
+        "frequency_hz": 0.05999999865889549,
+        "period_s": 16.666667039195705,
+        "spectral_wave_density_m2_per_hz": 0.7480000257492065,
+        "alpha1_direction_from_deg": 268.0,
+        "alpha1_propagation_to_deg": 88.0,
+        "r1": 0.8199999928474426,
+        "axial_direction_difference_from_SAR_deg": 8.164276271351241
+      }
+    ]
+  },
+  "target_f2": {
+    "target_frequency_hz": 0.07501875468867217,
+    "target_period_s": 13.33,
+    "nearest_bin_index": 10,
+    "nearest_bin": {
+      "frequency_hz": 0.07500000298023224,
+      "period_s": 13.33333280351429,
+      "frequency_offset_hz": -1.8751708439929127e-05,
+      "spectral_wave_density_m2_per_hz": 4.400000095367432,
+      "variance_in_bin_m2": 0.02199999588727941,
+      "fraction_total_variance": 0.08915037823363921,
+      "equivalent_single_bin_Hm0_m": 0.5932958235117374,
+      "alpha1_direction_from_deg": 252.0,
+      "alpha1_propagation_to_deg": 72.0,
+      "alpha2_principal_from_deg": 252.0,
+      "r1": 0.8899999856948853,
+      "r2": 0.7400000095367432,
+      "axial_direction_difference_from_SAR_deg": 7.835723728648759
+    },
+    "bracketing_bins": [
+      {
+        "frequency_hz": 0.07500000298023224,
+        "period_s": 13.33333280351429,
+        "spectral_wave_density_m2_per_hz": 4.400000095367432,
+        "alpha1_direction_from_deg": 252.0,
+        "alpha1_propagation_to_deg": 72.0,
+        "r1": 0.8899999856948853,
+        "axial_direction_difference_from_SAR_deg": 7.835723728648759
+      },
+      {
+        "frequency_hz": 0.07999999821186066,
+        "period_s": 12.50000027939678,
+        "spectral_wave_density_m2_per_hz": 2.24399995803833,
+        "alpha1_direction_from_deg": 260.0,
+        "alpha1_propagation_to_deg": 80.0,
+        "r1": 0.7699999809265137,
+        "axial_direction_difference_from_SAR_deg": 0.16427627135124112
+      }
+    ]
+  },
+  "nearest_bin_energy_ratio_f1_over_f2": 0.029999999187209407,
+  "peak_detection": {
+    "raw_method": "scipy.find_peaks prominence>=0.15 m2/Hz, distance>=2 bins, f<=0.30 Hz",
+    "raw_peaks": [
+      {
+        "frequency_hz": 0.06499999761581421,
+        "period_s": 15.384615948919734,
+        "density_m2_per_hz": 4.047999858856201,
+        "prominence_m2_per_hz": 1.0999999046325684,
+        "alpha1_from_deg": 268.0,
+        "propagation_to_deg": 88.0,
+        "r1": 0.9200000166893005
+      },
+      {
+        "frequency_hz": 0.07500000298023224,
+        "period_s": 13.33333280351429,
+        "density_m2_per_hz": 4.400000095367432,
+        "prominence_m2_per_hz": 4.400000095367432,
+        "alpha1_from_deg": 252.0,
+        "propagation_to_deg": 72.0,
+        "r1": 0.8899999856948853
+      },
+      {
+        "frequency_hz": 0.08500000089406967,
+        "period_s": 11.764705758606276,
+        "density_m2_per_hz": 2.7720000743865967,
+        "prominence_m2_per_hz": 0.5280001163482666,
+        "alpha1_from_deg": 284.0,
+        "propagation_to_deg": 104.0,
+        "r1": 0.8899999856948853
+      },
+      {
+        "frequency_hz": 0.10100000351667404,
+        "period_s": 9.900989754271746,
+        "density_m2_per_hz": 2.5959999561309814,
+        "prominence_m2_per_hz": 0.747999906539917,
+        "alpha1_from_deg": 272.0,
+        "propagation_to_deg": 92.0,
+        "r1": 0.8399999737739563
+      }
+    ],
+    "smoothed_method": "Gaussian sigma=0.75 frequency bin then same find_peaks thresholds",
+    "smoothed_peaks": [
+      {
+        "frequency_hz": 0.07500000298023224,
+        "period_s": 13.33333280351429,
+        "density_m2_per_hz": 3.579833910850847,
+        "prominence_m2_per_hz": 3.579833910850847,
+        "alpha1_from_deg": 252.0,
+        "propagation_to_deg": 72.0,
+        "r1": 0.8899999856948853
+      }
+    ],
+    "interpretation_guardrail": "Raw adjacent subpeaks that merge under less-than-one-bin smoothing are not declared separate physical systems."
+  },
+  "broad_energy_partitions": [
+    {
+      "name": "dominant_long_period_swell_band",
+      "frequency_bounds_hz": [
+        0.045,
+        0.135
+      ],
+      "variance_m2": 0.16757400342172374,
+      "fraction_total_variance": 0.6790585718159087,
+      "equivalent_partition_Hm0_m": 1.6374321527158247,
+      "energy_weighted_alpha1_from_deg": 271.36483916539476,
+      "energy_weighted_propagation_to_deg": 91.36483916539476
+    },
+    {
+      "name": "shorter_period_secondary_band",
+      "frequency_bounds_hz": [
+        0.135,
+        0.25
+      ],
+      "variance_m2": 0.062480001260042384,
+      "fraction_total_variance": 0.25318712662086096,
+      "equivalent_partition_Hm0_m": 0.9998399972799038,
+      "energy_weighted_alpha1_from_deg": 300.2972479757552,
+      "energy_weighted_propagation_to_deg": 120.29724797575523
+    },
+    {
+      "name": "high_frequency_tail",
+      "frequency_bounds_hz": [
+        0.25,
+        null
+      ],
+      "variance_m2": 0.01672000035524368,
+      "fraction_total_variance": 0.06775430156323033,
+      "equivalent_partition_Hm0_m": 0.5172233615024546,
+      "energy_weighted_alpha1_from_deg": 313.2580743635926,
+      "energy_weighted_propagation_to_deg": 133.2580743635926
+    }
+  ],
+  "plus_minus_3_hour_target_bin_check": [
+    {
+      "utc": "2025-02-16T16:00:00+00:00",
+      "f1_nearest_density_m2_per_hz": 0.11599999666213989,
+      "f1_nearest_propagation_to_deg": 108.0,
+      "f2_nearest_density_m2_per_hz": 5.800000190734863,
+      "f2_nearest_propagation_to_deg": 92.0
+    },
+    {
+      "utc": "2025-02-16T17:00:00+00:00",
+      "f1_nearest_density_m2_per_hz": 0.11599999666213989,
+      "f1_nearest_propagation_to_deg": 60.0,
+      "f2_nearest_density_m2_per_hz": 2.631999969482422,
+      "f2_nearest_propagation_to_deg": 92.0
+    },
+    {
+      "utc": "2025-02-16T18:00:00+00:00",
+      "f1_nearest_density_m2_per_hz": 0.11299999803304672,
+      "f1_nearest_propagation_to_deg": 72.0,
+      "f2_nearest_density_m2_per_hz": 2.1470000743865967,
+      "f2_nearest_propagation_to_deg": 96.0
+    },
+    {
+      "utc": "2025-02-16T19:00:00+00:00",
+      "f1_nearest_density_m2_per_hz": 0.13199999928474426,
+      "f1_nearest_propagation_to_deg": 80.0,
+      "f2_nearest_density_m2_per_hz": 4.400000095367432,
+      "f2_nearest_propagation_to_deg": 72.0
+    },
+    {
+      "utc": "2025-02-16T20:00:00+00:00",
+      "f1_nearest_density_m2_per_hz": 0.10999999940395355,
+      "f1_nearest_propagation_to_deg": 60.0,
+      "f2_nearest_density_m2_per_hz": 4.830999851226807,
+      "f2_nearest_propagation_to_deg": 96.0
+    },
+    {
+      "utc": "2025-02-16T21:00:00+00:00",
+      "f1_nearest_density_m2_per_hz": 0.04800000041723251,
+      "f1_nearest_propagation_to_deg": 92.0,
+      "f2_nearest_density_m2_per_hz": 4.75,
+      "f2_nearest_propagation_to_deg": 88.0
+    },
+    {
+      "utc": "2025-02-16T22:00:00+00:00",
+      "f1_nearest_density_m2_per_hz": 0.20200000703334808,
+      "f1_nearest_propagation_to_deg": 108.0,
+      "f2_nearest_density_m2_per_hz": 2.253999948501587,
+      "f2_nearest_propagation_to_deg": 88.0
+    }
+  ],
+  "direction_convention": {
+    "NDBC_alpha1": "Azimuth clockwise from true north toward direction waves come from",
+    "comparison": "propagation-to=(alpha1+180) mod 360, then 180-degree axial difference to SAR wavevector",
+    "r1_r2_note": "Normalized directional Fourier radii; low r1 means a weakly concentrated alpha1 direction."
+  },
+  "artifacts": {
+    "full_frequency_csv": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block5\\NDBC_46218_20250216T1900_FULL_DIRECTIONAL_SPECTRUM.csv",
+    "diagnostic_plot": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\analysis_block5\\NDBC_46218_FULL_DIRECTIONAL_SPECTRUM.png"
+  }
+}

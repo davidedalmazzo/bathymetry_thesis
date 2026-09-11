@@ -1,0 +1,28 @@
+{
+  "checkpoint": "CHECKPOINT_10",
+  "environment": {
+    "python_executable": "D:\\Dati Tesi\\Umbra\\.venv-umbra-thesis\\Scripts\\python.exe",
+    "python_version": "3.13.9",
+    "base_interpreter": "C:\\Users\\ASUS\\miniconda3\\python.exe",
+    "isolated_from_system_site_packages": true,
+    "sarpy_version": "2.0.1",
+    "numpy_version": "2.5.2",
+    "scipy_version": "1.18.1",
+    "matplotlib_version": "3.11.1",
+    "lock_file": "D:\\Dati Tesi\\Umbra\\requirements-thesis.txt"
+  },
+  "block10_tests": {
+    "command": "python -m pytest -q tests\\test_block10_ocean_sar_forward.py",
+    "passed": 8,
+    "failed": 0,
+    "elapsed_seconds": 1.85
+  },
+  "full_suite": {
+    "command": "python -m pytest -q",
+    "passed": 57,
+    "failed": 0,
+    "elapsed_seconds": 6.56,
+    "sarpy_dependent_tests_collected": true
+  },
+  "status": "PASS"
+}

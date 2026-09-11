@@ -1,0 +1,51 @@
+Dataset {
+    Int32 time[time = 41387];
+    Float32 frequency[frequency = 64];
+    Float32 latitude[latitude = 1];
+    Float32 longitude[longitude = 1];
+    Grid {
+     ARRAY:
+        Float32 spectral_wave_density[time = 41387][frequency = 64][latitude = 1][longitude = 1];
+     MAPS:
+        Int32 time[time = 41387];
+        Float32 frequency[frequency = 64];
+        Float32 latitude[latitude = 1];
+        Float32 longitude[longitude = 1];
+    } spectral_wave_density;
+    Grid {
+     ARRAY:
+        Int32 mean_wave_dir[time = 41387][frequency = 64][latitude = 1][longitude = 1];
+     MAPS:
+        Int32 time[time = 41387];
+        Float32 frequency[frequency = 64];
+        Float32 latitude[latitude = 1];
+        Float32 longitude[longitude = 1];
+    } mean_wave_dir;
+    Grid {
+     ARRAY:
+        Int32 principal_wave_dir[time = 41387][frequency = 64][latitude = 1][longitude = 1];
+     MAPS:
+        Int32 time[time = 41387];
+        Float32 frequency[frequency = 64];
+        Float32 latitude[latitude = 1];
+        Float32 longitude[longitude = 1];
+    } principal_wave_dir;
+    Grid {
+     ARRAY:
+        Float32 wave_spectrum_r1[time = 41387][frequency = 64][latitude = 1][longitude = 1];
+     MAPS:
+        Int32 time[time = 41387];
+        Float32 frequency[frequency = 64];
+        Float32 latitude[latitude = 1];
+        Float32 longitude[longitude = 1];
+    } wave_spectrum_r1;
+    Grid {
+     ARRAY:
+        Float32 wave_spectrum_r2[time = 41387][frequency = 64][latitude = 1][longitude = 1];
+     MAPS:
+        Int32 time[time = 41387];
+        Float32 frequency[frequency = 64];
+        Float32 latitude[latitude = 1];
+        Float32 longitude[longitude = 1];
+    } wave_spectrum_r2;
+} data/swden/44087/44087w9999.nc;

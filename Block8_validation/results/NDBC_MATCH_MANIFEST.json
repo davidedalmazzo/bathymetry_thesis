@@ -1,0 +1,11 @@
+{
+  "generated_utc": "2026-09-01T08:57:14.153522+00:00",
+  "candidate_count": 111,
+  "historical_buoy_deployment_records": 3080,
+  "within_20_km": 12,
+  "within_30_km": 12,
+  "within_50_km": 12,
+  "station_metadata_source": "https://www.ndbc.noaa.gov/metadata/stationmetadata.xml",
+  "output_csv": "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\nearest_ndbc_stations.csv",
+  "output_sha256": "1a0c4fdabd9d943781071b07eb12152b38c15748c6216a17d9ce8201c1a03daf"
+}

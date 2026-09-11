@@ -1,0 +1,235 @@
+{
+  "generated_utc": "2026-08-31T12:28:54.463201+00:00",
+  "purpose": "Nested rotated rectangular spectral supports; DEM is not used as an irregular spectral mask.",
+  "frozen_wavevector_bearing_deg_mod_180": 79.8357237,
+  "geolocation_surface": {
+    "projection_HAE_m": -36.376,
+    "source": "NOAA GEOID18 at original ROI; HAE=N for NAVD88 zero",
+    "geoid_model_error_m": 0.032,
+    "warning": "This replaces the SCP-HAE (+101.525 m) locator used in earlier display-only ROI metadata."
+  },
+  "water_acceptance": "Every 5 m grid sample finite and DEM elevation < -2 m NAVD88; 10 m grid used in centre search.",
+  "common_center_utm_e_n_m": [
+    715510.6102416331,
+    3827627.093742074
+  ],
+  "common_center_shift_from_original_e_n_m": [
+    -700.0,
+    -150.0
+  ],
+  "maximal_sicd_bounding_rows_cols": [
+    9713,
+    13236,
+    77736,
+    97332
+  ],
+  "original_baseline": {
+    "center_utm_e_n_m": [
+      716210.6102416331,
+      3827777.093742074
+    ],
+    "L_parallel_m": 540.0,
+    "L_perpendicular_m": 540.0,
+    "maximum_elevation_NAVD88_m": 5.309442043304443
+  },
+  "candidate_rois": [
+    {
+      "roi_index": 1,
+      "name": "rot_k_0540x0650",
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 540.0,
+      "L_perpendicular_m": 650.0,
+      "orientation_wavevector_bearing_deg_mod_180": 79.8357237,
+      "native_delta_k_parallel_rad_per_m": 0.011635528346628864,
+      "native_delta_f_parallel_cycles_per_m": 0.001851851851851852,
+      "nominal_wavelengths_at_130_6": 4.134673379588372,
+      "all_samples_finite": true,
+      "maximum_elevation_NAVD88_m": -13.683127403259277,
+      "minimum_depth_positive_down_NAVD88_m": 13.683127403259277,
+      "depth_percentiles_positive_down_NAVD88_m": [
+        14.320621681213378,
+        15.335624694824219,
+        16.440637588500977,
+        17.759687423706055,
+        18.886866188049318
+      ],
+      "sicd_bounding_rows_cols": [
+        10652,
+        12297,
+        80461,
+        94607
+      ],
+      "sicd_inside_image": true
+    },
+    {
+      "roi_index": 2,
+      "name": "rot_k_0720x0650",
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 720.0,
+      "L_perpendicular_m": 650.0,
+      "orientation_wavevector_bearing_deg_mod_180": 79.8357237,
+      "native_delta_k_parallel_rad_per_m": 0.008726646259971648,
+      "native_delta_f_parallel_cycles_per_m": 0.001388888888888889,
+      "nominal_wavelengths_at_130_6": 5.5128978394511625,
+      "all_samples_finite": true,
+      "maximum_elevation_NAVD88_m": -13.083749771118164,
+      "minimum_depth_positive_down_NAVD88_m": 13.083749771118164,
+      "depth_percentiles_positive_down_NAVD88_m": [
+        13.81775598526001,
+        14.95780897140503,
+        16.440637588500977,
+        18.228744506835938,
+        19.723127174377442
+      ],
+      "sicd_bounding_rows_cols": [
+        10464,
+        12485,
+        79916,
+        95152
+      ],
+      "sicd_inside_image": true
+    },
+    {
+      "roi_index": 3,
+      "name": "rot_k_0900x0650",
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 900.0,
+      "L_perpendicular_m": 650.0,
+      "orientation_wavevector_bearing_deg_mod_180": 79.8357237,
+      "native_delta_k_parallel_rad_per_m": 0.006981317007977318,
+      "native_delta_f_parallel_cycles_per_m": 0.0011111111111111111,
+      "nominal_wavelengths_at_130_6": 6.8911222993139525,
+      "all_samples_finite": true,
+      "maximum_elevation_NAVD88_m": -12.386250495910645,
+      "minimum_depth_positive_down_NAVD88_m": 12.386250495910645,
+      "depth_percentiles_positive_down_NAVD88_m": [
+        13.310623168945312,
+        14.628750324249268,
+        16.440637588500977,
+        18.693126678466797,
+        20.564685821533203
+      ],
+      "sicd_bounding_rows_cols": [
+        10276,
+        12673,
+        79371,
+        95697
+      ],
+      "sicd_inside_image": true
+    },
+    {
+      "roi_index": 4,
+      "name": "rot_k_1080x0650",
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 1080.0,
+      "L_perpendicular_m": 650.0,
+      "orientation_wavevector_bearing_deg_mod_180": 79.8357237,
+      "native_delta_k_parallel_rad_per_m": 0.005817764173314432,
+      "native_delta_f_parallel_cycles_per_m": 0.000925925925925926,
+      "nominal_wavelengths_at_130_6": 8.269346759176743,
+      "all_samples_finite": true,
+      "maximum_elevation_NAVD88_m": -11.793749809265137,
+      "minimum_depth_positive_down_NAVD88_m": 11.793749809265137,
+      "depth_percentiles_positive_down_NAVD88_m": [
+        12.810181999206545,
+        14.299059867858887,
+        16.440637588500977,
+        19.14936923980713,
+        21.41062488555908
+      ],
+      "sicd_bounding_rows_cols": [
+        10088,
+        12860,
+        78826,
+        96242
+      ],
+      "sicd_inside_image": true
+    },
+    {
+      "roi_index": 5,
+      "name": "rot_k_1260x0650",
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 1260.0,
+      "L_perpendicular_m": 650.0,
+      "orientation_wavevector_bearing_deg_mod_180": 79.8357237,
+      "native_delta_k_parallel_rad_per_m": 0.004986655005698084,
+      "native_delta_f_parallel_cycles_per_m": 0.0007936507936507937,
+      "nominal_wavelengths_at_130_6": 9.647571219039534,
+      "all_samples_finite": true,
+      "maximum_elevation_NAVD88_m": -11.065000534057617,
+      "minimum_depth_positive_down_NAVD88_m": 11.065000534057617,
+      "depth_percentiles_positive_down_NAVD88_m": [
+        12.206895542144776,
+        13.98905611038208,
+        16.440637588500977,
+        19.615310668945312,
+        22.224927520751955
+      ],
+      "sicd_bounding_rows_cols": [
+        9901,
+        13048,
+        78281,
+        96787
+      ],
+      "sicd_inside_image": true
+    },
+    {
+      "roi_index": 6,
+      "name": "rot_k_1440x0650",
+      "center_utm_e_n_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "L_parallel_m": 1440.0,
+      "L_perpendicular_m": 650.0,
+      "orientation_wavevector_bearing_deg_mod_180": 79.8357237,
+      "native_delta_k_parallel_rad_per_m": 0.004363323129985824,
+      "native_delta_f_parallel_cycles_per_m": 0.0006944444444444445,
+      "nominal_wavelengths_at_130_6": 11.025795678902325,
+      "all_samples_finite": false,
+      "maximum_elevation_NAVD88_m": -6.34023380279541,
+      "minimum_depth_positive_down_NAVD88_m": 6.34023380279541,
+      "depth_percentiles_positive_down_NAVD88_m": [
+        11.743125867843627,
+        13.6875,
+        16.44093894958496,
+        20.085004806518555,
+        23.04187755584717
+      ],
+      "sicd_bounding_rows_cols": [
+        9713,
+        13236,
+        77736,
+        97332
+      ],
+      "sicd_inside_image": true
+    }
+  ],
+  "zero_padding_policy": "Allowed only to interpolate a maximum; native radial resolution remains approximately 2*pi/L_parallel.",
+  "bathymetry_tiles": [
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD140250.tif",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD140265.tif",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD140280.tif",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD155250.tif",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD155265.tif",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD155280.tif",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD170250.tif",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD170265.tif",
+    "D:\\Dati Tesi\\Umbra\\Vandenberg\\bathymetry\\10SGD170280.tif"
+  ]
+}

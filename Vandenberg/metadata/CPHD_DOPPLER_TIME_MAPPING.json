@@ -1,0 +1,140 @@
+{
+  "generated_utc": "2026-08-29T19:44:55.121355+00:00",
+  "scope": "CPHD ASCII header/XML/PVP only; CPHD signal block not read",
+  "signal_block_read": false,
+  "method": {
+    "collection_type": "MONOSTATIC",
+    "formula": "k_ECF(t)=(2*f_proc_center/c)*unit(SRPPos(t)-TxPos(t)); k_col=dot(k_ECF, SICD.Grid.Col.UVectECF)",
+    "time_coordinate": "CPHD PVP TxTime in seconds relative to the shared CollectionStart",
+    "frequency_choice": "SICD processed TxFrequencyProc center, required to reproduce SICD Row.KCtr at SCPTime",
+    "inversion": "piecewise-linear interpolation of strictly decreasing k_col(t) over all PVP vectors",
+    "fft_coordinate": "fftshift(fftfreq(NumCols, d=Grid.Col.SS)); validated Col.Sgn=-1 image->spectrum transform is fft"
+  },
+  "durations_kept_distinct": {
+    "sicd_processed_aperture_duration_s": 18.068061721230308,
+    "cphd_available_slow_time_dwell_s": 22.540812513364376
+  },
+  "inputs": {
+    "cphd": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_CPHD.cphd",
+    "cphd_metadata": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\CPHD_METADATA.json",
+    "sicd_xml": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SICD_METADATA.xml",
+    "subaperture_plan": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SUBAPERTURE_PLAN_6S.json"
+  },
+  "processed_center_frequency_hz": 9729781606.658796,
+  "pvp_tx_time_s": {
+    "first": 0.0029798746666666667,
+    "last": 22.543776109333333,
+    "span": 22.540796234666665,
+    "strictly_increasing": true
+  },
+  "pvp_projected_k_col_per_m": {
+    "first": 7.315250862231183,
+    "last": -10.85246780112807,
+    "min": -10.85246780112807,
+    "max": 7.315250862231183,
+    "strictly_decreasing": true
+  },
+  "reference_checks": {
+    "sicd_scp_time_s": 9.036361295601367,
+    "interpolated_k_col_at_scp_time_per_m": 3.352902464403288e-07,
+    "interpolated_k_row_at_scp_time_per_m": 64.91011596199833,
+    "sicd_grid_row_kctr_per_m": 64.91011596201477,
+    "row_kctr_absolute_error_per_m": 1.6441958905488718e-11,
+    "cphd_vs_sicd_arp_poly_k_col_residual_per_m": {
+      "rms": 4.449459388719651e-09,
+      "max_abs": 8.041536325720244e-09,
+      "samples": 132752
+    }
+  },
+  "sicd_processed_support": {
+    "k_col_delta_k1_delta_k2_per_m": [
+      -7.087766821694015,
+      7.087766821694015
+    ],
+    "mapped_time_for_delta_k1_delta_k2_s": [
+      17.79084024412684,
+      0.28696906766090174
+    ],
+    "chronological_early_late_s": [
+      0.28696906766090174,
+      17.79084024412684
+    ],
+    "mapped_span_s": 17.50387117646594,
+    "image_formation_t_start_t_end_s": [
+      0.005161535174459164,
+      18.073223256404766
+    ]
+  },
+  "looks": [
+    {
+      "look_index": 1,
+      "fft_shifted_bin_start_inclusive": 10943,
+      "fft_shifted_bin_stop_exclusive": 39581,
+      "k_col_low_center_high_per_m": [
+        -7.060974011120359,
+        -4.707398193949074,
+        -2.35382237677779
+      ],
+      "slow_time_for_low_center_high_k_s": [
+        17.757373283886245,
+        14.832257263168499,
+        11.928925762727701
+      ],
+      "effective_early_center_late_s": [
+        11.928925762727701,
+        14.832257263168499,
+        17.757373283886245
+      ],
+      "effective_edge_span_s": 5.8284475211585445,
+      "nominal_metadata_only_center_s": 3.0392718070536024,
+      "ordering_note": "Because CPHD-derived k_col decreases with TxTime, ascending shifted-FFT band index runs from later to earlier slow time: look 1 is late, look 3 is early."
+    },
+    {
+      "look_index": 2,
+      "fft_shifted_bin_start_inclusive": 39581,
+      "fft_shifted_bin_stop_exclusive": 68219,
+      "k_col_low_center_high_per_m": [
+        -2.3536580037067862,
+        -8.218653550207122e-05,
+        2.353493630635782
+      ],
+      "slow_time_for_low_center_high_k_s": [
+        11.928723504561788,
+        9.036462634036535,
+        6.144757599944348
+      ],
+      "effective_early_center_late_s": [
+        6.144757599944348,
+        9.036462634036535,
+        11.928723504561788
+      ],
+      "effective_edge_span_s": 5.78396590461744,
+      "nominal_metadata_only_center_s": 9.039192395789613,
+      "ordering_note": "Because CPHD-derived k_col decreases with TxTime, ascending shifted-FFT band index runs from later to earlier slow time: look 1 is late, look 3 is early."
+    },
+    {
+      "look_index": 3,
+      "fft_shifted_bin_start_inclusive": 68219,
+      "fft_shifted_bin_stop_exclusive": 96857,
+      "k_col_low_center_high_per_m": [
+        2.3536580037067862,
+        4.70723382087807,
+        7.060809638049355
+      ],
+      "slow_time_for_low_center_high_k_s": [
+        6.144555419521807,
+        3.2428993865189475,
+        0.3206023073774802
+      ],
+      "effective_early_center_late_s": [
+        0.3206023073774802,
+        3.2428993865189475,
+        6.144555419521807
+      ],
+      "effective_edge_span_s": 5.823953112144327,
+      "nominal_metadata_only_center_s": 15.039112984525623,
+      "ordering_note": "Because CPHD-derived k_col decreases with TxTime, ascending shifted-FFT band index runs from later to earlier slow time: look 1 is late, look 3 is early."
+    }
+  ],
+  "interpretation_guardrail": "This mapping supplies effective look times for later phase interpretation, but no cross-spectrum phase is converted to a period in Block 3."
+}

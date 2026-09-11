@@ -1,0 +1,56 @@
+{
+  "generated_utc": "2026-08-29T22:33:41.721312+00:00",
+  "metadata_correction": {
+    "claimed_scpcoa_azimang_approx_105_85_is_correct": false,
+    "actual_sicd_scpcoa_azimang_deg": 101.91931056749142,
+    "actual_sicd_scpcoa_scp_time_s": 9.036361295601367,
+    "cphd_reference_geometry_azimuth_angle_deg": 105.84835572166261,
+    "cphd_reference_time_s": 11.075249663282671,
+    "explanation": "105.848 deg is the CPHD ReferenceGeometry look azimuth at 11.075 s; SICD SCPCOA is evaluated at 9.036 s and is 101.919 deg. PVP interpolation reproduces both."
+  },
+  "directed_los_bearings": {
+    "sicd_scp_time": {
+      "time_s": 9.036361295601367,
+      "ground_to_platform_bearing_deg": 101.91931055900771,
+      "platform_to_ground_los_bearing_deg": 281.9193105590077,
+      "undirected_range_axis_deg_mod_180": 101.91931055900771
+    },
+    "cphd_reference_time": {
+      "time_s": 11.075249663282671,
+      "ground_to_platform_bearing_deg": 105.8483557108708,
+      "platform_to_ground_los_bearing_deg": 285.8483557108708,
+      "undirected_range_axis_deg_mod_180": 105.8483557108708
+    }
+  },
+  "sicd_grid_at_scp": {
+    "row_positive_bearing_tangent_projection_deg": 281.9193113543813,
+    "row_undirected_axis_deg_mod_180": 101.9193113543813,
+    "col_positive_bearing_tangent_projection_deg": 191.24671075424786,
+    "col_undirected_axis_deg_mod_180": 11.246710754247857,
+    "interpretation": "Positive Grid Row follows the groundward LOS direction. SCPCOA AzimAng is ground-to-platform, hence the 180 deg directed difference but the same undirected range line at SCP."
+  },
+  "local_surface_projection": {
+    "method": "finite-difference SICD image-to-ground projection at each ROI center on the common constant-HAE surface; the resulting EN Jacobian defines the geographic row/column directions used for 2-D spectrum conversion",
+    "roi_results": {
+      "nearshore": {
+        "wavevector_bearing_deg_mod_180": 79.83572372864876,
+        "local_surface_grid_row_bearing_deg": 281.17862730319644,
+        "local_surface_grid_col_bearing_deg": 191.45798292805307,
+        "wavevector_difference_from_local_surface_row_deg": 21.342903574547677,
+        "wavevector_difference_from_sicd_scpcoa_azimang_axis_deg": 22.083586838842663,
+        "wavevector_difference_from_cphd_reference_azimuth_axis_deg": 26.012631993013855,
+        "local_surface_row_difference_from_scp_grid_row_axis_deg": 0.7406840511848714
+      },
+      "offshore": {
+        "wavevector_bearing_deg_mod_180": 115.82900059184124,
+        "local_surface_grid_row_bearing_deg": 281.1889820309276,
+        "local_surface_grid_col_bearing_deg": 191.5610810973859,
+        "wavevector_difference_from_local_surface_row_deg": 14.640018560913632,
+        "wavevector_difference_from_sicd_scpcoa_azimang_axis_deg": 13.909690024349814,
+        "wavevector_difference_from_cphd_reference_azimuth_axis_deg": 9.980644870178622,
+        "local_surface_row_difference_from_scp_grid_row_axis_deg": 0.7303293234537023
+      }
+    }
+  },
+  "conclusion": "The previously reported 21.3 deg nearshore and 14.6 deg offshore values compare the spectral wavevector with the local surface projection of SICD Grid Row, not with CPHD ReferenceGeometry at its later reference time."
+}

@@ -1,0 +1,8 @@
+{
+  "command": "D:\\Dati Tesi\\Umbra\\.venv\\Scripts\\python.exe -m pytest -q",
+  "exit_code": 0,
+  "passed": 49,
+  "failed": 0,
+  "duration_s": 6.32,
+  "result": "49 passed in 6.32s"
+}

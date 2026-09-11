@@ -1,0 +1,58 @@
+{
+  "generated_utc": "2026-08-31T09:44:59.360039+00:00",
+  "scope": "Forward dispersion compatibility diagnostic only",
+  "guardrails": {
+    "bathymetric_inversion_performed": false,
+    "T_SAR_retuned": false,
+    "lambda_SAR_retuned": false,
+    "warning": "The required depths are algebraic compatibility values at fixed (T, lambda), not retrieved bathymetry."
+  },
+  "equation": "omega^2 = g*k*tanh(k*h), k=2*pi/lambda, h=atanh(omega^2/(g*k))/k",
+  "gravity_m_per_s2": 9.80665,
+  "frozen_lambda_SAR_m": 130.6028192373831,
+  "deep_water_period_for_lambda_SAR_s": 9.147572755052277,
+  "period_cases_s": {
+    "frozen_SAR_exact": 17.902230457045317,
+    "requested_SAR_reported": 17.902,
+    "buoy_dominant_13_33": 13.33
+  },
+  "required_depth_cases_m": {
+    "frozen_SAR_exact": 5.55575545882108,
+    "requested_SAR_reported": 5.555905411979338,
+    "buoy_dominant_13_33": 10.627048720023646
+  },
+  "rough_roi_depth": {
+    "source": "NOAA NCEI ETOPO 2022 30 arc-second global relief (ice surface / EGM2008 height, positive up)",
+    "source_url": "https://oceanwatch.pifsc.noaa.gov/erddap/griddap/ETOPO_2022_v1_30s.html",
+    "roi_center_lon_lat_deg": [
+      -120.64679691911917,
+      34.569636382251765
+    ],
+    "nearest_grid_center_lon_lat_deg": [
+      -120.64583333333334,
+      34.570833333333326
+    ],
+    "nearest_grid_z_m_positive_up": -3.226727,
+    "nearest_grid_water_depth_m": 3.226727,
+    "period_predicted_for_lambda_at_nearest_grid_depth_s": 23.310179856988743,
+    "five_by_five_water_cell_depth_range_m": [
+      2.5,
+      36.004433
+    ],
+    "resolution_warning": "30 arc-second is roughly 0.77 km east-west by 0.93 km north-south here. The ROI is coastal and the center cell mixes steep bathymetry/shoreline; this is only a gross comparison.",
+    "point_file": "D:\\Dati Tesi\\Umbra\\Vandenberg\\external\\ETOPO2022_ROI_NEARSHORE_POINT.csv",
+    "point_file_sha256": "aa02c62e54cad68a9e0fe1f0a33c1c86767056fab49290b0bd0851cc2a93d36b",
+    "neighborhood_file": "D:\\Dati Tesi\\Umbra\\Vandenberg\\external\\ETOPO2022_ROI_NEARSHORE_5X5.csv",
+    "neighborhood_file_sha256": "72010ec68b3e4bcea41b2b961ddfa5e0793f3d2c3114e2e78e2dba571338b2ac"
+  },
+  "comparison_to_center_depth_m": {
+    "frozen_SAR_exact": 2.3290284588210803,
+    "requested_SAR_reported": 2.329178411979338,
+    "buoy_dominant_13_33": 7.400321720023646
+  },
+  "diagnostic_reading": {
+    "17_902_s": "Requires about 5.56 m, 2.33 m deeper than the coarse center-cell estimate.",
+    "13_33_s": "Requires about 10.63 m, 7.40 m deeper than the coarse center-cell estimate.",
+    "constraint": "The 17.902-s pair is closer to the gross center-cell depth, but ETOPO resolution and shoreline mixing are too coarse to validate either period or to perform bathymetry."
+  }
+}

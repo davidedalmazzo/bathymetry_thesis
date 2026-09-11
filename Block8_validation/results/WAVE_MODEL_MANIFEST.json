@@ -1,0 +1,14 @@
+{
+  "generated_utc": "2026-09-01T08:54:20.934502+00:00",
+  "candidate_count": 111,
+  "long_dwell_count": 51,
+  "short_5_7s_count": 60,
+  "errors": [],
+  "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+  "model": "meteofrance_wave",
+  "direction_conversion": "propagation_to = (reported_from + 180 deg) mod 360; delta uses undirected range axis modulo 180",
+  "period_semantics": "swell_wave_period is retained as mean; only swell_wave_peak_period is named swell peak period",
+  "source_documentation": "https://open-meteo.com/en/docs/marine-weather-api",
+  "output_csv": "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\wave_model_screen.csv",
+  "output_sha256": "c862bb5c010d861a0c6a0a83f34bd399e1cdfdcaf8189cc3c0659a198e39239a"
+}

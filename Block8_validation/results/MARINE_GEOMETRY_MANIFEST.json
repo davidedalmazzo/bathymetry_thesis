@@ -1,0 +1,25 @@
+{
+  "generated_utc": "2026-09-01T08:51:48.371518+00:00",
+  "input_catalog": "D:\\Dati Tesi\\Umbra\\Block8_validation\\umbra_all.csv",
+  "input_rows": 12539,
+  "natural_earth_dataset": "Natural Earth 1:10m Physical Land polygons",
+  "natural_earth_source": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-land/",
+  "area_method": "WGS84 ellipsoidal geodesic area after polygon intersection",
+  "marine_threshold_predominant": 0.8,
+  "marine_threshold_open_or_full": 0.98,
+  "vandenberg_policy": "Retained only as an auditable excluded row; never eligible or ranked.",
+  "counts": {
+    "long_dwell": {
+      "all": 853,
+      "ocean_fraction_ge_0_80": 51,
+      "ocean_fraction_ge_0_98": 21
+    },
+    "short_5_7s": {
+      "all": 1384,
+      "ocean_fraction_ge_0_80": 60,
+      "ocean_fraction_ge_0_98": 37
+    }
+  },
+  "output_csv": "D:\\Dati Tesi\\Umbra\\Block8_validation\\results\\marine_geometry_screen.csv",
+  "output_sha256": "09e1c065f6c08ae8bf0fb8a6688f61fd406925bb37e9fb878beeb5281476bc4c"
+}
