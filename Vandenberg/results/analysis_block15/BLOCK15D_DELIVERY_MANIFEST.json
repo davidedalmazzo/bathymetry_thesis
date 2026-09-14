@@ -1,0 +1,110 @@
+{
+  "block": "15D",
+  "date": "2026-09-12",
+  "status": "complete; diagnostic only",
+  "tests": {
+    "seconds": 18.24,
+    "skipped": 0,
+    "failed": 0,
+    "passed": 85
+  },
+  "hash_guards_verified": 35,
+  "visually_checked_figures": 9,
+  "files": [
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_CONFIG.json",
+      "bytes": 13709,
+      "sha256": "2bb9a790572c67e5c371a5c48b21ea97b34fc0f70a86d0d06c9904edc12fbebb"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_SYNTHETIC.json",
+      "bytes": 64897503,
+      "sha256": "1902c40da5f2af5677d80fb4342f88a1045894e56adf8d4c09ff44f9ee7e5126"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_RESULTS.json",
+      "bytes": 21112767,
+      "sha256": "98f46489b8f3972e35ab3edca714a4fe71a395698205c9d399ec240609ca9d5f"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_BINS.csv",
+      "bytes": 12611,
+      "sha256": "c29653056fd76652256f5725d9580f4785aacfce8fb5411345a89c9128cb978d"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_SUMMARY.json",
+      "bytes": 36440,
+      "sha256": "51423fae75048e86af272f3233527479a022cb4234ff40d81f569a5152b19d32"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_TRAJECTORIES_1.png",
+      "bytes": 427915,
+      "sha256": "4f2a6d1652c8907d51c79bb9e7b239fb580804caf4ca7318be8b8d5a8c5902c6"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_TRAJECTORIES_2.png",
+      "bytes": 417447,
+      "sha256": "bb03f1672e00b3f2ef941cbbc021b615a415a832c3a3803d700446d5da0f437f"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_TRAJECTORIES_3.png",
+      "bytes": 434574,
+      "sha256": "6f79adb571f386d1e933383660280b3e3bc082108bd5b6355318de9d5020c651"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_TRAJECTORIES_4.png",
+      "bytes": 414875,
+      "sha256": "451c454766cbd8fad000b439457f34791228b66d1ad8d174bdd56ed479a87faa"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_TRAJECTORIES_5.png",
+      "bytes": 426530,
+      "sha256": "68a66e1f93331131976d2aa4c53522ff883df939476d56036888ce816c0e28f8"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_COST_PROFILES.png",
+      "bytes": 289116,
+      "sha256": "f551edd577a945f57978b8e73378c6759f0d87295f030815a029008eacbb1394"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_PREDICTIVE.png",
+      "bytes": 170551,
+      "sha256": "a2a1ca9179df86036d9aac394ea06ff9d0bb723139008326810e387ee320e515"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_FIXED_PEAK.png",
+      "bytes": 105513,
+      "sha256": "a4bbb0b84e564715669af51c75f093fdc46c033be13355a85b5864a4b9b04647"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_PHASE_DIFFERENCES.png",
+      "bytes": 511604,
+      "sha256": "f9dd4c6a47cff4fddc1ee8ec5451f4357247dacbfa461f0f259331ce0ad3a179"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15D_REPORT.md",
+      "bytes": 12387,
+      "sha256": "c8ce9580c613d1169d53a7dcffe1b250c1181ef0dfb5653daba8cf05e83a44c2"
+    },
+    {
+      "path": "code/analyze_block15d_static_offset.py",
+      "bytes": 10274,
+      "sha256": "2bab4d546f328510065bbd20ed195a400b08fbb36113e9719e5819fbd3dfe4ba"
+    },
+    {
+      "path": "code/plot_block15d_static_offset.py",
+      "bytes": 5651,
+      "sha256": "c1b8e908056f16ee148b7c0f664a828b2578d9440ecdc32dade99efa0a22ef16"
+    },
+    {
+      "path": "code/umbra_sar/static_offset_diagnostic.py",
+      "bytes": 6647,
+      "sha256": "9bb1038493d4d0ef4c48f6b51750787f2dd5982c0402eb8c6e66621a3e5e7d95"
+    },
+    {
+      "path": "tests/test_static_offset_diagnostic.py",
+      "bytes": 2129,
+      "sha256": "ab52f695305f392143c4bb08599e7a5b68f8f0b88d055f654a040b6c94cbcf5b"
+    }
+  ]
+}

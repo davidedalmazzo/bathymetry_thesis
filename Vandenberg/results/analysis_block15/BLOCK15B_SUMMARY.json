@@ -1,0 +1,193 @@
+{
+  "generated_utc": "2026-09-11T19:32:37.369048+00:00",
+  "reproduction": {
+    "historical_peak_index": [
+      133,
+      65
+    ],
+    "fixed_peak_index": [
+      133,
+      65
+    ],
+    "max_slope_difference_rad_s": 4.440892098500626e-16,
+    "fixed_signed_s_phi": 0.412065649203119,
+    "fixed_abs_s_difference": 1.1102230246251565e-16,
+    "mask_equal": true
+  },
+  "counts": {
+    "domain": 915,
+    "pre_MSC": 214,
+    "common": 138,
+    "rejected_by_MSC": 76,
+    "alternative_threshold_00625": 163,
+    "intersection": 15,
+    "A_valid_common": 30,
+    "B_valid_common": 23,
+    "C_valid_common": 16
+  },
+  "all_evaluated": {
+    "count": 214,
+    "abs_B_minus_A": {
+      "n": 214,
+      "min": 0.00024595562117907255,
+      "median": 0.06824357032903339,
+      "p90": 0.35134644501216256,
+      "max": 3.347875497002909
+    },
+    "abs_C_minus_A": {
+      "n": 214,
+      "min": 0.0001742372527359093,
+      "median": 0.04175282612726003,
+      "p90": 0.42702751432009134,
+      "max": 2.2908333232136053
+    },
+    "over_threshold_B": 169,
+    "over_threshold_C": 125
+  },
+  "intersection": {
+    "count": 15,
+    "abs_B_minus_A": {
+      "n": 15,
+      "min": 0.00024595562117907255,
+      "median": 0.014767902630688612,
+      "p90": 0.036883642033934946,
+      "max": 0.04138406301928588
+    },
+    "abs_C_minus_A": {
+      "n": 15,
+      "min": 0.000939692925824076,
+      "median": 0.003645908865467784,
+      "p90": 0.007174674424736327,
+      "max": 0.010949061021539475
+    },
+    "over_threshold_B": 5,
+    "over_threshold_C": 0
+  },
+  "common_candidates": {
+    "count": 138,
+    "abs_B_minus_A": {
+      "n": 138,
+      "min": 0.00024595562117907255,
+      "median": 0.05888863212804643,
+      "p90": 0.34001107544143794,
+      "max": 1.1481338039861069
+    },
+    "abs_C_minus_A": {
+      "n": 138,
+      "min": 0.00021003765056859525,
+      "median": 0.04104084425387913,
+      "p90": 0.4175983798098764,
+      "max": 0.9863692906811825
+    },
+    "over_threshold_B": 107,
+    "over_threshold_C": 79
+  },
+  "low_MSC": {
+    "count": 76,
+    "abs_B_minus_A": {
+      "n": 76,
+      "min": 0.002556137890092014,
+      "median": 0.09074733731638393,
+      "p90": 0.46072994826959773,
+      "max": 3.347875497002909
+    },
+    "abs_C_minus_A": {
+      "n": 76,
+      "min": 0.0001742372527359093,
+      "median": 0.050409273695565984,
+      "p90": 0.4842402274710479,
+      "max": 2.2908333232136053
+    },
+    "over_threshold_B": 62,
+    "over_threshold_C": 46
+  },
+  "reference_span": {
+    "n": 214,
+    "min": 0.0,
+    "median": 1.3877787807814457e-17,
+    "p90": 1.1102230246251565e-16,
+    "max": 3.3306690738754696e-16
+  },
+  "telescoping_error": {
+    "n": 214,
+    "min": 0.0,
+    "median": 7.771561172376096e-16,
+    "p90": 3.552713678800501e-15,
+    "max": 7.105427357601002e-15
+  },
+  "fixed_peak": {
+    "row": 133,
+    "col": 65,
+    "kx_rad_m": -0.04799655442984407,
+    "ky_rad_m": 0.0,
+    "k_rad_m": 0.04799655442984407,
+    "wavelength_m": 130.9090909090909,
+    "angle_from_parallel_deg": 180.0,
+    "vector_bearing_grid_north_deg": 259.8357237,
+    "power": 1722232.827218059,
+    "relative_power": 1.0,
+    "endpoint_MSC": 0.4168818419203573,
+    "min_adjacent_MSC": 0.8059056790439103,
+    "fixed_diagnostic": true,
+    "pre_coherence_candidate": true,
+    "common_candidate": true,
+    "common_exclusions": "",
+    "evaluated": true,
+    "s_phi_A": 0.412065649203119,
+    "s_phi_B": 0.43227151356374877,
+    "s_phi_C": 0.41833429021371443,
+    "A_valid": true,
+    "B_valid": true,
+    "C_valid": true,
+    "intersection": true,
+    "A_rmse": 0.20009464962460943,
+    "A_R2": 0.994455797996389,
+    "A_max_step": 0.7123142979044251,
+    "A_unwrap_valid": true,
+    "reference_slope_span": 0.0,
+    "telescoping_error": 1.7763568394002505e-15,
+    "B_rms": 0.11881902005364686,
+    "C_rms": 0.23616706427635303,
+    "B_ambiguous": false,
+    "C_ambiguous": false,
+    "B_boundary": false,
+    "C_boundary": false,
+    "delta_B_A": 0.020205864360629766,
+    "delta_C_A": 0.006268641010595433,
+    "A_exclusions": "",
+    "B_exclusions": "",
+    "C_exclusions": "",
+    "lag1_s_phi": 0.43227151356374877,
+    "lag1_valid": true,
+    "lag1_ambiguous": false,
+    "lag2_s_phi": 0.43390011211657614,
+    "lag2_valid": true,
+    "lag2_ambiguous": false,
+    "lag4_s_phi": 2.659949101966642,
+    "lag4_valid": false,
+    "lag4_ambiguous": true,
+    "lag8_s_phi": 2.6440946388051385,
+    "lag8_valid": false,
+    "lag8_ambiguous": true
+  },
+  "conditional_ocean_frequency": null,
+  "caution": "Same coefficients and dependent pairs: agreement is not independent ocean-frequency validation; branch conditional on configured bounds.",
+  "per_lag": {
+    "1": {
+      "valid_evaluated": 34,
+      "ambiguous_evaluated": 0
+    },
+    "2": {
+      "valid_evaluated": 28,
+      "ambiguous_evaluated": 5
+    },
+    "4": {
+      "valid_evaluated": 0,
+      "ambiguous_evaluated": 212
+    },
+    "8": {
+      "valid_evaluated": 0,
+      "ambiguous_evaluated": 214
+    }
+  }
+}

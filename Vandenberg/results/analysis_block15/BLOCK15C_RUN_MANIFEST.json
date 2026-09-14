@@ -1,0 +1,13 @@
+{
+  "generated_utc": "2026-09-11T19:50:22.658483+00:00",
+  "configuration_sha256": "78fbeec3b694c6501e56edf5b4ae056f3dfd92105110ea202edf494b591b35b7",
+  "completed_realizations": 29391,
+  "elapsed_s": 165.8125512599945,
+  "source_sha256": {
+    "code/analyze_block15c_contamination.py": "4066471ccc22265f7269dc0df2fef50ca2d1c498524f57415b92e21acb79bf73",
+    "code/umbra_sar/contamination_diagnostic.py": "6b72937c0444b5cc7e9fba401d8d75e0f2bc8e607a09d06c05da2e6c9894a168"
+  },
+  "previous_blocks_unchanged": true,
+  "real_arrays_read": false,
+  "seed_rule": "numpy default_rng(SeedSequence([150300,case_id,noise_index,replicate])); full (32,3,3) noise; center reused by all methods"
+}

@@ -1,0 +1,3865 @@
+{
+  "root": "D:\\Dati Tesi\\Umbra",
+  "interpreter": "D:\\Dati Tesi\\Umbra\\.venv-umbra-thesis\\Scripts\\python.exe",
+  "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "packages": {
+    "numpy": "2.5.2",
+    "scipy": "1.18.1",
+    "sarpy": "2.0.1",
+    "pytest": "9.1.1",
+    "rasterio": {
+      "unavailable": "No module named 'rasterio'"
+    },
+    "pyproj": {
+      "unavailable": "No module named 'pyproj'"
+    }
+  },
+  "files": [
+    {
+      "path": "Vandenberg/results/block12_backprojection/BLOCK12_OVERVIEW.json",
+      "exists": true,
+      "size_bytes": 1167
+    },
+    {
+      "path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 5860
+    },
+    {
+      "path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOKS_complex64.npy",
+      "exists": true,
+      "size_bytes": 9584768,
+      "shape": [
+        32,
+        288,
+        130
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block12_backprojection/overview_sign+1_complex64.npy",
+      "exists": true,
+      "size_bytes": 320128,
+      "shape": [
+        200,
+        200
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block12_backprojection/overview_sign-1_complex64.npy",
+      "exists": true,
+      "size_bytes": 320128,
+      "shape": [
+        200,
+        200
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block13_backprojection/BLOCK12_SUBLOOK_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 5853
+    },
+    {
+      "path": "Vandenberg/results/block13_backprojection/BLOCK12_SUBLOOKS_complex64.npy",
+      "exists": true,
+      "size_bytes": 19968128,
+      "shape": [
+        32,
+        600,
+        130
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/BLOCK4_SLIDING_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 19270
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/land_control_sliding_t02_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/land_control_sliding_t03_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/land_control_sliding_t04_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/land_control_sliding_t05_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/land_control_sliding_t07_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/land_control_sliding_t08_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/land_control_sliding_t09_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/land_control_sliding_t10_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/nearshore_sliding_t02_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/nearshore_sliding_t03_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/nearshore_sliding_t04_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/nearshore_sliding_t05_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/nearshore_sliding_t07_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/nearshore_sliding_t08_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/nearshore_sliding_t09_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block4_sliding_complex/nearshore_sliding_t10_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/land_control_full_aperture_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/land_control_look1_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/land_control_look2_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/land_control_look3_complex64.npy",
+      "exists": true,
+      "size_bytes": 150995072,
+      "shape": [
+        1536,
+        12288
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/nearshore_full_aperture_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/nearshore_look1_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/nearshore_look2_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/nearshore_look3_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/offshore_full_aperture_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/offshore_look1_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/offshore_look2_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/offshore_look3_complex64.npy",
+      "exists": true,
+      "size_bytes": 92160128,
+      "shape": [
+        1200,
+        9600
+      ],
+      "dtype": "complex64",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/sublooks_complex/SUBLOOK_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 15404
+    },
+    {
+      "path": "Vandenberg/results/block7_enlarged_nominal/BLOCK7_ENLARGED_NOMINAL_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 2700
+    },
+    {
+      "path": "Vandenberg/results/block7_enlarged_nominal/look1_intensity_bavg.npy",
+      "exists": true,
+      "size_bytes": 9578768,
+      "shape": [
+        2140,
+        1119
+      ],
+      "dtype": "float32",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block7_enlarged_nominal/look2_intensity_bavg.npy",
+      "exists": true,
+      "size_bytes": 9578768,
+      "shape": [
+        2140,
+        1119
+      ],
+      "dtype": "float32",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block7_enlarged_nominal/look3_intensity_bavg.npy",
+      "exists": true,
+      "size_bytes": 9578768,
+      "shape": [
+        2140,
+        1119
+      ],
+      "dtype": "float32",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block7_enlarged_nominal_sea_surface/BLOCK7_ENLARGED_NOMINAL_MANIFEST.json",
+      "exists": true,
+      "size_bytes": 2735
+    },
+    {
+      "path": "Vandenberg/results/block7_enlarged_nominal_sea_surface/look1_intensity_bavg.npy",
+      "exists": true,
+      "size_bytes": 6896204,
+      "shape": [
+        1761,
+        979
+      ],
+      "dtype": "float32",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block7_enlarged_nominal_sea_surface/look2_intensity_bavg.npy",
+      "exists": true,
+      "size_bytes": 6896204,
+      "shape": [
+        1761,
+        979
+      ],
+      "dtype": "float32",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/block7_enlarged_nominal_sea_surface/look3_intensity_bavg.npy",
+      "exists": true,
+      "size_bytes": 6896204,
+      "shape": [
+        1761,
+        979
+      ],
+      "dtype": "float32",
+      "verification": "NPY header via read-only mmap; no array pixels"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block4/BLOCK4_EXTERNAL_NDBC_COMPARISON.json",
+      "exists": true,
+      "size_bytes": 5946
+    },
+    {
+      "path": "Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json",
+      "exists": true,
+      "size_bytes": 71481
+    },
+    {
+      "path": "Vandenberg/results/analysis_block4/land_control_sliding_spectrum_crops.npz",
+      "exists": true,
+      "size_bytes": 1444546
+    },
+    {
+      "path": "Vandenberg/results/analysis_block4/nearshore_sliding_spectrum_crops.npz",
+      "exists": true,
+      "size_bytes": 1467475
+    },
+    {
+      "path": "Vandenberg/results/analysis_block6/BLOCK6_CROSS_SPECTRUM_THEORY.json",
+      "exists": true,
+      "size_bytes": 4259
+    },
+    {
+      "path": "Vandenberg/results/analysis_block6/BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.npz",
+      "exists": true,
+      "size_bytes": 3757155
+    },
+    {
+      "path": "Vandenberg/results/analysis_block6/BLOCK6_PHASE_SLOPE_SUMMARY.json",
+      "exists": true,
+      "size_bytes": 16066
+    },
+    {
+      "path": "Vandenberg/2025-02-16-18-55-44_UMBRA-10_CPHD.cphd",
+      "exists": true,
+      "size_bytes": 140554224768
+    },
+    {
+      "path": "Vandenberg/2025-02-16-18-55-44_UMBRA-10_SICD.nitf",
+      "exists": true,
+      "size_bytes": 11478596733
+    }
+  ],
+  "bp": [
+    {
+      "id": "block12_backprojection",
+      "manifest_path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json",
+      "declared_manifest": {
+        "generated_utc": "2026-09-01T20:22:52.882252+00:00",
+        "scope": "Sub-looks formed by time-domain backprojection from CPHD phase history; the vendor SICD is not used.",
+        "why_not_the_sicd": "The SICD declares SVA weighting on Grid.Row and Grid.Col without WgtFunct samples. SVA is a nonlinear, pixel-dependent apodization that does not commute with a Doppler sub-band split, so a sub-look masked out of an SVA image is not the image that band would form. Autofocus is declared off and TimeCOAPoly is constant.",
+        "source_cphd": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_CPHD.cphd",
+        "grid": {
+          "shape": [
+            288,
+            130
+          ],
+          "spacing_m": 5,
+          "length_parallel_m": 1440,
+          "length_perpendicular_m": 650,
+          "bearing_deg": 79.8357237,
+          "center_easting_northing_m": [
+            715510.6102416331,
+            3827627.093742074
+          ],
+          "utm_zone": 10,
+          "surface_hae_m": -36.376,
+          "pixel_count": 37440
+        },
+        "look_edges_tx_time_s": [
+          0.0029798746666666667,
+          0.707379757,
+          1.4117796393333333,
+          2.1161795216666666,
+          2.8205794039999996,
+          3.5249792863333327,
+          4.229379168666667,
+          4.933779051,
+          5.638178933333333,
+          6.342578815666666,
+          7.046978697999999,
+          7.751378580333333,
+          8.455778462666666,
+          9.160178344999999,
+          9.864578227333332,
+          10.568978109666665,
+          11.273377991999999,
+          11.977777874333333,
+          12.682177756666665,
+          13.386577638999999,
+          14.09097752133333,
+          14.795377403666665,
+          15.499777285999999,
+          16.204177168333334,
+          16.90857705066667,
+          17.612976933,
+          18.317376815333333,
+          19.021776697666667,
+          19.72617658,
+          20.430576462333335,
+          21.134976344666665,
+          21.839376227,
+          22.543776109333333
+        ],
+        "look_duration_s": 0.7043998823333333,
+        "mean_tx_time_per_look_s": [
+          0.35534731021679306,
+          1.0594467117244886,
+          1.7640630592920856,
+          2.468421666797467,
+          3.1728251227943534,
+          3.877221614341054,
+          4.581661492648942,
+          5.285875697421171,
+          5.981358516737581,
+          6.673092111757255,
+          7.454959389028045,
+          8.103828571296772,
+          8.807830167977738,
+          9.512258919147037,
+          10.216818173596259,
+          10.921192327154111,
+          11.625467205567096,
+          12.330642284515333,
+          13.034391449393052,
+          13.738752659938974,
+          14.443135563070486,
+          15.147523617335098,
+          15.851900022832075,
+          16.55631466498902,
+          17.260750170310914,
+          17.96512155868652,
+          18.669477690902895,
+          19.373934429971314,
+          20.07833817183934,
+          20.782669142875065,
+          21.4870420017982,
+          22.191503827842272
+        ],
+        "pulses_per_look": [
+          5240,
+          5246,
+          5253,
+          5260,
+          5262,
+          5266,
+          5268,
+          5237,
+          4973,
+          4405,
+          4280,
+          5269,
+          5271,
+          5271,
+          5274,
+          5271,
+          5270,
+          5216,
+          5268,
+          5265,
+          5263,
+          5259,
+          5256,
+          5252,
+          5248,
+          5242,
+          5238,
+          5233,
+          5226,
+          5220,
+          5214,
+          5208
+        ],
+        "mean_intensity_per_look": [
+          0.38796091079711914,
+          0.37454530596733093,
+          0.34337908029556274,
+          0.4231545925140381,
+          0.38576287031173706,
+          0.4817867875099182,
+          0.49774593114852905,
+          0.48374316096305847,
+          0.4964580833911896,
+          0.4450114071369171,
+          0.4583858251571655,
+          0.6597302556037903,
+          0.5957342386245728,
+          0.6664717793464661,
+          0.6626875996589661,
+          0.6593828797340393,
+          0.6579016447067261,
+          0.6810876727104187,
+          0.7008116245269775,
+          0.6952686905860901,
+          0.7006688714027405,
+          0.7096229195594788,
+          0.700756847858429,
+          0.7150411009788513,
+          0.7060352563858032,
+          0.6994286179542542,
+          0.6714752316474915,
+          0.6607463359832764,
+          0.6362332105636597,
+          0.6178370714187622,
+          0.5938668251037598,
+          0.5768090486526489
+        ],
+        "carrier_sign": 1,
+        "kernel": {
+          "fft_size": 262144,
+          "range_bin_m": 0.0707613309431076,
+          "oversampling_vs_native_resolution": 2.476795162509448,
+          "delay_window_m": 900,
+          "carrier_sign": 1,
+          "pulses_used": 165924,
+          "pulses_per_look": [
+            5240,
+            5246,
+            5253,
+            5260,
+            5262,
+            5266,
+            5268,
+            5237,
+            4973,
+            4405,
+            4280,
+            5269,
+            5271,
+            5271,
+            5274,
+            5271,
+            5270,
+            5216,
+            5268,
+            5265,
+            5263,
+            5259,
+            5256,
+            5252,
+            5248,
+            5242,
+            5238,
+            5233,
+            5226,
+            5220,
+            5214,
+            5208
+          ],
+          "mean_tx_time_per_look_s": [
+            0.35534731021679306,
+            1.0594467117244886,
+            1.7640630592920856,
+            2.468421666797467,
+            3.1728251227943534,
+            3.877221614341054,
+            4.581661492648942,
+            5.285875697421171,
+            5.981358516737581,
+            6.673092111757255,
+            7.454959389028045,
+            8.103828571296772,
+            8.807830167977738,
+            9.512258919147037,
+            10.216818173596259,
+            10.921192327154111,
+            11.625467205567096,
+            12.330642284515333,
+            13.034391449393052,
+            13.738752659938974,
+            14.443135563070486,
+            15.147523617335098,
+            15.851900022832075,
+            16.55631466498902,
+            17.260750170310914,
+            17.96512155868652,
+            18.669477690902895,
+            19.373934429971314,
+            20.07833817183934,
+            20.782669142875065,
+            21.4870420017982,
+            22.191503827842272
+          ]
+        },
+        "elapsed_s": 2261.978810787201,
+        "advantages_over_block4": [
+          "slow time of each look is the exact mean TxTime of its pulses",
+          "full 22.541 s CPHD dwell instead of the 18.068 s SICD aperture",
+          "strictly disjoint looks; no shared aperture",
+          "uniform aperture weighting, chosen here",
+          "ground grid at the sea-surface height; no slant-plane Jacobian"
+        ]
+      },
+      "verified_PVP_looks": [
+        {
+          "index_zero_based": 0,
+          "requested_interval_s": [
+            0.0029798746666666667,
+            0.707379757
+          ],
+          "verified_pulse_count": 5240,
+          "verified_first_last_TxTime_s": [
+            0.0029798746666666667,
+            0.7073295973333333
+          ],
+          "verified_pulse_span_s": 0.7043497226666666,
+          "verified_mean_TxTime_s": 0.35534731021679394
+        },
+        {
+          "index_zero_based": 1,
+          "requested_interval_s": [
+            0.707379757,
+            1.4117796393333333
+          ],
+          "verified_pulse_count": 5246,
+          "verified_first_last_TxTime_s": [
+            0.7074637786666667,
+            1.4117662693333333
+          ],
+          "verified_pulse_span_s": 0.7043024906666666,
+          "verified_mean_TxTime_s": 1.0594467117244886
+        },
+        {
+          "index_zero_based": 2,
+          "requested_interval_s": [
+            1.4117796393333333,
+            2.1161795216666666
+          ],
+          "verified_pulse_count": 5253,
+          "verified_first_last_TxTime_s": [
+            1.411900344,
+            2.116071096
+          ],
+          "verified_pulse_span_s": 0.7041707520000002,
+          "verified_mean_TxTime_s": 1.764063059292087
+        },
+        {
+          "index_zero_based": 3,
+          "requested_interval_s": [
+            2.1161795216666666,
+            2.8205794039999996
+          ],
+          "verified_pulse_count": 5260,
+          "verified_first_last_TxTime_s": [
+            2.116205074666667,
+            2.820561794666667
+          ],
+          "verified_pulse_span_s": 0.7043567199999998,
+          "verified_mean_TxTime_s": 2.4684216667974654
+        },
+        {
+          "index_zero_based": 4,
+          "requested_interval_s": [
+            2.8205794039999996,
+            3.5249792863333327
+          ],
+          "verified_pulse_count": 5262,
+          "verified_first_last_TxTime_s": [
+            2.8206956880000003,
+            3.5248865253333337
+          ],
+          "verified_pulse_span_s": 0.7041908373333334,
+          "verified_mean_TxTime_s": 3.172825122794375
+        },
+        {
+          "index_zero_based": 5,
+          "requested_interval_s": [
+            3.5249792863333327,
+            4.229379168666667
+          ],
+          "verified_pulse_count": 5266,
+          "verified_first_last_TxTime_s": [
+            3.5250203386666668,
+            4.229363250666666
+          ],
+          "verified_pulse_span_s": 0.7043429119999995,
+          "verified_mean_TxTime_s": 3.8772216143410563
+        },
+        {
+          "index_zero_based": 6,
+          "requested_interval_s": [
+            4.229379168666667,
+            4.933779051
+          ],
+          "verified_pulse_count": 5268,
+          "verified_first_last_TxTime_s": [
+            4.2294969946666665,
+            4.933774808
+          ],
+          "verified_pulse_span_s": 0.7042778133333334,
+          "verified_mean_TxTime_s": 4.58166149264895
+        },
+        {
+          "index_zero_based": 7,
+          "requested_interval_s": [
+            4.933779051,
+            5.638178933333333
+          ],
+          "verified_pulse_count": 5237,
+          "verified_first_last_TxTime_s": [
+            4.933908498666667,
+            5.638038274666666
+          ],
+          "verified_pulse_span_s": 0.7041297759999994,
+          "verified_mean_TxTime_s": 5.28587569742117
+        },
+        {
+          "index_zero_based": 8,
+          "requested_interval_s": [
+            5.638178933333333,
+            6.342578815666666
+          ],
+          "verified_pulse_count": 4973,
+          "verified_first_last_TxTime_s": [
+            5.638305549333333,
+            6.3424717626666665
+          ],
+          "verified_pulse_span_s": 0.7041662133333331,
+          "verified_mean_TxTime_s": 5.981358516737583
+        },
+        {
+          "index_zero_based": 9,
+          "requested_interval_s": [
+            6.342578815666666,
+            7.046978697999999
+          ],
+          "verified_pulse_count": 4405,
+          "verified_first_last_TxTime_s": [
+            6.342605362666666,
+            7.046858925333333
+          ],
+          "verified_pulse_span_s": 0.7042535626666666,
+          "verified_mean_TxTime_s": 6.673092111757245
+        },
+        {
+          "index_zero_based": 10,
+          "requested_interval_s": [
+            7.046978697999999,
+            7.751378580333333
+          ],
+          "verified_pulse_count": 4280,
+          "verified_first_last_TxTime_s": [
+            7.0471260613333335,
+            7.7512508239999995
+          ],
+          "verified_pulse_span_s": 0.704124762666666,
+          "verified_mean_TxTime_s": 7.454959389028037
+        },
+        {
+          "index_zero_based": 11,
+          "requested_interval_s": [
+            7.751378580333333,
+            8.455778462666666
+          ],
+          "verified_pulse_count": 5269,
+          "verified_first_last_TxTime_s": [
+            7.751384376,
+            8.455698578666667
+          ],
+          "verified_pulse_span_s": 0.7043142026666667,
+          "verified_mean_TxTime_s": 8.103828571296766
+        },
+        {
+          "index_zero_based": 12,
+          "requested_interval_s": [
+            8.455778462666666,
+            9.160178344999999
+          ],
+          "verified_pulse_count": 5271,
+          "verified_first_last_TxTime_s": [
+            8.45583212,
+            9.160119816
+          ],
+          "verified_pulse_span_s": 0.7042876959999997,
+          "verified_mean_TxTime_s": 8.80783016797774
+        },
+        {
+          "index_zero_based": 13,
+          "requested_interval_s": [
+            9.160178344999999,
+            9.864578227333332
+          ],
+          "verified_pulse_count": 5271,
+          "verified_first_last_TxTime_s": [
+            9.160253357333334,
+            9.864565736
+          ],
+          "verified_pulse_span_s": 0.7043123786666659,
+          "verified_mean_TxTime_s": 9.512258919147031
+        },
+        {
+          "index_zero_based": 14,
+          "requested_interval_s": [
+            9.864578227333332,
+            10.568978109666665
+          ],
+          "verified_pulse_count": 5274,
+          "verified_first_last_TxTime_s": [
+            9.864699282666667,
+            10.56895396
+          ],
+          "verified_pulse_span_s": 0.7042546773333331,
+          "verified_mean_TxTime_s": 10.216818173596257
+        },
+        {
+          "index_zero_based": 15,
+          "requested_interval_s": [
+            10.568978109666665,
+            11.273377991999999
+          ],
+          "verified_pulse_count": 5271,
+          "verified_first_last_TxTime_s": [
+            10.569087527999999,
+            11.273335608
+          ],
+          "verified_pulse_span_s": 0.704248080000001,
+          "verified_mean_TxTime_s": 10.921192327154113
+        },
+        {
+          "index_zero_based": 16,
+          "requested_interval_s": [
+            11.273377991999999,
+            11.977777874333333
+          ],
+          "verified_pulse_count": 5270,
+          "verified_first_last_TxTime_s": [
+            11.273469208,
+            11.977761752
+          ],
+          "verified_pulse_span_s": 0.7042925439999994,
+          "verified_mean_TxTime_s": 11.625467205567109
+        },
+        {
+          "index_zero_based": 17,
+          "requested_interval_s": [
+            11.977777874333333,
+            12.682177756666665
+          ],
+          "verified_pulse_count": 5216,
+          "verified_first_last_TxTime_s": [
+            11.977895389333334,
+            12.682149736
+          ],
+          "verified_pulse_span_s": 0.7042543466666658,
+          "verified_mean_TxTime_s": 12.330642284515337
+        },
+        {
+          "index_zero_based": 18,
+          "requested_interval_s": [
+            12.682177756666665,
+            13.386577638999999
+          ],
+          "verified_pulse_count": 5268,
+          "verified_first_last_TxTime_s": [
+            12.682283421333333,
+            13.38655036
+          ],
+          "verified_pulse_span_s": 0.7042669386666667,
+          "verified_mean_TxTime_s": 13.034391449393064
+        },
+        {
+          "index_zero_based": 19,
+          "requested_interval_s": [
+            13.386577638999999,
+            14.09097752133333
+          ],
+          "verified_pulse_count": 5265,
+          "verified_first_last_TxTime_s": [
+            13.386684104,
+            14.090880536
+          ],
+          "verified_pulse_span_s": 0.7041964319999998,
+          "verified_mean_TxTime_s": 13.738752659938966
+        },
+        {
+          "index_zero_based": 20,
+          "requested_interval_s": [
+            14.09097752133333,
+            14.795377403666665
+          ],
+          "verified_pulse_count": 5263,
+          "verified_first_last_TxTime_s": [
+            14.091014344,
+            14.795324541333333
+          ],
+          "verified_pulse_span_s": 0.7043101973333332,
+          "verified_mean_TxTime_s": 14.443135563070491
+        },
+        {
+          "index_zero_based": 21,
+          "requested_interval_s": [
+            14.795377403666665,
+            15.499777285999999
+          ],
+          "verified_pulse_count": 5259,
+          "verified_first_last_TxTime_s": [
+            14.795458429333333,
+            15.499664941333332
+          ],
+          "verified_pulse_span_s": 0.704206511999999,
+          "verified_mean_TxTime_s": 15.147523617335109
+        },
+        {
+          "index_zero_based": 22,
+          "requested_interval_s": [
+            15.499777285999999,
+            16.204177168333334
+          ],
+          "verified_pulse_count": 5256,
+          "verified_first_last_TxTime_s": [
+            15.499798914666666,
+            16.204085645333333
+          ],
+          "verified_pulse_span_s": 0.7042867306666665,
+          "verified_mean_TxTime_s": 15.851900022832066
+        },
+        {
+          "index_zero_based": 23,
+          "requested_interval_s": [
+            16.204177168333334,
+            16.90857705066667
+          ],
+          "verified_pulse_count": 5252,
+          "verified_first_last_TxTime_s": [
+            16.20421972,
+            16.908502456
+          ],
+          "verified_pulse_span_s": 0.7042827359999997,
+          "verified_mean_TxTime_s": 16.55631466498908
+        },
+        {
+          "index_zero_based": 24,
+          "requested_interval_s": [
+            16.90857705066667,
+            17.612976933
+          ],
+          "verified_pulse_count": 5248,
+          "verified_first_last_TxTime_s": [
+            16.908636632,
+            17.612964856
+          ],
+          "verified_pulse_span_s": 0.7043282240000011,
+          "verified_mean_TxTime_s": 17.260750170310974
+        },
+        {
+          "index_zero_based": 25,
+          "requested_interval_s": [
+            17.612976933,
+            18.317376815333333
+          ],
+          "verified_pulse_count": 5242,
+          "verified_first_last_TxTime_s": [
+            17.613099144,
+            18.31725330933333
+          ],
+          "verified_pulse_span_s": 0.7041541653333319,
+          "verified_mean_TxTime_s": 17.965121558686505
+        },
+        {
+          "index_zero_based": 26,
+          "requested_interval_s": [
+            18.317376815333333,
+            19.021776697666667
+          ],
+          "verified_pulse_count": 5238,
+          "verified_first_last_TxTime_s": [
+            18.317387725333333,
+            19.021685234666666
+          ],
+          "verified_pulse_span_s": 0.7042975093333332,
+          "verified_mean_TxTime_s": 18.669477690902887
+        },
+        {
+          "index_zero_based": 27,
+          "requested_interval_s": [
+            19.021776697666667,
+            19.72617658
+          ],
+          "verified_pulse_count": 5233,
+          "verified_first_last_TxTime_s": [
+            19.021819789333332,
+            19.726174824
+          ],
+          "verified_pulse_span_s": 0.7043550346666692,
+          "verified_mean_TxTime_s": 19.373934429971335
+        },
+        {
+          "index_zero_based": 28,
+          "requested_interval_s": [
+            19.72617658,
+            20.430576462333335
+          ],
+          "verified_pulse_count": 5226,
+          "verified_first_last_TxTime_s": [
+            19.726309522666668,
+            20.430500610666666
+          ],
+          "verified_pulse_span_s": 0.7041910879999982,
+          "verified_mean_TxTime_s": 20.078338171839263
+        },
+        {
+          "index_zero_based": 29,
+          "requested_interval_s": [
+            20.430576462333335,
+            21.134976344666665
+          ],
+          "verified_pulse_count": 5220,
+          "verified_first_last_TxTime_s": [
+            20.430635463999998,
+            21.134844658666665
+          ],
+          "verified_pulse_span_s": 0.7042091946666673,
+          "verified_mean_TxTime_s": 20.782669142875097
+        },
+        {
+          "index_zero_based": 30,
+          "requested_interval_s": [
+            21.134976344666665,
+            21.839376227
+          ],
+          "verified_pulse_count": 5214,
+          "verified_first_last_TxTime_s": [
+            21.134979672,
+            21.839254178666668
+          ],
+          "verified_pulse_span_s": 0.7042745066666676,
+          "verified_mean_TxTime_s": 21.487042001798237
+        },
+        {
+          "index_zero_based": 31,
+          "requested_interval_s": [
+            21.839376227,
+            22.543776109333333
+          ],
+          "verified_pulse_count": 5208,
+          "verified_first_last_TxTime_s": [
+            21.839389362666665,
+            22.543776109333333
+          ],
+          "verified_pulse_span_s": 0.7043867466666676,
+          "verified_mean_TxTime_s": 22.191503827842293
+        }
+      ],
+      "verified_overlap_pulses": 0,
+      "mean_time_max_difference_s": 7.815970093361102e-14,
+      "missing": [
+        "Measured PSF / physical resolution",
+        "Formation source revision",
+        "Scattering-weighted effective time"
+      ],
+      "CRS_from_code": "WGS84 UTM 10N (EPSG:32610 implied); bearing relative to grid north",
+      "formation": "code/form_block12_backprojection.py::_form; code/umbra_sar/backprojection.py::backproject",
+      "weighting_from_code": "Uniform pulse sum; no taper or per-look normalization; IFFT plus Catmull-Rom; carrier +1"
+    },
+    {
+      "id": "block13_backprojection",
+      "manifest_path": "Vandenberg/results/block13_backprojection/BLOCK12_SUBLOOK_MANIFEST.json",
+      "declared_manifest": {
+        "generated_utc": "2026-09-02T09:35:22.749914+00:00",
+        "scope": "Sub-looks formed by time-domain backprojection from CPHD phase history; the vendor SICD is not used.",
+        "why_not_the_sicd": "The SICD declares SVA weighting on Grid.Row and Grid.Col without WgtFunct samples. SVA is a nonlinear, pixel-dependent apodization that does not commute with a Doppler sub-band split, so a sub-look masked out of an SVA image is not the image that band would form. Autofocus is declared off and TimeCOAPoly is constant.",
+        "source_cphd": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_CPHD.cphd",
+        "grid": {
+          "shape": [
+            600,
+            130
+          ],
+          "spacing_m": 5,
+          "length_parallel_m": 3000,
+          "length_perpendicular_m": 650,
+          "bearing_deg": 79.8357237,
+          "center_easting_northing_m": [
+            714742.85,
+            3827489.45
+          ],
+          "utm_zone": 10,
+          "surface_hae_m": -36.376,
+          "pixel_count": 78000
+        },
+        "look_edges_tx_time_s": [
+          0.0029798746666666667,
+          0.707379757,
+          1.4117796393333333,
+          2.1161795216666666,
+          2.8205794039999996,
+          3.5249792863333327,
+          4.229379168666667,
+          4.933779051,
+          5.638178933333333,
+          6.342578815666666,
+          7.046978697999999,
+          7.751378580333333,
+          8.455778462666666,
+          9.160178344999999,
+          9.864578227333332,
+          10.568978109666665,
+          11.273377991999999,
+          11.977777874333333,
+          12.682177756666665,
+          13.386577638999999,
+          14.09097752133333,
+          14.795377403666665,
+          15.499777285999999,
+          16.204177168333334,
+          16.90857705066667,
+          17.612976933,
+          18.317376815333333,
+          19.021776697666667,
+          19.72617658,
+          20.430576462333335,
+          21.134976344666665,
+          21.839376227,
+          22.543776109333333
+        ],
+        "look_duration_s": 0.7043998823333333,
+        "mean_tx_time_per_look_s": [
+          0.35534731021679306,
+          1.0594467117244886,
+          1.7640630592920856,
+          2.468421666797467,
+          3.1728251227943534,
+          3.877221614341054,
+          4.581661492648942,
+          5.285875697421171,
+          5.981358516737581,
+          6.673092111757255,
+          7.454959389028045,
+          8.103828571296772,
+          8.807830167977738,
+          9.512258919147037,
+          10.216818173596259,
+          10.921192327154111,
+          11.625467205567096,
+          12.330642284515333,
+          13.034391449393052,
+          13.738752659938974,
+          14.443135563070486,
+          15.147523617335098,
+          15.851900022832075,
+          16.55631466498902,
+          17.260750170310914,
+          17.96512155868652,
+          18.669477690902895,
+          19.373934429971314,
+          20.07833817183934,
+          20.782669142875065,
+          21.4870420017982,
+          22.191503827842272
+        ],
+        "pulses_per_look": [
+          5240,
+          5246,
+          5253,
+          5260,
+          5262,
+          5266,
+          5268,
+          5237,
+          4973,
+          4405,
+          4280,
+          5269,
+          5271,
+          5271,
+          5274,
+          5271,
+          5270,
+          5216,
+          5268,
+          5265,
+          5263,
+          5259,
+          5256,
+          5252,
+          5248,
+          5242,
+          5238,
+          5233,
+          5226,
+          5220,
+          5214,
+          5208
+        ],
+        "mean_intensity_per_look": [
+          0.1749894767999649,
+          0.17878089845180511,
+          0.1841953843832016,
+          0.19725865125656128,
+          0.21327310800552368,
+          0.22661840915679932,
+          0.236897811293602,
+          0.2525955140590668,
+          0.2563055157661438,
+          0.2357490509748459,
+          0.2516261041164398,
+          0.33065739274024963,
+          0.35274428129196167,
+          0.3610890805721283,
+          0.3718366324901581,
+          0.3749997615814209,
+          0.38517507910728455,
+          0.3962995707988739,
+          0.4090344309806824,
+          0.4137256443500519,
+          0.41727718710899353,
+          0.4219224154949188,
+          0.42013952136039734,
+          0.4282895624637604,
+          0.425382524728775,
+          0.4215014576911926,
+          0.40657612681388855,
+          0.40022772550582886,
+          0.38783663511276245,
+          0.3786655068397522,
+          0.3654845654964447,
+          0.35636061429977417
+        ],
+        "carrier_sign": 1,
+        "kernel": {
+          "fft_size": 262144,
+          "range_bin_m": 0.0707613309431076,
+          "oversampling_vs_native_resolution": 2.476795162509448,
+          "delay_window_m": 2400,
+          "carrier_sign": 1,
+          "pulses_used": 165924,
+          "pulses_per_look": [
+            5240,
+            5246,
+            5253,
+            5260,
+            5262,
+            5266,
+            5268,
+            5237,
+            4973,
+            4405,
+            4280,
+            5269,
+            5271,
+            5271,
+            5274,
+            5271,
+            5270,
+            5216,
+            5268,
+            5265,
+            5263,
+            5259,
+            5256,
+            5252,
+            5248,
+            5242,
+            5238,
+            5233,
+            5226,
+            5220,
+            5214,
+            5208
+          ],
+          "mean_tx_time_per_look_s": [
+            0.35534731021679306,
+            1.0594467117244886,
+            1.7640630592920856,
+            2.468421666797467,
+            3.1728251227943534,
+            3.877221614341054,
+            4.581661492648942,
+            5.285875697421171,
+            5.981358516737581,
+            6.673092111757255,
+            7.454959389028045,
+            8.103828571296772,
+            8.807830167977738,
+            9.512258919147037,
+            10.216818173596259,
+            10.921192327154111,
+            11.625467205567096,
+            12.330642284515333,
+            13.034391449393052,
+            13.738752659938974,
+            14.443135563070486,
+            15.147523617335098,
+            15.851900022832075,
+            16.55631466498902,
+            17.260750170310914,
+            17.96512155868652,
+            18.669477690902895,
+            19.373934429971314,
+            20.07833817183934,
+            20.782669142875065,
+            21.4870420017982,
+            22.191503827842272
+          ]
+        },
+        "elapsed_s": 2834.7468235492706,
+        "advantages_over_block4": [
+          "slow time of each look is the exact mean TxTime of its pulses",
+          "full 22.541 s CPHD dwell instead of the 18.068 s SICD aperture",
+          "strictly disjoint looks; no shared aperture",
+          "uniform aperture weighting, chosen here",
+          "ground grid at the sea-surface height; no slant-plane Jacobian"
+        ]
+      },
+      "verified_PVP_looks": [
+        {
+          "index_zero_based": 0,
+          "requested_interval_s": [
+            0.0029798746666666667,
+            0.707379757
+          ],
+          "verified_pulse_count": 5240,
+          "verified_first_last_TxTime_s": [
+            0.0029798746666666667,
+            0.7073295973333333
+          ],
+          "verified_pulse_span_s": 0.7043497226666666,
+          "verified_mean_TxTime_s": 0.35534731021679394
+        },
+        {
+          "index_zero_based": 1,
+          "requested_interval_s": [
+            0.707379757,
+            1.4117796393333333
+          ],
+          "verified_pulse_count": 5246,
+          "verified_first_last_TxTime_s": [
+            0.7074637786666667,
+            1.4117662693333333
+          ],
+          "verified_pulse_span_s": 0.7043024906666666,
+          "verified_mean_TxTime_s": 1.0594467117244886
+        },
+        {
+          "index_zero_based": 2,
+          "requested_interval_s": [
+            1.4117796393333333,
+            2.1161795216666666
+          ],
+          "verified_pulse_count": 5253,
+          "verified_first_last_TxTime_s": [
+            1.411900344,
+            2.116071096
+          ],
+          "verified_pulse_span_s": 0.7041707520000002,
+          "verified_mean_TxTime_s": 1.764063059292087
+        },
+        {
+          "index_zero_based": 3,
+          "requested_interval_s": [
+            2.1161795216666666,
+            2.8205794039999996
+          ],
+          "verified_pulse_count": 5260,
+          "verified_first_last_TxTime_s": [
+            2.116205074666667,
+            2.820561794666667
+          ],
+          "verified_pulse_span_s": 0.7043567199999998,
+          "verified_mean_TxTime_s": 2.4684216667974654
+        },
+        {
+          "index_zero_based": 4,
+          "requested_interval_s": [
+            2.8205794039999996,
+            3.5249792863333327
+          ],
+          "verified_pulse_count": 5262,
+          "verified_first_last_TxTime_s": [
+            2.8206956880000003,
+            3.5248865253333337
+          ],
+          "verified_pulse_span_s": 0.7041908373333334,
+          "verified_mean_TxTime_s": 3.172825122794375
+        },
+        {
+          "index_zero_based": 5,
+          "requested_interval_s": [
+            3.5249792863333327,
+            4.229379168666667
+          ],
+          "verified_pulse_count": 5266,
+          "verified_first_last_TxTime_s": [
+            3.5250203386666668,
+            4.229363250666666
+          ],
+          "verified_pulse_span_s": 0.7043429119999995,
+          "verified_mean_TxTime_s": 3.8772216143410563
+        },
+        {
+          "index_zero_based": 6,
+          "requested_interval_s": [
+            4.229379168666667,
+            4.933779051
+          ],
+          "verified_pulse_count": 5268,
+          "verified_first_last_TxTime_s": [
+            4.2294969946666665,
+            4.933774808
+          ],
+          "verified_pulse_span_s": 0.7042778133333334,
+          "verified_mean_TxTime_s": 4.58166149264895
+        },
+        {
+          "index_zero_based": 7,
+          "requested_interval_s": [
+            4.933779051,
+            5.638178933333333
+          ],
+          "verified_pulse_count": 5237,
+          "verified_first_last_TxTime_s": [
+            4.933908498666667,
+            5.638038274666666
+          ],
+          "verified_pulse_span_s": 0.7041297759999994,
+          "verified_mean_TxTime_s": 5.28587569742117
+        },
+        {
+          "index_zero_based": 8,
+          "requested_interval_s": [
+            5.638178933333333,
+            6.342578815666666
+          ],
+          "verified_pulse_count": 4973,
+          "verified_first_last_TxTime_s": [
+            5.638305549333333,
+            6.3424717626666665
+          ],
+          "verified_pulse_span_s": 0.7041662133333331,
+          "verified_mean_TxTime_s": 5.981358516737583
+        },
+        {
+          "index_zero_based": 9,
+          "requested_interval_s": [
+            6.342578815666666,
+            7.046978697999999
+          ],
+          "verified_pulse_count": 4405,
+          "verified_first_last_TxTime_s": [
+            6.342605362666666,
+            7.046858925333333
+          ],
+          "verified_pulse_span_s": 0.7042535626666666,
+          "verified_mean_TxTime_s": 6.673092111757245
+        },
+        {
+          "index_zero_based": 10,
+          "requested_interval_s": [
+            7.046978697999999,
+            7.751378580333333
+          ],
+          "verified_pulse_count": 4280,
+          "verified_first_last_TxTime_s": [
+            7.0471260613333335,
+            7.7512508239999995
+          ],
+          "verified_pulse_span_s": 0.704124762666666,
+          "verified_mean_TxTime_s": 7.454959389028037
+        },
+        {
+          "index_zero_based": 11,
+          "requested_interval_s": [
+            7.751378580333333,
+            8.455778462666666
+          ],
+          "verified_pulse_count": 5269,
+          "verified_first_last_TxTime_s": [
+            7.751384376,
+            8.455698578666667
+          ],
+          "verified_pulse_span_s": 0.7043142026666667,
+          "verified_mean_TxTime_s": 8.103828571296766
+        },
+        {
+          "index_zero_based": 12,
+          "requested_interval_s": [
+            8.455778462666666,
+            9.160178344999999
+          ],
+          "verified_pulse_count": 5271,
+          "verified_first_last_TxTime_s": [
+            8.45583212,
+            9.160119816
+          ],
+          "verified_pulse_span_s": 0.7042876959999997,
+          "verified_mean_TxTime_s": 8.80783016797774
+        },
+        {
+          "index_zero_based": 13,
+          "requested_interval_s": [
+            9.160178344999999,
+            9.864578227333332
+          ],
+          "verified_pulse_count": 5271,
+          "verified_first_last_TxTime_s": [
+            9.160253357333334,
+            9.864565736
+          ],
+          "verified_pulse_span_s": 0.7043123786666659,
+          "verified_mean_TxTime_s": 9.512258919147031
+        },
+        {
+          "index_zero_based": 14,
+          "requested_interval_s": [
+            9.864578227333332,
+            10.568978109666665
+          ],
+          "verified_pulse_count": 5274,
+          "verified_first_last_TxTime_s": [
+            9.864699282666667,
+            10.56895396
+          ],
+          "verified_pulse_span_s": 0.7042546773333331,
+          "verified_mean_TxTime_s": 10.216818173596257
+        },
+        {
+          "index_zero_based": 15,
+          "requested_interval_s": [
+            10.568978109666665,
+            11.273377991999999
+          ],
+          "verified_pulse_count": 5271,
+          "verified_first_last_TxTime_s": [
+            10.569087527999999,
+            11.273335608
+          ],
+          "verified_pulse_span_s": 0.704248080000001,
+          "verified_mean_TxTime_s": 10.921192327154113
+        },
+        {
+          "index_zero_based": 16,
+          "requested_interval_s": [
+            11.273377991999999,
+            11.977777874333333
+          ],
+          "verified_pulse_count": 5270,
+          "verified_first_last_TxTime_s": [
+            11.273469208,
+            11.977761752
+          ],
+          "verified_pulse_span_s": 0.7042925439999994,
+          "verified_mean_TxTime_s": 11.625467205567109
+        },
+        {
+          "index_zero_based": 17,
+          "requested_interval_s": [
+            11.977777874333333,
+            12.682177756666665
+          ],
+          "verified_pulse_count": 5216,
+          "verified_first_last_TxTime_s": [
+            11.977895389333334,
+            12.682149736
+          ],
+          "verified_pulse_span_s": 0.7042543466666658,
+          "verified_mean_TxTime_s": 12.330642284515337
+        },
+        {
+          "index_zero_based": 18,
+          "requested_interval_s": [
+            12.682177756666665,
+            13.386577638999999
+          ],
+          "verified_pulse_count": 5268,
+          "verified_first_last_TxTime_s": [
+            12.682283421333333,
+            13.38655036
+          ],
+          "verified_pulse_span_s": 0.7042669386666667,
+          "verified_mean_TxTime_s": 13.034391449393064
+        },
+        {
+          "index_zero_based": 19,
+          "requested_interval_s": [
+            13.386577638999999,
+            14.09097752133333
+          ],
+          "verified_pulse_count": 5265,
+          "verified_first_last_TxTime_s": [
+            13.386684104,
+            14.090880536
+          ],
+          "verified_pulse_span_s": 0.7041964319999998,
+          "verified_mean_TxTime_s": 13.738752659938966
+        },
+        {
+          "index_zero_based": 20,
+          "requested_interval_s": [
+            14.09097752133333,
+            14.795377403666665
+          ],
+          "verified_pulse_count": 5263,
+          "verified_first_last_TxTime_s": [
+            14.091014344,
+            14.795324541333333
+          ],
+          "verified_pulse_span_s": 0.7043101973333332,
+          "verified_mean_TxTime_s": 14.443135563070491
+        },
+        {
+          "index_zero_based": 21,
+          "requested_interval_s": [
+            14.795377403666665,
+            15.499777285999999
+          ],
+          "verified_pulse_count": 5259,
+          "verified_first_last_TxTime_s": [
+            14.795458429333333,
+            15.499664941333332
+          ],
+          "verified_pulse_span_s": 0.704206511999999,
+          "verified_mean_TxTime_s": 15.147523617335109
+        },
+        {
+          "index_zero_based": 22,
+          "requested_interval_s": [
+            15.499777285999999,
+            16.204177168333334
+          ],
+          "verified_pulse_count": 5256,
+          "verified_first_last_TxTime_s": [
+            15.499798914666666,
+            16.204085645333333
+          ],
+          "verified_pulse_span_s": 0.7042867306666665,
+          "verified_mean_TxTime_s": 15.851900022832066
+        },
+        {
+          "index_zero_based": 23,
+          "requested_interval_s": [
+            16.204177168333334,
+            16.90857705066667
+          ],
+          "verified_pulse_count": 5252,
+          "verified_first_last_TxTime_s": [
+            16.20421972,
+            16.908502456
+          ],
+          "verified_pulse_span_s": 0.7042827359999997,
+          "verified_mean_TxTime_s": 16.55631466498908
+        },
+        {
+          "index_zero_based": 24,
+          "requested_interval_s": [
+            16.90857705066667,
+            17.612976933
+          ],
+          "verified_pulse_count": 5248,
+          "verified_first_last_TxTime_s": [
+            16.908636632,
+            17.612964856
+          ],
+          "verified_pulse_span_s": 0.7043282240000011,
+          "verified_mean_TxTime_s": 17.260750170310974
+        },
+        {
+          "index_zero_based": 25,
+          "requested_interval_s": [
+            17.612976933,
+            18.317376815333333
+          ],
+          "verified_pulse_count": 5242,
+          "verified_first_last_TxTime_s": [
+            17.613099144,
+            18.31725330933333
+          ],
+          "verified_pulse_span_s": 0.7041541653333319,
+          "verified_mean_TxTime_s": 17.965121558686505
+        },
+        {
+          "index_zero_based": 26,
+          "requested_interval_s": [
+            18.317376815333333,
+            19.021776697666667
+          ],
+          "verified_pulse_count": 5238,
+          "verified_first_last_TxTime_s": [
+            18.317387725333333,
+            19.021685234666666
+          ],
+          "verified_pulse_span_s": 0.7042975093333332,
+          "verified_mean_TxTime_s": 18.669477690902887
+        },
+        {
+          "index_zero_based": 27,
+          "requested_interval_s": [
+            19.021776697666667,
+            19.72617658
+          ],
+          "verified_pulse_count": 5233,
+          "verified_first_last_TxTime_s": [
+            19.021819789333332,
+            19.726174824
+          ],
+          "verified_pulse_span_s": 0.7043550346666692,
+          "verified_mean_TxTime_s": 19.373934429971335
+        },
+        {
+          "index_zero_based": 28,
+          "requested_interval_s": [
+            19.72617658,
+            20.430576462333335
+          ],
+          "verified_pulse_count": 5226,
+          "verified_first_last_TxTime_s": [
+            19.726309522666668,
+            20.430500610666666
+          ],
+          "verified_pulse_span_s": 0.7041910879999982,
+          "verified_mean_TxTime_s": 20.078338171839263
+        },
+        {
+          "index_zero_based": 29,
+          "requested_interval_s": [
+            20.430576462333335,
+            21.134976344666665
+          ],
+          "verified_pulse_count": 5220,
+          "verified_first_last_TxTime_s": [
+            20.430635463999998,
+            21.134844658666665
+          ],
+          "verified_pulse_span_s": 0.7042091946666673,
+          "verified_mean_TxTime_s": 20.782669142875097
+        },
+        {
+          "index_zero_based": 30,
+          "requested_interval_s": [
+            21.134976344666665,
+            21.839376227
+          ],
+          "verified_pulse_count": 5214,
+          "verified_first_last_TxTime_s": [
+            21.134979672,
+            21.839254178666668
+          ],
+          "verified_pulse_span_s": 0.7042745066666676,
+          "verified_mean_TxTime_s": 21.487042001798237
+        },
+        {
+          "index_zero_based": 31,
+          "requested_interval_s": [
+            21.839376227,
+            22.543776109333333
+          ],
+          "verified_pulse_count": 5208,
+          "verified_first_last_TxTime_s": [
+            21.839389362666665,
+            22.543776109333333
+          ],
+          "verified_pulse_span_s": 0.7043867466666676,
+          "verified_mean_TxTime_s": 22.191503827842293
+        }
+      ],
+      "verified_overlap_pulses": 0,
+      "mean_time_max_difference_s": 7.815970093361102e-14,
+      "missing": [
+        "Measured PSF / physical resolution",
+        "Formation source revision",
+        "Scattering-weighted effective time"
+      ],
+      "CRS_from_code": "WGS84 UTM 10N (EPSG:32610 implied); bearing relative to grid north",
+      "formation": "code/form_block12_backprojection.py::_form; code/umbra_sar/backprojection.py::backproject",
+      "weighting_from_code": "Uniform pulse sum; no taper or per-look normalization; IFFT plus Catmull-Rom; carrier +1"
+    }
+  ],
+  "audit_read_scope": "Stats, headers, JSON and PVP TxTime only. No radar signal or stack pixels; no new integral hashes.",
+  "cphd": {
+    "declared": {
+      "signal_array_format": "CF8",
+      "num_bytes_pvp": 376,
+      "num_channels": 1,
+      "channel_identifier": "Primary",
+      "num_vectors": 165924,
+      "num_samples": 105840
+    },
+    "available_dwell_s": 22.540812513364376,
+    "verified_TxTime_span_s": 22.540796234666665,
+    "PVP_block_bytes": 62387424,
+    "signal_read": false
+  },
+  "sicd": {
+    "verified_header_shape": [
+      13310,
+      107800
+    ],
+    "pixel_type": "RE32F_IM32F",
+    "grid": {
+      "ImagePlane": "SLANT",
+      "Type": "RGAZIM",
+      "TimeCOAPoly": {
+        "Coefs": [
+          [
+            9.036361295601367
+          ]
+        ]
+      },
+      "Row": {
+        "UVectECF": {
+          "X": 0.0982881109731903,
+          "Y": 0.8805964011405355,
+          "Z": -0.46356167393310155
+        },
+        "SS": 0.16799338097205868,
+        "ImpRespWid": 0.18603167025393347,
+        "Sgn": -1,
+        "ImpRespBW": 4.762092383467531,
+        "KCtr": 64.91011596201477,
+        "DeltaK1": -2.3810461917337653,
+        "DeltaK2": 2.3810461917337653,
+        "DeltaKCOAPoly": {
+          "Coefs": [
+            [
+              0
+            ]
+          ]
+        },
+        "WgtType": {
+          "WindowName": "SVA"
+        }
+      },
+      "Col": {
+        "UVectECF": {
+          "X": -0.44944666116646426,
+          "Y": -0.37632368798150845,
+          "Z": -0.810171698240758
+        },
+        "SS": 0.056435265163590376,
+        "ImpRespWid": 0.06249500176053089,
+        "Sgn": -1,
+        "ImpRespBW": 14.17553364338803,
+        "KCtr": 0,
+        "DeltaK1": -7.087766821694015,
+        "DeltaK2": 7.087766821694015,
+        "DeltaKCOAPoly": {
+          "Coefs": [
+            [
+              0
+            ]
+          ]
+        },
+        "WgtType": {
+          "WindowName": "SVA"
+        }
+      }
+    },
+    "SCPCOA": {
+      "SCPTime": 9.036361295601367,
+      "ARPPos": {
+        "X": -2738169.502487202,
+        "Y": -5061179.989791622,
+        "Z": 3882747.6289447583
+      },
+      "ARPVel": {
+        "X": -3443.8870146831036,
+        "Y": -2901.049440092893,
+        "Z": -6193.924303555336
+      },
+      "ARPAcc": {
+        "X": 2.82252489808843,
+        "Y": 6.501314678145828,
+        "Z": -4.6355271127220075
+      },
+      "SideOfTrack": "R",
+      "SlantRange": 610403.7510692304,
+      "GroundRange": 208153.04544458835,
+      "DopplerConeAng": 90.16371442640104,
+      "GrazeAng": 68.15707476705519,
+      "IncidenceAng": 21.842925232944808,
+      "TwistAng": 0.7246171419823427,
+      "SlopeAng": 68.15891142330969,
+      "AzimAng": 101.91931056749142,
+      "LayoverAng": 101.1386542401989
+    },
+    "processed_aperture_duration_s": 18.068061721230308,
+    "pixels_read": false
+  },
+  "sicd_sliding_manifest": {
+    "declared_source": "Vandenberg/results/block4_sliding_complex/BLOCK4_SLIDING_MANIFEST.json",
+    "content": {
+      "generated_utc": "2026-08-29T22:36:48.279778+00:00",
+      "source_sicd": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_SICD.nitf",
+      "source_sicd_size_bytes": 11478596733,
+      "source_plan": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\BLOCK4_SLIDING_LOOK_PLAN.json",
+      "source_rois": "D:\\Dati Tesi\\Umbra\\Vandenberg\\roi\\ROIS.json",
+      "algorithm": {
+        "rois": [
+          "nearshore",
+          "land_control"
+        ],
+        "range_block_rows": 64,
+        "azimuth_columns_read_per_transformed_row": 107800,
+        "azimuth_pre_crop_before_doppler_decomposition": false,
+        "image_to_shifted_spectrum": "fft",
+        "shifted_spectrum_to_image": "ifft",
+        "sicd_col_sgn": -1,
+        "complex_phase_preserved": true,
+        "new_look_count_per_roi": 8,
+        "reused_exact_nonoverlap_look_count_per_roi": 3
+      },
+      "native_weight": {
+        "name": "SVA",
+        "samples_present": false,
+        "warning": "SVA is declared without WgtFunct; unchanged from Blocks 2/3 and nonblocking"
+      },
+      "input_nonfinite_values_replaced_with_zero": 0,
+      "elapsed_seconds": 72.5159378000535,
+      "outputs": {
+        "nearshore": [
+          {
+            "chronological_index": 1,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\nearshore_look3_complex64.npy",
+            "source_type": "reused_block3_nonoverlap",
+            "reused_block3_look": 3,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "cf13437ae3e1f6c4eb0729910c8534f7b79c4f84e8992452b42428e8473cb79a",
+            "mean_intensity": 2.2112440113278806,
+            "band": {
+              "start_inclusive": 68219,
+              "stop_exclusive": 96857,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              0.3206023073774813,
+              3.242899386518952,
+              6.144555419521809
+            ]
+          },
+          {
+            "chronological_index": 2,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\nearshore_sliding_t02_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "40c1574594f7be513620ae5ca4c9763feed7306a2c5f6626664807f036a9d6a8",
+            "mean_intensity": 2.3934406310803804,
+            "band": {
+              "start_inclusive": 62491,
+              "stop_exclusive": 91129,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              1.4928183850655081,
+              4.405555289724772,
+              7.301962450829171
+            ]
+          },
+          {
+            "chronological_index": 3,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\nearshore_sliding_t03_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "ccd67d91aaafe56d48d11c3c2665fdd612e9fe1ccd48139ac35b685c9689fe17",
+            "mean_intensity": 2.541673330694726,
+            "band": {
+              "start_inclusive": 56764,
+              "stop_exclusive": 85402,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              2.6604795188205443,
+              5.56539893211977,
+              8.458250761005038
+            ]
+          },
+          {
+            "chronological_index": 4,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\nearshore_sliding_t04_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "a515bffb76febe3a7822376a5a789d415a5712e5049e2d2261b3e13cd91c227b",
+            "mean_intensity": 2.8509999477185977,
+            "band": {
+              "start_inclusive": 51036,
+              "stop_exclusive": 79674,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              3.8246979253773428,
+              6.723516579309932,
+              9.614494852082194
+            ]
+          },
+          {
+            "chronological_index": 5,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\nearshore_sliding_t05_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "ecdc754f6044e9509be43f689887752ddc8202aac7e9fda8d580d81daaab6e11",
+            "mean_intensity": 3.141060586198243,
+            "band": {
+              "start_inclusive": 45309,
+              "stop_exclusive": 73947,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              4.985760520693043,
+              7.880179229709705,
+              10.77096077810296
+            ]
+          },
+          {
+            "chronological_index": 6,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\nearshore_look2_complex64.npy",
+            "source_type": "reused_block3_nonoverlap",
+            "reused_block3_look": 2,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "b12e347cdbb5a80f57c69dd7e4598924d2ec3ee4535679bec075561e40581793",
+            "mean_intensity": 3.427718256232007,
+            "band": {
+              "start_inclusive": 39581,
+              "stop_exclusive": 68219,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              6.1447575999443504,
+              9.03646263403653,
+              11.928723504561788
+            ]
+          },
+          {
+            "chronological_index": 7,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\nearshore_sliding_t07_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "09b9ea19e83952d7135145f1851def5a4c302f0fc0710927ec556e9b03ceba6d",
+            "mean_intensity": 3.7868476065338577,
+            "band": {
+              "start_inclusive": 33853,
+              "stop_exclusive": 62491,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              7.302164412517819,
+              10.19283490296494,
+              13.088255484742099
+            ]
+          },
+          {
+            "chronological_index": 8,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\nearshore_sliding_t08_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "6278deb8add62c4c55083c0353affa00f90e158592d2b47471e4c0918f7f8b3f",
+            "mean_intensity": 3.9124313094467804,
+            "band": {
+              "start_inclusive": 28126,
+              "stop_exclusive": 56764,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              8.458452621250943,
+              11.349764285829982,
+              14.250033041998313
+            ]
+          },
+          {
+            "chronological_index": 9,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\nearshore_sliding_t09_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "47a072f4be664c24a56e2deb72ef4445b35ca4229c91649d7fd80f1f6aa105e9",
+            "mean_intensity": 3.9909437094997293,
+            "band": {
+              "start_inclusive": 22398,
+              "stop_exclusive": 51036,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              9.614696727840263,
+              12.50832722989799,
+              15.41514835127033
+            ]
+          },
+          {
+            "chronological_index": 10,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\nearshore_sliding_t10_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "e868f37135eb4cc57e00eef5214439effe934e0c070395be6020e4e12617ef14",
+            "mean_intensity": 4.036256576883668,
+            "band": {
+              "start_inclusive": 16671,
+              "stop_exclusive": 45309,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              10.771162786359584,
+              13.668795587324867,
+              16.58389006990879
+            ]
+          },
+          {
+            "chronological_index": 11,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\nearshore_look1_complex64.npy",
+            "source_type": "reused_block3_nonoverlap",
+            "reused_block3_look": 1,
+            "shape": [
+              1200,
+              9600
+            ],
+            "dtype": "complex64",
+            "size_bytes": 92160128,
+            "sha256": "b1029dbe55e1d590fdf948a101cdd415e6099a81919e60e32bc1ab9f3a89ff2e",
+            "mean_intensity": 4.047336171218967,
+            "band": {
+              "start_inclusive": 10943,
+              "stop_exclusive": 39581,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              11.9289257627277,
+              14.832257263168495,
+              17.757373283886245
+            ]
+          }
+        ],
+        "land_control": [
+          {
+            "chronological_index": 1,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\land_control_look3_complex64.npy",
+            "source_type": "reused_block3_nonoverlap",
+            "reused_block3_look": 3,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "8295f7300bfb29f5c4eaf7cf1f4a943fef337dbe4b6cd547c2cfb38a6ea06790",
+            "mean_intensity": 16.20194035366112,
+            "band": {
+              "start_inclusive": 68219,
+              "stop_exclusive": 96857,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              0.3206023073774813,
+              3.242899386518952,
+              6.144555419521809
+            ]
+          },
+          {
+            "chronological_index": 2,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\land_control_sliding_t02_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "8d80ec8fb268a46ba6adcffa2f7e717a51d8685259636ee07e8e185e02bee1f3",
+            "mean_intensity": 13.441637138293903,
+            "band": {
+              "start_inclusive": 62491,
+              "stop_exclusive": 91129,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              1.4928183850655081,
+              4.405555289724772,
+              7.301962450829171
+            ]
+          },
+          {
+            "chronological_index": 3,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\land_control_sliding_t03_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "4d98b9bf98eb6eb74c3d89aec0f6cf75bcc5140a9074146e247d2e076d4a1cd6",
+            "mean_intensity": 9.753767188202264,
+            "band": {
+              "start_inclusive": 56764,
+              "stop_exclusive": 85402,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              2.6604795188205443,
+              5.56539893211977,
+              8.458250761005038
+            ]
+          },
+          {
+            "chronological_index": 4,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\land_control_sliding_t04_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "62b2fa42c49f6fa3861934b70301c81dbe78a0d009545e8422f5a7eaa030b249",
+            "mean_intensity": 10.336436003479145,
+            "band": {
+              "start_inclusive": 51036,
+              "stop_exclusive": 79674,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              3.8246979253773428,
+              6.723516579309932,
+              9.614494852082194
+            ]
+          },
+          {
+            "chronological_index": 5,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\land_control_sliding_t05_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "b8982b7f3302c43872b8354e7afa4f7b023932a3282e03e5bbadb6b2e1538504",
+            "mean_intensity": 11.182977271967086,
+            "band": {
+              "start_inclusive": 45309,
+              "stop_exclusive": 73947,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              4.985760520693043,
+              7.880179229709705,
+              10.77096077810296
+            ]
+          },
+          {
+            "chronological_index": 6,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\land_control_look2_complex64.npy",
+            "source_type": "reused_block3_nonoverlap",
+            "reused_block3_look": 2,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "edfc816d923457e0019038a10a4982eae1170a0e6b226db324b039cf7e2cb573",
+            "mean_intensity": 13.266646868430076,
+            "band": {
+              "start_inclusive": 39581,
+              "stop_exclusive": 68219,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              6.1447575999443504,
+              9.03646263403653,
+              11.928723504561788
+            ]
+          },
+          {
+            "chronological_index": 7,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\land_control_sliding_t07_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "17dea28cc017022e6f0c7c91c96cb791e37dd7a96d47b918182f1726fca74c3c",
+            "mean_intensity": 13.735413978215469,
+            "band": {
+              "start_inclusive": 33853,
+              "stop_exclusive": 62491,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              7.302164412517819,
+              10.19283490296494,
+              13.088255484742099
+            ]
+          },
+          {
+            "chronological_index": 8,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\land_control_sliding_t08_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "a99828e87a5ec42637d1376d114df55ae946c1414d9dbc45b49634837370a12d",
+            "mean_intensity": 12.95401191341694,
+            "band": {
+              "start_inclusive": 28126,
+              "stop_exclusive": 56764,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              8.458452621250943,
+              11.349764285829982,
+              14.250033041998313
+            ]
+          },
+          {
+            "chronological_index": 9,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\land_control_sliding_t09_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "aa97a6aaba151f3534a1a4c43d1c8bd2b17582a8d35a02fa700e6fec3befd259",
+            "mean_intensity": 12.006187545692539,
+            "band": {
+              "start_inclusive": 22398,
+              "stop_exclusive": 51036,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              9.614696727840263,
+              12.50832722989799,
+              15.41514835127033
+            ]
+          },
+          {
+            "chronological_index": 10,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\block4_sliding_complex\\land_control_sliding_t10_complex64.npy",
+            "source_type": "generated_block4_sliding",
+            "reused_block3_look": null,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "6c2a3769f74bec6e443c77c5544c4a426536ef2e37315d1f1568404462e7366f",
+            "mean_intensity": 8.792985886784344,
+            "band": {
+              "start_inclusive": 16671,
+              "stop_exclusive": 45309,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              10.771162786359584,
+              13.668795587324867,
+              16.58389006990879
+            ]
+          },
+          {
+            "chronological_index": 11,
+            "path": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex\\land_control_look1_complex64.npy",
+            "source_type": "reused_block3_nonoverlap",
+            "reused_block3_look": 1,
+            "shape": [
+              1536,
+              12288
+            ],
+            "dtype": "complex64",
+            "size_bytes": 150995072,
+            "sha256": "3531f42eefa5fccfb4c9da159ccd846a9aaf55a30b437b20a6a4b48b01939513",
+            "mean_intensity": 7.771097373533635,
+            "band": {
+              "start_inclusive": 10943,
+              "stop_exclusive": 39581,
+              "width_bins": 28638
+            },
+            "effective_early_center_late_s": [
+              11.9289257627277,
+              14.832257263168495,
+              17.757373283886245
+            ]
+          }
+        ]
+      },
+      "independent_nonoverlap_set": {
+        "preserved_separately": true,
+        "directory": "D:\\Dati Tesi\\Umbra\\Vandenberg\\results\\sublooks_complex",
+        "chronological_sliding_indices": [
+          1,
+          6,
+          11
+        ]
+      },
+      "guardrails": {
+        "dwell_sweep_performed": false,
+        "bathymetric_inversion_performed": false
+      }
+    }
+  },
+  "sicd_sliding_plan": {
+    "declared_source": "Vandenberg/metadata/BLOCK4_SLIDING_LOOK_PLAN.json",
+    "content": {
+      "generated_utc": "2026-08-29T22:32:03.579789+00:00",
+      "scope": "Block 4 fixed ~6 s width sliding looks; no dwell sweep",
+      "inputs": {
+        "cphd": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_CPHD.cphd",
+        "cphd_metadata": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\CPHD_METADATA.json",
+        "sicd_xml": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SICD_METADATA.xml",
+        "block3_fixed_plan": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SUBAPERTURE_PLAN_6S.json"
+      },
+      "durations_kept_distinct": {
+        "sicd_processed_aperture_duration_s": 18.068061721230308,
+        "cphd_available_slow_time_dwell_s": 22.540812513364376
+      },
+      "transform_convention": {
+        "sicd_col_sgn": -1,
+        "image_to_shifted_doppler": "fft",
+        "shifted_doppler_to_image": "ifft",
+        "fft_axis": 1
+      },
+      "window": {
+        "kind": "tukey",
+        "alpha": 0.25,
+        "normalization": "energy",
+        "length_bins": 28638,
+        "applied_scale": 1.08868111570148,
+        "enbw_bins": 1.1020792994363529
+      },
+      "sequence": {
+        "count": 11,
+        "centers_order": "chronological early to late",
+        "physical_center_time_source": "CPHD/PVP inversion of Doppler k_col",
+        "center_step_s": {
+          "values": [
+            1.16265590320582,
+            1.159843642394998,
+            1.1581176471901617,
+            1.156662650399773,
+            1.1562834043268255,
+            1.1563722689284095,
+            1.1569293828650427,
+            1.1585629440680076,
+            1.1604683574268773,
+            1.163461675843628
+          ],
+          "minimum": 1.1562834043268255,
+          "maximum": 1.163461675843628,
+          "mean": 1.1589357876649542
+        },
+        "adjacent_doppler_overlap_fraction": {
+          "values_fft_order": [
+            0.7999860325441721,
+            0.800020951183742,
+            0.7999860325441721,
+            0.800020951183742,
+            0.7999860325441721,
+            0.7999860325441721,
+            0.800020951183742,
+            0.7999860325441721,
+            0.800020951183742,
+            0.7999860325441721
+          ],
+          "minimum": 0.7999860325441721,
+          "maximum": 0.800020951183742,
+          "mean": 0.8
+        }
+      },
+      "looks_chronological": [
+        {
+          "chronological_index": 1,
+          "fft_order_index": 11,
+          "band": {
+            "start_inclusive": 68219,
+            "stop_exclusive": 96857,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            2.3536580037067862,
+            4.70723382087807,
+            7.060809638049355
+          ],
+          "effective_early_center_late_s": [
+            0.3206023073774813,
+            3.242899386518952,
+            6.144555419521809
+          ],
+          "effective_span_s": 5.823953112144327,
+          "reuses_block3_nonoverlap_look": 3
+        },
+        {
+          "chronological_index": 2,
+          "fft_order_index": 10,
+          "band": {
+            "start_inclusive": 62491,
+            "stop_exclusive": 91129,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            1.41212905299567,
+            3.7657048701669544,
+            6.119280687338239
+          ],
+          "effective_early_center_late_s": [
+            1.4928183850655081,
+            4.405555289724772,
+            7.301962450829171
+          ],
+          "effective_span_s": 5.809144065763663,
+          "reuses_block3_nonoverlap_look": null
+        },
+        {
+          "chronological_index": 3,
+          "fft_order_index": 9,
+          "band": {
+            "start_inclusive": 56764,
+            "stop_exclusive": 85402,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            0.47076447535555804,
+            2.824340292526842,
+            5.177916109698126
+          ],
+          "effective_early_center_late_s": [
+            2.6604795188205443,
+            5.56539893211977,
+            8.458250761005038
+          ],
+          "effective_span_s": 5.797771242184494,
+          "reuses_block3_nonoverlap_look": null
+        },
+        {
+          "chronological_index": 4,
+          "fft_order_index": 8,
+          "band": {
+            "start_inclusive": 51036,
+            "stop_exclusive": 79674,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            -0.47076447535555804,
+            1.882811341815726,
+            4.23638715898701
+          ],
+          "effective_early_center_late_s": [
+            3.8246979253773428,
+            6.723516579309932,
+            9.614494852082194
+          ],
+          "effective_span_s": 5.789796926704851,
+          "reuses_block3_nonoverlap_look": null
+        },
+        {
+          "chronological_index": 5,
+          "fft_order_index": 7,
+          "band": {
+            "start_inclusive": 45309,
+            "stop_exclusive": 73947,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            -1.41212905299567,
+            0.941446764175614,
+            3.295022581346898
+          ],
+          "effective_early_center_late_s": [
+            4.985760520693043,
+            7.880179229709705,
+            10.77096077810296
+          ],
+          "effective_span_s": 5.785200257409917,
+          "reuses_block3_nonoverlap_look": null
+        },
+        {
+          "chronological_index": 6,
+          "fft_order_index": 6,
+          "band": {
+            "start_inclusive": 39581,
+            "stop_exclusive": 68219,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            -2.3536580037067862,
+            -0.00008218653550207122,
+            2.353493630635782
+          ],
+          "effective_early_center_late_s": [
+            6.1447575999443504,
+            9.03646263403653,
+            11.928723504561788
+          ],
+          "effective_span_s": 5.783965904617437,
+          "reuses_block3_nonoverlap_look": 2
+        },
+        {
+          "chronological_index": 7,
+          "fft_order_index": 5,
+          "band": {
+            "start_inclusive": 33853,
+            "stop_exclusive": 62491,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            -3.295186954417902,
+            -0.941611137246618,
+            1.4119646799246661
+          ],
+          "effective_early_center_late_s": [
+            7.302164412517819,
+            10.19283490296494,
+            13.088255484742099
+          ],
+          "effective_span_s": 5.78609107222428,
+          "reuses_block3_nonoverlap_look": null
+        },
+        {
+          "chronological_index": 8,
+          "fft_order_index": 4,
+          "band": {
+            "start_inclusive": 28126,
+            "stop_exclusive": 56764,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            -4.236551532058014,
+            -1.88297571488673,
+            0.470600102284554
+          ],
+          "effective_early_center_late_s": [
+            8.458452621250943,
+            11.349764285829982,
+            14.250033041998313
+          ],
+          "effective_span_s": 5.791580420747369,
+          "reuses_block3_nonoverlap_look": null
+        },
+        {
+          "chronological_index": 9,
+          "fft_order_index": 3,
+          "band": {
+            "start_inclusive": 22398,
+            "stop_exclusive": 51036,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            -5.17808048276913,
+            -2.824504665597846,
+            -0.4709288484265621
+          ],
+          "effective_early_center_late_s": [
+            9.614696727840263,
+            12.50832722989799,
+            15.41514835127033
+          ],
+          "effective_span_s": 5.800451623430067,
+          "reuses_block3_nonoverlap_look": null
+        },
+        {
+          "chronological_index": 10,
+          "fft_order_index": 2,
+          "band": {
+            "start_inclusive": 16671,
+            "stop_exclusive": 45309,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            -6.119445060409242,
+            -3.765869243237958,
+            -1.4122934260666742
+          ],
+          "effective_early_center_late_s": [
+            10.771162786359584,
+            13.668795587324867,
+            16.58389006990879
+          ],
+          "effective_span_s": 5.812727283549206,
+          "reuses_block3_nonoverlap_look": null
+        },
+        {
+          "chronological_index": 11,
+          "fft_order_index": 1,
+          "band": {
+            "start_inclusive": 10943,
+            "stop_exclusive": 39581,
+            "width_bins": 28638
+          },
+          "k_col_low_center_high_per_m": [
+            -7.060974011120359,
+            -4.707398193949074,
+            -2.35382237677779
+          ],
+          "effective_early_center_late_s": [
+            11.9289257627277,
+            14.832257263168495,
+            17.757373283886245
+          ],
+          "effective_span_s": 5.828447521158546,
+          "reuses_block3_nonoverlap_look": 1
+        }
+      ],
+      "independent_nonoverlap_set_retained": {
+        "chronological_indices": [
+          1,
+          6,
+          11
+        ],
+        "corresponding_block3_look_indices": [
+          3,
+          2,
+          1
+        ],
+        "note": "These are the original three disjoint ~6 s Doppler bands and remain stored separately under results/sublooks_complex for future dispersion work."
+      },
+      "guardrails": {
+        "dwell_sweep_performed": false,
+        "bathymetric_inversion_performed": false,
+        "external_oceanography_used_for_phase_branch": false
+      }
+    }
+  },
+  "sicd_rois": {
+    "declared_source": "Vandenberg/roi/ROIS.json",
+    "content": {
+      "generated_utc": "2026-08-29T20:19:18.224098+00:00",
+      "selection_scope": "GEC used for geographic ROI localization only; no GEC spectrum is used for SICD wave metrics.",
+      "sicd_xml": "D:\\Dati Tesi\\Umbra\\Vandenberg\\metadata\\SICD_METADATA.xml",
+      "sicd_dimensions_rows_cols": [
+        13310,
+        107800
+      ],
+      "gec_dimensions_cols_rows": [
+        16001,
+        16001
+      ],
+      "gec_model_transformation_tag_34264": [
+        -7.034374817897602e-7,
+        -0.000003332483805614478,
+        0,
+        -120.59480929832426,
+        -0.0000027562364641923338,
+        5.818005107785454e-7,
+        0,
+        34.59879516557386,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "shared_projection_hae_m": 101.52475667382657,
+      "roi_shape_reason": "Ocean ROIs use 1200 x 9600 SICD pixels (approximately 0.54 km square) after full-aperture SICD refinement to exclude land. Land control retains 1536 x 12288 pixels (approximately 0.69 km square) for robust registration.",
+      "doppler_decomposition_rule": "For every selected range row, all 107800 SICD azimuth columns must be transformed before any ROI column crop.",
+      "rois": {
+        "nearshore": {
+          "kind": "ocean_nearshore",
+          "gec_center_col_row": [
+            13000,
+            12300
+          ],
+          "sicd_center_row_col_override": [
+            10000,
+            82800
+          ],
+          "shape_rows_cols": [
+            1200,
+            9600
+          ],
+          "description": "Open water immediately seaward of the central rocky coast; refined on full-aperture SICD intensity to exclude the terrain displaced by constant-HAE projection.",
+          "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+          "initial_gec_center_lon_lat_deg": [
+            -120.6449435363966,
+            34.57012023782194
+          ],
+          "selected_center_lon_lat_deg": [
+            -120.64679691911917,
+            34.569636382251765
+          ],
+          "selected_center_gec_col_row": [
+            13280.449767722997,
+            12796.957807090685
+          ],
+          "initial_gec_projected_sicd_center_row_col": [
+            9652.427976397594,
+            81283.90703852421
+          ],
+          "selection_stage": "full_aperture_SICD_intensity_refinement",
+          "projection_hae_m": 101.52475667382657,
+          "ground_to_sicd_residual_m": 0.0002129202203557209,
+          "ground_to_sicd_iterations": 3,
+          "sicd_center_row_col": [
+            10000,
+            82800
+          ],
+          "sicd_bounds": {
+            "row_start_inclusive": 9400,
+            "row_stop_exclusive": 10600,
+            "col_start_inclusive": 78000,
+            "col_stop_exclusive": 87600,
+            "rows": 1200,
+            "cols": 9600
+          },
+          "corner_lat_lon_hae": [
+            [
+              34.57156032400505,
+              -120.64332833760245,
+              101.52475667231712
+            ],
+            [
+              34.56677075394755,
+              -120.64450212940174,
+              101.52475667395976
+            ],
+            [
+              34.567710125876474,
+              -120.65025363027719,
+              101.524756674163
+            ],
+            [
+              34.57250134145468,
+              -120.64907983946158,
+              101.52475667284004
+            ]
+          ],
+          "corner_gec_col_row": [
+            [
+              12401.859093028514,
+              11941.575434285116
+            ],
+            [
+              14136.633857648661,
+              11927.617739268095
+            ],
+            [
+              14159.124581272064,
+              13648.76040402621
+            ],
+            [
+              12423.778325587395,
+              13662.839027436035
+            ]
+          ],
+          "local_ground_jacobian_EN_m_per_pixel": [
+            [
+              -0.4401875657651662,
+              -0.01122125430306822
+            ],
+            [
+              0.08698885954146114,
+              -0.055362006267786756
+            ]
+          ],
+          "local_row_ground_spacing_m": 0.44870051787198395,
+          "local_col_ground_spacing_m": 0.0564877711202043,
+          "local_row_axis_bearing_deg_clockwise_from_north": 281.17862730319644,
+          "local_col_axis_bearing_deg_clockwise_from_north": 191.45798292805307,
+          "approximate_ground_extent_row_col_m": [
+            538.4406214463808,
+            542.2826027539612
+          ]
+        },
+        "offshore": {
+          "kind": "ocean_offshore",
+          "gec_center_col_row": [
+            11500,
+            14800
+          ],
+          "sicd_center_row_col_override": [
+            11500,
+            75800
+          ],
+          "shape_rows_cols": [
+            1200,
+            9600
+          ],
+          "description": "Open water farther seaward; refined on full-aperture SICD intensity to exclude all coastline pixels.",
+          "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+          "initial_gec_center_lon_lat_deg": [
+            -120.65221958968795,
+            34.57570909379517
+          ],
+          "selected_center_lon_lat_deg": [
+            -120.65312238385125,
+            34.57430496412605
+          ],
+          "selected_center_gec_col_row": [
+            12042.451823224996,
+            14956.403826453321
+          ],
+          "initial_gec_projected_sicd_center_row_col": [
+            11388.550257531871,
+            72811.42616976511
+          ],
+          "selection_stage": "full_aperture_SICD_intensity_refinement",
+          "projection_hae_m": 101.52475667382657,
+          "ground_to_sicd_residual_m": 0.0007238784323439423,
+          "ground_to_sicd_iterations": 3,
+          "sicd_center_row_col": [
+            11500,
+            75800
+          ],
+          "sicd_bounds": {
+            "row_start_inclusive": 10900,
+            "row_stop_exclusive": 12100,
+            "col_start_inclusive": 71000,
+            "col_stop_exclusive": 80600,
+            "rows": 1200,
+            "cols": 9600
+          },
+          "corner_lat_lon_hae": [
+            [
+              34.57622991711543,
+              -120.64965623329431,
+              101.5247566741846
+            ],
+            [
+              34.571440079498466,
+              -120.65084102135691,
+              101.5247566726822
+            ],
+            [
+              34.57237770327624,
+              -120.65657670483776,
+              101.52475667406321
+            ],
+            [
+              34.57716919005452,
+              -120.65539193687337,
+              101.52475667308869
+            ]
+          ],
+          "corner_gec_col_row": [
+            [
+              11163.65732133553,
+              14101.793952362414
+            ],
+            [
+              12899.191830098118,
+              14090.97560667674
+            ],
+            [
+              12921.3305888118,
+              15807.446137916411
+            ],
+            [
+              11185.224483566772,
+              15818.391170070106
+            ]
+          ],
+          "local_ground_jacobian_EN_m_per_pixel": [
+            [
+              -0.4389531991561822,
+              -0.01132564824465039
+            ],
+            [
+              0.08682735723253453,
+              -0.05536515863755518
+            ]
+          ],
+          "local_row_ground_spacing_m": 0.4474582673428139,
+          "local_col_ground_spacing_m": 0.056511689933350984,
+          "local_row_axis_bearing_deg_clockwise_from_north": 281.1889820309276,
+          "local_col_axis_bearing_deg_clockwise_from_north": 191.5610810973859,
+          "approximate_ground_extent_row_col_m": [
+            536.9499208113767,
+            542.5122233601694
+          ]
+        },
+        "land_control": {
+          "kind": "land_control",
+          "gec_center_col_row": [
+            7600,
+            8500
+          ],
+          "shape_rows_cols": [
+            1536,
+            12288
+          ],
+          "description": "Persistent terrestrial infrastructure, roads, and surrounding terrain near the central facility.",
+          "gec_source": "D:\\Dati Tesi\\Umbra\\Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+          "initial_gec_center_lon_lat_deg": [
+            -120.6284815355336,
+            34.58279307278762
+          ],
+          "selected_center_lon_lat_deg": [
+            -120.6284815355336,
+            34.58279307278762
+          ],
+          "selected_center_gec_col_row": [
+            7600.000000000552,
+            8500.000000001477
+          ],
+          "initial_gec_projected_sicd_center_row_col": [
+            7000.743480298111,
+            51656.14957380258
+          ],
+          "selection_stage": "GEC_geographic_localization",
+          "projection_hae_m": 101.52475667382657,
+          "ground_to_sicd_residual_m": 0.00004075989708778171,
+          "ground_to_sicd_iterations": 2,
+          "sicd_center_row_col": [
+            7001,
+            51656
+          ],
+          "sicd_bounds": {
+            "row_start_inclusive": 6233,
+            "row_stop_exclusive": 7769,
+            "col_start_inclusive": 45512,
+            "col_stop_exclusive": 57800,
+            "rows": 1536,
+            "cols": 12288
+          },
+          "corner_lat_lon_hae": [
+            [
+              34.58524057030778,
+              -120.62398943688878,
+              101.52475667366411
+            ],
+            [
+              34.579125636026895,
+              -120.62555504162708,
+              101.52475667287713
+            ],
+            [
+              34.580342469368986,
+              -120.63295951202183,
+              101.52475667313377
+            ],
+            [
+              34.58646013006972,
+              -120.63139406551998,
+              101.52475667412715
+            ]
+          ],
+          "corner_gec_col_row": [
+            [
+              6477.493048592397,
+              7388.971290607694
+            ],
+            [
+              8696.375681007728,
+              7390.399512692962
+            ],
+            [
+              8722.72938160525,
+              9606.744030712427
+            ],
+            [
+              6502.909357314796,
+              9605.561161069409
+            ]
+          ],
+          "local_ground_jacobian_EN_m_per_pixel": [
+            [
+              -0.44258548358816335,
+              -0.011690203570361704
+            ],
+            [
+              0.08803888376735126,
+              -0.05522177698318064
+            ]
+          ],
+          "local_row_ground_spacing_m": 0.45125686181815516,
+          "local_col_ground_spacing_m": 0.05644559781503459,
+          "local_row_axis_bearing_deg_clockwise_from_north": 281.25039319724584,
+          "local_col_axis_bearing_deg_clockwise_from_north": 191.9527910378803,
+          "approximate_ground_extent_row_col_m": [
+            693.1305397526863,
+            693.603505951145
+          ]
+        }
+      }
+    }
+  },
+  "bathymetry": {
+    "files": [
+      {
+        "path": "Vandenberg/bathymetry/10SGD140250.tif",
+        "exists": true,
+        "size_bytes": 5595446
+      },
+      {
+        "path": "Vandenberg/bathymetry/10SGD140265.tif",
+        "exists": true,
+        "size_bytes": 5104487
+      },
+      {
+        "path": "Vandenberg/bathymetry/10SGD140280.tif",
+        "exists": true,
+        "size_bytes": 5480304
+      },
+      {
+        "path": "Vandenberg/bathymetry/10SGD155250.tif",
+        "exists": true,
+        "size_bytes": 5569887
+      },
+      {
+        "path": "Vandenberg/bathymetry/10SGD155265.tif",
+        "exists": true,
+        "size_bytes": 6320958
+      },
+      {
+        "path": "Vandenberg/bathymetry/10SGD155280.tif",
+        "exists": true,
+        "size_bytes": 6921410
+      },
+      {
+        "path": "Vandenberg/bathymetry/10SGD170250.tif",
+        "exists": true,
+        "size_bytes": 6546140
+      },
+      {
+        "path": "Vandenberg/bathymetry/10SGD170265.tif",
+        "exists": true,
+        "size_bytes": 6643765
+      },
+      {
+        "path": "Vandenberg/bathymetry/10SGD170280.tif",
+        "exists": true,
+        "size_bytes": 4622686
+      },
+      {
+        "path": "Vandenberg/bathymetry/2010_DEM_m2616_met.xml",
+        "exists": true,
+        "size_bytes": 83168
+      },
+      {
+        "path": "Vandenberg/bathymetry/2010_DEM_m2616_met_forHumans.html",
+        "exists": true,
+        "size_bytes": 76960
+      },
+      {
+        "path": "Vandenberg/bathymetry/California_Topobathy_DEM_2011_EPSG-26910.vrt",
+        "exists": true,
+        "size_bytes": 2845384
+      }
+    ],
+    "declared_stats": {
+      "generated_utc": "2026-08-31T12:34:44.701142+00:00",
+      "dataset": {
+        "title": "2009-2011 CA Coastal California TopoBathy Merged Project DEM (Smoothed with Voids)",
+        "catalog_id": "NOAA InPort 49417",
+        "nominal_horizontal_resolution_m": 1,
+        "tile_crs_wkt": "COMPD_CS[\"NAD83_NSRS2007_UTM_zone_10N + NAVD88 height\",PROJCS[\"NAD83 / UTM zone 10N\",GEOGCS[\"NAD83\",DATUM[\"North_American_Datum_1983\",SPHEROID[\"GRS 1980\",6378137,298.257222101,AUTHORITY[\"EPSG\",\"7019\"]],AUTHORITY[\"EPSG\",\"6269\"]],PRIMEM[\"Greenwich\",0,AUTHORITY[\"EPSG\",\"8901\"]],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]],AUTHORITY[\"EPSG\",\"4269\"]],PROJECTION[\"Transverse_Mercator\"],PARAMETER[\"latitude_of_origin\",0],PARAMETER[\"central_meridian\",-123],PARAMETER[\"scale_factor\",0.9996],PARAMETER[\"false_easting\",500000],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH],AUTHORITY[\"EPSG\",\"26910\"]],VERT_CS[\"NAVD88 height\",VERT_DATUM[\"North American Vertical Datum 1988\",2005,AUTHORITY[\"EPSG\",\"5103\"]],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Gravity-related height\",UP],AUTHORITY[\"EPSG\",\"5703\"]]]",
+        "horizontal_reference": "Tile WKT: NAD83 / UTM zone 10N (EPSG:26910; product label includes NAD83(NSRS2007))",
+        "vertical_reference": "NAVD88 height, metres, EPSG:5703",
+        "tidal_datum": "None in delivered raster. Source bathymetry originally on several datums, including MLLW where applicable, was transformed with VDatum to NAVD88 during merging.",
+        "publication": "2014-03; downloaded COG conversion dated 2024-07-23",
+        "source_age": "Statewide inputs vary. Topographic lidar 2009-2011; bathymetric lidar mainly 2009-2010; acoustic source dates vary and local per-cell acquisition age is not encoded in the GeoTIFF.",
+        "product_identity_warning": "This 1 m OCM/NOAA California Topobathy product covers Point Arguello. The official California CUDEM 1/9 arc-second tile set begins near 36.75 N and does not cover this ROI; the DEM is therefore not relabelled as CUDEM."
+      },
+      "download_scope": {
+        "tile_count": 9,
+        "tiles": [
+          "10SGD140250.tif",
+          "10SGD140265.tif",
+          "10SGD140280.tif",
+          "10SGD155250.tif",
+          "10SGD155265.tif",
+          "10SGD155280.tif",
+          "10SGD170250.tif",
+          "10SGD170265.tif",
+          "10SGD170280.tif"
+        ],
+        "mosaic_extent_utm_m": [
+          713999.9999999992,
+          718499.9999999992,
+          3825000.000000001,
+          3829500.000000001
+        ]
+      },
+      "roi_statistics": [
+        {
+          "center_utm_e_n_m": [
+            715510.6102416331,
+            3827627.093742074
+          ],
+          "L_parallel_m": 540,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 1,
+          "elevation_NAVD88_percentiles_m": [
+            -18.873125076293945,
+            -17.750457763671875,
+            -16.440616607666016,
+            -15.342499732971191,
+            -14.331250190734863
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            14.331250190734863,
+            15.342499732971191,
+            16.440616607666016,
+            17.750457763671875,
+            18.873125076293945
+          ],
+          "depth_median_m": 16.440616607666016,
+          "depth_min_max_m": [
+            13.676880836486816,
+            19.618762969970703
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.965471591846558,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.6563851448226998,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "rot_k_0540x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715510.6102416331,
+            3827627.093742074
+          ],
+          "L_parallel_m": 720,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 1,
+          "elevation_NAVD88_percentiles_m": [
+            -19.706876754760742,
+            -18.21876287460327,
+            -16.440616607666016,
+            -14.963749885559082,
+            -13.829371213912964
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            13.829371213912964,
+            14.963749885559082,
+            16.440616607666016,
+            18.21876287460327,
+            19.706876754760742
+          ],
+          "depth_median_m": 16.440616607666016,
+          "depth_min_max_m": [
+            13.08187484741211,
+            20.5050106048584
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.91874154636722,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.622541959753029,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "rot_k_0720x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715510.6102416331,
+            3827627.093742074
+          ],
+          "L_parallel_m": 900,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 1,
+          "elevation_NAVD88_percentiles_m": [
+            -20.5524959564209,
+            -18.685620307922363,
+            -16.440616607666016,
+            -14.634998321533203,
+            -13.318124771118164
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            13.318124771118164,
+            14.634998321533203,
+            16.440616607666016,
+            18.685620307922363,
+            20.5524959564209
+          ],
+          "depth_median_m": 16.440616607666016,
+          "depth_min_max_m": [
+            12.388748168945312,
+            21.399368286132812
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.864857896618604,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.5927419753749703,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "rot_k_0900x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715510.6102416331,
+            3827627.093742074
+          ],
+          "L_parallel_m": 1080,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 1,
+          "elevation_NAVD88_percentiles_m": [
+            -21.397499084472656,
+            -19.139376640319824,
+            -16.440616607666016,
+            -14.303750038146973,
+            -12.818124771118164
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            12.818124771118164,
+            14.303750038146973,
+            16.440616607666016,
+            19.139376640319824,
+            21.397499084472656
+          ],
+          "depth_median_m": 16.440616607666016,
+          "depth_min_max_m": [
+            11.793749809265137,
+            22.336864471435547
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.828166022730215,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.5663787060531575,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "rot_k_1080x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715510.6102416331,
+            3827627.093742074
+          ],
+          "L_parallel_m": 1260,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 1,
+          "elevation_NAVD88_percentiles_m": [
+            -22.212499618530273,
+            -19.606250762939453,
+            -16.440616607666016,
+            -13.994375228881836,
+            -12.216873168945312
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            12.216873168945312,
+            13.994375228881836,
+            16.440616607666016,
+            19.606250762939453,
+            22.212499618530273
+          ],
+          "depth_median_m": 16.440616607666016,
+          "depth_min_max_m": [
+            11.065000534057617,
+            23.256872177124023
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.803970909459977,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.532206491722981,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "rot_k_1260x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715510.6102416331,
+            3827627.093742074
+          ],
+          "L_parallel_m": 1440,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 0.9999914910272882,
+          "elevation_NAVD88_percentiles_m": [
+            -23.028761100769042,
+            -20.076857566833496,
+            -16.44061851501465,
+            -13.692500114440918,
+            -11.75999641418457
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            11.75999641418457,
+            13.692500114440918,
+            16.44061851501465,
+            20.076857566833496,
+            23.028761100769042
+          ],
+          "depth_median_m": 16.44061851501465,
+          "depth_min_max_m": [
+            6.38798713684082,
+            24.1825008392334
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.787354192060624,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.5094413144615735,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "rot_k_1440x0650"
+        }
+      ],
+      "nearshore_anchored_roi_statistics": [
+        {
+          "center_utm_e_n_m": [
+            715953.5478643774,
+            3827706.5057207528
+          ],
+          "L_parallel_m": 540,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 0.9999773617368075,
+          "elevation_NAVD88_percentiles_m": [
+            -14.885009765625,
+            -14,
+            -13.093125343322754,
+            -12.129375457763672,
+            -11.219517421722415
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            11.219517421722413,
+            12.129375457763672,
+            13.093125343322754,
+            14,
+            14.885009765625
+          ],
+          "depth_median_m": 13.093125343322754,
+          "depth_min_max_m": [
+            6.38798713684082,
+            15.751250267028809
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -6.980941715701029,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.9549303765725232,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "nearshore_anchored_0540x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715864.9603398285,
+            3827690.6233250173
+          ],
+          "L_parallel_m": 720,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 0.9999830056251381,
+          "elevation_NAVD88_percentiles_m": [
+            -16.173749923706055,
+            -14.970627546310425,
+            -13.696255683898926,
+            -12.417686700820923,
+            -11.359369850158691
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            11.359369850158691,
+            12.417686700820923,
+            13.696255683898926,
+            14.970627546310425,
+            16.173749923706055
+          ],
+          "depth_median_m": 13.696255683898926,
+          "depth_min_max_m": [
+            6.38798713684082,
+            17.07561683654785
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -7.173524251608428,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.9154762595639203,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "nearshore_anchored_0720x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715776.3728152796,
+            3827674.7409292813
+          ],
+          "L_parallel_m": 900,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 0.9999863969638023,
+          "elevation_NAVD88_percentiles_m": [
+            -17.75500946044922,
+            -16.086402893066406,
+            -14.307508945465088,
+            -12.766250610351562,
+            -11.47434720993042
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            11.47434720993042,
+            12.766250610351562,
+            14.307508945465088,
+            16.086402893066406,
+            17.75500946044922
+          ],
+          "depth_median_m": 14.30750846862793,
+          "depth_min_max_m": [
+            6.38798713684082,
+            18.73873519897461
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -7.553358197476109,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.8446181329048739,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "nearshore_anchored_0900x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715687.7852907309,
+            3827658.8585335454
+          ],
+          "L_parallel_m": 1080,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 0.9999886599457946,
+          "elevation_NAVD88_percentiles_m": [
+            -19.516250610351562,
+            -17.291404724121094,
+            -14.966875076293945,
+            -13.09000015258789,
+            -11.581870079040527
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            11.581870079040527,
+            13.09000015258789,
+            14.966875076293945,
+            17.291404724121094,
+            19.516250610351562
+          ],
+          "depth_median_m": 14.966875076293945,
+          "depth_min_max_m": [
+            6.38798713684082,
+            20.5050106048584
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.040991425452129,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.7149433414378057,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "nearshore_anchored_1080x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715599.197766182,
+            3827642.97613781
+          ],
+          "L_parallel_m": 1260,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 0.9999902773861725,
+          "elevation_NAVD88_percentiles_m": [
+            -21.307498931884766,
+            -18.685622215270996,
+            -15.734375,
+            -13.392498254776001,
+            -11.67377524375916
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            11.673775243759156,
+            13.392498254776001,
+            15.734375,
+            18.685622215270996,
+            21.307498931884766
+          ],
+          "depth_median_m": 15.734375,
+          "depth_min_max_m": [
+            6.38798713684082,
+            22.336864471435547
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.469409331639914,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.589439336588279,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "nearshore_anchored_1260x0650"
+        },
+        {
+          "center_utm_e_n_m": [
+            715510.6102416331,
+            3827627.093742074
+          ],
+          "L_parallel_m": 1440,
+          "L_perpendicular_m": 650,
+          "sample_spacing_m": 2,
+          "valid_fraction": 0.9999914910272882,
+          "elevation_NAVD88_percentiles_m": [
+            -23.028761100769042,
+            -20.076857566833496,
+            -16.44061851501465,
+            -13.692500114440918,
+            -11.75999641418457
+          ],
+          "depth_positive_down_NAVD88_percentiles_m": [
+            11.75999641418457,
+            13.692500114440918,
+            16.44061851501465,
+            20.076857566833496,
+            23.028761100769042
+          ],
+          "depth_median_m": 16.44061851501465,
+          "depth_min_max_m": [
+            6.38798713684082,
+            24.1825008392334
+          ],
+          "depth_plane_gradient_m_per_km_parallel_k": -8.787354192060624,
+          "depth_plane_gradient_m_per_km_perpendicular_k": 1.5094413144615735,
+          "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+          "roi": "nearshore_anchored_1440x0650"
+        }
+      ],
+      "original_roi_statistics": {
+        "center_utm_e_n_m": [
+          716210.6102416331,
+          3827777.093742074
+        ],
+        "L_parallel_m": 540,
+        "L_perpendicular_m": 540,
+        "sample_spacing_m": 2,
+        "valid_fraction": 0.9826391252842418,
+        "elevation_NAVD88_percentiles_m": [
+          -13.006875038146973,
+          -12.148746252059937,
+          -11.003045558929443,
+          -7.192598462104797,
+          -4.999558806419373
+        ],
+        "depth_positive_down_NAVD88_percentiles_m": [
+          4.999558806419373,
+          7.192598462104797,
+          11.003045558929443,
+          12.148746252059937,
+          13.006875038146973
+        ],
+        "depth_median_m": 11.003046035766602,
+        "depth_min_max_m": [
+          -7.180927753448486,
+          13.640625
+        ],
+        "depth_plane_gradient_m_per_km_parallel_k": -16.414455171052843,
+        "depth_plane_gradient_m_per_km_perpendicular_k": 1.719301702416244,
+        "datum_warning": "Depth is -elevation relative to NAVD88, not chart depth relative to MLLW; no tidal conversion is applied.",
+        "roi": "original_center_540x540"
+      }
+    }
+  },
+  "audit": {
+    "date": "2026-09-11",
+    "branch": "main",
+    "commit": "d5fab7b4c49bb9c5d4a0a8dbfdb0b2dc316a2fdf",
+    "initial_worktree": "clean",
+    "tests": {
+      "command": ".venv-umbra-thesis/Scripts/python.exe -B -m pytest -q -p no:cacheprovider",
+      "passed": 57,
+      "failed": 0,
+      "skipped": 0,
+      "unavailable_collected_tests": 0,
+      "elapsed_s": 5.61,
+      "stdout": ".........................................................                [100%]\r\n57 passed in 5.61s\r\n"
+    },
+    "frozen_T_SAR_s": 17.902230457,
+    "selected_initial_stack": "block12_backprojection",
+    "selection_basis": "Local header and PVP verified; simpler 1440x650 historical water support; no buoy/DEM agreement ranking",
+    "raster_header_verification": "Not performed: rasterio/pyproj absent; source files and earlier statistics present; no packages installed",
+    "limitations": [
+      "Header verification is not full content/integrity verification",
+      "PVP assignment verification does not prove original formation used that exact implementation",
+      "Existing suite scans three small (~6.9 MB each) Block7 intensity products and lightweight artifacts; no large source/complex array scan",
+      "SICD_METADATA.json public_asset.downloaded=false is historical and superseded by local NITF existence"
+    ]
+  }
+}

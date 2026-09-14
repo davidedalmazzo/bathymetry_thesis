@@ -1,0 +1,45 @@
+{
+  "completed_utc": "2026-09-12T08:26:19.809029+00:00",
+  "tests": {
+    "passed": 79,
+    "failed": 0,
+    "skipped": 0,
+    "elapsed_s": 18.69,
+    "command": ".venv-umbra-thesis/Scripts/python.exe -B -m pytest -q -p no:cacheprovider"
+  },
+  "checks": {
+    "all_previous_block15_artifacts_and_estimators_unchanged": true,
+    "guarded_file_count": 17,
+    "CSV_realizations_verified": 29391,
+    "aggregate_rows_verified": 873,
+    "noise_counts_verified": [
+      291,
+      14550,
+      14550
+    ],
+    "all_new_JSON_parsed": true,
+    "figures_visually_checked": 4,
+    "git_diff_check_clean": true
+  },
+  "source_sha256": {
+    "code/analyze_block15c_contamination.py": "4066471ccc22265f7269dc0df2fef50ca2d1c498524f57415b92e21acb79bf73",
+    "code/summarize_block15c_contamination.py": "0f6dae5601bed663aa660a2d1945f00cec0acb8622ce3a10673d33de20236d06",
+    "code/umbra_sar/contamination_diagnostic.py": "6b72937c0444b5cc7e9fba401d8d75e0f2bc8e607a09d06c05da2e6c9894a168",
+    "tests/test_contamination_diagnostic.py": "74770795668106e41973dae82d034772898939fb477a363253a34a7b31dcc092"
+  },
+  "configuration_sha256": "78fbeec3b694c6501e56edf5b4ae056f3dfd92105110ea202edf494b591b35b7",
+  "report_sha256": "d683db23f679bcd18b81aaac27f2c34fae97c13a31cd543d42148d4b1acd75df",
+  "numeric_outputs_sha256": {
+    "BLOCK15C_RESULTS.csv": "3f52fe0efcb359fae95091d838ae502822f388e35ef99a00979e08deb6d1b5de",
+    "BLOCK15C_RESIDUALS.npz": "7db935c999a15be9ffbfcc189b0d64886133437e028b399cc74111a98c7ea74e",
+    "BLOCK15C_AGGREGATES.csv": "407b27b95724e3c01232191f55a90a12da2dbecd817dc682910f40dace616e4b"
+  },
+  "constraints": {
+    "real_stack_read": false,
+    "radar_sources_read": false,
+    "frozen_results_modified": false,
+    "commit_or_push": false,
+    "real_contamination_correction": false
+  },
+  "note": "Possible synthetic mechanism, not identification of the Vandenberg discrepancy. Stop after Block15C."
+}

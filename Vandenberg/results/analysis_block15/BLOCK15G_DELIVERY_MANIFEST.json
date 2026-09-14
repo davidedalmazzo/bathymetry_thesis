@@ -1,0 +1,47 @@
+{
+  "block": "15G",
+  "date": "2026-09-12",
+  "status": "complete; synthetic coefficient-only experiment",
+  "scope": "No real Vandenberg Q2 fit, CPHD signal read, download, dwell sweep, inversion, commit, or push.",
+  "simulations": {
+    "calibration_realizations": 36,
+    "evaluation_realizations": 60,
+    "total": 96,
+    "counting_unit": "full Monte Carlo realization, never spectral bins, folds, or pairs"
+  },
+  "selection": {
+    "threshold": 0.1,
+    "primary_validation": "8x4, two-look purged guard",
+    "secondary_validation": "Block15D 4x8 descriptive control",
+    "controls_selected_q2": "0/72 transfer/control fits"
+  },
+  "tests": {
+    "command": ".venv-umbra-thesis\\Scripts\\python.exe -B -m pytest -q -p no:cacheprovider",
+    "passed": 99,
+    "failed": 0,
+    "skipped": 0,
+    "seconds": 6.55
+  },
+  "guards": {
+    "frozen_prior_artifacts_verified": 6,
+    "mismatches": 0
+  },
+  "visually_checked_figures": 2,
+  "note": "The frozen config records hashes at the execution freeze. The final runner and test changed only to make derived summary rendering reproducible and to test the already-executed secondary partition; their final hashes are recorded here.",
+  "files": [
+    {"path":"code/umbra_sar/two_component_separability.py","bytes":5256,"sha256":"0bd136095db216093ed1c1ed4dc0794d5177df97ca4b750074522133098d006a"},
+    {"path":"code/analyze_block15g_separability.py","bytes":9783,"sha256":"54672c80a727de8da255151c34bdc370acbbb7a42dc93bc41b83c99c788cc504"},
+    {"path":"code/plot_block15g_separability.py","bytes":1489,"sha256":"3efaaf9afbc76b1cb9f6e8c077dc1f2433058087614a7bfc74c66ea5f885b4e0"},
+    {"path":"tests/test_two_component_separability.py","bytes":1991,"sha256":"c52941b290cf7bf6ed52c1980748f2432573ffa45db13870140165faebb560d4"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_CONFIG.json","bytes":6700,"sha256":"6594cd901667d6cd18216d3b5b53eef04022a34903815e86d83b715bc0f72137"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_CALIBRATION.json","bytes":1337379,"sha256":"eeb58836eca2998932479c8537e1b071f54fae77b72768c4044a9e149829ae90"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_EVALUATION.json","bytes":2251232,"sha256":"e51c934952987f1a1a51fd3023303324ed9be79e6ded3e38243e225987684e6c"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_RESULTS.csv","bytes":30622,"sha256":"f09af58b4a3c139392edcfdb93478e15ddaaf9e10339fb76bf42ce867e7f4c46"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_SUMMARY.json","bytes":5870,"sha256":"20ea702b835744bf9d2e66dbe6d223342449c7db6f8549a8616345d01b9a8886"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_PROTOCOL.md","bytes":1713,"sha256":"3a2ff212fedc88773573833bad9e8e8c7daac5b1c7ccdd8d5a38a627d2455933"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_REPORT.md","bytes":4980,"sha256":"68dcd5861d07b259f55833be5149e969c50edf3b93108c6fee545eb346ae953d"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_SELECTION_RECOVERY.png","bytes":131479,"sha256":"aea4361ed0eb34f02dd9ee6efc1c9b02a0fe66299791e265f3c6667625aef559"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15G_GAIN_SEPARATION.png","bytes":54496,"sha256":"466e6a2bd4d576bc51433190c04fbfe18b1c7c181f7e0e6a8e7407b0ed7bf349"},
+    {"path":"WORKLOG.md","bytes":30129,"sha256":"765d608c8528d0c5d21d47015b1de624badda9ee866f64c26c71c1b6760d48db"}
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "created_utc": "2026-09-11T19:32:25.847388+00:00",
+  "scope": "BP12 estimator comparison, not CPHD formation validation",
+  "stack": {
+    "path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOKS_complex64.npy",
+    "bytes": 9584768,
+    "mtime_ns": 1788294174000000000,
+    "shape": [
+      32,
+      288,
+      130
+    ],
+    "dtype": "complex64"
+  },
+  "manifest_path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json",
+  "time_s": [
+    0.35534731021679306,
+    1.0594467117244886,
+    1.7640630592920856,
+    2.468421666797467,
+    3.1728251227943534,
+    3.877221614341054,
+    4.581661492648942,
+    5.285875697421171,
+    5.981358516737581,
+    6.673092111757255,
+    7.454959389028045,
+    8.103828571296772,
+    8.807830167977738,
+    9.512258919147037,
+    10.216818173596259,
+    10.921192327154111,
+    11.625467205567096,
+    12.330642284515333,
+    13.034391449393052,
+    13.738752659938974,
+    14.443135563070486,
+    15.147523617335098,
+    15.851900022832075,
+    16.55631466498902,
+    17.260750170310914,
+    17.96512155868652,
+    18.669477690902895,
+    19.373934429971314,
+    20.07833817183934,
+    20.782669142875065,
+    21.4870420017982,
+    22.191503827842272
+  ],
+  "grid": {
+    "shape": [
+      288,
+      130
+    ],
+    "spacing_m": 5.0,
+    "length_parallel_m": 1440.0,
+    "length_perpendicular_m": 650.0,
+    "bearing_deg": 79.8357237,
+    "center_easting_northing_m": [
+      715510.6102416331,
+      3827627.093742074
+    ],
+    "utm_zone": 10,
+    "surface_hae_m": -36.376,
+    "pixel_count": 37440
+  },
+  "axes": "axis0 k_parallel, axis1 k_perpendicular, rad/m; bearing from UTM grid north; not true north",
+  "preprocessing": {
+    "intensity": "abs(complex64 z)**2 then float64 detrending",
+    "detrend": "historical global plane",
+    "tukey_alpha": 0.1,
+    "Fourier": "historical fftshift(fft2); no padding; same coefficients A/B/C",
+    "functions": "analyze_block12_phase_slope.tukey2d/detrended_spectrum"
+  },
+  "cross_convention": "F_secondary * conj(F_reference)",
+  "coherence": {
+    "kind": "magnitude_squared_coherence",
+    "box_size": 3,
+    "phase_smoothed": false,
+    "endpoint_threshold": 0.09,
+    "threshold_reason": "square of original Block12 magnitude threshold 0.3; later 0.25 would map to 0.0625, only reported as sensitivity",
+    "borders": "invalid complete 3x3 patches; nonfinite or zero power invalid"
+  },
+  "selection": {
+    "wavelength_m": [
+      40.0,
+      500.0
+    ],
+    "relative_power_min": 0.05,
+    "power_reference": "max mean power in full wavelength band, no phase gate",
+    "canonical_halfplane": "kx<0 or (kx==0 and ky<0)",
+    "common_quality": "finite nonzero coefficients all looks, complete MSC patch, endpoint MSC>=0.09",
+    "no_r2_or_dispersion_selection": true
+  },
+  "fixed_peak_index": [
+    133,
+    65
+  ],
+  "methods": {
+    "A": "raw reference OLS with free intercept; references 0,16,31",
+    "B": "direct consecutive circular objective, uniform pair weights",
+    "C": "direct circular objective, lags1,2,4,8; equal total weight per class",
+    "lags": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "reference_indices": [
+      0,
+      16,
+      31
+    ]
+  },
+  "search": {
+    "bounds": [
+      -3.2144510915519384,
+      3.2144510915519384
+    ],
+    "rationale": "80% of pi/max adjacent dt; acquisition-only slow-branch restriction, not proof of absence of faster aliases",
+    "grid_size": 2001,
+    "alternative_cost_margin": 0.01
+  },
+  "validity": {
+    "A_max_step_rad": 2.5132741228718345,
+    "A_max_rmse_rad": 0.5,
+    "circular_max_rms_rad": 0.5,
+    "A_must_be_inside_search": true,
+    "circular": "unique minimum within cost margin, not boundary, RMS<=0.5",
+    "differing_estimator_threshold_rad_s": 0.02
+  },
+  "frequency_reporting": "s_phi signed only; ocean omega and period not identified; abs(s) only historical reproduction",
+  "uncertainty": "descriptive; no independent-pair standard errors or confidence intervals",
+  "frozen_sha256": {
+    "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json": "f57663c67966c79a37bf0179350835ebc5ce31d3b817908e58ae176750b614c6",
+    "Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json": "d6a902180861fe3d290aa11cd8f9ae3c137d5bfd68d49ea59a37451047baa313",
+    "Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json": "c399af008e2159ede9b6e27b8bf99dffdd17b7f808aa263ea569d20438df8fcd",
+    "Vandenberg/results/analysis_block15/BLOCK15A_AUDIT.md": "546b36378548111b3ac1758a140077461cdfb8d3332b0b72b817cec8b29b474c",
+    "Vandenberg/results/analysis_block15/BLOCK15A_INPUT_INVENTORY.json": "984b114f1dba219fea9d601aa9201c39d88ce6e9203c07de67854ff6b4a9b3ec",
+    "code/analyze_block12_phase_slope.py": "c2124a621c54820e5799a4fc1aaf88ae9887080092a6c3e7ec645675d98ad154"
+  },
+  "source_sha256": {
+    "code/analyze_block15b_frequency.py": "563bbb11c8840ae8fc69da76acc8f876515f6cd9f967c5a58c4c0fa4af2b8d03",
+    "code/umbra_sar/frequency_comparison.py": "08d0c60f1374a39511fa5ce285cc9e60b937bb10378d4bc73b62ca0ecaa69d73"
+  }
+}

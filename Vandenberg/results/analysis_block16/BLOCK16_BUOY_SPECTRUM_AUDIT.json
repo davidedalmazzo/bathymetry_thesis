@@ -1,0 +1,327 @@
+{
+  "source_csv": "NDBC_46218_20250216T1900_FULL_DIRECTIONAL_SPECTRUM.csv",
+  "n_bands": 64,
+  "m0_m2": 0.2467740050370098,
+  "Hm0_m": 1.9870541212035864,
+  "bin_width_consistency_residual": 0.0,
+  "band_structure": {
+    "f_min_hz": 0.02500000037252903,
+    "f_max_hz": 0.5799999833106995,
+    "bandwidths_hz": [
+      0.005,
+      0.0055,
+      0.0075,
+      0.0095,
+      0.01
+    ]
+  },
+  "dof": {
+    "estimate_lower_bound": 16.63695275888534,
+    "residual_cv": 0.34671937101508604,
+    "bins_used": 20,
+    "note": "real spectral curvature inflates the residual, so nu is a lower bound"
+  },
+  "bimodality_f_tests": {
+    "nu=16.0": {
+      "E(13.33)/E(14.29)": 1.4925373689587416,
+      "p_lo": 0.4318814037027586,
+      "E(15.38)/E(14.29)": 1.373134301802341,
+      "p_hi": 0.5332278057322157
+    },
+    "nu=16.6": {
+      "E(13.33)/E(14.29)": 1.4925373689587416,
+      "p_lo": 0.42311572546013515,
+      "E(15.38)/E(14.29)": 1.373134301802341,
+      "p_hi": 0.5254162001944868
+    },
+    "nu=20.0": {
+      "E(13.33)/E(14.29)": 1.4925373689587416,
+      "p_lo": 0.3780556018693231,
+      "E(15.38)/E(14.29)": 1.373134301802341,
+      "p_hi": 0.48467464758194434
+    },
+    "nu=28.0": {
+      "E(13.33)/E(14.29)": 1.4925373689587416,
+      "p_lo": 0.29523710691808236,
+      "E(15.38)/E(14.29)": 1.373134301802341,
+      "p_hi": 0.40666040281441074
+    },
+    "nu=33.0": {
+      "E(13.33)/E(14.29)": 1.4925373689587416,
+      "p_lo": 0.2551818939067246,
+      "E(15.38)/E(14.29)": 1.373134301802341,
+      "p_hi": 0.36703161814630947
+    }
+  },
+  "bimodality_verdict": "NOT SIGNIFICANT at any plausible nu; the dip at 14.29 s is consistent with chi-squared sampling noise on a single broad peak",
+  "swell_band": {
+    "f_lo_hz": 0.055,
+    "f_hi_hz": 0.115,
+    "fraction_of_m0": 0.5711865989304393,
+    "mean_f_hz": 0.08377477672524328,
+    "mean_T_s": 11.936767116428218,
+    "sigma_f_hz": 0.014806340680876261,
+    "relative_width": 0.17673984055411715,
+    "mean_omega_rad_s": 0.526372446232299,
+    "sigma_omega_rad_s": 0.09303098221917712,
+    "T_span_needed_to_resolve_1sigma_s": 67.53863237062964,
+    "T_span_available_s": 21.836
+  },
+  "directional_band_marginal": {
+    "n_local_maxima_above_1pct": 2,
+    "peaks_propagation_deg": [
+      72.5,
+      102.5
+    ],
+    "peak_weights": [
+      0.05549727132522241,
+      0.07845770570381141
+    ]
+  },
+  "directional_2d_local_maxima": [
+    {
+      "T_s": 13.33333280351429,
+      "propagation_deg": 72.5,
+      "E_m2_per_hz_per_deg": 0.12564150764950444
+    },
+    {
+      "T_s": 10.526315921561542,
+      "propagation_deg": 107.5,
+      "E_m2_per_hz_per_deg": 0.08063709567228473
+    },
+    {
+      "T_s": 14.28571422489322,
+      "propagation_deg": 122.5,
+      "E_m2_per_hz_per_deg": 0.07587612986829984
+    },
+    {
+      "T_s": 15.384615948919734,
+      "propagation_deg": 102.5,
+      "E_m2_per_hz_per_deg": 0.07056643044490189
+    },
+    {
+      "T_s": 15.384615948919734,
+      "propagation_deg": 72.5,
+      "E_m2_per_hz_per_deg": 0.07003823781794179
+    },
+    {
+      "T_s": 12.50000027939678,
+      "propagation_deg": 57.5,
+      "E_m2_per_hz_per_deg": 0.06567965656937161
+    },
+    {
+      "T_s": 11.111110669595242,
+      "propagation_deg": 97.5,
+      "E_m2_per_hz_per_deg": 0.05106621360330093
+    },
+    {
+      "T_s": 11.764705758606276,
+      "propagation_deg": 102.5,
+      "E_m2_per_hz_per_deg": 0.050954841853290786
+    },
+    {
+      "T_s": 12.50000027939678,
+      "propagation_deg": 137.5,
+      "E_m2_per_hz_per_deg": 0.019713663621813423
+    },
+    {
+      "T_s": 14.28571422489322,
+      "propagation_deg": 32.5,
+      "E_m2_per_hz_per_deg": 0.018861507185611356
+    }
+  ],
+  "sar_directional_cone": {
+    "k_propagation_bearing_deg": 79.84,
+    "slices": {
+      "half_angle_10deg": {
+        "fraction_of_band_energy": 0.2103056395189573,
+        "mean_T_s": 12.305696808824557,
+        "mean_omega_rad_s": 0.5105915906097932,
+        "sigma_omega_rad_s": 0.09371161750230825,
+        "peak_T_s": 13.33333280351429
+      },
+      "half_angle_20deg": {
+        "fraction_of_band_energy": 0.425871275480906,
+        "mean_T_s": 12.157494224201521,
+        "mean_omega_rad_s": 0.5168158167553851,
+        "sigma_omega_rad_s": 0.09341214317177261,
+        "peak_T_s": 13.33333280351429
+      },
+      "half_angle_30deg": {
+        "fraction_of_band_energy": 0.6429746184389092,
+        "mean_T_s": 12.001315114502997,
+        "mean_omega_rad_s": 0.5235413991910493,
+        "sigma_omega_rad_s": 0.0922405985841858,
+        "peak_T_s": 13.33333280351429
+      },
+      "half_angle_45deg": {
+        "fraction_of_band_energy": 0.8287134575712276,
+        "mean_T_s": 11.985989919894434,
+        "mean_omega_rad_s": 0.5242107952010463,
+        "sigma_omega_rad_s": 0.0924021347268835,
+        "peak_T_s": 13.33333280351429
+      }
+    }
+  },
+  "mem_artefact_control": {
+    "test": "exact moments of a KNOWN unimodal cos^2s(theta/2) pushed through the same MEM code",
+    "results": [
+      {
+        "s": 1,
+        "r1": 0.5,
+        "r2": 2.3013771386766814e-17,
+        "n_mem_lobes": 2,
+        "mem_lobes_deg": [
+          42.5,
+          137.5
+        ]
+      },
+      {
+        "s": 2,
+        "r1": 0.6666666666666667,
+        "r2": 0.16666666666666669,
+        "n_mem_lobes": 2,
+        "mem_lobes_deg": [
+          47.5,
+          132.5
+        ]
+      },
+      {
+        "s": 3,
+        "r1": 0.7499999999999998,
+        "r2": 0.30000000000000004,
+        "n_mem_lobes": 2,
+        "mem_lobes_deg": [
+          52.5,
+          127.5
+        ]
+      },
+      {
+        "s": 4,
+        "r1": 0.8000000000000002,
+        "r2": 0.4000000000000001,
+        "n_mem_lobes": 2,
+        "mem_lobes_deg": [
+          57.5,
+          122.5
+        ]
+      },
+      {
+        "s": 6,
+        "r1": 0.8571428571428572,
+        "r2": 0.5357142857142858,
+        "n_mem_lobes": 2,
+        "mem_lobes_deg": [
+          62.5,
+          117.5
+        ]
+      },
+      {
+        "s": 8,
+        "r1": 0.8888888888888888,
+        "r2": 0.6222222222222222,
+        "n_mem_lobes": 2,
+        "mem_lobes_deg": [
+          62.5,
+          117.5
+        ]
+      },
+      {
+        "s": 12,
+        "r1": 0.923076923076923,
+        "r2": 0.7252747252747251,
+        "n_mem_lobes": 2,
+        "mem_lobes_deg": [
+          67.5,
+          112.5
+        ]
+      },
+      {
+        "s": 20,
+        "r1": 0.9523809523809524,
+        "r2": 0.8225108225108226,
+        "n_mem_lobes": 2,
+        "mem_lobes_deg": [
+          72.5,
+          107.5
+        ]
+      }
+    ],
+    "verdict": "MEM splits a unimodal input into two lobes at every spreading parameter tested; the two lobes seen in the data are the Lygre & Krogstad artefact, not two wave systems"
+  },
+  "r2_vs_unimodal": {
+    "rows": [
+      {
+        "T_s": 16.666667039195705,
+        "r1": 0.8199999928474426,
+        "r2_observed": 0.5699999928474426,
+        "r2_unimodal_cos2s": 0.4447457461958476,
+        "alpha1_minus_alpha2_deg": 4.0
+      },
+      {
+        "T_s": 15.384615948919734,
+        "r1": 0.9200000166893005,
+        "r2_observed": 0.75,
+        "r2_unimodal_cos2s": 0.7155556080272674,
+        "alpha1_minus_alpha2_deg": 0.0
+      },
+      {
+        "T_s": 14.28571422489322,
+        "r1": 0.7300000190734863,
+        "r2_observed": 0.36000001430511475,
+        "r2_unimodal_cos2s": 0.26440948163385425,
+        "alpha1_minus_alpha2_deg": 16.0
+      },
+      {
+        "T_s": 13.33333280351429,
+        "r1": 0.8899999856948853,
+        "r2_observed": 0.7400000095367432,
+        "r2_unimodal_cos2s": 0.6254053643535238,
+        "alpha1_minus_alpha2_deg": 0.0
+      },
+      {
+        "T_s": 12.50000027939678,
+        "r1": 0.7699999809265137,
+        "r2_observed": 0.3799999952316284,
+        "r2_unimodal_cos2s": 0.3380487429911904,
+        "alpha1_minus_alpha2_deg": -12.0
+      },
+      {
+        "T_s": 11.764705758606276,
+        "r1": 0.8899999856948853,
+        "r2_observed": 0.699999988079071,
+        "r2_unimodal_cos2s": 0.6254053643535238,
+        "alpha1_minus_alpha2_deg": 0.0
+      },
+      {
+        "T_s": 11.111110669595242,
+        "r1": 0.8500000238418579,
+        "r2_observed": 0.6299999952316284,
+        "r2_unimodal_cos2s": 0.5173913648313317,
+        "alpha1_minus_alpha2_deg": 4.0
+      },
+      {
+        "T_s": 10.526315921561542,
+        "r1": 0.8600000143051147,
+        "r2_observed": 0.6800000071525574,
+        "r2_unimodal_cos2s": 0.5431579321705411,
+        "alpha1_minus_alpha2_deg": 4.0
+      },
+      {
+        "T_s": 9.900989754271746,
+        "r1": 0.8399999737739563,
+        "r2_observed": 0.6200000047683716,
+        "r2_unimodal_cos2s": 0.49241372861420185,
+        "alpha1_minus_alpha2_deg": 4.0
+      },
+      {
+        "T_s": 9.090909140169128,
+        "r1": 0.8299999833106995,
+        "r2_observed": 0.5099999904632568,
+        "r2_unimodal_cos2s": 0.46820508843316927,
+        "alpha1_minus_alpha2_deg": 0.0
+      }
+    ],
+    "verdict": "observed r2 EXCEEDS the unimodal cos^2s prediction in every band, i.e. the true distribution is narrower than cos^2s, the opposite of bimodal"
+  }
+}

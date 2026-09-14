@@ -1,0 +1,107 @@
+{
+  "generated_utc": "2026-09-11T19:39:28.992732+00:00",
+  "frozen_guard_checks": {
+    "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json": true,
+    "Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json": true,
+    "Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json": true,
+    "Vandenberg/results/analysis_block15/BLOCK15A_AUDIT.md": true,
+    "Vandenberg/results/analysis_block15/BLOCK15A_INPUT_INVENTORY.json": true,
+    "code/analyze_block12_phase_slope.py": true
+  },
+  "stack_stat_unchanged": true,
+  "tests": {
+    "passed": 69,
+    "failed": 0,
+    "skipped": 0,
+    "elapsed_s": 5.48,
+    "command": ".venv-umbra-thesis/Scripts/python.exe -B -m pytest -q -p no:cacheprovider"
+  },
+  "csv_rows": 915,
+  "csv_intersection": 15,
+  "all_json_parse": true,
+  "figures_visually_checked": 4,
+  "no_commit_or_push": true,
+  "scope": "Final delivery supplements original execution manifest; no alteration of numerical analysis config or frozen results",
+  "artifacts": [
+    {
+      "path": "code/analyze_block15b_frequency.py",
+      "bytes": 20014,
+      "sha256": "563bbb11c8840ae8fc69da76acc8f876515f6cd9f967c5a58c4c0fa4af2b8d03"
+    },
+    {
+      "path": "code/summarize_block15b_diagnostics.py",
+      "bytes": 4804,
+      "sha256": "3dd9a4d912c5c499df29d26e38546ae302ea923e90d6a83b681140baea4a8827"
+    },
+    {
+      "path": "code/umbra_sar/frequency_comparison.py",
+      "bytes": 6738,
+      "sha256": "08d0c60f1374a39511fa5ce285cc9e60b937bb10378d4bc73b62ca0ecaa69d73"
+    },
+    {
+      "path": "tests/test_frequency_comparison.py",
+      "bytes": 4840,
+      "sha256": "9be90a3ffc20f92663b9df8d7ae04d222aedd3945b8a0a0cc6d54e04eeb70cd0"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_BINS.csv",
+      "bytes": 382624,
+      "sha256": "e234e9d7c75bcb835f85743da8769c2a40cc68b8a2e15794341c95179b81d091"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_COMPARISON.png",
+      "bytes": 262353,
+      "sha256": "80d5faa2363cdf54d1e1f06e98152626da7612c2948bd5d61411a98d19b98894"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_CONFIG.json",
+      "bytes": 5222,
+      "sha256": "55b657d8d570ecc195fa62d494b55b7da46a56a63eb02a609b918021055ac752"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_DIAGNOSTICS.json",
+      "bytes": 12072,
+      "sha256": "c27ba6b24fd251ef31a201a43b1a95bf9ae653eee4ca127799821d9a8ca0edb4"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_ESTIMATOR_DETAILS.json",
+      "bytes": 11870284,
+      "sha256": "84e453957330397718f5c787cc675e89b19e2ab24c153255d3b9f7b01cbb9ee9"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_FIXED_PEAK.png",
+      "bytes": 202513,
+      "sha256": "f4b9f17e169ca7dde8523e2dc4ce78260b2d5cad2b122da2d76f7a682f8e5b10"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_LAG_DEPENDENCE.png",
+      "bytes": 89007,
+      "sha256": "914eacb294ca28632e13f2527127b6edb3d3397509fe4626d45dfaed8cd7b230"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_MANIFEST.json",
+      "bytes": 1117,
+      "sha256": "b8d17ec934b73db29bf61c7990bf75e44ebdcb062fb8fddab93424bdf0a59887"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_REPORT.md",
+      "bytes": 16897,
+      "sha256": "54dd55db25fd499eed96e33eb4323887d6696d4e16c5ad66a7327e3242bd2d25"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_SUMMARY.json",
+      "bytes": 5197,
+      "sha256": "41b9516101d195ab7f3cfa2a2252c6c3100917a84fe857af0232705f5fc3dac9"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_SYNTHETIC_CONTAMINATION.json",
+      "bytes": 76913,
+      "sha256": "406a1b93c2d6866abc11ee56234c0a16c807a6baabac7822c8098dbb0f19e42a"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15B_VALID_BINS_AND_MIXTURE.png",
+      "bytes": 140825,
+      "sha256": "e8d5791f5faef92f4f6d419b36e170e0347f3b6509d2cf081432beb785340f4a"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "block": "15J",
+  "status": "pre-execution protocol freeze",
+  "scope": "Fully synthetic complex intensity-Fourier coefficients only. No real Vandenberg coefficient, CPHD/SICD signal, download, dwell sweep, bathymetric inversion, commit or push.",
+  "times_source": "BP12 effective irregular centres copied as fixed metadata from Block15G configuration; they are not a real coefficient input.",
+  "times_s": [0.35534731021679306, 1.0594467117244886, 1.7640630592920856, 2.468421666797467, 3.1728251227943534, 3.877221614341054, 4.581661492648942, 5.285875697421171, 5.981358516737581, 6.673092111757255, 7.454959389028045, 8.103828571296772, 8.807830167977738, 9.512258919147037, 10.216818173596259, 10.921192327154111, 11.625467205567096, 12.330642284515333, 13.034391449393052, 13.738752659938974, 14.443135563070486, 15.147523617335098, 15.851900022832075, 16.55631466498902, 17.260750170310914, 17.96512155868652, 18.669477690902895, 19.373934429971314, 20.07833817183934, 20.782669142875065, 21.4870420017982, 22.191503827842272],
+  "shape": [288, 130],
+  "peak": [133.0, 65.0],
+  "support": {"rows": [125, 142], "cols": [62, 69], "window": "one separable Tukey alpha=0.1 response, same as BP12; no extra blur", "weights": "uniform fixed support weights"},
+  "primary_diagnostic": {"name": "log_late_to_early_increment_energy", "formula": "log(E_[12,23) / E_[0.6,2.0)); E_lag=mean_pairs,sum_support w_k |z(k,tb)-z(k,ta)|^2 / median_t sum_support w_k |z(k,t)|^2", "lag_edges_s": [0.6, 2.0, 5.0, 12.0, 23.0], "min_pairs_per_class": 3, "decision": "B-detected iff score <= calibration A empirical 5th percentile; otherwise abstain; degenerate/missing class abstains", "false_A_to_B_constraint": "calibration empirical false-positive rate <=10%; use conservative order statistic q=0.05", "utility": "on evaluation: A->B <=10%, B detection >=50%, decision fraction >=40%, and held-out configuration B detection >=40%; otherwise stop as non-useful"},
+  "simulation": {"seeds": {"calibration": 151000, "evaluation": 151001}, "replicates_per_family_axis": 8, "snr_amplitude": 10.0, "noise_tau_s": [0.0, 5.0], "primary_slope_rad_s": 0.4, "depth_m": 10.0, "current_m_s": 0.0, "families": {"A_band": "three propagating finite-spatial-band modes; slopes use finite-depth dispersion and no unique frequency truth", "B_static_observed": "primary propagating mode plus an observed constant nearby coefficient", "B_slow_OU": "primary plus stationary complex OU nearby coefficient, tau=5 s"}, "controls": ["plane", "null_contaminant", "constant_observed_offset", "slow_OU"]},
+  "split": {"calibration": "24 sequences: A/B_static/B_slow x 8, radial 2.223 bins; ratios 0.3 then 0.7", "evaluation": "48 sequences: A/B_static/B_slow x radial/tangential x 8, ratio 1.0", "held_out": "evaluation separation 3.0 radial bins or 1.452 tangential bins, both excluded from calibration"},
+  "block15i_comparator": "Frozen rule applied unchanged to the same new sequences: |amplitude-correlation|>=0.85 AND M1 predictive gain>=0.10; no re-calibration.",
+  "statistical_unit": "one full Monte-Carlo sequence; pairs, lag classes and support bins are descriptive dependent aggregates",
+  "known_variable_transfer_control": "not evaluated in the primary campaign. Its analytic non-cancellation is unit-tested; no real-data claim can rely on known H."
+}

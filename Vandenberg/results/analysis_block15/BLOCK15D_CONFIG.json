@@ -1,0 +1,349 @@
+{
+  "created_utc": "2026-09-12T08:33:58.895567+00:00",
+  "previous_config": {
+    "created_utc": "2026-09-11T19:32:25.847388+00:00",
+    "scope": "BP12 estimator comparison, not CPHD formation validation",
+    "stack": {
+      "path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOKS_complex64.npy",
+      "bytes": 9584768,
+      "mtime_ns": 1788294174000000000,
+      "shape": [
+        32,
+        288,
+        130
+      ],
+      "dtype": "complex64"
+    },
+    "manifest_path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json",
+    "time_s": [
+      0.35534731021679306,
+      1.0594467117244886,
+      1.7640630592920856,
+      2.468421666797467,
+      3.1728251227943534,
+      3.877221614341054,
+      4.581661492648942,
+      5.285875697421171,
+      5.981358516737581,
+      6.673092111757255,
+      7.454959389028045,
+      8.103828571296772,
+      8.807830167977738,
+      9.512258919147037,
+      10.216818173596259,
+      10.921192327154111,
+      11.625467205567096,
+      12.330642284515333,
+      13.034391449393052,
+      13.738752659938974,
+      14.443135563070486,
+      15.147523617335098,
+      15.851900022832075,
+      16.55631466498902,
+      17.260750170310914,
+      17.96512155868652,
+      18.669477690902895,
+      19.373934429971314,
+      20.07833817183934,
+      20.782669142875065,
+      21.4870420017982,
+      22.191503827842272
+    ],
+    "grid": {
+      "shape": [
+        288,
+        130
+      ],
+      "spacing_m": 5.0,
+      "length_parallel_m": 1440.0,
+      "length_perpendicular_m": 650.0,
+      "bearing_deg": 79.8357237,
+      "center_easting_northing_m": [
+        715510.6102416331,
+        3827627.093742074
+      ],
+      "utm_zone": 10,
+      "surface_hae_m": -36.376,
+      "pixel_count": 37440
+    },
+    "axes": "axis0 k_parallel, axis1 k_perpendicular, rad/m; bearing from UTM grid north; not true north",
+    "preprocessing": {
+      "intensity": "abs(complex64 z)**2 then float64 detrending",
+      "detrend": "historical global plane",
+      "tukey_alpha": 0.1,
+      "Fourier": "historical fftshift(fft2); no padding; same coefficients A/B/C",
+      "functions": "analyze_block12_phase_slope.tukey2d/detrended_spectrum"
+    },
+    "cross_convention": "F_secondary * conj(F_reference)",
+    "coherence": {
+      "kind": "magnitude_squared_coherence",
+      "box_size": 3,
+      "phase_smoothed": false,
+      "endpoint_threshold": 0.09,
+      "threshold_reason": "square of original Block12 magnitude threshold 0.3; later 0.25 would map to 0.0625, only reported as sensitivity",
+      "borders": "invalid complete 3x3 patches; nonfinite or zero power invalid"
+    },
+    "selection": {
+      "wavelength_m": [
+        40.0,
+        500.0
+      ],
+      "relative_power_min": 0.05,
+      "power_reference": "max mean power in full wavelength band, no phase gate",
+      "canonical_halfplane": "kx<0 or (kx==0 and ky<0)",
+      "common_quality": "finite nonzero coefficients all looks, complete MSC patch, endpoint MSC>=0.09",
+      "no_r2_or_dispersion_selection": true
+    },
+    "fixed_peak_index": [
+      133,
+      65
+    ],
+    "methods": {
+      "A": "raw reference OLS with free intercept; references 0,16,31",
+      "B": "direct consecutive circular objective, uniform pair weights",
+      "C": "direct circular objective, lags1,2,4,8; equal total weight per class",
+      "lags": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "reference_indices": [
+        0,
+        16,
+        31
+      ]
+    },
+    "search": {
+      "bounds": [
+        -3.2144510915519384,
+        3.2144510915519384
+      ],
+      "rationale": "80% of pi/max adjacent dt; acquisition-only slow-branch restriction, not proof of absence of faster aliases",
+      "grid_size": 2001,
+      "alternative_cost_margin": 0.01
+    },
+    "validity": {
+      "A_max_step_rad": 2.5132741228718345,
+      "A_max_rmse_rad": 0.5,
+      "circular_max_rms_rad": 0.5,
+      "A_must_be_inside_search": true,
+      "circular": "unique minimum within cost margin, not boundary, RMS<=0.5",
+      "differing_estimator_threshold_rad_s": 0.02
+    },
+    "frequency_reporting": "s_phi signed only; ocean omega and period not identified; abs(s) only historical reproduction",
+    "uncertainty": "descriptive; no independent-pair standard errors or confidence intervals",
+    "frozen_sha256": {
+      "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json": "f57663c67966c79a37bf0179350835ebc5ce31d3b817908e58ae176750b614c6",
+      "Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json": "d6a902180861fe3d290aa11cd8f9ae3c137d5bfd68d49ea59a37451047baa313",
+      "Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json": "c399af008e2159ede9b6e27b8bf99dffdd17b7f808aa263ea569d20438df8fcd",
+      "Vandenberg/results/analysis_block15/BLOCK15A_AUDIT.md": "546b36378548111b3ac1758a140077461cdfb8d3332b0b72b817cec8b29b474c",
+      "Vandenberg/results/analysis_block15/BLOCK15A_INPUT_INVENTORY.json": "984b114f1dba219fea9d601aa9201c39d88ce6e9203c07de67854ff6b4a9b3ec",
+      "code/analyze_block12_phase_slope.py": "c2124a621c54820e5799a4fc1aaf88ae9887080092a6c3e7ec645675d98ad154"
+    },
+    "source_sha256": {
+      "code/analyze_block15b_frequency.py": "563bbb11c8840ae8fc69da76acc8f876515f6cd9f967c5a58c4c0fa4af2b8d03",
+      "code/umbra_sar/frequency_comparison.py": "08d0c60f1374a39511fa5ce285cc9e60b937bb10378d4bc73b62ca0ecaa69d73"
+    }
+  },
+  "bins": [
+    [
+      133,
+      65
+    ],
+    [
+      129,
+      62
+    ],
+    [
+      129,
+      63
+    ],
+    [
+      130,
+      63
+    ],
+    [
+      131,
+      60
+    ],
+    [
+      131,
+      64
+    ],
+    [
+      132,
+      65
+    ],
+    [
+      133,
+      64
+    ],
+    [
+      133,
+      66
+    ],
+    [
+      134,
+      62
+    ],
+    [
+      134,
+      66
+    ],
+    [
+      135,
+      66
+    ],
+    [
+      136,
+      65
+    ],
+    [
+      136,
+      66
+    ],
+    [
+      137,
+      66
+    ]
+  ],
+  "fixed_peak": [
+    133,
+    65
+  ],
+  "scope": "Original intensity Fourier coefficients, no unit-modulus normalization, same BP12 preprocessing; no correction",
+  "fitting": {
+    "t0": 11.274161416056213,
+    "bounds": [
+      -3.2144510915519384,
+      3.2144510915519384
+    ],
+    "grid_size": 2001,
+    "profile_cost_margin": 0.01,
+    "folds": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    ],
+    "criteria": {
+      "predictive_gain_min": 0.1,
+      "profile_width_max": 0.2,
+      "slope_span_max": 0.05,
+      "ratio_cv_max": 0.5,
+      "offset_dispersion_max": 0.25,
+      "condition_max": 1000000.0
+    }
+  },
+  "rationale": {
+    "profile": "SSE normalized by observed training energy, margin 0.01; connected basin width, NOT a confidence interval",
+    "repeated_predictive": "At least 10% aggregate held-out SSE improvement, improvement in >=3 folds including both edge blocks",
+    "stable": "Full+four-fold M1 fits: no ambiguous/flat/boundary/rank-deficient profiles; width<=0.2 rad/s, slope span<=0.05 rad/s, ratio CV<=0.5, RMS complex c displacement / full |a|<=0.25",
+    "thresholds": "Operational predeclared descriptors, not fitted to data or calibrated false-positive probabilities; report continuous values",
+    "categories": "gain<=0: no_predictive_advantage; repeated and stable: repeated_predictive_stable; otherwise: descriptive_or_unstable"
+  },
+  "synthetic": {
+    "slope": 0.5,
+    "a_phase": 0.3,
+    "offset_amplitude": 0.5,
+    "offset_phase": 0.8,
+    "slow_slope": 0.1,
+    "AM_depth": 0.4,
+    "AM_rate": 0.08,
+    "AM_phase": 0.5,
+    "noise_sigma": 0.1,
+    "AR1_rho": 0.8,
+    "replicates_each_noise": 5,
+    "master_seed": 150400,
+    "cases": [
+      "single",
+      "static_offset",
+      "amplitude_modulation",
+      "slow_contaminant"
+    ],
+    "noise_models": [
+      "none",
+      "white",
+      "AR1"
+    ],
+    "description": "44 controls; stationary circular AR1 indexed by look, E|epsilon|^2=0.01, innovations scaled sqrt(1-rho^2); same realization for M0/M1"
+  },
+  "figures": "Show every selected bin (fixed peak first), including contrary cases; no fit-dependent bin reselection",
+  "dependence": "Report grid distances, overlapping 3x3 support and empirical complex coefficient correlation; no independent component count or p-value",
+  "guard_sha256": {
+    "Vandenberg/results/analysis_block15/BLOCK15A_INPUT_INVENTORY.json": "984b114f1dba219fea9d601aa9201c39d88ce6e9203c07de67854ff6b4a9b3ec",
+    "Vandenberg/results/analysis_block15/BLOCK15A_AUDIT.md": "546b36378548111b3ac1758a140077461cdfb8d3332b0b72b817cec8b29b474c",
+    "Vandenberg/results/analysis_block15/BLOCK15B_CONFIG.json": "55b657d8d570ecc195fa62d494b55b7da46a56a63eb02a609b918021055ac752",
+    "Vandenberg/results/analysis_block15/BLOCK15B_BINS.csv": "e234e9d7c75bcb835f85743da8769c2a40cc68b8a2e15794341c95179b81d091",
+    "Vandenberg/results/analysis_block15/BLOCK15B_SUMMARY.json": "41b9516101d195ab7f3cfa2a2252c6c3100917a84fe857af0232705f5fc3dac9",
+    "Vandenberg/results/analysis_block15/BLOCK15B_ESTIMATOR_DETAILS.json": "84e453957330397718f5c787cc675e89b19e2ab24c153255d3b9f7b01cbb9ee9",
+    "Vandenberg/results/analysis_block15/BLOCK15B_SYNTHETIC_CONTAMINATION.json": "406a1b93c2d6866abc11ee56234c0a16c807a6baabac7822c8098dbb0f19e42a",
+    "Vandenberg/results/analysis_block15/BLOCK15B_COMPARISON.png": "80d5faa2363cdf54d1e1f06e98152626da7612c2948bd5d61411a98d19b98894",
+    "Vandenberg/results/analysis_block15/BLOCK15B_FIXED_PEAK.png": "f4b9f17e169ca7dde8523e2dc4ce78260b2d5cad2b122da2d76f7a682f8e5b10",
+    "Vandenberg/results/analysis_block15/BLOCK15B_LAG_DEPENDENCE.png": "914eacb294ca28632e13f2527127b6edb3d3397509fe4626d45dfaed8cd7b230",
+    "Vandenberg/results/analysis_block15/BLOCK15B_MANIFEST.json": "b8d17ec934b73db29bf61c7990bf75e44ebdcb062fb8fddab93424bdf0a59887",
+    "Vandenberg/results/analysis_block15/BLOCK15B_DIAGNOSTICS.json": "c27ba6b24fd251ef31a201a43b1a95bf9ae653eee4ca127799821d9a8ca0edb4",
+    "Vandenberg/results/analysis_block15/BLOCK15B_VALID_BINS_AND_MIXTURE.png": "e8d5791f5faef92f4f6d419b36e170e0347f3b6509d2cf081432beb785340f4a",
+    "Vandenberg/results/analysis_block15/BLOCK15B_REPORT.md": "54dd55db25fd499eed96e33eb4323887d6696d4e16c5ad66a7327e3242bd2d25",
+    "Vandenberg/results/analysis_block15/BLOCK15B_DELIVERY_MANIFEST.json": "f31c57b957cd8a297bbce550f3a303a234771e95a4c0bafbc1489b67713e8bb0",
+    "Vandenberg/results/analysis_block15/BLOCK15C_ATTRITION_AUDIT.json": "4fc1e1bd6008e77dc611fe855ed17f46929d85e03950a5366d4d51a340c8a2f5",
+    "Vandenberg/results/analysis_block15/BLOCK15C_CONFIG.json": "78fbeec3b694c6501e56edf5b4ae056f3dfd92105110ea202edf494b591b35b7",
+    "Vandenberg/results/analysis_block15/BLOCK15C_RESULTS.csv": "3f52fe0efcb359fae95091d838ae502822f388e35ef99a00979e08deb6d1b5de",
+    "Vandenberg/results/analysis_block15/BLOCK15C_RESIDUALS.npz": "7db935c999a15be9ffbfcc189b0d64886133437e028b399cc74111a98c7ea74e",
+    "Vandenberg/results/analysis_block15/BLOCK15C_ANALYTIC_NOISELESS.json": "32a562d0bd167e74483abdc33f0c375407b3fc903c82041b47da7885756e2dae",
+    "Vandenberg/results/analysis_block15/BLOCK15C_EXAMPLES.json": "61219283211cba88f759ff2cc69cfa4764882c1714d76f03e481f1f59ab12d73",
+    "Vandenberg/results/analysis_block15/BLOCK15C_RUN_MANIFEST.json": "99e65b9da7d18a744e0d626f1a68bdf3ef44bbe6d944a1ca11806ab38a93fc5d",
+    "Vandenberg/results/analysis_block15/BLOCK15C_SUMMARY.json": "a2f5931dfd045bc4a8585ee4a25aacb1b5731df2f0970dcc617daac2e38b1cd3",
+    "Vandenberg/results/analysis_block15/BLOCK15C_AGGREGATES.csv": "407b27b95724e3c01232191f55a90a12da2dbecd817dc682910f40dace616e4b",
+    "Vandenberg/results/analysis_block15/BLOCK15C_BIAS_PHASE.png": "77fec6e0e0916afeb9e076c8a77691c248deecb74a931c3318cbc94b97d917e7",
+    "Vandenberg/results/analysis_block15/BLOCK15C_ACCEPTANCE.png": "e296e40a1443014127fc64d8b73807341970c2cab3250c37fa88d5ba6304b2f2",
+    "Vandenberg/results/analysis_block15/BLOCK15C_QUALITY_MSC.png": "98c38ebfcb0a6d04b1d08059003b089e72b260a839c110766d9c4eed929f1bcf",
+    "Vandenberg/results/analysis_block15/BLOCK15C_EXAMPLES.png": "2bf58738b222f7c2cac4aebd4f434dccbce2b5464fc3884561bba7b2b2e421a1",
+    "Vandenberg/results/analysis_block15/BLOCK15C_REPORT.md": "d683db23f679bcd18b81aaac27f2c34fae97c13a31cd543d42148d4b1acd75df",
+    "Vandenberg/results/analysis_block15/BLOCK15C_DELIVERY_MANIFEST.json": "8824ea2f3d43945d73e8ab4ed4d856d04a156fcf7301da2ce9a7286b94ed87c1",
+    "code/umbra_sar/frequency_comparison.py": "08d0c60f1374a39511fa5ce285cc9e60b937bb10378d4bc73b62ca0ecaa69d73",
+    "code/analyze_block12_phase_slope.py": "c2124a621c54820e5799a4fc1aaf88ae9887080092a6c3e7ec645675d98ad154"
+  },
+  "source_sha256": {
+    "code/analyze_block15d_static_offset.py": "2bab4d546f328510065bbd20ed195a400b08fbb36113e9719e5819fbd3dfe4ba",
+    "code/umbra_sar/static_offset_diagnostic.py": "9bb1038493d4d0ef4c48f6b51750787f2dd5982c0402eb8c6e66621a3e5e7d95",
+    "tests/test_static_offset_diagnostic.py": "ab52f695305f392143c4bb08599e7a5b68f8f0b88d055f654a040b6c94cbcf5b"
+  }
+}

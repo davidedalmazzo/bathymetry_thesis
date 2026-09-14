@@ -1,0 +1,11 @@
+{
+  "formation_and_conventions": "supported with limitations",
+  "kinematic_detection": "supported with limitations",
+  "slope_stability": "supported with limitations",
+  "single_component_identifiability": "not identifiable",
+  "buoy_comparison": "not identifiable",
+  "dispersion_interpretation": "not identifiable",
+  "depth_inversion": "not supported",
+  "overall": "usable only as a development stress test; not a physical validation scene",
+  "vandenberg_frozen": true
+}

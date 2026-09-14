@@ -1,0 +1,152 @@
+{
+  "fixed_peak": [
+    133,
+    65
+  ],
+  "delta_bin": {
+    "parallel_rad_m": 0.004363323129985824,
+    "perpendicular_rad_m": 0.00966643893412244
+  },
+  "window_metrics": [
+    {
+      "n": 288,
+      "alpha": 0.1,
+      "delta_bin": 0.003472222222222222,
+      "fwhm_power_bins": 0.9351322041170766,
+      "equivalent_lobe_width_bins": 1.0424006421102057,
+      "enbw_bins": 1.0424006421102063,
+      "first_minimum_bins": 1.0557861328125,
+      "exact_first_zero_defined": false,
+      "first_minimum_power": 2.340521104863825e-07,
+      "first_sidelobe_power": 0.046693017525829744,
+      "first_sidelobe_db": -13.307480589783669,
+      "main_lobe_energy_fraction": 0.9143287495748949,
+      "sidelobe_to_main_energy": 0.09369851977741794,
+      "axis": "parallel_row",
+      "delta_bin_rad_m": 0.004363323129985824,
+      "fwhm_power_rad_m": 0.004080283975818665,
+      "equivalent_lobe_width_rad_m": 0.004548330832431535
+    },
+    {
+      "n": 130,
+      "alpha": 0.1,
+      "delta_bin": 0.007692307692307693,
+      "fwhm_power_bins": 0.9391066507189935,
+      "equivalent_lobe_width_bins": 1.0468339331505947,
+      "enbw_bins": 1.0468339331505945,
+      "first_minimum_bins": 1.0607528686523438,
+      "exact_first_zero_defined": false,
+      "first_minimum_power": 1.0396572323831944e-09,
+      "first_sidelobe_power": 0.04669347617308295,
+      "first_sidelobe_db": -13.307437930944403,
+      "main_lobe_energy_fraction": 0.9143261941507647,
+      "sidelobe_to_main_energy": 0.09370157652413094,
+      "axis": "perpendicular_col",
+      "delta_bin_rad_m": 0.00966643893412244,
+      "fwhm_power_rad_m": 0.009077817091803402,
+      "equivalent_lobe_width_rad_m": 0.010119156288967436
+    }
+  ],
+  "measured_peak": {
+    "local_maxima_count": 8,
+    "fixed_is_local_maximum": true,
+    "nearest_secondary_distance_bins": 3.0,
+    "peak_to_strongest_neighbor_power_ratio": 1.2374492729703666,
+    "local_fwhm_power_bins": {
+      "parallel": 2.2228328938321056,
+      "perpendicular": 1.4519653955374139
+    },
+    "window_fwhm_power_bins": {
+      "parallel": 0.9351322041170766,
+      "perpendicular": 0.9391066507189935
+    },
+    "stable_fixed_maximum_look_count": 12,
+    "peak_slope": 0.412065649203119,
+    "peak_r2": 0.994455797996389,
+    "peak_endpoint_msc": 0.4168818419203573
+  },
+  "dependence": {
+    "neighborhood_bins": 169,
+    "window_covariance_effective_rank": 155.91060420724583,
+    "interpretation": "not independent bins; rank is a window-covariance diagnostic only"
+  },
+  "classification": {
+    "amplitude": "partially_separated",
+    "phase": "descriptive_only",
+    "temporal_slope": "descriptive_same-lobe comparison only",
+    "look_stability": "fixed candidate assessed; no reselection",
+    "overall": "not_identifiable_as_multiple_spatial_components"
+  },
+  "block15g_comparison": {
+    "real_nearest_secondary_over_delta_eff": 3.208102540787277,
+    "conclusion": "BP12 neighborhood is compared to 1- and 6-bin synthetic scenarios only dimensionlessly; it does not establish two waves."
+  },
+  "synthetic": [
+    {
+      "case": "single_isolated",
+      "declared_separation_bins": 0,
+      "secondary_amplitude_ratio": 0,
+      "local_maxima_count": 1,
+      "strongest_row": 133,
+      "strongest_col": 65,
+      "center_error_bins": 0.0,
+      "signed_slope_rad_s": 0.4000000000000001,
+      "r2": 1.0,
+      "phase_rmse_rad": 8.491573300505515e-16
+    },
+    {
+      "case": "two_separated_6_bins",
+      "declared_separation_bins": 6,
+      "secondary_amplitude_ratio": 0.7,
+      "local_maxima_count": 1,
+      "strongest_row": 133,
+      "strongest_col": 65,
+      "center_error_bins": 0.0,
+      "signed_slope_rad_s": 0.3998478698665184,
+      "r2": 0.9999868358877305,
+      "phase_rmse_rad": 0.009434865584737094
+    },
+    {
+      "case": "two_overlapped_1_bin",
+      "declared_separation_bins": 1,
+      "secondary_amplitude_ratio": 0.7,
+      "local_maxima_count": 1,
+      "strongest_row": 133,
+      "strongest_col": 65,
+      "center_error_bins": 0.0,
+      "signed_slope_rad_s": 0.4000497670060884,
+      "r2": 0.999978323962592,
+      "phase_rmse_rad": 0.012112978822601594
+    },
+    {
+      "case": "single_offgrid_window_broadened",
+      "declared_separation_bins": 0.5,
+      "secondary_amplitude_ratio": 0,
+      "local_maxima_count": 2,
+      "strongest_row": 133,
+      "strongest_col": 65,
+      "center_error_bins": 0.0,
+      "signed_slope_rad_s": 0.4000000000000001,
+      "r2": 1.0,
+      "phase_rmse_rad": 8.41868291085074e-16
+    },
+    {
+      "case": "weak_component_under_main_lobe",
+      "declared_separation_bins": 1.5,
+      "secondary_amplitude_ratio": 0.08,
+      "local_maxima_count": 1,
+      "strongest_row": 133,
+      "strongest_col": 65,
+      "center_error_bins": 0.0,
+      "signed_slope_rad_s": 0.3981185345737767,
+      "r2": 0.9999996433806005,
+      "phase_rmse_rad": 0.0015461699899288648
+    }
+  ],
+  "limitations": [
+    "BP12 grid spacing is not a measured radar PSF",
+    "window response is only the explicit Block15B Tukey factor, not full backprojection/SAR PSF",
+    "neighbor bins and 32 looks are dependent; no confidence interval from their scatter",
+    "no frequency, period, bathymetry or Q2 real fit was changed"
+  ]
+}

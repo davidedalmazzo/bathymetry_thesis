@@ -1,0 +1,20 @@
+quantity,status,sicd,cphd_bp,assessment
+available time,metadata,SICD processed 18.068061721 s,CPHD 22.540812513 s,kept distinct
+processed time,reconstructed,0.3206–17.7574 s for retained broad looks,full 0.003–22.544 s; matched to SICD kernels,partial match
+look centres,PVP-derived,"3.2429, 9.0365, 14.8323 s",kernel centroids reported in results,tolerance half BP bin
+look duration/shape,known plus unknown,~5.8 s explicit Tukey .25 on unknown SVA,0.7044 s boxes coherently projected to Tukey target,SVA prevents equivalence
+overlap,known,three final looks non-overlapping,basis and final looks non-overlapping apart from fractional bin support,matched
+pulses/support,reconstructed,28638 Doppler bins per historical look; pulses not exposed,"165924 total, per-bin counts in manifest",not equivalent quantities
+carrier/phase,known,"vendor PFA, Col.Sgn=-1; image complex retained before intensity",BP carrier +1 from CPHD FX phase history,numerical sign controls
+formation,known/unknown,vendor PFA+SVA; implementation/weights unavailable,"documented time-domain backprojection, no decimation",not equivalent
+projection/grid,reconstructed,SICD slant plane resampled through frozen EN Jacobian,"ground grid HAE -36.376 m, 5 m, 288x130",common output grid
+nominal/effective resolution,measured,native SICD high resolution; common FFT delta 2π/1440,5 m grid; lobe FWHM 2.223x1.452 bins,same analysis resolution
+ROI,frozen,Block7 1440x650 m common-centred ocean,same,matched
+detrend/window,fixed,global plane + Tukey .1 once,same,matched
+FFT/normalization,fixed,"fft2+fftshift, energy-normalized spatial window",same,matched
+cross smoothing/coherence,fixed,3x3 patch cross/auto MSC,same,matched; not single-bin coherence
+lobe/coefficient,frozen,nearest +k to lambda 130.6028 m,same physical +k; stored BP peak conjugated,no reselection
+regressor,fixed,"signed phase vs physical centre, free intercept",same,matched
+fit weights,assumed,equal look weights,equal look weights,matched
+validity,predeclared,protocol Level gates,same,deterministic
+land control,prior verified,"frozen slope +0.00605 rad/s, R2 .0193, not resolved",no existing BP land image,procedure-drift control only; unpaired

@@ -11,8 +11,7 @@
     "beta_sigma_ur_m": 1.5578500037245209,
     "azimuth_cutoff_m": 9.788260254191574,
     "sigma_ur_m_per_s": 0.019534169325699322,
-    "isotropic_slope_per_rad_per_m": -1.0008740011060888,
-    "interpretation": "9.8 m against 126-164 m expected for a full-aperture image. A 0.704 s sub-look largely defeats the cut-off: what blurs is the change of orbital velocity during the look, beta*sigma_ur*omega*T_i = 7.2 m, the same order as measured, not the total bunching displacement beta*sigma_ur = 24 m. The blurring form of velocity bunching is therefore not active here."
+    "isotropic_slope_per_rad_per_m": -1.0008740011060888
   },
   "fundamental": {
     "wavelength_m": 124.99999999999999,
@@ -43,38 +42,49 @@
     "slope_m_per_deg": 0.05363019181259452,
     "slope_standard_error_m_per_deg": 0.017420457142008558,
     "weighted_scatter_m": 1.1576725375260688,
-    "verdict": "anisotropo: la profondita' implicita dipende dall'angolo, compatibile con il velocity bunching",
-    "controlled_for_wavelength": {
-      "slope_m_per_deg": 0.0277,
-      "standard_error": 0.0587,
-      "significance_sigma": 0.5,
-      "verdict": "no evidence once lambda is controlled for; the apparent anisotropy in the uncontrolled fit came from the +0.387 correlation between angle and wavelength in the sample. Velocity bunching is not implicated."
-    }
+    "verdict": "anisotropo: la profondita' implicita dipende dall'angolo, compatibile con il velocity bunching"
   },
-  "model_comparison": {
-    "note": "Tre aumenti a un parametro sullo stesso numero di gradi di liberta', quattro finestre da 1500 m lungo il transetto.",
-    "A_current": {
-      "mean_depth_m": 16.96,
-      "correlation_with_dem": 0.718,
-      "parameter_m_per_s": -1.915,
-      "parameter_scatter": 0.48,
-      "mean_rms_rad_per_s": 0.0501
-    },
-    "B_wavenumber_scale": {
-      "mean_depth_m": 39.35,
-      "correlation_with_dem": 0.811,
-      "parameter": 1.613,
-      "parameter_scatter": 0.109,
-      "mean_rms_rad_per_s": 0.0465
-    },
-    "C_omega_scale": {
-      "mean_depth_m": 24.36,
-      "correlation_with_dem": 0.929,
-      "parameter": 0.789,
-      "parameter_scatter": 0.025,
-      "mean_rms_rad_per_s": 0.0465
-    },
-    "dem_mean_over_the_four_windows_m": 23.3,
-    "verdict": "C wins on every axis: lowest rms, tightest parameter (3.2 per cent against 25 for the current), highest correlation with the DEM, and a mean retrieved depth within 1.1 m of it. The discrepancy is a multiplicative bias on the measured phase rate, not a Doppler term."
+  "manual_annotations_unverified": {
+    "quarantined_utc": "2026-09-14T14:08:36.352347+00:00",
+    "reason": "These sections are present in the delivered JSON but are written by no script in code/. They were inserted by hand and cannot be reproduced or audited. They are preserved verbatim and moved here so that no downstream analysis can mistake them for script output.",
+    "known_conflict": "'anisotropy.controlled_for_wavelength' contradicts the script-written 'anisotropy.verdict'. The script's own value is left in place; the contradiction is unresolved.",
+    "must_be_regenerated_before_use": [
+      "model_comparison (this is where q = 0.789 lives)"
+    ],
+    "content": {
+      "azimuth_cutoff.interpretation": "9.8 m against 126-164 m expected for a full-aperture image. A 0.704 s sub-look largely defeats the cut-off: what blurs is the change of orbital velocity during the look, beta*sigma_ur*omega*T_i = 7.2 m, the same order as measured, not the total bunching displacement beta*sigma_ur = 24 m. The blurring form of velocity bunching is therefore not active here.",
+      "anisotropy.controlled_for_wavelength": {
+        "slope_m_per_deg": 0.0277,
+        "standard_error": 0.0587,
+        "significance_sigma": 0.5,
+        "verdict": "no evidence once lambda is controlled for; the apparent anisotropy in the uncontrolled fit came from the +0.387 correlation between angle and wavelength in the sample. Velocity bunching is not implicated."
+      },
+      "model_comparison": {
+        "note": "Tre aumenti a un parametro sullo stesso numero di gradi di liberta', quattro finestre da 1500 m lungo il transetto.",
+        "A_current": {
+          "mean_depth_m": 16.96,
+          "correlation_with_dem": 0.718,
+          "parameter_m_per_s": -1.915,
+          "parameter_scatter": 0.48,
+          "mean_rms_rad_per_s": 0.0501
+        },
+        "B_wavenumber_scale": {
+          "mean_depth_m": 39.35,
+          "correlation_with_dem": 0.811,
+          "parameter": 1.613,
+          "parameter_scatter": 0.109,
+          "mean_rms_rad_per_s": 0.0465
+        },
+        "C_omega_scale": {
+          "mean_depth_m": 24.36,
+          "correlation_with_dem": 0.929,
+          "parameter": 0.789,
+          "parameter_scatter": 0.025,
+          "mean_rms_rad_per_s": 0.0465
+        },
+        "dem_mean_over_the_four_windows_m": 23.3,
+        "verdict": "C wins on every axis: lowest rms, tightest parameter (3.2 per cent against 25 for the current), highest correlation with the DEM, and a mean retrieved depth within 1.1 m of it. The discrepancy is a multiplicative bias on the measured phase rate, not a Doppler term."
+      }
+    }
   }
 }

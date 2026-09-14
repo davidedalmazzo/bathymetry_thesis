@@ -1,0 +1,340 @@
+{
+  "created_utc": "2026-09-12T18:55:25.185220+00:00",
+  "scope": "synthetic intensity-Fourier coefficients only; no real Q2 fit",
+  "times_s": [
+    0.35534731021679306,
+    1.0594467117244886,
+    1.7640630592920856,
+    2.468421666797467,
+    3.1728251227943534,
+    3.877221614341054,
+    4.581661492648942,
+    5.285875697421171,
+    5.981358516737581,
+    6.673092111757255,
+    7.454959389028045,
+    8.103828571296772,
+    8.807830167977738,
+    9.512258919147037,
+    10.216818173596259,
+    10.921192327154111,
+    11.625467205567096,
+    12.330642284515333,
+    13.034391449393052,
+    13.738752659938974,
+    14.443135563070486,
+    15.147523617335098,
+    15.851900022832075,
+    16.55631466498902,
+    17.260750170310914,
+    17.96512155868652,
+    18.669477690902895,
+    19.373934429971314,
+    20.07833817183934,
+    20.782669142875065,
+    21.4870420017982,
+    22.191503827842272
+  ],
+  "shape": [
+    288,
+    130
+  ],
+  "dominant_mode": [
+    133.0,
+    65.0
+  ],
+  "patch_modes": [
+    [
+      127.0,
+      64.0
+    ],
+    [
+      127.0,
+      65.0
+    ],
+    [
+      127.0,
+      66.0
+    ],
+    [
+      128.0,
+      64.0
+    ],
+    [
+      128.0,
+      65.0
+    ],
+    [
+      128.0,
+      66.0
+    ],
+    [
+      129.0,
+      64.0
+    ],
+    [
+      129.0,
+      65.0
+    ],
+    [
+      129.0,
+      66.0
+    ],
+    [
+      130.0,
+      64.0
+    ],
+    [
+      130.0,
+      65.0
+    ],
+    [
+      130.0,
+      66.0
+    ],
+    [
+      131.0,
+      64.0
+    ],
+    [
+      131.0,
+      65.0
+    ],
+    [
+      131.0,
+      66.0
+    ],
+    [
+      132.0,
+      64.0
+    ],
+    [
+      132.0,
+      65.0
+    ],
+    [
+      132.0,
+      66.0
+    ],
+    [
+      133.0,
+      64.0
+    ],
+    [
+      133.0,
+      65.0
+    ],
+    [
+      133.0,
+      66.0
+    ],
+    [
+      134.0,
+      64.0
+    ],
+    [
+      134.0,
+      65.0
+    ],
+    [
+      134.0,
+      66.0
+    ],
+    [
+      135.0,
+      64.0
+    ],
+    [
+      135.0,
+      65.0
+    ],
+    [
+      135.0,
+      66.0
+    ],
+    [
+      136.0,
+      64.0
+    ],
+    [
+      136.0,
+      65.0
+    ],
+    [
+      136.0,
+      66.0
+    ],
+    [
+      137.0,
+      64.0
+    ],
+    [
+      137.0,
+      65.0
+    ],
+    [
+      137.0,
+      66.0
+    ],
+    [
+      138.0,
+      64.0
+    ],
+    [
+      138.0,
+      65.0
+    ],
+    [
+      138.0,
+      66.0
+    ],
+    [
+      139.0,
+      64.0
+    ],
+    [
+      139.0,
+      65.0
+    ],
+    [
+      139.0,
+      66.0
+    ],
+    [
+      140.0,
+      64.0
+    ],
+    [
+      140.0,
+      65.0
+    ],
+    [
+      140.0,
+      66.0
+    ],
+    [
+      141.0,
+      64.0
+    ],
+    [
+      141.0,
+      65.0
+    ],
+    [
+      141.0,
+      66.0
+    ]
+  ],
+  "transfer_scenario": {
+    "period_s": 13.33,
+    "depth_m": 10.0,
+    "source": "Block15F diagnostic scenario; supplied to geometry-informed fit only"
+  },
+  "bounds": [
+    -1.0,
+    1.0
+  ],
+  "grid_size": 31,
+  "noise": {
+    "SNR_dominant": 10.0,
+    "tau_s": [
+      0.0,
+      5.0
+    ],
+    "definition": "sigma=1/SNR times dominant complex coefficient at its template peak; proper complex noise, temporal OU and spatial covariance from BP12 Tukey-window-squared DFT",
+    "seed_calibration": 150700,
+    "seed_evaluation": 150701
+  },
+  "calibration": [
+    {
+      "name": "single_constant",
+      "kind": "single",
+      "transfer": "constant",
+      "replicates": 12,
+      "tau": 0.0
+    },
+    {
+      "name": "single_geometry",
+      "kind": "single",
+      "transfer": "geometry",
+      "replicates": 12,
+      "tau": 5.0
+    },
+    {
+      "name": "static_offset",
+      "kind": "offset",
+      "transfer": "geometry",
+      "replicates": 12,
+      "tau": 5.0,
+      "offset_ratio": 0.5
+    }
+  ],
+  "evaluation": [
+    {
+      "name": "stress_unresolved",
+      "kind": "two",
+      "spatial_delta": 0.25,
+      "delta_s": 0.023,
+      "ratio": 0.7,
+      "phase": 0.0,
+      "tau": 0.0,
+      "replicates": 12,
+      "physical": false
+    },
+    {
+      "name": "stress_temporal",
+      "kind": "two",
+      "spatial_delta": 3.0,
+      "delta_s": 0.138,
+      "ratio": 0.7,
+      "phase": 1.57079632679,
+      "tau": 0.0,
+      "replicates": 12,
+      "physical": false
+    },
+    {
+      "name": "physical_overlap",
+      "kind": "physical",
+      "spatial_delta": 1.0,
+      "ratio": 0.7,
+      "phase": 0.0,
+      "tau": 5.0,
+      "replicates": 12,
+      "physical": true
+    },
+    {
+      "name": "physical_separable",
+      "kind": "physical",
+      "spatial_delta": 6.0,
+      "ratio": 0.7,
+      "phase": 1.57079632679,
+      "tau": 0.0,
+      "replicates": 12,
+      "physical": true
+    },
+    {
+      "name": "physical_weak_persistent",
+      "kind": "physical",
+      "spatial_delta": 6.0,
+      "ratio": 0.3,
+      "phase": 0.0,
+      "tau": 5.0,
+      "replicates": 12,
+      "physical": true
+    }
+  ],
+  "selection_rule": "After separate calibration, threshold=max(0.10, empirical 95th percentile of Q2-vs-best(Q0,Q1) purged predictive gain across calibration; Q2 selected only above threshold and no boundary, no alternative grid minimum within 1% SSE, and |s1-s2|>0.02 rad/s. Recovery pair error <= min(0.03,0.25*true separation), labels interchangeable.",
+  "guard_sha256": {
+    "Vandenberg/results/analysis_block15/BLOCK15F_CONFIG.json": "105242285f8d5ed2bdd8a5c4610ae056d1dfb6f3fbcc7eedc03ce27f119e99ad",
+    "Vandenberg/results/analysis_block15/BLOCK15F_RESULTS.json": "19e84db9e874a8f49c8167f0fd4b83fb9c23a9caebc36e8218d96aa7241d228c",
+    "Vandenberg/results/analysis_block15/BLOCK15F_GEOMETRY.json": "771dc44821dad6b3bd36fc70471f4108adb63527707ef1cd2049dfa9afbd91de",
+    "Vandenberg/results/analysis_block15/BLOCK15F_REPORT.md": "0e79f8cdd4cf2762ece3d49976b2b8e4f224212b004043bb97f6acd5465a5193",
+    "Vandenberg/results/analysis_block15/BLOCK15D_CONFIG.json": "2bb9a790572c67e5c371a5c48b21ea97b34fc0f70a86d0d06c9904edc12fbebb",
+    "Vandenberg/results/analysis_block15/BLOCK15E_CONFIG.json": "d42b598b4e72054fa2f9c85afb86e1beb3a1b7d2ea137bf231048711ffdb610b"
+  },
+  "source_sha256": {
+    "code/analyze_block15g_separability.py": "5d88a652af391ef9786198f7ba2b52869a34201923a33b2e665883bfff106a25",
+    "code/umbra_sar/two_component_separability.py": "0bd136095db216093ed1c1ed4dc0794d5177df97ca4b750074522133098d006a",
+    "tests/test_two_component_separability.py": "18c7056227f233e45cc6a9d495dd38b442732c5bf3906e7413158ed7573942e8"
+  }
+}

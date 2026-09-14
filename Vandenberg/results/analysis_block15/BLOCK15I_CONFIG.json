@@ -1,0 +1,111 @@
+{
+  "scope": "synthetic intensity-Fourier coefficients only; no real classifier or correction",
+  "times_s": [
+    0.35534731021679306,
+    1.0594467117244886,
+    1.7640630592920856,
+    2.468421666797467,
+    3.1728251227943534,
+    3.877221614341054,
+    4.581661492648942,
+    5.285875697421171,
+    5.981358516737581,
+    6.673092111757255,
+    7.454959389028045,
+    8.103828571296772,
+    8.807830167977738,
+    9.512258919147037,
+    10.216818173596259,
+    10.921192327154111,
+    11.625467205567096,
+    12.330642284515333,
+    13.034391449393052,
+    13.738752659938974,
+    14.443135563070486,
+    15.147523617335098,
+    15.851900022832075,
+    16.55631466498902,
+    17.260750170310914,
+    17.96512155868652,
+    18.669477690902895,
+    19.373934429971314,
+    20.07833817183934,
+    20.782669142875065,
+    21.4870420017982,
+    22.191503827842272
+  ],
+  "shape": [
+    288,
+    130
+  ],
+  "peak": [
+    133.0,
+    65.0
+  ],
+  "patch_rows": [
+    125,
+    142
+  ],
+  "patch_cols": [
+    62,
+    69
+  ],
+  "window": "same BP12 Tukey alpha .1 response; no extra observed-FWHM blur",
+  "transfer": "Block15F T13_depth10 geometry not applied: constant-H control selected before results because persistent B terms have no wave MTF",
+  "noise": {
+    "snr": 10,
+    "tau_s": [
+      0,
+      5
+    ],
+    "seed_calibration": 150900,
+    "seed_evaluation": 150901
+  },
+  "families": {
+    "A": "finite spatial-band propagating system: three modes with finite-depth-like ordered slopes; no static additive term",
+    "B": "one propagating primary plus nearby static or OU-slow coefficient; persistent term has unit observation operator, not wave MTF"
+  },
+  "separations": {
+    "radial_bins": [
+      2.223,
+      3.0
+    ],
+    "tangential_bins": [
+      1.452
+    ],
+    "observed_fwhm_scales": "Block15H descriptive scales only"
+  },
+  "amplitude_ratios": [
+    0.3,
+    0.7,
+    1.0
+  ],
+  "conditional_power_ratio": 0.705,
+  "calibration": {
+    "replicates": 8,
+    "radial_bin": 2.223,
+    "ratios": [
+      0.3,
+      0.7
+    ],
+    "families": [
+      "A",
+      "B_static",
+      "B_slow"
+    ]
+  },
+  "evaluation": {
+    "replicates": 8,
+    "radial_bin": 3.0,
+    "ratio": 1.0,
+    "include_tangential": true
+  },
+  "rule": "Block15I persistent-score: |amplitude-correlation|>=0.85 AND M1 predictive gain>=0.10; calibrated only on calibration sequences; otherwise indeterminate",
+  "guard_sha256": {
+    "Vandenberg/results/analysis_block15/BLOCK15H_DELIVERY_MANIFEST.json": "a133c4bfd712858036989c57f398a59f012f12c53d9198f43f8f20397eeb95a8",
+    "Vandenberg/results/analysis_block15/BLOCK15G_DELIVERY_MANIFEST.json": "3be670c9458146e2b897afebc991683de2e547ae5375d66e450100a3c1b80d88",
+    "Vandenberg/results/analysis_block15/BLOCK15F_CONFIG.json": "105242285f8d5ed2bdd8a5c4610ae056d1dfb6f3fbcc7eedc03ce27f119e99ad",
+    "Vandenberg/results/analysis_block15/BLOCK15B_CONFIG.json": "55b657d8d570ecc195fa62d494b55b7da46a56a63eb02a609b918021055ac752",
+    "Vandenberg/results/analysis_block15/BLOCK15E_CONFIG.json": "d42b598b4e72054fa2f9c85afb86e1beb3a1b7d2ea137bf231048711ffdb610b"
+  }
+}

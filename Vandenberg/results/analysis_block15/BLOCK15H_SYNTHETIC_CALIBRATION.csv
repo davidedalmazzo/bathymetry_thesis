@@ -1,0 +1,6 @@
+case,declared_separation_bins,secondary_amplitude_ratio,local_maxima_count,strongest_row,strongest_col,center_error_bins,signed_slope_rad_s,r2,phase_rmse_rad
+single_isolated,0,0,1,133,65,0.0,0.4000000000000001,1.0,8.491573300505515e-16
+two_separated_6_bins,6,0.7,1,133,65,0.0,0.3998478698665184,0.9999868358877305,0.009434865584737094
+two_overlapped_1_bin,1,0.7,1,133,65,0.0,0.4000497670060884,0.999978323962592,0.012112978822601594
+single_offgrid_window_broadened,0.5,0,2,133,65,0.0,0.4000000000000001,1.0,8.41868291085074e-16
+weak_component_under_main_lobe,1.5,0.08,1,133,65,0.0,0.3981185345737767,0.9999996433806005,0.0015461699899288648

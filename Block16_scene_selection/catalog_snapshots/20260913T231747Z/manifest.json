@@ -1,0 +1,26 @@
+{
+  "acquisition_table_sha256": "dc49010362b29e64e15d77db3e6d007ef8e4f0ded6f81c259cf86cd3ca3bddb8",
+  "cache_sources": [
+    "Block16_scene_selection\\catalog_snapshots\\20260913T230209Z\\sidecars.jsonl.gz"
+  ],
+  "completed_utc": "2026-09-13T23:19:02.889725+00:00",
+  "config_sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5",
+  "endpoint": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/",
+  "error_count": 0,
+  "incomplete_fail_closed": false,
+  "listed_sidecar_count": 12542,
+  "listing_sha256": "3c5b9c11b1540cbc6b790a3130abf1655e6125c0e3345f6cbdea2d9639949352",
+  "metadata_bytes_downloaded": 38323954,
+  "object_count": 94929,
+  "parsed_sidecar_count": 12542,
+  "prefix": "sar-data/",
+  "processing_count": 12542,
+  "processing_table_sha256": "c94adc24b7c1c782d21f3fa5a919d81094c300855c1df6fadd2af444ae8ef30a",
+  "request_url_count": 95,
+  "schema_version": "block16a-canonical-catalog-1.0.0",
+  "sidecars_sha256": "32b514487637737f5f8544054e27491fcf80a72802a994d3b79781b47fd885a0",
+  "snapshot_identity_sha256": "ffaf387ef05908562540e86ec31b4ccc03fc4bbc05112a3db114aade9085d168",
+  "started_utc": "2026-09-13T23:17:47.825686+00:00",
+  "status": "complete",
+  "unique_acquisition_count": 10140
+}

@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-09-12T18:14:26.941586+00:00",
+  "scope": "PVP-only geometry; limited linear intensity-coefficient transfer; no radar signal read",
+  "fixed_peak": {
+    "index": [
+      133,
+      65
+    ],
+    "kx_rad_m": -0.04799655442984407,
+    "ky_rad_m": 0.0,
+    "convention": "FFT of linearly detrended BP12 intensity; first grid axis kx, second ky; selected representative not reselected"
+  },
+  "surface_grid": {
+    "shape": [
+      288,
+      130
+    ],
+    "spacing_m": 5.0,
+    "length_parallel_m": 1440.0,
+    "length_perpendicular_m": 650.0,
+    "bearing_deg": 79.8357237,
+    "center_easting_northing_m": [
+      715510.6102416331,
+      3827627.093742074
+    ],
+    "utm_zone": 10,
+    "surface_hae_m": -36.376,
+    "pixel_count": 37440
+  },
+  "look_edges_s": [
+    0.0029798746666666667,
+    0.707379757,
+    1.4117796393333333,
+    2.1161795216666666,
+    2.8205794039999996,
+    3.5249792863333327,
+    4.229379168666667,
+    4.933779051,
+    5.638178933333333,
+    6.342578815666666,
+    7.046978697999999,
+    7.751378580333333,
+    8.455778462666666,
+    9.160178344999999,
+    9.864578227333332,
+    10.568978109666665,
+    11.273377991999999,
+    11.977777874333333,
+    12.682177756666665,
+    13.386577638999999,
+    14.09097752133333,
+    14.795377403666665,
+    15.499777285999999,
+    16.204177168333334,
+    16.90857705066667,
+    17.612976933,
+    18.317376815333333,
+    19.021776697666667,
+    19.72617658,
+    20.430576462333335,
+    21.134976344666665,
+    21.839376227,
+    22.543776109333333
+  ],
+  "representative_time": "exact arithmetic mean TxTime of pulses assigned to look",
+  "transfer_scenarios": [
+    {
+      "name": "T13_depth5",
+      "period_s": 13.33,
+      "depth_m": 5.0,
+      "tilt_scale": 1.0
+    },
+    {
+      "name": "T13_depth10",
+      "period_s": 13.33,
+      "depth_m": 10.0,
+      "tilt_scale": 1.0
+    },
+    {
+      "name": "T13_depth20",
+      "period_s": 13.33,
+      "depth_m": 20.0,
+      "tilt_scale": 1.0
+    },
+    {
+      "name": "T17p902_depth10",
+      "period_s": 17.902230457,
+      "depth_m": 10.0,
+      "tilt_scale": 1.0
+    }
+  ],
+  "model": "H=T_t+T_vb; T_h=0 because no locally verified X-band hydrodynamic/relaxation MTF. T_vb is density/Jacobian only, no separate displacement/shift MTF.",
+  "external_period_note": "13.33 s is a diagnostic association hypothesis only; 17.902230457 s remains frozen SAR-only value, neither calibrates parameters.",
+  "guard_sha256": {
+    "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json": "f57663c67966c79a37bf0179350835ebc5ce31d3b817908e58ae176750b614c6",
+    "Vandenberg/metadata/CPHD_METADATA.json": "a06713dbd07b6b801f0872bfcf42c9643a909cdb99a03802bda620708373ec52",
+    "Vandenberg/results/analysis_block15/BLOCK15D_CONFIG.json": "2bb9a790572c67e5c371a5c48b21ea97b34fc0f70a86d0d06c9904edc12fbebb",
+    "Vandenberg/results/analysis_block15/BLOCK15D_RESULTS.json": "98f46489b8f3972e35ab3edca714a4fe71a395698205c9d399ec240609ca9d5f",
+    "Vandenberg/results/analysis_block15/BLOCK15E_CONFIG.json": "d42b598b4e72054fa2f9c85afb86e1beb3a1b7d2ea137bf231048711ffdb610b",
+    "Vandenberg/results/analysis_block15/BLOCK15E_REPORT.md": "6a30ae7fb67aca82e43f02f28b744d92ef18e2b2c56a337f429cdf54340a346e",
+    "code/umbra_sar/backprojection.py": "2a7e8a8b85cbd221379eeb26fff2567b73f65c974a6bb7149b90e1f78e380171",
+    "code/umbra_sar/ocean_sar_forward.py": "b6a163845618711e017583a26ca63af5b3c5850726860d471c476e97b8655cc8",
+    "code/analyze_block10_ocean_sar_forward.py": "bbb759da5438a594603ec8cbe25829b696c7fd48fc20ad81ae3c29e6eacd9f04"
+  },
+  "source_sha256": {
+    "code/analyze_block15f_look_geometry.py": "06a84eef08f5cbc56713868ffd90cd39787b251c3612ed6ab97c64914cc6f986",
+    "code/umbra_sar/look_transfer_geometry.py": "49623db86501772a94b7a754d3a808e9dd01e36be0434b55ffb1b3f1d0cd8a19",
+    "tests/test_look_transfer_geometry.py": "45b5ed14409eb0cd10053d9c7e9d13e48ad8c2d06fe193f7967c4f7e465840e7"
+  }
+}

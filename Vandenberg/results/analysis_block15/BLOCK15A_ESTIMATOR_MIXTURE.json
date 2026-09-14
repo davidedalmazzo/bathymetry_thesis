@@ -1,0 +1,364 @@
+{
+  "generated_utc": "2026-09-14T14:03:51.516430+00:00",
+  "scope": "Estimator behaviour on two and many unresolved components, using the measured sub-look times. Closes the gap left by CHECKPOINT_9, whose realism variants all carry one omega.",
+  "look_times_s": [
+    0.35534731021679306,
+    1.0594467117244886,
+    1.7640630592920856,
+    2.468421666797467,
+    3.1728251227943534,
+    3.877221614341054,
+    4.581661492648942,
+    5.285875697421171,
+    5.981358516737581,
+    6.673092111757255,
+    7.454959389028045,
+    8.103828571296772,
+    8.807830167977738,
+    9.512258919147037,
+    10.216818173596259,
+    10.921192327154111,
+    11.625467205567096,
+    12.330642284515333,
+    13.034391449393052,
+    13.738752659938974,
+    14.443135563070486,
+    15.147523617335098,
+    15.851900022832075,
+    16.55631466498902,
+    17.260750170310914,
+    17.96512155868652,
+    18.669477690902895,
+    19.373934429971314,
+    20.07833817183934,
+    20.782669142875065,
+    21.4870420017982,
+    22.191503827842272
+  ],
+  "reference_look_index": 16,
+  "span_s": 21.83615651762548,
+  "beat_period_s": 100.00751219512193,
+  "beat_cycles_observed": 0.21834516266159634,
+  "deterministic_sweep": [
+    {
+      "amplitude_ratio": 0.0,
+      "relative_phase_rad": 0.0,
+      "omega_rad_per_s": 0.47135673722277455,
+      "period_s": 13.330000000000004,
+      "r_squared": 1.0,
+      "residual_rmse_rad": 1.0379620469411296e-15,
+      "envelope_min_over_max": 0.9999999999999997
+    },
+    {
+      "amplitude_ratio": 0.0,
+      "relative_phase_rad": 1.5707963267948966,
+      "omega_rad_per_s": 0.47135673722277455,
+      "period_s": 13.330000000000004,
+      "r_squared": 1.0,
+      "residual_rmse_rad": 1.0379620469411296e-15,
+      "envelope_min_over_max": 0.9999999999999997
+    },
+    {
+      "amplitude_ratio": 0.0,
+      "relative_phase_rad": 3.141592653589793,
+      "omega_rad_per_s": 0.47135673722277455,
+      "period_s": 13.330000000000004,
+      "r_squared": 1.0,
+      "residual_rmse_rad": 1.0379620469411296e-15,
+      "envelope_min_over_max": 0.9999999999999997
+    },
+    {
+      "amplitude_ratio": 0.0,
+      "relative_phase_rad": 4.71238898038469,
+      "omega_rad_per_s": 0.47135673722277455,
+      "period_s": 13.330000000000004,
+      "r_squared": 1.0,
+      "residual_rmse_rad": 1.0379620469411296e-15,
+      "envelope_min_over_max": 0.9999999999999997
+    },
+    {
+      "amplitude_ratio": 0.25,
+      "relative_phase_rad": 0.0,
+      "omega_rad_per_s": 0.4607408778897068,
+      "period_s": 13.637134469070638,
+      "r_squared": 0.9999963309197145,
+      "residual_rmse_rad": 0.005739557788795163,
+      "envelope_min_over_max": 0.8580601775900181
+    },
+    {
+      "amplitude_ratio": 0.25,
+      "relative_phase_rad": 1.5707963267948966,
+      "omega_rad_per_s": 0.4615772101842985,
+      "period_s": 13.612425328951655,
+      "r_squared": 0.999994253524075,
+      "residual_rmse_rad": 0.007195959075667195,
+      "envelope_min_over_max": 0.83101104121375
+    },
+    {
+      "amplitude_ratio": 0.25,
+      "relative_phase_rad": 3.141592653589793,
+      "omega_rad_per_s": 0.48276815011678853,
+      "period_s": 13.014912656643968,
+      "r_squared": 0.9999511295824951,
+      "residual_rmse_rad": 0.02194898949774669,
+      "envelope_min_over_max": 0.7597656224133025
+    },
+    {
+      "amplitude_ratio": 0.25,
+      "relative_phase_rad": 4.71238898038469,
+      "omega_rad_per_s": 0.47996898255446163,
+      "period_s": 13.090815314230516,
+      "r_squared": 0.9999475032866113,
+      "residual_rmse_rad": 0.022616891415964468,
+      "envelope_min_over_max": 0.7364961703340482
+    },
+    {
+      "amplitude_ratio": 0.5,
+      "relative_phase_rad": 0.0,
+      "omega_rad_per_s": 0.45202669781191185,
+      "period_s": 13.90003143087362,
+      "r_squared": 0.9999971792850604,
+      "residual_rmse_rad": 0.004937266629077467,
+      "envelope_min_over_max": 0.7960484775624135
+    },
+    {
+      "amplitude_ratio": 0.5,
+      "relative_phase_rad": 1.5707963267948966,
+      "omega_rad_per_s": 0.4527695118252514,
+      "period_s": 13.877227028494385,
+      "r_squared": 0.9999952047181818,
+      "residual_rmse_rad": 0.0064480376916000275,
+      "envelope_min_over_max": 0.7545938135558303
+    },
+    {
+      "amplitude_ratio": 0.5,
+      "relative_phase_rad": 3.141592653589793,
+      "omega_rad_per_s": 0.4915698879178993,
+      "period_s": 12.78187590739689,
+      "r_squared": 0.9994857447811716,
+      "residual_rmse_rad": 0.07251512608480246,
+      "envelope_min_over_max": 0.48262943724699675
+    },
+    {
+      "amplitude_ratio": 0.5,
+      "relative_phase_rad": 4.71238898038469,
+      "omega_rad_per_s": 0.4830474051680067,
+      "period_s": 13.007388591590214,
+      "r_squared": 0.9996092264540528,
+      "residual_rmse_rad": 0.06211256820453363,
+      "envelope_min_over_max": 0.4650817104993757
+    },
+    {
+      "amplitude_ratio": 0.75,
+      "relative_phase_rad": 0.0,
+      "omega_rad_per_s": 0.4452133456898724,
+      "period_s": 14.112751488712874,
+      "r_squared": 0.9999992933174388,
+      "residual_rmse_rad": 0.0024340124658453273,
+      "envelope_min_over_max": 0.772211349738364
+    },
+    {
+      "amplitude_ratio": 0.75,
+      "relative_phase_rad": 1.5707963267948966,
+      "omega_rad_per_s": 0.4455846878180698,
+      "period_s": 14.100990179772475,
+      "r_squared": 0.9999987539624378,
+      "residual_rmse_rad": 0.003234732554378112,
+      "envelope_min_over_max": 0.724663435687845
+    },
+    {
+      "amplitude_ratio": 0.75,
+      "relative_phase_rad": 3.141592653589793,
+      "omega_rad_per_s": 0.4896925702117281,
+      "period_s": 12.830877349155879,
+      "r_squared": 0.9976857851134403,
+      "residual_rmse_rad": 0.1533807112338507,
+      "envelope_min_over_max": 0.2200019590551236
+    },
+    {
+      "amplitude_ratio": 0.75,
+      "relative_phase_rad": 4.71238898038469,
+      "omega_rad_per_s": 0.4729306241756699,
+      "period_s": 13.285638497467442,
+      "r_squared": 0.9991279152874821,
+      "residual_rmse_rad": 0.0908674855650246,
+      "envelope_min_over_max": 0.2369147475112218
+    },
+    {
+      "amplitude_ratio": 0.96,
+      "relative_phase_rad": 0.0,
+      "omega_rad_per_s": 0.4406990384836613,
+      "period_s": 14.257315670119239,
+      "r_squared": 0.9999999843733958,
+      "residual_rmse_rad": 0.0003582751584223,
+      "envelope_min_over_max": 0.7668577303020538
+    },
+    {
+      "amplitude_ratio": 0.96,
+      "relative_phase_rad": 1.5707963267948966,
+      "omega_rad_per_s": 0.440753877776974,
+      "period_s": 14.255541752394842,
+      "r_squared": 0.9999999721820512,
+      "residual_rmse_rad": 0.00047808044817496646,
+      "envelope_min_over_max": 0.717892833434571
+    },
+    {
+      "amplitude_ratio": 0.96,
+      "relative_phase_rad": 3.141592653589793,
+      "omega_rad_per_s": 0.459577142704706,
+      "period_s": 13.671666241279425,
+      "r_squared": 0.997291759811749,
+      "residual_rmse_rad": 0.15575183708392829,
+      "envelope_min_over_max": 0.03621982830489882
+    },
+    {
+      "amplitude_ratio": 0.96,
+      "relative_phase_rad": 4.71238898038469,
+      "omega_rad_per_s": 0.4464044760325793,
+      "period_s": 14.075094772842352,
+      "r_squared": 0.9999231834643513,
+      "residual_rmse_rad": 0.025445727001495173,
+      "envelope_min_over_max": 0.12938595826850105
+    },
+    {
+      "amplitude_ratio": 1.0,
+      "relative_phase_rad": 0.0,
+      "omega_rad_per_s": 0.43994317053530096,
+      "period_s": 14.281811215604321,
+      "r_squared": 1.0,
+      "residual_rmse_rad": 6.933340566559918e-16,
+      "envelope_min_over_max": 0.7667457987883106
+    },
+    {
+      "amplitude_ratio": 1.0,
+      "relative_phase_rad": 1.5707963267948966,
+      "omega_rad_per_s": 0.43994317053530096,
+      "period_s": 14.281811215604321,
+      "r_squared": 1.0,
+      "residual_rmse_rad": 7.054504218084087e-16,
+      "envelope_min_over_max": 0.7177510774091027
+    },
+    {
+      "amplitude_ratio": 1.0,
+      "relative_phase_rad": 3.141592653589793,
+      "omega_rad_per_s": 0.43994317053530096,
+      "period_s": 14.281811215604321,
+      "r_squared": 1.0,
+      "residual_rmse_rad": 5.900916318210353e-16,
+      "envelope_min_over_max": 0.017386849519347224
+    },
+    {
+      "amplitude_ratio": 1.0,
+      "relative_phase_rad": 4.71238898038469,
+      "omega_rad_per_s": 0.43994317053530096,
+      "period_s": 14.281811215604321,
+      "r_squared": 1.0,
+      "residual_rmse_rad": 9.654792038585928e-16,
+      "envelope_min_over_max": 0.12610564714046393
+    },
+    {
+      "amplitude_ratio": 1.5,
+      "relative_phase_rad": 0.0,
+      "omega_rad_per_s": 0.43259323310845815,
+      "period_s": 14.524465077807376,
+      "r_squared": 0.9999986173103276,
+      "residual_rmse_rad": 0.0033081459729960012,
+      "envelope_min_over_max": 0.7774221036037837
+    },
+    {
+      "amplitude_ratio": 1.5,
+      "relative_phase_rad": 1.5707963267948966,
+      "omega_rad_per_s": 0.4320901111232408,
+      "period_s": 14.54137723922012,
+      "r_squared": 0.9999975713084822,
+      "residual_rmse_rad": 0.004379286070506431,
+      "envelope_min_over_max": 0.7312357778269964
+    },
+    {
+      "amplitude_ratio": 1.5,
+      "relative_phase_rad": 3.141592653589793,
+      "omega_rad_per_s": 0.3874993818636058,
+      "period_s": 16.21469762599822,
+      "r_squared": 0.9975645903753324,
+      "residual_rmse_rad": 0.12451704163124146,
+      "envelope_min_over_max": 0.3034527000148597
+    },
+    {
+      "amplitude_ratio": 1.5,
+      "relative_phase_rad": 4.71238898038469,
+      "omega_rad_per_s": 0.4014443323436839,
+      "period_s": 15.65144853458894,
+      "r_squared": 0.9988914586750377,
+      "residual_rmse_rad": 0.08697299149270087,
+      "envelope_min_over_max": 0.30527881030978343
+    },
+    {
+      "amplitude_ratio": 2.0,
+      "relative_phase_rad": 0.0,
+      "omega_rad_per_s": 0.4278596432586901,
+      "period_s": 14.685155298417996,
+      "r_squared": 0.9999968516386001,
+      "residual_rmse_rad": 0.004937266629077553,
+      "envelope_min_over_max": 0.7960484775624136
+    },
+    {
+      "amplitude_ratio": 2.0,
+      "relative_phase_rad": 1.5707963267948966,
+      "omega_rad_per_s": 0.42711682924535055,
+      "period_s": 14.710694772390505,
+      "r_squared": 0.9999946114134786,
+      "residual_rmse_rad": 0.006448037691600411,
+      "envelope_min_over_max": 0.7545938135558304
+    },
+    {
+      "amplitude_ratio": 2.0,
+      "relative_phase_rad": 3.141592653589793,
+      "omega_rad_per_s": 0.38831645315270263,
+      "period_s": 16.180579669408882,
+      "r_squared": 0.9991761595245954,
+      "residual_rmse_rad": 0.07251512608480241,
+      "envelope_min_over_max": 0.4826294372469967
+    },
+    {
+      "amplitude_ratio": 2.0,
+      "relative_phase_rad": 4.71238898038469,
+      "omega_rad_per_s": 0.39683893590259534,
+      "period_s": 15.833086773324588,
+      "r_squared": 0.9994211122314871,
+      "residual_rmse_rad": 0.062112568204533584,
+      "envelope_min_over_max": 0.4650817104993758
+    }
+  ],
+  "buoy_band_in_one_bin": {
+    "realisations": 200,
+    "omega_median_rad_per_s": 0.46534167581030433,
+    "omega_p10_p90_rad_per_s": [
+      0.38250561963988355,
+      0.5512701912067106
+    ],
+    "omega_min_max_rad_per_s": [
+      0.2714532111783486,
+      0.6532227426962626
+    ],
+    "r_squared_median": 0.9997089145395631,
+    "r_squared_min": 0.8626784872394171,
+    "energy_weighted_omega_rad_per_s": 0.4611664961055866
+  },
+  "single_component_with_speckle": {
+    "speckle_to_signal": 0.3,
+    "omega_median_rad_per_s": 0.4719471884164893,
+    "omega_p10_p90_rad_per_s": [
+      0.4644833411495211,
+      0.47955545799754645
+    ]
+  },
+  "observed_for_comparison": {
+    "block12_peak_omega_rad_per_s": 0.4121,
+    "block12_peak_r_squared": 0.9945,
+    "block13_inshore_omega_rad_per_s": 0.4338
+  },
+  "caveats": [
+    "This is an estimator test, not a SAR simulation: the components are injected directly into one spectral bin, with no imaging operator.",
+    "It shows what the estimator does with a mixture; it does not by itself prove the real bin is one. The real-data test is Block 15b."
+  ]
+}

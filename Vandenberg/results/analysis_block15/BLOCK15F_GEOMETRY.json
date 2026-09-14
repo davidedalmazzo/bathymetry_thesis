@@ -1,0 +1,1580 @@
+{
+  "target_ecf_m": [
+    -2680421.089437394,
+    -4523191.606330057,
+    3598468.834112308
+  ],
+  "surface_hae_m": -36.376,
+  "axis0_ecf": [
+    0.894498326953438,
+    -0.42882630367239866,
+    0.12641496887698106
+  ],
+  "axis1_ecf": [
+    -0.1537541228790389,
+    -0.5605904635320593,
+    -0.8136940468595111
+  ],
+  "up_ecf": [
+    -0.41980043643513754,
+    -0.708411140909344,
+    0.5673810439240896
+  ],
+  "east_ecf": [
+    0.8602908722293762,
+    -0.509803506420679,
+    0.0
+  ],
+  "north_ecf": [
+    0.2892528456691261,
+    0.48811273316386905,
+    0.8234553728014715
+  ],
+  "k_vector_ecf_rad_m": [
+    -0.04293283763702514,
+    0.020582185025161123,
+    -0.006067482934451065
+  ],
+  "k_magnitude_rad_m": 0.04799655442984407,
+  "looks": [
+    {
+      "indices": [
+        0,
+        5239
+      ],
+      "position_mean_ecf_m": [
+        -2708167.211025904,
+        -5035751.1693844125,
+        3936341.6050555296
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3468.199094973358,
+        -2957.371765548011,
+        -6153.405549667116
+      ],
+      "representative_time_s": 0.35534731021679394
+    },
+    {
+      "indices": [
+        5240,
+        10485
+      ],
+      "position_mean_ecf_m": [
+        -2710608.47894939,
+        -5037831.848180869,
+        3932007.831579738
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3466.2413796991327,
+        -2952.8122509197565,
+        -6156.712573029275
+      ],
+      "representative_time_s": 1.0594467117244886
+    },
+    {
+      "indices": [
+        10486,
+        15738
+      ],
+      "position_mean_ecf_m": [
+        -2713050.158295441,
+        -5039910.839903574,
+        3927668.5463224775
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3464.2797144757847,
+        -2948.2478444344333,
+        -6160.0183829674825
+      ],
+      "representative_time_s": 1.764063059292087
+    },
+    {
+      "indices": [
+        15739,
+        20998
+      ],
+      "position_mean_ecf_m": [
+        -2715489.562176048,
+        -5041985.856265933,
+        3923328.521587294
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3462.3162559614434,
+        -2943.683566654046,
+        -6163.319341215707
+      ],
+      "representative_time_s": 2.4684216667974654
+    },
+    {
+      "indices": [
+        20999,
+        26260
+      ],
+      "position_mean_ecf_m": [
+        -2717927.7374255755,
+        -5044057.7891065385,
+        3918985.89658079
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3460.3501628022464,
+        -2939.1174605480846,
+        -6166.616865554992
+      ],
+      "representative_time_s": 3.172825122794375
+    },
+    {
+      "indices": [
+        26261,
+        31526
+      ],
+      "position_mean_ecf_m": [
+        -2720364.5027307505,
+        -5046126.484466873,
+        3914640.992953636
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3458.3815802448476,
+        -2934.549864641125,
+        -6169.910710899087
+      ],
+      "representative_time_s": 3.8772216143410563
+    },
+    {
+      "indices": [
+        31527,
+        36794
+      ],
+      "position_mean_ecf_m": [
+        -2722800.030488113,
+        -5048192.0890940875,
+        3910293.502662466
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3456.4103685732402,
+        -2929.9804554275247,
+        -6173.201110727966
+      ],
+      "representative_time_s": 4.58166149264895
+    },
+    {
+      "indices": [
+        36795,
+        42031
+      ],
+      "position_mean_ecf_m": [
+        -2725233.389221294,
+        -5050253.814199435,
+        3905945.089694419
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3454.4372826216213,
+        -2925.4109817254125,
+        -6176.486807720384
+      ],
+      "representative_time_s": 5.28587569742117
+    },
+    {
+      "indices": [
+        42032,
+        47004
+      ],
+      "position_mean_ecf_m": [
+        -2727635.2135942723,
+        -5052286.819682363,
+        3901648.3234007354
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3452.4862040556727,
+        -2920.8966677720555,
+        -6179.72818581089
+      ],
+      "representative_time_s": 5.981358516737583
+    },
+    {
+      "indices": [
+        47005,
+        51409
+      ],
+      "position_mean_ecf_m": [
+        -2730022.745955049,
+        -5054305.756859135,
+        3897372.489648563
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3450.5432260565267,
+        -2916.405219737937,
+        -6182.948563690996
+      ],
+      "representative_time_s": 6.673092111757245
+    },
+    {
+      "indices": [
+        51410,
+        55689
+      ],
+      "position_mean_ecf_m": [
+        -2732719.7623541183,
+        -5056584.034333652,
+        3892536.8377985614
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3448.3441779309674,
+        -2911.3267714478948,
+        -6186.584328876115
+      ],
+      "representative_time_s": 7.454959389028037
+    },
+    {
+      "indices": [
+        55690,
+        60958
+      ],
+      "position_mean_ecf_m": [
+        -2734956.680344985,
+        -5058471.7055808455,
+        3888521.553610099
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3446.5168158632005,
+        -2907.1107410938425,
+        -6189.598161595124
+      ],
+      "representative_time_s": 8.103828571296766
+    },
+    {
+      "indices": [
+        60959,
+        66229
+      ],
+      "position_mean_ecf_m": [
+        -2737382.3350656913,
+        -5060516.705522769,
+        3884162.9165457
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3444.531813700044,
+        -2902.5350504172998,
+        -6192.864595965583
+      ],
+      "representative_time_s": 8.80783016797774
+    },
+    {
+      "indices": [
+        66230,
+        71500
+      ],
+      "position_mean_ecf_m": [
+        -2739808.061998323,
+        -5062559.721602097,
+        3879799.33455201
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3442.5431070771033,
+        -2897.955072525081,
+        -6196.129351202303
+      ],
+      "representative_time_s": 9.512258919147031
+    },
+    {
+      "indices": [
+        71501,
+        76774
+      ],
+      "position_mean_ecf_m": [
+        -2742232.8361722687,
+        -5064599.888524206,
+        3875432.645054403
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3440.5515314571594,
+        -2893.3727372979233,
+        -6199.391046061496
+      ],
+      "representative_time_s": 10.216818173596257
+    },
+    {
+      "indices": [
+        76775,
+        82045
+      ],
+      "position_mean_ecf_m": [
+        -2744655.569767673,
+        -5066636.291591653,
+        3871064.806850484
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3438.557980172753,
+        -2888.7901005172293,
+        -6202.648217824712
+      ],
+      "representative_time_s": 10.921192327154113
+    },
+    {
+      "indices": [
+        82046,
+        87315
+      ],
+      "position_mean_ecf_m": [
+        -2747076.5571900974,
+        -5068669.180087631,
+        3866695.291889089
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3436.562213100021,
+        -2884.2066077100258,
+        -6205.90126396429
+      ],
+      "representative_time_s": 11.625467205567109
+    },
+    {
+      "indices": [
+        87316,
+        92531
+      ],
+      "position_mean_ecf_m": [
+        -2749499.229758743,
+        -5070701.431788946,
+        3862317.897370612
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3434.5613941117845,
+        -2879.6157543125328,
+        -6209.1547921033
+      ],
+      "representative_time_s": 12.330642284515337
+    },
+    {
+      "indices": [
+        92532,
+        97799
+      ],
+      "position_mean_ecf_m": [
+        -2751915.596233294,
+        -5072726.34663903,
+        3857947.0686009694
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3432.562127920743,
+        -2875.032689075716,
+        -6212.398073318788
+      ],
+      "representative_time_s": 13.034391449393064
+    },
+    {
+      "indices": [
+        97800,
+        103064
+      ],
+      "position_mean_ecf_m": [
+        -2754332.654413852,
+        -5074749.792262634,
+        3853570.154256068
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3430.558629582071,
+        -2870.4441451417756,
+        -6215.640503288334
+      ],
+      "representative_time_s": 13.738752659938966
+    },
+    {
+      "indices": [
+        103065,
+        108327
+      ],
+      "position_mean_ecf_m": [
+        -2756748.374873101,
+        -5076770.067466038,
+        3849190.8224102017
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3428.552576016501,
+        -2865.8539694058177,
+        -6218.87935767191
+      ],
+      "representative_time_s": 14.443135563070491
+    },
+    {
+      "indices": [
+        108328,
+        113586
+      ],
+      "position_mean_ecf_m": [
+        -2759162.6991116568,
+        -5078787.123726048,
+        3844809.178473397
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3426.544015485448,
+        -2861.262272605744,
+        -6222.114558413764
+      ],
+      "representative_time_s": 15.147523617335109
+    },
+    {
+      "indices": [
+        113587,
+        118842
+      ],
+      "position_mean_ecf_m": [
+        -2761575.5677442355,
+        -5080800.91177957,
+        3840425.3294636626
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3424.532996738338,
+        -2856.6691671804024,
+        -6225.3460262217295
+      ],
+      "representative_time_s": 15.851900022832066
+    },
+    {
+      "indices": [
+        118843,
+        124094
+      ],
+      "position_mean_ecf_m": [
+        -2763987.1498653735,
+        -5082811.573122076,
+        3836038.967443399
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3422.5193783272703,
+        -2852.074330784579,
+        -6228.573988036354
+      ],
+      "representative_time_s": 16.55631466498908
+    },
+    {
+      "indices": [
+        124095,
+        129342
+      ],
+      "position_mean_ecf_m": [
+        -2766397.3840415487,
+        -5084819.056661979,
+        3831650.202868493
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3420.5032106350836,
+        -2847.4778793592277,
+        -6231.798361763358
+      ],
+      "representative_time_s": 17.260750170310974
+    },
+    {
+      "indices": [
+        129343,
+        134584
+      ],
+      "position_mean_ecf_m": [
+        -2768805.977935143,
+        -5086823.1195856705,
+        3827259.5680576013
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3418.4847382181974,
+        -2842.8803707757374,
+        -6235.0187568831925
+      ],
+      "representative_time_s": 17.965121558686505
+    },
+    {
+      "indices": [
+        134585,
+        139822
+      ],
+      "position_mean_ecf_m": [
+        -2771213.0970229423,
+        -5088823.900214093,
+        3822866.7612772766
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3416.4638223531547,
+        -2838.281489049992,
+        -6238.235395305527
+      ],
+      "representative_time_s": 18.669477690902887
+    },
+    {
+      "indices": [
+        139823,
+        145055
+      ],
+      "position_mean_ecf_m": [
+        -2773619.1353211715,
+        -5090821.726194839,
+        3818471.062227433
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3414.4401312714526,
+        -2833.6804806136865,
+        -6241.448803735285
+      ],
+      "representative_time_s": 19.373934429971335
+    },
+    {
+      "indices": [
+        145056,
+        150281
+      ],
+      "position_mean_ecf_m": [
+        -2776023.5663300306,
+        -5092816.160598949,
+        3814073.4317791923
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3412.4141070803507,
+        -2829.0783514087793,
+        -6244.658279236824
+      ],
+      "representative_time_s": 20.078338171839263
+    },
+    {
+      "indices": [
+        150282,
+        155501
+      ],
+      "position_mean_ecf_m": [
+        -2778426.321117475,
+        -5094807.147121072,
+        3809673.9964785944
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3410.385808274938,
+        -2824.475233946175,
+        -6247.863730597587
+      ],
+      "representative_time_s": 20.782669142875097
+    },
+    {
+      "indices": [
+        155502,
+        160715
+      ],
+      "position_mean_ecf_m": [
+        -2780827.7891976563,
+        -5096795.009110698,
+        3805272.0429236875
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3408.3549058860776,
+        -2819.8703819811917,
+        -6251.065678030584
+      ],
+      "representative_time_s": 21.487042001798237
+    },
+    {
+      "indices": [
+        160716,
+        165923
+      ],
+      "position_mean_ecf_m": [
+        -2783228.128933753,
+        -5098779.877501925,
+        3800867.2788692885
+      ],
+      "velocity_mean_ecf_m_s": [
+        -3406.321264568109,
+        -2815.2634904339207,
+        -6254.264332548098
+      ],
+      "representative_time_s": 22.191503827842293
+    }
+  ],
+  "rows": [
+    {
+      "look": 0,
+      "pulses": 5240,
+      "tx_time_mean_s": 0.35534731021679394,
+      "tx_time_min_s": 0.0029798746666666667,
+      "tx_time_max_s": 0.7073295973333333,
+      "slant_range_mean_m": 614530.3615022905,
+      "slant_range_min_m": 614266.4385547519,
+      "slant_range_max_m": 614801.714955309,
+      "slant_range_ptp_m": 535.2764005571371,
+      "speed_mean_m_s": 7657.6011615336465,
+      "speed_min_m_s": 7657.595063313088,
+      "speed_max_m_s": 7657.607253030629,
+      "speed_ptp_m_s": 0.012189717541332357,
+      "R_over_V_mean_s": 80.25102752288748,
+      "R_over_V_ptp_s": 0.07002905465704146,
+      "incidence_mean_deg": 22.81428561037135,
+      "incidence_min_deg": 22.75075011027907,
+      "incidence_max_deg": 22.87948892270085,
+      "incidence_ptp_deg": 0.12873881242177768,
+      "view_azimuth_mean_deg": 85.18322941288399,
+      "flight_azimuth_mean_deg": 191.11349576205055,
+      "squint_mean_deg": 105.93026634188661,
+      "squint_min_deg": 105.3081902985462,
+      "squint_max_deg": 106.55044384340916,
+      "squint_ptp_deg": 1.242253544862962,
+      "k_los_mean_rad_m": -0.04787786772276665,
+      "k_flight_mean_rad_m": 0.016371960943550427,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 1,
+      "pulses": 5246,
+      "tx_time_mean_s": 1.0594467117244886,
+      "tx_time_min_s": 0.7074637786666667,
+      "tx_time_max_s": 1.4117662693333333,
+      "slant_range_mean_m": 614016.7123281172,
+      "slant_range_min_m": 613774.00820732,
+      "slant_range_max_m": 614266.3406665835,
+      "slant_range_ptp_m": 492.33245926350355,
+      "speed_mean_m_s": 7657.613346374845,
+      "speed_min_m_s": 7657.607257244296,
+      "speed_max_m_s": 7657.619437652127,
+      "speed_ptp_m_s": 0.012180407830783224,
+      "R_over_V_mean_s": 80.18382289883867,
+      "R_over_V_ptp_s": 0.06442074234516326,
+      "incidence_mean_deg": 22.69042396263279,
+      "incidence_min_deg": 22.631700358919176,
+      "incidence_max_deg": 22.75072650229849,
+      "incidence_ptp_deg": 0.11902614337931533,
+      "view_azimuth_mean_deg": 86.43742570729691,
+      "flight_azimuth_mean_deg": 191.11829553985922,
+      "squint_mean_deg": 104.6808698221183,
+      "squint_min_deg": 104.05076146394866,
+      "squint_max_deg": 105.30795218995317,
+      "squint_ptp_deg": 1.257190726004499,
+      "k_los_mean_rad_m": -0.04779283720531511,
+      "k_flight_mean_rad_m": 0.01637574050249781,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 2,
+      "pulses": 5253,
+      "tx_time_mean_s": 1.764063059292087,
+      "tx_time_min_s": 1.411900344,
+      "tx_time_max_s": 2.116071096,
+      "slant_range_mean_m": 613545.6632319532,
+      "slant_range_min_m": 613324.6767061559,
+      "slant_range_max_m": 613773.9185750631,
+      "slant_range_ptp_m": 449.2418689072365,
+      "speed_mean_m_s": 7657.625528622679,
+      "speed_min_m_s": 7657.619443419024,
+      "speed_max_m_s": 7657.631610104497,
+      "speed_ptp_m_s": 0.012166685472948302,
+      "R_over_V_mean_s": 80.12218160816336,
+      "R_over_V_ptp_s": 0.05879325053069806,
+      "incidence_mean_deg": 22.576289747342017,
+      "incidence_min_deg": 22.522594592914654,
+      "incidence_max_deg": 22.631678638218894,
+      "incidence_ptp_deg": 0.10908404530424103,
+      "view_azimuth_mean_deg": 87.7070889715078,
+      "flight_azimuth_mean_deg": 191.1230951469785,
+      "squint_mean_deg": 103.41600616799725,
+      "squint_min_deg": 102.77951510175586,
+      "squint_max_deg": 104.05052076267374,
+      "squint_ptp_deg": 1.271005660917878,
+      "k_los_mean_rad_m": -0.047683432836064146,
+      "k_flight_mean_rad_m": 0.01637951981211268,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 3,
+      "pulses": 5260,
+      "tx_time_mean_s": 2.4684216667974654,
+      "tx_time_min_s": 2.116205074666667,
+      "tx_time_max_s": 2.820561794666667,
+      "slant_range_mean_m": 613117.8513050101,
+      "slant_range_min_m": 612918.3415259684,
+      "slant_range_max_m": 613324.5953277309,
+      "slant_range_ptp_m": 406.25380176247563,
+      "speed_mean_m_s": 7657.637694819336,
+      "speed_min_m_s": 7657.631614331553,
+      "speed_max_m_s": 7657.643772800263,
+      "speed_ptp_m_s": 0.012158468710367742,
+      "R_over_V_mean_s": 80.06618696177239,
+      "R_over_V_ptp_s": 0.053179213454939145,
+      "incidence_mean_deg": 22.47222490765855,
+      "incidence_min_deg": 22.423589544099286,
+      "incidence_max_deg": 22.52257479492421,
+      "incidence_ptp_deg": 0.09898525082492306,
+      "view_azimuth_mean_deg": 88.989824536358,
+      "flight_azimuth_mean_deg": 191.12788930914738,
+      "squint_mean_deg": 102.13806476461181,
+      "squint_min_deg": 101.49491993578874,
+      "squint_max_deg": 102.77927201153611,
+      "squint_ptp_deg": 1.2843520757473565,
+      "k_los_mean_rad_m": -0.0475491271335641,
+      "k_flight_mean_rad_m": 0.016383294719519596,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 4,
+      "pulses": 5262,
+      "tx_time_mean_s": 3.172825122794375,
+      "tx_time_min_s": 2.8206956880000003,
+      "tx_time_max_s": 3.5248865253333337,
+      "slant_range_mean_m": 612733.1633534748,
+      "slant_range_min_m": 612555.2937634022,
+      "slant_range_max_m": 612918.2684032319,
+      "slant_range_ptp_m": 362.97463982971385,
+      "speed_mean_m_s": 7657.649850161104,
+      "speed_min_m_s": 7657.643775468855,
+      "speed_max_m_s": 7657.655920184723,
+      "speed_ptp_m_s": 0.012144715868089406,
+      "R_over_V_mean_s": 80.0158240963064,
+      "R_over_V_ptp_s": 0.0475271685502463,
+      "incidence_mean_deg": 22.37837716946619,
+      "incidence_min_deg": 22.334924336535327,
+      "incidence_max_deg": 22.423571702662034,
+      "incidence_ptp_deg": 0.08864736612670943,
+      "view_azimuth_mean_deg": 90.28509625385797,
+      "flight_azimuth_mean_deg": 191.13268009093116,
+      "squint_mean_deg": 100.84758382951642,
+      "squint_min_deg": 100.19873424287071,
+      "squint_max_deg": 101.4946745858497,
+      "squint_ptp_deg": 1.2959403429789793,
+      "k_los_mean_rad_m": -0.047389329579648705,
+      "k_flight_mean_rad_m": 0.016387066850642285,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 5,
+      "pulses": 5266,
+      "tx_time_mean_s": 3.8772216143410563,
+      "tx_time_min_s": 3.5250203386666668,
+      "tx_time_max_s": 4.229363250666666,
+      "slant_range_mean_m": 612391.7159079117,
+      "slant_range_min_m": 612235.44564422,
+      "slant_range_max_m": 612555.2288969341,
+      "slant_range_ptp_m": 319.7832527140854,
+      "speed_mean_m_s": 7657.6619936765555,
+      "speed_min_m_s": 7657.655922457076,
+      "speed_max_m_s": 7657.668059917793,
+      "speed_ptp_m_s": 0.012137460716985515,
+      "R_over_V_mean_s": 79.97110821240018,
+      "R_over_V_ptp_s": 0.04188666266648511,
+      "incidence_mean_deg": 22.294935920124917,
+      "incidence_min_deg": 22.256731130579936,
+      "incidence_max_deg": 22.33490848247874,
+      "incidence_ptp_deg": 0.07817735189880308,
+      "view_azimuth_mean_deg": 91.59165799227208,
+      "flight_azimuth_mean_deg": 191.137467143559,
+      "squint_mean_deg": 99.54580914442349,
+      "squint_min_deg": 98.89156050939654,
+      "squint_max_deg": 100.1984869338273,
+      "squint_ptp_deg": 1.3069264244307632,
+      "k_los_mean_rad_m": -0.04720360494236906,
+      "k_flight_mean_rad_m": 0.016390835931089042,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 6,
+      "pulses": 5268,
+      "tx_time_mean_s": 4.58166149264895,
+      "tx_time_min_s": 4.2294969946666665,
+      "tx_time_max_s": 4.933774808,
+      "slant_range_mean_m": 612093.5580666116,
+      "slant_range_min_m": 611958.972132611,
+      "slant_range_max_m": 612235.389035296,
+      "slant_range_ptp_m": 276.4169026850723,
+      "speed_mean_m_s": 7657.674126285945,
+      "speed_min_m_s": 7657.668062885517,
+      "speed_max_m_s": 7657.68018596134,
+      "speed_ptp_m_s": 0.012123075822273677,
+      "R_over_V_mean_s": 79.93204568501204,
+      "R_over_V_ptp_s": 0.03622326128845543,
+      "incidence_mean_deg": 22.222058906723973,
+      "incidence_min_deg": 22.189190421269075,
+      "incidence_max_deg": 22.256717291935825,
+      "incidence_ptp_deg": 0.06752687066675216,
+      "view_azimuth_mean_deg": 92.90838353138714,
+      "flight_azimuth_mean_deg": 191.14225081287634,
+      "squint_mean_deg": 98.23386727540904,
+      "squint_min_deg": 97.57505111037769,
+      "squint_max_deg": 98.89131138858758,
+      "squint_ptp_deg": 1.316260278209901,
+      "k_los_mean_rad_m": -0.04699160596710476,
+      "k_flight_mean_rad_m": 0.016394602233396977,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 7,
+      "pulses": 5237,
+      "tx_time_mean_s": 5.28587569742117,
+      "tx_time_min_s": 4.933908498666667,
+      "tx_time_max_s": 5.638038274666666,
+      "slant_range_mean_m": 611838.8507351486,
+      "slant_range_min_m": 611725.9453297328,
+      "slant_range_max_m": 611958.9237782701,
+      "slant_range_ptp_m": 232.97844853729475,
+      "speed_mean_m_s": 7657.686243307273,
+      "speed_min_m_s": 7657.680188273267,
+      "speed_max_m_s": 7657.692302929811,
+      "speed_ptp_m_s": 0.012114656544326863,
+      "R_over_V_mean_s": 79.89865754825344,
+      "R_over_V_ptp_s": 0.03055053334624347,
+      "incidence_mean_deg": 22.159914751310698,
+      "incidence_min_deg": 22.132440568932655,
+      "incidence_max_deg": 22.1891786218848,
+      "incidence_ptp_deg": 0.05673805295214389,
+      "view_azimuth_mean_deg": 94.23348573193402,
+      "flight_azimuth_mean_deg": 191.14702927681304,
+      "squint_mean_deg": 96.91354353548401,
+      "squint_min_deg": 96.2506743939372,
+      "squint_max_deg": 97.57480042010965,
+      "squint_ptp_deg": 1.3241260261724523,
+      "k_los_mean_rad_m": -0.046753207231809486,
+      "k_flight_mean_rad_m": 0.016398364323285987,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 8,
+      "pulses": 4973,
+      "tx_time_mean_s": 5.981358516737583,
+      "tx_time_min_s": 5.638305549333333,
+      "tx_time_max_s": 6.3424717626666665,
+      "slant_range_mean_m": 611629.8737057794,
+      "slant_range_min_m": 611536.3120888616,
+      "slant_range_max_m": 611725.8651359266,
+      "slant_range_ptp_m": 189.55304706504103,
+      "speed_mean_m_s": 7657.698198529676,
+      "speed_min_m_s": 7657.692301944961,
+      "speed_max_m_s": 7657.704401581344,
+      "speed_ptp_m_s": 0.012099636383027246,
+      "R_over_V_mean_s": 79.87124301241391,
+      "R_over_V_ptp_s": 0.02487946811321251,
+      "incidence_mean_deg": 22.109166382393123,
+      "incidence_min_deg": 22.08657155586908,
+      "incidence_max_deg": 22.132421092527753,
+      "incidence_ptp_deg": 0.04584953665866997,
+      "view_azimuth_mean_deg": 95.5494839466982,
+      "flight_azimuth_mean_deg": 191.15174489601762,
+      "squint_mean_deg": 95.60226078091686,
+      "squint_min_deg": 94.91919229852691,
+      "squint_max_deg": 96.25017042080441,
+      "squint_ptp_deg": 1.3309781222774992,
+      "k_los_mean_rad_m": -0.0464917152300542,
+      "k_flight_mean_rad_m": 0.01640207682370113,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 9,
+      "pulses": 4405,
+      "tx_time_mean_s": 6.673092111757245,
+      "tx_time_min_s": 6.342605362666666,
+      "tx_time_max_s": 7.046858925333333,
+      "slant_range_mean_m": 611463.9771832994,
+      "slant_range_min_m": 611390.1829585317,
+      "slant_range_max_m": 611536.2802480569,
+      "slant_range_ptp_m": 146.09728952520527,
+      "speed_mean_m_s": 7657.710077910535,
+      "speed_min_m_s": 7657.704405061684,
+      "speed_max_m_s": 7657.716492707512,
+      "speed_ptp_m_s": 0.012087645827705273,
+      "R_over_V_mean_s": 79.84945512171815,
+      "R_over_V_ptp_s": 0.019204497377685925,
+      "incidence_mean_deg": 22.06925166794374,
+      "incidence_min_deg": 22.051694413678916,
+      "incidence_max_deg": 22.086563896255196,
+      "incidence_ptp_deg": 0.03486948257627924,
+      "view_azimuth_mean_deg": 96.8642833788609,
+      "flight_azimuth_mean_deg": 191.15643155542008,
+      "squint_mean_deg": 94.29214793087611,
+      "squint_min_deg": 93.58241574265206,
+      "squint_max_deg": 94.91893923602905,
+      "squint_ptp_deg": 1.3365234933769778,
+      "k_los_mean_rad_m": -0.04620601911254517,
+      "k_flight_mean_rad_m": 0.016405766414849535,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 10,
+      "pulses": 4280,
+      "tx_time_mean_s": 7.454959389028037,
+      "tx_time_min_s": 7.0471260613333335,
+      "tx_time_max_s": 7.7512508239999995,
+      "slant_range_mean_m": 611326.821862481,
+      "slant_range_min_m": 611287.575094769,
+      "slant_range_max_m": 611390.1357938081,
+      "slant_range_ptp_m": 102.56069903913885,
+      "speed_mean_m_s": 7657.723491500644,
+      "speed_min_m_s": 7657.7164953911115,
+      "speed_max_m_s": 7657.728571351905,
+      "speed_ptp_m_s": 0.0120759607934815,
+      "R_over_V_mean_s": 79.83140453572251,
+      "R_over_V_ptp_s": 0.013519001060231517,
+      "incidence_mean_deg": 22.036898967437622,
+      "incidence_min_deg": 22.02787795091125,
+      "incidence_max_deg": 22.051683280970312,
+      "incidence_ptp_deg": 0.023805330059062522,
+      "view_azimuth_mean_deg": 98.35579438818775,
+      "flight_azimuth_mean_deg": 191.1617246528404,
+      "squint_mean_deg": 92.8059306956767,
+      "squint_min_deg": 92.24168695790615,
+      "squint_max_deg": 93.58190794067865,
+      "squint_ptp_deg": 1.3402209827724891,
+      "k_los_mean_rad_m": -0.04585257187000342,
+      "k_flight_mean_rad_m": 0.016409933295140303,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 11,
+      "pulses": 5269,
+      "tx_time_mean_s": 8.103828571296766,
+      "tx_time_min_s": 7.751384376,
+      "tx_time_max_s": 8.455698578666667,
+      "slant_range_mean_m": 611254.3808861941,
+      "slant_range_min_m": 611228.5089721367,
+      "slant_range_max_m": 611287.5597686608,
+      "slant_range_ptp_m": 59.050796524155885,
+      "speed_mean_m_s": 7657.734612048541,
+      "speed_min_m_s": 7657.728573332087,
+      "speed_max_m_s": 7657.740637589541,
+      "speed_ptp_m_s": 0.012064257453857863,
+      "R_over_V_mean_s": 79.82182876020967,
+      "R_over_V_ptp_s": 0.007837015390592228,
+      "incidence_mean_deg": 22.020590592239362,
+      "incidence_min_deg": 22.015171846118065,
+      "incidence_max_deg": 22.02787448762155,
+      "incidence_ptp_deg": 0.012702641503483672,
+      "view_azimuth_mean_deg": 99.59661371152434,
+      "flight_azimuth_mean_deg": 191.1661139001907,
+      "squint_mean_deg": 91.56950019101171,
+      "squint_min_deg": 90.89837278778295,
+      "squint_max_deg": 92.24143246879699,
+      "squint_ptp_deg": 1.343059681014035,
+      "k_los_mean_rad_m": -0.045534465838807915,
+      "k_flight_mean_rad_m": 0.016413388530431994,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 12,
+      "pulses": 5271,
+      "tx_time_mean_s": 8.80783016797774,
+      "tx_time_min_s": 8.45583212,
+      "tx_time_max_s": 9.160119816,
+      "slant_range_mean_m": 611217.1294575003,
+      "slant_range_min_m": 611212.5544435175,
+      "slant_range_max_m": 611228.5019048043,
+      "slant_range_ptp_m": 15.947461286792532,
+      "speed_mean_m_s": 7657.746666236762,
+      "speed_min_m_s": 7657.740641106101,
+      "speed_max_m_s": 7657.752696738558,
+      "speed_ptp_m_s": 0.012055632457304455,
+      "R_over_V_mean_s": 79.81683856878354,
+      "R_over_V_ptp_s": 0.00219146204774745,
+      "incidence_mean_deg": 22.013460081697062,
+      "incidence_min_deg": 22.012885411644206,
+      "incidence_max_deg": 22.015170493029867,
+      "incidence_ptp_deg": 0.002285081385660575,
+      "view_azimuth_mean_deg": 100.9444586550078,
+      "flight_azimuth_mean_deg": 191.17087261855778,
+      "squint_mean_deg": 90.226413959322,
+      "squint_min_deg": 89.55411105786914,
+      "squint_max_deg": 90.89811799100274,
+      "squint_ptp_deg": 1.3440069331335935,
+      "k_los_mean_rad_m": -0.04516499751918247,
+      "k_flight_mean_rad_m": 0.016417134507333522,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 13,
+      "pulses": 5271,
+      "tx_time_mean_s": 9.512258919147031,
+      "tx_time_min_s": 9.160253357333334,
+      "tx_time_max_s": 9.864565736,
+      "slant_range_mean_m": 611223.4058752985,
+      "slant_range_min_m": 611213.0083916145,
+      "slant_range_max_m": 611241.0721269523,
+      "slant_range_ptp_m": 28.063735337811522,
+      "speed_mean_m_s": 7657.758715801519,
+      "speed_min_m_s": 7657.752696722271,
+      "speed_max_m_s": 7657.764737228965,
+      "speed_ptp_m_s": 0.01204050669366552,
+      "R_over_V_mean_s": 79.81753259090121,
+      "R_over_V_ptp_s": 0.0035392452399918284,
+      "incidence_mean_deg": 22.01746496160601,
+      "incidence_min_deg": 22.013606283789702,
+      "incidence_max_deg": 22.023183120559032,
+      "incidence_ptp_deg": 0.00957683676932811,
+      "view_azimuth_mean_deg": 102.29337196212191,
+      "flight_azimuth_mean_deg": 191.17563057422473,
+      "squint_mean_deg": 88.8822586084843,
+      "squint_min_deg": 88.21029172651109,
+      "squint_max_deg": 89.55385623507047,
+      "squint_ptp_deg": 1.343564508559385,
+      "k_los_mean_rad_m": -0.044770216772607604,
+      "k_flight_mean_rad_m": 0.01642087977063328,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 14,
+      "pulses": 5274,
+      "tx_time_mean_s": 10.216818173596257,
+      "tx_time_min_s": 9.864699282666667,
+      "tx_time_max_s": 10.56895396,
+      "slant_range_mean_m": 611273.2587317155,
+      "slant_range_min_m": 611241.0815777278,
+      "slant_range_max_m": 611312.691712507,
+      "slant_range_ptp_m": 71.6101347792428,
+      "speed_mean_m_s": 7657.770755577325,
+      "speed_min_m_s": 7657.7647433094835,
+      "speed_max_m_s": 7657.776770301473,
+      "speed_ptp_m_s": 0.012026991989841918,
+      "R_over_V_mean_s": 79.82391719904389,
+      "R_over_V_ptp_s": 0.009225933984254198,
+      "incidence_mean_deg": 22.032609706250405,
+      "incidence_min_deg": 22.023185991969367,
+      "incidence_max_deg": 22.04388404171431,
+      "incidence_ptp_deg": 0.020698049744944994,
+      "view_azimuth_mean_deg": 103.64129901139287,
+      "flight_azimuth_mean_deg": 191.18038576268518,
+      "squint_mean_deg": 87.53908675322721,
+      "squint_min_deg": 86.86855602549736,
+      "squint_max_deg": 88.2100370929195,
+      "squint_ptp_deg": 1.3414810674221453,
+      "k_los_mean_rad_m": -0.04435094069974209,
+      "k_flight_mean_rad_m": 0.01642462274256659,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 15,
+      "pulses": 5271,
+      "tx_time_mean_s": 10.921192327154113,
+      "tx_time_min_s": 10.569087527999999,
+      "tx_time_max_s": 11.273335608,
+      "slant_range_mean_m": 611366.6519847867,
+      "slant_range_min_m": 611312.7094227122,
+      "slant_range_max_m": 611427.8501647254,
+      "slant_range_ptp_m": 115.14074201323092,
+      "speed_mean_m_s": 7657.7827801803505,
+      "speed_min_m_s": 7657.776771124714,
+      "speed_max_m_s": 7657.788787223189,
+      "speed_ptp_m_s": 0.012016098474305181,
+      "R_over_V_mean_s": 79.83598771594383,
+      "R_over_V_ptp_s": 0.01491050641197944,
+      "incidence_mean_deg": 22.058856545357575,
+      "incidence_min_deg": 22.043889019660615,
+      "incidence_max_deg": 22.075666747617188,
+      "incidence_ptp_deg": 0.031777727956572535,
+      "view_azimuth_mean_deg": 104.98615742259165,
+      "flight_azimuth_mean_deg": 191.18513605763013,
+      "squint_mean_deg": 86.19897863771958,
+      "squint_min_deg": 85.53027737249299,
+      "squint_max_deg": 86.86830187981164,
+      "squint_ptp_deg": 1.3380245073186532,
+      "k_los_mean_rad_m": -0.04390815884024707,
+      "k_flight_mean_rad_m": 0.016428361749685653,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 16,
+      "pulses": 5270,
+      "tx_time_mean_s": 11.625467205567109,
+      "tx_time_min_s": 11.273469208,
+      "tx_time_max_s": 11.977761752,
+      "slant_range_mean_m": 611503.5474738183,
+      "slant_range_min_m": 611427.8761352587,
+      "slant_range_max_m": 611586.5350019924,
+      "slant_range_ptp_m": 158.65886673366185,
+      "speed_mean_m_s": 7657.794791069823,
+      "speed_min_m_s": 7657.788790537164,
+      "speed_max_m_s": 7657.800793960785,
+      "speed_ptp_m_s": 0.012003423621536058,
+      "R_over_V_mean_s": 79.85373911642712,
+      "R_over_V_ptp_s": 0.02059344067316715,
+      "incidence_mean_deg": 22.096148277271265,
+      "incidence_min_deg": 22.075673823296142,
+      "incidence_max_deg": 22.118470413558697,
+      "incidence_ptp_deg": 0.042796590262554036,
+      "view_azimuth_mean_deg": 106.32665292168483,
+      "flight_azimuth_mean_deg": 191.18988204476696,
+      "squint_mean_deg": 84.86322912684246,
+      "squint_min_deg": 84.19680749447194,
+      "squint_max_deg": 85.53002396574516,
+      "squint_ptp_deg": 1.3332164712732195,
+      "k_los_mean_rad_m": -0.04344274424913237,
+      "k_flight_mean_rad_m": 0.016432097253318463,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 17,
+      "pulses": 5216,
+      "tx_time_mean_s": 12.330642284515337,
+      "tx_time_min_s": 11.977895389333334,
+      "tx_time_max_s": 12.682149736,
+      "slant_range_mean_m": 611684.1933220206,
+      "slant_range_min_m": 611586.5692331966,
+      "slant_range_max_m": 611788.6945546339,
+      "slant_range_ptp_m": 202.1253214373719,
+      "speed_mean_m_s": 7657.806805188976,
+      "speed_min_m_s": 7657.800798957401,
+      "speed_max_m_s": 7657.8127925712515,
+      "speed_ptp_m_s": 0.011993613850791007,
+      "R_over_V_mean_s": 79.87720359845441,
+      "R_over_V_ptp_s": 0.02626957105088934,
+      "incidence_mean_deg": 22.144483645991997,
+      "incidence_min_deg": 22.118479574221375,
+      "incidence_max_deg": 22.172204151516027,
+      "incidence_ptp_deg": 0.0537245772946517,
+      "view_azimuth_mean_deg": 107.66324369259767,
+      "flight_azimuth_mean_deg": 191.1946304556211,
+      "squint_mean_deg": 83.53138678717403,
+      "squint_min_deg": 82.86971960479313,
+      "squint_max_deg": 84.19655508243315,
+      "squint_ptp_deg": 1.3268354776400262,
+      "k_los_mean_rad_m": -0.04295500903009917,
+      "k_flight_mean_rad_m": 0.01643583455177867,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 18,
+      "pulses": 5268,
+      "tx_time_mean_s": 13.034391449393064,
+      "tx_time_min_s": 12.682283421333333,
+      "tx_time_max_s": 13.38655036,
+      "slant_range_mean_m": 611907.8927456536,
+      "slant_range_min_m": 611788.7370468008,
+      "slant_range_max_m": 612034.2981466559,
+      "slant_range_ptp_m": 245.56109985511284,
+      "speed_mean_m_s": 7657.818782927575,
+      "speed_min_m_s": 7657.812793458362,
+      "speed_max_m_s": 7657.8247722022425,
+      "speed_ptp_m_s": 0.011978743880717957,
+      "R_over_V_mean_s": 79.9062905586048,
+      "R_over_V_ptp_s": 0.03194174164480046,
+      "incidence_mean_deg": 22.20359074635541,
+      "incidence_min_deg": 22.172215380738955,
+      "incidence_max_deg": 22.236763905486377,
+      "incidence_ptp_deg": 0.06454852474742345,
+      "view_azimuth_mean_deg": 108.9901330900116,
+      "flight_azimuth_mean_deg": 191.19936563632785,
+      "squint_mean_deg": 82.20923255209479,
+      "squint_min_deg": 81.55029381343817,
+      "squint_max_deg": 82.8694684365382,
+      "squint_ptp_deg": 1.3191746231000228,
+      "k_los_mean_rad_m": -0.042447698379388825,
+      "k_flight_mean_rad_m": 0.016439561324884135,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 19,
+      "pulses": 5265,
+      "tx_time_mean_s": 13.738752659938966,
+      "tx_time_min_s": 13.386684104,
+      "tx_time_max_s": 14.090880536,
+      "slant_range_mean_m": 612175.1814303964,
+      "slant_range_min_m": 612034.3489008849,
+      "slant_range_max_m": 612323.2593682884,
+      "slant_range_ptp_m": 288.9104674035916,
+      "speed_mean_m_s": 7657.830758928123,
+      "speed_min_m_s": 7657.824773473054,
+      "speed_max_m_s": 7657.83674286441,
+      "speed_ptp_m_s": 0.011969391355705739,
+      "R_over_V_mean_s": 79.94106956191987,
+      "R_over_V_ptp_s": 0.03760250453264291,
+      "incidence_mean_deg": 22.27350696940396,
+      "incidence_min_deg": 22.23677718349594,
+      "incidence_max_deg": 22.312012917261402,
+      "incidence_ptp_deg": 0.07523573376546171,
+      "view_azimuth_mean_deg": 110.30982241108963,
+      "flight_azimuth_mean_deg": 191.20410130842598,
+      "squint_mean_deg": 80.89427890391937,
+      "squint_min_deg": 80.24001215771341,
+      "squint_max_deg": 81.55004411334227,
+      "squint_ptp_deg": 1.3100319556288647,
+      "k_los_mean_rad_m": -0.04192056047242362,
+      "k_flight_mean_rad_m": 0.016443288372424748,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 20,
+      "pulses": 5263,
+      "tx_time_mean_s": 14.443135563070491,
+      "tx_time_min_s": 14.091014344,
+      "tx_time_max_s": 14.795324541333333,
+      "slant_range_mean_m": 612485.8352737337,
+      "slant_range_min_m": 612323.3183825725,
+      "slant_range_max_m": 612655.5965722806,
+      "slant_range_ptp_m": 332.2781897081295,
+      "speed_mean_m_s": 7657.842723089935,
+      "speed_min_m_s": 7657.836746232418,
+      "speed_max_m_s": 7657.848700946199,
+      "speed_ptp_m_s": 0.011954713781051396,
+      "R_over_V_mean_s": 79.98151142277183,
+      "R_over_V_ptp_s": 0.04326571682840097,
+      "incidence_mean_deg": 22.35405009065411,
+      "incidence_min_deg": 22.31202822008938,
+      "incidence_max_deg": 22.39782448954128,
+      "incidence_ptp_deg": 0.08579626945189783,
+      "view_azimuth_mean_deg": 111.61989473916566,
+      "flight_azimuth_mean_deg": 191.20883350120027,
+      "squint_mean_deg": 79.58893876935004,
+      "squint_min_deg": 78.93980450629377,
+      "squint_max_deg": 80.23976417082807,
+      "squint_ptp_deg": 1.2999596645342928,
+      "k_los_mean_rad_m": -0.04137526821537228,
+      "k_flight_mean_rad_m": 0.01644701256947189,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 21,
+      "pulses": 5259,
+      "tx_time_mean_s": 15.147523617335109,
+      "tx_time_min_s": 14.795458429333333,
+      "tx_time_max_s": 15.499664941333332,
+      "slant_range_mean_m": 612839.7815983287,
+      "slant_range_min_m": 612655.6638513604,
+      "slant_range_max_m": 613031.1377871206,
+      "slant_range_ptp_m": 375.4739357602084,
+      "speed_mean_m_s": 7657.854675147047,
+      "speed_min_m_s": 7657.848703862365,
+      "speed_max_m_s": 7657.8606469490105,
+      "speed_ptp_m_s": 0.011943086645260337,
+      "R_over_V_mean_s": 80.0276066270309,
+      "R_over_V_ptp_s": 0.048906406474230835,
+      "incidence_mean_deg": 22.44506164784313,
+      "incidence_min_deg": 22.397841791714082,
+      "incidence_max_deg": 22.494006570650154,
+      "incidence_ptp_deg": 0.09616477893607307,
+      "view_azimuth_mean_deg": 112.91907822916595,
+      "flight_azimuth_mean_deg": 191.21356210812422,
+      "squint_mean_deg": 78.29448388691293,
+      "squint_min_deg": 77.65128164609318,
+      "squint_max_deg": 78.93955843100926,
+      "squint_ptp_deg": 1.2882767849160863,
+      "k_los_mean_rad_m": -0.04081314762468668,
+      "k_flight_mean_rad_m": 0.016450733832421436,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 22,
+      "pulses": 5256,
+      "tx_time_mean_s": 15.851900022832066,
+      "tx_time_min_s": 15.499798914666666,
+      "tx_time_max_s": 16.204085645333333,
+      "slant_range_mean_m": 613236.9385648676,
+      "slant_range_min_m": 613031.2133283919,
+      "slant_range_max_m": 613449.8995636934,
+      "slant_range_ptp_m": 418.6862353015458,
+      "speed_mean_m_s": 7657.866614683141,
+      "speed_min_m_s": 7657.860647645843,
+      "speed_max_m_s": 7657.872581976057,
+      "speed_ptp_m_s": 0.011934330213989597,
+      "R_over_V_mean_s": 80.0793444658322,
+      "R_over_V_ptp_s": 0.054549205063906925,
+      "incidence_mean_deg": 22.546365283159727,
+      "incidence_min_deg": 22.49402584180662,
+      "incidence_max_deg": 22.600400681598973,
+      "incidence_ptp_deg": 0.10637483979235113,
+      "view_azimuth_mean_deg": 114.20616566987341,
+      "flight_azimuth_mean_deg": 191.21828701944452,
+      "squint_mean_deg": 77.01212135808436,
+      "squint_min_deg": 76.37524818501048,
+      "squint_max_deg": 77.65103771552796,
+      "squint_ptp_deg": 1.275789530517475,
+      "k_los_mean_rad_m": -0.04023556904540468,
+      "k_flight_mean_rad_m": 0.016454452075128738,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 23,
+      "pulses": 5252,
+      "tx_time_mean_s": 16.55631466498908,
+      "tx_time_min_s": 16.20421972,
+      "tx_time_max_s": 16.908502456,
+      "slant_range_mean_m": 613677.2515434531,
+      "slant_range_min_m": 613449.9833726082,
+      "slant_range_max_m": 613911.7505796561,
+      "slant_range_ptp_m": 461.76720704790205,
+      "speed_mean_m_s": 7657.878542609544,
+      "speed_min_m_s": 7657.872582234161,
+      "speed_max_m_s": 7657.884503860285,
+      "speed_ptp_m_s": 0.011921626123694296,
+      "R_over_V_mean_s": 80.13671776968913,
+      "R_over_V_ptp_s": 0.06017486942909045,
+      "incidence_mean_deg": 22.65777724638329,
+      "incidence_min_deg": 22.600421890581952,
+      "incidence_max_deg": 22.716796694166707,
+      "incidence_ptp_deg": 0.1163748035847538,
+      "view_azimuth_mean_deg": 115.48014224075743,
+      "flight_azimuth_mean_deg": 191.22300857322338,
+      "squint_mean_deg": 75.74286634144414,
+      "squint_min_deg": 75.11292783815402,
+      "squint_max_deg": 76.37500660094979,
+      "squint_ptp_deg": 1.262078762795771,
+      "k_los_mean_rad_m": -0.03964388010123455,
+      "k_flight_mean_rad_m": 0.016458167563859146,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 24,
+      "pulses": 5248,
+      "tx_time_mean_s": 17.260750170310974,
+      "tx_time_min_s": 16.908636632,
+      "tx_time_max_s": 17.612964856,
+      "slant_range_mean_m": 614160.6230567719,
+      "slant_range_min_m": 613911.8426509156,
+      "slant_range_max_m": 614416.6299555593,
+      "slant_range_ptp_m": 504.787304643658,
+      "speed_mean_m_s": 7657.890458541704,
+      "speed_min_m_s": 7657.884504875954,
+      "speed_max_m_s": 7657.896412300748,
+      "speed_ptp_m_s": 0.011907424794117105,
+      "R_over_V_mean_s": 80.1997137875506,
+      "R_over_V_ptp_s": 0.06579257429832808,
+      "incidence_mean_deg": 22.779089699270596,
+      "incidence_min_deg": 22.71681980451419,
+      "incidence_max_deg": 22.842989922044232,
+      "incidence_ptp_deg": 0.12617011753004187,
+      "view_azimuth_mean_deg": 116.73994329282239,
+      "flight_azimuth_mean_deg": 191.22772665707933,
+      "squint_mean_deg": 74.48778337361254,
+      "squint_min_deg": 73.86522621040972,
+      "squint_max_deg": 75.11268876456613,
+      "squint_ptp_deg": 1.2474625541564146,
+      "k_los_mean_rad_m": -0.03903950119971935,
+      "k_flight_mean_rad_m": 0.01646188021039257,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 25,
+      "pulses": 5242,
+      "tx_time_mean_s": 17.965121558686505,
+      "tx_time_min_s": 17.613099144,
+      "tx_time_max_s": 18.31725330933333,
+      "slant_range_mean_m": 614686.8879578066,
+      "slant_range_min_m": 614416.7302906951,
+      "slant_range_max_m": 614964.2627556393,
+      "slant_range_ptp_m": 547.5324649441754,
+      "speed_mean_m_s": 7657.902361033604,
+      "speed_min_m_s": 7657.896414338365,
+      "speed_max_m_s": 7657.908306680853,
+      "speed_ptp_m_s": 0.01189234248795401,
+      "R_over_V_mean_s": 80.26831094306073,
+      "R_over_V_ptp_s": 0.07137436015302967,
+      "incidence_mean_deg": 22.910066339303043,
+      "incidence_min_deg": 22.84301489665616,
+      "incidence_max_deg": 22.978711440296014,
+      "incidence_ptp_deg": 0.135696543639854,
+      "view_azimuth_mean_deg": 117.98446500100808,
+      "flight_azimuth_mean_deg": 191.23244070500198,
+      "squint_mean_deg": 73.2479757136263,
+      "squint_min_deg": 72.63344201399258,
+      "squint_max_deg": 73.86498984396512,
+      "squint_ptp_deg": 1.2315478299725477,
+      "k_los_mean_rad_m": -0.038423921030530904,
+      "k_flight_mean_rad_m": 0.01646558956958189,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 26,
+      "pulses": 5238,
+      "tx_time_mean_s": 18.669477690902887,
+      "tx_time_min_s": 18.317387725333333,
+      "tx_time_max_s": 19.021685234666666,
+      "slant_range_mean_m": 615255.9680395939,
+      "slant_range_min_m": 614964.3713581882,
+      "slant_range_max_m": 615554.7785175472,
+      "slant_range_ptp_m": 590.4071593589615,
+      "speed_mean_m_s": 7657.914250854254,
+      "speed_min_m_s": 7657.908309342003,
+      "speed_max_m_s": 7657.920190169959,
+      "speed_ptp_m_s": 0.011880827955792483,
+      "R_over_V_mean_s": 80.34249898981464,
+      "R_over_V_ptp_s": 0.07697299801625945,
+      "incidence_mean_deg": 23.050482237468277,
+      "incidence_min_deg": 22.978738240510825,
+      "incidence_max_deg": 23.123782983722204,
+      "incidence_ptp_deg": 0.14504474321137892,
+      "view_azimuth_mean_deg": 119.21292149103239,
+      "flight_azimuth_mean_deg": 191.23715104878391,
+      "squint_mean_deg": 72.02422956759234,
+      "squint_min_deg": 71.41785256626413,
+      "squint_max_deg": 72.63320846359504,
+      "squint_ptp_deg": 1.215355897330915,
+      "k_los_mean_rad_m": -0.03779850742014598,
+      "k_flight_mean_rad_m": 0.016469295902748055,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 27,
+      "pulses": 5233,
+      "tx_time_mean_s": 19.373934429971335,
+      "tx_time_min_s": 19.021819789333332,
+      "tx_time_max_s": 19.726174824,
+      "slant_range_mean_m": 615867.8438803327,
+      "slant_range_min_m": 615554.8953913186,
+      "slant_range_max_m": 616188.0005957066,
+      "slant_range_ptp_m": 633.1052043880336,
+      "speed_mean_m_s": 7657.926129967068,
+      "speed_min_m_s": 7657.920194690336,
+      "speed_max_m_s": 7657.932065051558,
+      "speed_ptp_m_s": 0.011870361222463544,
+      "R_over_V_mean_s": 80.42227534536016,
+      "R_over_V_ptp_s": 0.08254853162884501,
+      "incidence_mean_deg": 23.200117583176702,
+      "incidence_min_deg": 23.123811568948994,
+      "incidence_max_deg": 23.277941575579995,
+      "incidence_ptp_deg": 0.1541300066309998,
+      "view_azimuth_mean_deg": 120.42471983480148,
+      "flight_azimuth_mean_deg": 191.24185846549236,
+      "squint_mean_deg": 70.81713864065453,
+      "squint_min_deg": 70.21936509519207,
+      "squint_max_deg": 71.41762199657138,
+      "squint_ptp_deg": 1.1982569013793123,
+      "k_los_mean_rad_m": -0.03716455019186382,
+      "k_flight_mean_rad_m": 0.01647299982154165,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 28,
+      "pulses": 5226,
+      "tx_time_mean_s": 20.078338171839263,
+      "tx_time_min_s": 19.726309522666668,
+      "tx_time_max_s": 20.430500610666666,
+      "slant_range_mean_m": 616522.2584985353,
+      "slant_range_min_m": 616188.1257388094,
+      "slant_range_max_m": 616863.5889060674,
+      "slant_range_ptp_m": 675.4631672580726,
+      "speed_mean_m_s": 7657.937995687655,
+      "speed_min_m_s": 7657.932068057916,
+      "speed_max_m_s": 7657.943925810217,
+      "speed_ptp_m_s": 0.011857752300784341,
+      "R_over_V_mean_s": 80.50760645472151,
+      "R_over_V_ptp_s": 0.08807965312598753,
+      "incidence_mean_deg": 23.358686669246765,
+      "incidence_min_deg": 23.277971902209135,
+      "incidence_max_deg": 23.440878467483582,
+      "incidence_ptp_deg": 0.16290656527444794,
+      "view_azimuth_mean_deg": 121.6188831226109,
+      "flight_azimuth_mean_deg": 191.24656193279438,
+      "squint_mean_deg": 69.62767882018123,
+      "squint_min_deg": 69.0390230828419,
+      "squint_max_deg": 70.21913762533735,
+      "squint_ptp_deg": 1.180114542495465,
+      "k_los_mean_rad_m": -0.03652355534343713,
+      "k_flight_mean_rad_m": 0.016476700521784533,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 29,
+      "pulses": 5220,
+      "tx_time_mean_s": 20.782669142875097,
+      "tx_time_min_s": 20.430635463999998,
+      "tx_time_max_s": 21.134844658666665,
+      "slant_range_mean_m": 617219.048641795,
+      "slant_range_min_m": 616863.7223186278,
+      "slant_range_max_m": 617581.5652917954,
+      "slant_range_ptp_m": 717.8429731676588,
+      "speed_mean_m_s": 7657.949847672149,
+      "speed_min_m_s": 7657.943925187567,
+      "speed_max_m_s": 7657.955769736487,
+      "speed_ptp_m_s": 0.01184454891972564,
+      "R_over_V_mean_s": 80.59847097810206,
+      "R_over_V_ptp_s": 0.093613607996204,
+      "incidence_mean_deg": 23.525920932413364,
+      "incidence_min_deg": 23.44091049110176,
+      "incidence_max_deg": 23.61236722418588,
+      "incidence_ptp_deg": 0.1714567330841203,
+      "view_azimuth_mean_deg": 122.79475165913482,
+      "flight_azimuth_mean_deg": 191.25126132316493,
+      "squint_mean_deg": 68.45650967400243,
+      "squint_min_deg": 67.87710556942534,
+      "squint_max_deg": 69.03879885252606,
+      "squint_ptp_deg": 1.1616932831007079,
+      "k_los_mean_rad_m": -0.035876876552137595,
+      "k_flight_mean_rad_m": 0.01648039790339391,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 30,
+      "pulses": 5214,
+      "tx_time_mean_s": 21.487042001798237,
+      "tx_time_min_s": 21.134979672,
+      "tx_time_max_s": 21.839254178666668,
+      "slant_range_mean_m": 617958.1805806862,
+      "slant_range_min_m": 617581.7069707181,
+      "slant_range_max_m": 618341.8376926047,
+      "slant_range_ptp_m": 760.1307218866423,
+      "speed_mean_m_s": 7657.961687820759,
+      "speed_min_m_s": 7657.955771561702,
+      "speed_max_m_s": 7657.967606120647,
+      "speed_ptp_m_s": 0.011834558945338358,
+      "R_over_V_mean_s": 80.6948644657888,
+      "R_over_V_ptp_s": 0.09913548265885197,
+      "incidence_mean_deg": 23.7015778048407,
+      "incidence_min_deg": 23.61240089838719,
+      "incidence_max_deg": 23.792148751342072,
+      "incidence_ptp_deg": 0.17974785295488227,
+      "view_azimuth_mean_deg": 123.9519683030902,
+      "flight_azimuth_mean_deg": 191.2559574053307,
+      "squint_mean_deg": 67.30398911212693,
+      "squint_min_deg": 66.73404859198943,
+      "squint_max_deg": 67.87688465948195,
+      "squint_ptp_deg": 1.1428360674925007,
+      "k_los_mean_rad_m": -0.035225701215731924,
+      "k_flight_mean_rad_m": 0.016484092571425944,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    },
+    {
+      "look": 31,
+      "pulses": 5208,
+      "tx_time_mean_s": 22.191503827842293,
+      "tx_time_min_s": 21.839389362666665,
+      "tx_time_max_s": 22.543776109333333,
+      "slant_range_mean_m": 618739.5637417006,
+      "slant_range_min_m": 618341.9876405728,
+      "slant_range_max_m": 619144.3170058763,
+      "slant_range_ptp_m": 802.3293653035071,
+      "speed_mean_m_s": 7657.973516914416,
+      "speed_min_m_s": 7657.967607126918,
+      "speed_max_m_s": 7657.979425605636,
+      "speed_ptp_m_s": 0.011818478717941616,
+      "R_over_V_mean_s": 80.79677505699674,
+      "R_over_V_ptp_s": 0.10464576452145025,
+      "incidence_mean_deg": 23.885396622949894,
+      "incidence_min_deg": 23.792184030144988,
+      "incidence_max_deg": 23.97996099346676,
+      "incidence_ptp_deg": 0.18777696332177246,
+      "view_azimuth_mean_deg": 125.09013323456882,
+      "flight_azimuth_mean_deg": 191.26065049551178,
+      "squint_mean_deg": 66.17051727068974,
+      "squint_min_deg": 65.61021643993381,
+      "squint_max_deg": 66.73383107443233,
+      "squint_ptp_deg": 1.123614634498519,
+      "k_los_mean_rad_m": -0.03457122846019466,
+      "k_flight_mean_rad_m": 0.016487784774866565,
+      "k_axis0_rad_m": -0.04799655442984407,
+      "k_axis1_rad_m": 0.0
+    }
+  ],
+  "pvp_signal_block_read": false
+}

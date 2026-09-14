@@ -1,0 +1,33 @@
+{
+  "config_sha256": "55b657d8d570ecc195fa62d494b55b7da46a56a63eb02a609b918021055ac752",
+  "input": {
+    "path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOKS_complex64.npy",
+    "bytes": 9584768,
+    "mtime_ns": 1788294174000000000,
+    "shape": [
+      32,
+      288,
+      130
+    ],
+    "dtype": "complex64"
+  },
+  "config_written_before_analysis": true,
+  "interpreter": "D:\\Dati Tesi\\Umbra\\.venv-umbra-thesis\\Scripts\\python.exe",
+  "source_sha256": {
+    "code/analyze_block15b_frequency.py": "563bbb11c8840ae8fc69da76acc8f876515f6cd9f967c5a58c4c0fa4af2b8d03",
+    "code/umbra_sar/frequency_comparison.py": "08d0c60f1374a39511fa5ce285cc9e60b937bb10378d4bc73b62ca0ecaa69d73"
+  },
+  "frozen_inputs_unchanged": true,
+  "radar_sources_read": false,
+  "formation_validated": false,
+  "outputs": [
+    "BLOCK15B_BINS.csv",
+    "BLOCK15B_COMPARISON.png",
+    "BLOCK15B_CONFIG.json",
+    "BLOCK15B_ESTIMATOR_DETAILS.json",
+    "BLOCK15B_FIXED_PEAK.png",
+    "BLOCK15B_LAG_DEPENDENCE.png",
+    "BLOCK15B_SUMMARY.json",
+    "BLOCK15B_SYNTHETIC_CONTAMINATION.json"
+  ]
+}

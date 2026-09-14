@@ -1,0 +1,9 @@
+{
+  "block":"15I",
+  "scope":"synthetic intensity-Fourier coefficients only; no real-data classifier or correction",
+  "sequences":{"calibration":24,"evaluation":48,"total":72},
+  "tests":{"passed":107,"failed":0,"skipped":0},
+  "prior_guards":{"verified":5,"mismatches":0},
+  "outputs":["BLOCK15I_CONFIG.json","BLOCK15I_PROTOCOL.md","BLOCK15I_RESULTS.csv","BLOCK15I_SUMMARY.json","BLOCK15I_REPORT.md"],
+  "note":"Final runner has a post-freeze performance-only separable-DFT cache and JSON report serialization repair; synthetic scenarios/seeds/results were unchanged."
+}

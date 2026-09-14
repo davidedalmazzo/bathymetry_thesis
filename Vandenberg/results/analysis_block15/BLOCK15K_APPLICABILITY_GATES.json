@@ -1,0 +1,43 @@
+{
+  "thresholds": {
+    "level1_min_cycles": 0.5,
+    "level1_min_r2": 0.97,
+    "level1_max_adjacent_phase_rad": 1.5707963267948966,
+    "level1_min_patch_msc": 0.5,
+    "level2_min_separation_delta_eff": 2.0,
+    "level3_min_independent_radial_elements": 4
+  },
+  "matched_metrics": {
+    "cycles": 0.7441874288972432,
+    "r2": 0.9849232151185977,
+    "max_step": 2.845425788961833,
+    "msc": 0.8364591980116024,
+    "sign_ok": true,
+    "separation_delta_eff": 1.35,
+    "formation_stable": true,
+    "persistent_resolved": false,
+    "external_compatible": false,
+    "independent_radial_elements": 2.014,
+    "omega_k_resolved": false,
+    "current_constrained": false
+  },
+  "matched_numeric_gate": {
+    "level1": false,
+    "level2": false,
+    "level3": false,
+    "mandatory_abstention": true
+  },
+  "level1": {
+    "classification": "supported with limitations",
+    "reason": "regular signed evolution is independently reproduced by 11 SICD and 32 BP looks; final three-look pairing is diagnostic and formation-dependent"
+  },
+  "level2": {
+    "classification": "not identifiable",
+    "reason": "1.35 delta_eff neighbour, path sensitivity and failed slow-persistence diagnostics prevent a unique component frequency"
+  },
+  "level3": {
+    "classification": "not supported",
+    "reason": "Level2 fails; only 2.014 radial elements and unresolved depth-current/imaging degeneracy require abstention"
+  },
+  "mandatory_bathymetry_abstention": true
+}

@@ -1,0 +1,356 @@
+{
+  "note": "look times approximated as uniform over the measured span; Block 11 measured the true centres, deviation < 1%",
+  "T_span_s": 21.836,
+  "n_looks": 32,
+  "f0_hz": 0.08377,
+  "true_omega_rad_s": 0.5263424331824339,
+  "width_response": [
+    {
+      "eps": 0.01,
+      "median_omega": 0.5263811874051653,
+      "p10": 0.5211862457061213,
+      "p90": 0.5314095732160844,
+      "relative_80pct_width": 0.019421908978851952,
+      "sigma_over_median": 0.02005277904097606,
+      "median_R2": 0.9999999931981276
+    },
+    {
+      "eps": 0.02,
+      "median_omega": 0.5265866728615975,
+      "p10": 0.516419774713314,
+      "p90": 0.5370158192235559,
+      "relative_80pct_width": 0.03911235428408787,
+      "sigma_over_median": 0.022581214483153207,
+      "median_R2": 0.9999998406205526
+    },
+    {
+      "eps": 0.03,
+      "median_omega": 0.5260344049615595,
+      "p10": 0.5112057701900221,
+      "p90": 0.5401251616544244,
+      "relative_80pct_width": 0.054976235758791424,
+      "sigma_over_median": 0.03151120134741076,
+      "median_R2": 0.9999994487338961
+    },
+    {
+      "eps": 0.05,
+      "median_omega": 0.5262692156777538,
+      "p10": 0.49821615189766716,
+      "p90": 0.5533713271251619,
+      "relative_80pct_width": 0.10480410706992117,
+      "sigma_over_median": 0.05888052975122804,
+      "median_R2": 0.9999950358054808
+    },
+    {
+      "eps": 0.08,
+      "median_omega": 0.5259693957940559,
+      "p10": 0.47896366076712615,
+      "p90": 0.5640328478243912,
+      "relative_80pct_width": 0.16173790288470327,
+      "sigma_over_median": 0.07664686309984257,
+      "median_R2": 0.9999693186930022
+    },
+    {
+      "eps": 0.12,
+      "median_omega": 0.5292564344636905,
+      "p10": 0.47273631367170876,
+      "p90": 0.5921712292896145,
+      "relative_80pct_width": 0.22566549566644817,
+      "sigma_over_median": 0.10413332901361327,
+      "median_R2": 0.9998522482744177
+    },
+    {
+      "eps": 0.177,
+      "median_omega": 0.5250984336456705,
+      "p10": 0.4297418225030781,
+      "p90": 0.6256330894575224,
+      "relative_80pct_width": 0.37305627745716935,
+      "sigma_over_median": 0.1490725072160973,
+      "median_R2": 0.999035559875086
+    },
+    {
+      "eps": 0.25,
+      "median_omega": 0.5266768026030395,
+      "p10": 0.3990889921132598,
+      "p90": 0.653180278751188,
+      "relative_80pct_width": 0.4824425252490925,
+      "sigma_over_median": 0.1834731260935931,
+      "median_R2": 0.9968640717629971
+    }
+  ],
+  "width_response_verdict": "the estimator is MEDIAN-UNBIASED at every width - broadening widens the distribution, it does not shift it; median R2 stays >= 0.997 up to eps = 0.25, so R2 has no diagnostic power at any width",
+  "vandenberg_value_in_single_system_law": {
+    "observed_omega_rad_s": 0.4120656492,
+    "percentile": 7.566666666666666,
+    "median": 0.5276227081959511,
+    "p10": 0.427567927078791,
+    "p90": 0.6311402805422497,
+    "comment": "reported as a placement, not as a validation; Vandenberg stays frozen at the Block 15K classification"
+  },
+  "depth_error_floor": [
+    {
+      "grad": 0.00879,
+      "h_m": 5.0,
+      "L_m": 89.22062550719839,
+      "A": 2.0847306881387775,
+      "W_max_m": 300.0,
+      "dL_over_L": 0.2974020850239946,
+      "dh_over_h_spatial_only": 0.6200032533659795,
+      "dh_over_h_with_eps003": 0.6246355524998318
+    },
+    {
+      "grad": 0.00879,
+      "h_m": 10.0,
+      "L_m": 123.60993015800184,
+      "A": 2.1813743299645822,
+      "W_max_m": 525.0,
+      "dL_over_L": 0.2354474860152416,
+      "dh_over_h_spatial_only": 0.513599102048343,
+      "dh_over_h_with_eps003": 0.5202140901894244
+    },
+    {
+      "grad": 0.00879,
+      "h_m": 15.0,
+      "L_m": 148.24240415309924,
+      "A": 2.292108790799978,
+      "W_max_m": 725.0,
+      "dL_over_L": 0.20447228159048172,
+      "dh_over_h_spatial_only": 0.4686727141084717,
+      "dh_over_h_with_eps003": 0.477320525510257
+    },
+    {
+      "grad": 0.00879,
+      "h_m": 25.0,
+      "L_m": 183.2621016750696,
+      "A": 2.5669949328238877,
+      "W_max_m": 1125.0,
+      "dL_over_L": 0.1628996459333952,
+      "dh_over_h_spatial_only": 0.4181625656698309,
+      "dh_over_h_with_eps003": 0.43230978431340733
+    },
+    {
+      "grad": 0.00879,
+      "h_m": 40.0,
+      "L_m": 216.59662825280364,
+      "A": 3.172742783518274,
+      "W_max_m": 1725.0,
+      "dL_over_L": 0.12556326275524848,
+      "dh_over_h_spatial_only": 0.39837993578172354,
+      "dh_over_h_with_eps003": 0.42642531365969677
+    },
+    {
+      "grad": 0.004,
+      "h_m": 5.0,
+      "L_m": 89.22062550719839,
+      "A": 2.0847306881387775,
+      "W_max_m": 475.0,
+      "dL_over_L": 0.1878328958046282,
+      "dh_over_h_spatial_only": 0.3915810021258818,
+      "dh_over_h_with_eps003": 0.3988749434199659
+    },
+    {
+      "grad": 0.004,
+      "h_m": 10.0,
+      "L_m": 123.60993015800184,
+      "A": 2.1813743299645822,
+      "W_max_m": 800.0,
+      "dL_over_L": 0.1545124126975023,
+      "dh_over_h_spatial_only": 0.33704941071922506,
+      "dh_over_h_with_eps003": 0.34704605929605836
+    },
+    {
+      "grad": 0.004,
+      "h_m": 15.0,
+      "L_m": 148.24240415309924,
+      "A": 2.292108790799978,
+      "W_max_m": 1100.0,
+      "dL_over_L": 0.13476582195736295,
+      "dh_over_h_spatial_only": 0.30889792520785636,
+      "dh_over_h_with_eps003": 0.32186751827623905
+    },
+    {
+      "grad": 0.004,
+      "h_m": 25.0,
+      "L_m": 183.2621016750696,
+      "A": 2.5669949328238877,
+      "W_max_m": 1700.0,
+      "dL_over_L": 0.1078012362794527,
+      "dh_over_h_spatial_only": 0.2767252272815057,
+      "dh_over_h_with_eps003": 0.29767208417910157
+    },
+    {
+      "grad": 0.004,
+      "h_m": 40.0,
+      "L_m": 216.59662825280364,
+      "A": 3.172742783518274,
+      "W_max_m": 2600.0,
+      "dL_over_L": 0.08330639548184755,
+      "dh_over_h_spatial_only": 0.26430976508595116,
+      "dh_over_h_with_eps003": 0.30494528495471335
+    },
+    {
+      "grad": 0.002,
+      "h_m": 5.0,
+      "L_m": 89.22062550719839,
+      "A": 2.0847306881387775,
+      "W_max_m": 675.0,
+      "dL_over_L": 0.13217870445510874,
+      "dh_over_h_spatial_only": 0.27555700149599094,
+      "dh_over_h_with_eps003": 0.28582722112463793
+    },
+    {
+      "grad": 0.002,
+      "h_m": 10.0,
+      "L_m": 123.60993015800184,
+      "A": 2.1813743299645822,
+      "W_max_m": 1150.0,
+      "dL_over_L": 0.10748689578956683,
+      "dh_over_h_spatial_only": 0.2344691552829392,
+      "dh_over_h_with_eps003": 0.24862511294284306
+    },
+    {
+      "grad": 0.002,
+      "h_m": 15.0,
+      "L_m": 148.24240415309924,
+      "A": 2.292108790799978,
+      "W_max_m": 1575.0,
+      "dL_over_L": 0.09412216136704714,
+      "dh_over_h_spatial_only": 0.21573823347850285,
+      "dh_over_h_with_eps003": 0.23393109350407368
+    },
+    {
+      "grad": 0.002,
+      "h_m": 25.0,
+      "L_m": 183.2621016750696,
+      "A": 2.5669949328238877,
+      "W_max_m": 2400.0,
+      "dL_over_L": 0.076359209031279,
+      "dh_over_h_spatial_only": 0.19601370265773324,
+      "dh_over_h_with_eps003": 0.22461787532412328
+    },
+    {
+      "grad": 0.002,
+      "h_m": 40.0,
+      "L_m": 216.59662825280364,
+      "A": 3.172742783518274,
+      "W_max_m": 3675.0,
+      "dL_over_L": 0.05893785802797378,
+      "dh_over_h_spatial_only": 0.1869946637342784,
+      "dh_over_h_with_eps003": 0.24103729827853712
+    },
+    {
+      "grad": 0.001,
+      "h_m": 5.0,
+      "L_m": 89.22062550719839,
+      "A": 2.0847306881387775,
+      "W_max_m": 950.0,
+      "dL_over_L": 0.0939164479023141,
+      "dh_over_h_spatial_only": 0.1957905010629409,
+      "dh_over_h_with_eps003": 0.20999871325522115
+    },
+    {
+      "grad": 0.001,
+      "h_m": 10.0,
+      "L_m": 123.60993015800184,
+      "A": 2.1813743299645822,
+      "W_max_m": 1625.0,
+      "dL_over_L": 0.07606764932800114,
+      "dh_over_h_spatial_only": 0.1659320175848493,
+      "dh_over_h_with_eps003": 0.1853971317645587
+    },
+    {
+      "grad": 0.001,
+      "h_m": 15.0,
+      "L_m": 148.24240415309924,
+      "A": 2.292108790799978,
+      "W_max_m": 2250.0,
+      "dL_over_L": 0.065885512956933,
+      "dh_over_h_spatial_only": 0.151016763434952,
+      "dh_over_h_with_eps003": 0.17603077561027478
+    },
+    {
+      "grad": 0.001,
+      "h_m": 25.0,
+      "L_m": 183.2621016750696,
+      "A": 2.5669949328238877,
+      "W_max_m": 3400.0,
+      "dL_over_L": 0.05390061813972635,
+      "dh_over_h_spatial_only": 0.13836261364075286,
+      "dh_over_h_with_eps003": 0.176567355813665
+    },
+    {
+      "grad": 0.001,
+      "h_m": 40.0,
+      "L_m": 216.59662825280364,
+      "A": 3.172742783518274,
+      "W_max_m": 5225.0,
+      "dL_over_L": 0.04145390014407725,
+      "dh_over_h_spatial_only": 0.13152256253080824,
+      "dh_over_h_with_eps003": 0.20107252261557518
+    },
+    {
+      "grad": 0.0005,
+      "h_m": 5.0,
+      "L_m": 89.22062550719839,
+      "A": 2.0847306881387775,
+      "W_max_m": 1350.0,
+      "dL_over_L": 0.06608935222755437,
+      "dh_over_h_spatial_only": 0.13777850074799547,
+      "dh_over_h_with_eps003": 0.15731641532509097
+    },
+    {
+      "grad": 0.0005,
+      "h_m": 10.0,
+      "L_m": 123.60993015800184,
+      "A": 2.1813743299645822,
+      "W_max_m": 2300.0,
+      "dL_over_L": 0.053743447894783414,
+      "dh_over_h_spatial_only": 0.1172345776414696,
+      "dh_over_h_with_eps003": 0.14346640094990942
+    },
+    {
+      "grad": 0.0005,
+      "h_m": 15.0,
+      "L_m": 148.24240415309924,
+      "A": 2.292108790799978,
+      "W_max_m": 3175.0,
+      "dL_over_L": 0.04669052099310213,
+      "dh_over_h_spatial_only": 0.10701975361532032,
+      "dh_over_h_with_eps003": 0.1401213716299927
+    },
+    {
+      "grad": 0.0005,
+      "h_m": 25.0,
+      "L_m": 183.2621016750696,
+      "A": 2.5669949328238877,
+      "W_max_m": 4825.0,
+      "dL_over_L": 0.037981782730584376,
+      "dh_over_h_spatial_only": 0.09749904380902794,
+      "dh_over_h_with_eps003": 0.14675790210139922
+    },
+    {
+      "grad": 0.0005,
+      "h_m": 40.0,
+      "L_m": 216.59662825280364,
+      "A": 3.172742783518274,
+      "W_max_m": 7400.0,
+      "dL_over_L": 0.02926981462875725,
+      "dh_over_h_spatial_only": 0.09286559313830718,
+      "dh_over_h_with_eps003": 0.1782021135824439
+    }
+  ],
+  "depth_error_floor_verdict": "on the Vandenberg gradient 8.79e-3 the spatial term alone floors dh/h at 40-62% however well omega is measured; reaching 10% needs a bottom gradient of order 5e-4 m/m. The binding constraint of the method is wavenumber resolution against the WKB window, not the frequency estimate. Stated under thesis eq. (3.9) dL/L = L/W, i.e. the resolution criterion; a peak-centroid estimator relaxes it by its own gain, but Block 15K measured only 2.014 effective radial elements in the lobe, so that gain is of order sqrt(2), not orders of magnitude.",
+  "selection_criterion": {
+    "supersedes": "CHECKPOINT_15 'serve swell bimodale, d_omega*T_dwell > 2pi'",
+    "reason_superseded": [
+      "no pair in the 46218 spectrum reaches one beat cycle (best 10.53/16.67 s -> 0.764)",
+      "Block 16a shows there is no second system: the frequency dip is chi-squared noise and the directional split is the MEM artefact",
+      "one-vs-two only matters when the two must be separated; for a narrow single system both hypotheses give the same omega"
+    ],
+    "replacement": [
+      "rank scenes by eps = sigma_f/f_bar of the dominant system inside a +/-20 deg cone about the expected image wave vector; eps <= 0.05 keeps the omega spread under 10%",
+      "rank by bottom gradient: |grad h| <= 2e-3 m/m for dh/h under ~25%, <= 5e-4 for ~10%",
+      "require the swell to be shore-normal enough that the cone holds most of the band energy"
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "block": "15F",
+  "date": "2026-09-12",
+  "status": "complete; diagnostic only",
+  "tests": {
+    "seconds": 7.37,
+    "skipped": 0,
+    "failed": 0,
+    "passed": 93
+  },
+  "prior_artifact_guards_verified": 9,
+  "pvp_signal_block_read": false,
+  "visually_checked_figures": 2,
+  "note": "Config was frozen before PVP analysis. The final runner includes only a post-freeze numpy.ptp compatibility fix; final source hashes are below.",
+  "files": [
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_CONFIG.json",
+      "bytes": 4070,
+      "sha256": "105242285f8d5ed2bdd8a5c4610ae056d1dfb6f3fbcc7eedc03ce27f119e99ad"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_LOOK_GEOMETRY.csv",
+      "bytes": 16401,
+      "sha256": "d34540a57379fb9d289fca734077d38cf64b4237eef1d7a0aa7f9a44b19500e2"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_GEOMETRY.json",
+      "bytes": 54518,
+      "sha256": "771dc44821dad6b3bd36fc70471f4108adb63527707ef1cd2049dfa9afbd91de"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_TRANSFER_RESULTS.csv",
+      "bytes": 36933,
+      "sha256": "3f5407ef0f90e73c81ebd306feaa7bdec46c373aa21c163b41912b8f9d8abae9"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_RESULTS.json",
+      "bytes": 96273,
+      "sha256": "19e84db9e874a8f49c8167f0fd4b83fb9c23a9caebc36e8218d96aa7241d228c"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_MODEL_ASSUMPTIONS.md",
+      "bytes": 3028,
+      "sha256": "1ce3cbcd09b119c0cc8e3042174929cca6ddd7deb0253af17a7116d90f1c9e80"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_LOOK_GEOMETRY.png",
+      "bytes": 123450,
+      "sha256": "e98b7a6cc0bd84d99f24e841db1b04c80af82360604f8bb47530b0a182d5ed32"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_TRANSFER.png",
+      "bytes": 101152,
+      "sha256": "269a497b42c72e99a347a4786f61ae5a788b571d91bf4e2d6076c6a1b3222ad7"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15F_REPORT.md",
+      "bytes": 7646,
+      "sha256": "0e79f8cdd4cf2762ece3d49976b2b8e4f224212b004043bb97f6acd5465a5193"
+    },
+    {
+      "path": "code/analyze_block15f_look_geometry.py",
+      "bytes": 8855,
+      "sha256": "9d3f7d41d2c733f686884231a9e5bdea2ee9e4d2d5911bbf52dcd0d8680b6e8f"
+    },
+    {
+      "path": "code/plot_block15f_look_geometry.py",
+      "bytes": 2211,
+      "sha256": "f65cc39d9ee57b4dc0f75f90299fd7f62e2efeb2983f0e65d3190b2b62b73306"
+    },
+    {
+      "path": "code/umbra_sar/look_transfer_geometry.py",
+      "bytes": 2494,
+      "sha256": "49623db86501772a94b7a754d3a808e9dd01e36be0434b55ffb1b3f1d0cd8a19"
+    },
+    {
+      "path": "tests/test_look_transfer_geometry.py",
+      "bytes": 1220,
+      "sha256": "45b5ed14409eb0cd10053d9c7e9d13e48ad8c2d06fe193f7967c4f7e465840e7"
+    }
+  ]
+}

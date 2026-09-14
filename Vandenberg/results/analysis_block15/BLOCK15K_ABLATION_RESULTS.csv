@@ -1,0 +1,6 @@
+step,sicd_slope_rad_s,bp_slope_rad_s,absolute_difference_rad_s,relative_difference_vs_sicd,change_from_frozen_difference_rad_s,causal_category,operator_equivalence
+A,-0.3509722055168202,-0.4120656492031189,0.06109344368629871,0.1740691790574591,0.0,original mixed factors,no
+B,-0.3509722055168202,-0.407298559038908,0.05632635352208781,0.1604866500443962,-0.0047670901642108965,quantified temporal support,no
+C,-0.4034621735563052,-0.4004843512648546,0.0029778222914506047,0.007380672803109842,-0.058115621394848105,quantified spatial grid/window plus interacting temporal sampling,partial
+D,-0.4034621735563052,-0.4036849680632865,0.00022279450698131642,0.0005522066790487469,-0.06087064917931739,quantified look-centre/duration approximation plus formation interaction,partial
+E,-0.4034621735563052,-0.4036849680632865,0.00022279450698131642,0.0005522066790487469,-0.06087064917931739,residual formation-path dependence; not uniquely attributable,partial

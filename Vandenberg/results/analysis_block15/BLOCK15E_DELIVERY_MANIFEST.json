@@ -1,0 +1,123 @@
+{
+  "block": "15E",
+  "date": "2026-09-12",
+  "status": "complete; diagnostic only",
+  "tests": {
+    "seconds": 8.79,
+    "skipped": 0,
+    "failed": 0,
+    "passed": 89
+  },
+  "prior_hash_guards_verified": 52,
+  "synthetic_series": 1600,
+  "fit_failures": 0,
+  "visually_checked_figures": 3,
+  "note": "CONFIG source hashes record the pre-execution source. Sequential sandbox fallback and NumPy JSON scalar fix did not alter the frozen statistical design; files below hash final executed sources.",
+  "files": [
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_CONFIG.json",
+      "bytes": 192051,
+      "sha256": "d42b598b4e72054fa2f9c85afb86e1beb3a1b7d2ea137bf231048711ffdb610b"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_REAL.json",
+      "bytes": 1934470,
+      "sha256": "d2c7b413c4305d6905ebb94e3d61c1d842c4dd79f786bb31245de3cfc7508800"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_0_0.jsonl.gz",
+      "bytes": 3724282,
+      "sha256": "78640f042be485a5ae6be2da61b50b99bf238b1acfe4d3c1d913297c88780d32"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_0_1.jsonl.gz",
+      "bytes": 3724980,
+      "sha256": "6980be4a3b70f975a69c2c2baba0ba0c5bf24d7157cc82ae6214c9e33a8302cd"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_0_2.jsonl.gz",
+      "bytes": 3844121,
+      "sha256": "4828dbcb305d60f2e0d9974312c07b63ecf1a01f691cb0f616117e56f34ab24f"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_0_3.jsonl.gz",
+      "bytes": 3982093,
+      "sha256": "3424e8b2c33bf700dd48e40c252844abb6b42f2936d7fe13190bb5e94557a2a6"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_1_0.jsonl.gz",
+      "bytes": 1289968,
+      "sha256": "1589e71c8e68f18f13a4800052bfddd402680136c41dad74682b60403b0f8361"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_1_1.jsonl.gz",
+      "bytes": 1298151,
+      "sha256": "4de78874546b852a2c4ab8a355268103469b1c4a9a541d331c81618e0b9d9cd7"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_1_2.jsonl.gz",
+      "bytes": 1334342,
+      "sha256": "0fde4271fe99fbb71be41483b699f86841b822dbe8fa121db430c8ca13d9b740"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_1_3.jsonl.gz",
+      "bytes": 1359972,
+      "sha256": "84d399126e3d6084b23ecce9a767dc243cd775e7f948110b557666b56396f34b"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_SUMMARY.json",
+      "bytes": 148858,
+      "sha256": "3f0bdaa55da6db69f97fce22baad561f11dd389eff5f99f615682857e8e9a71f"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_NULL_DISTRIBUTIONS.csv",
+      "bytes": 494540,
+      "sha256": "1f2b0b0cfb7f27f5e6638426ecc127245b363953197ac95db1f652b8f6fbdc56"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_REAL_FOLDS.csv",
+      "bytes": 55633,
+      "sha256": "b689ec19627188aa1d27282e728ad8a34bb5ad04f099a040c50ed068ffe384fa"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_GAIN_DISTRIBUTIONS.png",
+      "bytes": 214061,
+      "sha256": "85048a1cad42ecbec8375f1f461a3e5adb206af713751837c1344f911cf231c7"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_PARTITIONS.png",
+      "bytes": 229311,
+      "sha256": "50231af0c138b04dc99cd0d325216e56fdb16dd0579eb3809c2962702e22c91d"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_RESIDUALS.png",
+      "bytes": 236793,
+      "sha256": "c22bb11fa2e6b19d7754368eacff9b08c995527849031f3e0e820513f8c8d28a"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15E_REPORT.md",
+      "bytes": 10831,
+      "sha256": "6a30ae7fb67aca82e43f02f28b744d92ef18e2b2c56a337f429cdf54340a346e"
+    },
+    {
+      "path": "code/analyze_block15e_robustness.py",
+      "bytes": 10730,
+      "sha256": "f6c927ccc221396048178940b7748e53820fd9287ea9cb1c121d5c00e037e2bf"
+    },
+    {
+      "path": "code/plot_block15e_robustness.py",
+      "bytes": 3479,
+      "sha256": "75621fdedeba4e77447a8c8ed49130c74aaba8a666aa454cde6131cd5398774f"
+    },
+    {
+      "path": "code/umbra_sar/correlated_offset_validation.py",
+      "bytes": 4341,
+      "sha256": "a724bde8d63790fdf2808ee7c42884b84deda56508507f896281fc2a89754063"
+    },
+    {
+      "path": "tests/test_correlated_offset_validation.py",
+      "bytes": 1850,
+      "sha256": "3d2d07ba232a99d4993e278775a8ff703ec4436df77e39c6f9ad13651eaf2b35"
+    }
+  ]
+}

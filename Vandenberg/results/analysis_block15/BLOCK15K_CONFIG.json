@@ -1,0 +1,30 @@
+{
+  "block": "15K",
+  "status": "protocol frozen before matched calculations",
+  "scope": "Existing Vandenberg products only; no new raw-data formation, download, sweep, inversion or peak search.",
+  "frozen_values": {"sicd_slope_rad_s": -0.3509722055168202, "sicd_period_s": 17.902230457045317, "sicd_lambda_m": 130.6028192373831, "bp12_signed_canonical_slope_rad_s": -0.4120656492031189, "bp12_period_s": 15.248020113616473, "bp12_lambda_m": 130.9090909090909},
+  "common_roi": {"name": "Block7 common-centred ocean rectangle", "center_utm10_e_n_m": [715510.6102416331, 3827627.093742074], "shape_rows_cols": [288,130], "spacing_m": 5.0, "extent_parallel_perpendicular_m": [1440.0,650.0], "parallel_bearing_deg_mod180": 79.8357237},
+  "fixed_wavevector": {"canonical_sign": "positive along the frozen 79.8357237 degree propagation axis", "lambda_m": 130.6028192373831, "magnitude_rad_m": 0.0481091358712707, "selection": "nearest physical grid coefficient fixed before temporal calculation; conjugate only as sign control", "delta_eff_radial_bins": 2.223},
+  "time": {"sicd_processed_aperture_s": 18.068061721230308, "cphd_available_slow_time_s": 22.540812513364376, "cphd_bounds_s": [0.0029798746666666667,22.543776109333333], "sicd_bounds_s": [0.0,18.068061721230308], "bp_bin_duration_s": 0.7043998823333333, "sicd_target_centers_s": [3.242899386518952,9.03646263403653,14.832257263168495], "sicd_target_supports_s": [[0.3206023073774813,6.144555419521809],[6.1447575999443504,11.928723504561788],[11.9289257627277,17.757373283886245]], "explicit_temporal_window": "Tukey alpha 0.25; energy-normalised", "unknown_temporal_weight": "vendor SVA without WgtFunct, pixel-dependent and inseparable from SICD formation"},
+  "spatial_processing": {"detrend": "one global plane", "window": "one Tukey alpha 0.1, energy-normalised", "fft": "unshifted fft2 followed by fftshift; no zero padding", "cross": "F_secondary * conj(F_reference)", "msc": "3x3 smoothed cross/auto spectra"},
+  "matching_tolerances": {"center_abs_s": 0.35219994116666665, "rms_duration_abs_s": 0.7043998823333333, "kernel_cosine_min": 0.95, "k_abs_rad_m": 0.002181661564992912, "sign_closure_rad_s": 1e-10, "formation_slope_abs_rad_s_floor": 0.02},
+  "gate_thresholds": {"level1_min_cycles": 0.5, "level1_min_r2": 0.97, "level1_max_adjacent_phase_rad": 1.5707963267948966, "level1_min_patch_msc": 0.5, "level2_min_separation_delta_eff": 2.0, "level3_min_independent_radial_elements": 4},
+  "input_sha256": {
+    "Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json": "c399af008e2159ede9b6e27b8bf99dffdd17b7f808aa263ea569d20438df8fcd",
+    "Vandenberg/results/analysis_block6/BLOCK6_PHASE_SLOPE_SUMMARY.json": "96a1ae0d1bae2bf88b89fc52f7b8b72eed71938a1edbb32b30fe15b3100c1e14",
+    "Vandenberg/results/block7_enlarged_nominal_sea_surface/BLOCK7_ENLARGED_NOMINAL_MANIFEST.json": "29a27adfff0a7d160cc1b8021f01053cf48d57b48bdb69d74b6e359bf565d7bb",
+    "Vandenberg/results/block7_enlarged_nominal_sea_surface/look1_intensity_bavg.npy": "4e158d6c4deb5c80ffc18044f94e9eef12950aab69618f300d499554d266f0c5",
+    "Vandenberg/results/block7_enlarged_nominal_sea_surface/look2_intensity_bavg.npy": "adc0f5f1f586ca969b39cdee2d48fc1285454e802a9b7fe9cd414fe8881f7145",
+    "Vandenberg/results/block7_enlarged_nominal_sea_surface/look3_intensity_bavg.npy": "e24717aa58b9b00b31a87fd05f615ee3c99c60624454a4261833650209d0043d",
+    "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json": "f57663c67966c79a37bf0179350835ebc5ce31d3b817908e58ae176750b614c6",
+    "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOKS_complex64.npy": "dcb1eaec33993fcb8ea652708dc8b1dc78af824ca257bf02f47b6955aa7717a4",
+    "Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json": "d6a902180861fe3d290aa11cd8f9ae3c137d5bfd68d49ea59a37451047baa313",
+    "Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE_MAP.npz": "15e17e1db7add2aa3feaec86a4689a3f2f346c149b038be7689473627ecfd63d",
+    "Vandenberg/results/analysis_block15/BLOCK15I_RESULTS.csv": "0c034f66e9d301db5cc6ae7aad2dbf119079c63cacaccc7f94d33fb43cddbfd3",
+    "Vandenberg/results/analysis_block15/BLOCK15I_SUMMARY.json": "160b7c62bd2c46319ba208caf05c5edccb8978d8cf54148eb6fdb28fe358cd3b",
+    "Vandenberg/results/analysis_block15/BLOCK15J_RESULTS.csv": "e4a734b420449e4167094eea934d08db23bc150e0bbf6edf473923ef7e340d99",
+    "Vandenberg/results/analysis_block15/BLOCK15J_SUMMARY.json": "369243e7e11b7387d3d79737e10a95d1bf7cc41389b24fbad4a0afb062a88c3c",
+    "Vandenberg/roi/ROIS.json": "c7cf9fea5871247df65f642d1187a06693d7bd229d1c74e337fe93f708d0e589",
+    "Vandenberg/results/analysis_block7/BLOCK7_ROI_SUPPORT_PLAN.json": "1701349664c715c39a6292041553e28d7fa4cfadbd67ba4c7289f3a2eb37b959"
+  }
+}

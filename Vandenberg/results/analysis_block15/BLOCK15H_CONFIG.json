@@ -1,0 +1,120 @@
+{
+  "created_utc": "2026-09-12T23:09:49.344034+00:00",
+  "scope": "BP12 existing complex stack only; resolution audit, no frequency correction or Q2 real fit",
+  "stack": {
+    "path": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOKS_complex64.npy",
+    "bytes": 9584768,
+    "mtime_ns": 1788294174000000000,
+    "shape": [
+      32,
+      288,
+      130
+    ],
+    "dtype": "complex64"
+  },
+  "manifest": "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json",
+  "times_s": [
+    0.35534731021679306,
+    1.0594467117244886,
+    1.7640630592920856,
+    2.468421666797467,
+    3.1728251227943534,
+    3.877221614341054,
+    4.581661492648942,
+    5.285875697421171,
+    5.981358516737581,
+    6.673092111757255,
+    7.454959389028045,
+    8.103828571296772,
+    8.807830167977738,
+    9.512258919147037,
+    10.216818173596259,
+    10.921192327154111,
+    11.625467205567096,
+    12.330642284515333,
+    13.034391449393052,
+    13.738752659938974,
+    14.443135563070486,
+    15.147523617335098,
+    15.851900022832075,
+    16.55631466498902,
+    17.260750170310914,
+    17.96512155868652,
+    18.669477690902895,
+    19.373934429971314,
+    20.07833817183934,
+    20.782669142875065,
+    21.4870420017982,
+    22.191503827842272
+  ],
+  "grid": {
+    "shape": [
+      288,
+      130
+    ],
+    "spacing_m": 5.0,
+    "length_parallel_m": 1440.0,
+    "length_perpendicular_m": 650.0,
+    "bearing_deg": 79.8357237,
+    "center_easting_northing_m": [
+      715510.6102416331,
+      3827627.093742074
+    ],
+    "utm_zone": 10,
+    "surface_hae_m": -36.376,
+    "pixel_count": 37440
+  },
+  "fixed_peak": [
+    133,
+    65
+  ],
+  "neighborhood": {
+    "rows": [
+      127,
+      140
+    ],
+    "cols": [
+      59,
+      72
+    ],
+    "meaning": "half-open 13x13 audit neighborhood; fixed candidate is never retuned"
+  },
+  "preprocessing": {
+    "intensity": "abs(BP12 complex64)**2",
+    "detrend": "same global plane as Block15B",
+    "window": "same separable Tukey alpha=0.1 as Block15B",
+    "padding": "none for measured BP12 spectra",
+    "phase_estimator": "Block15B reference_fit, reference look index 16, signed slope; MSC uses unchanged local 3x3 definition"
+  },
+  "classification": {
+    "separated": "two internal local amplitude maxima separated by >= one measured FWHM and window overlap <=0.2",
+    "partially_separated": "shoulder/secondary maximum with separation >=0.5 FWHM or overlap 0.2--0.7",
+    "overlapped": "no resolved valley and window overlap >0.7",
+    "unidentifiable": "phase/slope evidence contradicts amplitude or quality is inadequate"
+  },
+  "synthetics": {
+    "seed": 150800,
+    "cases": [
+      "single_isolated",
+      "two_separated_6_bins",
+      "two_overlapped_1_bin",
+      "single_offgrid_window_broadened",
+      "weak_component_under_main_lobe"
+    ],
+    "same_grid_window_times": true
+  },
+  "guard_sha256": {
+    "Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json": "f57663c67966c79a37bf0179350835ebc5ce31d3b817908e58ae176750b614c6",
+    "Vandenberg/results/analysis_block15/BLOCK15B_CONFIG.json": "55b657d8d570ecc195fa62d494b55b7da46a56a63eb02a609b918021055ac752",
+    "Vandenberg/results/analysis_block15/BLOCK15B_BINS.csv": "e234e9d7c75bcb835f85743da8769c2a40cc68b8a2e15794341c95179b81d091",
+    "Vandenberg/results/analysis_block15/BLOCK15B_REPORT.md": "54dd55db25fd499eed96e33eb4323887d6696d4e16c5ad66a7327e3242bd2d25",
+    "Vandenberg/results/analysis_block15/BLOCK15D_CONFIG.json": "2bb9a790572c67e5c371a5c48b21ea97b34fc0f70a86d0d06c9904edc12fbebb",
+    "Vandenberg/results/analysis_block15/BLOCK15E_CONFIG.json": "d42b598b4e72054fa2f9c85afb86e1beb3a1b7d2ea137bf231048711ffdb610b",
+    "Vandenberg/results/analysis_block15/BLOCK15F_DELIVERY_MANIFEST.json": "2d95b652d9715f2935431e90bd4bfeccb48422b19d4e09faed1996b763af04be",
+    "Vandenberg/results/analysis_block15/BLOCK15G_DELIVERY_MANIFEST.json": "3be670c9458146e2b897afebc991683de2e547ae5375d66e450100a3c1b80d88"
+  },
+  "source_sha256": {
+    "code/analyze_block15h_spatial_resolution.py": "d9e571ffb2ffd2c05f2f06cceaa9da4794143e3925cdd3f2240f89cf8b01856c",
+    "code/umbra_sar/spatial_resolution.py": "624077f6dd4ad61ec3e677b0a55a5a471cccf1bc91d512d70d5b52585b3b5648"
+  }
+}

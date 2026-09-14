@@ -1,0 +1,13 @@
+{
+  "independent_sequences": 72,
+  "evaluation_sequences": 48,
+  "rule": "persistent-score above",
+  "A_as_B": 0,
+  "B_detected": 0,
+  "A_total": 16,
+  "B_total": 32,
+  "indeterminate": 48,
+  "distorted_B": 7,
+  "distorted_pass_frozen": 0,
+  "note": "Rule is exploratory and evaluates held-out separation/direction, not Vandenberg."
+}

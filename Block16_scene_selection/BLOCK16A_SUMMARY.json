@@ -1,0 +1,204 @@
+{
+  "conditional_alternatives": [
+    "collect:0965638a-a446-4fd7-afcd-7a4d96903af2",
+    "collect:683a3778-7ef1-4653-bd9b-1777367585d5",
+    "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+    "collect:038615a1-9f6c-4ab5-ae73-704f2406ab8c",
+    "collect:048762ec-0eb2-4aca-85aa-ee6ebed84a59"
+  ],
+  "config_sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5",
+  "counts": {
+    "anomalous_date_or_duration": 45,
+    "catalog_objects": 94929,
+    "categories": {
+      "A": 0,
+      "B": 1,
+      "C": 33,
+      "D": 10106,
+      "E": 0
+    },
+    "cphd_and_sicd": 5438,
+    "duplicate_processing_rows": 2402,
+    "joint_temporal_spatial_geometry": 3,
+    "measured_directional_reference": 4,
+    "metadata_association_verified": 5,
+    "minimum_cycles": 27,
+    "ocean_roi_available": 215,
+    "preferred_cycles": 22,
+    "processing_rows": 12542,
+    "sidecars": 12542,
+    "unique_acquisitions": 10140
+  },
+  "errors": [
+    {
+      "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+      "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+      "station": "42094"
+    },
+    {
+      "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+      "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+      "station": "42093"
+    },
+    {
+      "acquisition_key": "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+      "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+      "station": "42094"
+    },
+    {
+      "acquisition_key": "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+      "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+      "station": "42093"
+    },
+    {
+      "acquisition_key": "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+      "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+      "station": "42094"
+    },
+    {
+      "acquisition_key": "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+      "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+      "station": "42093"
+    },
+    {
+      "acquisition_key": "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+      "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+      "station": "42094"
+    },
+    {
+      "acquisition_key": "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+      "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+      "station": "42093"
+    }
+  ],
+  "frozen_artifact_count": 171,
+  "frozen_artifacts_unchanged": true,
+  "generated_utc": "2026-09-14T08:52:34.308673+00:00",
+  "metadata_bytes_downloaded": 51135325,
+  "primary_acquisition_key": null,
+  "provenance": {
+    "cache_used": [
+      "Block16_scene_selection\\cache\\wave_model\\009efce7634e90af61366d06bac17fccb67a07e7312d746cee504f2bffdb540b.json",
+      "Block16_scene_selection\\cache\\wave_model\\03fb2a7151bcb05c636fcc34a2e2780ba63e054b497245d93fd7619650e5b9e1.json",
+      "Block16_scene_selection\\cache\\wave_model\\06807f7c17fe4ddced1313c97bdfdf062d135e5a7f36ca7514f250f2a7a24a70.json",
+      "Block16_scene_selection\\cache\\wave_model\\0e705b8f9e13303ed8894f66fce831fc60a91054c5dc7489fbb781e2f80e4852.json",
+      "Block16_scene_selection\\cache\\wave_model\\1c14900882fc077773e886c10455c188e83eae3eb208d08b173828ccb0f9d4cb.json",
+      "Block16_scene_selection\\cache\\wave_model\\1c56dbb40f26d76f4d15b94f5f0003ad744996ca14c5ea2eb27b18f6b45f0f04.json",
+      "Block16_scene_selection\\cache\\wave_model\\26d861504968d56521ed03475998229dc756c83ad4f26af304dd84a8ea5ef7eb.json",
+      "Block16_scene_selection\\cache\\wave_model\\28b53f3e60774e12916b48019319bb059dfd27504ee699e9864b9871c23a77e0.json",
+      "Block16_scene_selection\\cache\\wave_model\\2a528042a9300474078bc50ef58f7e4d9aa60f0a8fe886cdc0447eccb91e5cf1.json",
+      "Block16_scene_selection\\cache\\wave_model\\2d673caa9008d5107a6bf2b3af2975e3e1ba4e224bbedea0a18c77cbc8aa0870.json",
+      "Block16_scene_selection\\cache\\wave_model\\33a007728aa88e6465088f63c3346a8ac4f7690587e1f6374cbb128db3a0da34.json",
+      "Block16_scene_selection\\cache\\wave_model\\3fd5647fe73bcf84d24e8266d9b958d3a964996cebe811913a5eaea79482e0bd.json",
+      "Block16_scene_selection\\cache\\wave_model\\48db9adc0075f7ddbf1c58c9d5bb33ebd5e9d836a8b8c78a8d854b2e3513d08c.json",
+      "Block16_scene_selection\\cache\\wave_model\\4e69065b29282d45f6580707e6fccee579239ca334cac9330468307b0d67c7cd.json",
+      "Block16_scene_selection\\cache\\wave_model\\6c25e38274885253a37b846f4ec617e437d8681c8aad9a34c46b574bafdcd885.json",
+      "Block16_scene_selection\\cache\\wave_model\\72bfe603c3d43fa4f8f63251a156a4c63c27e3dcda8ba23d48bb5fd77a503336.json",
+      "Block16_scene_selection\\cache\\wave_model\\75011f56f47d7db7955bcba63f1ffe03a0044662c9dcb84773b5eea97da8da32.json",
+      "Block16_scene_selection\\cache\\wave_model\\9a8a3e4d8df61dbf527ebfca96f6d35f0d3c5f3202107525cf27e8b29b494446.json",
+      "Block16_scene_selection\\cache\\wave_model\\abc543320d008d38a1dba8b97ce9caa9dd733c727ec43ed8255e795e81dbc58f.json",
+      "Block16_scene_selection\\cache\\wave_model\\ba5374ffde593387da573a9c8ad81a193ee5a03e907fc7cdb5906da420c3ee7a.json",
+      "Block16_scene_selection\\cache\\wave_model\\bd737e14160a3b8a5402bcc5ba390ee33325e5936962de8732b14779dafaebc2.json",
+      "Block16_scene_selection\\cache\\wave_model\\ccbd8fa366a0a8ae7e76048ea24938370a73505f8e445acd16656d32edee7e77.json",
+      "Block16_scene_selection\\cache\\wave_model\\e45d6fb82a226833525afc389c3515f9867637c7422b3a84b2af9aed79d99681.json",
+      "Block16_scene_selection\\cache\\wave_model\\e82b77e19615376442528afd10cf9702c044560e72229fa15737f8236488c312.json",
+      "Block16_scene_selection\\cache\\wave_model\\e886509e4e13ef29b9fb17ba2ca3c9500d4f8d1908bba024a49d6a8d8c09d40b.json",
+      "Block16_scene_selection\\cache\\wave_model\\ebe4a21f3861598b7d4c43811c0e46062a4062b2f49a942a9643e4ae3e2d5f2d.json",
+      "Block16_scene_selection\\cache\\wave_model\\fbc403ef803b5be5b7fb76c3b92123a64ce61c62e412524ab3df71ad97bad53f.json"
+    ],
+    "config_sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5",
+    "endpoints": [
+      "Block16_scene_selection\\cache\\ndbc_stationmetadata.xml",
+      "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[34743:1:34743][0:1:97][0:1:0][0:1:0],mean_wave_dir[34743:1:34743][0:1:97][0:1:0][0:1:0],principal_wave_dir[34743:1:34743][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[34743:1:34743][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[34743:1:34743][0:1:97][0:1:0][0:1:0]",
+      "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[35234:1:35234][0:1:97][0:1:0][0:1:0],mean_wave_dir[35234:1:35234][0:1:97][0:1:0][0:1:0],principal_wave_dir[35234:1:35234][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[35234:1:35234][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[35234:1:35234][0:1:97][0:1:0][0:1:0]",
+      "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[36604:1:36604][0:1:97][0:1:0][0:1:0],mean_wave_dir[36604:1:36604][0:1:97][0:1:0][0:1:0],principal_wave_dir[36604:1:36604][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[36604:1:36604][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[36604:1:36604][0:1:97][0:1:0][0:1:0]",
+      "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[37180:1:37180][0:1:97][0:1:0][0:1:0],mean_wave_dir[37180:1:37180][0:1:97][0:1:0][0:1:0],principal_wave_dir[37180:1:37180][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[37180:1:37180][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[37180:1:37180][0:1:97][0:1:0][0:1:0]",
+      "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?time",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/166831ef-f7ce-4e6f-b7c3-cec49cfa0a0f/2024-03-02-18-38-32_UMBRA-06/2024-03-02-18-38-32_UMBRA-06_CPHD.cphd",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/166831ef-f7ce-4e6f-b7c3-cec49cfa0a0f/2024-03-02-18-38-32_UMBRA-06/2024-03-02-18-38-32_UMBRA-06_SICD.nitf",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/19c406cc-522b-4aed-94ed-d6859befd724/2024-10-22-22-04-46_UMBRA-09/2024-10-22-22-04-46_UMBRA-09_CPHD.cphd",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/19c406cc-522b-4aed-94ed-d6859befd724/2024-10-22-22-04-46_UMBRA-09/2024-10-22-22-04-46_UMBRA-09_SICD.nitf",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/39b194a5-2001-4264-b6c8-a1c23b9554dd/2025-12-02-16-00-55_UMBRA-07/2025-12-02-16-00-55_UMBRA-07_CPHD.cphd",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/39b194a5-2001-4264-b6c8-a1c23b9554dd/2025-12-02-16-00-55_UMBRA-07/2025-12-02-16-00-55_UMBRA-07_SICD.nitf",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/9b28d626-242d-4821-9047-2c3f9e35cc22/2024-09-16-22-14-37_UMBRA-05/2024-09-16-22-14-37_UMBRA-05_CPHD.cphd",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/9b28d626-242d-4821-9047-2c3f9e35cc22/2024-09-16-22-14-37_UMBRA-05/2024-09-16-22-14-37_UMBRA-05_SICD.nitf",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/e0c5cf1c-0bc2-42d0-91ea-ffe056c3ef27/2024-03-02-20-11-59_UMBRA-06/2024-03-02-20-11-59_UMBRA-06_CPHD.cphd",
+      "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/e0c5cf1c-0bc2-42d0-91ea-ffe056c3ef27/2024-03-02-20-11-59_UMBRA-06/2024-03-02-20-11-59_UMBRA-06_SICD.nitf"
+    ],
+    "errors": [
+      {
+        "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42094"
+      },
+      {
+        "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42093"
+      },
+      {
+        "acquisition_key": "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42094"
+      },
+      {
+        "acquisition_key": "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42093"
+      },
+      {
+        "acquisition_key": "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42094"
+      },
+      {
+        "acquisition_key": "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42093"
+      },
+      {
+        "acquisition_key": "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42094"
+      },
+      {
+        "acquisition_key": "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42093"
+      }
+    ],
+    "source_hashes": {
+      "natural_earth_shp": "4cad3a49bc75c1a4c2f3d7efae04f2f8e63151c96764b2658effabf524331fa6",
+      "snapshot_manifest": "ac57ef4ef4423fa854e9ae8ca38a6f1a2e0cd8d849e98c173de6437bed7bf140"
+    }
+  },
+  "sensitivity": {
+    "all_top_unchanged": true,
+    "baseline_top": {
+      "A": null,
+      "B": "collect:0965638a-a446-4fd7-afcd-7a4d96903af2"
+    },
+    "variants": [
+      {
+        "direction_weight_factor": 0.9,
+        "top": {
+          "A": null,
+          "B": "collect:0965638a-a446-4fd7-afcd-7a4d96903af2"
+        },
+        "unchanged": true
+      },
+      {
+        "direction_weight_factor": 1.1,
+        "top": {
+          "A": null,
+          "B": "collect:0965638a-a446-4fd7-afcd-7a4d96903af2"
+        },
+        "unchanged": true
+      }
+    ]
+  },
+  "snapshot": "Block16_scene_selection/catalog_snapshots/20260913T231747Z",
+  "snapshot_identity_sha256": "ffaf387ef05908562540e86ec31b4ccc03fc4bbc05112a3db114aade9085d168",
+  "snapshot_status": "complete",
+  "status": "complete"
+}

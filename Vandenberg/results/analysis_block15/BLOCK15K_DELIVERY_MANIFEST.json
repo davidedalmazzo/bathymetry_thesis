@@ -1,0 +1,214 @@
+{
+  "block": "15K",
+  "status": "complete; Vandenberg frozen",
+  "protocol_sha256": "d9787e9bd4ac7f0afa38f57232c43ab022d01a2dea084bf9a9454b57071c3c9b",
+  "tests": {
+    "block15k_targeted": 18,
+    "full_suite_passed": 135,
+    "failed": 0,
+    "skipped": 0
+  },
+  "historical_test_note": "Block15I reported 107 inherited tests and had no focused pytest module; Block15J added 10 focused tests and verified 117 total; Block15K adds 18 and verifies 135 total.",
+  "input_guards": {
+    "config_entries": 16,
+    "mismatches": []
+  },
+  "block15j_manifest_recheck": {
+    "mismatches": [
+      {
+        "path": "WORKLOG.md",
+        "reason": "expected evolution by Block15K"
+      }
+    ],
+    "immutable_artifacts_match": true
+  },
+  "dedicated_test_coverage": {
+    "15I": "none specific; essential outputs now protected by explicit Block15K hashes",
+    "15J": "tests/test_multilag_increment.py (10 tests) plus hashes",
+    "15K": "tests/test_formation_path_comparison.py (18 tests) plus hashes"
+  },
+  "prior_essential_artifacts": [
+    {
+      "block": "15I",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15I_CONFIG.json",
+      "bytes": 3217,
+      "sha256": "237a92c7ead6b8a278c0ccc409cfadd16c7bc75da32c6b943db15da483051eea",
+      "protection_before_15K": "not self-protected by 15I manifest"
+    },
+    {
+      "block": "15I",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15I_PROTOCOL.md",
+      "bytes": 748,
+      "sha256": "fb9030b740e013a78fd34a96ee47690d0b8ef32661cf74b6c7c05c50371555af",
+      "protection_before_15K": "not self-protected by 15I manifest"
+    },
+    {
+      "block": "15I",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15I_RESULTS.csv",
+      "bytes": 15551,
+      "sha256": "0c034f66e9d301db5cc6ae7aad2dbf119079c63cacaccc7f94d33fb43cddbfd3",
+      "protection_before_15K": "not self-protected by 15I manifest"
+    },
+    {
+      "block": "15I",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15I_SUMMARY.json",
+      "bytes": 346,
+      "sha256": "160b7c62bd2c46319ba208caf05c5edccb8978d8cf54148eb6fdb28fe358cd3b",
+      "protection_before_15K": "not self-protected by 15I manifest"
+    },
+    {
+      "block": "15I",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15I_REPORT.md",
+      "bytes": 1019,
+      "sha256": "d6c07de1594e75df677ffc1d1313bc39cd2f09e58606e4e52b86fb91de5bf8f1",
+      "protection_before_15K": "not self-protected by 15I manifest"
+    },
+    {
+      "block": "15I",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15I_DELIVERY_MANIFEST.json",
+      "bytes": 573,
+      "sha256": "b1c761ac9ab0e7e76595742c78b90cbfa8b5b6e4fa3662b79fd0d563856e75a1",
+      "protection_before_15K": "not self-protected by 15I manifest"
+    },
+    {
+      "block": "15J",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15J_CONFIG.json",
+      "bytes": 3328,
+      "sha256": "4177b49e4af129af5179029248a3a8c166afc206941cc4eb522dd775e9a9638a",
+      "protection_before_15K": "hash in 15J manifest"
+    },
+    {
+      "block": "15J",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15J_PROTOCOL.md",
+      "bytes": 2314,
+      "sha256": "f20bc3a48850ff6bf70eb05509c9ffbe4b7467819b1f7e40d45e4b7830ddf2b3",
+      "protection_before_15K": "hash in 15J manifest"
+    },
+    {
+      "block": "15J",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15J_RESULTS.csv",
+      "bytes": 29313,
+      "sha256": "e4a734b420449e4167094eea934d08db23bc150e0bbf6edf473923ef7e340d99",
+      "protection_before_15K": "hash in 15J manifest"
+    },
+    {
+      "block": "15J",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15J_SUMMARY.json",
+      "bytes": 1895,
+      "sha256": "369243e7e11b7387d3d79737e10a95d1bf7cc41389b24fbad4a0afb062a88c3c",
+      "protection_before_15K": "hash in 15J manifest"
+    },
+    {
+      "block": "15J",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15J_REPORT.md",
+      "bytes": 5652,
+      "sha256": "859980a4edeb20c5ba8457a8834ee67e64b9f612b5babe0f24f29150fdb0d57d",
+      "protection_before_15K": "hash in 15J manifest"
+    },
+    {
+      "block": "15J",
+      "path": "Vandenberg/results/analysis_block15/BLOCK15J_DELIVERY_MANIFEST.json",
+      "bytes": 2376,
+      "sha256": "a435c0765cc7be46f7e96fdffb92e4ce04be31fafc3af4c40385c19c727fccd4",
+      "protection_before_15K": "manifest itself not self-hashed"
+    }
+  ],
+  "files": [
+    {
+      "path": "code/umbra_sar/formation_path_comparison.py",
+      "bytes": 6903,
+      "sha256": "94475275092df4541da0d6a590d88a799c779fdfae1e5f3da70225de9d2dea35"
+    },
+    {
+      "path": "code/analyze_block15k_path_closure.py",
+      "bytes": 22783,
+      "sha256": "5f99eecfe02bea0c516bda808795ed45e8760c14a1b5f2ef340a1fe5c47b5c2a"
+    },
+    {
+      "path": "tests/test_formation_path_comparison.py",
+      "bytes": 3535,
+      "sha256": "e5318e333c6c48fbf2d7ee22d6c905df731031f9418d149f8b89266103ae28a2"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_PROTOCOL.md",
+      "bytes": 5980,
+      "sha256": "d9787e9bd4ac7f0afa38f57232c43ab022d01a2dea084bf9a9454b57071c3c9b"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_PROTOCOL.sha256",
+      "bytes": 87,
+      "sha256": "df17335f96cfb7e24e90eeeccd01105683db901052d8e57466a6d473f66e4587"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_CONFIG.json",
+      "bytes": 4742,
+      "sha256": "b1e4ffd9511bc5f2759225b906e5ecf75f807143b4ab2a4b8fe3c8a660c0c340"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_PATH_AUDIT.csv",
+      "bytes": 2209,
+      "sha256": "4cb781305f308ec8755cddbb9a5315dc6278e13db51e6d9421301f1a8b6abb6b"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_MATCHED_RESULTS.csv",
+      "bytes": 2910,
+      "sha256": "8a1598d3c810ab48652d49b33daaa7d0279c7dd5e61d3a85218812d87edecf14"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_ABLATION_RESULTS.csv",
+      "bytes": 963,
+      "sha256": "c4f05b0e85dafa68f4f8b3947e4e86f628a528efc4067c0f180946e6f3f6d586"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_FINAL_TIMESERIES.csv",
+      "bytes": 822,
+      "sha256": "13a418548f0007d35ac4e7442f7baf3ff0fdeb3493f3f66df7ed8e6e2930ae3b"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_APPLICABILITY_GATES.json",
+      "bytes": 1507,
+      "sha256": "e906fd348bdd2f8c2a76d5e441c66d8aaf394467d2c5983d71a405f4f2d75d62"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_VANDENBERG_CLASSIFICATION.json",
+      "bytes": 488,
+      "sha256": "afff5257c5c539138385afb779c2520e7c0d4a87d1bf8677b5b0c5bb8026a4db"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_SUMMARY.json",
+      "bytes": 4723,
+      "sha256": "1db4d0097644454870cf49a183399baff0c1fe29a76cfbf7681645401e5c91ab"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_REPORT.md",
+      "bytes": 9695,
+      "sha256": "85d72e5d10609192bf95f2d93b7934fc95f33b120afc1551ad3b72d2e42bf475"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_SLOPES.png",
+      "bytes": 30252,
+      "sha256": "932910abf1eebe46eca7151859752c4102e9565387eb836e618861257159985b"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_ABLATION_RESIDUAL.png",
+      "bytes": 33140,
+      "sha256": "da04713f7c77c31a7208600d5b2f8474977b0190bc49d330f93a7964a4a4ef0e"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_FINAL_RESIDUALS.png",
+      "bytes": 61387,
+      "sha256": "0a153cf33b752745ed821ebb8cecba5783e2eab5bfc83290df60ba3abe6ccb89"
+    },
+    {
+      "path": "Vandenberg/results/analysis_block15/BLOCK15K_APPLICABILITY.png",
+      "bytes": 29191,
+      "sha256": "b2fd090bb4b1bf0733ba6ff58cc6317550ce9496deb5b3e0b80b18f6ccd45801"
+    },
+    {
+      "path": "WORKLOG.md",
+      "bytes": 34518,
+      "sha256": "fb1765cc745854a25b2562bc454306a40df0ffed36ce253bf0639cea9d411714"
+    }
+  ],
+  "maximum_file_bytes": 61387
+}

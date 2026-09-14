@@ -1,0 +1,23 @@
+{
+  "block": "15H",
+  "status": "complete; BP12 spatial-resolution audit only",
+  "input": "existing BP12 32x288x130 complex stack; no CPHD/SICD signal read",
+  "tests": {"passed": 107, "failed": 0, "skipped": 0, "seconds": 7.62},
+  "prior_artifact_guards": {"count": 8, "mismatches": 0},
+  "visually_checked_figures": 2,
+  "files": [
+    {"path":"code/umbra_sar/spatial_resolution.py","bytes":3667,"sha256":"624077f6dd4ad61ec3e677b0a55a5a471cccf1bc91d512d70d5b52585b3b5648"},
+    {"path":"code/analyze_block15h_spatial_resolution.py","bytes":15014,"sha256":"d9e571ffb2ffd2c05f2f06cceaa9da4794143e3925cdd3f2240f89cf8b01856c"},
+    {"path":"tests/test_spatial_resolution.py","bytes":2237,"sha256":"2435e187a0fc068d57163384a71fd3e761e753b44ffe815ef435c1eb7c01cfe9"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_CONFIG.json","bytes":4235,"sha256":"80affccae64f0cfde70d39c955bf800909d4adfe511b3c483bba794c172f4ccb"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_PROTOCOL.md","bytes":1248,"sha256":"cc373fc47e36849f5a7e49b3562f114cc0dbc2e74844e7427cab2d3ff66493ce"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_REPORT.md","bytes":4210,"sha256":"7dd5e2a983c8d464a4e0f920f1f2c4c9d0bb7300f61b0db2674ad8f633856c79"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_WINDOW_RESPONSE.csv","bytes":872,"sha256":"f8672c0a5d512f800faa47f7827d98a3c9b2bcd666e0b4ca80a62338a2b275d5"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_PEAK_NEIGHBORHOOD.csv","bytes":78637,"sha256":"dedd2b51cba5bb4adc417463a3886b37d6e58588563807a00aad2ba03c8189b1"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_BIN_DEPENDENCE.csv","bytes":31812,"sha256":"2ed93c677b62225556568a3ca50654b95bfc271285bcf087dc8a397fa6bc01c4"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_SYNTHETIC_CALIBRATION.csv","bytes":647,"sha256":"8d8c3cf9f2d12d9db13bec7938baa13a36ccb15cbc6b81ef162971543e3215b7"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_SUMMARY.json","bytes":5234,"sha256":"7f9f854647f05c184b8579a25f1b5cdfe399ed80f135523b194fd0847ff75f7a"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_WINDOW_RESPONSE.png","bytes":37131,"sha256":"da80c95f8d5127a6b47a42ad901ce9759018c628b438f6f1017b437e7faef328"},
+    {"path":"Vandenberg/results/analysis_block15/BLOCK15H_PEAK_NEIGHBORHOOD.png","bytes":50298,"sha256":"fd672466a737af9a37ba59f62415b0d5fc950b1d0abb8e9795030ce85c9a8471"}
+  ]
+}

@@ -1,0 +1,911 @@
+{
+  "block": "16A",
+  "config": {
+    "byte_range_audit": {
+      "allow_pvp_sparse_samples": true,
+      "candidate_count": 5,
+      "forbid_signal_and_image_pixels": true,
+      "max_per_request_bytes": 2097152,
+      "max_requests_per_asset": 8,
+      "max_total_bytes": 67108864,
+      "pvp_sample_count": 9,
+      "require_cphd_sicd_acquisition_match": true
+    },
+    "catalog": {
+      "atomic_writes": true,
+      "concurrency": 12,
+      "fail_closed": true,
+      "max_metadata_bytes": 536870912,
+      "retries": 4,
+      "retry_backoff_s": 1.5,
+      "s3_endpoint": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/",
+      "s3_prefix": "sar-data/",
+      "snapshot_schema": "block16a-canonical-catalog-1.0.0",
+      "stac_root": "https://s3.us-west-2.amazonaws.com/umbra-open-data-catalog/stac/catalog.json",
+      "timeout_s": 45
+    },
+    "classification": {
+      "A": "non_anomalous, spotlight, coherent CPHD+SICD, useful ocean ROI, temporal hard gate, favorable geometry, complete measured directional spectrum within limits",
+      "B": "passes physical/metadata hard gates but has model-only screening reference",
+      "C": "retained control for duration, weak sea state, geometry, land control, or 5-7 s comparison",
+      "D": "one or more explicit hard gates fail",
+      "E": "required metadata/reference are unavailable and a hard gate cannot be evaluated",
+      "abstention_policy": "if no A passes, report no primary; do not tune thresholds post hoc",
+      "missing_data_policy": "never impute a measured peak period or pass an unverifiable hard gate",
+      "vandenberg_collect_ids": [
+        "9d8283d8-550d-4435-899f-5483d2c1abcc"
+      ],
+      "vandenberg_collect_names": [
+        "2025-02-16-18-55-44_UMBRA-10",
+        "2025-02-16-18-55-33_UMBRA-10"
+      ]
+    },
+    "deduplication": {
+      "acquisition_primary_key": "umbra:collect_id",
+      "fallback_fields": [
+        "platform",
+        "start_datetime",
+        "end_datetime",
+        "geometry_sha256"
+      ],
+      "preferred_order": [
+        "has_cphd_and_sicd",
+        "metadata_completeness",
+        "validity",
+        "latest_processing",
+        "asset_verifiability",
+        "processing_key"
+      ],
+      "processing_key_fields": [
+        "acquisition_key",
+        "stac_item_id",
+        "processing_version",
+        "processing_created",
+        "stac_s3_key"
+      ],
+      "retain_alternatives": true
+    },
+    "direction": {
+      "comparison_direction_convention": "propagation_to_true_north_clockwise",
+      "gate_axis_convention": "undirected_modulo_180",
+      "hard_max_axial_difference_deg": 15.0,
+      "preferred_max_axial_difference_deg": 5.0,
+      "secondary_max_axial_difference_deg": 10.0,
+      "source_direction_convention": "from_true_north_clockwise",
+      "stac_axis_role": "preliminary_range_axis"
+    },
+    "marine": {
+      "fully_marine_bonus": false,
+      "land_control_is_optional": true,
+      "land_control_minimum_fraction": 0.01,
+      "minimum_coast_clearance_m_proxy": 250.0,
+      "minimum_internal_ocean_roi_diameter_m_proxy": 500.0,
+      "minimum_ocean_area_km2": 1.0,
+      "minimum_ocean_fraction": 0.8,
+      "natural_earth_dataset": "Natural Earth 1:10m Physical Land",
+      "natural_earth_role": "preliminary_only_not_sar_scale_coast_proof"
+    },
+    "network_tests_are_separate": true,
+    "no_full_sar_download": true,
+    "plausibility": {
+      "allowed_incidence_hard_deg": [
+        10.0,
+        50.0
+      ],
+      "allowed_instrument_modes": [
+        "SPOTLIGHT"
+      ],
+      "catalog_duration_max_s": 120.0,
+      "catalog_duration_min_s": 0.25,
+      "earliest_acquisition_utc": "2020-01-01T00:00:00Z",
+      "future_tolerance_s": 86400,
+      "preferred_incidence_deg": [
+        15.0,
+        35.0
+      ],
+      "reject_aggregated_collects": true,
+      "reject_multistatic": true,
+      "require_cphd": true,
+      "require_sicd": true
+    },
+    "random_seed": 160100,
+    "ranking": {
+      "manual_verification_bonus": 0.0,
+      "method": "category_then_pareto_then_transparent_score",
+      "sensitivity_threshold_variation": {
+        "preferred_cycles": 0.25,
+        "preferred_direction_deg": 2.0,
+        "preferred_station_distance_km": 5.0
+      },
+      "sensitivity_weight_fraction": 0.1,
+      "weights_measured": {
+        "cycles": 0.25,
+        "direction": 0.25,
+        "directional_concentration": 0.15,
+        "incidence": 0.1,
+        "station_distance": 0.1,
+        "swell_energy": 0.15
+      },
+      "weights_model": {
+        "cycles": 0.3,
+        "direction": 0.3,
+        "incidence": 0.1,
+        "swell_dominance": 0.15,
+        "swell_height": 0.15
+      }
+    },
+    "references": {
+      "cdip_thredds_root": "https://thredds.cdip.ucsd.edu/thredds/catalog/cdip/archive",
+      "frequency_max_hz": 1.0,
+      "frequency_min_hz": 0.02,
+      "maximum_observation_offset_s": 3600.0,
+      "maximum_station_distance_km": 50.0,
+      "missing_codes": [
+        99.0,
+        999.0,
+        9999.0
+      ],
+      "ndbc_station_metadata": "https://www.ndbc.noaa.gov/metadata/stationmetadata.xml",
+      "ndbc_thredds_root": "https://dods.ndbc.noaa.gov/thredds/catalog/data",
+      "preferred_observation_offset_s": 1800.0,
+      "preferred_station_distance_km": 30.0,
+      "required_directional_fields": [
+        "spectral_density",
+        "alpha1",
+        "alpha2",
+        "r1",
+        "r2"
+      ]
+    },
+    "schema_version": "block16a-1.0.0",
+    "spatial": {
+      "delta_eff_policy": "do_not_equate_to_pixel_spacing",
+      "gravity_m_s2": 9.80665,
+      "minimum_wavelengths_in_roi": 4.0,
+      "preferred_wavelengths_in_roi": 6.0,
+      "resolution_role": "preliminary_until_preview_or_small_product"
+    },
+    "status": "frozen_before_remote_queries",
+    "temporal": {
+      "edge_loss_fraction": 0.0,
+      "minimum_catalog_duration_s": 15.0,
+      "minimum_independent_looks": 3,
+      "minimum_observable_cycles": 1.25,
+      "minimum_sliding_centers": 7,
+      "nominal_look_duration_s": 6.0,
+      "preferred_catalog_duration_s": 20.0,
+      "preferred_observable_cycles": 2.0,
+      "sliding_center_step_s": 1.25,
+      "verified_precedence": [
+        "cphd_tx_time_span_s",
+        "sicd_processed_aperture_s",
+        "catalog_duration_s"
+      ]
+    },
+    "wave_model": {
+      "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+      "maximum_time_offset_s": 7200.0,
+      "minimum_directional_concentration_r1": 0.5,
+      "minimum_swell_energy_proxy_ratio": 0.5,
+      "minimum_swell_height_m": 0.5,
+      "model": "meteofrance_wave",
+      "period_proxy_policy": "model mean may screen only; never rename as peak period",
+      "preferred_directional_concentration_r1": 0.7,
+      "preferred_peak_period_s": 10.0,
+      "preferred_swell_energy_proxy_ratio": 0.7,
+      "preferred_swell_height_m": 1.0,
+      "role": "screening_not_independent_validation"
+    }
+  },
+  "config_sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5",
+  "dependencies": {
+    "matplotlib": "3.11.1",
+    "numpy": "2.5.2",
+    "sarpy": "2.0.1",
+    "shapely": "2.1.2"
+  },
+  "environment": {
+    "python_executable": "D:\\Dati Tesi\\Umbra\\.venv-umbra-thesis\\Scripts\\python.exe",
+    "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+    "temp": "D:\\Dati Tesi\\Umbra\\.pycache_tmp",
+    "tmp": "D:\\Dati Tesi\\Umbra\\.pycache_tmp"
+  },
+  "frozen_artifact_hashes": {
+    "Block8_validation/buoy_data/246p1_catalog.xml": "6d0ce40786a45600a93dde294473b189ca507241a515c5884015337a8efe728d",
+    "Block8_validation/buoy_data/246p1_d02.nc": "c7450c7583aff1e21a5f4b490b766765a43981b4587ba282e413f1c09e9c1097",
+    "Block8_validation/buoy_data/246p1_historic.nc": "573b70fbf3e6caa01992ce4beab4a21a0bff5559d46d612df550073ae3f829c9",
+    "Block8_validation/buoy_data/42084_20251202T1600_spectrum.ascii": "f3e1abd8eac096b877a4e5e5c52e1fb6bcca8be0f76c9f6cfbbd1680493f238d",
+    "Block8_validation/buoy_data/42084_20251223T0300_spectrum.ascii": "3b776dc9abe483cc4483e7ea26c971f8bef8da2bf268e117477a61603f1cb2c3",
+    "Block8_validation/buoy_data/42084_20260218T0500_spectrum.ascii": "ea3eb757073650a8fdae4df03c1e7747f20ac85f25cf9f2d197192ebb63597d5",
+    "Block8_validation/buoy_data/42084_20260314T0500_spectrum.ascii": "3ebf092e2b79ef2e7bb0008ff4428ca915575cf5e9805be0d0718ca64abe1e9d",
+    "Block8_validation/buoy_data/42084_swden.das": "cbc16fb0d455ab09137e039b917e22f7c39a16b537d5f627a29241193293b9df",
+    "Block8_validation/buoy_data/42084_swden.dds": "0c483715f4e7ecf18231a92f8b3f01d4fad0d93d8dd5dfd036a10399c4294586",
+    "Block8_validation/buoy_data/42084_time.ascii": "9f90201b70353c60903810c1553403191f14b98e0b822df41d68b0a7c4f5ddd0",
+    "Block8_validation/buoy_data/42094_swden_catalog.xml": "0f118f6519c216bd0f73966547d35a370e77342bc63982a3e70b1d37ad5d13b3",
+    "Block8_validation/buoy_data/44087_20230713T1500_spectrum.ascii": "f3e40c01fbb98dcaf501149ceb6dd171f57b9de3778b4ff98dcb5d1b2392cd5a",
+    "Block8_validation/buoy_data/44087_swden.das": "5855d95980e8e74366e6f0cdd4a7c595814f8ef09f944dac3ee0a11169ec0a6c",
+    "Block8_validation/buoy_data/44087_swden.dds": "5f100f09176b8352c6ab9229ff01d54e02a208577fafc9df24f69a9fd0d5ba8a",
+    "Block8_validation/buoy_data/44087_swden_catalog.xml": "a1066c7407ffdeed6ff96f8bab6e79b7adea543941f1f010cfba7f38ae45a6ed",
+    "Block8_validation/buoy_data/44087_time.ascii": "63ecec90731ea231211b85f8bccc864804afab9a6a90345294776b0baccba0e8",
+    "Block8_validation/buoy_data/46237_20230804T1800_spectrum.ascii": "dfd341a57fd9231f93a2f8c8c6a2a0eaf942c9863f5e3a3f46ea5321a5ea9704",
+    "Block8_validation/buoy_data/46237_swden.das": "624b9ad8e8060de1c86a481e599f0b2ec6e51b7696db18ba6129433b8722a46a",
+    "Block8_validation/buoy_data/46237_swden.dds": "9b24df206cd6f6de1c583441427436e88bbf21d3dcbb3ac836677a41aae52d59",
+    "Block8_validation/buoy_data/46237_swden_catalog.xml": "3ca60af4419199f53b4a8215444b62a05de71f6f62c7dd957d351a025aba4bbf",
+    "Block8_validation/buoy_data/46237_time.ascii": "bd016fd4acf165a2fc52225269b435eea8926dd02eed1b556b91e0491a8cae7f",
+    "Block8_validation/buoy_data/ndbc_stationmetadata.xml": "1053916cd459c394f94963a56b11dd3b915034c9137c5f4813f5d5387ba830f3",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-02-17-14-50-21_UMBRA-04__meteofrance_wave.json": "86c26103228c233ff42cb971697147bcc933b57a1b0fc302cd8fcfd1291ac1fa",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-06-17-20-42-21_UMBRA-05__meteofrance_wave.json": "e26d8fefc61a1665231c0fc91e25868f8d1e9cd70dc9dbc0104818712c39a73b",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-02-01-57-51_UMBRA-04__meteofrance_wave.json": "696396273c5dbd2679e868ae422b9b9e0c7d388e0510801713331cfd8b2be760",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-02-02-01-27_UMBRA-05__meteofrance_wave.json": "3c3c11b13bb356725bbd6a80fa6c5e6bc3f0215c4b8031ac97b3aaf3e2b13a98",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-02-14-00-59_UMBRA-05__meteofrance_wave.json": "b91b2e12109356ee0a2105a1036f28c3feb5927fda9d5f5ad1b181378002ad1a",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-02-16-40-13_UMBRA-06__meteofrance_wave.json": "ca698e3ff453a53092fab9097b51b14e898d2d262a5711b23e9ae28c7fe90bcf",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-02-21-21-17_UMBRA-06__meteofrance_wave.json": "1eb93bbaf0f0dd85ba27d3b5bb82c54cf20dc21051e657e016d00771c2b719c5",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-12-06-03-41_UMBRA-05__meteofrance_wave.json": "4c11922feec3c0f046b4c191fffac46a9f58ee9a0fcda5e82f775f481b17dafa",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-13-15-18-26_UMBRA-04__meteofrance_wave.json": "4e12fcb4caa2f901d7c8e9574694222112f51c1ff90912d93ffea7ea7d6c6db9",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-21-02-24-20_UMBRA-05__meteofrance_wave.json": "018580fce9532cf9408738fd1f642ad649ef48e2e82b718b80772681e32ef290",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-23-14-02-53_UMBRA-05__meteofrance_wave.json": "634cd0aafc29a889cfd989b5c1d87c3a336c172480a858ce890f94eb15dbe0d2",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-07-29-12-49-18_UMBRA-04__meteofrance_wave.json": "daac3a64016bd99e4a61d2c46f220fb9c913c333aa870829c488c1c410a3a081",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-08-04-18-18-17_UMBRA-04__meteofrance_wave.json": "cfbdf46ddb43b3a76e4b0928632510d628ca334ca2c36f5ebe0d84bf38b20006",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-08-11-16-12-13_UMBRA-05__meteofrance_wave.json": "a684e918002e88b2edbab9710c3c19b26665651ce2c90458f741fc7501c445cf",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-08-26-02-21-58_UMBRA-05__meteofrance_wave.json": "8df67ddaa5a7c0f848e91980b5393a662e78340b3b28903af6541268920b50f9",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-08-31-04-16-38_UMBRA-06__meteofrance_wave.json": "cc089fd20f29307659698e33a663c30a3be8e82ea40aaee979433f67d90285cd",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-09-08-13-09-45_UMBRA-04__meteofrance_wave.json": "541393955ceccb8079778286adea6c071210583f41e539a635e68b523bf8e557",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-09-10-02-03-26_UMBRA-04__meteofrance_wave.json": "444d61be58f5c9c2302bca1ae21cdebd2d15b004ec97828041087ec8dbfe3848",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-09-23-14-19-40_UMBRA-04__meteofrance_wave.json": "0843ca7b4fdd8a36da08ecd804f15a4d1934b404ec186fe87f1d487d042ff2d3",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-10-02-13-43-51_UMBRA-04__meteofrance_wave.json": "b54820aa213da778db51388ed44286bd527ced24e0a86537628d61f091f80df3",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-10-06-12-44-46_UMBRA-04__meteofrance_wave.json": "30dbcd8f7f456538f30e2c66b70e120c4665ae0ac686e54207dde34634eb4428",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-10-07-02-13-09_UMBRA-05__meteofrance_wave.json": "3f4b1cf1b0d2fd33d854964586532c02b0a286431c515f22c9603c4016b4b334",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-10-11-01-16-15_UMBRA-05__meteofrance_wave.json": "43ecdfe3cf9562da7c26b41c18352f650559eca3b0c7765c6205aedd908db4ea",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-10-13-12-53-33_UMBRA-05__meteofrance_wave.json": "71ea2c528abfbf20289e94b476e22854ecd8c09661b40becfb013b91b5ac9e85",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-10-25-04-22-25_UMBRA-05__meteofrance_wave.json": "71a4e55304214f4f413f9cd190688f3d15f13c4d5ba5992e24435a6cdb956e03",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-10-30-04-51-18_UMBRA-05__meteofrance_wave.json": "cf93364f62a635cfaf18e6b305fd7038da37f5e28a2e353ad9d8bc8763fb0792",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-11-10-10-54-08_UMBRA-04__meteofrance_wave.json": "4ce1a49573ba39015258e2ef7f90859d00a3608e0029f9e5cdca8b7487d172c4",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-11-11-11-43-14_UMBRA-04__meteofrance_wave.json": "59ad1a55dc87b9ed1e84953d3e7c0710c6cc246d401f6b3dd40a2c0dc58b950b",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-11-14-01-55-32_UMBRA-04__meteofrance_wave.json": "40140efabbd08b9a0e0ecaa1d8a43f81fa8ec18be0aa9514a1a04ac6e05106b8",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-11-15-11-39-44_UMBRA-05__meteofrance_wave.json": "8262afc97520101402452946c5b9eac44e37853ef85035ded05dc0093a004052",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-11-15-12-06-17_UMBRA-04__meteofrance_wave.json": "225d04e6716eb7843eb836885ee1c774ef9cc1b1a8859beafc5b5d51189c95a3",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-12-06-02-07-22_UMBRA-04__meteofrance_wave.json": "591341890a30d3d7f04e1e8e39d5170e049b44ccf228a0a7bb772a7d821d0879",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-12-19-19-13-01_UMBRA-04__meteofrance_wave.json": "a396623646d79a3c356eacd6e7db9a7a54a844a69714460d3efc6656bbf95429",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2023-12-19-20-03-26_UMBRA-06__meteofrance_wave.json": "fc99e532f2e4de3ce8fc6fe52a292c1ae39cca9c29a00732946ad6722ac4ca0a",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-01-05-00-27-16_UMBRA-06__meteofrance_wave.json": "8253bc5991744eb19e34e87438f33eead3199b0393816183080b57f751888579",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-01-09-05-59-19_UMBRA-06__meteofrance_wave.json": "ab69ef105bd0427122bff7abd551ed5a1bb0c25c0a20b07d22bb67d9c50ff528",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-01-13-02-35-55_UMBRA-04__meteofrance_wave.json": "5fb931e613e603a1cb7bc6fbaac11e0abf7e40f068f75a34ab59da35cebda131",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-02-14-01-22-39_UMBRA-04__meteofrance_wave.json": "122ba6f6752c4d1549ef1d7d7dd6a50b5d14aee2300d9e901884df54bdf92a9c",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-02-14-14-24-58_UMBRA-07__meteofrance_wave.json": "359afac6bfb2b0e703612ba9a047f76d0d7d2a6205b28ab2ad8cca85b6b4a74a",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-02-27-14-03-01_UMBRA-07__meteofrance_wave.json": "54f8eef99065f45c026bf3cf3d9d2657c11df5203c5a959b6aed9f677e7d825c",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-01-15-20-04_UMBRA-07__meteofrance_wave.json": "4e904bdf6777673f4a0db1d47d9ce564b49360f9f99e00d7ba115fe1d666b327",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-02-18-38-32_UMBRA-06__meteofrance_wave.json": "22544b4c3640452952b45043a7a54d683460e2020d9fa20d612a70cf384b3d1f",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-02-20-11-59_UMBRA-06__meteofrance_wave.json": "a1b052bde54e5b2086113d581c934ad10ce59f7294a2b65638cb2284e427efa6",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-04-10-01-18_UMBRA-08__meteofrance_wave.json": "8b53f46bb4bd18389f49b2cec4fa039efe26b1e492f98df3c36f67dc99e0fac6",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-09-01-16-44_UMBRA-04__meteofrance_wave.json": "059258a8badd3e0a51a69a124ef37fdbd418dbb4e40174464a1b095c453bb422",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-09-01-49-13_UMBRA-05__meteofrance_wave.json": "65d9500cfeaf35215847e87865ab963123650b5e923a77f26286bd7ab36ba964",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-20-02-09-59_UMBRA-05__meteofrance_wave.json": "6b4b69e618eb432dbce3881f604b7b493de9debeb4fef01b381c6582a2672fbd",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-21-17-18-02_UMBRA-04__meteofrance_wave.json": "0365e84ad31a26aab54e6e86847109b2300a5a90351cd9614c804383b90db22c",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-26-15-26-56_UMBRA-04__meteofrance_wave.json": "d8d970b8368c5acdfa5bd854965d34237171965e07219a9aa1fb90ff08295025",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-26-15-27-28_UMBRA-04__meteofrance_wave.json": "5c389413e7c0577fe3b9068ed8a5af9e5c7af997966e4c566e7a5ad71b87768b",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-27-02-00-07_UMBRA-04__meteofrance_wave.json": "aca5ea2a73d9e6ee4a626823ac8d042def8a9157fb99d2bb0c2f93e9f1983a30",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-29-03-10-11_UMBRA-04__meteofrance_wave.json": "1a40fbd3c5202d2bb3f7b5df049927dbeb3a612c043a8eaf56df7303dab61656",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-29-03-14-38_UMBRA-04__meteofrance_wave.json": "f1495622289c1efe75a50cc8f7e1ea2e907cc0812cd96bf0038508b5d666b7a9",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-29-03-15-10_UMBRA-04__meteofrance_wave.json": "44e2326d9dc831a178e4415a00e1a488c8f8e85114194ad36cb6811a0bd4d5b4",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-29-03-56-29_UMBRA-07__meteofrance_wave.json": "db0f6d3b64f24b051680ea895329bff3a8199151c67a8ab27563d4caee542e24",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-29-03-56-42_UMBRA-08__meteofrance_wave.json": "a228d3acf7286f2da500fd2b1018368146bac63087ab08759f3ee7681b60a60f",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-29-04-00-30_UMBRA-07__meteofrance_wave.json": "72bd617e19e8ec8bc552c95418a619a75d20b59442ac8412be269f12b8f823a7",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-03-29-04-00-46_UMBRA-08__meteofrance_wave.json": "e6e5cde208bf611133b84bdde1e296ad7ae3fa6e47b7aeb35b429991d19ce023",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-04-01-05-07-39_UMBRA-06__meteofrance_wave.json": "81905c4e85aa00b85a967f55080c2c2bb4b31c3c1893da2507affc8e033fb2d5",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-04-01-12-46-44_UMBRA-05__meteofrance_wave.json": "29cc99830e4718b4d3b57f9f1121b20a5d20883ebf5f82bc121cae620243dbc5",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-04-01-14-06-39_UMBRA-07__meteofrance_wave.json": "10e97cfb2c57dda93924c5bc25a2ae4351074a98ad92905f914591cc0f8384c9",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-04-02-17-02-04_UMBRA-06__meteofrance_wave.json": "aead24dfa371cfb665cd8528ef131bce2e8238f77c0f7e605a6db73408f40d08",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-05-10-02-28-44_UMBRA-06__meteofrance_wave.json": "c18b10500b04c4a022fa40a60726136b99577369be3282ccabcc49d8a885aae3",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-06-13-09-32-31_UMBRA-07__meteofrance_wave.json": "0942b3e726565f5ae5b69e3c600c99111102cf2ecab37f746fc7f07d0f4fbe59",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-06-14-09-29-02_UMBRA-08__meteofrance_wave.json": "c4ebe8d973ca44508110ce16e3f8503ff1ed116701a84f1c73adbaca60327a4a",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-07-19-21-59-14_UMBRA-05__meteofrance_wave.json": "dbd8286c22eb392301453f408a9677cab60a4146942678a871420852d490a048",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-07-23-22-28-14_UMBRA-04__meteofrance_wave.json": "6b0426f69401f0820451d85c702bdac4c0c935701db79c1052e7ef4d9882f1a7",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-09-04-23-09-48_UMBRA-07__meteofrance_wave.json": "19a02f81f005bba5cb7cd5472c3f34032fa1669a4f5c4a764f0f8ba15a5bee55",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-09-06-23-54-01_UMBRA-08__meteofrance_wave.json": "ad0359f847ad13174bfc4297567d27b08e167fcc3a1244991e62192593a22299",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-09-10-22-24-31_UMBRA-05__meteofrance_wave.json": "2299e02f2250fa73956f731f69fe0bc51cd129f44273a85650d942be7383ebb5",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-09-11-22-07-08_UMBRA-05__meteofrance_wave.json": "306f45b2195b2c7832414214f66cb4ca9b2cd0deeee0eb6f7050b40ab0bc98b2",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-09-12-21-50-06_UMBRA-05__meteofrance_wave.json": "677b035bb5acf44ce7a506f63cf3fc2fd79797dcffafd28cc6ac475e34816858",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-09-15-00-08-12_UMBRA-10__meteofrance_wave.json": "e889444d5bec5b79a9f5fc8b3717e3feabdaba36c510d35448e48744c1986f22",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-09-16-22-14-37_UMBRA-05__meteofrance_wave.json": "3b10bce7db977b6f036f225335311ec8c2dd7d6d9d988f85f548f0a85d6f9cd9",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-09-27-03-41-30_UMBRA-06__meteofrance_wave.json": "8b9f0855127f1ed8368af5cb545abaf99e1a0dbc0161eae79c3fa64ee72cb0d8",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-10-05-06-59-01_UMBRA-08__meteofrance_wave.json": "603b43d7093b0556436d551a36fcb571775db620fdad9b9778322708184cb99a",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-10-22-22-04-46_UMBRA-09__meteofrance_wave.json": "28853900c2eb5f2e3c24c2134ac6e64663169fa17c37a39ec0ce2d9195ee39b5",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2024-10-29-21-02-30_UMBRA-08__meteofrance_wave.json": "91ec8c67c3100b2ef37c96e50d17ca42423ed9ccc33ad01937bb48686ea87a0f",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-03-23-19-43-08_UMBRA-10__meteofrance_wave.json": "d3ec049f51922b58d3316e17b505893a035bf20cd07600ec5fce556bff95629e",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-03-28-02-19-38_UMBRA-05__meteofrance_wave.json": "167326a3a5f884d56d8e391650a78c53bc8e1d9f43a0b8c9a965e36891c2fde0",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-03-29-01-52-28_UMBRA-05__meteofrance_wave.json": "b8b097258d97a5e2c2cfbcedc91282b6963b5c9c35eeb51bd9cedd333b2d62d8",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-03-29-12-17-59_UMBRA-05__meteofrance_wave.json": "7c95db41b1372ea453868070451a4050a6ac4b58556fb05a99031a3ebb87423d",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-03-30-13-22-40_UMBRA-05__meteofrance_wave.json": "a2b751de50878e6369c66bcfd4fc0334c7a0434df1c2a0954c89cfc3e84fdba2",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-01-12-26-51_UMBRA-05__meteofrance_wave.json": "9f90db09fd5275fb25b124e91d096f381ddd5c3fa432af123542a3ad142b2227",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-02-02-25-37_UMBRA-10__meteofrance_wave.json": "f610671e4c2e732da04bd5eb4356d3694c301cebdf3b1cb213a95061758c5126",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-02-14-58-48_UMBRA-08__meteofrance_wave.json": "7b3ca59195fe9f41276410df9fc3fde93a0aec337e637dad30c0d587fbebad1d",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-03-02-34-47_UMBRA-08__meteofrance_wave.json": "eb3e3689d18ab0ca01b777fa207e0409a60908c4e81b66d5a96d0620230d992e",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-04-02-06-24_UMBRA-08__meteofrance_wave.json": "581829ad56be733584c0f5cf4bc95d0c4abc42e7ecc9a578e1cfcbd32b4dd55e",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-24-12-50-48_UMBRA-05__meteofrance_wave.json": "ae4a9e2bc6958da62e505c6daf6a399d1929d874893a984ff194afefdb739a55",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-01-12-31_UMBRA-05__meteofrance_wave.json": "60dce6396c113d6ccbda1c9dec98a1a6ee16d4b32b32f8ec72f38ea24973b02e",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-02-08-17_UMBRA-09__meteofrance_wave.json": "bbd49d21205ae694ec9d66b757c5e8ca72d4a3bf65ab4dc623f01287c4e88093",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-04-10-36_UMBRA-10__meteofrance_wave.json": "0741bda2775058e96503416dce1f722463a2ad2786baa9ecf7deb69cac9705ff",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-05-20-54_UMBRA-10__meteofrance_wave.json": "4fcdf848d7b79729e31a21fc1c41ac900096c8be22c542e1956b0f8cb7916053",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-09-58-37_UMBRA-09__meteofrance_wave.json": "fad27a3160569f31a0c6358d4ad8a08f2c06483f9c683643b168eb56a61691e6",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-12-11-32_UMBRA-08__meteofrance_wave.json": "2b6339455e470c3695df6e6fc898e3cfcda9f33390480f6f7a5e35515b063863",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-13-21-49_UMBRA-10__meteofrance_wave.json": "ef0bac45004458b72e6e28986013b2bf550aa311d0d6cf4b37be781eb13afde9",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-14-45-58_UMBRA-09__meteofrance_wave.json": "876f1089e3c76053429e389b1cb205c20cd57d41a3e1cf2764cc9dbb27bfd99e",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-25-22-55-49_UMBRA-09__meteofrance_wave.json": "d29bb41681abfd59d5f09d5eb2b89a8dadadd6c0c72cd8e6e86bd7634b1736f8",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-26-02-05-57_UMBRA-09__meteofrance_wave.json": "bc8a1cb41272f8db9c9b8b03879ea459fec1305362e331f41aed4a74f10ffe5c",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-26-05-27-18_UMBRA-08__meteofrance_wave.json": "1c72589fc3b42782afa2abd28bf0d3bb986b253197d2619d8e409a32708ab9e5",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-26-14-43-09_UMBRA-08__meteofrance_wave.json": "7737b4c8b4eeb60af9ed7c2cd1546ef797b06b57e7ad76a0e8797e3d6d3352fc",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-04-26-16-31-36_UMBRA-05__meteofrance_wave.json": "ddf8ee0cabd0481b1a7c922432869ac28440817ba7351166debc323c427bcb0e",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-07-21-07-16-35_UMBRA-05__meteofrance_wave.json": "7deca524b213f319b4f20620bbeb8d995fa01beb8257e382b87633bb8c4aa455",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-07-29-20-24-23_UMBRA-10__meteofrance_wave.json": "8b6728671d9e524831a34a49cbbf64648592fb3e6c7f3e83ee2c98feb4005406",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-09-12-03-47-15_UMBRA-09__meteofrance_wave.json": "9cec1bc492f48ec643e3654dc1962e8e48c054f87883d44bc42fcf569c0ccb90",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-10-30-16-24-36_UMBRA-10__meteofrance_wave.json": "ca437c3e6a6c265aa7cc2e8106e022f23adfc717a135621e26343811ff989524",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-11-07-02-21-55_UMBRA-07__meteofrance_wave.json": "74118295ed906f985d0c8ad01b628a5591965110a8e2b5d826b782873e14b68a",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-12-02-16-00-55_UMBRA-07__meteofrance_wave.json": "0f6498ee9d020bd7038dc793e661f54b6ca2e2a1ac37d99411953f12c8c2095b",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2025-12-23-02-59-26_UMBRA-07__meteofrance_wave.json": "808779976b09f47e40fc82afb6f15b4d6747a794dc8584bb3dbc1a903645244f",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2026-02-18-04-59-34_UMBRA-09__meteofrance_wave.json": "5b4f5c6626480cdd862398d7d8bf1271891168b03d62ead2a067bb66adfa48a7",
+    "Block8_validation/buoy_data/open_meteo_mfwam_cache/2026-03-14-04-37-20_UMBRA-09__meteofrance_wave.json": "ec788ffff28946f420842923bbe0a6bb80ee4246124b62cdec46c6f84fca1fc7",
+    "Block8_validation/catalog_raw/2025-02-16_catalog.json": "a5292243377d0e4052de1c62cea06d86f7a87f2dc3b8653f55de9b22b7749fca",
+    "Block8_validation/catalog_raw/2025-02_catalog.json": "478f062fb53c6315e0ab1b52de5fc281a88580d8ed0a68f33d899a5f93fe3aa9",
+    "Block8_validation/catalog_raw/2025_catalog.json": "b8601ac29706ed7ef1729c7ba3e2be3fdbf8a263e25d77164773802d2509d0c1",
+    "Block8_validation/catalog_raw/CRAWL_MANIFEST.json": "065df301110846461813384466132f6edec3306ea1c9c7f1313e380cac3d17cc",
+    "Block8_validation/catalog_raw/FULL_CATALOG_MANIFEST.json": "8aa39286369462893892c5f773dd9164e25abf24a7f4d2f4d3f0cef33cf9781b",
+    "Block8_validation/catalog_raw/S3_LISTING_MANIFEST.json": "fa9fc621e584818b267dd9ae9ec070605e4caa3c9f4f6b8a9ab84271c251f394",
+    "Block8_validation/catalog_raw/catalog.json": "a4218e762e602ae106960f0927bc3a5551c0317a11dba1ae96ed0bd4261a6970",
+    "Block8_validation/catalog_raw/ne_10m_land.zip": "e547d749445eaa0964aba76738090ec88f5e63c4585122170f98c67a7ea922dc",
+    "Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.README.html": "f22176c0b44403fd7b7381a404562007a595c477ca72d23d9b7ed3949e948b12",
+    "Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.VERSION.txt": "548358969090d629b41888f5fe664ac31b7203dfd849f7c1ef820ac055b62191",
+    "Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.cpg": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+    "Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.dbf": "e422520372e65c6fb8220888580e5331d04699bcd71c27e53ad42e241a531cbd",
+    "Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.prj": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+    "Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.shp": "4cad3a49bc75c1a4c2f3d7efae04f2f8e63151c96764b2658effabf524331fa6",
+    "Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.shx": "f3b02a190c3020eeafd0f48de982619826b57ecd853cbc68e4fc049652891a04",
+    "Block8_validation/catalog_raw/sample_item.json": "9a6651b4065d51825d598a8727a2689b2fd5b968eed23d557067d3d2e4fab5f3",
+    "Block8_validation/catalog_raw/sample_stac_v2_vandenberg.json": "23852b9bfcad3c1183d0cfdbc818816371c0ac9e328d8756d9f851ac59e3aeb2",
+    "Block8_validation/catalog_raw/umbra_s3_objects.csv": "e12f1f0ab3822973918cf0fadb98f3c1f41697701348f59e1d8d3e4f30313b7a",
+    "Block8_validation/catalog_raw/umbra_stac_items.jsonl": "d18492ef238a9ab9bdd6479716fa20e11d19bbb0365ed2580e0a8794b8c0c733",
+    "Block8_validation/catalog_raw/umbra_stac_v2_recovery.jsonl": "8b6f987942e55142dbd3300d4a9617e6a960603d988620a94c4ccc0133273e3d",
+    "Block8_validation/catalog_raw/umbra_stac_v2_sidecars.jsonl.gz": "888d66a871fe82ea418c2a5c777de7399cad660601df0f02d7e1ab9aec8536c1",
+    "Block8_validation/catalog_raw/umbra_static_stac_all.csv": "4eac2fa7e1e2e8c8ba89e37e5b806cfb00316ddee2981639b6be69077e029274",
+    "Block8_validation/results/CHECKPOINT_8.md": "b1a76ab0ff3d6b2007a8e2cd39ff7e69e67b13e1f966a6e6eadff724c9997327",
+    "Block8_validation/results/CHECKPOINT_8_MANIFEST.json": "f3067fb8a932e32954870177b01f187daab5de01f24c25fd2f6092a57e297daa",
+    "Block8_validation/results/MARINE_GEOMETRY_MANIFEST.json": "4caf88ad97c32731f1f5671b9fc4cbb3303d9329007d98bd4470c4eb80a6febc",
+    "Block8_validation/results/NDBC_MATCH_MANIFEST.json": "4943ef19c8c0a661cc6f4ec6eed5589e18feb29ece31192bc679b64f3e917a87",
+    "Block8_validation/results/VERIFIED_NDBC_MANIFEST.json": "d263d65e754971f98946903c05e48a0a25a81fefc5c5c042906aa30783a6d495",
+    "Block8_validation/results/VERIFIED_SHORT_NDBC_MANIFEST.json": "1e7bb26be19969987c222e680afedfd95d1faed1eeea9ace53151ab9aef7033a",
+    "Block8_validation/results/WAVE_MODEL_MANIFEST.json": "c062b39287dc1d2f9fbfa8020fb935355ed43db72811a5a3cba2b3242c067f6c",
+    "Block8_validation/results/marine_geometry_screen.csv": "09e1c065f6c08ae8bf0fb8a6688f61fd406925bb37e9fb878beeb5281476bc4c",
+    "Block8_validation/results/nearest_ndbc_stations.csv": "1a0c4fdabd9d943781071b07eb12152b38c15748c6216a17d9ce8201c1a03daf",
+    "Block8_validation/results/ranked_candidates_all.csv": "f9a58350d909629d13e656aa833330b6ec2b1fe1845b4429015982f754851602",
+    "Block8_validation/results/top16_candidates.csv": "169c828e5b22359e78a7cc51f4a725d09e4aaae91dfe2d309e18a2ea03996136",
+    "Block8_validation/results/verified_ndbc_spectra.csv": "8a6b2ba3c3391662a081c613ce021482c989120616747f116d97abb80b35ec19",
+    "Block8_validation/results/verified_short_dwell_ndbc_spectra.csv": "7863ea4fae9093db4c4c0eabfed68775e7a0d2482e98110d89ca5609d8e68a7f",
+    "Block8_validation/results/wave_model_screen.csv": "c862bb5c010d861a0c6a0a83f34bd399e1cdfdcaf8189cc3c0659a198e39239a",
+    "Block8_validation/umbra_all.csv": "e4c0e97dccacdbaf97dffcea50ad5b3d0737f85caceaafdae983b317ede1e8a1",
+    "Vandenberg/results/analysis_block15/BLOCK15K_VANDENBERG_CLASSIFICATION.json": "afff5257c5c539138385afb779c2520e7c0d4a87d1bf8677b5b0c5bb8026a4db"
+  },
+  "full_sar_products_downloaded": 0,
+  "generated_utc": "2026-09-14T08:56:33.064569+00:00",
+  "git_commit": "d5fab7b4c49bb9c5d4a0a8dbfdb0b2dc316a2fdf",
+  "output_hashes": {
+    "Block16_scene_selection/BLOCK16A_ALL_CANDIDATES.csv": {
+      "bytes": 50741539,
+      "sha256": "495beac009d359da8c2866a4c8771833c1b34f8262201916315539721687519f"
+    },
+    "Block16_scene_selection/BLOCK16A_ANOMALIES.csv": {
+      "bytes": 705886,
+      "sha256": "8f29ccf45f1597454f5a03eb43828b3e65ae6fae196a30ff1cdddb3693e3a990"
+    },
+    "Block16_scene_selection/BLOCK16A_BYTE_RANGE_AUDIT.csv": {
+      "bytes": 14771,
+      "sha256": "9ebb6dd1a53085a2d1ff40c13765978c109ea9a7b9d668f0d12642b1fec5b181"
+    },
+    "Block16_scene_selection/BLOCK16A_CATALOG.csv": {
+      "bytes": 46404508,
+      "sha256": "dc49010362b29e64e15d77db3e6d007ef8e4f0ded6f81c259cf86cd3ca3bddb8"
+    },
+    "Block16_scene_selection/BLOCK16A_CONFIG.json": {
+      "bytes": 6143,
+      "sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5"
+    },
+    "Block16_scene_selection/BLOCK16A_CONFIG.sha256": {
+      "bytes": 87,
+      "sha256": "aa7cb752191f298780f0f123e97a0156ca611e408821e89f30b7c1e66fd50e14"
+    },
+    "Block16_scene_selection/BLOCK16A_MARINE_GEOMETRY.csv": {
+      "bytes": 47221637,
+      "sha256": "ee2caefa7014a682f1499916c2b380cde0415f643215c8345eb66647e802d772"
+    },
+    "Block16_scene_selection/BLOCK16A_MEASURED_SPECTRA.csv": {
+      "bytes": 3337,
+      "sha256": "a5b95a3890ddee9ec563adb64680743fe61174f5f6fb3e8c9d669d1281c69965"
+    },
+    "Block16_scene_selection/BLOCK16A_PROCESSING_VARIANTS.csv": {
+      "bytes": 59839200,
+      "sha256": "c94adc24b7c1c782d21f3fa5a919d81094c300855c1df6fadd2af444ae8ef30a"
+    },
+    "Block16_scene_selection/BLOCK16A_PROTOCOL.md": {
+      "bytes": 5241,
+      "sha256": "6ef58687745132f35e412e135b25b2df23436830fc8e02655a5e118cdc0a4072"
+    },
+    "Block16_scene_selection/BLOCK16A_REFERENCE_AVAILABILITY.csv": {
+      "bytes": 6692,
+      "sha256": "993bee4b290c5c73268e17760f53d7922a1e5b938b413a46b5d4514a45a8b41e"
+    },
+    "Block16_scene_selection/BLOCK16A_REPORT.md": {
+      "bytes": 5823,
+      "sha256": "5308d030d6c05220d9b4398d4e3a7b5f4dc6a7f615659fd3abc35ea822768956"
+    },
+    "Block16_scene_selection/BLOCK16A_SHORTLIST.csv": {
+      "bytes": 111021,
+      "sha256": "eaba993c8fa25b6d8491ae550773cf572cf1691764d7321d9c51e267af41427e"
+    },
+    "Block16_scene_selection/BLOCK16A_SUMMARY.json": {
+      "bytes": 13689,
+      "sha256": "8aa3ba3b1720bf8dbfb3af358b99b0cb46c5c6f895c7cf0edf70e19a03987b5b"
+    },
+    "Block16_scene_selection/BLOCK16A_TEMPORAL_METRICS.csv": {
+      "bytes": 1571503,
+      "sha256": "b2eaf72250f269edd9e34e6cc53e6bda998c184ed72fb16578cd910274971129"
+    },
+    "Block16_scene_selection/BLOCK16A_WAVE_MODEL_SCREEN.csv": {
+      "bytes": 167294,
+      "sha256": "338bf41771ada723e08418a08dc69ab28d08a6766a27796be0f0639a0e0403da"
+    },
+    "Block16_scene_selection/cache/ndbc_stationmetadata.xml": {
+      "bytes": 1043145,
+      "sha256": "bd9d33abdab0ed466f3b8d6cc4ecde822349e5e93ff3f5767d8ccfb385ecc3da"
+    },
+    "Block16_scene_selection/cache/wave_model/009efce7634e90af61366d06bac17fccb67a07e7312d746cee504f2bffdb540b.json": {
+      "bytes": 3185,
+      "sha256": "428cc89692b0a620e1a440baaf319b90063050162e85a0cce73d11dac2d09eae"
+    },
+    "Block16_scene_selection/cache/wave_model/03fb2a7151bcb05c636fcc34a2e2780ba63e054b497245d93fd7619650e5b9e1.json": {
+      "bytes": 3180,
+      "sha256": "b9eb374f31cb3a7e9276bea9e1c111001c75da94edca72abd46f0b55f2a544ba"
+    },
+    "Block16_scene_selection/cache/wave_model/06807f7c17fe4ddced1313c97bdfdf062d135e5a7f36ca7514f250f2a7a24a70.json": {
+      "bytes": 3145,
+      "sha256": "7465afcbdf1211aa6732aebec449846adefa3800e154cdc7ff47d866a33678d4"
+    },
+    "Block16_scene_selection/cache/wave_model/0e705b8f9e13303ed8894f66fce831fc60a91054c5dc7489fbb781e2f80e4852.json": {
+      "bytes": 3160,
+      "sha256": "a94a1d54656cab13d3de6ac6548eb7b83f5bd3dfcf84b6a07f52fa6c1aed8c96"
+    },
+    "Block16_scene_selection/cache/wave_model/1c14900882fc077773e886c10455c188e83eae3eb208d08b173828ccb0f9d4cb.json": {
+      "bytes": 3184,
+      "sha256": "0bf7781c22cfb00b673a59d2935473389a1437b5d80ff0d8bfd86edbb11a660d"
+    },
+    "Block16_scene_selection/cache/wave_model/1c56dbb40f26d76f4d15b94f5f0003ad744996ca14c5ea2eb27b18f6b45f0f04.json": {
+      "bytes": 3158,
+      "sha256": "5908868dbbbec3190efdb6531cfc65395412f7eab32b2b28bdd855729ae75b15"
+    },
+    "Block16_scene_selection/cache/wave_model/26d861504968d56521ed03475998229dc756c83ad4f26af304dd84a8ea5ef7eb.json": {
+      "bytes": 3184,
+      "sha256": "53d5116d5eae53e43e6dd1bd49256f4e831bc4b64d6616828c9b055d433afb37"
+    },
+    "Block16_scene_selection/cache/wave_model/28b53f3e60774e12916b48019319bb059dfd27504ee699e9864b9871c23a77e0.json": {
+      "bytes": 3183,
+      "sha256": "286d2f2376a39fd4e516ae011138de50590b3c9c73eedc08aac43f758fd5b507"
+    },
+    "Block16_scene_selection/cache/wave_model/2a528042a9300474078bc50ef58f7e4d9aa60f0a8fe886cdc0447eccb91e5cf1.json": {
+      "bytes": 3156,
+      "sha256": "e55ff77842d754f9fb7500bdb0978f33ae02176d736f1ac8aceca173e12c11d6"
+    },
+    "Block16_scene_selection/cache/wave_model/2d673caa9008d5107a6bf2b3af2975e3e1ba4e224bbedea0a18c77cbc8aa0870.json": {
+      "bytes": 3184,
+      "sha256": "ea21d2e76c620130e79d97a09c1ef8d5e02608f762ef08242769e58a01d12290"
+    },
+    "Block16_scene_selection/cache/wave_model/33a007728aa88e6465088f63c3346a8ac4f7690587e1f6374cbb128db3a0da34.json": {
+      "bytes": 3183,
+      "sha256": "3c4f7f94c81ee96cf094c79a5d07b2bd329055935ac23fa281e6766b8a500f73"
+    },
+    "Block16_scene_selection/cache/wave_model/3fd5647fe73bcf84d24e8266d9b958d3a964996cebe811913a5eaea79482e0bd.json": {
+      "bytes": 3125,
+      "sha256": "e8d145b8214412e06082cac870fb08ee781ea69d4a7e6673ebdfcdef382150f0"
+    },
+    "Block16_scene_selection/cache/wave_model/48db9adc0075f7ddbf1c58c9d5bb33ebd5e9d836a8b8c78a8d854b2e3513d08c.json": {
+      "bytes": 3184,
+      "sha256": "18a3ac17de7ab6f53840635f60ece3efc5198937177e8136de3da88c370305d7"
+    },
+    "Block16_scene_selection/cache/wave_model/4e69065b29282d45f6580707e6fccee579239ca334cac9330468307b0d67c7cd.json": {
+      "bytes": 3156,
+      "sha256": "0bfb47334ccb6129b30412ca8f2d155f708b2cb86472fcd937b79b5c673d91e7"
+    },
+    "Block16_scene_selection/cache/wave_model/6c25e38274885253a37b846f4ec617e437d8681c8aad9a34c46b574bafdcd885.json": {
+      "bytes": 3125,
+      "sha256": "42e62043169245233d0ce6250d4ff7a834f4aad79a10d3b4db2f71b730bd0405"
+    },
+    "Block16_scene_selection/cache/wave_model/72bfe603c3d43fa4f8f63251a156a4c63c27e3dcda8ba23d48bb5fd77a503336.json": {
+      "bytes": 3124,
+      "sha256": "a5bc6a587d98728cad1fcc52529c578cac5fd61f971f12be182cdb91313e67a6"
+    },
+    "Block16_scene_selection/cache/wave_model/75011f56f47d7db7955bcba63f1ffe03a0044662c9dcb84773b5eea97da8da32.json": {
+      "bytes": 3122,
+      "sha256": "4c821dd75977fe503289e8cb0938a5b4581b10a22a7a70a66c6b24ecef9c3863"
+    },
+    "Block16_scene_selection/cache/wave_model/9a8a3e4d8df61dbf527ebfca96f6d35f0d3c5f3202107525cf27e8b29b494446.json": {
+      "bytes": 3112,
+      "sha256": "76fb9d520e84354043d28831adcf30a1343c1d4062ddec4bf994b919720e28da"
+    },
+    "Block16_scene_selection/cache/wave_model/abc543320d008d38a1dba8b97ce9caa9dd733c727ec43ed8255e795e81dbc58f.json": {
+      "bytes": 3095,
+      "sha256": "0f80f014ff912a3a16cdf8eb634e504ea12d36ff067a2f5f594efc9f098e8167"
+    },
+    "Block16_scene_selection/cache/wave_model/ba5374ffde593387da573a9c8ad81a193ee5a03e907fc7cdb5906da420c3ee7a.json": {
+      "bytes": 3185,
+      "sha256": "15427594aea30dbbaf51d89a2b4a4ba8710dd0d8e578ba063ff9f495ae88867c"
+    },
+    "Block16_scene_selection/cache/wave_model/bd737e14160a3b8a5402bcc5ba390ee33325e5936962de8732b14779dafaebc2.json": {
+      "bytes": 3106,
+      "sha256": "341cb9ebcad0bb01c0214b1d1050d490f6d8a2378d8be60a8c540e4644d9cf8c"
+    },
+    "Block16_scene_selection/cache/wave_model/ccbd8fa366a0a8ae7e76048ea24938370a73505f8e445acd16656d32edee7e77.json": {
+      "bytes": 3154,
+      "sha256": "54455176a6d288bf52afe852a31712d87af83d23b94e96cd5db1a60131462f50"
+    },
+    "Block16_scene_selection/cache/wave_model/e45d6fb82a226833525afc389c3515f9867637c7422b3a84b2af9aed79d99681.json": {
+      "bytes": 3129,
+      "sha256": "2cf1f7eb90abf55a9b4af6980ebcf75445f2f8f562f3248e9f6eeb3cf0c66b20"
+    },
+    "Block16_scene_selection/cache/wave_model/e82b77e19615376442528afd10cf9702c044560e72229fa15737f8236488c312.json": {
+      "bytes": 3184,
+      "sha256": "19fb206cd30fbcd50aa800529f001411d37783421b5c67070974a510062fbc15"
+    },
+    "Block16_scene_selection/cache/wave_model/e886509e4e13ef29b9fb17ba2ca3c9500d4f8d1908bba024a49d6a8d8c09d40b.json": {
+      "bytes": 3108,
+      "sha256": "7e0241d0079a064b7252ace9b53881c2a2c255dd490eab7e685711ec48e8c945"
+    },
+    "Block16_scene_selection/cache/wave_model/ebe4a21f3861598b7d4c43811c0e46062a4062b2f49a942a9643e4ae3e2d5f2d.json": {
+      "bytes": 3177,
+      "sha256": "657a22abcc7a8470cedd6bbae7b2e7de0c78b96cb860bf7b1eed4929cb64f270"
+    },
+    "Block16_scene_selection/cache/wave_model/fbc403ef803b5be5b7fb76c3b92123a64ce61c62e412524ab3df71ad97bad53f.json": {
+      "bytes": 3177,
+      "sha256": "508462eee02065d245da78f0317e6c64cd750edeac42ceca9c17ec843e06bce2"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T225028Z/errors.json": {
+      "bytes": 318,
+      "sha256": "9ee41ad6ad4734da98b0438629e54e404b384217fa8de2139d1a25da97d2d18e"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T225028Z/listing_s3.csv.gz": {
+      "bytes": 68,
+      "sha256": "be05bb5809d4643b3e7d35a2dbf13d7582e30749a30d5bb2470e1e8324afdf8e"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T225028Z/manifest.json": {
+      "bytes": 1126,
+      "sha256": "be24f7a0825b204af17baee79947240c5a958c1ab4b0264c4e0d60b6f0fd5ccb"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T225028Z/normalized_acquisitions.csv": {
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T225028Z/normalized_processings.csv": {
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T225028Z/sidecars.jsonl.gz": {
+      "bytes": 20,
+      "sha256": "9ceffb7310338057cfe71a4ae1e2c98d2c485d81cdef906532a801f457a38d64"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T225124Z/errors.json": {
+      "bytes": 147,
+      "sha256": "43f577722f3ef954adddce5b1a27340f5a413da2cc38f5ba711c9c99d625c93f"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T225124Z/manifest.json": {
+      "bytes": 335,
+      "sha256": "a0bd5891fe8493ff91c2ecf8cf2067cc0c0852613fd06fb677f0399d35f95c96"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T230209Z/errors.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T230209Z/listing_s3.csv.gz": {
+      "bytes": 3926963,
+      "sha256": "3c5b9c11b1540cbc6b790a3130abf1655e6125c0e3345f6cbdea2d9639949352"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T230209Z/manifest.json": {
+      "bytes": 1199,
+      "sha256": "32d0202f283f65070c572da5a83faca1de220f034bb41fa703730cc4d4c73161"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T230209Z/normalized_acquisitions.csv": {
+      "bytes": 44002592,
+      "sha256": "3831e21c63f9606b2f68d373abfe86d53ed0c2e0a5b0af17e0f6bc714af6933f"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T230209Z/normalized_processings.csv": {
+      "bytes": 56783633,
+      "sha256": "c7809d20e0a34d53c23b824ab03ae9f96ff368aa395457a5eb1b38b2eb4bac1e"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T230209Z/sidecars.jsonl.gz": {
+      "bytes": 6738722,
+      "sha256": "3b2607361c19fc509cce0777bb1e17c494a7b3ff98943010e6d8f42276e9daa8"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T231747Z/errors.json": {
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T231747Z/listing_s3.csv.gz": {
+      "bytes": 3926963,
+      "sha256": "3c5b9c11b1540cbc6b790a3130abf1655e6125c0e3345f6cbdea2d9639949352"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T231747Z/manifest.json": {
+      "bytes": 1242,
+      "sha256": "ac57ef4ef4423fa854e9ae8ca38a6f1a2e0cd8d849e98c173de6437bed7bf140"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T231747Z/normalized_acquisitions.csv": {
+      "bytes": 46404508,
+      "sha256": "dc49010362b29e64e15d77db3e6d007ef8e4f0ded6f81c259cf86cd3ca3bddb8"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T231747Z/normalized_processings.csv": {
+      "bytes": 59839200,
+      "sha256": "c94adc24b7c1c782d21f3fa5a919d81094c300855c1df6fadd2af444ae8ef30a"
+    },
+    "Block16_scene_selection/catalog_snapshots/20260913T231747Z/sidecars.jsonl.gz": {
+      "bytes": 6747083,
+      "sha256": "32b514487637737f5f8544054e27491fcf80a72802a994d3b79781b47fd885a0"
+    },
+    "Block16_scene_selection/figures/category_counts.png": {
+      "bytes": 27923,
+      "sha256": "1ed90d8e76bf3b05c8004027a38091322b832f0092566a91e65e5fef396721a2"
+    },
+    "Block16_scene_selection/figures/duration_vs_reference.png": {
+      "bytes": 42338,
+      "sha256": "8490421df10fa91e2dee4ea52fc706c0298c5cdc72c5202c1b8511e228c1373c"
+    },
+    "Block16_scene_selection/figures/dwell_verified_vs_period.png": {
+      "bytes": 45804,
+      "sha256": "8e537b69640617f085de12bd5f0e6000d78e78bfed48b3c07c9ab75ed36d85a2"
+    },
+    "Block16_scene_selection/figures/exclusion_reasons.png": {
+      "bytes": 63108,
+      "sha256": "13cc370b4594c560441642b5458d9309868a4eb7cb198f0bd7a88ef1f0851527"
+    },
+    "Block16_scene_selection/figures/observable_cycles.png": {
+      "bytes": 31234,
+      "sha256": "c884da3902d718f0e964c017587f0b98e9e50c6e7a802dd83dfc7776d34bd052"
+    },
+    "Block16_scene_selection/figures/wave_range_direction.png": {
+      "bytes": 37695,
+      "sha256": "efc6f69c1dd4316e5393dbe1c6a73a5f6d15dafa571aabc2f08a1644f5955efa"
+    },
+    "WORKLOG.md": {
+      "bytes": 36346,
+      "sha256": "cfd9c61b9446dd765635534ba44f4e61791421d542abe42f22fc1afdcc4e6103"
+    },
+    "code/run_block16a_scene_selection.py": {
+      "bytes": 78200,
+      "sha256": "9f2017f8a52825c2bf74ec178c0cc4a14db34249ddf4d36bfda13c53c910c504"
+    },
+    "code/umbra_sar/scene_selection.py": {
+      "bytes": 35191,
+      "sha256": "62862bbc35ebe1ab78a1f451dcf62b520242335be7375a32d0dbb879238b18d0"
+    },
+    "tests/test_scene_selection.py": {
+      "bytes": 12662,
+      "sha256": "4c7da00be1a1bff055b540f26850da3e556ab9b5f239be274c86a67476aec738"
+    }
+  },
+  "signal_arrays_read": 0,
+  "status": "complete_metadata_only",
+  "summary": {
+    "conditional_alternatives": [
+      "collect:0965638a-a446-4fd7-afcd-7a4d96903af2",
+      "collect:683a3778-7ef1-4653-bd9b-1777367585d5",
+      "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+      "collect:038615a1-9f6c-4ab5-ae73-704f2406ab8c",
+      "collect:048762ec-0eb2-4aca-85aa-ee6ebed84a59"
+    ],
+    "config_sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5",
+    "counts": {
+      "anomalous_date_or_duration": 45,
+      "catalog_objects": 94929,
+      "categories": {
+        "A": 0,
+        "B": 1,
+        "C": 33,
+        "D": 10106,
+        "E": 0
+      },
+      "cphd_and_sicd": 5438,
+      "duplicate_processing_rows": 2402,
+      "joint_temporal_spatial_geometry": 3,
+      "measured_directional_reference": 4,
+      "metadata_association_verified": 5,
+      "minimum_cycles": 27,
+      "ocean_roi_available": 215,
+      "preferred_cycles": 22,
+      "processing_rows": 12542,
+      "sidecars": 12542,
+      "unique_acquisitions": 10140
+    },
+    "errors": [
+      {
+        "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42094"
+      },
+      {
+        "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42093"
+      },
+      {
+        "acquisition_key": "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42094"
+      },
+      {
+        "acquisition_key": "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42093"
+      },
+      {
+        "acquisition_key": "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42094"
+      },
+      {
+        "acquisition_key": "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42093"
+      },
+      {
+        "acquisition_key": "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42094"
+      },
+      {
+        "acquisition_key": "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+        "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+        "station": "42093"
+      }
+    ],
+    "frozen_artifact_count": 171,
+    "frozen_artifacts_unchanged": true,
+    "generated_utc": "2026-09-14T08:52:34.308673+00:00",
+    "metadata_bytes_downloaded": 51135325,
+    "primary_acquisition_key": null,
+    "provenance": {
+      "cache_used": [
+        "Block16_scene_selection\\cache\\wave_model\\009efce7634e90af61366d06bac17fccb67a07e7312d746cee504f2bffdb540b.json",
+        "Block16_scene_selection\\cache\\wave_model\\03fb2a7151bcb05c636fcc34a2e2780ba63e054b497245d93fd7619650e5b9e1.json",
+        "Block16_scene_selection\\cache\\wave_model\\06807f7c17fe4ddced1313c97bdfdf062d135e5a7f36ca7514f250f2a7a24a70.json",
+        "Block16_scene_selection\\cache\\wave_model\\0e705b8f9e13303ed8894f66fce831fc60a91054c5dc7489fbb781e2f80e4852.json",
+        "Block16_scene_selection\\cache\\wave_model\\1c14900882fc077773e886c10455c188e83eae3eb208d08b173828ccb0f9d4cb.json",
+        "Block16_scene_selection\\cache\\wave_model\\1c56dbb40f26d76f4d15b94f5f0003ad744996ca14c5ea2eb27b18f6b45f0f04.json",
+        "Block16_scene_selection\\cache\\wave_model\\26d861504968d56521ed03475998229dc756c83ad4f26af304dd84a8ea5ef7eb.json",
+        "Block16_scene_selection\\cache\\wave_model\\28b53f3e60774e12916b48019319bb059dfd27504ee699e9864b9871c23a77e0.json",
+        "Block16_scene_selection\\cache\\wave_model\\2a528042a9300474078bc50ef58f7e4d9aa60f0a8fe886cdc0447eccb91e5cf1.json",
+        "Block16_scene_selection\\cache\\wave_model\\2d673caa9008d5107a6bf2b3af2975e3e1ba4e224bbedea0a18c77cbc8aa0870.json",
+        "Block16_scene_selection\\cache\\wave_model\\33a007728aa88e6465088f63c3346a8ac4f7690587e1f6374cbb128db3a0da34.json",
+        "Block16_scene_selection\\cache\\wave_model\\3fd5647fe73bcf84d24e8266d9b958d3a964996cebe811913a5eaea79482e0bd.json",
+        "Block16_scene_selection\\cache\\wave_model\\48db9adc0075f7ddbf1c58c9d5bb33ebd5e9d836a8b8c78a8d854b2e3513d08c.json",
+        "Block16_scene_selection\\cache\\wave_model\\4e69065b29282d45f6580707e6fccee579239ca334cac9330468307b0d67c7cd.json",
+        "Block16_scene_selection\\cache\\wave_model\\6c25e38274885253a37b846f4ec617e437d8681c8aad9a34c46b574bafdcd885.json",
+        "Block16_scene_selection\\cache\\wave_model\\72bfe603c3d43fa4f8f63251a156a4c63c27e3dcda8ba23d48bb5fd77a503336.json",
+        "Block16_scene_selection\\cache\\wave_model\\75011f56f47d7db7955bcba63f1ffe03a0044662c9dcb84773b5eea97da8da32.json",
+        "Block16_scene_selection\\cache\\wave_model\\9a8a3e4d8df61dbf527ebfca96f6d35f0d3c5f3202107525cf27e8b29b494446.json",
+        "Block16_scene_selection\\cache\\wave_model\\abc543320d008d38a1dba8b97ce9caa9dd733c727ec43ed8255e795e81dbc58f.json",
+        "Block16_scene_selection\\cache\\wave_model\\ba5374ffde593387da573a9c8ad81a193ee5a03e907fc7cdb5906da420c3ee7a.json",
+        "Block16_scene_selection\\cache\\wave_model\\bd737e14160a3b8a5402bcc5ba390ee33325e5936962de8732b14779dafaebc2.json",
+        "Block16_scene_selection\\cache\\wave_model\\ccbd8fa366a0a8ae7e76048ea24938370a73505f8e445acd16656d32edee7e77.json",
+        "Block16_scene_selection\\cache\\wave_model\\e45d6fb82a226833525afc389c3515f9867637c7422b3a84b2af9aed79d99681.json",
+        "Block16_scene_selection\\cache\\wave_model\\e82b77e19615376442528afd10cf9702c044560e72229fa15737f8236488c312.json",
+        "Block16_scene_selection\\cache\\wave_model\\e886509e4e13ef29b9fb17ba2ca3c9500d4f8d1908bba024a49d6a8d8c09d40b.json",
+        "Block16_scene_selection\\cache\\wave_model\\ebe4a21f3861598b7d4c43811c0e46062a4062b2f49a942a9643e4ae3e2d5f2d.json",
+        "Block16_scene_selection\\cache\\wave_model\\fbc403ef803b5be5b7fb76c3b92123a64ce61c62e412524ab3df71ad97bad53f.json"
+      ],
+      "config_sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5",
+      "endpoints": [
+        "Block16_scene_selection\\cache\\ndbc_stationmetadata.xml",
+        "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[34743:1:34743][0:1:97][0:1:0][0:1:0],mean_wave_dir[34743:1:34743][0:1:97][0:1:0][0:1:0],principal_wave_dir[34743:1:34743][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[34743:1:34743][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[34743:1:34743][0:1:97][0:1:0][0:1:0]",
+        "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[35234:1:35234][0:1:97][0:1:0][0:1:0],mean_wave_dir[35234:1:35234][0:1:97][0:1:0][0:1:0],principal_wave_dir[35234:1:35234][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[35234:1:35234][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[35234:1:35234][0:1:97][0:1:0][0:1:0]",
+        "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[36604:1:36604][0:1:97][0:1:0][0:1:0],mean_wave_dir[36604:1:36604][0:1:97][0:1:0][0:1:0],principal_wave_dir[36604:1:36604][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[36604:1:36604][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[36604:1:36604][0:1:97][0:1:0][0:1:0]",
+        "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[37180:1:37180][0:1:97][0:1:0][0:1:0],mean_wave_dir[37180:1:37180][0:1:97][0:1:0][0:1:0],principal_wave_dir[37180:1:37180][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[37180:1:37180][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[37180:1:37180][0:1:97][0:1:0][0:1:0]",
+        "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?time",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/166831ef-f7ce-4e6f-b7c3-cec49cfa0a0f/2024-03-02-18-38-32_UMBRA-06/2024-03-02-18-38-32_UMBRA-06_CPHD.cphd",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/166831ef-f7ce-4e6f-b7c3-cec49cfa0a0f/2024-03-02-18-38-32_UMBRA-06/2024-03-02-18-38-32_UMBRA-06_SICD.nitf",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/19c406cc-522b-4aed-94ed-d6859befd724/2024-10-22-22-04-46_UMBRA-09/2024-10-22-22-04-46_UMBRA-09_CPHD.cphd",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/19c406cc-522b-4aed-94ed-d6859befd724/2024-10-22-22-04-46_UMBRA-09/2024-10-22-22-04-46_UMBRA-09_SICD.nitf",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/39b194a5-2001-4264-b6c8-a1c23b9554dd/2025-12-02-16-00-55_UMBRA-07/2025-12-02-16-00-55_UMBRA-07_CPHD.cphd",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/39b194a5-2001-4264-b6c8-a1c23b9554dd/2025-12-02-16-00-55_UMBRA-07/2025-12-02-16-00-55_UMBRA-07_SICD.nitf",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/9b28d626-242d-4821-9047-2c3f9e35cc22/2024-09-16-22-14-37_UMBRA-05/2024-09-16-22-14-37_UMBRA-05_CPHD.cphd",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/9b28d626-242d-4821-9047-2c3f9e35cc22/2024-09-16-22-14-37_UMBRA-05/2024-09-16-22-14-37_UMBRA-05_SICD.nitf",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/e0c5cf1c-0bc2-42d0-91ea-ffe056c3ef27/2024-03-02-20-11-59_UMBRA-06/2024-03-02-20-11-59_UMBRA-06_CPHD.cphd",
+        "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/e0c5cf1c-0bc2-42d0-91ea-ffe056c3ef27/2024-03-02-20-11-59_UMBRA-06/2024-03-02-20-11-59_UMBRA-06_SICD.nitf"
+      ],
+      "errors": [
+        {
+          "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+          "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+          "station": "42094"
+        },
+        {
+          "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+          "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+          "station": "42093"
+        },
+        {
+          "acquisition_key": "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+          "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+          "station": "42094"
+        },
+        {
+          "acquisition_key": "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+          "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+          "station": "42093"
+        },
+        {
+          "acquisition_key": "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+          "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+          "station": "42094"
+        },
+        {
+          "acquisition_key": "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+          "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+          "station": "42093"
+        },
+        {
+          "acquisition_key": "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+          "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42094/42094w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+          "station": "42094"
+        },
+        {
+          "acquisition_key": "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+          "error": "RuntimeError(\"request failed for https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42093/42093w9999.nc.ascii?time: <HTTPError 404: '404'>\")",
+          "station": "42093"
+        }
+      ],
+      "source_hashes": {
+        "natural_earth_shp": "4cad3a49bc75c1a4c2f3d7efae04f2f8e63151c96764b2658effabf524331fa6",
+        "snapshot_manifest": "ac57ef4ef4423fa854e9ae8ca38a6f1a2e0cd8d849e98c173de6437bed7bf140"
+      }
+    },
+    "sensitivity": {
+      "all_top_unchanged": true,
+      "baseline_top": {
+        "A": null,
+        "B": "collect:0965638a-a446-4fd7-afcd-7a4d96903af2"
+      },
+      "variants": [
+        {
+          "direction_weight_factor": 0.9,
+          "top": {
+            "A": null,
+            "B": "collect:0965638a-a446-4fd7-afcd-7a4d96903af2"
+          },
+          "unchanged": true
+        },
+        {
+          "direction_weight_factor": 1.1,
+          "top": {
+            "A": null,
+            "B": "collect:0965638a-a446-4fd7-afcd-7a4d96903af2"
+          },
+          "unchanged": true
+        }
+      ]
+    },
+    "snapshot": "Block16_scene_selection/catalog_snapshots/20260913T231747Z",
+    "snapshot_identity_sha256": "ffaf387ef05908562540e86ec31b4ccc03fc4bbc05112a3db114aade9085d168",
+    "snapshot_status": "complete",
+    "status": "complete"
+  },
+  "tests": {
+    "network_integration": {
+      "byte_range_audits_verified": 5,
+      "catalog_snapshot": "20260913T231747Z",
+      "expected_missing_product_http_404": 8,
+      "measured_spectra": 4,
+      "status": "passed",
+      "wave_queries_completed": 27
+    },
+    "offline": {
+      "failed": 0,
+      "network_required": false,
+      "passed": 168,
+      "pytest_seconds": 6.82,
+      "skipped": 0,
+      "wall_seconds": 7.626
+    }
+  }
+}

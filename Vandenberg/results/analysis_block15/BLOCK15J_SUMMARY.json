@@ -1,0 +1,76 @@
+{
+  "block": "15J",
+  "status": "complete",
+  "independent_sequences": {
+    "calibration": 24,
+    "evaluation": 48,
+    "controls": 4,
+    "total": 76
+  },
+  "threshold": 0.27347419429777386,
+  "evaluation": {
+    "A_n": 16,
+    "B_n": 32,
+    "A_as_B": 3,
+    "A_as_B_ci95": [
+      0.06591478773586765,
+      0.4300935986845823
+    ],
+    "B_detected": 8,
+    "B_detected_ci95": [
+      0.1325224398262155,
+      0.42106891770246624
+    ],
+    "abstentions": 37,
+    "decision_fraction": 0.22916666666666666,
+    "by_family": {
+      "A_band": {
+        "n": 16,
+        "B": 3,
+        "abstain": 13,
+        "rate_ci95_wilson": [
+          0.06591478773586765,
+          0.4300935986845823
+        ]
+      },
+      "B_static_observed": {
+        "n": 16,
+        "B": 8,
+        "abstain": 8,
+        "rate_ci95_wilson": [
+          0.2799923761135083,
+          0.7200076238864916
+        ]
+      },
+      "B_slow_OU": {
+        "n": 16,
+        "B": 0,
+        "abstain": 16,
+        "rate_ci95_wilson": [
+          0.0,
+          0.19361341827271994
+        ]
+      }
+    },
+    "heldout_tangential_B": {
+      "n": 16,
+      "detected": 4,
+      "ci95": [
+        0.10181901984237346,
+        0.49498768929398645
+      ]
+    },
+    "B_slope_error_over_10pct": 8,
+    "B_slope_error_leq_10pct": 24,
+    "B_estimate_unavailable": 0,
+    "B_passes_frozen_criteria": 24
+  },
+  "paired_block15i": {
+    "A_as_B": 0,
+    "B_detected": 0,
+    "abstentions": 48
+  },
+  "utility_gate_passed": false,
+  "utility_gate": "on evaluation: A->B <=10%, B detection >=50%, decision fraction >=40%, and held-out configuration B detection >=40%; otherwise stop as non-useful",
+  "transfer_claim": "constant-transfer primary only; variable-transfer non-cancellation is analytic/unit-test control, not a favourable evaluation."
+}

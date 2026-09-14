@@ -1,0 +1,135 @@
+{
+  "schema_version": "block16a-1.0.0",
+  "status": "frozen_before_remote_queries",
+  "catalog": {
+    "s3_endpoint": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/",
+    "s3_prefix": "sar-data/",
+    "stac_root": "https://s3.us-west-2.amazonaws.com/umbra-open-data-catalog/stac/catalog.json",
+    "timeout_s": 45,
+    "retries": 4,
+    "retry_backoff_s": 1.5,
+    "concurrency": 12,
+    "max_metadata_bytes": 536870912,
+    "snapshot_schema": "block16a-canonical-catalog-1.0.0",
+    "fail_closed": true,
+    "atomic_writes": true
+  },
+  "plausibility": {
+    "earliest_acquisition_utc": "2020-01-01T00:00:00Z",
+    "future_tolerance_s": 86400,
+    "catalog_duration_min_s": 0.25,
+    "catalog_duration_max_s": 120.0,
+    "allowed_instrument_modes": ["SPOTLIGHT"],
+    "require_cphd": true,
+    "require_sicd": true,
+    "allowed_incidence_hard_deg": [10.0, 50.0],
+    "preferred_incidence_deg": [15.0, 35.0],
+    "reject_multistatic": true,
+    "reject_aggregated_collects": true
+  },
+  "deduplication": {
+    "acquisition_primary_key": "umbra:collect_id",
+    "fallback_fields": ["platform", "start_datetime", "end_datetime", "geometry_sha256"],
+    "processing_key_fields": ["acquisition_key", "stac_item_id", "processing_version", "processing_created", "stac_s3_key"],
+    "preferred_order": ["has_cphd_and_sicd", "metadata_completeness", "validity", "latest_processing", "asset_verifiability", "processing_key"],
+    "retain_alternatives": true
+  },
+  "marine": {
+    "natural_earth_dataset": "Natural Earth 1:10m Physical Land",
+    "natural_earth_role": "preliminary_only_not_sar_scale_coast_proof",
+    "minimum_ocean_fraction": 0.8,
+    "minimum_ocean_area_km2": 1.0,
+    "minimum_internal_ocean_roi_diameter_m_proxy": 500.0,
+    "minimum_coast_clearance_m_proxy": 250.0,
+    "land_control_minimum_fraction": 0.01,
+    "land_control_is_optional": true,
+    "fully_marine_bonus": false
+  },
+  "references": {
+    "ndbc_station_metadata": "https://www.ndbc.noaa.gov/metadata/stationmetadata.xml",
+    "ndbc_thredds_root": "https://dods.ndbc.noaa.gov/thredds/catalog/data",
+    "cdip_thredds_root": "https://thredds.cdip.ucsd.edu/thredds/catalog/cdip/archive",
+    "maximum_station_distance_km": 50.0,
+    "preferred_station_distance_km": 30.0,
+    "maximum_observation_offset_s": 3600.0,
+    "preferred_observation_offset_s": 1800.0,
+    "required_directional_fields": ["spectral_density", "alpha1", "alpha2", "r1", "r2"],
+    "missing_codes": [99.0, 999.0, 9999.0],
+    "frequency_min_hz": 0.02,
+    "frequency_max_hz": 1.0
+  },
+  "wave_model": {
+    "endpoint": "https://marine-api.open-meteo.com/v1/marine",
+    "model": "meteofrance_wave",
+    "role": "screening_not_independent_validation",
+    "maximum_time_offset_s": 7200.0,
+    "minimum_swell_height_m": 0.5,
+    "preferred_swell_height_m": 1.0,
+    "minimum_swell_energy_proxy_ratio": 0.5,
+    "preferred_swell_energy_proxy_ratio": 0.7,
+    "minimum_directional_concentration_r1": 0.5,
+    "preferred_directional_concentration_r1": 0.7,
+    "preferred_peak_period_s": 10.0,
+    "period_proxy_policy": "model mean may screen only; never rename as peak period"
+  },
+  "temporal": {
+    "minimum_catalog_duration_s": 15.0,
+    "preferred_catalog_duration_s": 20.0,
+    "nominal_look_duration_s": 6.0,
+    "minimum_independent_looks": 3,
+    "sliding_center_step_s": 1.25,
+    "minimum_sliding_centers": 7,
+    "minimum_observable_cycles": 1.25,
+    "preferred_observable_cycles": 2.0,
+    "edge_loss_fraction": 0.0,
+    "verified_precedence": ["cphd_tx_time_span_s", "sicd_processed_aperture_s", "catalog_duration_s"]
+  },
+  "direction": {
+    "stac_axis_role": "preliminary_range_axis",
+    "hard_max_axial_difference_deg": 15.0,
+    "preferred_max_axial_difference_deg": 5.0,
+    "secondary_max_axial_difference_deg": 10.0,
+    "source_direction_convention": "from_true_north_clockwise",
+    "comparison_direction_convention": "propagation_to_true_north_clockwise",
+    "gate_axis_convention": "undirected_modulo_180"
+  },
+  "spatial": {
+    "gravity_m_s2": 9.80665,
+    "minimum_wavelengths_in_roi": 4.0,
+    "preferred_wavelengths_in_roi": 6.0,
+    "resolution_role": "preliminary_until_preview_or_small_product",
+    "delta_eff_policy": "do_not_equate_to_pixel_spacing"
+  },
+  "byte_range_audit": {
+    "candidate_count": 5,
+    "max_total_bytes": 67108864,
+    "max_per_request_bytes": 2097152,
+    "max_requests_per_asset": 8,
+    "allow_pvp_sparse_samples": true,
+    "pvp_sample_count": 9,
+    "forbid_signal_and_image_pixels": true,
+    "require_cphd_sicd_acquisition_match": true
+  },
+  "classification": {
+    "A": "non_anomalous, spotlight, coherent CPHD+SICD, useful ocean ROI, temporal hard gate, favorable geometry, complete measured directional spectrum within limits",
+    "B": "passes physical/metadata hard gates but has model-only screening reference",
+    "C": "retained control for duration, weak sea state, geometry, land control, or 5-7 s comparison",
+    "D": "one or more explicit hard gates fail",
+    "E": "required metadata/reference are unavailable and a hard gate cannot be evaluated",
+    "missing_data_policy": "never impute a measured peak period or pass an unverifiable hard gate",
+    "abstention_policy": "if no A passes, report no primary; do not tune thresholds post hoc",
+    "vandenberg_collect_ids": ["9d8283d8-550d-4435-899f-5483d2c1abcc"],
+    "vandenberg_collect_names": ["2025-02-16-18-55-44_UMBRA-10", "2025-02-16-18-55-33_UMBRA-10"]
+  },
+  "ranking": {
+    "method": "category_then_pareto_then_transparent_score",
+    "manual_verification_bonus": 0.0,
+    "weights_measured": {"cycles": 0.25, "direction": 0.25, "swell_energy": 0.15, "directional_concentration": 0.15, "station_distance": 0.10, "incidence": 0.10},
+    "weights_model": {"cycles": 0.30, "direction": 0.30, "swell_height": 0.15, "swell_dominance": 0.15, "incidence": 0.10},
+    "sensitivity_weight_fraction": 0.1,
+    "sensitivity_threshold_variation": {"preferred_cycles": 0.25, "preferred_direction_deg": 2.0, "preferred_station_distance_km": 5.0}
+  },
+  "random_seed": 160100,
+  "network_tests_are_separate": true,
+  "no_full_sar_download": true
+}
