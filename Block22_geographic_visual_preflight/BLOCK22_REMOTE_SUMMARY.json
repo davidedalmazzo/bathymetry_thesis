@@ -1,0 +1,9 @@
+{
+  "bytes": 2103656,
+  "maximum_bytes": 52428800,
+  "maximum_transactions": 60,
+  "preview": "not recovered; no small official browse asset advertised by STAC inventory",
+  "sidecar_xml": "failed",
+  "signal_array_read": false,
+  "transactions": 3
+}

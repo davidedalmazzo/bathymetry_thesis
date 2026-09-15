@@ -1,0 +1,353 @@
+{
+  "block21_config_sha256": "daf230523c13e15ba12b664b1ab9d6ec1418711f7e67b06e5b4a5589d2e3553d",
+  "block21_manifest_sha256": "e2265a400f352a1ff757e501241e2795b5a7b5d64a61453569f1319d4a49f220",
+  "local_images": [
+    {
+      "bytes": 272065533,
+      "path": "Vandenberg\\2025-02-16-18-55-44_UMBRA-10_GEC.tif"
+    },
+    {
+      "bytes": 5595446,
+      "path": "Vandenberg\\bathymetry\\10SGD140250.tif"
+    },
+    {
+      "bytes": 5104487,
+      "path": "Vandenberg\\bathymetry\\10SGD140265.tif"
+    },
+    {
+      "bytes": 5480304,
+      "path": "Vandenberg\\bathymetry\\10SGD140280.tif"
+    },
+    {
+      "bytes": 5569887,
+      "path": "Vandenberg\\bathymetry\\10SGD155250.tif"
+    },
+    {
+      "bytes": 6320958,
+      "path": "Vandenberg\\bathymetry\\10SGD155265.tif"
+    },
+    {
+      "bytes": 6921410,
+      "path": "Vandenberg\\bathymetry\\10SGD155280.tif"
+    },
+    {
+      "bytes": 6546140,
+      "path": "Vandenberg\\bathymetry\\10SGD170250.tif"
+    },
+    {
+      "bytes": 6643765,
+      "path": "Vandenberg\\bathymetry\\10SGD170265.tif"
+    },
+    {
+      "bytes": 4622686,
+      "path": "Vandenberg\\bathymetry\\10SGD170280.tif"
+    },
+    {
+      "bytes": 2245707,
+      "path": "Vandenberg\\results\\diagnostics\\GEC_overview_grid.png"
+    },
+    {
+      "bytes": 2434907,
+      "path": "Vandenberg\\results\\diagnostics\\GEC_detail_coast_ocean.png"
+    },
+    {
+      "bytes": 2737084,
+      "path": "Vandenberg\\results\\diagnostics\\GEC_detail_land.png"
+    },
+    {
+      "bytes": 2221428,
+      "path": "Vandenberg\\results\\diagnostics\\GEC_roi_overlay.png"
+    },
+    {
+      "bytes": 97535,
+      "path": "Vandenberg\\results\\diagnostics\\CPHD_DOPPLER_TIME_MAPPING.png"
+    },
+    {
+      "bytes": 102898,
+      "path": "Vandenberg\\results\\diagnostics\\DOPPLER_WINDOWS_6S.png"
+    },
+    {
+      "bytes": 50230,
+      "path": "Vandenberg\\results\\diagnostics\\BLOCK4_SLIDING_LOOK_PLAN.png"
+    },
+    {
+      "bytes": 2860801,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\nearshore_three_look_intensity.png"
+    },
+    {
+      "bytes": 4806857,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\nearshore_sublook_differences.png"
+    },
+    {
+      "bytes": 263011,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\nearshore_three_look_power_spectrum.png"
+    },
+    {
+      "bytes": 2885400,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\offshore_three_look_intensity.png"
+    },
+    {
+      "bytes": 4003319,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\offshore_sublook_differences.png"
+    },
+    {
+      "bytes": 266358,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\offshore_three_look_power_spectrum.png"
+    },
+    {
+      "bytes": 2719119,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\land_control_three_look_intensity.png"
+    },
+    {
+      "bytes": 4107251,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\land_control_sublook_differences.png"
+    },
+    {
+      "bytes": 249418,
+      "path": "Vandenberg\\results\\analysis_block3_initial_gec_roi\\land_control_three_look_power_spectrum.png"
+    },
+    {
+      "bytes": 2901758,
+      "path": "Vandenberg\\results\\analysis_block3\\nearshore_three_look_intensity.png"
+    },
+    {
+      "bytes": 5271423,
+      "path": "Vandenberg\\results\\analysis_block3\\nearshore_sublook_differences.png"
+    },
+    {
+      "bytes": 217813,
+      "path": "Vandenberg\\results\\analysis_block3\\nearshore_three_look_power_spectrum.png"
+    },
+    {
+      "bytes": 2896873,
+      "path": "Vandenberg\\results\\analysis_block3\\offshore_three_look_intensity.png"
+    },
+    {
+      "bytes": 4797970,
+      "path": "Vandenberg\\results\\analysis_block3\\offshore_sublook_differences.png"
+    },
+    {
+      "bytes": 234491,
+      "path": "Vandenberg\\results\\analysis_block3\\offshore_three_look_power_spectrum.png"
+    },
+    {
+      "bytes": 2719119,
+      "path": "Vandenberg\\results\\analysis_block3\\land_control_three_look_intensity.png"
+    },
+    {
+      "bytes": 4107251,
+      "path": "Vandenberg\\results\\analysis_block3\\land_control_sublook_differences.png"
+    },
+    {
+      "bytes": 249552,
+      "path": "Vandenberg\\results\\analysis_block3\\land_control_three_look_power_spectrum.png"
+    },
+    {
+      "bytes": 192711,
+      "path": "Vandenberg\\results\\analysis_block3\\nearshore_cross_spectra.png"
+    },
+    {
+      "bytes": 212672,
+      "path": "Vandenberg\\results\\analysis_block3\\offshore_cross_spectra.png"
+    },
+    {
+      "bytes": 217643,
+      "path": "Vandenberg\\results\\analysis_block4\\BLOCK4_PHASE_TIMESERIES.png"
+    },
+    {
+      "bytes": 118883,
+      "path": "Vandenberg\\results\\analysis_block4\\BLOCK4_PEAK_DRIFT_DIAGNOSTIC.png"
+    },
+    {
+      "bytes": 278417,
+      "path": "Vandenberg\\results\\analysis_block5\\NDBC_46218_FULL_DIRECTIONAL_SPECTRUM.png"
+    },
+    {
+      "bytes": 197667,
+      "path": "Vandenberg\\results\\analysis_block5\\BLOCK5_SAR_SENSITIVITY.png"
+    },
+    {
+      "bytes": 199805,
+      "path": "Vandenberg\\results\\analysis_block6\\BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.png"
+    },
+    {
+      "bytes": 204657,
+      "path": "Vandenberg\\results\\analysis_block6\\BLOCK6_ORIENTATION_DIAGNOSTIC.png"
+    },
+    {
+      "bytes": 806486,
+      "path": "Vandenberg\\results\\analysis_block7\\BLOCK7_ROI_SUPPORT_BATHYMETRY.png"
+    },
+    {
+      "bytes": 750591,
+      "path": "Vandenberg\\results\\analysis_block7\\BLOCK7_SPATIAL_CONVERGENCE.png"
+    },
+    {
+      "bytes": 259671,
+      "path": "Vandenberg\\results\\analysis_block7\\BLOCK7_BATHYMETRY_ROI.png"
+    },
+    {
+      "bytes": 196222,
+      "path": "Vandenberg\\results\\analysis_block7\\BLOCK7_FROZEN_RESIDUAL_DIAGNOSTIC.png"
+    },
+    {
+      "bytes": 196767,
+      "path": "Vandenberg\\results\\analysis_block11\\BLOCK11_ENERGY_CENTROID.png"
+    },
+    {
+      "bytes": 101559,
+      "path": "Vandenberg\\results\\analysis_block11\\BLOCK11_PAIRWISE_OMEGA.png"
+    },
+    {
+      "bytes": 347756,
+      "path": "Vandenberg\\results\\block12_backprojection\\BLOCK12_OVERVIEW.png"
+    },
+    {
+      "bytes": 154230,
+      "path": "Vandenberg\\results\\analysis_block12\\BLOCK12_DISPERSION.png"
+    },
+    {
+      "bytes": 147460,
+      "path": "Vandenberg\\results\\analysis_block13\\BLOCK13_BUOY_SPECTRUM.png"
+    },
+    {
+      "bytes": 164341,
+      "path": "Vandenberg\\results\\analysis_block13\\BLOCK13_SLIDING.png"
+    },
+    {
+      "bytes": 262353,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15B_COMPARISON.png"
+    },
+    {
+      "bytes": 202513,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15B_FIXED_PEAK.png"
+    },
+    {
+      "bytes": 89007,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15B_LAG_DEPENDENCE.png"
+    },
+    {
+      "bytes": 140825,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15B_VALID_BINS_AND_MIXTURE.png"
+    },
+    {
+      "bytes": 181893,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15C_BIAS_PHASE.png"
+    },
+    {
+      "bytes": 253078,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15C_ACCEPTANCE.png"
+    },
+    {
+      "bytes": 162078,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15C_QUALITY_MSC.png"
+    },
+    {
+      "bytes": 437636,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15C_EXAMPLES.png"
+    },
+    {
+      "bytes": 427915,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_TRAJECTORIES_1.png"
+    },
+    {
+      "bytes": 417447,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_TRAJECTORIES_2.png"
+    },
+    {
+      "bytes": 434574,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_TRAJECTORIES_3.png"
+    },
+    {
+      "bytes": 414875,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_TRAJECTORIES_4.png"
+    },
+    {
+      "bytes": 426530,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_TRAJECTORIES_5.png"
+    },
+    {
+      "bytes": 289116,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_COST_PROFILES.png"
+    },
+    {
+      "bytes": 170551,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_PREDICTIVE.png"
+    },
+    {
+      "bytes": 105513,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_FIXED_PEAK.png"
+    },
+    {
+      "bytes": 511604,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15D_PHASE_DIFFERENCES.png"
+    },
+    {
+      "bytes": 214061,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15E_GAIN_DISTRIBUTIONS.png"
+    },
+    {
+      "bytes": 229311,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15E_PARTITIONS.png"
+    },
+    {
+      "bytes": 236793,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15E_RESIDUALS.png"
+    },
+    {
+      "bytes": 123450,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15F_LOOK_GEOMETRY.png"
+    },
+    {
+      "bytes": 101152,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15F_TRANSFER.png"
+    },
+    {
+      "bytes": 131479,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15G_SELECTION_RECOVERY.png"
+    },
+    {
+      "bytes": 54496,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15G_GAIN_SEPARATION.png"
+    },
+    {
+      "bytes": 50298,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15H_PEAK_NEIGHBORHOOD.png"
+    },
+    {
+      "bytes": 37131,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15H_WINDOW_RESPONSE.png"
+    },
+    {
+      "bytes": 91419,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15J_INCREMENT_DIAGNOSTIC.png"
+    },
+    {
+      "bytes": 30252,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15K_SLOPES.png"
+    },
+    {
+      "bytes": 33140,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15K_ABLATION_RESIDUAL.png"
+    },
+    {
+      "bytes": 61387,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15K_FINAL_RESIDUALS.png"
+    },
+    {
+      "bytes": 29191,
+      "path": "Vandenberg\\results\\analysis_block15\\BLOCK15K_APPLICABILITY.png"
+    },
+    {
+      "bytes": 249270,
+      "path": "Vandenberg\\results\\analysis_block16\\BLOCK16_BUOY_SPECTRUM_AUDIT.png"
+    }
+  ],
+  "natural_earth_shp_sha256": "4cad3a49bc75c1a4c2f3d7efae04f2f8e63151c96764b2658effabf524331fa6",
+  "preexisting_untracked": [
+    "COMMIT_MSG_BLOCK17_18.txt",
+    "PUSH_BLOCK17_18.bat",
+    "five Block15 B/C/D result files"
+  ],
+  "start_commit": "a9dc43da5995b26007bf8b0e146876fc469ecf2b"
+}

@@ -1,0 +1,9 @@
+{
+  "Block20_audited": false,
+  "Block21_modified": false,
+  "all_rois_fully_in_mask_water": true,
+  "candidate1_alternatives": 3,
+  "distance_rows": 5,
+  "finalists": 5,
+  "visual_status_other_finalists": "no local official raster; structure not inspected"
+}

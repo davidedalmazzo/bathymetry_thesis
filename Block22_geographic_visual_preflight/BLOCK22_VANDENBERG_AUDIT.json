@@ -1,0 +1,28 @@
+{
+  "classification_unchanged": "development stress test; physical frequency not identifiable",
+  "georeference_source": "2025-02-16-18-55-44_UMBRA-10_GEC.tif",
+  "initial_rois_overlaid": [
+    "nearshore",
+    "offshore",
+    "land_control"
+  ],
+  "later_support": "Block7/Block15K 1440x650 m rotated common ground ROI; exact GEC polygon provenance not archived, therefore not drawn as exact polygon",
+  "new_SAR_extraction": false,
+  "overview_scale_source_pixels_per_pixel": 10,
+  "visual_seed_lonlat_corners": [
+    [
+      -120.64287094656645,
+      34.60142789979638
+    ],
+    [
+      -120.6544599765502,
+      34.58329784556859
+    ]
+  ],
+  "visual_seed_source_box_col_row": [
+    2000,
+    14000,
+    9000,
+    16000
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "artifact_count": 30,
+  "artifacts": [
+    {
+      "bytes": 10023,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_CANDIDATE1_SICD_METADATA.json",
+      "sha256": "b838fcd6ff49853ead4187b09f1994b8bab281611c1c88fad14d8b8c7018c3f3"
+    },
+    {
+      "bytes": 953,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_CONFIG.json",
+      "sha256": "5a46ffdd7e3a0620a2d4afedc8c16318fea270e4ad844f59631fe4d6bb6b2f55"
+    },
+    {
+      "bytes": 86,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_CONFIG.sha256",
+      "sha256": "f454b35d8d7cbffb58955dbb44eb5defb6082570fe198103ec58db5171db9996"
+    },
+    {
+      "bytes": 1764,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_DISTANCES.csv",
+      "sha256": "919f9e5f98de43dc40c9dc5d362d90b0c408ed6823123003b7de153d6f63b527"
+    },
+    {
+      "bytes": 10608,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_INPUT_INVENTORY.json",
+      "sha256": "67f6f42bb2baec74830aa1069b89c29a1b5c87678b58aec3713eb4694efc222d"
+    },
+    {
+      "bytes": 260,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_OFFLINE_SUMMARY.json",
+      "sha256": "a39d63adc1a821f6be71fe35db31152821bac9fcb8c788183da58b098ec8186a"
+    },
+    {
+      "bytes": 2714,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_PROTOCOL.md",
+      "sha256": "d4e18b0cf94247c0a4e5de2900e5569039a0491148ec26dae0d07d73aff30690"
+    },
+    {
+      "bytes": 251,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_REMOTE_SUMMARY.json",
+      "sha256": "28f043f49a8a12e31607f0f2e10bd21d9586ddfe2fa444cf54a68f6a049e1720"
+    },
+    {
+      "bytes": 5971,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_REPORT.md",
+      "sha256": "d7a3f6d86052980c2ea08f6e10095308d9f99d57adb4cbbec3604ce90e65b438"
+    },
+    {
+      "bytes": 476,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_REQUEST_AUDIT.json",
+      "sha256": "08dc2f64f8bacc26d03acca79613e71d18440f968d57f3bb32dc75dd036dce0e"
+    },
+    {
+      "bytes": 1524,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_REQUEST_LOG.csv",
+      "sha256": "91fbc762258400be288a72576b2d1c7a43045b539c0ab5ade160c0e41202f439"
+    },
+    {
+      "bytes": 1544,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_ROI_ALTERNATIVES.csv",
+      "sha256": "5df00556e6184871bb637874f08ec7d2f0cfdd23e923f40d6f1f232e7e768db3"
+    },
+    {
+      "bytes": 1115,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_SUMMARY.json",
+      "sha256": "8aae8a9a3318a89c49de0af7b683598277d87a2ca72e94ce0e6dea776869dd62"
+    },
+    {
+      "bytes": 732,
+      "path": "Block22_geographic_visual_preflight/BLOCK22_VANDENBERG_AUDIT.json",
+      "sha256": "8dc3e7f859a78b2a8232efe16a95802111a5a3d609c21465f73fe6765c770d63"
+    },
+    {
+      "bytes": 832,
+      "path": "Block22_geographic_visual_preflight/CHECKPOINT_22.md",
+      "sha256": "974791d57a584148802bc46fafba52e5ea6af696aba61e1de44c880d4543a784"
+    },
+    {
+      "bytes": 90881,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_1_detail.png",
+      "sha256": "9a14a35260579e642d2c75071ec32f51f5b47a8b9f5d8ed3aedd83a1e6a8a52e"
+    },
+    {
+      "bytes": 112576,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_1_regional.png",
+      "sha256": "a7d5ae499bb1c7820c4bc024d2dad5650dccdd4ade1f34e2b354259fbdd4d88d"
+    },
+    {
+      "bytes": 85298,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_2_detail.png",
+      "sha256": "0721f1ec659e9eb33e4f1aa1f0d3b289e7eb24bf008bbf650b557acb2049222c"
+    },
+    {
+      "bytes": 95285,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_2_regional.png",
+      "sha256": "98d0164323a86d4ca2e9b572cc4b4bec7c5b357a46c4e4ba3bea20faf4acc4cb"
+    },
+    {
+      "bytes": 83300,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_3_detail.png",
+      "sha256": "68d8f418e7c69a6b0ef19729b72b73ceb21c8468844c419fcfa36161fd259d22"
+    },
+    {
+      "bytes": 122645,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_3_regional.png",
+      "sha256": "111e85ed2112b7cdd7bc3339c380b446e301b881a9004a76c716b5adf1165715"
+    },
+    {
+      "bytes": 91085,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_4_detail.png",
+      "sha256": "4a274e94aea8b635a93d5225825f4fd4c34b7584b24b2d65bac4780a7b49b690"
+    },
+    {
+      "bytes": 89571,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_4_regional.png",
+      "sha256": "78d10a88fb6bb486b6cfb52e989508d6a8f4f5be97e68753f1e647f6e062ed26"
+    },
+    {
+      "bytes": 86722,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_5_detail.png",
+      "sha256": "276b0983ac9632ceb981ce69c3ff5f4b9e459b193767b5f5504cb0a65c4f75ec"
+    },
+    {
+      "bytes": 136758,
+      "path": "Block22_geographic_visual_preflight/maps/finalist_5_regional.png",
+      "sha256": "07e55af1d01b0fd065edffaa5aac0b0c66df7303404e1499daa0f34ffab2847c"
+    },
+    {
+      "bytes": 1183853,
+      "path": "Block22_geographic_visual_preflight/maps/vandenberg_gec_roi_support_audit.png",
+      "sha256": "4b49b41c83c9fa23f1cf0d16273a43717ecde4b68346a695b46c5713734eaa52"
+    },
+    {
+      "bytes": 56004,
+      "path": "Block22_geographic_visual_preflight/maps/vandenberg_scene_buoy_regional.png",
+      "sha256": "00331998bb1cf3b9c6dda388c76cf2b6269b5ded83c720adb82d6fe4a4db2c4a"
+    },
+    {
+      "bytes": 6504,
+      "path": "Block22_geographic_visual_preflight/remote_raw/candidate1.json",
+      "sha256": "753916265ae883488802ff126651f751c8f6d8628dab0ff8f862361ff3632d13"
+    },
+    {
+      "bytes": 24370,
+      "path": "Block22_geographic_visual_preflight/remote_raw/candidate1.xml",
+      "sha256": "624874bf85ce1d37019159b708f9af2d7afadc5b94c55ba50575ef6120465f8f"
+    },
+    {
+      "bytes": 2097152,
+      "path": "Block22_geographic_visual_preflight/remote_raw/candidate1_sicd_tail_2MiB.bin",
+      "sha256": "099bf334b19c37c055150699594c54d093c2508a02e6c13767e2e322e49fbe3d"
+    }
+  ],
+  "block": 22,
+  "config_sha256": "5a46ffdd7e3a0620a2d4afedc8c16318fea270e4ad844f59631fe4d6bb6b2f55",
+  "created_utc": "2026-09-15T12:42:08.583258+00:00"
+}

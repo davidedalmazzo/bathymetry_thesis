@@ -1,0 +1,446 @@
+{
+  "block21_roi_within_sicd_image_corners": true,
+  "catalog_duration_s": 7.6,
+  "catalog_equals_processed_aperture": false,
+  "doppler_time_mapping_available": {
+    "PFA": true,
+    "RMA": false,
+    "TimeCOAPoly": true
+  },
+  "grid": {
+    "Col": {
+      "DeltaK1": -2.042066589682627,
+      "DeltaK2": 2.042066589682627,
+      "DeltaKCOAPoly": {
+        "Coefs": [
+          [
+            0.0
+          ]
+        ]
+      },
+      "ImpRespBW": 4.084133179365254,
+      "ImpRespWid": 0.21691261305481824,
+      "KCtr": 0.0,
+      "SS": 0.19587999824342994,
+      "Sgn": -1,
+      "UVectECF": {
+        "X": -0.4327927020677104,
+        "Y": 0.009927353499215894,
+        "Z": -0.9014388080670988
+      },
+      "WgtType": {
+        "WindowName": "UNIFORM"
+      }
+    },
+    "ImagePlane": "SLANT",
+    "Row": {
+      "DeltaK1": -1.294192887928347,
+      "DeltaK2": 1.294192887928347,
+      "DeltaKCOAPoly": {
+        "Coefs": [
+          [
+            0.0
+          ]
+        ]
+      },
+      "ImpRespBW": 2.588385775856694,
+      "ImpRespWid": 0.3422596462487467,
+      "KCtr": 63.8518419694994,
+      "SS": 0.3090729393825459,
+      "Sgn": -1,
+      "UVectECF": {
+        "X": 0.011432452591121934,
+        "Y": 0.9999193943493249,
+        "Z": 0.005523027415394303
+      },
+      "WgtType": {
+        "WindowName": "UNIFORM"
+      }
+    },
+    "TimeCOAPoly": {
+      "Coefs": [
+        [
+          3.2580967123038307
+        ]
+      ]
+    },
+    "Type": "RGAZIM"
+  },
+  "identity": {
+    "collector": "Umbra-09",
+    "core_name": "2025-11-15-18-57-13_Umbra-09",
+    "expected_collect_id": "e6b4c32d-bda9-4f75-a9a4-8dcfe0291a4f",
+    "radar_mode": "SPOTLIGHT"
+  },
+  "image_corners": [
+    {
+      "Lat": 34.06664437587818,
+      "Lon": -118.48767458113552,
+      "index": "1:FRFC"
+    },
+    {
+      "Lat": 33.976379232111924,
+      "Lon": -118.57501061934974,
+      "index": "2:FRLC"
+    },
+    {
+      "Lat": 34.02336116459428,
+      "Lon": -118.67649615105069,
+      "index": "3:LRLC"
+    },
+    {
+      "Lat": 34.11467046413561,
+      "Lon": -118.58817105683384,
+      "index": "4:LRFC"
+    }
+  ],
+  "image_data": {
+    "FirstCol": 0,
+    "FirstRow": 0,
+    "FullImage": {
+      "NumCols": 64800,
+      "NumRows": 26620
+    },
+    "NumCols": 64800,
+    "NumRows": 26620,
+    "PixelType": "RE32F_IM32F",
+    "SCPPixel": {
+      "Col": 32400,
+      "Row": 13310
+    },
+    "ValidData": [
+      {
+        "Col": 23935,
+        "Row": 2302,
+        "index": 1
+      },
+      {
+        "Col": 27164,
+        "Row": 2290,
+        "index": 2
+      },
+      {
+        "Col": 30395,
+        "Row": 2280,
+        "index": 3
+      },
+      {
+        "Col": 33627,
+        "Row": 2273,
+        "index": 4
+      },
+      {
+        "Col": 36861,
+        "Row": 2269,
+        "index": 5
+      },
+      {
+        "Col": 40096,
+        "Row": 2266,
+        "index": 6
+      },
+      {
+        "Col": 43333,
+        "Row": 2266,
+        "index": 7
+      },
+      {
+        "Col": 46571,
+        "Row": 2269,
+        "index": 8
+      },
+      {
+        "Col": 49811,
+        "Row": 2273,
+        "index": 9
+      },
+      {
+        "Col": 53052,
+        "Row": 2280,
+        "index": 10
+      },
+      {
+        "Col": 56295,
+        "Row": 2290,
+        "index": 11
+      },
+      {
+        "Col": 59540,
+        "Row": 2302,
+        "index": 12
+      },
+      {
+        "Col": 57821,
+        "Row": 4305,
+        "index": 13
+      },
+      {
+        "Col": 56107,
+        "Row": 6311,
+        "index": 14
+      },
+      {
+        "Col": 54397,
+        "Row": 8318,
+        "index": 15
+      },
+      {
+        "Col": 52691,
+        "Row": 10327,
+        "index": 16
+      },
+      {
+        "Col": 50990,
+        "Row": 12339,
+        "index": 17
+      },
+      {
+        "Col": 49292,
+        "Row": 14352,
+        "index": 18
+      },
+      {
+        "Col": 47599,
+        "Row": 16367,
+        "index": 19
+      },
+      {
+        "Col": 45910,
+        "Row": 18385,
+        "index": 20
+      },
+      {
+        "Col": 44225,
+        "Row": 20404,
+        "index": 21
+      },
+      {
+        "Col": 42544,
+        "Row": 22425,
+        "index": 22
+      },
+      {
+        "Col": 37653,
+        "Row": 24437,
+        "index": 23
+      },
+      {
+        "Col": 34441,
+        "Row": 24428,
+        "index": 24
+      },
+      {
+        "Col": 31231,
+        "Row": 24420,
+        "index": 25
+      },
+      {
+        "Col": 28021,
+        "Row": 24416,
+        "index": 26
+      },
+      {
+        "Col": 24814,
+        "Row": 24413,
+        "index": 27
+      },
+      {
+        "Col": 21607,
+        "Row": 24413,
+        "index": 28
+      },
+      {
+        "Col": 18403,
+        "Row": 24416,
+        "index": 29
+      },
+      {
+        "Col": 15200,
+        "Row": 24420,
+        "index": 30
+      },
+      {
+        "Col": 11999,
+        "Row": 24428,
+        "index": 31
+      },
+      {
+        "Col": 8798,
+        "Row": 24437,
+        "index": 32
+      },
+      {
+        "Col": 5600,
+        "Row": 24449,
+        "index": 33
+      },
+      {
+        "Col": 7247,
+        "Row": 22425,
+        "index": 34
+      },
+      {
+        "Col": 8897,
+        "Row": 20404,
+        "index": 35
+      },
+      {
+        "Col": 10551,
+        "Row": 18385,
+        "index": 36
+      },
+      {
+        "Col": 12210,
+        "Row": 16367,
+        "index": 37
+      },
+      {
+        "Col": 13872,
+        "Row": 14352,
+        "index": 38
+      },
+      {
+        "Col": 15539,
+        "Row": 12339,
+        "index": 39
+      },
+      {
+        "Col": 17210,
+        "Row": 10327,
+        "index": 40
+      },
+      {
+        "Col": 18885,
+        "Row": 8318,
+        "index": 41
+      },
+      {
+        "Col": 20564,
+        "Row": 6311,
+        "index": 42
+      },
+      {
+        "Col": 22247,
+        "Row": 4305,
+        "index": 43
+      }
+    ]
+  },
+  "polarization": "V:V",
+  "processed_aperture_s_from_ipp": 7.495363670038401,
+  "retrieval": {
+    "sicd_tail_range": {
+      "bytes": 2097152,
+      "range": [
+        13797756836,
+        13799853987
+      ],
+      "sha256": "099bf334b19c37c055150699594c54d093c2508a02e6c13767e2e322e49fbe3d",
+      "status": "recovered_xml"
+    },
+    "sicd_xml": {
+      "error": "RuntimeError(\"request_failed: https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/e0e5b2f2-250f-4394-af51-905e50da4178/2025-11-15-18-57-16_UMBRA-09/2025-11-15-18-57-13_UMBRA-09_SICD_MM.xml: <HTTPError 404: 'Not Found'>\")",
+      "status": "failed",
+      "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/e0e5b2f2-250f-4394-af51-905e50da4178/2025-11-15-18-57-16_UMBRA-09/2025-11-15-18-57-13_UMBRA-09_SICD_MM.xml"
+    },
+    "stac": {
+      "bytes": 6504,
+      "sha256": "753916265ae883488802ff126651f751c8f6d8628dab0ff8f862361ff3632d13",
+      "status": "recovered",
+      "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/e0e5b2f2-250f-4394-af51-905e50da4178/2025-11-15-18-57-16_UMBRA-09/2025-11-15-18-57-16_UMBRA-09.stac.v2.json"
+    }
+  },
+  "sampling_vs_resolution": {
+    "col_resolution_approx_m": 0.24484999780428748,
+    "col_sample_spacing_m": 0.19587999824342994,
+    "note": "sample spacing and impulse-response resolution are distinct",
+    "row_resolution_approx_m": 0.3863411742281823,
+    "row_sample_spacing_m": 0.3090729393825459
+  },
+  "scpc oa": {
+    "ARPAcc": {
+      "X": 2.6408409731671814,
+      "Y": 6.892678967509522,
+      "Z": -4.287887319004039
+    },
+    "ARPPos": {
+      "X": -2539286.2185496925,
+      "Y": -5363866.662129726,
+      "Z": 3546656.3004768984
+    },
+    "ARPVel": {
+      "X": -3114.0462823421367,
+      "Y": -2792.409799640744,
+      "Z": -6433.699162413903
+    },
+    "AzimAng": 136.82759386185936,
+    "DopplerConeAng": 111.90871425030069,
+    "GrazeAng": 46.802186384742534,
+    "GroundRange": 452370.65747458854,
+    "IncidenceAng": 43.197813615257466,
+    "LayoverAng": 98.6591397848195,
+    "SCPTime": 3.2580967123038307,
+    "SideOfTrack": "R",
+    "SlantRange": 718220.9414316235,
+    "SlopeAng": 53.564073011839575,
+    "TwistAng": 29.813255067437616
+  },
+  "timeline": {
+    "CollectDuration": 7.504991477333333,
+    "CollectStart": "2025-11-15T18:57:13.000000Z",
+    "IPP": [
+      {
+        "IPPEnd": 42959,
+        "IPPPoly": {
+          "Coefs": [
+            28.000021312555447,
+            5810.779912942182,
+            -11.119052591496782,
+            -0.06343522879967582,
+            0.0007009395737839239,
+            -1.278273209684646e-06
+          ]
+        },
+        "IPPStart": 56,
+        "TEnd": 7.500182342038401,
+        "TStart": 0.004818672,
+        "index": 1
+      }
+    ]
+  },
+  "verified_compact_metadata": {
+    "azimuth_deg": 136.82759386185936,
+    "collect_start": "2025-11-15T18:57:13.000000Z",
+    "collector": "Umbra-09",
+    "core_name": "2025-11-15-18-57-13_Umbra-09",
+    "doppler_cone_deg": 111.90871425030069,
+    "grid_col_delta_k1": -2.042066589682627,
+    "grid_col_delta_k2": 2.042066589682627,
+    "grid_col_ground_bearing_deg": 204.1561675122569,
+    "grid_col_imp_resp_bw": 4.084133179365254,
+    "grid_col_ss_m": 0.19587999824342994,
+    "grid_image_plane": "SLANT",
+    "grid_row_ground_bearing_deg": 316.8275947089572,
+    "grid_row_imp_resp_bw": 2.588385775856694,
+    "grid_row_ss_m": 0.3090729393825459,
+    "grid_type": "RGAZIM",
+    "image_pixels_read": false,
+    "incidence_deg": 43.197813615257466,
+    "look_side": "R",
+    "num_cols": 64800,
+    "num_rows": 26620,
+    "pixel_type": "RE32F_IM32F",
+    "polarization": "V:V",
+    "processing_software": {
+      "Application": "Umbra SAR Processor 5.0.14",
+      "DateTime": "2026-05-06T21:09:27.288683Z",
+      "Profile": "sarpy 1.3.58",
+      "Site": "Goleta, CA"
+    },
+    "radar_mode": "SPOTLIGHT",
+    "sicd_processed_aperture_s": 6.587138416780882,
+    "t_end_proc_s": 6.594528772272392,
+    "t_start_proc_s": 0.007390355491509941,
+    "xml_sha256": "624874bf85ce1d37019159b708f9af2d7afadc5b94c55ba50575ef6120465f8f"
+  }
+}

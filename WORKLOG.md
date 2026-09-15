@@ -646,3 +646,24 @@ modified.
 - Best current candidate is the 2025-11-15 Umbra-09 collect near NDBC 46268,
   recommended only for bounded SICD metadata preflight, not yet SAR download.
 - Stop at CHECKPOINT_21; no SAR object accessed.
+
+## 2026-09-15 — Block22 geographic, visual and SICD metadata preflight
+
+- Preserved Block21 and Vandenberg frozen outputs and did not inspect Block20.
+- Corrected the Block21 coast-distance method: original Natural Earth polygon
+  boundaries are used, never boundaries introduced by clipping land to the SAR
+  footprint. Reported center and polygon clearances separately from product-edge
+  distances, plus buoy-to-center and buoy-to-polygon distances.
+- Verified all five finalist ROI polygons as fully contained in mask-relative
+  water. Candidate 1 contains station 46268 and has >1 km coast and edge ROI
+  clearance at the coarse mask resolution.
+- Recovered candidate-1 SICD XML from an exact 2 MiB NITF tail byte range after
+  the standalone XML returned 404. No image pixels were read. Processed aperture
+  is 6.587138417 s, distinct from 7.495363670 s IPP support and 7.6 s catalog.
+- Verified local range axis 136.8276° modulo 180. Its 67.17° axial mismatch from
+  buoy propagation 24.0° makes candidate 1 unsuitable for the intended
+  range-aligned validation despite excellent reference proximity.
+- No small official preview was advertised; wave structure remains not
+  evaluable. Existing Vandenberg GEC/ROI geography was audited read-only and the
+  Block15K development-stress-test classification remains frozen.
+- Stop at CHECKPOINT_22. Candidate 1 is not recommended for full download.

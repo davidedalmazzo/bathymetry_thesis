@@ -1,0 +1,20 @@
+{
+  "block": 22,
+  "candidate_collect_id": "e6b4c32d-bda9-4f75-a9a4-8dcfe0291a4f",
+  "finalists_source": "Block21_frequency_validation_selector/BLOCK21_SHORTLIST.csv",
+  "coast_source": "Natural Earth 1:10m land, original un-clipped polygon boundaries",
+  "coast_search_radius_km": 250,
+  "local_projection": "scene-centered equirectangular metric approximation; distances cross-checked geodesically where applicable",
+  "alternative_roi_sizes_m": [1500, 1000, 750],
+  "alternative_roi_limit": 3,
+  "remote_budget": {
+    "maximum_transactions": 60,
+    "maximum_total_bytes": 52428800,
+    "maximum_response_bytes": 10485760,
+    "maximum_retries": 2,
+    "timeout_s": 45,
+    "chunk_bytes": 65536
+  },
+  "remote_scope": ["candidate1_sidecar", "candidate1_bounded_sicd_header", "candidate1_small_official_preview"],
+  "forbidden": ["full_SAR_download", "signal_array_read", "SAR_formation", "frequency_estimation", "Block20_audit", "commit", "push"]
+}
