@@ -1,0 +1,14 @@
+{
+  "hm0_m": 1.0085316058508034,
+  "long_energy_fraction_f_le_0p1": 0.0,
+  "m0_m2": 0.06357100000000002,
+  "peak_alpha1_from_deg": 320.0,
+  "peak_alpha2_deg": 324.0,
+  "peak_density_m2_hz": 0.614,
+  "peak_frequency_hz": 0.235,
+  "peak_period_s": 4.25531914893617,
+  "peak_propagation_to_deg": 140.0,
+  "peak_r1": 0.91,
+  "peak_r2": 0.74,
+  "spectral_local_maxima_count": 7
+}

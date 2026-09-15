@@ -1,0 +1,8 @@
+{
+  "schema_version": "block16a-canonical-catalog-1.0.0",
+  "status": "incomplete",
+  "incomplete_fail_closed": true,
+  "reason": "operator_interrupted_before_snapshot_materialization_to_fix_quadratic_local_join",
+  "published_as_catalog": false,
+  "config_sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5"
+}

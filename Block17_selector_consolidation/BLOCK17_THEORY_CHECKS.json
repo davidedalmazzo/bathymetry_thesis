@@ -1,0 +1,24 @@
+{
+  "dh_dk": -570.3245687157525,
+  "dh_domega": 60.77145187584726,
+  "finite_band_note": "Compare each k with omega(k,h), not a constant reference frequency.",
+  "gradient_note": "Spatial support must be projected along propagation; 2pi/W is a Fourier scale, not a universal estimator error floor.",
+  "group_velocity_m_s": 9.384744828556906,
+  "k_rad_m": 0.04679105491192015,
+  "omega_rad_s": 0.483321946706122,
+  "status": "exploratory_not_gate",
+  "uncertainty_examples": [
+    {
+      "correlation": -0.8,
+      "sigma_h_m": 2.2352971017668453
+    },
+    {
+      "correlation": 0.0,
+      "sigma_h_m": 1.666837784537717
+    },
+    {
+      "correlation": 0.8,
+      "sigma_h_m": 0.7484271953623487
+    }
+  ]
+}

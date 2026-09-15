@@ -1,0 +1,146 @@
+{
+  "block": "17",
+  "generated_utc": "2026-09-14T20:38:27.899280+00:00",
+  "inputs": [
+    {
+      "bytes": 13689,
+      "path": "Block16_scene_selection/BLOCK16A_SUMMARY.json",
+      "sha256": "8aa3ba3b1720bf8dbfb3af358b99b0cb46c5c6f895c7cf0edf70e19a03987b5b"
+    },
+    {
+      "bytes": 50741539,
+      "path": "Block16_scene_selection/BLOCK16A_ALL_CANDIDATES.csv",
+      "sha256": "495beac009d359da8c2866a4c8771833c1b34f8262201916315539721687519f"
+    },
+    {
+      "bytes": 3337,
+      "path": "Block16_scene_selection/BLOCK16A_MEASURED_SPECTRA.csv",
+      "sha256": "a5b95a3890ddee9ec563adb64680743fe61174f5f6fb3e8c9d669d1281c69965"
+    },
+    {
+      "bytes": 6143,
+      "path": "Block16_scene_selection/BLOCK16A_CONFIG.json",
+      "sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5"
+    },
+    {
+      "bytes": 1242,
+      "path": "Block16_scene_selection/catalog_snapshots/20260913T231747Z/manifest.json",
+      "sha256": "ac57ef4ef4423fa854e9ae8ca38a6f1a2e0cd8d849e98c173de6437bed7bf140"
+    },
+    {
+      "bytes": 9022,
+      "path": "Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json",
+      "sha256": "d6a902180861fe3d290aa11cd8f9ae3c137d5bfd68d49ea59a37451047baa313"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 2668,
+      "path": "Block17_selector_consolidation/BLOCK17_PROTOCOL.md",
+      "sha256": "41f7573a5c92530568e70d60647587d2090ab7d366a7196c2260cb73212a9bae"
+    },
+    {
+      "bytes": 1457,
+      "path": "Block17_selector_consolidation/BLOCK17_CONFIG.json",
+      "sha256": "0558011a2cd647338d7d1c88e18d9761a2e94b455fd63d779308182c0a94a9ec"
+    },
+    {
+      "bytes": 66,
+      "path": "Block17_selector_consolidation/BLOCK17_CONFIG.sha256",
+      "sha256": "cc667e5101af1414f2e60dcb9aa138fdc455e37e2faf1ea6cab5f60cedad25f2"
+    },
+    {
+      "bytes": 2535270,
+      "path": "Block17_selector_consolidation/BLOCK17_BASELINE_CORRECTED.csv",
+      "sha256": "b3b91c7e6c97b83ac5c7004c1a0a83811430ef278258ea5843753255438302e3"
+    },
+    {
+      "bytes": 6251,
+      "path": "Block17_selector_consolidation/BLOCK17_REVISED_SHORTLIST.csv",
+      "sha256": "8f227f3bcb3c75bd70eeeb23021f04c56dff90c9b1f7fa5dc5b0c642cb2f28c6"
+    },
+    {
+      "bytes": 293,
+      "path": "Block17_selector_consolidation/BLOCK17_MARINE_COUNTERFACTUAL.json",
+      "sha256": "c690a558771ef1599405098b3cf314436ecad3ece9be8603b92e021b817e4ade"
+    },
+    {
+      "bytes": 1636,
+      "path": "Block17_selector_consolidation/BLOCK17_SYNTHETIC_WIDTH_AUDIT.csv",
+      "sha256": "7b7ca5008b753add3e53719eb24147e3301ffa504c10a54896d63c93daec3d0e"
+    },
+    {
+      "bytes": 4423,
+      "path": "Block17_selector_consolidation/BLOCK17_SYNTHETIC_WIDTH_AUDIT.json",
+      "sha256": "099c54dedf2aa31e513c44fee0b19a93b9dbd6f15a626a038955642c33283030"
+    },
+    {
+      "bytes": 737,
+      "path": "Block17_selector_consolidation/BLOCK17_THEORY_CHECKS.json",
+      "sha256": "3d5e461fb1f2c30ec9d0cbe6fd8eb0fa38d7a4311fc4721db71bc59dcd3c75ca"
+    },
+    {
+      "bytes": 3249,
+      "path": "Block17_selector_consolidation/BLOCK17_ERRATA.md",
+      "sha256": "3fbbbbce54a48c71b39967471b91f375aff95436e378ea70f6e613683ddba670"
+    },
+    {
+      "bytes": 1732,
+      "path": "Block17_selector_consolidation/BLOCK17_THEORY_ASSUMPTIONS.md",
+      "sha256": "8f13d4f3c0a0e8ce84a89577de9baa50c5f857c3b19f3d37369c5227894c0bcf"
+    },
+    {
+      "bytes": 3509,
+      "path": "Block17_selector_consolidation/BLOCK17_REPORT.md",
+      "sha256": "ba30b51232340bc6c2383e13b3edb253b0eb9a32e2cd27fb9a3dfdc401352051"
+    },
+    {
+      "bytes": 827,
+      "path": "Block17_selector_consolidation/BLOCK17_SUMMARY.json",
+      "sha256": "f2ade2b0c2635243d4e796e3c5dbe12287046bb61fe8809b82740782fabeaaf2"
+    },
+    {
+      "bytes": 8630,
+      "path": "code/umbra_sar/selector_consolidation.py",
+      "sha256": "87b0c5d7a3aca192f4608e19bdb7983bf26d8fa249b0f12c47058d740b6b6013"
+    },
+    {
+      "bytes": 8185,
+      "path": "code/run_block17_selector_consolidation.py",
+      "sha256": "a73c8a56c9bda59d9d86a9d6c0279bd7eef8f6e9251602d06a1acb73ebbe3e90"
+    },
+    {
+      "bytes": 2184,
+      "path": "code/build_block17_manifest.py",
+      "sha256": "c9ab7c09b63c6e2d6a4eebba55811fdeb00816d49e4203b1a2280bb2a7f130b2"
+    },
+    {
+      "bytes": 4926,
+      "path": "tests/test_selector_consolidation.py",
+      "sha256": "6a102ee19ef600ad37c4b001d56ababf559ad0815873e1e65715f6aa0dffc504"
+    },
+    {
+      "bytes": 37597,
+      "path": "WORKLOG.md",
+      "sha256": "b6b24f2f6bfc02c410a33484f56c0b24c105974f034b846607322f8545147251"
+    }
+  ],
+  "scope": "offline selector consolidation; no network and no SAR reads",
+  "validation": {
+    "baseline_categories": {
+      "A": 0,
+      "B": 1,
+      "C": 33,
+      "D": 10106,
+      "E": 0
+    },
+    "category_changes": 0,
+    "network_requests": 0,
+    "pytest": {
+      "failed": 0,
+      "passed": 179,
+      "skipped": 0
+    },
+    "sar_reads": 0
+  }
+}

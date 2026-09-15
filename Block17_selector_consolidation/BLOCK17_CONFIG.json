@@ -1,0 +1,42 @@
+{
+  "block": "17",
+  "created_utc": "2026-09-14T20:00:00Z",
+  "source_snapshot": "Block16_scene_selection/catalog_snapshots/20260913T231747Z",
+  "source_snapshot_identity_sha256": "ffaf387ef05908562540e86ec31b4ccc03fc4bbc05112a3db114aade9085d168",
+  "baseline_config_sha256": "f6a9829de8526ea05af948546546f6560037416fa4269ae626637b34432ba1a5",
+  "network_budget": {
+    "planned_requests": 0,
+    "maximum_requests": 10,
+    "maximum_bytes": 5242880,
+    "new_catalog_crawl": false
+  },
+  "references": {
+    "maximum_station_distance_km": 50.0,
+    "maximum_observation_offset_s": 3600.0,
+    "required_fields": ["density", "alpha1", "alpha2", "r1", "r2"],
+    "selection_order": ["distance_km", "station_id"],
+    "minimum_joint_valid_energy_fraction": 0.9,
+    "missing_codes": [99.0, 999.0, 9999.0]
+  },
+  "marine": {
+    "baseline_minimum_ocean_fraction": 0.8,
+    "minimum_ocean_area_km2": 1.0,
+    "minimum_representative_point_clearance_m": 500.0,
+    "counterfactual_only": true
+  },
+  "synthetic": {
+    "seed": 17001,
+    "f0_hz": 0.08377,
+    "relative_widths": [0.0, 0.03, 0.08, 0.177],
+    "components": 256,
+    "realizations": 400
+  },
+  "theory": {
+    "gravity_m_s2": 9.80665,
+    "depth_m": 12.0,
+    "period_s": 13.0,
+    "covariance_correlations": [-0.8, 0.0, 0.8],
+    "status": "exploratory_not_a_selection_gate"
+  },
+  "stop_policy": "no automatic download; no Vandenberg reopening; abstain when archived evidence is insufficient"
+}

@@ -1,0 +1,57 @@
+{
+  "acquisition_key": "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+  "attributes": {
+    "mean_wave_dir": {
+      "_FillValue": 999.0,
+      "long_name": "Mean Wave Direction",
+      "short_name": "alpha1",
+      "standard_name": "mean_wave_direction",
+      "units": "degrees_true"
+    },
+    "principal_wave_dir": {
+      "_FillValue": 999.0,
+      "long_name": "Principal Wave Direction",
+      "short_name": "alpha2",
+      "standard_name": "principal_wave_direction",
+      "units": "degrees_true"
+    },
+    "spectral_wave_density": {
+      "_FillValue": 999.0,
+      "long_name": "Spectral Wave Density",
+      "short_name": "swden",
+      "standard_name": "spectral_wave_density",
+      "units": "(meter * meter)/Hz"
+    },
+    "wave_spectrum_r1": {
+      "_FillValue": 999.0,
+      "long_name": "First Normalized Polar Coordinate Derived from the Fourier Coefficients",
+      "short_name": "r1",
+      "standard_name": "wave_spectrum_r1"
+    },
+    "wave_spectrum_r2": {
+      "_FillValue": 999.0,
+      "long_name": "Second Normalized Polar Coordinate Derived from the Fourier Coefficients",
+      "short_name": "r2",
+      "standard_name": "wave_spectrum_r2"
+    }
+  },
+  "band_width_source": "midpoint_edges_reconstructed_from_frequency_centres",
+  "current_index": 36604,
+  "dataset": "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc",
+  "dimensions": {
+    "frequency": 98,
+    "latitude": 1,
+    "longitude": 1,
+    "time": 41607
+  },
+  "equivalence": "local_original_found_and_remote_hash_identical",
+  "historical_index": 36604,
+  "historical_payload_sha256": "ea3eb757073650a8fdae4df03c1e7747f20ac85f25cf9f2d197192ebb63597d5",
+  "local_original_path": "Block8_validation\\buoy_data\\42084_20260218T0500_spectrum.ascii",
+  "observation_offset_s": 25.9,
+  "observation_utc": "2026-02-18T05:00:00+00:00",
+  "payload_sha256": "ea3eb757073650a8fdae4df03c1e7747f20ac85f25cf9f2d197192ebb63597d5",
+  "remote_payload_sha256": "ea3eb757073650a8fdae4df03c1e7747f20ac85f25cf9f2d197192ebb63597d5",
+  "source_url": "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[36604:1:36604][0:1:97][0:1:0][0:1:0],mean_wave_dir[36604:1:36604][0:1:97][0:1:0][0:1:0],principal_wave_dir[36604:1:36604][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[36604:1:36604][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[36604:1:36604][0:1:97][0:1:0][0:1:0]",
+  "station_id": "42084"
+}

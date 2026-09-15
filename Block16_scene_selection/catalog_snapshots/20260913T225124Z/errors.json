@@ -1,0 +1,6 @@
+[
+  {
+    "stage": "s3_listing",
+    "error": "Interrupted after 30000 listed objects before normalization; no partial table was published."
+  }
+]

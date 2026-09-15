@@ -1,0 +1,23 @@
+{
+  "block": "18",
+  "created_utc": "2026-09-14T21:00:00Z",
+  "population_source": "Block16_scene_selection/BLOCK16A_MEASURED_SPECTRA.csv",
+  "acquisitions": [
+    {"acquisition_key":"collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd","collect_id":"2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd","acquisition_utc":"2026-02-18T04:59:34.100000Z","station_id":"42084","station_distance_km":34.163957997103786,"historical_observation_utc":"2026-02-18T05:00:00+00:00","historical_index":36604,"historical_payload_sha256":"ea3eb757073650a8fdae4df03c1e7747f20ac85f25cf9f2d197192ebb63597d5"},
+    {"acquisition_key":"collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0","collect_id":"98fe2c0f-44e9-41bd-bec6-af02b11f13a0","acquisition_utc":"2026-03-14T04:37:20.600000Z","station_id":"42084","station_distance_km":34.16395872646075,"historical_observation_utc":"2026-03-14T05:00:00+00:00","historical_index":37180,"historical_payload_sha256":"3ebf092e2b79ef2e7bb0008ff4428ca915575cf5e9805be0d0718ca64abe1e9d"},
+    {"acquisition_key":"collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f","collect_id":"9caef3b7-fc13-4aca-863b-acbb2fcc1e9f","acquisition_utc":"2025-12-23T02:59:26.600000Z","station_id":"42084","station_distance_km":34.16397011599604,"historical_observation_utc":"2025-12-23T03:00:00+00:00","historical_index":35234,"historical_payload_sha256":"3b776dc9abe483cc4483e7ea26c971f8bef8da2bf268e117477a61603f1cb2c3"},
+    {"acquisition_key":"collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1","collect_id":"ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1","acquisition_utc":"2025-12-02T16:00:55.500000Z","station_id":"42084","station_distance_km":34.16387762090891,"historical_observation_utc":"2025-12-02T16:00:00+00:00","historical_index":34743,"historical_payload_sha256":"f3e1abd8eac096b877a4e5e5c52e1fb6bcca8be0f76c9f6cfbbd1680493f238d"}
+  ],
+  "sources": {
+    "priority": ["local_historical_hash", "ndbc_aggregate", "ndbc_annual", "cdip_verified_deployment"],
+    "ndbc_aggregate": "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc",
+    "historical_subset_url_template": "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w9999.nc.ascii?frequency,spectral_wave_density[{index}:1:{index}][0:1:97][0:1:0][0:1:0],mean_wave_dir[{index}:1:{index}][0:1:97][0:1:0][0:1:0],principal_wave_dir[{index}:1:{index}][0:1:97][0:1:0][0:1:0],wave_spectrum_r1[{index}:1:{index}][0:1:97][0:1:0][0:1:0],wave_spectrum_r2[{index}:1:{index}][0:1:97][0:1:0][0:1:0]",
+    "historical_url_authority": "source_url field in Block16A measured-spectrum deliverable",
+    "ndbc_annual_template": "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/42084/42084w{year}.nc",
+    "cdip_policy": "only_station_deployment_and_acquisition_verified"
+  },
+  "validity": {"maximum_station_distance_km":50.0,"maximum_observation_offset_s":3600.0,"joint_band_hz":[0.04,0.25],"minimum_joint_valid_energy_fraction":0.9,"long_energy_max_hz":0.1,"product_frequency_limits_hz":[0.02,1.0]},
+  "http_budget": {"maximum_transactions_including_redirects_retries":100,"maximum_total_bytes":52428800,"maximum_response_bytes":10485760,"maximum_retries":2,"timeout_s":45,"chunk_bytes":65536},
+  "normalization": {"required_variables":["spectral_wave_density","mean_wave_dir","principal_wave_dir","wave_spectrum_r1","wave_spectrum_r2"],"direction_convention_source":"from_true_north_clockwise","propagation_conversion":"(from+180) mod 360","band_width_policy":"documented_bounds_or_midpoint_reconstruction_declared","generic_missing_codes_forbidden":true},
+  "stop_policy":"only four archived measured acquisitions; no SAR; no catalog crawl; incomplete on exhausted budget"
+}

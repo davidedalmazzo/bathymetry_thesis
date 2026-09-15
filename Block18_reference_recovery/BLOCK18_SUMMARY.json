@@ -1,0 +1,46 @@
+{
+  "block": "18",
+  "budget": {
+    "bytes": 560916,
+    "maximum_bytes": 52428800,
+    "maximum_transactions": 100,
+    "transactions": 7
+  },
+  "categories": {
+    "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd": "D",
+    "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0": "D",
+    "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f": "D",
+    "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1": "C"
+  },
+  "category_changes": 0,
+  "limitations": [
+    "directional moments do not uniquely reconstruct a directional spectrum",
+    "space-time proximity does not prove local hydrodynamic representativeness",
+    "band widths reconstructed from frequency centres because no explicit bounds variable is exposed",
+    "no SAR verification performed"
+  ],
+  "local_original_payloads_found": 4,
+  "metric_changes": {
+    "category_effect": 0,
+    "nonzero_count": 1,
+    "only": "2026-03-14 long-energy fraction: +0.0004688232536333803"
+  },
+  "next_step_not_started": "metadata-only assessment of station-42084 spatial representativeness for these four scenes",
+  "offline_reproduction": "exact_4_acquisitions_392_bins_max_difference_0",
+  "payload_equivalence_counts": {
+    "local_original_found_and_remote_hash_identical": 4
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "prior_manifest_audit": "no unexpected mismatches; WORKLOG differences are later additive history",
+  "provenance_note": "Initial text-hash search missed binary payloads; prior-manifest resolution found all four. Authorized remote identity checks were exact byte matches.",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "references_admissible": 4,
+  "references_recovered": 4,
+  "status": "CHECKPOINT_18",
+  "targets": 4,
+  "tests": {
+    "failed": 0,
+    "passed": 187,
+    "skipped": 0
+  }
+}

@@ -1,0 +1,33 @@
+acquisition_key,historical_category,block17_status,block18_category,gate,status,evidence_or_limit
+collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd,D,joint_per_bin_not_reproducible,D,products_associated,,CPHD/SICD association from frozen Block16A metadata
+collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd,D,joint_per_bin_not_reproducible,D,measured_reference,True,joint energy coverage=1.0
+collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd,D,joint_per_bin_not_reproducible,D,temporal_paths,pass,catalog=16.2; CPHD=; SICD= s
+collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd,D,joint_per_bin_not_reproducible,D,nominal_cycles,pass,observable_cycles=2.322; design indicator only
+collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd,D,joint_per_bin_not_reproducible,D,wave_range_geometry,fail,axial difference=75.69961168475578 deg
+collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd,D,joint_per_bin_not_reproducible,D,measured_energy,fail,failures=measured_swell_not_dominant
+collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd,D,joint_per_bin_not_reproducible,D,marine_roi_proxy,preliminary,ocean_fraction=0.9999999999998243; Natural Earth cannot verify SAR cleanliness
+collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd,D,joint_per_bin_not_reproducible,D,sar_validation,not_verified,delta_eff; SAR-scale clearance; lobe separation; usable intensity ROI; SNR/coherence; full Doppler-time mapping
+collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0,D,joint_per_bin_not_reproducible,D,products_associated,,CPHD/SICD association from frozen Block16A metadata
+collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0,D,joint_per_bin_not_reproducible,D,measured_reference,True,joint energy coverage=1.0
+collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0,D,joint_per_bin_not_reproducible,D,temporal_paths,pass,catalog=15.2; CPHD=; SICD= s
+collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0,D,joint_per_bin_not_reproducible,D,nominal_cycles,pass,observable_cycles=1.4186666666666667; design indicator only
+collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0,D,joint_per_bin_not_reproducible,D,wave_range_geometry,fail,axial difference=77.50505898624621 deg
+collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0,D,joint_per_bin_not_reproducible,D,measured_energy,fail,failures=measured_swell_not_dominant;weak_measured_sea_state
+collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0,D,joint_per_bin_not_reproducible,D,marine_roi_proxy,preliminary,ocean_fraction=1.0; Natural Earth cannot verify SAR cleanliness
+collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0,D,joint_per_bin_not_reproducible,D,sar_validation,not_verified,delta_eff; SAR-scale clearance; lobe separation; usable intensity ROI; SNR/coherence; full Doppler-time mapping
+collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f,D,joint_per_bin_not_reproducible,D,products_associated,,CPHD/SICD association from frozen Block16A metadata
+collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f,D,joint_per_bin_not_reproducible,D,measured_reference,True,joint energy coverage=1.0
+collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f,D,joint_per_bin_not_reproducible,D,temporal_paths,pass,catalog=15.2; CPHD=; SICD= s
+collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f,D,joint_per_bin_not_reproducible,D,nominal_cycles,pass,observable_cycles=1.6213333333333333; design indicator only
+collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f,D,joint_per_bin_not_reproducible,D,wave_range_geometry,fail,axial difference=37.35152436276019 deg
+collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f,D,joint_per_bin_not_reproducible,D,measured_energy,fail,failures=measured_swell_not_dominant
+collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f,D,joint_per_bin_not_reproducible,D,marine_roi_proxy,preliminary,ocean_fraction=1.0; Natural Earth cannot verify SAR cleanliness
+collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f,D,joint_per_bin_not_reproducible,D,sar_validation,not_verified,delta_eff; SAR-scale clearance; lobe separation; usable intensity ROI; SNR/coherence; full Doppler-time mapping
+collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1,C,joint_per_bin_not_reproducible,C,products_associated,True,CPHD/SICD association from frozen Block16A metadata
+collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1,C,joint_per_bin_not_reproducible,C,measured_reference,True,joint energy coverage=1.0
+collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1,C,joint_per_bin_not_reproducible,C,temporal_paths,pass,catalog=17.0; CPHD=17.163844698666665; SICD=11.889154387579627 s
+collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1,C,joint_per_bin_not_reproducible,C,nominal_cycles,pass,observable_cycles=2.6890023361244446; design indicator only
+collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1,C,joint_per_bin_not_reproducible,C,wave_range_geometry,pass,axial difference=2.331234938681689 deg
+collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1,C,joint_per_bin_not_reproducible,C,measured_energy,fail,failures=measured_swell_not_dominant
+collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1,C,joint_per_bin_not_reproducible,C,marine_roi_proxy,preliminary,ocean_fraction=1.0; Natural Earth cannot verify SAR cleanliness
+collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1,C,joint_per_bin_not_reproducible,C,sar_validation,not_verified,delta_eff; SAR-scale clearance; lobe separation; usable intensity ROI; SNR/coherence; full Doppler-time mapping

@@ -1,0 +1,6 @@
+{
+  "historical_ocean_fraction_gate_confirmed": 0.8,
+  "interpretation": "Representative-point clearance is not proof that the required wave-aligned ROI fits.",
+  "rows_below_fraction_but_passing_legacy_area_and_clearance_proxies": 842,
+  "status": "counterfactual_only_no_promotions"
+}

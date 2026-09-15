@@ -1,0 +1,32 @@
+{
+  "abstention": "Archived measured CSV lacks per-bin arrays, so joint directional completeness cannot be reconstructed.",
+  "baseline_expected": {
+    "A": 0,
+    "B": 1,
+    "C": 33,
+    "D": 10106,
+    "E": 0
+  },
+  "baseline_observed": {
+    "A": 0,
+    "B": 1,
+    "C": 33,
+    "D": 10106,
+    "E": 0
+  },
+  "block": "17",
+  "category_changes": 0,
+  "frozen_long_dwell_candidate": "collect:683a3778-7ef1-4653-bd9b-1777367585d5",
+  "long_dwell_category": "C",
+  "long_dwell_promoted": false,
+  "marine_counterfactual_count": 842,
+  "measured_rows_requiring_per_bin_recovery_for_joint_audit": 4,
+  "network_requests": 0,
+  "sar_reads": 0,
+  "status": "CHECKPOINT_17",
+  "tests": {
+    "command": ".venv-umbra-thesis/Scripts/python.exe -m pytest -q",
+    "failed": 0,
+    "passed": 179
+  }
+}

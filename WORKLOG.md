@@ -581,3 +581,49 @@ modified.
   development stress test, not a physical validation scene. Stop K.
 - Added 18 focused path-matching/gate/provenance tests; full suite 135 passed,
   zero failed/skipped. The Block15K manifest hashes essential 15I–K artifacts.
+
+## 2026-09-14 — Block17 selector consolidation
+
+- Selected Block17 as the first unused block identifier and froze protocol/config
+  before calculations. Work remained offline: zero network requests and zero SAR
+  reads; Blocks 15–16 and Vandenberg results were not modified.
+- Reproduced the archived Block16A baseline exactly (A=0, B=1, C=33,
+  D=10106, E=0). No category changed. Four measured-reference rows cannot be
+  re-audited for joint per-band completeness because the archived CSV omits the
+  per-bin arrays; this is recorded as abstention, not absence.
+- Added corrected primitives for admissible-reference selection, joint
+  directional masks, missing-safe integration, separate CPHD/SICD budgets and
+  honest ROI/count semantics. Confirmed the historical 80% marine gate existed.
+- On 32 archived irregular BP12 times, the corrected Gaussian-energy generator
+  realizes its requested width (ratio 0.996–1.000); the legacy generator realizes
+  about 0.706–0.708, confirming sigma/sqrt(2) narrowing.
+- Added dispersion derivatives, k–omega covariance propagation, finite-band and
+  off-grid tests. These are exploratory, not ranking gates. Full suite: 179
+  passed, zero failed/skipped. Stop at CHECKPOINT_17; no commit or push.
+
+## 2026-09-14 — Block18 bounded per-bin reference recovery
+
+- Derived exactly four targets from the Block16A measured-spectrum table and
+  froze Block18 protocol/config before network access. No manual outcome-based
+  scene selection was used.
+- Queried only NDBC station 42084 aggregate metadata/time and four server-side
+  spectral subsets: 7 HTTP transactions, no retries, 560,916 response bytes;
+  maximum response 499,416 bytes. No annual/CDIP fallback was needed.
+- Current aggregate indices and timestamps match the historical observations.
+  All four remote subset hashes match Block16A exactly. A manifest audit then
+  located the same four original payloads already under Block8; the initially
+  missed local discovery and subsequent exact remote identity check are both
+  retained in provenance.
+- All four references pass 50 km/3600 s limits and have 100% density and joint
+  directional-energy coverage in the frozen 0.04–0.25 Hz band. Directional
+  moments remain non-unique and 34 km proximity does not prove local physical
+  representativeness.
+- Hm0, peak period/frequency/direction and peak moments reproduce Block16A.
+  Only the 2026-03-14 `f<=0.1 Hz` fraction changes, from 0.00140647 (trapezoid)
+  to 0.00187529 (band sum); it remains far below the 0.5 gate.
+- Categories remain D/D/D/C because unfavorable geometry, weak sea state and/or
+  nondominant measured swell remain. No other acquisition was reclassified.
+- Offline reparsing reproduces all 392 normalized bin rows and metrics exactly.
+  Full thesis-environment suite: 187 passed, zero failed/skipped. No SAR access,
+  Vandenberg reopening, formation, sweep, inversion, commit or push. Stop at
+  CHECKPOINT_18.

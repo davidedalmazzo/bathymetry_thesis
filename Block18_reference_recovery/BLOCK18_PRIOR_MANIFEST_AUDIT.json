@@ -1,0 +1,38 @@
+[
+  {
+    "expected_additive_worklog_mismatches": [
+      "WORKLOG.md"
+    ],
+    "manifest": "Vandenberg/results/analysis_block15/BLOCK15K_DELIVERY_MANIFEST.json",
+    "mismatches": [
+      "WORKLOG.md"
+    ],
+    "missing": [],
+    "records_checked": 31,
+    "unexpected_mismatches": []
+  },
+  {
+    "expected_additive_worklog_mismatches": [
+      "WORKLOG.md"
+    ],
+    "manifest": "Block16_scene_selection/BLOCK16A_DELIVERY_MANIFEST.json",
+    "mismatches": [
+      "WORKLOG.md"
+    ],
+    "missing": [],
+    "records_checked": 245,
+    "unexpected_mismatches": []
+  },
+  {
+    "expected_additive_worklog_mismatches": [
+      "WORKLOG.md"
+    ],
+    "manifest": "Block17_selector_consolidation/BLOCK17_DELIVERY_MANIFEST.json",
+    "mismatches": [
+      "WORKLOG.md"
+    ],
+    "missing": [],
+    "records_checked": 24,
+    "unexpected_mismatches": []
+  }
+]
