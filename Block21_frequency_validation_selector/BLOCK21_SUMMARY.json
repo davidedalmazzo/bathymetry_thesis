@@ -1,0 +1,60 @@
+{
+  "block": 21,
+  "catalog_rows": 10140,
+  "classifications": {
+    "CONDITIONAL_REFERENCE_CHECK": 529,
+    "EXCLUDED": 7554,
+    "MEASURED_PRODUCT_CHECK": 9,
+    "MODEL_EXPLORATORY": 0,
+    "NOT_EVALUABLE": 2048
+  },
+  "config_sha256": "daf230523c13e15ba12b664b1ab9d6ec1418711f7e67b06e5b4a5589d2e3553d",
+  "internal_water_rois": 2591,
+  "measured_references": 9,
+  "prohibitions_observed": {
+    "Block19_used_as_input": false,
+    "Block20_audited_or_used": false,
+    "bathymetry_gate": false,
+    "dwell_or_period_hard_gate": false,
+    "sar_downloaded_or_read": false
+  },
+  "remote_summary": {
+    "admissible": 5,
+    "bytes": 2377820,
+    "failed": 7,
+    "maximum_bytes": 104857600,
+    "maximum_transactions": 200,
+    "queue_sha256": "16bb92c120d5354b36f8bcfc37b3008d8f5e5131415025d533f4785b70a7dc3c",
+    "recovered": 5,
+    "transactions": 28
+  },
+  "shortlist_count": 5,
+  "status": "CHECKPOINT_21",
+  "top_candidate": {
+    "acquisition_key": "collect:e6b4c32d-bda9-4f75-a9a4-8dcfe0291a4f",
+    "bathymetry_role": "descriptive only",
+    "catalog_duration_s": "7.6",
+    "coast_distance_m": "1763.660996858548",
+    "coast_distance_status": "local_exact",
+    "collect_id": "e6b4c32d-bda9-4f75-a9a4-8dcfe0291a4f",
+    "collect_name": "2025-11-15-18-57-16_UMBRA-09",
+    "cphd_size_bytes": "",
+    "datetime_utc": "2025-11-15T18:57:16.800000Z",
+    "footprint_edge_distance_m": "2127.1339500774134",
+    "frequency_validation_readiness": "READY_FOR_SAR_METADATA_PREFLIGHT",
+    "has_cphd": "False",
+    "has_sicd": "True",
+    "joint_energy_coverage": "1.0",
+    "maximum_sliding_center_count": 7,
+    "observation_offset_s": "163.20000004768372",
+    "ordering_basis": "measured reference; internal ROI; temporal descriptor; dual complex path; access cost",
+    "peak_period_s": 15.384615384615383,
+    "propagation_to_deg": 24.0,
+    "rank": 1,
+    "reference_status": "recovered_admissible",
+    "roi_square_size_m": "1500",
+    "sicd_size_bytes": "13799853988",
+    "station_distance_km": "0.43766496922997217",
+    "station_id": "46268"
+  }
+}

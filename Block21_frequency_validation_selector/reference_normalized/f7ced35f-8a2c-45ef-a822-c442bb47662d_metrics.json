@@ -1,0 +1,21 @@
+{
+  "admissible": true,
+  "band_bin_count": 4,
+  "band_energy_m2": 0.010245000000000004,
+  "band_high_hz": 0.0775,
+  "band_low_hz": 0.057499999999999996,
+  "bandwidth_hz": 0.020000000000000004,
+  "dataset": "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/46268/46268w9999.nc",
+  "direction_from_deg": 217.3183685524677,
+  "direction_resultant": 0.9970494255000656,
+  "joint_energy_coverage": 1.0,
+  "local_maxima_count": 15,
+  "observation_epoch_s": 1736406000.0,
+  "observation_offset_s": 1480.5,
+  "payload_sha256": "35f56218f2b9b9191e3851450f7f847d2b54f1a53abdac925956887baa61c7cb",
+  "peak_bin": 8,
+  "peak_frequency_hz": 0.065,
+  "peak_period_s": 15.384615384615383,
+  "propagation_to_deg": 37.31836855246769,
+  "station_id": "46268"
+}

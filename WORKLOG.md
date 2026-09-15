@@ -627,3 +627,22 @@ modified.
   Full thesis-environment suite: 187 passed, zero failed/skipped. No SAR access,
   Vandenberg reopening, formation, sweep, inversion, commit or push. Stop at
   CHECKPOINT_18.
+
+## 2026-09-15 — Block21 frequency-validation selector
+
+- Froze a new protocol/config and started from the complete 10,140-row archived
+  catalog snapshot. Block19 was not used as an input and Block20 was not audited.
+- Recomputed deterministic local-metric water ROI geometry for all footprints,
+  including short scenes. Found 2,591 scenes with a fully-water square of at
+  least 250 m; coast and footprint-edge clearances are distinct fields.
+- Removed dwell/cycle, 80% marine, ≥10 s period, long-energy and bathymetry gates.
+  SICD or CPHD is accepted as a complex path; GEC/preview alone is not.
+- Reused four Block18 references offline, froze a diversified 12-row remote
+  queue, and recovered five additional admissible NDBC per-bin references.
+  Remote use: 28 transactions, 2,377,820 bytes; seven queue entries failed and
+  remain explicitly distinct from unqueried catalog rows.
+- Derived period and direction from the same contiguous half-power dominant
+  band. Produced a five-scene frequency-validation shortlist, cards and maps.
+- Best current candidate is the 2025-11-15 Umbra-09 collect near NDBC 46268,
+  recommended only for bounded SICD metadata preflight, not yet SAR download.
+- Stop at CHECKPOINT_21; no SAR object accessed.

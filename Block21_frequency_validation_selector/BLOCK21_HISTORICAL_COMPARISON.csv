@@ -1,0 +1,7 @@
+selector,role,primary_bias
+Block8,historical_not_input,long_dwell/coastal validation shortlist
+Block16A,metadata_enrichment_reused,dwell/cycles/sea/long-energy gates removed in Block21
+Block17,historical_not_input,nearshore/bathymetry
+Block18,four measured payloads reused,per-bin recovery
+Block19,excluded_as_input,manual exploratory bathymetry screen
+Block20,not_audited_not_input,explicitly outside task

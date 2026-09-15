@@ -1,0 +1,27 @@
+{
+  "Block19_used": false,
+  "Block20_audited_or_used": false,
+  "config_sha256": "daf230523c13e15ba12b664b1ab9d6ec1418711f7e67b06e5b4a5589d2e3553d",
+  "enrichment": {
+    "path": "Block16_scene_selection\\BLOCK16A_ALL_CANDIDATES.csv",
+    "sha256": "495beac009d359da8c2866a4c8771833c1b34f8262201916315539721687519f"
+  },
+  "land_mask": {
+    "path": "Block8_validation\\catalog_raw\\ne_10m_land\\ne_10m_land.shp",
+    "role": "preliminary coarse land mask",
+    "sha256": "4cad3a49bc75c1a4c2f3d7efae04f2f8e63151c96764b2658effabf524331fa6"
+  },
+  "processing_variants": {
+    "path": "Block16_scene_selection\\BLOCK16A_PROCESSING_VARIANTS.csv",
+    "sha256": "c94adc24b7c1c782d21f3fa5a919d81094c300855c1df6fadd2af444ae8ef30a"
+  },
+  "snapshot": {
+    "path": "Block16_scene_selection\\catalog_snapshots\\20260913T231747Z\\normalized_acquisitions.csv",
+    "rows": 10140,
+    "sha256": "dc49010362b29e64e15d77db3e6d007ef8e4f0ded6f81c259cf86cd3ca3bddb8"
+  },
+  "station_metadata": {
+    "path": "Block16_scene_selection\\cache\\ndbc_stationmetadata.xml",
+    "sha256": "bd9d33abdab0ed466f3b8d6cc4ecde822349e5e93ff3f5767d8ccfb385ecc3da"
+  }
+}
