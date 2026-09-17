@@ -45,7 +45,17 @@ The verified suite at `CHECKPOINT_10` contains 57 passing tests, including SarPy
 
 Start with [AGENTS.md](AGENTS.md), [TASK_SPEC.md](TASK_SPEC.md) and the checkpoints in numerical order. The most recent implemented scripts currently extend through Block 14, while formal checkpoint reports are present through Block 12.
 
+## FRF observational client (Block32)
+
+The mission-independent Duck/FRF client accepts strict GeoJSON/CSV acquisition
+inputs and offers inventory, limited fetch and offline dossier modes. It
+preserves per-instrument QC, temporal association, historical-position uncertainty
+and source spectra/profiles without reading radar data. See
+[client documentation](code/README_FRF_CLIENT.md) and
+[Block32 checkpoint](CHECKPOINT_32.md). The separate verification tranche is
+persistently limited to 40 HTTP transactions/100 MiB; missing products remain
+explicitly incomplete, not automatically substituted.
+
 ## Data and licensing
 
 Radar and third-party oceanographic/geospatial datasets retain their original providers' terms and are not redistributed here. No open-source license has yet been assigned to the thesis code; repository access alone does not grant reuse rights.
-

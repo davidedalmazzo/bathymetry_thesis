@@ -1,0 +1,144 @@
+{
+  "acquisitions": [
+    {
+      "acquisition_id": "TDX-1_record_11",
+      "timestamp_utc": "2021-10-13T23:00:15.669000+00:00",
+      "start_utc": "2021-10-13T23:00:15.669000+00:00",
+      "end_utc": "2021-10-13T23:00:16.101000+00:00",
+      "timestamp_semantics": "timestamp_of_catalogue_record_not_verified_aperture_center",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.71619622454091,
+              36.1732784932615
+            ],
+            [
+              -75.72194184766971,
+              36.2003910366816
+            ],
+            [
+              -75.78272395629978,
+              36.1920047521163
+            ],
+            [
+              -75.77695646885428,
+              36.1648919540011
+            ],
+            [
+              -75.71619622454091,
+              36.1732784932615
+            ]
+          ]
+        ]
+      },
+      "source": "Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv"
+    },
+    {
+      "acquisition_id": "COSMO_2098202",
+      "timestamp_utc": "2021-10-13T22:45:03+00:00",
+      "start_utc": "2021-10-13T22:45:03.517000+00:00",
+      "end_utc": "2021-10-13T22:45:11.392000+00:00",
+      "timestamp_semantics": "requested_catalogue_timestamp_at_second_precision_not_verified_aperture_center",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.67115,
+              36.126213
+            ],
+            [
+              -75.6521,
+              36.219288
+            ],
+            [
+              -75.767075,
+              36.232708
+            ],
+            [
+              -75.785896,
+              36.141914
+            ],
+            [
+              -75.67115,
+              36.126213
+            ]
+          ]
+        ]
+      },
+      "source": "Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json"
+    },
+    {
+      "acquisition_id": "COSMO_1942455",
+      "timestamp_utc": "2021-06-30T10:54:50.308000+00:00",
+      "start_utc": "2021-06-30T10:54:50.308000+00:00",
+      "end_utc": "2021-06-30T10:54:58.274000+00:00",
+      "timestamp_semantics": "catalogue_start_not_verified_aperture_center",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.68396,
+              36.127419
+            ],
+            [
+              -75.702248,
+              36.221996
+            ],
+            [
+              -75.817657,
+              36.209133
+            ],
+            [
+              -75.799156,
+              36.112167
+            ],
+            [
+              -75.68396,
+              36.127419
+            ]
+          ]
+        ]
+      },
+      "source": "Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json"
+    },
+    {
+      "acquisition_id": "COSMO_1941935",
+      "timestamp_utc": "2021-06-29T22:56:51.912000+00:00",
+      "start_utc": "2021-06-29T22:56:51.912000+00:00",
+      "end_utc": "2021-06-29T22:56:59.414000+00:00",
+      "timestamp_semantics": "catalogue_start_not_verified_aperture_center",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.700958,
+              36.125114
+            ],
+            [
+              -75.676666,
+              36.224659
+            ],
+            [
+              -75.790733,
+              36.24086
+            ],
+            [
+              -75.815079,
+              36.143616
+            ],
+            [
+              -75.700958,
+              36.125114
+            ]
+          ]
+        ]
+      },
+      "source": "Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json"
+    }
+  ]
+}

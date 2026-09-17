@@ -1,0 +1,38 @@
+{
+  "references": [
+    {
+      "name": "argus_temp",
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/argus_temp/catalog.xml"
+    },
+    {
+      "name": "geomorphology",
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/catalog.xml"
+    },
+    {
+      "name": "meteorology",
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/catalog.xml"
+    },
+    {
+      "name": "oceanography",
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/catalog.xml"
+    },
+    {
+      "name": "projects",
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/projects/catalog.xml"
+    },
+    {
+      "name": "survey_temp",
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/survey_temp/catalog.xml"
+    }
+  ],
+  "products": [],
+  "services": {
+    "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+    "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+    "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+    "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+    "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+    "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+    "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+  }
+}

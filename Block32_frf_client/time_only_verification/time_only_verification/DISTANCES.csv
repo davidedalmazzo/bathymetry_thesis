@@ -1,0 +1,6 @@
+instrument_id,family,position_status,lon_lat_json,position_uncertain,position_discrepancy_m,footprint_status,footprint_center_m,footprint_minimum_m,footprint_inside,footprint_bearing_deg,roi_status,roi_center_m,roi_minimum_m,roi_inside,roi_bearing_deg
+FRF:waverider-17m,waves,dated_product_global_nominal_metadata,"[-75.71405, 36.19988333]",False,0.0,not_evaluable,,,,,not_evaluable,,,,
+FRF:awac-11m,waves,dated_product_global_nominal_metadata,"[-75.7393953, 36.1896111]",False,0.0,not_evaluable,,,,,not_evaluable,,,,
+FRF:8m-array,waves,dated_product_global_nominal_metadata,"[-75.7428906, 36.1872375]",False,0.0,not_evaluable,,,,,not_evaluable,,,,
+FRF:waverider-26m,waves,dated_product_global_nominal_metadata,"[-75.59131666, 36.25768333]",False,0.0,not_evaluable,,,,,not_evaluable,,,,
+FRF:awac-11m,currents,dated_product_coordinates_nominal_not_proven_measured,"[-75.739155, 36.189244]",False,0.05620565015254986,not_evaluable,,,,,not_evaluable,,,,

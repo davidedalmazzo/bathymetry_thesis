@@ -1,0 +1,852 @@
+{
+  "client_version": "0.1.0",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "configuration": {
+    "max_requests": 40,
+    "max_bytes": 104857600,
+    "max_response": 8388608,
+    "timeout_seconds": 30,
+    "rate_seconds": 0.25,
+    "retries": 1,
+    "failure_ttl_seconds": 3600,
+    "time_tolerance_seconds": {
+      "waves": 3600,
+      "wind": 1800,
+      "currents": 3600,
+      "water_level": 1800,
+      "bathymetry": 2592000
+    },
+    "event_context_seconds": 7200,
+    "accepted_qc_flags": [
+      1
+    ],
+    "accept_unknown_qc": false,
+    "interpolation": false,
+    "bathymetry_download": false,
+    "families": [
+      "waves",
+      "wind",
+      "currents",
+      "water_level",
+      "bathymetry"
+    ],
+    "wave_instruments": [
+      "waverider-17m",
+      "awac-11m",
+      "8m-array",
+      "waverider-26m"
+    ],
+    "max_instruments_per_other_family": 1,
+    "legacy_cache": "Block30_duck_csk_preflight/http_cache"
+  },
+  "numpy_version": "2.5.2",
+  "matplotlib_version": "3.11.1",
+  "acquisition": {
+    "acquisition_id": "COSMO_1942455",
+    "timestamp_utc": "2021-06-30T10:54:50.308000+00:00",
+    "start_utc": "2021-06-30T10:54:50.308000+00:00",
+    "end_utc": "2021-06-30T10:54:58.274000+00:00",
+    "timestamp_semantics": "catalogue_start_not_verified_aperture_center",
+    "footprint": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -75.68396,
+            36.127419
+          ],
+          [
+            -75.702248,
+            36.221996
+          ],
+          [
+            -75.817657,
+            36.209133
+          ],
+          [
+            -75.799156,
+            36.112167
+          ],
+          [
+            -75.68396,
+            36.127419
+          ]
+        ]
+      ]
+    },
+    "source": "Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json"
+  },
+  "network_tranche": {
+    "transactions": 40,
+    "bytes": 2412291,
+    "max_transactions": 40,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-17T17:05:33.353298+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed"
+  },
+  "cache_payloads": [
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202012.nc.das",
+      "sha256": "3bae8fa2467b5ced6bbecd4686e528596d1dac234a6bb413552030139371b646",
+      "bytes": 23038
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202107.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "0e55ec2bbf981eab740dc03bd0589e6cf377d7b0e05f450716f652f924835a16",
+      "bytes": 59045
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.dds",
+      "sha256": "53e57fc94a23563ba35cd699561a0f6f3334de913b39900edf20a2980ee19911",
+      "bytes": 2310
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/catalog.xml",
+      "sha256": "454578eae5e98a73923522efc9678e912ab8672776c1de0995c54f7418135ed1",
+      "bytes": 1586
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/catalog.xml",
+      "sha256": "b0b9d349a1a6f924ec0ba6752dbf751b7f83b5372091aa144addf8ad22d407a5",
+      "bytes": 1482
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202106.nc.ascii?time[323:1:330],latitude,longitude,depth,cellSize[323:1:330],blankDist[323:1:330],maxCell[323:1:330],aveTime[323:1:330],meanPressure[323:1:330],aveE[323:1:330],aveN[323:1:330],currentSpeed[323:1:330],currentDirection[323:1:330],currentEast[323:1:330][0:1:46],currentNorth[323:1:330][0:1:46],currentUp[323:1:330][0:1:46],qcFlag[323:1:330]",
+      "sha256": "a928b8355d343e7a586917e50e68ef955248df6933307116d116b971fde01c55",
+      "bytes": 28928
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc.ascii?time",
+      "sha256": "7a0d2d318dbc86ab2ed571b8d720dc4c1cd2bd4f8229f3af125721834177c8db",
+      "bytes": 93768
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202009.nc.das",
+      "sha256": "b8427cb2bc60f05b21bc794b9e2d27ac1d51296b5ab14034ce80769dff2a7a85",
+      "bytes": 18335
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202010.nc.das",
+      "sha256": "e9a263f05d2d05cc3c6e2f93a46e08892cc43bcb3104be1280a7c69763cde38c",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2021/catalog.xml",
+      "sha256": "51c3d59a3c143a806516a4868d9fc9052a2796d42adc0912aada0a33aefd5e50",
+      "bytes": 5377
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202106.nc.das",
+      "sha256": "89716e8f0f6db8947f84041c9237e579cc4b783be1ee2ca112f870792408de36",
+      "bytes": 18429
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.ascii?time",
+      "sha256": "239dc0c983b7763a559fe518e60f58d39991337f35174c4ffc03ae50f7a949fc",
+      "bytes": 157311
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202009.nc.das",
+      "sha256": "1a4517102e7561f18f70fe0919323bcdd88f15fcf7b9699e4f59e8098e8c1e3b",
+      "bytes": 15343
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/eopNoaaTide/2021/catalog.xml",
+      "sha256": "27e925e04371bd934960a5bc888efb406a033f408cbb53e4f0c6293ef7bcb53a",
+      "bytes": 5682
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202106.nc.das",
+      "sha256": "4b7a0d3db25743e83404632e3284dfa3b44d56134d63b017f2b6c2c1005938ec",
+      "bytes": 10634
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202010.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "fa3110dd1210ad03cceb750eeb5bb108f76d6f4af3ea0bf19107ff3a0f473cd8",
+      "bytes": 103428
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time[305:1:309],latitude,longitude,waveHs[305:1:309],waveTp[305:1:309],waveTm[305:1:309],waveMeanDirection[305:1:309],wavePeakDirectionPeakFrequency[305:1:309],directionalPeakSpread[305:1:309],waveTm1[305:1:309],waveTm2[305:1:309],waveMeanDirectionPeakFrequency[305:1:309],waveFrequency,waveDirectionBins,waveEnergyDensity[305:1:309][0:1:61],directionalWaveEnergyDensity[305:1:309][0:1:61][0:1:71],waveA1Value[305:1:309][0:1:61],waveB1Value[305:1:309][0:1:61],waveA2Value[305:1:309][0:1:61],waveB2Value[305:1:309][0:1:61],qcFlagE[305:1:309],qcFlagD[305:1:309],waveDirectionEstimator[305:1:309],nominalDepth",
+      "sha256": "b8e49695ec23e317ddc8a2b20ae39cca533d6b1fb8b4119312d72ece891dcb7c",
+      "bytes": 334064
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202104.nc.das",
+      "sha256": "04797ffe51bd40dfcffbd5db0f9c1f6f8af7206bbe3a962315db1d96acb9ddfb",
+      "bytes": 22962
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202104.nc.das",
+      "sha256": "69d2a5d424fb38e50aebbdd4e2f255ecc5e9a39155b688f075c2063ec89e1b9d",
+      "bytes": 18335
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202010.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "77a40e1ec1b38bf28be5dc49bce3bdf0d4542e9370398ef5a472765a808e661d",
+      "bytes": 59752
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202104.nc.das",
+      "sha256": "f93ac1b36b306be881a1f59ba2f3c58c803b6f71e4fc8a59d81a81e4c2959fc1",
+      "bytes": 18490
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/catalog.xml",
+      "sha256": "20433839de5912fe2b22228d30f0b5da51c23d0b63c5f4d64cc5b6f7cbb00c3c",
+      "bytes": 3390
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202012.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "3e4d3a1c1f8d9890eb73168c3db23d4b3ab87bec6ef28283ee9dee47d2e96ac3",
+      "bytes": 115830
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202106.nc.das",
+      "sha256": "42bb35a0559c1aa88d34fcaba0f36c11979c642f330139ba54ac8a7457d034ba",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202009.nc.das",
+      "sha256": "0bf16d770952cc386d18f1b358669a4cdc3ba9823023185f5d9b794bb5d264c6",
+      "bytes": 23038
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "b7221599529c026529af1d26919c8990217d1471ca156968f9bafdeb097a2b28",
+      "bytes": 59459
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2019/FRF-ocean_waves_waverider-17m_201910.nc.das",
+      "sha256": "a24602fd52f7c8fa0cae357e1c1cbb123e64800b507585fa7ca376188f67f83e",
+      "bytes": 18450
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202101.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "f2f39bd8e55cf3a254a7557e94dfa244c05d1a08790ae3a6ad90ff54d83fe830",
+      "bytes": 58673
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202010.nc.das",
+      "sha256": "0bae1ec3d717e90da74e6bc2feb648a0325d37a8ee7f25259eb268c5099fe64f",
+      "bytes": 18335
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202011.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "c94945c779c0182e92cfb53f8b1428b8676c4f3fb5bf5866b460c6c9d0d87ce0",
+      "bytes": 56911
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2021/catalog.xml",
+      "sha256": "1862c6ee689691005666b050f2d55504a0eb78bf7a8d398c2feb2a505f72f732",
+      "bytes": 4975
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202107.nc.das",
+      "sha256": "2218956de33f0aba108f2b46eda1ec243849062a1f044d9ab3686e1f16eb5a01",
+      "bytes": 18469
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2019/FRF-ocean_waves_waverider-17m_201910.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "af6995b7ce8eff7d84b1283baabab64527509445544e19dbcd8ab8e66f85fc36",
+      "bytes": 120983
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202011.nc.das",
+      "sha256": "de2bbee7df3938ebad4ad2f551ea46c340ee208a40715fb22331a682b0d863bc",
+      "bytes": 18450
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202011.nc.das",
+      "sha256": "a7819bc4b5a9b3de680073308546808f8d48c80fcb36121e6f0c37a55cdf7bf8",
+      "bytes": 23038
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.dds",
+      "sha256": "bf6aaaf7d97d71d6adfb409e944033bbf5ab9dff30e5ff86b7c7e6d354dda10b",
+      "bytes": 2441
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/catalog.xml",
+      "sha256": "b19186224df45dfd7c0ef414903ac45421fa3e54e665e417960cc1f49df4d568",
+      "bytes": 1548
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc.dds",
+      "sha256": "ea47f32d8803aa8f0830d0c5c91eefca1efdf6efbe2fdc0ed7f3aac907ae92ab",
+      "bytes": 614
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202106.nc.das",
+      "sha256": "d75312a013f3f831ae90d05a4d4254ac2436d2d0f012768e8331ac2097be2924",
+      "bytes": 23016
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202009.nc.das",
+      "sha256": "b9e93b8c08a0fe968c8f92c3b53815cf1047a86cd9a8692095846acc7a5396b9",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202011.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "d96999e10b17e54da85738408b0f874c72197e5164102d8bff40d799bb0de6fa",
+      "bytes": 57431
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/catalog.xml",
+      "sha256": "81f816dfef7035c0d1832fbbe0aeccdf03971555f1cf005ffbd33465ad4150ef",
+      "bytes": 4993
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2019/FRF-ocean_waves_waverider-26m_201910.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "389900fbdf2640bafc86f2b19683a13c40c16398cda4610488cb16e76e23e071",
+      "bytes": 120695
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/catalog.xml",
+      "sha256": "1d134465146cd3154bcdd7d6621c60fa0ff1e02bd89a7c3e35265c6d2785caff",
+      "bytes": 2862
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202011.nc.das",
+      "sha256": "27eba40ddc837b7d077bf6ed23136af095663e440a8bd88b5686bb2de815f452",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202010.nc.das",
+      "sha256": "18a7e588a5ca07953a9c0c55301f0bd7421baff8761b5cc62f98177b6ccaac91",
+      "bytes": 23038
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202107.nc.das",
+      "sha256": "d19e07559e55e4fb15c42448ccfe9ea6da9029435b17d661ea8729694ec0cbaa",
+      "bytes": 23016
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.das",
+      "sha256": "cef2ee97815a0c8b69f8b6026530af6a38baebf5593a114cb8b7e2fb4b372eb7",
+      "bytes": 6759
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2019/FRF-ocean_waves_8m-array_201910.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "6e48a91a41f42cc64c699b905c06316b5ae1ac63a92b014d912e67eaebe2bb5d",
+      "bytes": 58692
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202009.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "d2a202fe5982cabee475b208040ca4f54136091b30c412dde80f4df29b2c5261",
+      "bytes": 57779
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202110.nc.ascii?time",
+      "sha256": "d24f68f69dc8e4d62b9efe7ee842651f7c2110061c436e0ec46a079c603a5e4f",
+      "bytes": 7245
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202106.nc.das",
+      "sha256": "a67750b9345bdea26ee73f0405b63d69f8bb76fbfb4d5e5018b6d173bb0ef450",
+      "bytes": 11217
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202104.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "af90f4bc4e62e2a8510d3390502944250bfddd7907e96209099734d84cdbcbb5",
+      "bytes": 53442
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202110.nc.ascii?time[154:1:155],latitude,longitude,depth,cellSize[154:1:155],blankDist[154:1:155],maxCell[154:1:155],aveTime[154:1:155],meanPressure[154:1:155],aveE[154:1:155],aveN[154:1:155],currentSpeed[154:1:155],currentDirection[154:1:155],currentEast[154:1:155][0:1:46],currentNorth[154:1:155][0:1:46],currentUp[154:1:155][0:1:46],qcFlag[154:1:155]",
+      "sha256": "5ca6b99be75438d4d6586f0faad8e44fc9ee36ee8f77364ac1dc4384fe10f2c4",
+      "bytes": 9280
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202106.nc.dds",
+      "sha256": "27caaf9fa9aae60d4c98960da012f1c142c8df09a45ec8b97ae2adbe3f5d54b4",
+      "bytes": 2281
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202106.nc.das",
+      "sha256": "32047a56df7d8623e529b87d7885f840e58971aa4d39ae72a45522d6454391d8",
+      "bytes": 15499
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202012.nc.das",
+      "sha256": "c9d3737020f6a3183f2b816afe23daed29c8238eaf82ba2766c74760b2227af4",
+      "bytes": 18450
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "5886db517b70a6adc4179d31f5c169dd404596f9642f1e439b017f7dc0f66869",
+      "bytes": 107230
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202009.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "041bb3ff46f2c6b2b94d807b358963287bae31f9d7e859c8a39e337f27f06f87",
+      "bytes": 112667
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202010.nc.das",
+      "sha256": "c312915b8bc6e006c0abd58237212b3a95e8c47b624a31d7b8fb6cefd6065405",
+      "bytes": 15343
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202012.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "d887bb5f1fb17e3aac5bd94a1863462ec31ad1a61da778db99d0455f1e4f32af",
+      "bytes": 64440
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202110.nc.das",
+      "sha256": "d0a738506c8cd140309aee0bb311087a5c5e2d9403e311982ed6267b75981257",
+      "bytes": 11217
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2019/FRF-ocean_waves_waverider-26m_201910.nc.das",
+      "sha256": "9f6c21cfe535c2e4b53753bfffb7f7846d5107e35a631cc2068575cf09a4e729",
+      "bytes": 15437
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202107.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "18b132ee7d0d9c45e8ebfd7dbd42e9046c103413da52170126a8c857fb2a9de8",
+      "bytes": 59283
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202010.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "47226c7a971e6244a36a314a853e5ee59515532276d09b336876ff348116bb91",
+      "bytes": 58604
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.dds",
+      "sha256": "9c8d6a5315e47439fc266dce87784d50dc613c58997e2c63e1aa6b36d78f4207",
+      "bytes": 362
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/catalog.xml",
+      "sha256": "4d8eafee4819aa9259ca95238121372c818d9bcc536dc8c42ae78f89c3a5b88d",
+      "bytes": 10464
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202011.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "05b8912d5eb6bedd4f8a36232d66a4cc8b6342020c86dd7814a86f9743d41342",
+      "bytes": 113013
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202101.nc.das",
+      "sha256": "da782bc036a4266c46741f0521085d68aa805a32526624c0292c8cc9c698b9ea",
+      "bytes": 23016
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202012.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "2ffbf6467adedbdd7792aa847de66e1bfec9ffd0edb062a0fd7b671ce5eb7292",
+      "bytes": 59036
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202101.nc.das",
+      "sha256": "239a5d94e878e4fc2ad665227af238df40035acd75512bdb5ce9ff5e067825ef",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2023/FRF-ocean_waves_waverider-17m_202311.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "822b50f4a1d2cde686c659a76bb7602748da059c75bc21b339cccf6fe9fc60b3",
+      "bytes": 107959
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202012.nc.das",
+      "sha256": "5c708d2da2e421ca089a099fd99a516b6b2b18b481ada4ad3fa06c64226b4130",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202104.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "fc3441b8f631c5718de318241eb779e7bbbca9e1956a7fc1427e563e0536cf00",
+      "bytes": 111099
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc.das",
+      "sha256": "d4cc289bdd5ede6a56325ad1b2b1d1550bad4c498d747a43d6ddc8636081a7d2",
+      "bytes": 10634
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202107.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "3e626b2997b8fa62490734234f2e6a5b252f2554ac2d5adfc51c626159b24219",
+      "bytes": 118807
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202110.nc.dds",
+      "sha256": "e28b455eb8d97634eb127e7aad7a49bc118a72579b05beeced24e1d4c7777063",
+      "bytes": 1244
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202009.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "90b163de08317f24aeb4ac92fad107a612d96a1415d679ac70c9512a578e7ab3",
+      "bytes": 112241
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.das",
+      "sha256": "915bfbef98dc3852ee00759426ca6ebc118f12d862ca8424c628ff1419b33124",
+      "bytes": 23016
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.ascii?time[3088:1:3130],latitude,longitude,waterLevel[3088:1:3130],predictedWaterLevel[3088:1:3130],residualWaterLevel[3088:1:3130],gapGauge[3088:1:3130]",
+      "sha256": "57154bc3bf63ce4c6dcfbff08bccf04a9cc942050a1a7faf40f4c8c07ef54754",
+      "bytes": 2842
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/catalog.xml",
+      "sha256": "c4e956071348b23dc954c5d35bce7b570d350a18e591226a5b7b6e59d9ae6f4a",
+      "bytes": 2195
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "b6e2adf709afa71fb2b04a215bd09204cb69f60f26643e65ad3df30af332c9b9",
+      "bytes": 116179
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202106.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "6fa4c2aad4940a09c7890e57387880f625279dd7a387f39fd3c67c6fb642a275",
+      "bytes": 57149
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2019/FRF-ocean_waves_awac-11m_201910.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "f44f93f90062d0d204c6c1abb105165c8d7919ee154a10e84132d0b735504e61",
+      "bytes": 57198
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202104.nc.das",
+      "sha256": "9a3ae4fc7f1c89d550fbe7d567b2fe6669dfb77071a6e1f8a668204b8e97b606",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202106.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "41ebca9d9eb712d7082c05d322c7c1685221238d6a9eac21127a80065d474645",
+      "bytes": 35845
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/eopNoaaTide/catalog.xml",
+      "sha256": "a409394aed5636b4b84a1bf18ac769b91bebe556834fa95143c60d249cad1e03",
+      "bytes": 11015
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202106.nc.dds",
+      "sha256": "9eb08be1411eadcb1cf31dddcab4db112c774b127e95d8043aac3679afe063cf",
+      "bytes": 1244
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.das",
+      "sha256": "3403a20ee3a49fe053e0864aec5083c6b8d00b2ebc4bfbc143bcbdd1c80e1199",
+      "bytes": 15436
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202107.nc.das",
+      "sha256": "57ec0cebe55339f530362403f0f09849e6491e6f7e1dff4dbb134048c9e948b9",
+      "bytes": 15499
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202107.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "a4978916080a5e33443186131b7df66a848b23ebed6b8808bef7b1ab55447ba8",
+      "bytes": 109730
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202101.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "fa26863eaf3e49e7fa0acb725b38b1669e074b00e03932ead76bb2350d2aac89",
+      "bytes": 47308
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202104.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "8a6b14baece463e72969940fcb4ddf88c7591f94470c537d14b80b0202a72c67",
+      "bytes": 111904
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.das",
+      "sha256": "7b60ffa0f76ab122e64d1cf67ff3e2ebe4aaf5458cb8d2381aabd6d9a207927e",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/catalog.xml",
+      "sha256": "caa43bb0c17cfda4f755ca2234df4fbc035a7405c8c76f10425c60dadfbd9ed0",
+      "bytes": 1630
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/catalog.xml",
+      "sha256": "9e84d177d59c40c62efce03472a94f97a7ea5acdb5468ce135ca9a47288f8340",
+      "bytes": 1419
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202106.nc.ascii?time",
+      "sha256": "0da1cceb12c2c995e595180feb8038b6fe2d6fd82d10aeb545f844d42437ce4a",
+      "bytes": 6574
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202012.nc.das",
+      "sha256": "a96161045903c359ab8252d5eaf3837c56e605ba6dcda050d6c0cf4ae4a62fec",
+      "bytes": 15437
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc.ascii?time[1851:1:1876],latitude,longitude,windSpeed[1851:1:1876],vectorSpeed[1851:1:1876],sustWindSpeed[1851:1:1876],windGust[1851:1:1876],windDirection[1851:1:1876],maxWindSpeed[1851:1:1876],minWindSpeed[1851:1:1876],stdWindSpeed[1851:1:1876],gaugeElevation[1851:1:1876],qcFlagS[1851:1:1876],qcFlagD[1851:1:1876],id[1851:1:1876]",
+      "sha256": "c1d4416eead25278c45c9bf25af020769cca3c532eb6263c04d28db6a7a36ece",
+      "bytes": 3645
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202101.nc.das",
+      "sha256": "0a70124449265fca62468a0ae447f6bb85b27ef7adb59bd147d5cf79840ac567",
+      "bytes": 18335
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2023/FRF-ocean_waves_awac-11m_202311.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "b7c22f4f6e04f5b02de6020b85c6f4c03b18f4e1f584817609273a0c5506b4df",
+      "bytes": 54769
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/catalog.xml",
+      "sha256": "afc8f5308e91e54e7f21ea90534d7a802fd2d7c1e67a26c9ac99811868559983",
+      "bytes": 1194
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202106.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "3a248426f1ae503bb5e6b5a24c10ea4aac441c1b90d7ef1b32686bff1bd8d92c",
+      "bytes": 114486
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202011.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "cb814996162721fbc41fcc40a01b67f9568604ad298f45509408bc7b662afb8d",
+      "bytes": 112947
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202012.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "79401ed152c5b0660be554f957979226bf07cc55b5c7b4f68995efad0b8ca9f6",
+      "bytes": 57824
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202106.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "c8c59e1d3a4ac5ab43a5c6dde70c3206cc50e8be0d0d86b757b79877b2816843",
+      "bytes": 33425
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2019/FRF-ocean_waves_awac-11m_201910.nc.das",
+      "sha256": "a69021cb00344047864d7f8852c61085da7553c6bc0bd443b37f2a1fa7c7cf79",
+      "bytes": 17182
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202101.nc.das",
+      "sha256": "58b7ea58ec619d16f3ed97305f7772133482163b7afd3f4b4c317e65021f292a",
+      "bytes": 15458
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time[612:1:620],latitude,longitude,waveHs[612:1:620],waveTp[612:1:620],waveTm[612:1:620],waveMeanDirection[612:1:620],wavePeakDirectionPeakFrequency[612:1:620],directionalPeakSpread[612:1:620],waveTm1[612:1:620],waveTm2[612:1:620],waveMeanDirectionPeakFrequency[612:1:620],waveFrequency,waveDirectionBins,waveEnergyDensity[612:1:620][0:1:61],directionalWaveEnergyDensity[612:1:620][0:1:61][0:1:71],waveA1Value[612:1:620][0:1:61],waveB1Value[612:1:620][0:1:61],waveA2Value[612:1:620][0:1:61],waveB2Value[612:1:620][0:1:61],qcFlagE[612:1:620],qcFlagD[612:1:620],waveDirectionEstimator[612:1:620],nominalDepth,gaugeDepth[612:1:620]",
+      "sha256": "3e87a8ccc8c2b01414b50af763f1a3dd044cda628260380639b98aaeb6a7b3d0",
+      "bytes": 591527
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2023/FRF-ocean_waves_awac-11m_202311.nc.das",
+      "sha256": "7295b0c99d8fb64e2ca4aaf9af52cac870b44aa9456ba4131191ed29091db2c4",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202009.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "6fa3ea1ffcdff0cd5af1e658c12f29f6710331d3a3404eca4abf3363a9b7fb4a",
+      "bytes": 56784
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2019/FRF-ocean_waves_8m-array_201910.nc.das",
+      "sha256": "2e39cb8532ad14a61d625f7fb76955fc2543c89f468a42005b37b453f0d6ffd1",
+      "bytes": 23038
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202010.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "5c5f428ed7c936357a149cdbd62df1bab074862b01684f685be77f3f77b3dda8",
+      "bytes": 115449
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/catalog.xml",
+      "sha256": "d3c3ea33b8c4153451b6bb183c7e77835cc01f5a2d630a0fdee2eaa0938efee0",
+      "bytes": 5321
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202106.nc.dds",
+      "sha256": "22c222cfea017ecef407c775ece0e929fe10759a9033f015a98a085df254484f",
+      "bytes": 2441
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2023/FRF-ocean_waves_waverider-26m_202311.nc.das",
+      "sha256": "fa6d9a2b7d0c5e54760dcca21b371a42a111461d06ad1cefb1fea1bfb8362169",
+      "bytes": 15436
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202101.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "db517f89926951169f914d65ad88789d551b42f853776dc0019fa94dad79f104",
+      "bytes": 37817
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2023/FRF-ocean_waves_waverider-26m_202311.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "a5d240fcab9fa196c0bea142be11ea207f5befce77c0bb3e0bcd9736692f51ca",
+      "bytes": 112936
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202104.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "765456f8628f0befcd2ef2630f068bc91ac056ab40a78c5f91fc4ad00df3b432",
+      "bytes": 56991
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202011.nc.das",
+      "sha256": "84085b5e43ddf33eb466761ee6f977e8d71bdf3927440ac7e1ab9064874e6122",
+      "bytes": 15458
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2023/FRF-ocean_waves_waverider-17m_202311.nc.das",
+      "sha256": "98bf55879cc2b84bd11e1240912f5eae25b7b99c5e3c5cfe4057d93a0060bb64",
+      "bytes": 18427
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202107.nc.das",
+      "sha256": "1db530e9768886ad0f71899c5fd8955b4807d5367a3beda646ba3d196cc72fc6",
+      "bytes": 17232
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202101.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "a0e3254b2a10b1ebb2e8c0d6b9e101c24cbc2f20f5580e4a0b8ac7b6aaf977f7",
+      "bytes": 63621
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+      "sha256": "bf9da27584a3ce9051f9f1af30dc8635343f8c1bac85b2c249b2915b855f75a6",
+      "bytes": 58872
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.das",
+      "sha256": "687df08ec2d9718d0cc01f51736df1ced2366395d46a7790bd45e1d46974d046",
+      "bytes": 18448
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\ACQUISITION.json",
+      "bytes": 800,
+      "sha256": "8baf37296d6a227387af4bcb2b46ee8ebd976bb0173ea6c5234cc11d05a48ab0"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\ASSOCIATIONS.json",
+      "bytes": 16530,
+      "sha256": "3f2145ae4586afe0e8d41320da618decda32dc86be9b36768d2d2b67771f5a48"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\COMPLETENESS.json",
+      "bytes": 2139,
+      "sha256": "6b2358509255b842566c38b733bcc5fac9f35de69fcbd8509d99772ad5eea473"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\currents__awac-11m_profile.png",
+      "bytes": 46260,
+      "sha256": "5891076f266456b0370e1f8e209b27f4f72a3b6f12023cd489b8864f98aa7871"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\currents__awac-11m_time.png",
+      "bytes": 38172,
+      "sha256": "f3d1c4b14814f68825921bb65dcc404700d4a72d77d4ecde6128ed0104c34412"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\DISTANCES.csv",
+      "bytes": 2053,
+      "sha256": "b7150f5457f975332bb7cd1703b2c92a1144782eff140fb66c381fafbbf33bc1"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\INVENTORY.json",
+      "bytes": 235589,
+      "sha256": "e3e8f43949c83fd193aad72ddf6c90b2eb499b45eebf35cb8c8d8f0c5657a7e3"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\MAP.png",
+      "bytes": 56825,
+      "sha256": "7b559d52e2d863ec904c88d917171d5749024d1145ae2c53e24a5e5172f1fa17"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\OBSERVATIONS.csv",
+      "bytes": 30242,
+      "sha256": "d31b2fdab8dac42c17d4c3250d38fb5cedf43c2d678d2acc299affdf3e6a5756"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\REPORT.md",
+      "bytes": 4049,
+      "sha256": "58e1eed557649686cca471724da43e5c3c3da94b8c463d2101221d0b5e8532db"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\TENSORS.json",
+      "bytes": 1018653,
+      "sha256": "88b3070f6d52dfea5c809e480f0e834649a1d85c8790c50477055476fa8dd50f"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\waves__8m-array_time.png",
+      "bytes": 45391,
+      "sha256": "ad993c993efde8a26d87ddadd421b49c889d7ea9d813c9bd6bea1df724a07c48"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\waves__awac-11m_time.png",
+      "bytes": 47443,
+      "sha256": "388f96881f321b650efa8b8d26d7f5b456f76e5c9c8b01542872fbcd7e74daa7"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\waves__waverider-17m_time.png",
+      "bytes": 39538,
+      "sha256": "d17e07b619ef940bd6ac57745cd5c5e06f0206e9c3ca57ed86e559e05a86a6ac"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\waves__waverider-26m_time.png",
+      "bytes": 51635,
+      "sha256": "1a2ceeb245af6fd81d52a6fbbb4e93605afdc74253646a7334f76bb1ce8d4e80"
+    }
+  ],
+  "code_sources": [
+    {
+      "path": "code\\frf_client\\__init__.py",
+      "sha256": "858ca64d90c6a0f48ec1b2471a56382bd0aba6bed22fbc9680aacd57894265e3"
+    },
+    {
+      "path": "code\\frf_client\\catalog.py",
+      "sha256": "050f7b0fe0df0b3050aeca7222b4834a738b47ba50455e8c9e7bcdd262815ed6"
+    },
+    {
+      "path": "code\\frf_client\\client.py",
+      "sha256": "33aff659810357704dd77b7a5a02f23a8bc2cbc2d3f3dc4625e6b5d81bcab7d3"
+    },
+    {
+      "path": "code\\frf_client\\data.py",
+      "sha256": "2b1b1279791dfbce28a833c1edc9c02be1c9a7fd34d8ac3a1e95cdc89cfd490c"
+    },
+    {
+      "path": "code\\frf_client\\geometry.py",
+      "sha256": "926aa90918f1e1808cf7e784dff4d9966e71b050f92f8076cc54f72318743044"
+    },
+    {
+      "path": "code\\frf_client\\inputs.py",
+      "sha256": "1da89717057717c37715579acfbfa306962fbff4a07b013761ff9e3896b6cc42"
+    },
+    {
+      "path": "code\\frf_client\\output.py",
+      "sha256": "6f798f8755178a6c43e6d222b7a23ba43b4de5928e09027b4c075dcf9d8da3a6"
+    },
+    {
+      "path": "code\\frf_client\\survey.py",
+      "sha256": "e3507cec18e076931c458998a6a25e6a649cf670adca92f1400f5b6761d641b5"
+    },
+    {
+      "path": "code\\frf_client\\transport.py",
+      "sha256": "aac9ffd8d43d57cc333a5bb0124db72337f2d5f66d4b7a88e8ed859121a66712"
+    },
+    {
+      "path": "code\\run_block32_frf_client.py",
+      "sha256": "548f866f36317e2e30742a45c928b5821645d4feb19fb8cd0f077a67945e15bc"
+    },
+    {
+      "path": "code\\run_block30_frf_conditions.py",
+      "sha256": "ba13f0e9dc5e6f743f571de5c00d80b8c4b53dd2e4284c5c2b2a32f8dbda4007"
+    }
+  ]
+}

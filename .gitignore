@@ -51,6 +51,8 @@ Vandenberg/results/block13_backprojection/
 Vandenberg/results/_to_delete/
 Block8_validation/catalog_raw/
 Block8_validation/buoy_data/open_meteo_mfwam_cache/
+Block30_duck_csk_preflight/http_cache/
+Block32_frf_client/cache/
 
 # OS/editor files
 .DS_Store
@@ -58,4 +60,3 @@ Thumbs.db
 Desktop.ini
 .vscode/
 .idea/
-

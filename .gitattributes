@@ -18,3 +18,5 @@
 *.png binary
 *.npz binary
 
+# Preserve exact artifact bytes: Block32 manifests use SHA256, including EOLs.
+Block32_frf_client/** -text

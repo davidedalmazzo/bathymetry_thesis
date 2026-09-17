@@ -1,0 +1,35 @@
+{
+  "acquisition_id": "TDX-1_record_11",
+  "timestamp_utc": "2021-10-13T23:00:15.669000+00:00",
+  "start_utc": "2021-10-13T23:00:15.669000+00:00",
+  "end_utc": "2021-10-13T23:00:16.101000+00:00",
+  "timestamp_semantics": "timestamp_of_catalogue_record_not_verified_aperture_center",
+  "footprint": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -75.71619622454091,
+          36.1732784932615
+        ],
+        [
+          -75.72194184766971,
+          36.2003910366816
+        ],
+        [
+          -75.78272395629978,
+          36.1920047521163
+        ],
+        [
+          -75.77695646885428,
+          36.1648919540011
+        ],
+        [
+          -75.71619622454091,
+          36.1732784932615
+        ]
+      ]
+    ]
+  },
+  "source": "Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv"
+}

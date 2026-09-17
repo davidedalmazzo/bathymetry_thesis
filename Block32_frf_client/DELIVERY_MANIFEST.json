@@ -1,0 +1,987 @@
+{
+  "python": "3.13.9",
+  "network": {
+    "transactions": 40,
+    "bytes": 2412291,
+    "max_transactions": 40,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-17T17:05:33.353298+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed"
+  },
+  "artifacts": [
+    {
+      "path": "Block32_frf_client\\AUTH_TEMPLATE.env.example",
+      "bytes": 401,
+      "sha256": "2ce50f71255884695d7e914251c2f6c6876c884f1984e648b55d1dbe2afc340c"
+    },
+    {
+      "path": "Block32_frf_client\\CONFIG.json",
+      "bytes": 700,
+      "sha256": "81c73ae0a3d8b67c873578c5cb7afc47e27fb2f73e06319c14f7356f948578d5"
+    },
+    {
+      "path": "Block32_frf_client\\DELIVERY_AUDIT.json",
+      "bytes": 130,
+      "sha256": "efef53c6c16522c84a79d19be3f64c1c2254bbe9c6d6d1dd80e555376513415e"
+    },
+    {
+      "path": "Block32_frf_client\\FROZEN_AUDIT.json",
+      "bytes": 43,
+      "sha256": "5367eabf036329991ac67135ca2acf05a61bb09895caa94c227979ca1b42cb51"
+    },
+    {
+      "path": "Block32_frf_client\\FROZEN_INPUT_HASHES.json",
+      "bytes": 34597,
+      "sha256": "a3718f8c6019a348bb69e77e6a8a45ff10016dcf5e227ec2be21ffa04d3050b0"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\ACQUISITION.json",
+      "bytes": 801,
+      "sha256": "cfdfa8b4954632a5f2e132ae8ab51a2c1103ff357bced61a23492417724ffd95"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\ASSOCIATIONS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\COMPLETENESS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\DISTANCES.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\INVENTORY.json",
+      "bytes": 225907,
+      "sha256": "5e85fc1d98741aad50b462cb0a7079b5e6bec5fd81047c737fe9016c10f6a570"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\MANIFEST.json",
+      "bytes": 45581,
+      "sha256": "8d86d224758ae653c13ffcf724ac3f85c3acce3c009b1f0073f2e4ee7e3ddfef"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\MAP.png",
+      "bytes": 57788,
+      "sha256": "1cb1e99de5d517311a33fc2df37cbc2d51635789a63e74bbd77c7cf9c98c017a"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\OBSERVATIONS.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\PROVENANCE_WARNINGS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\REPORT.md",
+      "bytes": 2423,
+      "sha256": "a847a6d1b26dc1164965140dc7de2e4af201ae70afa154a97dc9a638eab3f835"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\TENSORS.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\ACQUISITION.json",
+      "bytes": 800,
+      "sha256": "8baf37296d6a227387af4bcb2b46ee8ebd976bb0173ea6c5234cc11d05a48ab0"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\ASSOCIATIONS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\COMPLETENESS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\DISTANCES.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\INVENTORY.json",
+      "bytes": 225907,
+      "sha256": "5e85fc1d98741aad50b462cb0a7079b5e6bec5fd81047c737fe9016c10f6a570"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\MANIFEST.json",
+      "bytes": 45580,
+      "sha256": "f5cf230c9ed530eaf51af96f16d1ade2175e2259fc2401e4c2955c2d5ff549e4"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\MAP.png",
+      "bytes": 53086,
+      "sha256": "4b4d69b1af13d7cb50662ecc142248cefb0e977d3947ff35c05c52423b55f33a"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\OBSERVATIONS.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\PROVENANCE_WARNINGS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\REPORT.md",
+      "bytes": 2423,
+      "sha256": "9898d40ecb1a645b2f54efb3cb692b35e91c6acb2558b4f34d5ab5a6998fb68e"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\TENSORS.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\ACQUISITION.json",
+      "bytes": 825,
+      "sha256": "dbf226b9a025b9f2e9c931e3986bc54198066f1568ecc5dd9ab80c965a369a7e"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\ASSOCIATIONS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\COMPLETENESS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\DISTANCES.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\INVENTORY.json",
+      "bytes": 225907,
+      "sha256": "5e85fc1d98741aad50b462cb0a7079b5e6bec5fd81047c737fe9016c10f6a570"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\MANIFEST.json",
+      "bytes": 45605,
+      "sha256": "185be92b3a626f0538bd602ab8f8f7d2017de3cb28fd64b6baeb6bd9d1cbc69e"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\MAP.png",
+      "bytes": 51078,
+      "sha256": "b8d551c49533f2cc75081c3966d78e1cfc863e621621e97b6fa5686aec704d57"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\OBSERVATIONS.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\PROVENANCE_WARNINGS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\REPORT.md",
+      "bytes": 2450,
+      "sha256": "04131caaf28e92fd5f14f04f4f8c2e19f088b67d89878ee16d5cda87a9a2ac13"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\TENSORS.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\INVENTORY.json",
+      "bytes": 225907,
+      "sha256": "5e85fc1d98741aad50b462cb0a7079b5e6bec5fd81047c737fe9016c10f6a570"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\LEGACY_CACHE_AUDIT.json",
+      "bytes": 20853,
+      "sha256": "9d22772e44080b1891473a19daf8fad2198c23b9a918168d8558b98e00a5e0a9"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\STATUS.json",
+      "bytes": 1025,
+      "sha256": "8e042b378ccafdb7aa8cfcdb7d28cf9b0e4d831e5a81beab59dbd77e5b14a023"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\ACQUISITION.json",
+      "bytes": 881,
+      "sha256": "54a6ae5b045c0eabec864ac7a2b4e3a307d76cdde930f207d2ea12381e4d3cbf"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\ASSOCIATIONS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\COMPLETENESS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\DISTANCES.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\INVENTORY.json",
+      "bytes": 225907,
+      "sha256": "5e85fc1d98741aad50b462cb0a7079b5e6bec5fd81047c737fe9016c10f6a570"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\MANIFEST.json",
+      "bytes": 45685,
+      "sha256": "58026d952c53677501d649de9f4d78f913f8a7c4d3c7aa19f09262f22a05038a"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\MAP.png",
+      "bytes": 54395,
+      "sha256": "a8544ba18a8a201e87a565aa9716d4348e8a0d59a502b5b798250211b3c338bf"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\OBSERVATIONS.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\PROVENANCE_WARNINGS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\REPORT.md",
+      "bytes": 2439,
+      "sha256": "ed82db1e59c6593c400baa4ef1c7f5f1dc804cb6162d7c036d1a1003465327d6"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\TENSORS.json",
+      "bytes": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "Block32_frf_client\\REAL_ENDPOINT_REPORT.json",
+      "bytes": 125577,
+      "sha256": "cb203ab6e6f1079464e14ffa7ba7cce784b0a6bb1dfb684d47325c461a406572"
+    },
+    {
+      "path": "Block32_frf_client\\REGRESSION_ACQUISITIONS.json",
+      "bytes": 3908,
+      "sha256": "ecf4cba71b38a7913e8723fdbeb345d4ff12a82efd064284f497236eb3384837"
+    },
+    {
+      "path": "Block32_frf_client\\REPORT.md",
+      "bytes": 9473,
+      "sha256": "e6a95ab8c62a1b0e06ab002588c417f9e2ec1d975e299b45dd9586583b35080f"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\ACQUISITION.json",
+      "bytes": 801,
+      "sha256": "cfdfa8b4954632a5f2e132ae8ab51a2c1103ff357bced61a23492417724ffd95"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\ASSOCIATIONS.json",
+      "bytes": 16530,
+      "sha256": "e4e0b38b14266e032c49ce809872066498cac7784939c9cec2e7bf5ad9392c3a"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\COMPLETENESS.json",
+      "bytes": 2139,
+      "sha256": "6b2358509255b842566c38b733bcc5fac9f35de69fcbd8509d99772ad5eea473"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\currents__awac-11m_profile.png",
+      "bytes": 43902,
+      "sha256": "e5cc80b63b4c90a4182bdc5a38cc8b943693fe0a54896285422dd0442bd10730"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\currents__awac-11m_time.png",
+      "bytes": 36981,
+      "sha256": "a460b20c097f1d1767ed245b0606f2be7aaecee20ae95a2565fc9a7c59259f8c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\DISTANCES.csv",
+      "bytes": 2048,
+      "sha256": "7ba629266222ba8e810d2b58b71d0d3fd8027adc7f405d5032e32d13f212e2dd"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\INVENTORY.json",
+      "bytes": 235589,
+      "sha256": "e3e8f43949c83fd193aad72ddf6c90b2eb499b45eebf35cb8c8d8f0c5657a7e3"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\MANIFEST.json",
+      "bytes": 46696,
+      "sha256": "5745c7a9c9087842966062f02c5b9215a422a9192c8b2e572de989a21c1b6d98"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\MAP.png",
+      "bytes": 59616,
+      "sha256": "78af90350f74e74a3ed07053ab238da6d55db9355009f051e3cab34fe9defcbf"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\OBSERVATIONS.csv",
+      "bytes": 30246,
+      "sha256": "47d44812328cd4ff42d807faf37f6c12506941699d3074f4a795ee56f30e7b0b"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\REPORT.md",
+      "bytes": 4047,
+      "sha256": "c71873d50782a79ba5da25ecd5270c9bfb8eeceabd10f839b2f8cc22d5ba8824"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\TENSORS.json",
+      "bytes": 1018653,
+      "sha256": "88b3070f6d52dfea5c809e480f0e834649a1d85c8790c50477055476fa8dd50f"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\waves__8m-array_time.png",
+      "bytes": 45327,
+      "sha256": "53560c0cd5ea939f293af7657c1ed7df23b2a91a3d3b1484a8948db92410cc33"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\waves__awac-11m_time.png",
+      "bytes": 47231,
+      "sha256": "f868ee0fb4a4907828de976adf61d611423d61dc65e782a21c18aa2f2fc1f60e"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\waves__waverider-17m_time.png",
+      "bytes": 39568,
+      "sha256": "302a4bf8b8619deaed08e543ecf8172535fedfe2019f35f631167c2a2fa69821"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1941935\\waves__waverider-26m_time.png",
+      "bytes": 51663,
+      "sha256": "5046d6fe992ce2166970decbdf361aa4587f6d62259c0b09948c8db74586297b"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\ACQUISITION.json",
+      "bytes": 800,
+      "sha256": "8baf37296d6a227387af4bcb2b46ee8ebd976bb0173ea6c5234cc11d05a48ab0"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\ASSOCIATIONS.json",
+      "bytes": 16530,
+      "sha256": "3f2145ae4586afe0e8d41320da618decda32dc86be9b36768d2d2b67771f5a48"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\COMPLETENESS.json",
+      "bytes": 2139,
+      "sha256": "6b2358509255b842566c38b733bcc5fac9f35de69fcbd8509d99772ad5eea473"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\currents__awac-11m_profile.png",
+      "bytes": 46260,
+      "sha256": "5891076f266456b0370e1f8e209b27f4f72a3b6f12023cd489b8864f98aa7871"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\currents__awac-11m_time.png",
+      "bytes": 38172,
+      "sha256": "f3d1c4b14814f68825921bb65dcc404700d4a72d77d4ecde6128ed0104c34412"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\DISTANCES.csv",
+      "bytes": 2053,
+      "sha256": "b7150f5457f975332bb7cd1703b2c92a1144782eff140fb66c381fafbbf33bc1"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\INVENTORY.json",
+      "bytes": 235589,
+      "sha256": "e3e8f43949c83fd193aad72ddf6c90b2eb499b45eebf35cb8c8d8f0c5657a7e3"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\MANIFEST.json",
+      "bytes": 46695,
+      "sha256": "901709cb66953dd8619f3b26239b5bed75957f322047021c397a69a4a337d7ba"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\MAP.png",
+      "bytes": 56825,
+      "sha256": "7b559d52e2d863ec904c88d917171d5749024d1145ae2c53e24a5e5172f1fa17"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\OBSERVATIONS.csv",
+      "bytes": 30242,
+      "sha256": "d31b2fdab8dac42c17d4c3250d38fb5cedf43c2d678d2acc299affdf3e6a5756"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\REPORT.md",
+      "bytes": 4049,
+      "sha256": "58e1eed557649686cca471724da43e5c3c3da94b8c463d2101221d0b5e8532db"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\TENSORS.json",
+      "bytes": 1018653,
+      "sha256": "88b3070f6d52dfea5c809e480f0e834649a1d85c8790c50477055476fa8dd50f"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\waves__8m-array_time.png",
+      "bytes": 45391,
+      "sha256": "ad993c993efde8a26d87ddadd421b49c889d7ea9d813c9bd6bea1df724a07c48"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\waves__awac-11m_time.png",
+      "bytes": 47443,
+      "sha256": "388f96881f321b650efa8b8d26d7f5b456f76e5c9c8b01542872fbcd7e74daa7"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\waves__waverider-17m_time.png",
+      "bytes": 39538,
+      "sha256": "d17e07b619ef940bd6ac57745cd5c5e06f0206e9c3ca57ed86e559e05a86a6ac"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_1942455\\waves__waverider-26m_time.png",
+      "bytes": 51635,
+      "sha256": "1a2ceeb245af6fd81d52a6fbbb4e93605afdc74253646a7334f76bb1ce8d4e80"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\ACQUISITION.json",
+      "bytes": 825,
+      "sha256": "dbf226b9a025b9f2e9c931e3986bc54198066f1568ecc5dd9ab80c965a369a7e"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\ASSOCIATIONS.json",
+      "bytes": 35636,
+      "sha256": "1c937bb8577decdbdedf4ff7702bdbf4e706d16d561b58f0d59035861c64e44f"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\COMPLETENESS.json",
+      "bytes": 2829,
+      "sha256": "db4ca074321452deb1f8a048ce9cab0354968ee12b48bff964c8200ab1710703"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\currents__awac-11m_profile.png",
+      "bytes": 45514,
+      "sha256": "7f74bb16e2d7776e24b17dd5fb8996cea82695e0c56a51b954787885f536d5b9"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\currents__awac-11m_time.png",
+      "bytes": 38956,
+      "sha256": "11994c8410e10feb01d8c63c443f834c1ef63115a2cce503d8a1e9153e4a1498"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\DISTANCES.csv",
+      "bytes": 2920,
+      "sha256": "85a26334b3909533bb1f7967bb1a3f671f0a5645fee8fbf8e839e52ebebe61cc"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\INVENTORY.json",
+      "bytes": 235589,
+      "sha256": "e3e8f43949c83fd193aad72ddf6c90b2eb499b45eebf35cb8c8d8f0c5657a7e3"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\MANIFEST.json",
+      "bytes": 48034,
+      "sha256": "59d85f15355935beaf1f820af85f843111003184a845d7fd8191804d9db35c2c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\MAP.png",
+      "bytes": 64589,
+      "sha256": "81949473758e3ce81ac438a7561d83710e86e96418207fc31b303d105dc2a360"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\OBSERVATIONS.csv",
+      "bytes": 99313,
+      "sha256": "9e7d61ddd31f7b430fcaa79e9243b074b02fec7ac006ab388c00bad2b3412392"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\REPORT.md",
+      "bytes": 4167,
+      "sha256": "d35b911f0edb98ed53a2cd0e276866348d9545d275638d184d8e6dafcd95d4e4"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\SPECTRAL_SUMMARIES.json",
+      "bytes": 6483,
+      "sha256": "a1473b07a8ed6f6be91091209daf5189216b8da6b7147b23793c618464911b53"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\TENSORS.json",
+      "bytes": 4213273,
+      "sha256": "c479e96c36d25a5a7265fcebaab719cd4f73099e6b15fb48363ceba008bb28a5"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\water_level__eopNoaaTide_time.png",
+      "bytes": 35237,
+      "sha256": "bc100146f23aa135ffe6de9a9398dccb3b3c482538ec24055a1323d958720f81"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\waves__8m-array_time.png",
+      "bytes": 44824,
+      "sha256": "05c1b01226d373a832d2cca7eaa1ede62630502ebcbe76e66b6bf37f7e5b3593"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\waves__awac-11m_directional_spectrum.png",
+      "bytes": 26449,
+      "sha256": "c7666082c603d9551aeb83b717ada2e3aa539ab9c5a1d1ebcfbdf91a7d6d458e"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\waves__awac-11m_spectrum.png",
+      "bytes": 38178,
+      "sha256": "df774870979837c0f2425053d2d0ff554aef1df6ff7d1462867a041096521e6a"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\waves__awac-11m_time.png",
+      "bytes": 32981,
+      "sha256": "0f60075ea1e2fc65c6dbc77583b052a8f39fa470bff800de4b03d7af7880ba77"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\waves__waverider-17m_directional_spectrum.png",
+      "bytes": 25783,
+      "sha256": "42d79a088d8254915f27e70a98ead5a7a8f81b0c1b6d99b53d9be4a2794abb2c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\waves__waverider-17m_spectrum.png",
+      "bytes": 36322,
+      "sha256": "1c609562db24e80e82d8566e58d511e412a7f0ad144d9a7c2ae5acd4823a6447"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\waves__waverider-17m_time.png",
+      "bytes": 39919,
+      "sha256": "c3701bcaceb5f8a15eded8b3fedadc63bd2fa30beb087d4485f1ba520a6f0254"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\waves__waverider-26m_time.png",
+      "bytes": 44338,
+      "sha256": "9c7d8a5ec8dca5798f1c4f512e4bd61585ebc721c334327ccdc0a1a3abe960dc"
+    },
+    {
+      "path": "Block32_frf_client\\results\\COSMO_2098202\\wind__derived_time.png",
+      "bytes": 38024,
+      "sha256": "0d1accf7cf3fd80c29989b48a74548112a6d4580cb080f5650f0b9c3654b93ca"
+    },
+    {
+      "path": "Block32_frf_client\\results\\DISCOVERY_FAMILIES.json",
+      "bytes": 4002,
+      "sha256": "1941fead40ccec6a50acaee7ab96e3f30f053486089ef147d8161f0021560877"
+    },
+    {
+      "path": "Block32_frf_client\\results\\DISCOVERY_INSTRUMENTS.json",
+      "bytes": 4879,
+      "sha256": "72333006026094858b2a5f165cadf182a2b0fcee9880cf31f8e794386225dd05"
+    },
+    {
+      "path": "Block32_frf_client\\results\\DISCOVERY_LAST.json",
+      "bytes": 1334,
+      "sha256": "8d0f2d11daaaa6ed9d1d1ebccf5bb52801f605d0b4ef479b0ff77763539c6a69"
+    },
+    {
+      "path": "Block32_frf_client\\results\\DISCOVERY_PRODUCTS.json",
+      "bytes": 20054,
+      "sha256": "30714fcb22e9a5cb8fbc1f6c84cdeb4ee2bce18259a12cda98b8fc129e0a1574"
+    },
+    {
+      "path": "Block32_frf_client\\results\\INVENTORY.json",
+      "bytes": 235589,
+      "sha256": "e3e8f43949c83fd193aad72ddf6c90b2eb499b45eebf35cb8c8d8f0c5657a7e3"
+    },
+    {
+      "path": "Block32_frf_client\\results\\LEGACY_CACHE_AUDIT.json",
+      "bytes": 20853,
+      "sha256": "9d22772e44080b1891473a19daf8fad2198c23b9a918168d8558b98e00a5e0a9"
+    },
+    {
+      "path": "Block32_frf_client\\results\\PRODUCT_METADATA.json",
+      "bytes": 39153,
+      "sha256": "91bd978a90c82c4fc552e955de05a5e4c3f13def9f63d049a1cbbb3ef4fbac4f"
+    },
+    {
+      "path": "Block32_frf_client\\results\\STATUS.json",
+      "bytes": 1365,
+      "sha256": "70d635b29acbedac2e1f2480a91d2f78b0a91f8d37724d46fd0b204cef0e36fe"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\ACQUISITION.json",
+      "bytes": 881,
+      "sha256": "54a6ae5b045c0eabec864ac7a2b4e3a307d76cdde930f207d2ea12381e4d3cbf"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\ASSOCIATIONS.json",
+      "bytes": 35882,
+      "sha256": "03987da7fcb8396b5a90bd52e8e89cb8da161a99e8753cc7bd46399bb93e81ee"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\COMPLETENESS.json",
+      "bytes": 2829,
+      "sha256": "db4ca074321452deb1f8a048ce9cab0354968ee12b48bff964c8200ab1710703"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\currents__awac-11m_profile.png",
+      "bytes": 45514,
+      "sha256": "7f74bb16e2d7776e24b17dd5fb8996cea82695e0c56a51b954787885f536d5b9"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\currents__awac-11m_time.png",
+      "bytes": 39129,
+      "sha256": "8bd2c02892d85c3abb7cf60d3875ae237c2c3cdee0489da39da57a387c01d02b"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\DISTANCES.csv",
+      "bytes": 2938,
+      "sha256": "f0a58c70392475c436870751746b832e66fd678a9053c1ab51aae3d2f6df703f"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\INVENTORY.json",
+      "bytes": 235589,
+      "sha256": "e3e8f43949c83fd193aad72ddf6c90b2eb499b45eebf35cb8c8d8f0c5657a7e3"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\MANIFEST.json",
+      "bytes": 48139,
+      "sha256": "133eaa43b375cc6352403cf626c756b71eb0d3c92fd20545a24b448a1ebf5317"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\MAP.png",
+      "bytes": 54336,
+      "sha256": "9644144ab732f158d67e0ae7630691b50659efa954b4d0facbd3dbd087115dd6"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\OBSERVATIONS.csv",
+      "bytes": 100591,
+      "sha256": "f09e6080027dbdfd538ea42d11f364e8ab6ed6bccd7c53260779e2457475f50a"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\REPORT.md",
+      "bytes": 4158,
+      "sha256": "940af5ca7c2732f6de841b01e7d20afd46a4a83e05b57508fba1576a46d42e8e"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\SPECTRAL_SUMMARIES.json",
+      "bytes": 6487,
+      "sha256": "55ddf427c08558153118e6eb8dcd89f800c529c5819f56d175545b2ef36d39c8"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\TENSORS.json",
+      "bytes": 4213273,
+      "sha256": "c479e96c36d25a5a7265fcebaab719cd4f73099e6b15fb48363ceba008bb28a5"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\water_level__eopNoaaTide_time.png",
+      "bytes": 35388,
+      "sha256": "d9bbc6191bdf81ceadb11e5ddc480a9b3cc5be418d448e481f0536a7a7edf4b2"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__8m-array_time.png",
+      "bytes": 44861,
+      "sha256": "2b924dca79c9b83d3835efecb9701d9947cc3fdb528fb54bbb8ff3b8c07af947"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__awac-11m_directional_spectrum.png",
+      "bytes": 26449,
+      "sha256": "c7666082c603d9551aeb83b717ada2e3aa539ab9c5a1d1ebcfbdf91a7d6d458e"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__awac-11m_spectrum.png",
+      "bytes": 38178,
+      "sha256": "df774870979837c0f2425053d2d0ff554aef1df6ff7d1462867a041096521e6a"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__awac-11m_time.png",
+      "bytes": 32764,
+      "sha256": "42dc441430bfdc549d07b4a7e5301b793dbdde45ce99fcd4c17c39ddf4af02c3"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__waverider-17m_directional_spectrum.png",
+      "bytes": 25783,
+      "sha256": "42d79a088d8254915f27e70a98ead5a7a8f81b0c1b6d99b53d9be4a2794abb2c"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__waverider-17m_spectrum.png",
+      "bytes": 36322,
+      "sha256": "1c609562db24e80e82d8566e58d511e412a7f0ad144d9a7c2ae5acd4823a6447"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__waverider-17m_time.png",
+      "bytes": 39838,
+      "sha256": "10e2214ac3f3a7595a5534f60961ef871c78ca086f485ddc4bbe0fbff0e96705"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__waverider-26m_time.png",
+      "bytes": 44279,
+      "sha256": "3896f21c2d78bc1f6a52e896104bd820e605f416e6366a1c3dab863b66f0db22"
+    },
+    {
+      "path": "Block32_frf_client\\results\\TDX-1_record_11\\wind__derived_time.png",
+      "bytes": 37976,
+      "sha256": "a9d13e0f352510731a6b36ab07df6a704193dbcf1e1710b7efdb1a963e92f4f2"
+    },
+    {
+      "path": "Block32_frf_client\\TEST_REPORT.md",
+      "bytes": 1672,
+      "sha256": "b6282f55fd6457312d0ff6f21f6c4b35bd05ff2eeecda6e55063ec9e74a6b95a"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\INVENTORY.json",
+      "bytes": 105270,
+      "sha256": "5643e5aa32e7c1f0d2d368e02176b830f46fc6b4d6124d347e13c5786d8516cc"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\LEGACY_CACHE_AUDIT.json",
+      "bytes": 20853,
+      "sha256": "9d22772e44080b1891473a19daf8fad2198c23b9a918168d8558b98e00a5e0a9"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\STATUS.json",
+      "bytes": 1726,
+      "sha256": "3dacb09939c7fdd8376af3838ce58d949546dac311a5662610cf99369b15dfd2"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\ACQUISITION.json",
+      "bytes": 238,
+      "sha256": "1103024054fcd4b8674f7b8258adf40a8106971203666bc3caf5f8fffc5a9446"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\ASSOCIATIONS.json",
+      "bytes": 16577,
+      "sha256": "68cecf1fdbd64deb6bc1b9a9494a34d6dce02bb8361854100918c7108c22bd5d"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\COMPLETENESS.json",
+      "bytes": 2139,
+      "sha256": "6b2358509255b842566c38b733bcc5fac9f35de69fcbd8509d99772ad5eea473"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\CONFIG.json",
+      "bytes": 812,
+      "sha256": "dd7ab9c4f280ab36cde229fa3e029860f125f8fe32f08b35f418a634f54cafd5"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\currents__awac-11m_profile.png",
+      "bytes": 45514,
+      "sha256": "7f74bb16e2d7776e24b17dd5fb8996cea82695e0c56a51b954787885f536d5b9"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\currents__awac-11m_time.png",
+      "bytes": 39129,
+      "sha256": "8bd2c02892d85c3abb7cf60d3875ae237c2c3cdee0489da39da57a387c01d02b"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\DISTANCES.csv",
+      "bytes": 957,
+      "sha256": "985f416033c52c357ed310cbcecf62bc43e37b92610b6993420a84993b1939a0"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\INVENTORY.json",
+      "bytes": 105270,
+      "sha256": "5643e5aa32e7c1f0d2d368e02176b830f46fc6b4d6124d347e13c5786d8516cc"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\MANIFEST.json",
+      "bytes": 46508,
+      "sha256": "9c0cbfeee2329952b77e2991daacc070644d2853a6aab9a7f200b2121f4341d4"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\MAP.png",
+      "bytes": 46524,
+      "sha256": "eafab7bfcc8f535af1f25c47bc238cf70981afa7537b035f85b0f9db32a4e923"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\OBSERVATIONS.csv",
+      "bytes": 30905,
+      "sha256": "45547193eadee5f3d07af42f02f5685431afe33b260b2907aa49164ae297f072"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\REPORT.md",
+      "bytes": 4405,
+      "sha256": "af8848f7128325991b58ae397fbd30eb88f736769fb73337e83f5fd060f05034"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\TENSORS.json",
+      "bytes": 1323508,
+      "sha256": "efce036e410c97a74576a633e5d73a3f600387a1239a2af1fac1cd33c959c27d"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\waves__8m-array_time.png",
+      "bytes": 44861,
+      "sha256": "2b924dca79c9b83d3835efecb9701d9947cc3fdb528fb54bbb8ff3b8c07af947"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\waves__awac-11m_time.png",
+      "bytes": 44228,
+      "sha256": "526b206745d2100cf0029237a88841ae207910f91caa30cab2bc214352fa5931"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\waves__waverider-17m_time.png",
+      "bytes": 46576,
+      "sha256": "fd0ac69523534d48b7fb8aee08494fc6b17a9c16e42ed5213e143e244090c510"
+    },
+    {
+      "path": "Block32_frf_client\\time_only_verification\\time_only_verification\\waves__waverider-26m_time.png",
+      "bytes": 44279,
+      "sha256": "3896f21c2d78bc1f6a52e896104bd820e605f416e6366a1c3dab863b66f0db22"
+    },
+    {
+      "path": "Block32_frf_client\\USER_REQUEST.txt",
+      "bytes": 11751,
+      "sha256": "39725b743ddb23ab765b5d9edb021da8aeacc3da91b778c791a765ce75b8ae09"
+    },
+    {
+      "path": "CHECKPOINT_32.md",
+      "bytes": 1830,
+      "sha256": "8ff4b551c13caba5c0a04ce4afd8314d843b2cdf6e0118493d59d20fbe941aa9"
+    }
+  ],
+  "code_sources": [
+    {
+      "path": "code\\frf_client\\__init__.py",
+      "sha256": "858ca64d90c6a0f48ec1b2471a56382bd0aba6bed22fbc9680aacd57894265e3"
+    },
+    {
+      "path": "code\\frf_client\\catalog.py",
+      "sha256": "050f7b0fe0df0b3050aeca7222b4834a738b47ba50455e8c9e7bcdd262815ed6"
+    },
+    {
+      "path": "code\\frf_client\\client.py",
+      "sha256": "33aff659810357704dd77b7a5a02f23a8bc2cbc2d3f3dc4625e6b5d81bcab7d3"
+    },
+    {
+      "path": "code\\frf_client\\data.py",
+      "sha256": "2b1b1279791dfbce28a833c1edc9c02be1c9a7fd34d8ac3a1e95cdc89cfd490c"
+    },
+    {
+      "path": "code\\frf_client\\geometry.py",
+      "sha256": "926aa90918f1e1808cf7e784dff4d9966e71b050f92f8076cc54f72318743044"
+    },
+    {
+      "path": "code\\frf_client\\inputs.py",
+      "sha256": "1da89717057717c37715579acfbfa306962fbff4a07b013761ff9e3896b6cc42"
+    },
+    {
+      "path": "code\\frf_client\\output.py",
+      "sha256": "6f798f8755178a6c43e6d222b7a23ba43b4de5928e09027b4c075dcf9d8da3a6"
+    },
+    {
+      "path": "code\\frf_client\\survey.py",
+      "sha256": "e3507cec18e076931c458998a6a25e6a649cf670adca92f1400f5b6761d641b5"
+    },
+    {
+      "path": "code\\frf_client\\transport.py",
+      "sha256": "aac9ffd8d43d57cc333a5bb0124db72337f2d5f66d4b7a88e8ed859121a66712"
+    },
+    {
+      "path": "code\\run_block32_frf_client.py",
+      "sha256": "548f866f36317e2e30742a45c928b5821645d4feb19fb8cd0f077a67945e15bc"
+    },
+    {
+      "path": "D:\\Dati Tesi\\Umbra\\code\\audit_block32_frf_delivery.py",
+      "sha256": "d0332549f91bbaa1796e44a6f3000384eada9419949e703259bd87f72ab75e78"
+    },
+    {
+      "path": "tests\\test_frf_client.py",
+      "sha256": "442cce528c6cc12d8601b253390fe380b3a65bc6803dfe822de65966781104fa"
+    },
+    {
+      "path": "code\\README_FRF_CLIENT.md",
+      "sha256": "82bf677f1d3ed8538f043feb575d4e41d1950bf93cde04f4d8ca372ecaa5a4da"
+    }
+  ]
+}

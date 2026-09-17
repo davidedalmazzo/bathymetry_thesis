@@ -1,0 +1,35 @@
+{
+  "acquisition_id": "COSMO_1942455",
+  "timestamp_utc": "2021-06-30T10:54:50.308000+00:00",
+  "start_utc": "2021-06-30T10:54:50.308000+00:00",
+  "end_utc": "2021-06-30T10:54:58.274000+00:00",
+  "timestamp_semantics": "catalogue_start_not_verified_aperture_center",
+  "footprint": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -75.68396,
+          36.127419
+        ],
+        [
+          -75.702248,
+          36.221996
+        ],
+        [
+          -75.817657,
+          36.209133
+        ],
+        [
+          -75.799156,
+          36.112167
+        ],
+        [
+          -75.68396,
+          36.127419
+        ]
+      ]
+    ]
+  },
+  "source": "Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json"
+}

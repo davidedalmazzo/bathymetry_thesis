@@ -1,0 +1,356 @@
+Implementa un client riutilizzabile per recuperare via API le osservazioni della Field Research Facility di Duck pertinenti a una o più acquisizioni SAR.
+
+OBIETTIVO
+
+Dato un timestamp di acquisizione e un footprint geografico, produrre un dossier osservativo con:
+- onde e spettri;
+- vento;
+- correnti;
+- livello marino;
+- rilievi batimetrici disponibili;
+- distanze temporali e spaziali di ogni riferimento;
+- qualità, copertura e provenienza dei dati.
+
+Deve funzionare per COSMO, TerraSAR-X/TanDEM-X, Umbra e altri sensori senza dipendere dal nome della missione.
+
+Non elaborare dati SAR e non stimare frequenze o profondità SAR.
+
+1. LETTURA E RIUSO
+
+Leggi AGENTS.md e segui le istruzioni del repository.
+Esamina codice, configurazioni, cache, test e note del Block30.
+
+Riusa il parser FRF verificato e correggilo dove necessario.
+Evita un secondo sistema incompatibile con quello esistente.
+
+Usa l’ambiente Python prescritto.
+Non modificare input o risultati congelati.
+Nessun commit o push.
+
+2. INTERFACCIA
+
+Prevedi:
+A. singola acquisizione;
+B. manifest con più acquisizioni.
+
+Input:
+- acquisition_id;
+- timestamp UTC con timezone esplicita;
+- inizio/fine acquisizione opzionali;
+- footprint Polygon/MultiPolygon WGS84;
+- ROI opzionale;
+- configurazione di ricerca e budget.
+
+Accetta GeoJSON e un formato tabellare documentato.
+Non dedurre silenziosamente timezone o ordine latitudine/longitudine.
+Gestisci i CSV di catalogo esistenti tramite adattatori separati.
+
+Senza footprint permetti una query temporale, ma riporta le distanze dalla tile come non valutabili.
+Senza ROI calcola solo le distanze dal footprint.
+
+Prevedi modalità:
+- inventory: scoperta di strumenti e coperture;
+- fetch: recupero limitato all’evento;
+- offline: rielaborazione della cache senza rete.
+
+3. ACCESSO PROGRAMMATICO
+
+Scopri gli endpoint ufficiali pertinenti FRF/USACE:
+- THREDDS;
+- OPeNDAP;
+- NCSS dove disponibile;
+- download HTTP di piccoli file pertinenti come fallback.
+
+Usa discovery dei cataloghi e dei metadati.
+Non presumere che tutti i prodotti abbiano identici percorsi,
+variabili, frequenze o copertura temporale.
+
+NDBC e CDIP possono essere fonti alternative documentate.
+Non contare lo stesso strumento ripubblicato da più servizi come
+riferimenti indipendenti.
+
+Nessuna automazione del browser.
+Non aggirare autenticazione o controlli di accesso.
+
+4. AUTENTICAZIONE
+
+Usa accesso anonimo quando disponibile.
+
+Se un endpoint richiede autenticazione:
+- verifica il meccanismo ufficialmente supportato;
+- supporta token o credenziali tramite variabili d’ambiente oppure
+  file locale escluso da Git;
+- fornisci un template privo di segreti;
+- non scrivere credenziali, token o URL firmati nei log o nei manifest;
+- mantieni attiva la verifica TLS.
+
+Non chiedere credenziali se gli endpoint necessari sono pubblici.
+Se serve un’autorizzazione iniziale interattiva, documentala:
+non promettere login completamente automatico se il servizio non lo consente.
+
+5. INVENTARIO DEGLI STRUMENTI
+
+Per ciascuno strumento identifica:
+- identificatore stabile e alias;
+- operatore e piattaforma;
+- tipo di sensore;
+- posizione pertinente alla data;
+- intervallo di deployment;
+- profondità e riferimento verticale, se disponibili;
+- prodotti disponibili;
+- copertura temporale effettivamente verificata;
+- unità, convenzioni e flag di qualità.
+
+Non attribuire la posizione o la strumentazione attuale a una data storica
+senza verifica.
+
+Distingui posizione nominale di ormeggio da posizione misurata.
+Se una posizione storica è incerta, propaga tale stato alle distanze.
+
+6. PARAMETRI DA RECUPERARE
+
+Recupera quanto effettivamente disponibile nelle seguenti famiglie.
+
+ONDE
+- Hm0/Hs, mantenendo la definizione originale;
+- Tp;
+- periodi medi disponibili, distinguendo Tm01, Tm02 e altri;
+- direzione media e direzione al picco;
+- spread direzionale;
+- densità spettrale per frequenza;
+- centri e larghezze dei bin;
+- momenti/coefficienti direzionali disponibili;
+- spettro frequenza-direzione, se realmente fornito;
+- partizioni swell/wind-sea solo se fornite o ottenute da una
+  procedura esplicitamente documentata.
+
+VENTO
+- velocità;
+- direzione;
+- raffica;
+- altezza del sensore;
+- periodo di media;
+- eventuale definizione del vento a 10 m.
+
+Non convertire automaticamente una misura al vento neutro a 10 m
+senza il modello e gli input necessari.
+
+CORRENTI
+- componenti u/v;
+- velocità e direzione;
+- profilo verticale e profondità dei bin;
+- convenzioni degli assi;
+- periodo di media;
+- flag di qualità.
+
+Non chiamare “corrente superficiale” una misura di fondo,
+una media sulla verticale o un bin non superficiale.
+Non trattare automaticamente una misura puntuale come corrente
+effettiva percepita dalle onde.
+
+LIVELLO MARINO
+- livello osservato;
+- datum verticale;
+- marea prevista, se disponibile;
+- residuo osservato–previsto solo con datum e tempi compatibili.
+
+ALTRI PARAMETRI
+Recupera temperatura, pressione atmosferica e altre variabili
+pertinenti quando disponibili nei medesimi prodotti.
+Non espandere la ricerca indiscriminatamente.
+
+BATIMETRIA
+- inventario dei rilievi vicini alla data;
+- date/ore o intervallo del survey;
+- footprint o copertura delle linee;
+- datum orizzontale e verticale;
+- metodo, risoluzione e incertezza dichiarata.
+
+Il download dei rilievi deve essere opzionale e limitato alla zona
+necessaria. Non sostituire automaticamente i rilievi con GEBCO.
+
+7. ASSOCIAZIONE TEMPORALE
+
+Per ciascuno strumento/prodotto conserva:
+- osservazione precedente;
+- osservazione successiva;
+- osservazione più vicina che supera il QC richiesto;
+- timestamp originale;
+- inizio/fine del burst o intervallo di media, quando disponibili;
+- offset firmato:
+  sensor_time - acquisition_time;
+- distanza temporale dall’intervallo osservativo, se noto.
+
+Distingui una misura istantanea da uno spettro ottenuto mediando
+un burst lungo.
+
+Usa tolleranze configurabili per famiglia di prodotto, dichiarate
+prima della query. Non presentarle come limiti fisici universali.
+
+Non effettuare interpolazione per default.
+Se abilitata:
+- conserva entrambi gli estremi;
+- applica un limite al gap;
+- usa il trattamento circolare per le direzioni;
+- etichetta il risultato come interpolato.
+
+Una misura fuori tolleranza può essere conservata come contesto,
+ma non deve alimentare i parametri rappresentativi dell’evento.
+
+Non usare il riferimento obsoleto Waverider per riempire una riga AWAC.
+
+8. DISTANZE SPAZIALI
+
+Calcola separatamente:
+- distanza geodetica sensore–centro footprint;
+- distanza minima sensore–poligono footprint;
+- sensore dentro/fuori footprint;
+- distanza sensore–centro ROI, se presente;
+- distanza minima sensore–poligono ROI;
+- sensore dentro/fuori ROI;
+- bearing orientato sensore→ROI o sensore→centro footprint.
+
+Un sensore interno ha distanza minima dal poligono pari a zero:
+questo non significa che coincida con il centro o con la ROI.
+
+Per i rilievi:
+- intersezione con footprint/ROI;
+- copertura reale, se ricostruibile;
+- distanza dalle linee/punti misurati.
+
+Non considerare l’intero bounding box di un survey come fondale rilevato.
+
+Non interpretare la sola distanza come prova di rappresentatività.
+Non applicare Snell o altre correzioni automatiche boa→ROI.
+
+9. SPETTRI E QUANTITÀ DERIVATE
+
+Conserva i dati originali e le maschere per variabile.
+Calcola la completezza congiunta solo sulle quantità effettivamente richieste.
+
+Gestisci:
+- frequenze e numero di bin variabili;
+- fill value specifici;
+- bin mancanti;
+- larghezze originali o ricostruite, chiaramente distinte;
+- convenzioni “from” e “toward”;
+- gradi veri e convenzioni locali.
+
+Non integrare attraverso bande mancanti come se fossero misurate.
+Non trasformare missing in zero.
+
+Se ricavi Hm0, periodi o direzioni da uno spettro, riporta:
+- formula;
+- banda integrata;
+- copertura valida;
+- differenza rispetto al parametro pubblicato.
+
+Non associare automaticamente Tp alla direzione media dell’intero spettro.
+Produci, quando possibile, direzione e spread della stessa banda dominante.
+Conserva gli spettri anche quando la sintesi in una singola banda
+non è affidabile.
+
+Non generare una distribuzione direzionale unica dai soli momenti
+senza dichiarare metodo e ambiguità della ricostruzione.
+
+10. CACHE, RETE E RIPRESA
+
+Implementa:
+- cache persistente dei payload;
+- registro delle richieste;
+- timeout;
+- rate limiting;
+- retry limitati per errori transitori;
+- gestione Retry-After;
+- cache dei fallimenti con scadenza;
+- ripresa senza riscaricare payload già verificati;
+- controllo del budget prima e durante il trasferimento.
+
+Distingui:
+- dato recuperato;
+- dato fuori tolleranza;
+- QC fallito;
+- dato assente secondo la fonte;
+- prodotto non supportato;
+- errore HTTP;
+- timeout;
+- autenticazione necessaria;
+- ricerca incompleta per budget.
+
+Un 404 di un percorso non dimostra assenza globale del dato.
+
+Per questa implementazione è autorizzata una nuova tranche di verifica:
+massimo 40 transazioni HTTP e 100 MiB complessivi.
+Conta redirect, retry e richieste dei client OPeNDAP.
+Riusa prima le cache esistenti.
+Nessun download SAR.
+
+11. OUTPUT
+
+Per ogni acquisizione salva:
+- riepilogo leggibile;
+- tabella lunga osservazioni per strumento/prodotto;
+- tabella delle distanze;
+- inventario e coperture;
+- spettri e profili in NetCDF o formato equivalente documentato;
+- mappa footprint, ROI e sensori con nord e scala;
+- grafici temporali con istante SAR e intervalli osservativi;
+- grafici degli spettri e dei profili disponibili;
+- manifest con fonti, versioni, configurazione e hash.
+
+Nel riepilogo separa:
+A. misure originali;
+B. quantità calcolate;
+C. assunzioni;
+D. informazioni mancanti.
+
+Non costruire un singolo “stato del mare della tile” mischiando
+strumenti senza esplicitare la scelta.
+Mostra confronti fra strumenti contemporanei.
+
+La mappa deve distinguere footprint di catalogo e supporto SAR valido:
+quest’ultimo resta non verificato in assenza dei metadati necessari.
+
+12. VERIFICA
+
+Usa come casi di regressione:
+- COSMO 2098202, 2021-10-13T22:45:03Z;
+- TDX-1, record 11 del CSV allegato,
+  timestamp di catalogo 2021-10-13T23:00:15.669Z;
+- i due casi Block30 con Waverider obsoleta e AWAC contemporaneo.
+
+Per TDX conserva la semantica “timestamp di catalogo”:
+non dichiararlo centro dell’apertura senza verifica.
+
+Aggiungi test mirati per:
+- timezone e offset firmati;
+- misure precedenti/successive e intervalli di media;
+- conversione from/toward e media circolare;
+- QC e missing per variabile;
+- spettri a griglia variabile e bande mancanti;
+- distanze punto–poligono, punti interni e ordine lon/lat;
+- posizioni storiche;
+- riferimenti obsoleti;
+- cache, ripresa, budget e protezione dei segreti.
+
+Mantieni i test ordinari offline con fixture.
+Esegui separatamente le verifiche reali degli endpoint.
+Esegui la suite completa e verifica gli artefatti congelati pertinenti.
+
+13. CONSEGNA
+
+Usa il prossimo numero di blocco libero.
+Consegna libreria riutilizzabile, CLI, configurazione di esempio,
+documentazione e risultati delle verifiche.
+Aggiorna WORKLOG e checkpoint.
+
+La conclusione deve indicare:
+- prodotti realmente recuperabili;
+- strumenti e date verificati;
+- parametri mancanti o condizionati;
+- distanze temporali e spaziali;
+- consumo di rete;
+- test e hash.
+
+Fermati al termine del client e della sua verifica.
+Non avviare selezione definitiva, elaborazione SAR o inversione.

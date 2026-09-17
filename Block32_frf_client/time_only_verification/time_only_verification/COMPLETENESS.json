@@ -1,0 +1,85 @@
+[
+  {
+    "instrument_id": "FRF:waverider-17m",
+    "family": "waves",
+    "required_variables": [
+      "waveHs",
+      "waveTp",
+      "waveMeanDirectionPeakFrequency"
+    ],
+    "valid_fractions": {
+      "waveHs": 1.0,
+      "waveTp": 1.0,
+      "waveMeanDirectionPeakFrequency": null
+    },
+    "joint_all_requested_valid": false,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  },
+  {
+    "instrument_id": "FRF:awac-11m",
+    "family": "waves",
+    "required_variables": [
+      "waveHs",
+      "waveTp",
+      "waveMeanDirectionPeakFrequency"
+    ],
+    "valid_fractions": {
+      "waveHs": 1.0,
+      "waveTp": 1.0,
+      "waveMeanDirectionPeakFrequency": null
+    },
+    "joint_all_requested_valid": false,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  },
+  {
+    "instrument_id": "FRF:8m-array",
+    "family": "waves",
+    "required_variables": [
+      "waveHs",
+      "waveTp",
+      "waveMeanDirectionPeakFrequency"
+    ],
+    "valid_fractions": {
+      "waveHs": 1.0,
+      "waveTp": 1.0,
+      "waveMeanDirectionPeakFrequency": null
+    },
+    "joint_all_requested_valid": false,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  },
+  {
+    "instrument_id": "FRF:waverider-26m",
+    "family": "waves",
+    "required_variables": [
+      "waveHs",
+      "waveTp",
+      "waveMeanDirectionPeakFrequency"
+    ],
+    "valid_fractions": {
+      "waveHs": 1.0,
+      "waveTp": 1.0,
+      "waveMeanDirectionPeakFrequency": null
+    },
+    "joint_all_requested_valid": false,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  },
+  {
+    "instrument_id": "FRF:awac-11m",
+    "family": "currents",
+    "required_variables": [
+      "currentEast",
+      "currentNorth"
+    ],
+    "valid_fractions": {
+      "currentEast": 1.0,
+      "currentNorth": 1.0
+    },
+    "joint_all_requested_valid": true,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  }
+]

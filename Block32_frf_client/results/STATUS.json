@@ -1,0 +1,39 @@
+{
+  "errors": [
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202106.nc",
+      "family": "waves",
+      "instrument": "awac-11m",
+      "month": "202106",
+      "status": "transport_error",
+      "detail": "FetchError"
+    },
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202106.nc",
+      "family": "wind",
+      "instrument": "derived",
+      "month": "202106",
+      "status": "incomplete_budget_cache_not_available",
+      "detail": "FetchError"
+    },
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202106.nc",
+      "family": "water_level",
+      "instrument": "eopNoaaTide",
+      "month": "202106",
+      "status": "incomplete_budget_cache_not_available",
+      "detail": "FetchError"
+    }
+  ],
+  "network": {
+    "transactions": 40,
+    "bytes": 2412291,
+    "max_transactions": 40,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-17T17:05:33.353298+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed"
+  },
+  "no_radar_access": true,
+  "mode": "offline",
+  "event_representative_state": "not mixed across instruments"
+}

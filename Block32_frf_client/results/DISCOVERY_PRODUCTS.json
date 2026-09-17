@@ -1,0 +1,458 @@
+{
+  "currents": {
+    "references": [
+      {
+        "name": "2008",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2008/catalog.xml"
+      },
+      {
+        "name": "2009",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2009/catalog.xml"
+      },
+      {
+        "name": "2010",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2010/catalog.xml"
+      },
+      {
+        "name": "2011",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2011/catalog.xml"
+      },
+      {
+        "name": "2012",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2012/catalog.xml"
+      },
+      {
+        "name": "2013",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2013/catalog.xml"
+      },
+      {
+        "name": "2014",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2014/catalog.xml"
+      },
+      {
+        "name": "2015",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2015/catalog.xml"
+      },
+      {
+        "name": "2016",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2016/catalog.xml"
+      },
+      {
+        "name": "2017",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2017/catalog.xml"
+      },
+      {
+        "name": "2018",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2018/catalog.xml"
+      },
+      {
+        "name": "2019",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2019/catalog.xml"
+      },
+      {
+        "name": "2020",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2020/catalog.xml"
+      },
+      {
+        "name": "2021",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2021/catalog.xml"
+      },
+      {
+        "name": "2022",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2022/catalog.xml"
+      },
+      {
+        "name": "2023",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2023/catalog.xml"
+      },
+      {
+        "name": "2025",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2025/catalog.xml"
+      },
+      {
+        "name": "2026",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/2026/catalog.xml"
+      }
+    ],
+    "products": [
+      {
+        "name": "awac-11m.ncml",
+        "url_path": "frf/oceanography/currents/awac-11m/awac-11m.ncml",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/awac-11m.ncml",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/oceanography/currents/awac-11m/awac-11m.ncml",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/oceanography/currents/awac-11m/awac-11m.ncml",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/oceanography/currents/awac-11m/awac-11m.ncml",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/oceanography/currents/awac-11m/awac-11m.ncml",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/oceanography/currents/awac-11m/awac-11m.ncml",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/oceanography/currents/awac-11m/awac-11m.ncml"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/catalog.xml"
+      }
+    ],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  },
+  "water_level": {
+    "references": [
+      {
+        "name": "1992",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/1992/catalog.xml"
+      },
+      {
+        "name": "1993",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/1993/catalog.xml"
+      },
+      {
+        "name": "1994",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/1994/catalog.xml"
+      },
+      {
+        "name": "1995",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/1995/catalog.xml"
+      },
+      {
+        "name": "1996",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/1996/catalog.xml"
+      },
+      {
+        "name": "1997",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/1997/catalog.xml"
+      },
+      {
+        "name": "1998",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/1998/catalog.xml"
+      },
+      {
+        "name": "1999",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/1999/catalog.xml"
+      },
+      {
+        "name": "2000",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2000/catalog.xml"
+      },
+      {
+        "name": "2001",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2001/catalog.xml"
+      },
+      {
+        "name": "2002",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2002/catalog.xml"
+      },
+      {
+        "name": "2003",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2003/catalog.xml"
+      },
+      {
+        "name": "2004",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2004/catalog.xml"
+      },
+      {
+        "name": "2005",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2005/catalog.xml"
+      },
+      {
+        "name": "2006",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2006/catalog.xml"
+      },
+      {
+        "name": "2007",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2007/catalog.xml"
+      },
+      {
+        "name": "2008",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2008/catalog.xml"
+      },
+      {
+        "name": "2009",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2009/catalog.xml"
+      },
+      {
+        "name": "2014",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2014/catalog.xml"
+      },
+      {
+        "name": "2015",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/2015/catalog.xml"
+      }
+    ],
+    "products": [
+      {
+        "name": "601.ncml",
+        "url_path": "frf/oceanography/waterlevel/601/601.ncml",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/601/601.ncml",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/oceanography/waterlevel/601/601.ncml",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/oceanography/waterlevel/601/601.ncml",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/oceanography/waterlevel/601/601.ncml",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/oceanography/waterlevel/601/601.ncml",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/oceanography/waterlevel/601/601.ncml",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/oceanography/waterlevel/601/601.ncml"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/catalog.xml"
+      }
+    ],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  },
+  "wind": {
+    "references": [
+      {
+        "name": "1981",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1981/catalog.xml"
+      },
+      {
+        "name": "1982",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1982/catalog.xml"
+      },
+      {
+        "name": "1983",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1983/catalog.xml"
+      },
+      {
+        "name": "1984",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1984/catalog.xml"
+      },
+      {
+        "name": "1985",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1985/catalog.xml"
+      },
+      {
+        "name": "1986",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1986/catalog.xml"
+      },
+      {
+        "name": "1987",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1987/catalog.xml"
+      },
+      {
+        "name": "1988",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1988/catalog.xml"
+      },
+      {
+        "name": "1989",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1989/catalog.xml"
+      },
+      {
+        "name": "1990",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1990/catalog.xml"
+      },
+      {
+        "name": "1991",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1991/catalog.xml"
+      },
+      {
+        "name": "1992",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1992/catalog.xml"
+      },
+      {
+        "name": "1993",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1993/catalog.xml"
+      },
+      {
+        "name": "1994",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1994/catalog.xml"
+      },
+      {
+        "name": "1995",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1995/catalog.xml"
+      },
+      {
+        "name": "1996",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1996/catalog.xml"
+      },
+      {
+        "name": "1997",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1997/catalog.xml"
+      },
+      {
+        "name": "1998",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1998/catalog.xml"
+      },
+      {
+        "name": "1999",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/1999/catalog.xml"
+      },
+      {
+        "name": "2000",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2000/catalog.xml"
+      },
+      {
+        "name": "2001",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2001/catalog.xml"
+      },
+      {
+        "name": "2002",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2002/catalog.xml"
+      },
+      {
+        "name": "2003",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2003/catalog.xml"
+      },
+      {
+        "name": "2004",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2004/catalog.xml"
+      },
+      {
+        "name": "2005",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2005/catalog.xml"
+      },
+      {
+        "name": "2006",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2006/catalog.xml"
+      },
+      {
+        "name": "2007",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2007/catalog.xml"
+      },
+      {
+        "name": "2008",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2008/catalog.xml"
+      },
+      {
+        "name": "2009",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2009/catalog.xml"
+      },
+      {
+        "name": "2010",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2010/catalog.xml"
+      },
+      {
+        "name": "2011",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2011/catalog.xml"
+      },
+      {
+        "name": "2012",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2012/catalog.xml"
+      },
+      {
+        "name": "2013",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2013/catalog.xml"
+      },
+      {
+        "name": "2014",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2014/catalog.xml"
+      },
+      {
+        "name": "2015",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2015/catalog.xml"
+      },
+      {
+        "name": "2016",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2016/catalog.xml"
+      },
+      {
+        "name": "2017",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2017/catalog.xml"
+      },
+      {
+        "name": "2018",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2018/catalog.xml"
+      },
+      {
+        "name": "2019",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2019/catalog.xml"
+      },
+      {
+        "name": "2020",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2020/catalog.xml"
+      },
+      {
+        "name": "2021",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2021/catalog.xml"
+      },
+      {
+        "name": "2022",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2022/catalog.xml"
+      },
+      {
+        "name": "2023",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2023/catalog.xml"
+      },
+      {
+        "name": "2024",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2024/catalog.xml"
+      },
+      {
+        "name": "2025",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2025/catalog.xml"
+      },
+      {
+        "name": "2026",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/2026/catalog.xml"
+      }
+    ],
+    "products": [
+      {
+        "name": "derived.ncml",
+        "url_path": "frf/meteorology/wind/derived/derived.ncml",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/derived.ncml",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/meteorology/wind/derived/derived.ncml",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/meteorology/wind/derived/derived.ncml",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/meteorology/wind/derived/derived.ncml",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/meteorology/wind/derived/derived.ncml",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/meteorology/wind/derived/derived.ncml",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/meteorology/wind/derived/derived.ncml"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/catalog.xml"
+      }
+    ],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  },
+  "bathymetry": {
+    "references": [
+      {
+        "name": "data",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml"
+      }
+    ],
+    "products": [
+      {
+        "name": "surveyTransects.ncml",
+        "url_path": "frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/catalog.xml"
+      }
+    ],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  }
+}

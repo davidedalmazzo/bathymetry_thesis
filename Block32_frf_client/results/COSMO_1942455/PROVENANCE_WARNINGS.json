@@ -1,0 +1,14 @@
+[
+  {
+    "instrument": "awac-11m",
+    "family": "currents",
+    "status": "supplier_identifier_conflict",
+    "detail": "URL/title identify 11m AWAC but NC_GLOBAL.id identifies awac5m; both original fields retained, stable logical site ID uses discovered path"
+  },
+  {
+    "instrument": "awac-11m",
+    "family": "currents",
+    "status": "averaging_time_metadata_conflict",
+    "detail": "aveTime long_name says seconds, units says index; raw 900 retained, interval duration/anchor not automatically inferred"
+  }
+]

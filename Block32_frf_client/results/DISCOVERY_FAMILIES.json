@@ -1,0 +1,104 @@
+{
+  "oceanography": {
+    "references": [
+      {
+        "name": "ctd",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/ctd/catalog.xml"
+      },
+      {
+        "name": "currents",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/catalog.xml"
+      },
+      {
+        "name": "temperature",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/temperature/catalog.xml"
+      },
+      {
+        "name": "visibility",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/visibility/catalog.xml"
+      },
+      {
+        "name": "waterTemp",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterTemp/catalog.xml"
+      },
+      {
+        "name": "waterTempProfile",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterTempProfile/catalog.xml"
+      },
+      {
+        "name": "waterlevel",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/catalog.xml"
+      },
+      {
+        "name": "waveSurfTs",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waveSurfTs/catalog.xml"
+      },
+      {
+        "name": "waves",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waves/catalog.xml"
+      }
+    ],
+    "products": [],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  },
+  "meteorology": {
+    "references": [
+      {
+        "name": "barometer",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/barometer/catalog.xml"
+      },
+      {
+        "name": "metGauges",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/metGauges/catalog.xml"
+      },
+      {
+        "name": "wind",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/catalog.xml"
+      }
+    ],
+    "products": [],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  },
+  "geomorphology": {
+    "references": [
+      {
+        "name": "DEMs",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/DEMs/catalog.xml"
+      },
+      {
+        "name": "altimeter",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/altimeter/catalog.xml"
+      },
+      {
+        "name": "elevationTransects",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/catalog.xml"
+      }
+    ],
+    "products": [],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "acquisition_id": "time_only_verification",
+  "timestamp_utc": "2021-10-13T23:00:15.669000+00:00",
+  "footprint": null,
+  "roi": null,
+  "timestamp_semantics": "user_supplied_acquisition_timestamp_not_verified_aperture_center"
+}

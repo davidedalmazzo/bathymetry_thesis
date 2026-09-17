@@ -1,0 +1,122 @@
+{
+  "currents": {
+    "references": [
+      {
+        "name": "adop-3.5m",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/adop-3.5m/catalog.xml"
+      },
+      {
+        "name": "awac-11m",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-11m/catalog.xml"
+      },
+      {
+        "name": "awac-4.5m",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-4.5m/catalog.xml"
+      },
+      {
+        "name": "awac-5m",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-5m/catalog.xml"
+      },
+      {
+        "name": "awac-6m",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-6m/catalog.xml"
+      },
+      {
+        "name": "awac-8m",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-8m/catalog.xml"
+      },
+      {
+        "name": "awac-jpier-11m",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/awac-jpier-11m/catalog.xml"
+      },
+      {
+        "name": "sig769-300",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/sig769-300/catalog.xml"
+      },
+      {
+        "name": "sig940-300",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/sig940-300/catalog.xml"
+      },
+      {
+        "name": "sig940-400",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/sig940-400/catalog.xml"
+      },
+      {
+        "name": "sig940-600",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/currents/sig940-600/catalog.xml"
+      }
+    ],
+    "products": [],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  },
+  "water_level": {
+    "references": [
+      {
+        "name": "601",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/601/catalog.xml"
+      },
+      {
+        "name": "eopNoaaTide",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waterlevel/eopNoaaTide/catalog.xml"
+      }
+    ],
+    "products": [],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  },
+  "wind": {
+    "references": [
+      {
+        "name": "derived",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/meteorology/wind/derived/catalog.xml"
+      }
+    ],
+    "products": [],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  },
+  "bathymetry": {
+    "references": [
+      {
+        "name": "duneLidarTransect",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/duneLidarTransect/catalog.xml"
+      },
+      {
+        "name": "survey",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/catalog.xml"
+      }
+    ],
+    "products": [],
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+      "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+      "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+      "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+      "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+      "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+      "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+    }
+  }
+}

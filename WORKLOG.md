@@ -1,5 +1,24 @@
 # Work log
 
+## 2026-09-17 — Block32 mission-neutral FRF observation client
+
+- Read task/repository instructions, frozen Block30 code/cache/tests/notes and original Block31 EOWEB record 11. Created next unused block32, strict adapters and reusable library/CLI, preserving all frozen inputs/results.
+- Reused scalar Block30 parser; extended inline scalars/ND GRID data and validated shapes/maps. Added per-variable masks/QC associations, historical-position conflict/deployment checks, WGS84 polygon/ROI distances, spectra/profile JSON tensors, plots and manifests. Public anonymous endpoint discovery, verified TLS, no radar/browser/login bypass.
+- Created persistent 40 HTTP/100 MiB tranche before first request. Verified official root/family/instrument/year/service metadata and event subsets. Reused 86 unique logged legacy payloads after SHA256/newline verification. Final consumption 40 transactions/2,412,291 bytes, including one partial failed AWAC June spectral stream (1,048,576 bytes); previous historical cumulative consumption non determinabile, not zero.
+- Corrected supplier NaN / NumPy boolean JSON serialization offline. Fixed early bare-DAP URL logging '=' canonicalization via original cache-key SHA proof. No payload or Block30 rewrite. Final dossiers/inventory/time-only CLI reprocessing cached/offline, no new HTTP; new partial-error logging retains bytes explicitly.
+- October Waverider/AWAC 62×72 spectra + moments/QC, published Hs/Tp/peak-band direction, EOP winds, AWAC profiles and preliminary NOAA levels recovered. June contemporary AWAC bulk retained independently of stale Waverider, plus current profiles. Missing June wave QC/spectra/wind/level and detailed survey date/datum/method/coverage explicitly incomplete at budget exhaustion; survey download opt-in, no bounding-box coverage inference/GEBCO.
+- TDX timestamp exactly 2021-10-13T23:00:15.669Z, catalogue not aperture center. Waverider outside TDX footprint ~690 m from edge/~3707 m centroid; source nominal coordinate conflicts 24/46 m propagated. No automatic direction/height/depth/interpolation correction or mixing a tile state.
+- Final full suite 269 passed in 23.00 s (24 new offline tests). Frozen audit163 files zero mismatches; Block4 SAR-only golden SHA unchanged. REPORT/TEST_REPORT/CHECKPOINT32 and manifests record scopes, limits and hashes. Stop client verification; no SAR processing/inversion/selection/commit/push.
+
+## 2026-09-16 — Block30 FRF conditions execution
+
+- Executed smoke, October 2021 waverider-17m subset and full no-argument run with the thesis interpreter. Initial proxy refusal diagnosed; public FRF transport used only with approved escalation.
+- ASCII parser/monthly naming verified; batched available scalar variables, cached payloads/provenance and corrected missing-value/error handling. Verified awac-8m catalog covers only 2007–2014, not target years.
+- Full run produced 72 conditions and 18 gate rows, 79 requests / ~3.5 MB; final repeat entirely cached, zero new requests. Scene CSV SHA256 unchanged, no radar touched.
+- Measured true-north MET from-direction used for propagation and axial range mismatch, no assumed 250 degrees or directional corrections. October scene: Hs 1.108 m, Tp 9.547 s, mean from 59.255 degrees, phi 40.2 degrees, +15 min.
+- No nearest-any-instrument sample exceeds 60 min; selected waverider-17m is stale for 1941935 (-29066.8 min) and 1942455 (-29784.8 min). These rows explicitly diagnostic only / temporally unusable; nearest AWAC offsets +3.2/+5.2 min, no automatic substitution.
+- Final complete suite: 245 passed in 20.61 s. Corrections/limits in Block30_duck_csk_preflight/FRF_EXECUTION_NOTES.md. No commit/push, no frozen-block modification.
+
 All paths below are under `D:\Dati Tesi\Umbra` unless an input is explicitly
 identified as read-only. Times use Europe/Rome.
 
@@ -667,3 +686,117 @@ modified.
   evaluable. Existing Vandenberg GEC/ROI geography was audited read-only and the
   Block15K development-stress-test classification remains frozen.
 - Stop at CHECKPOINT_22. Candidate 1 is not recommended for full download.
+
+## 2026-09-15 — Block23 candidate-2 metadata preflight
+
+- Audited only frozen Block21 finalist 2. Public STAC and vendor metadata verify
+  UUID, Umbra-10, spotlight, right-looking, VV and a 15.101624 s collect span.
+- Corrected a critical availability interpretation: STAC declares private SICD
+  and CPHD assets, but neither exists in the frozen public S3 listing. Both
+  declared filenames and normalized public aliases return HTTP 404.
+- Therefore SICD processed aperture, Timeline/IPP, local Grid Row range axis,
+  valid-data support, CPHD channels/PVP and TxTime span remain unverified. No
+  pixel or signal array was read.
+- Reused the frozen NDBC 46268 band without network access. Vendor center
+  azimuth gives only a provisional ~71.82° axial mismatch; it is not substituted
+  for the unavailable SICD local range geometry.
+- Preserved the Block22 ROI audit: ~181.6 m mask-coast clearance and only ~90.1 m
+  STAC-footprint clearance. No unsupported ROI optimization was attempted.
+- Classified candidate 2 as non-priority under the present public access path.
+  Stop at CHECKPOINT_23 without download, Block20, other candidates or commit.
+
+## 2026-09-16 — Block27 representativity continuation, offline checkpoint
+
+- Preserved the pre-existing Block27 queue/report and added versioned outputs
+  under `Block27_frequency_query/representativity_v1` (23 scenes, four zones).
+- Reused verbatim Block21 ROI polygons; all 23 are contained in their catalog
+  footprints. This is not verification of SICD valid-data/pixel support.
+- Revalidated the four Block18 42084 raw hashes and reparsed all arrays with
+  individual masks, joint masks and reconstructed bin widths offline. Queue
+  target 42094, actual reference 42084 and nearest-any-instrument GRBL1 are
+  distinct; instrument capability cannot be inferred from proximity.
+- Inventoried Block18 (392 bins/four scenes) and Block21 (388 bins/five newly
+  recovered scenes) separately. Produced four preliminary coastline maps and
+  exposure diagnostics without Snell correction or unsupported site labels.
+- Three focused offline regression tests passed. No new remote requests or
+  downloaded bytes. Remote recovery is explicitly guarded pending reconciliation
+  of the already-started phase's cumulative request/byte budget: no ledger or
+  payload/state for that phase was found in Blocks25–27. Partial status and
+  missing geographic/operator/event-model evidence are recorded, not called
+  completed validation. No SAR/AIS/Vandenberg/sweep/inversion/commit/push.
+
+## 2026-09-16 — Block27 independent authorized recovery tranche
+
+- User explicitly replaced the unknown previous remainder with a new 30 HTTP /
+  20 MiB tranche. Historical spending is `consumo storico non determinabile`,
+  numeric historical counters null; no old cumulative-limit compliance claim.
+- Preserved v1 and resumed its reconciled table in `representativity_v2`;
+  initialized the ledger before network and persisted live budget counters.
+- Included 13 sandbox proxy-refused attempts in the new tranche; authorized
+  direct transport then recovered station 51209 DDS/DAS/time and the event's
+  full 64-bin density/directional spectrum (Tp 13.3333 s, +502.2 s offset).
+- Reused all four verified 42084 references locally. NDBC spectral endpoints
+  for 42087/41052/42094 returned 404; alternative spectral availability remains
+  unresolved, not globally absent. Local CDIP 246 products cover 2019 only,
+  outside queued 2025–2026 acquisitions; do not transfer DWR-M3 deployment.
+- Retrieved station pages 42087/41052 and marine model documentation. Operator
+  and adequate Tobago coastline attempts failed; no new event-model subset.
+- Stop at the actual new tranche limit: 30 transactions, 1,183,903 bytes;
+  five spectra hash-verified/reparsed offline identically, 18 scenes without an
+  established event per-bin reference. Versioned report/maps/state/manifest
+  record geographic, sensor and model limits. No SAR or automatic expansion.
+
+## 2026-09-16 — Block28 circumscribed Samoa complex-metadata preflight
+
+- Reused representativity_v2 Samoa spectrum/masks, station, ROI and temporal
+  association offline. No new wave reference or expanded scene search.
+- Initialized a separate persistent 20 HTTP / 20 MiB / 5 MiB-response budget.
+  Initial pertinent HEAD failed at sandbox proxy localhost:9; diagnosed before
+  other endpoints and used only approved external network execution thereafter.
+- Verified public SICD 2,551,099,862 bytes and extracted only NITF main-header /
+  DES XML spans, never image-segment bytes. UUID, collector, polarization HH
+  and processing metadata agree with official STAC.
+- Complete cached prefix listing revealed public CPHD 25,234,138,880 bytes
+  omitted from the normalized STAC inventory. Read only its header/XML and
+  three 8-byte PVP TxTimes. Source catalog and frozen results stay unchanged.
+- SICD processed aperture 2.975363044 s is separate from catalog 3.6 s,
+  Timeline 3.700802707 s and CPHD first-last TxTime 3.691770699 s.
+- ROI fully contained in sampled SICD ValidData with ~494 m geographic margin;
+  surface assumptions and HAE sensitivity documented. Distinguished horizontal
+  Grid Row, local LOS and surface coordinate push-forward in squinted PFA:
+  frozen buoy-band mismatch ~39.10° to LOS versus ~77.86° to surface Row.
+- Saved three nominal look plans with approximate resolution, no cycle/dwell/
+  phase gate and no independence claim. No small advertised official preview;
+  wave structure remains unevaluable.
+- 26 focused tests passed. Actual budget 16 transactions/59,642 bytes, including
+  proxy failure and one repeated vendor JSON 404 at technical resume; all
+  attempts retained and failure caching corrected. Stop CHECKPOINT_28, decision
+  B: Doppler–PVP/PFA timing and oblique-support leakage need verification before
+  phase interpretation. No automatic download/formation/real frequency, no
+  AIS/Block20/inversion/Vandenberg, no commit/push.
+
+## 2026-09-16 — Block29 Samoa PFA Doppler–time gate
+
+- Created the first unused block identifier/directory, captured commit and
+  pre-existing dirty worktree, froze config/protocol before new PVP retrieval.
+- Reused Block28 SICD/PFA/CPHD XML and ROI/reference provenance. Recovered only
+  the complete compact PVP block: 8,165,216 bytes, 21,716×376-byte records.
+  Phase A uses 3 transactions including one proxy-refused HEAD; no signal.
+- Added reusable structured-PVP/PFA projection/kernel/Jacobian routines.
+  Parsed big-endian float and integer fields using official CPHD dtype. Full
+  time continuity and SIGNAL validity pass; phase-plane PVP/metadata angle
+  and independent ARP comparisons are excellent (~1e-8/~3.5e-7 s equivalent).
+- Explicitly inverted angle atan2(k_col,k_row), with Row-frequency coupling,
+  scene-interaction time and geometric output-k versus time-weight cases.
+  Increasing Col bands have reverse chronology, verified numerically.
+- Frozen Gate A is CONDITIONAL: combined local-gradient center sensitivity
+  0.392281 s exceeds 0.05 s; 19/90 local kernels not identifiable under the
+  assumed support. Local/global PFA transport is unresolved; shifts may be
+  deterministic focus-phase/carrier effects, not an ocean/SAR timing bias.
+- SICD download remains NOT STARTED. No alternate formation or actual phase
+  retrieval. Small actual-mask-geometry synthetics are explicitly image-domain
+  diagnostics, not physical SAR simulation or real-data leakage validation.
+- Complete thesis-interpreter suite: 242 passed, zero failed/skipped. Saved
+  versioned report/gate/kernels/figures/phase-A-and-B states/test report/manifest;
+  stop CHECKPOINT_29. No q/inversion/dwell sweep/CPHD signal/Vandenberg/AIS,
+  no commit/push, no frozen artifact/hash rewrite.
