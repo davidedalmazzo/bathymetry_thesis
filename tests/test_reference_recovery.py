@@ -80,8 +80,8 @@ def test_timestamp_is_selected_from_coordinate_not_stale_index():
 
 def test_actual_recovered_payloads_parse_offline_with_dynamic_shape():
     from pathlib import Path
-    das=Path("Block18_reference_recovery/payloads_raw/42084w9999.das").read_text()
-    files=sorted(Path("Block18_reference_recovery/payloads_raw").glob("*_spectrum.ascii"))
+    das=Path('umbra/selezione_scene/Block18_reference_recovery/payloads_raw/42084w9999.das').read_text()
+    files=sorted(Path('umbra/selezione_scene/Block18_reference_recovery/payloads_raw').glob("*_spectrum.ascii"))
     assert len(files)==4
     for path in files:
         n=normalize_payload(path.read_text(),das,observation_epoch_s=0)

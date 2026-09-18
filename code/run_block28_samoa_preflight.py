@@ -1,5 +1,6 @@
 """Bounded Samoa SICD metadata preflight: exact headers/DES, never image bytes."""
 from __future__ import annotations
+from repository_paths import resolve_historical
 import argparse,csv,hashlib,json,math,os,sys,gzip,struct
 from datetime import datetime,timezone
 from pathlib import Path
@@ -13,7 +14,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'code'))
 from run_block22_geographic_preflight import atomic,dump,table
 from run_block16a_scene_selection import sicd_metadata_from_bytes,parse_kv_header,xml_text,xml_nodes
 from umbra_sar.geographic_preflight import local_projection,validate_partial_response
-BASE=ROOT/'Block28_Samoa_metadata_preflight';ID='1424a3c8-7285-4210-b965-069514c13a2a'
+BASE=ROOT/'umbra/samoa/Block28_Samoa_metadata_preflight';ID='1424a3c8-7285-4210-b965-069514c13a2a'
 ENDPOINT='https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/'
 def read(p):
     with p.open(encoding='utf-8-sig',newline='') as f:return list(csv.DictReader(f))
@@ -22,12 +23,12 @@ def axial(a,b):return abs((a-b+90)%180-90)
 def initialize():
     if (BASE/'STATE.json').exists():return
     BASE.mkdir(parents=True,exist_ok=True)
-    a=next(r for r in read(ROOT/'Block21_frequency_validation_selector/BLOCK21_ALL_CANDIDATES.csv') if r['collect_id']==ID)
-    r=next(r for r in read(ROOT/'Block27_frequency_query/representativity_v2/ACQUISITION_AUDIT.csv') if r['collect_id']==ID)
+    a=next(r for r in read(ROOT/'umbra/selezione_scene/Block21_frequency_validation_selector/BLOCK21_ALL_CANDIDATES.csv') if r['collect_id']==ID)
+    r=next(r for r in read(ROOT/'umbra/selezione_scene/Block27_frequency_query/representativity_v2/ACQUISITION_AUDIT.csv') if r['collect_id']==ID)
     dump(BASE/'LOCAL_INPUTS.json',{'catalog':a,'reference_and_roi':r})
-    sources=[ROOT/'Block21_frequency_validation_selector/BLOCK21_ALL_CANDIDATES.csv',
-        ROOT/'Block27_frequency_query/representativity_v2/ACQUISITION_AUDIT.csv',ROOT/r['payload_path'],
-        ROOT/f'Block27_frequency_query/representativity_v2/normalized/{ID}.json']
+    sources=[ROOT/'umbra/selezione_scene/Block21_frequency_validation_selector/BLOCK21_ALL_CANDIDATES.csv',
+        ROOT/'umbra/selezione_scene/Block27_frequency_query/representativity_v2/ACQUISITION_AUDIT.csv',resolve_historical(r['payload_path'], ROOT),
+        resolve_historical(f'Block27_frequency_query/representativity_v2/normalized/{ID}.json', ROOT)]
     dump(BASE/'INPUT_PROVENANCE.json',[{'path':str(p.relative_to(ROOT)),'bytes':p.stat().st_size,'sha256':sha(p)} for p in sources])
     dump(BASE/'STATE.json',{'tranche':'Samoa_complex_metadata_only','transactions':0,'total_bytes':0,
         'max_transactions':20,'max_total_bytes':20*1024**2,'max_response_bytes':5*1024**2,
@@ -143,7 +144,7 @@ def remote():
                 start=data.find(b'<SICD');stop=data.find(b'</SICD>',start)
                 if start>=0 and stop>start:atomic(xmlpath,data[start:stop+7]);break
     if not xmlpath.exists():raise RuntimeError('No SICD XML recovered')
-    listing=ROOT/'Block16_scene_selection/catalog_snapshots/20260913T231747Z/listing_s3.csv.gz'
+    listing=ROOT/'umbra/selezione_scene/Block16_scene_selection/catalog_snapshots/20260913T231747Z/listing_s3.csv.gz'
     with gzip.open(listing,'rt') as f:public=[r for r in csv.DictReader(f) if r['key'].startswith(prefix)]
     dump(BASE/'PUBLIC_LISTING_INVENTORY.json',{'source':str(listing.relative_to(ROOT)),'sha256':sha(listing),'assets':public,
         'normalization_discrepancy':'CPHD exists in public listing but is omitted from normalized STAC asset inventory' if any(r['key'].endswith('.cphd') for r in public) and asset('CPHD') is None else None})

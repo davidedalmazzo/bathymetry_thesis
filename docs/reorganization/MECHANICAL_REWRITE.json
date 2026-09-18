@@ -1,0 +1,382 @@
+[
+  {
+    "path": "code/make_gec_overview.py",
+    "literals": 1
+  },
+  {
+    "path": "code/select_vandenberg_rois.py",
+    "literals": 1
+  },
+  {
+    "path": "code/cphd_doppler_time_mapping.py",
+    "literals": 1
+  },
+  {
+    "path": "code/form_nominal_6s_sublooks.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block3_sublooks.py",
+    "literals": 1
+  },
+  {
+    "path": "code/plot_nominal_doppler_windows.py",
+    "literals": 1
+  },
+  {
+    "path": "code/generate_checkpoint3_report.py",
+    "literals": 2
+  },
+  {
+    "path": "code/plan_block4_sliding_looks.py",
+    "literals": 1
+  },
+  {
+    "path": "code/reconcile_range_axis.py",
+    "literals": 1
+  },
+  {
+    "path": "code/form_block4_sliding_looks.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block4_phase_timeseries.py",
+    "literals": 1
+  },
+  {
+    "path": "code/compare_block4_external_ndbc.py",
+    "literals": 1
+  },
+  {
+    "path": "code/generate_checkpoint4_report.py",
+    "literals": 2
+  },
+  {
+    "path": "code/freeze_block5_inputs.py",
+    "literals": 3
+  },
+  {
+    "path": "code/analyze_block5_ndbc_spectrum.py",
+    "literals": 3
+  },
+  {
+    "path": "code/analyze_block5_dispersion_diagnostic.py",
+    "literals": 3
+  },
+  {
+    "path": "code/analyze_block5_phase_theory.py",
+    "literals": 2
+  },
+  {
+    "path": "code/form_block5_width_sensitivity.py",
+    "literals": 1
+  },
+  {
+    "path": "code/finalize_block5_width_formation.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block5_sar_sensitivity.py",
+    "literals": 1
+  },
+  {
+    "path": "code/generate_checkpoint5_report.py",
+    "literals": 3
+  },
+  {
+    "path": "code/analyze_block6_phase_slope_map.py",
+    "literals": 1
+  },
+  {
+    "path": "code/plan_block7_support.py",
+    "literals": 1
+  },
+  {
+    "path": "code/form_block7_enlarged_looks.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block7_spatial_convergence.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block7_bathy_residual.py",
+    "literals": 1
+  },
+  {
+    "path": "code/evaluate_block7_dispersion_gate.py",
+    "literals": 1
+  },
+  {
+    "path": "code/crawl_umbra_open_catalog.py",
+    "literals": 1
+  },
+  {
+    "path": "code/list_umbra_s3_objects.py",
+    "literals": 1
+  },
+  {
+    "path": "code/build_umbra_all_from_s3.py",
+    "literals": 1
+  },
+  {
+    "path": "code/screen_block8_marine_geometry.py",
+    "literals": 1
+  },
+  {
+    "path": "code/query_block8_wave_model.py",
+    "literals": 1
+  },
+  {
+    "path": "code/match_block8_ndbc_stations.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block8_ndbc_short_spectra.py",
+    "literals": 1
+  },
+  {
+    "path": "code/finalize_block8_checkpoint.py",
+    "literals": 2
+  },
+  {
+    "path": "code/analyze_block9_synthetic_validation.py",
+    "literals": 5
+  },
+  {
+    "path": "code/analyze_block10_ocean_sar_forward.py",
+    "literals": 10
+  },
+  {
+    "path": "code/analyze_block11_energy_centroid.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block11_pairwise_omega.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block12_phase_slope.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block12_dispersion.py",
+    "literals": 1
+  },
+  {
+    "path": "code/form_block12_backprojection.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block13_sliding.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block15b_frequency.py",
+    "literals": 5
+  },
+  {
+    "path": "code/analyze_block15e_robustness.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block15f_look_geometry.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block15g_separability.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block15h_spatial_resolution.py",
+    "literals": 2
+  },
+  {
+    "path": "code/analyze_block15i_discriminant.py",
+    "literals": 1
+  },
+  {
+    "path": "code/analyze_block15j_multilag_increment.py",
+    "literals": 7
+  },
+  {
+    "path": "code/analyze_block15k_path_closure.py",
+    "literals": 16
+  },
+  {
+    "path": "code/run_block16a_scene_selection.py",
+    "literals": 5
+  },
+  {
+    "path": "code/run_block17_selector_consolidation.py",
+    "literals": 3
+  },
+  {
+    "path": "code/build_block17_manifest.py",
+    "literals": 20
+  },
+  {
+    "path": "code/run_block18_reference_recovery.py",
+    "literals": 2
+  },
+  {
+    "path": "code/verify_block18_offline.py",
+    "literals": 1
+  },
+  {
+    "path": "code/reconcile_block18_local_payloads.py",
+    "literals": 2
+  },
+  {
+    "path": "code/finalize_block18.py",
+    "literals": 11
+  },
+  {
+    "path": "code/run_block21_frequency_selector.py",
+    "literals": 7
+  },
+  {
+    "path": "code/run_block22_geographic_preflight.py",
+    "literals": 9
+  },
+  {
+    "path": "code/run_block23_candidate2_preflight.py",
+    "literals": 3
+  },
+  {
+    "path": "code/run_block27_representativity.py",
+    "literals": 11
+  },
+  {
+    "path": "code/run_block27_tranche2.py",
+    "literals": 2
+  },
+  {
+    "path": "code/run_block28_samoa_preflight.py",
+    "literals": 6
+  },
+  {
+    "path": "code/run_block29_samoa_mapping.py",
+    "literals": 1
+  },
+  {
+    "path": "code/run_block30_frf_conditions.py",
+    "literals": 2
+  },
+  {
+    "path": "code/run_block31_tsx_catalogue_query.py",
+    "literals": 1
+  },
+  {
+    "path": "code/run_block32_frf_client.py",
+    "literals": 7
+  },
+  {
+    "path": "code/audit_block32_frf_delivery.py",
+    "literals": 2
+  },
+  {
+    "path": "code/run_block33_frf_verification.py",
+    "literals": 11
+  },
+  {
+    "path": "code/run_block34_frf_operational.py",
+    "literals": 10
+  },
+  {
+    "path": "code/frf_client/delivery.py",
+    "literals": 3
+  },
+  {
+    "path": "tests/test_subaperture.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/generate_test_report.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_block5_artifacts.py",
+    "literals": 2
+  },
+  {
+    "path": "tests/test_block6_artifacts.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_block7_artifacts.py",
+    "literals": 2
+  },
+  {
+    "path": "tests/test_block9_synthetic_validation.py",
+    "literals": 2
+  },
+  {
+    "path": "tests/test_block10_ocean_sar_forward.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_frequency_comparison.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_contamination_diagnostic.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_static_offset_diagnostic.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_spatial_resolution.py",
+    "literals": 2
+  },
+  {
+    "path": "tests/test_multilag_increment.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_formation_path_comparison.py",
+    "literals": 2
+  },
+  {
+    "path": "tests/test_scene_selection.py",
+    "literals": 2
+  },
+  {
+    "path": "tests/test_selector_consolidation.py",
+    "literals": 3
+  },
+  {
+    "path": "tests/test_reference_recovery.py",
+    "literals": 2
+  },
+  {
+    "path": "tests/test_frequency_validation_selector.py",
+    "literals": 3
+  },
+  {
+    "path": "tests/test_geographic_preflight.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_candidate2_preflight.py",
+    "literals": 4
+  },
+  {
+    "path": "tests/test_block27_representativity.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_block27_tranche2.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_block28_samoa_preflight.py",
+    "literals": 1
+  },
+  {
+    "path": "tests/test_frf_block33.py",
+    "literals": 1
+  }
+]

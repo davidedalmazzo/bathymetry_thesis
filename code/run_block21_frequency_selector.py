@@ -26,11 +26,11 @@ from umbra_sar.reference_recovery import (HTTPBudget, VARIABLES, fetch_limited,
     nearest_time_index, normalize_payload, parse_ascii_vector, parse_dds_dimensions)
 from umbra_sar.selector_consolidation import ndbc_archive_plan
 
-BASE=ROOT/"Block21_frequency_validation_selector"
-SNAP=ROOT/"Block16_scene_selection/catalog_snapshots/20260913T231747Z/normalized_acquisitions.csv"
-ENRICHED=ROOT/"Block16_scene_selection/BLOCK16A_ALL_CANDIDATES.csv"
-LAND=ROOT/"Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.shp"
-STATIONS=ROOT/"Block16_scene_selection/cache/ndbc_stationmetadata.xml"
+BASE=ROOT/'umbra/selezione_scene/Block21_frequency_validation_selector'
+SNAP=ROOT/'umbra/selezione_scene/Block16_scene_selection/catalog_snapshots/20260913T231747Z/normalized_acquisitions.csv'
+ENRICHED=ROOT/'umbra/selezione_scene/Block16_scene_selection/BLOCK16A_ALL_CANDIDATES.csv'
+LAND=ROOT/'umbra/validazione/Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.shp'
+STATIONS=ROOT/'umbra/selezione_scene/Block16_scene_selection/cache/ndbc_stationmetadata.xml'
 CONFIG=BASE/"BLOCK21_CONFIG.json"; CONFIG_HASH=BASE/"BLOCK21_CONFIG.sha256"
 VANDENBERG="9d8283d8-550d-4435-899f-5483d2c1abcc"
 R=6371008.8
@@ -187,7 +187,7 @@ def offline():
     write_csv(BASE/"BLOCK21_ALL_CANDIDATES.csv",all_rows); write_csv(BASE/"BLOCK21_ROI_METRICS.csv",rois)
     write_csv(BASE/"BLOCK21_REFERENCE_AVAILABILITY.csv",refs); write_csv(BASE/"BLOCK21_TEMPORAL_SCENARIOS.csv",temporal)
     write_csv(BASE/"BLOCK21_REMOTE_QUEUE.csv",queue); atomic(BASE/"BLOCK21_REMOTE_QUEUE.sha256",(sha(BASE/"BLOCK21_REMOTE_QUEUE.csv")+"  BLOCK21_REMOTE_QUEUE.csv\n").encode())
-    variants=ROOT/"Block16_scene_selection/BLOCK16A_PROCESSING_VARIANTS.csv"
+    variants=ROOT/'umbra/selezione_scene/Block16_scene_selection/BLOCK16A_PROCESSING_VARIANTS.csv'
     historical=[{"selector":"Block8","role":"historical_not_input","primary_bias":"long_dwell/coastal validation shortlist"},{"selector":"Block16A","role":"metadata_enrichment_reused","primary_bias":"dwell/cycles/sea/long-energy gates removed in Block21"},{"selector":"Block17","role":"historical_not_input","primary_bias":"nearshore/bathymetry"},{"selector":"Block18","role":"four measured payloads reused","primary_bias":"per-bin recovery"},{"selector":"Block19","role":"excluded_as_input","primary_bias":"manual exploratory bathymetry screen"},{"selector":"Block20","role":"not_audited_not_input","primary_bias":"explicitly outside task"}]
     write_csv(BASE/"BLOCK21_HISTORICAL_COMPARISON.csv",historical)
     write_json(BASE/"BLOCK21_INPUT_INVENTORY.json",{"config_sha256":cfg_hash,"snapshot":{"path":str(SNAP.relative_to(ROOT)),"sha256":sha(SNAP),"rows":len(source)},"enrichment":{"path":str(ENRICHED.relative_to(ROOT)),"sha256":sha(ENRICHED)},"processing_variants":{"path":str(variants.relative_to(ROOT)),"sha256":sha(variants)},"land_mask":{"path":str(LAND.relative_to(ROOT)),"sha256":sha(LAND),"role":"preliminary coarse land mask"},"station_metadata":{"path":str(STATIONS.relative_to(ROOT)),"sha256":sha(STATIONS)},"Block19_used":False,"Block20_audited_or_used":False})
@@ -279,7 +279,7 @@ def finalize():
         card=f"# Candidate {rank} — {r['collect_name']}\n\n- Collect: `{r['collect_id']}` at {r['datetime_utc']}\n- Complex path: SICD={r['has_sicd']}, CPHD={r['has_cphd']}; catalog duration {r['catalog_duration_s']} s (descriptor, not gate).\n- Internal-water ROI: {r.get('roi_square_size_m')} m square; edge clearance {float(r.get('footprint_edge_distance_m') or 0):.1f} m; coast status `{r.get('coast_distance_status')}`.\n- Measured reference: NDBC `{ref.get('station_id')}`, {float(ref.get('station_distance_km') or 0):.2f} km, offset {float(ref.get('observation_offset_s') or 0):.0f} s.\n- Dominant same-band period: {float(r.get('reference_peak_period_s') or 0):.2f} s; propagation-to direction: {r.get('reference_propagation_to_deg') or 'unknown'} deg.\n- Frequency readiness: **{r['frequency_validation_readiness']}**. Bathymetry is not a selection gate.\n\n![map](figures/candidate_{rank}_{r['collect_id']}.png)\n"
         atomic(BASE/f"BLOCK21_CANDIDATE_{rank}.md",card.encode())
     write_csv(BASE/"BLOCK21_SHORTLIST.csv",shortlist)
-    source_variants=ROOT/"Block16_scene_selection/BLOCK16A_PROCESSING_VARIANTS.csv"
+    source_variants=ROOT/'umbra/selezione_scene/Block16_scene_selection/BLOCK16A_PROCESSING_VARIANTS.csv'
     keys={r["acquisition_key"] for r in shortlist}; vr=[x for x in read_csv(source_variants) if x.get("acquisition_key") in keys]
     write_csv(BASE/"BLOCK21_PROCESSING_VARIANTS.csv",vr)
     counts={label:sum(r["primary_classification"]==label for r in updated) for label in cfg["labels"]}

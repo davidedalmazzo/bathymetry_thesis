@@ -59,6 +59,6 @@ def test_threshold_is_frozen_from_calibration_not_evaluation_scores():
 def test_seed_split_is_declared_disjoint_in_frozen_config():
     import json
     from pathlib import Path
-    cfg = json.loads((Path(__file__).parents[1] / 'Vandenberg/results/analysis_block15/BLOCK15J_CONFIG.json').read_text())
+    cfg = json.loads((Path(__file__).parents[1] / 'umbra/Vandenberg/results/analysis_block15/BLOCK15J_CONFIG.json').read_text())
     seed = cfg['simulation']['seeds']
     assert seed['calibration'] != seed['evaluation']

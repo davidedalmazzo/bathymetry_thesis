@@ -1,4 +1,5 @@
 """Frozen Block15E design; OU nulls and one purged partition. No radar reads."""
+from repository_paths import resolve_historical
 import os
 for name in ('OPENBLAS_NUM_THREADS','OMP_NUM_THREADS','MKL_NUM_THREADS'):os.environ[name]='1'
 import argparse,csv,gzip,json,hashlib
@@ -10,7 +11,7 @@ import numpy as np
 from umbra_sar.static_offset_diagnostic import compare_models
 from umbra_sar.correlated_offset_validation import exponential_noise,blocked_partition,alternative_compare
 
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'Vandenberg/results/analysis_block15'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'umbra/Vandenberg/results/analysis_block15'
 CFG=OUT/'BLOCK15E_CONFIG.json'
 
 
@@ -38,7 +39,7 @@ def prepare():
     guards=dict(old['guard_sha256']);guards.update(old['source_sha256'])
     for p in OUT.glob('BLOCK15D_*'):guards[p.relative_to(ROOT).as_posix()]=digest(p)
     guards['code/plot_block15d_static_offset.py']=digest(ROOT/'code/plot_block15d_static_offset.py')
-    for p,h in guards.items():assert digest(ROOT/p)==h,p
+    for p,h in guards.items():assert digest(resolve_historical(p, ROOT))==h,p
     parts=blocked_partition();support=[dict(**p,train_span_s=float(np.ptp(t[p['train']])),
         minimum_train_test_gap_s=float(min(abs(t[i]-t[j]) for i in p['train'] for j in p['test']))) for p in parts]
     cfg=dict(created_utc=datetime.now(timezone.utc).isoformat(),fitting=old['fitting'],time_s=t.tolist(),bins=list(data),
@@ -51,13 +52,13 @@ def prepare():
         alternative_partition=support,alternative_gate='Same parameter gates; >=6/8 improved (75%), >=10% total gain and both edge folds positive. Continuous values always retained.',
         statistics='Gain quantiles; all folds improve; gain>=real; gain>=real AND all folds improve; stable; repeated/stable; gain>=real AND all folds improve AND stable. No exclusions from denominators; errors explicit.',
         allocation='Both partitions on every synthetic replicate, 4x300 primary +4x100 sensitivity =1600 series; no further partition search.',
-        guard_sha256=guards,source_sha256={p:digest(ROOT/p) for p in ['code/analyze_block15e_robustness.py','code/umbra_sar/correlated_offset_validation.py','tests/test_correlated_offset_validation.py']})
+        guard_sha256=guards,source_sha256={p:digest(resolve_historical(p, ROOT)) for p in ['code/analyze_block15e_robustness.py','code/umbra_sar/correlated_offset_validation.py','tests/test_correlated_offset_validation.py']})
     write('BLOCK15E_CONFIG.json',cfg)
     print(json.dumps(dict(noise=cfg['noise'],support=support),indent=2))
 
 
 def verify(cfg):
-    for p,h in cfg['guard_sha256'].items():assert digest(ROOT/p)==h,p
+    for p,h in cfg['guard_sha256'].items():assert digest(resolve_historical(p, ROOT))==h,p
 
 
 def compact(obj):

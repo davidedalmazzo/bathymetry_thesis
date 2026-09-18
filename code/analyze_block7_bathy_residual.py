@@ -14,7 +14,7 @@ from rasterio.merge import merge
 
 
 ROOT=Path(__file__).resolve().parents[1]
-V=ROOT/"Vandenberg"; OUT=V/"results"/"analysis_block7"; B=V/"bathymetry"
+V=ROOT/'umbra/Vandenberg'; OUT=V/"results"/"analysis_block7"; B=V/"bathymetry"
 BEARING=79.8357237; ORIGINAL=np.array([716210.6102416331,3827777.0937420740])
 FROZEN_T=17.902230457045317; FROZEN_SLOPE=-0.3509722055168202
 

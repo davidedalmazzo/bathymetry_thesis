@@ -312,7 +312,7 @@ def test_audit_distinguishes_unavailable_unresolved_mismatch(tmp_path):
     path=tmp_path/'small.txt';path.write_bytes(b'fixture')
     entries=[{'path':path.relative_to(ROOT).as_posix(),'sha256':digest(b'fixture')},
              {'path':path.relative_to(ROOT).as_posix(),'sha256':digest(b'other')},
-             {'path':'Block33_frf_offline_correction/nonexistent','sha256':'x'},
+             {'path':'duck_frf/Block33_frf_offline_correction/nonexistent','sha256':'x'},
              {'path':'C:/old_project/missing','sha256':'x'}]
     assert [r['status'] for r in audit_entries(entries)]==['hash_verified','mismatch','file_unavailable','unresolved_path']
 

@@ -12,7 +12,7 @@ import run_block28_samoa_preflight as b28
 from run_block22_geographic_preflight import dump,atomic,table
 from run_block27_representativity import serial
 from umbra_sar.pfa_time_mapping import *
-BASE=ROOT/'Block29_Samoa_mapping_trial';B28=b28.BASE
+BASE=ROOT/'umbra/samoa/Block29_Samoa_mapping_trial';B28=b28.BASE
 
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def init():

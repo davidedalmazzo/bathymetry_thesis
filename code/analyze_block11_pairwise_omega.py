@@ -42,7 +42,7 @@ from typing import Any
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 
 
 def overlap_fraction(band_a: tuple[int, int], band_b: tuple[int, int]) -> float:

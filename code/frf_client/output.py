@@ -245,7 +245,7 @@ def dossier(acquisition, products, inventory, errors, config, output, transport,
     for p in sorted(base.rglob("*")):
         if p.is_file() and p.name != "MANIFEST.json":
             manifest["artifacts"].append({"path":p.resolve().relative_to(Path.cwd().resolve()).as_posix(),"bytes":p.stat().st_size,"sha256":digest(p.read_bytes())})
-    for p in sorted(Path("code/frf_client").glob("*.py")) + [Path("code/run_block32_frf_client.py"),Path("code/run_block30_frf_conditions.py")]:
+    for p in sorted(Path("code/frf_client").glob("*.py")) + [Path("code/run_block32_frf_client.py"),Path("code/run_block30_frf_conditions.py"),Path("code/repository_paths.py"),Path("repository_paths.json")]:
         manifest["code_sources"].append({"path":str(p),"sha256":digest(p.read_bytes())})
     save_json(base/"MANIFEST.json",manifest)
 

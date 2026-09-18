@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 
 
 def f(value: float, digits: int = 3) -> str:
@@ -250,7 +250,7 @@ def main() -> None:
             "",
         ]
     )
-    output = ROOT / "CHECKPOINT_3.md"
+    output = ROOT / 'docs/checkpoints/CHECKPOINT_3.md'
     output.write_text("\n".join(lines), encoding="utf-8")
     print(output)
 

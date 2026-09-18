@@ -13,10 +13,10 @@ from umbra_sar.physical_identification import required_depth_for_period_waveleng
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = ROOT / "Vandenberg/results/analysis_block5"
+OUTPUT_DIR = ROOT / 'umbra/Vandenberg/results/analysis_block5'
 FROZEN_PATH = OUTPUT_DIR / "BLOCK5_FROZEN_INPUTS.json"
-ETOPO_POINT = ROOT / "Vandenberg/external/ETOPO2022_ROI_NEARSHORE_POINT.csv"
-ETOPO_NEIGHBORHOOD = ROOT / "Vandenberg/external/ETOPO2022_ROI_NEARSHORE_5X5.csv"
+ETOPO_POINT = ROOT / 'umbra/Vandenberg/external/ETOPO2022_ROI_NEARSHORE_POINT.csv'
+ETOPO_NEIGHBORHOOD = ROOT / 'umbra/Vandenberg/external/ETOPO2022_ROI_NEARSHORE_5X5.csv'
 G = 9.80665
 
 

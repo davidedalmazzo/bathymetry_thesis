@@ -18,8 +18,8 @@ from run_block16a_scene_selection import read_esri_polygon_shapefile,sicd_metada
 from umbra_sar.geographic_preflight import geographic_metrics,local_projection,scale_bar_length,affine_pixel_to_lonlat,validate_partial_response
 from umbra_sar.reference_recovery import HTTPBudget,fetch_limited
 
-BASE=ROOT/"Block22_geographic_visual_preflight"; B21=ROOT/"Block21_frequency_validation_selector"
-LAND=ROOT/"Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.shp"
+BASE=ROOT/'umbra/selezione_scene/Block22_geographic_visual_preflight'; B21=ROOT/'umbra/selezione_scene/Block21_frequency_validation_selector'
+LAND=ROOT/'umbra/validazione/Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.shp'
 CFG=BASE/"BLOCK22_CONFIG.json"; CFGHASH=BASE/"BLOCK22_CONFIG.sha256"
 
 def rows(path):
@@ -82,15 +82,15 @@ def offline():
   plot_scene(s["rank"],s,roi,fp,land,coast,st,m,False,alts);plot_scene(s["rank"],s,roi,fp,land,coast,st,m,True,alts)
  table(BASE/"BLOCK22_DISTANCES.csv",dist);table(BASE/"BLOCK22_ROI_ALTERNATIVES.csv",altrows)
  # Vandenberg: use its verified GEC affine, original ROI footprints and archived buoy.
- gr=json.loads((ROOT/"Vandenberg/results/diagnostics/GEC_georeference.json").read_text());rois=json.loads((ROOT/"Vandenberg/roi/ROIS.json").read_text());mat=gr["model_transformation_tag_34264"]
- img=np.asarray(Image.open(ROOT/"Vandenberg/results/diagnostics/GEC_overview_grid.png"));fig,ax=plt.subplots(figsize=(8,8));ax.imshow(img)
+ gr=json.loads((ROOT/'umbra/Vandenberg/results/diagnostics/GEC_georeference.json').read_text());rois=json.loads((ROOT/'umbra/Vandenberg/roi/ROIS.json').read_text());mat=gr["model_transformation_tag_34264"]
+ img=np.asarray(Image.open(ROOT/'umbra/Vandenberg/results/diagnostics/GEC_overview_grid.png'));fig,ax=plt.subplots(figsize=(8,8));ax.imshow(img)
  colors={"nearshore":"cyan","offshore":"lime","land_control":"orange"}
  for name,x in rois["rois"].items():
   corners=np.array(x["corner_gec_col_row"])/10;ax.add_patch(MplPolygon(corners,fill=False,edgecolor=colors[name],lw=2,label=name))
  ax.add_patch(Rectangle((200,1400),700,200,fill=False,edgecolor="magenta",lw=2,ls="--",label="visual seed c2000–9000,r14000–16000"));ax.legend();ax.set_title("Vandenberg GEC overview — archived ROIs and visual seed");fig.tight_layout();fig.savefig(BASE/"maps/vandenberg_gec_roi_support_audit.png",dpi=160);plt.close(fig)
  scene_center=gr["corners_lonlat"]["center"];buoy=(-120.76899719238281,34.45100021362305);fwd,_=local_projection(scene_center[0],scene_center[1]);sc=transform(fwd,Point(*scene_center));bp=transform(fwd,Point(*buoy));fig,ax=plt.subplots(figsize=(7,6));ax.scatter(sc.x,sc.y,label="Vandenberg scene",s=80);ax.scatter(bp.x,bp.y,marker="*",s=140,label="NDBC 46218");ax.plot([sc.x,bp.x],[sc.y,bp.y],":");ax.set_aspect("equal");ax.grid();ax.legend();ax.set_xlabel("local east [m]");ax.set_ylabel("local north [m]");ax.set_title("Vandenberg scene–buoy regional relation");fig.tight_layout();fig.savefig(BASE/"maps/vandenberg_scene_buoy_regional.png",dpi=160);plt.close(fig)
  dump(BASE/"BLOCK22_VANDENBERG_AUDIT.json",{"georeference_source":str(Path(gr["source"]).name),"overview_scale_source_pixels_per_pixel":10,"initial_rois_overlaid":list(rois["rois"]),"later_support":"Block7/Block15K 1440x650 m rotated common ground ROI; exact GEC polygon provenance not archived, therefore not drawn as exact polygon","visual_seed_source_box_col_row":[2000,14000,9000,16000],"visual_seed_lonlat_corners":[affine_pixel_to_lonlat(mat,2000,14000),affine_pixel_to_lonlat(mat,9000,16000)],"classification_unchanged":"development stress test; physical frequency not identifiable","new_SAR_extraction":False})
- inv={"block21_manifest_sha256":digest(B21/"BLOCK21_DELIVERY_MANIFEST.json"),"block21_config_sha256":digest(B21/"BLOCK21_CONFIG.json"),"natural_earth_shp_sha256":digest(LAND),"local_images":[{"path":str(p.relative_to(ROOT)),"bytes":p.stat().st_size} for p in (ROOT/"Vandenberg").rglob("*") if p.is_file() and p.suffix.lower() in {".png",".tif"}],"start_commit":"a9dc43da5995b26007bf8b0e146876fc469ecf2b","preexisting_untracked":["COMMIT_MSG_BLOCK17_18.txt","PUSH_BLOCK17_18.bat","five Block15 B/C/D result files"]}
+ inv={"block21_manifest_sha256":digest(B21/"BLOCK21_DELIVERY_MANIFEST.json"),"block21_config_sha256":digest(B21/"BLOCK21_CONFIG.json"),"natural_earth_shp_sha256":digest(LAND),"local_images":[{"path":str(p.relative_to(ROOT)),"bytes":p.stat().st_size} for p in (ROOT/'umbra/Vandenberg').rglob("*") if p.is_file() and p.suffix.lower() in {".png",".tif"}],"start_commit":"a9dc43da5995b26007bf8b0e146876fc469ecf2b","preexisting_untracked":['scripts/legacy_git/COMMIT_MSG_BLOCK17_18.txt','scripts/legacy_git/PUSH_BLOCK17_18.bat',"five Block15 B/C/D result files"]}
  dump(BASE/"BLOCK22_INPUT_INVENTORY.json",inv);dump(BASE/"BLOCK22_OFFLINE_SUMMARY.json",{"finalists":5,"distance_rows":len(dist),"all_rois_fully_in_mask_water":all(x["roi_fully_in_mask_water"] for x in dist),"candidate1_alternatives":len(altrows),"visual_status_other_finalists":"no local official raster; structure not inspected","Block21_modified":False,"Block20_audited":False})
 
 def remote():

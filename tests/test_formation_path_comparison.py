@@ -37,6 +37,6 @@ def test_gate_classification_and_abstention_are_deterministic():
     m={'cycles':1,'r2':.99,'max_step':.4,'msc':.8,'sign_ok':True,'separation_delta_eff':1.35,'formation_stable':False,'persistent_resolved':False,'external_compatible':False,'independent_radial_elements':2,'omega_k_resolved':False,'current_constrained':False}
     assert classify_gates(m,th)=={'level1':True,'level2':False,'level3':False,'mandatory_abstention':True}
 def test_calibration_and_outputs_are_separate_from_frozen_values():
-    cfg=json.loads((Path(__file__).parents[1]/'Vandenberg/results/analysis_block15/BLOCK15K_CONFIG.json').read_text()); assert cfg['status']=='protocol frozen before matched calculations' and 'frozen_values' in cfg
+    cfg=json.loads((Path(__file__).parents[1]/'umbra/Vandenberg/results/analysis_block15/BLOCK15K_CONFIG.json').read_text()); assert cfg['status']=='protocol frozen before matched calculations' and 'frozen_values' in cfg
 def test_prior_artifact_hash_guard():
-    root=Path(__file__).parents[1]; cfg=json.loads((root/'Vandenberg/results/analysis_block15/BLOCK15K_CONFIG.json').read_text()); assert verify_hashes(root,cfg['input_sha256'])==[]
+    root=Path(__file__).parents[1]; cfg=json.loads((root/'umbra/Vandenberg/results/analysis_block15/BLOCK15K_CONFIG.json').read_text()); assert verify_hashes(root,cfg['input_sha256'])==[]

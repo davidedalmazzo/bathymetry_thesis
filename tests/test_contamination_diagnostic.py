@@ -8,7 +8,7 @@ from umbra_sar.contamination_diagnostic import (
     patch_profiles,fit_three,grid_cases,
 )
 
-CFG=json.loads((Path(__file__).resolve().parents[1]/'Vandenberg/results/analysis_block15/BLOCK15B_CONFIG.json').read_text())
+CFG=json.loads((Path(__file__).resolve().parents[1]/'umbra/Vandenberg/results/analysis_block15/BLOCK15B_CONFIG.json').read_text())
 T=np.array(CFG['time_s'])
 
 

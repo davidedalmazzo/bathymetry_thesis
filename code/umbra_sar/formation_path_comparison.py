@@ -1,5 +1,6 @@
 """Deterministic helpers for the frozen Block15K SICD/BP comparison."""
 from __future__ import annotations
+from repository_paths import resolve_historical
 import hashlib
 from pathlib import Path
 import numpy as np
@@ -127,6 +128,6 @@ def classify_gates(metrics, thresholds):
 def verify_hashes(root, expected):
     bad=[]
     for rel,want in expected.items():
-        got=hashlib.sha256((Path(root)/rel).read_bytes()).hexdigest()
+        got=hashlib.sha256((resolve_historical(rel, Path(root))).read_bytes()).hexdigest()
         if got!=want: bad.append({'path':rel,'expected':want,'actual':got})
     return bad

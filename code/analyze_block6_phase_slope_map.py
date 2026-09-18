@@ -19,7 +19,7 @@ from umbra_sar.wave_analysis import local_coherent_phase_slope_map
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 OUTPUT = VANDENBERG / "results" / "analysis_block6"
 FROZEN_T_SAR_S = 17.902230457045317
 FROZEN_SLOPE_RAD_PER_S = -0.3509722055168202

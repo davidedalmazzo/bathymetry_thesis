@@ -1,11 +1,12 @@
 """Block15G compact synthetic two-wave separability; no real coefficient fit."""
+from repository_paths import resolve_historical
 import argparse,csv,json,hashlib
 from pathlib import Path
 from datetime import datetime,timezone
 import numpy as np
 from umbra_sar.two_component_separability import window_response,window_noise_cov,correlated_noise,fit_q,validate,block15d_folds
 from umbra_sar.look_transfer_geometry import finite_depth_omega,transfer_terms,unit
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'Vandenberg/results/analysis_block15';CFG=OUT/'BLOCK15G_CONFIG.json'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'umbra/Vandenberg/results/analysis_block15';CFG=OUT/'BLOCK15G_CONFIG.json'
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def save(p,x,overwrite=False):
  with Path(p).open('w' if overwrite else 'x') as f:json.dump(x,f,indent=2,default=lambda v:v.item() if isinstance(v,np.generic) else (_ for _ in ()).throw(TypeError(type(v).__name__)))
@@ -17,7 +18,7 @@ def setup():
   calibration=[dict(name='single_constant',kind='single',transfer='constant',replicates=12,tau=0.),dict(name='single_geometry',kind='single',transfer='geometry',replicates=12,tau=5.),dict(name='static_offset',kind='offset',transfer='geometry',replicates=12,tau=5.,offset_ratio=.5)],
   evaluation=[dict(name='stress_unresolved',kind='two',spatial_delta=.25,delta_s=.023,ratio=.7,phase=0.,tau=0.,replicates=12,physical=False),dict(name='stress_temporal',kind='two',spatial_delta=3.,delta_s=.138,ratio=.7,phase=1.57079632679,tau=0.,replicates=12,physical=False),dict(name='physical_overlap',kind='physical',spatial_delta=1.,ratio=.7,phase=0.,tau=5.,replicates=12,physical=True),dict(name='physical_separable',kind='physical',spatial_delta=6.,ratio=.7,phase=1.57079632679,tau=0.,replicates=12,physical=True),dict(name='physical_weak_persistent',kind='physical',spatial_delta=6.,ratio=.3,phase=0.,tau=5.,replicates=12,physical=True)],
   selection_rule='After separate calibration, threshold=max(0.10, empirical 95th percentile of Q2-vs-best(Q0,Q1) purged predictive gain across calibration; Q2 selected only above threshold and no boundary, no alternative grid minimum within 1% SSE, and |s1-s2|>0.02 rad/s. Recovery pair error <= min(0.03,0.25*true separation), labels interchangeable.',
-  guard_sha256=guards,source_sha256={p:sha(ROOT/p) for p in ['code/analyze_block15g_separability.py','code/umbra_sar/two_component_separability.py','tests/test_two_component_separability.py']})
+  guard_sha256=guards,source_sha256={p:sha(resolve_historical(p, ROOT)) for p in ['code/analyze_block15g_separability.py','code/umbra_sar/two_component_separability.py','tests/test_two_component_separability.py']})
  save(CFG,cfg)
 def hs(cfg,k_modes,omegas,which):
  geo=json.loads((OUT/'BLOCK15F_GEOMETRY.json').read_text());up=np.array(geo['up_ecf']);ax=np.array(geo['axis0_ecf']);ay=np.array(geo['axis1_ecf']);target=np.array(geo['target_ecf_m']);arr=[]

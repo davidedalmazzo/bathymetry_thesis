@@ -22,7 +22,7 @@ from umbra_sar.wave_analysis import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 OUTPUT = VANDENBERG / "results" / "analysis_block4"
 HALF_WIDTH = 64
 PATCH_RADIUS = 2

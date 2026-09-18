@@ -16,7 +16,7 @@ from run_block16a_scene_selection import parse_kv_header,xml_nodes,xml_text,sicd
 from umbra_sar.frequency_validation_selector import temporal_scenarios
 from umbra_sar.geographic_preflight import local_projection,scale_bar_length
 
-BASE=ROOT/"Block23_candidate2_metadata_preflight";B21=ROOT/"Block21_frequency_validation_selector";B22=ROOT/"Block22_geographic_visual_preflight"
+BASE=ROOT/'umbra/selezione_scene/Block23_candidate2_metadata_preflight';B21=ROOT/'umbra/selezione_scene/Block21_frequency_validation_selector';B22=ROOT/'umbra/selezione_scene/Block22_geographic_visual_preflight'
 CFG=BASE/"BLOCK23_CONFIG.json";CFGH=BASE/"BLOCK23_CONFIG.sha256";ENDPOINT="https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/"
 
 def digest(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()

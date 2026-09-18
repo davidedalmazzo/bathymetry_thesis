@@ -33,9 +33,9 @@ without private cache/radar/credentials; no claim of a clean published clone.
 ## Entry points
 
 ```powershell
-.\.venv-umbra-thesis\Scripts\python.exe code\run_block32_frf_client.py --mode inventory --input Block32_frf_client\REGRESSION_ACQUISITIONS.json
-.\.venv-umbra-thesis\Scripts\python.exe code\run_block32_frf_client.py --mode fetch --input Block32_frf_client\REGRESSION_ACQUISITIONS.json
-.\.venv-umbra-thesis\Scripts\python.exe code\run_block32_frf_client.py --mode offline --input Block32_frf_client\REGRESSION_ACQUISITIONS.json
+.\.venv-umbra-thesis\Scripts\python.exe code\run_block32_frf_client.py --mode inventory --input duck_frf/Block32_frf_client\REGRESSION_ACQUISITIONS.json
+.\.venv-umbra-thesis\Scripts\python.exe code\run_block32_frf_client.py --mode fetch --input duck_frf/Block32_frf_client\REGRESSION_ACQUISITIONS.json
+.\.venv-umbra-thesis\Scripts\python.exe code\run_block32_frf_client.py --mode offline --input duck_frf/Block32_frf_client\REGRESSION_ACQUISITIONS.json
 .\.venv-umbra-thesis\Scripts\python.exe code\run_block32_frf_client.py --mode offline --acquisition-id example --timestamp-utc 2021-10-13T22:45:03Z --output outputs\frf_time_only
 ```
 

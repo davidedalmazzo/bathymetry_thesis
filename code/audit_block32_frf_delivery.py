@@ -5,7 +5,7 @@ import platform
 from pathlib import Path
 from frf_client.transport import digest, save_json
 
-BASE=Path("Block32_frf_client")
+BASE=Path('duck_frf/Block32_frf_client')
 
 
 def main():
@@ -44,7 +44,7 @@ def main():
            "ledger_transaction_count_matches":endpoint["started_transactions"]==state["transactions"]}
     save_json(BASE/"DELIVERY_AUDIT.json",audit)
     sources=sorted(Path("code/frf_client").glob("*.py"))+[Path("code/run_block32_frf_client.py"),Path(__file__),Path("tests/test_frf_client.py"),Path("code/README_FRF_CLIENT.md")]
-    artifacts=[p for p in sorted(BASE.rglob("*")) if p.is_file() and "cache" not in p.parts and p.name!="DELIVERY_MANIFEST.json"]+[Path("CHECKPOINT_32.md")]
+    artifacts=[p for p in sorted(BASE.rglob("*")) if p.is_file() and "cache" not in p.parts and p.name!="DELIVERY_MANIFEST.json"]+[Path('docs/checkpoints/CHECKPOINT_32.md')]
     save_json(BASE/"DELIVERY_MANIFEST.json",{"python":platform.python_version(),"network":state,
         "artifacts":[{"path":str(p),"bytes":p.stat().st_size,"sha256":digest(p.read_bytes())} for p in artifacts if p.exists()],
         "code_sources":[{"path":str(p),"sha256":digest(p.read_bytes())} for p in sources]})

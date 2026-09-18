@@ -1,10 +1,11 @@
 """Block15I compact synthetic A (extended wave) vs B (persistent neighbor)."""
+from repository_paths import resolve_historical
 import argparse,csv,json,hashlib
 from pathlib import Path
 import numpy as np
 from umbra_sar.two_component_separability import correlated_noise,tukey
 from umbra_sar.frequency_comparison import reference_fit,estimate_circular
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'Vandenberg/results/analysis_block15';CFG=OUT/'BLOCK15I_CONFIG.json'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'umbra/Vandenberg/results/analysis_block15';CFG=OUT/'BLOCK15I_CONFIG.json'
 TEMPLATE_CACHE={}
 NOISE_CACHE={}
 def response(shape,q,k):
@@ -58,7 +59,7 @@ def row(cfg,fam,rep,seed,delta,ratio,axis):
  z,a,truth=synth(cfg,fam,rep,seed,delta,ratio,axis);t=np.array(cfg['times_s']);i=np.argmax(np.mean(abs(z)**2,axis=0));fit=reference_fit(z[:,i],t,16);circ=estimate_circular(z[:,i],t,(1,2,4,8),[-1,1]);gain,s=m1gain(z,t,a); amps=abs(z); corr=float(np.corrcoef(amps[:,i],np.mean(amps,axis=1))[0,1]); pred=(abs(corr)>=.85 and gain>=.1); err=None if truth is None else abs(fit['s_phi']-truth)/truth
  return dict(family=fam,replicate=rep,axis='radial' if axis==0 else 'tangential',separation_bins=delta,ratio=ratio,truth_s=truth,ols_s=fit['s_phi'],circular_s=circ['s_phi'],agreement=abs(fit['s_phi']-circ['s_phi']),r2=fit['r2'],phase_rmse=fit['rmse'],m1_gain=gain,amplitude_correlation=corr,persistent_score=pred,relative_slope_error=err,distorted_over_10pct=(err is not None and err>.1),frozen_criteria_pass=(fit['r2']>=.97 and circ['valid']))
 def run():
- cfg=json.loads(CFG.read_text());assert all(sha(ROOT/p)==h for p,h in cfg['guard_sha256'].items());rows=[]
+ cfg=json.loads(CFG.read_text());assert all(sha(resolve_historical(p, ROOT))==h for p,h in cfg['guard_sha256'].items());rows=[]
  for fam in cfg['calibration']['families']:
   for r in range(8):rows.append(dict(phase='calibration',**row(cfg,fam,r,cfg['noise']['seed_calibration'],2.223,.3 if r<4 else .7,0)))
  for fam in ['A','B_static','B_slow']:

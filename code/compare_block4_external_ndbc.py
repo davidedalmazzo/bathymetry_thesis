@@ -16,7 +16,7 @@ from umbra_sar.wave_analysis import axial_difference_deg
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 
 
 def sha256_file(path: Path) -> str:

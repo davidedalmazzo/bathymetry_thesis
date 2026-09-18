@@ -42,7 +42,7 @@ from umbra_sar.subaperture import (  # noqa: E402
 )
 
 
-SICD_XML = ROOT / "Vandenberg" / "metadata" / "SICD_METADATA.xml"
+SICD_XML = ROOT / 'umbra/Vandenberg' / "metadata" / "SICD_METADATA.xml"
 CPHD_DWELL_S = 22.540812513364376
 
 

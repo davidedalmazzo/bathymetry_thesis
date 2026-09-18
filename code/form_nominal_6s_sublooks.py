@@ -31,7 +31,7 @@ from umbra_sar.subaperture import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 
 
 def sha256_file(path: Path, block_size: int = 8 * 1024 * 1024) -> str:

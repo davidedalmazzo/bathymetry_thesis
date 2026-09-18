@@ -14,7 +14,7 @@ from umbra_sar.synthetic_validation import finite_depth_omega
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RESULTS = ROOT / "Block10_validation" / "results"
+RESULTS = ROOT / 'umbra/validazione/Block10_validation' / "results"
 
 
 def load_summary() -> dict:

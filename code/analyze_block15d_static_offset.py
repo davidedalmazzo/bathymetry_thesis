@@ -1,4 +1,5 @@
 """M0/M1 predictive diagnostics on a frozen set of BP12 spectral bins."""
+from repository_paths import resolve_historical
 import argparse
 import csv
 import json
@@ -70,9 +71,9 @@ def synthetic():
 
 def run():
     cfg=json.loads(CONFIG.read_text());assert (OUT/'BLOCK15D_SYNTHETIC.json').exists(),'Run synthetic controls first'
-    for p,h in cfg['guard_sha256'].items():assert digest(ROOT/p)==h,p
+    for p,h in cfg['guard_sha256'].items():assert digest(resolve_historical(p, ROOT))==h,p
     if (OUT/'BLOCK15D_RESULTS.json').exists():raise RuntimeError('Preserve existing outputs')
-    old=cfg['previous_config'];stackpath=ROOT/old['stack']['path']
+    old=cfg['previous_config'];stackpath=resolve_historical(old['stack']['path'], ROOT)
     assert stackpath.stat().st_size==old['stack']['bytes'] and stackpath.stat().st_mtime_ns==old['stack']['mtime_ns']
     stack=np.load(stackpath,mmap_mode='r');n,nr,nc=stack.shape;t=np.asarray(old['time_s'])
     window=tukey2d(nr,nc,.1);F=np.array([detrended_spectrum(abs(np.asarray(z))**2,window) for z in stack])
@@ -123,7 +124,7 @@ def run():
         synthetic_counts={case:{model:dict(Counter(r['result']['category'] for r in syn if r['case']==case and r['noise']==model)) for model in cfg['synthetic']['noise_models']} for case in cfg['synthetic']['cases']},
         note='Selected bins share pixels, spectral window and looks; neither bins nor folds are independent components/replicates. No corrected frequency.')
     write_json(OUT/'BLOCK15D_SUMMARY.json',summary)
-    for p,h in cfg['guard_sha256'].items():assert digest(ROOT/p)==h,p
+    for p,h in cfg['guard_sha256'].items():assert digest(resolve_historical(p, ROOT))==h,p
     print(json.dumps(dict(categories=summary['categories'],fixed=table[0]),indent=2))
 
 

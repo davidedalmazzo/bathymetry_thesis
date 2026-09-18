@@ -60,7 +60,7 @@ def test_pareto_front():
     assert pareto_front(rows,("a","b"))==[True,False,True]
 
 def test_config_frozen_and_no_forbidden_gates():
-    root=Path(__file__).resolve().parents[1]; cfg=json.loads((root/"Block21_frequency_validation_selector/BLOCK21_CONFIG.json").read_text())
+    root=Path(__file__).resolve().parents[1]; cfg=json.loads((root/'umbra/selezione_scene/Block21_frequency_validation_selector/BLOCK21_CONFIG.json').read_text())
     text=json.dumps(cfg)
     assert "minimum_dwell" not in text and "minimum_cycles" not in text
     assert cfg["bathymetry_role"].startswith("descriptive_secondary")
@@ -89,11 +89,11 @@ def test_http_budget_enforces_transaction_and_byte_limits():
 
 def test_block18_payloads_are_present_for_offline_reuse():
     root=Path(__file__).resolve().parents[1]
-    assert len(list((root/"Block18_reference_recovery/payloads_raw").glob("*_spectrum.ascii")))==4
+    assert len(list((root/'umbra/selezione_scene/Block18_reference_recovery/payloads_raw').glob("*_spectrum.ascii")))==4
 
 def test_frozen_config_digest_matches():
     import hashlib
-    root=Path(__file__).resolve().parents[1]; path=root/"Block21_frequency_validation_selector/BLOCK21_CONFIG.json"
+    root=Path(__file__).resolve().parents[1]; path=root/'umbra/selezione_scene/Block21_frequency_validation_selector/BLOCK21_CONFIG.json'
     assert hashlib.sha256(path.read_bytes()).hexdigest()==(path.with_suffix(".sha256").read_text().split()[0])
 
 def test_runner_uses_full_snapshot_and_explicit_offline_phase():

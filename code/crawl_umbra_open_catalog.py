@@ -18,7 +18,7 @@ from urllib.parse import urljoin
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / "Block8_validation"
+BASE = ROOT / 'umbra/validazione/Block8_validation'
 RAW = BASE / "catalog_raw"
 STAC_ROOT = "https://s3.us-west-2.amazonaws.com/umbra-open-data-catalog/stac/catalog.json"
 

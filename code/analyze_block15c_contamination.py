@@ -1,4 +1,5 @@
 """Frozen-design diagnostic Monte Carlo in intensity coefficient space only."""
+from repository_paths import resolve_historical
 import argparse
 import csv
 import itertools
@@ -119,7 +120,7 @@ def trial(case,sigma,noise_index,rep,cfg):
 
 def run():
     cfg=json.loads(CONFIG.read_text());old=cfg['inherited_Block15B']
-    for path,expected in cfg['guard_sha256'].items():assert digest(ROOT/path)==expected,path
+    for path,expected in cfg['guard_sha256'].items():assert digest(resolve_historical(path, ROOT))==expected,path
     target=OUT/'BLOCK15C_RESULTS.csv'
     if target.exists():raise RuntimeError('Preserve existing Block15C results; use explicit revision')
     total=cfg['totals']['all'];residuals={m:np.empty((total,n),np.float32) for m,n in [('A',32),('B',31),('C',113)]}
@@ -167,7 +168,7 @@ def run():
     np.savez_compressed(OUT/'BLOCK15C_RESIDUALS.npz',**residuals)
     write_json(OUT/'BLOCK15C_ANALYTIC_NOISELESS.json',analytic)
     write_json(OUT/'BLOCK15C_EXAMPLES.json',examples)
-    for path,expected in cfg['guard_sha256'].items():assert digest(ROOT/path)==expected,path
+    for path,expected in cfg['guard_sha256'].items():assert digest(resolve_historical(path, ROOT))==expected,path
     write_json(OUT/'BLOCK15C_RUN_MANIFEST.json',dict(generated_utc=datetime.now(timezone.utc).isoformat(),
         configuration_sha256=digest(CONFIG),completed_realizations=counter,elapsed_s=time.time()-start,
         source_sha256={p.relative_to(ROOT).as_posix():digest(p) for p in [Path(__file__),ROOT/'code/umbra_sar/contamination_diagnostic.py']},

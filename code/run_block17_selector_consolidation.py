@@ -13,8 +13,8 @@ from umbra_sar.selector_consolidation import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "Block17_selector_consolidation"
-B16 = ROOT / "Block16_scene_selection"
+OUT = ROOT / 'umbra/selezione_scene/Block17_selector_consolidation'
+B16 = ROOT / 'umbra/selezione_scene/Block16_scene_selection'
 
 
 def sha(path): return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -74,7 +74,7 @@ def main():
         "interpretation": "Representative-point clearance is not proof that the required wave-aligned ROI fits."
     })
 
-    times = np.asarray(json.loads((ROOT / "Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json").read_text())["look_times_s"])
+    times = np.asarray(json.loads((ROOT / 'umbra/Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json').read_text())["look_times_s"])
     scfg = config["synthetic"]; rng = np.random.default_rng(scfg["seed"]); synth=[]
     for eps in scfg["relative_widths"]:
         for legacy in (False, True):

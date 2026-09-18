@@ -34,7 +34,7 @@ from umbra_sar.subaperture import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SICD_XML = ROOT / "Vandenberg" / "metadata" / "SICD_METADATA.xml"
+SICD_XML = ROOT / 'umbra/Vandenberg' / "metadata" / "SICD_METADATA.xml"
 CPHD_DWELL_S = 22.540812513364376
 SICD_PROCESSED_APERTURE_S = 18.068061721230308
 

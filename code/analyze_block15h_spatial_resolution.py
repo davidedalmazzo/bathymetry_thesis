@@ -1,5 +1,6 @@
 """Block15H: BP12-only spatial-resolution audit; no new SAR formation."""
 from __future__ import annotations
+from repository_paths import resolve_historical
 import argparse, csv, hashlib, json
 from datetime import datetime, timezone
 from pathlib import Path
@@ -9,7 +10,7 @@ from umbra_sar.frequency_comparison import local_msc, reference_fit
 from umbra_sar.spatial_resolution import tukey_1d, window_2d, window_axis_metrics, kernel_overlap, count_local_maxima
 from umbra_sar.two_component_separability import window_response
 
-ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'Vandenberg/results/analysis_block15'; BP=ROOT/'Vandenberg/results/block12_backprojection'; CFG=OUT/'BLOCK15H_CONFIG.json'
+ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'umbra/Vandenberg/results/analysis_block15'; BP=ROOT/'umbra/Vandenberg/results/block12_backprojection'; CFG=OUT/'BLOCK15H_CONFIG.json'
 def sha(p): return hashlib.sha256(Path(p).read_bytes()).hexdigest()
 def clean(x):
  if isinstance(x,dict): return {k:clean(v) for k,v in x.items()}
@@ -28,7 +29,7 @@ def prepare():
  cfg=dict(created_utc=datetime.now(timezone.utc).isoformat(),scope='BP12 existing complex stack only; resolution audit, no frequency correction or Q2 real fit',stack=dict(path=str(stack.relative_to(ROOT)).replace('\\','/'),bytes=stack.stat().st_size,mtime_ns=stack.stat().st_mtime_ns,shape=list(a.shape),dtype=str(a.dtype)),manifest=str(manifest.relative_to(ROOT)).replace('\\','/'),times_s=m['mean_tx_time_per_look_s'],grid=m['grid'],fixed_peak=[133,65],neighborhood=dict(rows=[127,140],cols=[59,72],meaning='half-open 13x13 audit neighborhood; fixed candidate is never retuned'),preprocessing=dict(intensity='abs(BP12 complex64)**2',detrend='same global plane as Block15B',window='same separable Tukey alpha=0.1 as Block15B',padding='none for measured BP12 spectra',phase_estimator='Block15B reference_fit, reference look index 16, signed slope; MSC uses unchanged local 3x3 definition'),classification=dict(separated='two internal local amplitude maxima separated by >= one measured FWHM and window overlap <=0.2',partially_separated='shoulder/secondary maximum with separation >=0.5 FWHM or overlap 0.2--0.7',overlapped='no resolved valley and window overlap >0.7',unidentifiable='phase/slope evidence contradicts amplitude or quality is inadequate'),synthetics=dict(seed=150800,cases=['single_isolated','two_separated_6_bins','two_overlapped_1_bin','single_offgrid_window_broadened','weak_component_under_main_lobe'],same_grid_window_times=True),guard_sha256={str(p.relative_to(ROOT)).replace('\\','/'):sha(p) for p in guards},source_sha256={str(Path(__file__).relative_to(ROOT)).replace('\\','/'):sha(Path(__file__)), 'code/umbra_sar/spatial_resolution.py':sha(ROOT/'code/umbra_sar/spatial_resolution.py')})
  save(CFG,cfg)
 def spectra(cfg):
- p=ROOT/cfg['stack']['path']; x=np.load(p,mmap_mode='r'); assert list(x.shape)==cfg['stack']['shape'] and p.stat().st_size==cfg['stack']['bytes']
+ p=resolve_historical(cfg['stack']['path'], ROOT); x=np.load(p,mmap_mode='r'); assert list(x.shape)==cfg['stack']['shape'] and p.stat().st_size==cfg['stack']['bytes']
  w=window_2d(tuple(x.shape[1:]),.1); return np.asarray([detrended_spectrum(abs(np.asarray(z))**2,w) for z in x]),w
 def axes(shape,spacing):
  return np.meshgrid(2*np.pi*np.fft.fftshift(np.fft.fftfreq(shape[0],spacing)),2*np.pi*np.fft.fftshift(np.fft.fftfreq(shape[1],spacing)),indexing='ij')
@@ -50,7 +51,7 @@ def synthetic_rows(cfg):
  return rows
 def run():
  cfg=json.loads(CFG.read_text());
- for p,h in cfg['guard_sha256'].items(): assert sha(ROOT/p)==h, f'Frozen artifact changed: {p}'
+ for p,h in cfg['guard_sha256'].items(): assert sha(resolve_historical(p, ROOT))==h, f'Frozen artifact changed: {p}'
  F,w=spectra(cfg); t=np.asarray(cfg['times_s']); shape=F.shape[1:]; spacing=float(cfg['grid']['spacing_m']); kx,ky=axes(shape,spacing); power=np.mean(abs(F)**2,axis=0); amp=np.mean(abs(F),axis=0); pr,pc=cfg['fixed_peak']; r0,r1=cfg['neighborhood']['rows'];c0,c1=cfg['neighborhood']['cols']; endpoint,valid=local_msc(F[0],F[-1]); adj=np.asarray([local_msc(a,b)[0] for a,b in zip(F[:-1],F[1:])]); peak=float(power[pr,pc]); rows=[]
  for i in range(r0,r1):
   for j in range(c0,c1):

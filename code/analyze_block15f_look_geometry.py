@@ -2,6 +2,7 @@
 
 Never accesses the CPHD signal block. New outputs refuse replacement.
 """
+from repository_paths import resolve_historical
 import argparse,csv,hashlib,json
 from datetime import datetime,timezone
 from pathlib import Path
@@ -9,7 +10,7 @@ import numpy as np
 from umbra_sar.backprojection import CphdChannel,build_ground_grid
 from umbra_sar.look_transfer_geometry import unit,signed_angle,finite_depth_omega,transfer_terms,phase_slope
 
-ROOT=Path(__file__).resolve().parents[1];V=ROOT/'Vandenberg';OUT=V/'results/analysis_block15';CFG=OUT/'BLOCK15F_CONFIG.json'
+ROOT=Path(__file__).resolve().parents[1];V=ROOT/'umbra/Vandenberg';OUT=V/'results/analysis_block15';CFG=OUT/'BLOCK15F_CONFIG.json'
 CPHD=V/'2025-02-16-18-55-44_UMBRA-10_CPHD.cphd';META=V/'metadata/CPHD_METADATA.json';MAN=V/'results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json'
 
 def sha(p):return hashlib.sha256(Path(p).read_bytes()).hexdigest()
@@ -26,7 +27,7 @@ def setup():
       transfer_scenarios=[dict(name='T13_depth5',period_s=13.33,depth_m=5.,tilt_scale=1.),dict(name='T13_depth10',period_s=13.33,depth_m=10.,tilt_scale=1.),dict(name='T13_depth20',period_s=13.33,depth_m=20.,tilt_scale=1.),dict(name='T17p902_depth10',period_s=17.902230457,depth_m=10.,tilt_scale=1.)],
       model='H=T_t+T_vb; T_h=0 because no locally verified X-band hydrodynamic/relaxation MTF. T_vb is density/Jacobian only, no separate displacement/shift MTF.',
       external_period_note='13.33 s is a diagnostic association hypothesis only; 17.902230457 s remains frozen SAR-only value, neither calibrates parameters.',guard_sha256=guards,
-      source_sha256={p:sha(ROOT/p) for p in ['code/analyze_block15f_look_geometry.py','code/umbra_sar/look_transfer_geometry.py','tests/test_look_transfer_geometry.py']})
+      source_sha256={p:sha(resolve_historical(p, ROOT)) for p in ['code/analyze_block15f_look_geometry.py','code/umbra_sar/look_transfer_geometry.py','tests/test_look_transfer_geometry.py']})
     save(CFG,cfg)
 
 def geometry():

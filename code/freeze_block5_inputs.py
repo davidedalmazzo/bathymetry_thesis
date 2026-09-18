@@ -9,9 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BLOCK4 = ROOT / "Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json"
-BLOCK3 = ROOT / "Vandenberg/results/analysis_block3/BLOCK3_SPECTRAL_METRICS.json"
-OUTPUT = ROOT / "Vandenberg/results/analysis_block5/BLOCK5_FROZEN_INPUTS.json"
+BLOCK4 = ROOT / 'umbra/Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json'
+BLOCK3 = ROOT / 'umbra/Vandenberg/results/analysis_block3/BLOCK3_SPECTRAL_METRICS.json'
+OUTPUT = ROOT / 'umbra/Vandenberg/results/analysis_block5/BLOCK5_FROZEN_INPUTS.json'
 
 
 def sha256(path: Path) -> str:

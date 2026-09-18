@@ -33,7 +33,15 @@ def main(argv=None):
     repository=Path(__file__).resolve().parents[1]
     if Path.cwd().resolve() != repository:
         ap.error("Run only from repository root")
-    for frozen in ('Block32_frf_client','Block33_frf_offline_correction'):
+    from repository_paths import resolve_historical
+    for name in ('config','input','output','cache','footprint','roi','budget_config','tranche_root'):
+        value=getattr(args,name)
+        if value:
+            try:setattr(args,name,resolve_historical(value,repository).relative_to(repository).as_posix())
+            except ValueError:ap.error('All local paths must be inside repository root')
+    try:args.reuse_cache=[resolve_historical(value,repository).relative_to(repository).as_posix() for value in args.reuse_cache]
+    except ValueError:ap.error('Reuse cache must be within root')
+    for frozen in ('duck_frf/Block32_frf_client','duck_frf/Block33_frf_offline_correction'):
         if Path(args.output).resolve().is_relative_to(repository/frozen):ap.error("Frozen artifacts: select new output directory")
         if Path(args.cache).resolve().is_relative_to(repository/frozen):ap.error("Frozen cache: use a separate verified payload cache")
     for name in ("config","input","output","cache","footprint","roi","budget_config","tranche_root"):
@@ -41,6 +49,9 @@ def main(argv=None):
         if value and not Path(value).resolve().is_relative_to(repository):
             ap.error("All input/output/cache/config paths must be inside repository root")
     config = json.loads(Path(args.config).read_text(encoding="utf-8"))
+    if config.get('legacy_cache'):
+        try:config['legacy_cache']=resolve_historical(config['legacy_cache'],repository).relative_to(repository).as_posix()
+        except ValueError:ap.error('Legacy cache must be inside repository')
     if not Path(config.get("legacy_cache",'_cache/no_legacy')).resolve().is_relative_to(repository):
         ap.error("Legacy cache must be inside repository")
     if any(word in key.lower() for key in config for word in ("secret","password","token","credential")):
@@ -85,7 +96,7 @@ def main(argv=None):
     save_json(Path(args.output)/"LEGACY_CACHE_AUDIT.json", imports)
     if args.audit_frozen:
         from frf_client.provenance import audit
-        path = Path("Block32_frf_client/FROZEN_INPUT_HASHES.json")
+        path = Path('duck_frf/Block32_frf_client/FROZEN_INPUT_HASHES.json')
         if not path.exists():
             save_json(Path(args.output)/"FROZEN_AUDIT.json",{"status":"manifest_unavailable"})
             return 1
@@ -95,10 +106,10 @@ def main(argv=None):
         print(json.dumps({state:sum(r["status"]==state for r in rows) for state in ("hash_verified","mismatch","file_unavailable","unresolved_path")}))
         return int(any(r["status"]!="hash_verified" for r in rows))
     if args.prepare_regressions:
-        if not Path("Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json").is_file() or not Path("Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv").is_file():
+        if not Path('duck_frf/Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json').is_file() or not Path('duck_frf/Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv').is_file():
             ap.error("Historical original exports unavailable; use tracked Block32 REGRESSION_ACQUISITIONS.json. No inputs fabricated.")
-        records = adapt_cleos("Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json", ["2098202","1941935","1942455"])
-        records += adapt_eoweb("Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv", [11])
+        records = adapt_cleos('duck_frf/Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json', ["2098202","1941935","1942455"])
+        records += adapt_eoweb('duck_frf/Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv', [11])
         for record in records:
             if record["acquisition_id"] == "COSMO_2098202":
                 record["timestamp_utc"]="2021-10-13T22:45:03+00:00"

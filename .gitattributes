@@ -22,6 +22,10 @@
 Block32_frf_client/** -text
 
 # Preserve byte-level provenance of subsequently published block artifacts.
+umbra/** -text
+duck_frf/** -text
+docs/checkpoints/** -text
+docs/reorganization/** -text
 Block23_candidate2_metadata_preflight/** -text
 Block24_shortlist_triage/** -text
 Block25_reference_gate/** -text

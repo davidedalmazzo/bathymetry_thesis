@@ -1,0 +1,21 @@
+{
+  "command": [
+    ".venv-umbra-thesis/Scripts/python.exe",
+    "code/frf_client_cli.py",
+    "--mode",
+    "offline",
+    "--input",
+    "duck_frf/Block34_frf_operational/ACQUISITIONS.json",
+    "--config",
+    "duck_frf/Block34_frf_operational/CLIENT_CONFIG.json",
+    "--cache",
+    "_cache/layout_frf",
+    "--reuse-cache",
+    "duck_frf/Block34_frf_operational/cache",
+    "--output",
+    "outputs/layout_frf_cached"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"transactions\": 0,\n  \"bytes\": 0,\n  \"max_transactions\": 40,\n  \"max_bytes\": 104857600,\n  \"created_utc\": \"2026-09-18T12:25:26.721250+00:00\",\n  \"historical_consumption\": \"not part of this tranche; not reconstructed\"\n}\n",
+  "stderr": ""
+}

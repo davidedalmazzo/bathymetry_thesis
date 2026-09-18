@@ -1,4 +1,5 @@
 """PVP/PFA/units/sign/support regressions; no real radar signal tests."""
+from repository_paths import resolve_historical
 import json,sys
 from pathlib import Path
 import numpy as np
@@ -69,7 +70,7 @@ def test_budget_range_and_frozen_input_provenance():
     signal=json.loads((m.B28/'CPHD_METADATA.json').read_text())['signal_block_byte_offset']
     assert all(l['range'][1]<signal for l in logs if l['range'])
     assert all(l['bytes']<=10*1024**2 for l in logs)
-    assert all(m.sha(ROOT/p['path'])==p['sha256'] for p in load('INPUT_PROVENANCE.json'))
+    assert all(m.sha(resolve_historical(p['path'], ROOT))==p['sha256'] for p in load('INPUT_PROVENANCE.json'))
 
 def test_mask_synthetic_is_explicit_image_domain_not_real_sar():
     d=load('SYNTHETIC_SUPPORT_DIAGNOSTIC.json')

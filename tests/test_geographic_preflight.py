@@ -35,5 +35,5 @@ def test_budget_and_exact_range_enforced():
 def test_finalists_keep_actual_reference_ids():
  import csv,pathlib
  root=pathlib.Path(__file__).resolve().parents[1]
- with (root/"Block21_frequency_validation_selector/BLOCK21_SHORTLIST.csv").open() as f:r=list(csv.DictReader(f))
+ with (root/'umbra/selezione_scene/Block21_frequency_validation_selector/BLOCK21_SHORTLIST.csv').open() as f:r=list(csv.DictReader(f))
  assert [x["station_id"] for x in r]==["46268","46268","46256","44087","46256"]

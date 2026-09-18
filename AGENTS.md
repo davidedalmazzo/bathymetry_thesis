@@ -2,19 +2,24 @@
 
 ## Purpose
 
-This is a scientific thesis repository for Umbra SAR ocean-wave sub-aperture and cross-spectrum analysis. Preserve physical sign conventions, metadata provenance, frozen results and uncertainty reporting.
+This is a scientific thesis repository for recovering ocean-wave angular frequency `omega` from SAR data and inverting it for coastal bathymetry. Preserve physical sign conventions, metadata provenance, frozen results and uncertainty reporting.
+
+**The method is not decided.** Sub-aperture splitting of long-dwell spotlight acquisitions and inter-burst overlap in TOPS are both open candidates, and so are combinations of the two. Do not write, in code, documentation or reports, that the project has adopted one of them. State the objective and describe the alternatives.
+
+The folder is named `Umbra` for historical reasons; the work is sensor-independent from Block 30 onward.
 
 ## Required reading order
 
 1. `README.md`
 2. `TASK_SPEC.md`
 3. `WORKLOG.md`
-4. `CHECKPOINT_1.md` through the latest checkpoint
+4. `docs/checkpoints/CHECKPOINT_1.md` through the latest checkpoint (remaining checkpoints are inside their original block directories)
 5. the relevant `code/README_*.md` and result manifest for the requested block
 
 ## Runtime
 
 - Work only inside the repository root.
+- The native layout is `umbra/`, `duck_frf/`, `docs/`, `code/`, `tests/`, `scripts/`. Resolve historical manifest paths with `repository_paths.json` / `code/repository_paths.py`; never rewrite frozen manifests solely to change locations.
 - Use `.venv-umbra-thesis/Scripts/python.exe` on Windows.
 - Never use the retired `sdb-iride` environment.
 - Install only from `requirements-thesis.txt` into the project-local environment.
@@ -45,4 +50,3 @@ git status --short
 ```
 
 Inspect every newly tracked file and ensure no file exceeds GitHub's 100 MB per-file limit.
-

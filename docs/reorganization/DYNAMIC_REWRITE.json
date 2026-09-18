@@ -1,0 +1,110 @@
+[
+  {
+    "path": "code/analyze_block15b_frequency.py",
+    "expressions": 3
+  },
+  {
+    "path": "code/analyze_block15c_contamination.py",
+    "expressions": 2
+  },
+  {
+    "path": "code/analyze_block15d_static_offset.py",
+    "expressions": 3
+  },
+  {
+    "path": "code/analyze_block15e_robustness.py",
+    "expressions": 3
+  },
+  {
+    "path": "code/analyze_block15f_look_geometry.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/analyze_block15g_separability.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/analyze_block15h_spatial_resolution.py",
+    "expressions": 2
+  },
+  {
+    "path": "code/analyze_block15i_discriminant.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/analyze_block15j_multilag_increment.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/analyze_block15k_path_closure.py",
+    "expressions": 2
+  },
+  {
+    "path": "code/build_block17_manifest.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/run_block18_reference_recovery.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/reconcile_block18_local_payloads.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/finalize_block18.py",
+    "expressions": 3
+  },
+  {
+    "path": "code/run_block27_representativity.py",
+    "expressions": 2
+  },
+  {
+    "path": "code/run_block27_tranche2.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/run_block28_samoa_preflight.py",
+    "expressions": 2
+  },
+  {
+    "path": "code/run_block33_frf_verification.py",
+    "expressions": 6
+  },
+  {
+    "path": "code/run_block34_frf_operational.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/umbra_sar/formation_path_comparison.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/frf_client/provenance.py",
+    "expressions": 1
+  },
+  {
+    "path": "code/frf_client/delivery.py",
+    "expressions": 4
+  },
+  {
+    "path": "tests/test_spatial_resolution.py",
+    "expressions": 1
+  },
+  {
+    "path": "tests/test_block27_representativity.py",
+    "expressions": 1
+  },
+  {
+    "path": "tests/test_block27_tranche2.py",
+    "expressions": 2
+  },
+  {
+    "path": "tests/test_block28_samoa_preflight.py",
+    "expressions": 1
+  },
+  {
+    "path": "tests/test_block29_samoa_mapping.py",
+    "expressions": 1
+  }
+]

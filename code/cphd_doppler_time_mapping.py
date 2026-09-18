@@ -20,7 +20,7 @@ from sarpy.io.complex.sicd_elements.SICD import SICDType
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 
 
 def field(records: np.ndarray, definitions: dict, name: str) -> np.ndarray:

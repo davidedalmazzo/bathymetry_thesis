@@ -17,13 +17,13 @@ from umbra_sar.synthetic_validation import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-RESULTS = ROOT / "Block9_validation" / "results"
+RESULTS = ROOT / 'umbra/validazione/Block9_validation' / "results"
 
 
 def synthetic_times() -> np.ndarray:
     with np.load(
         ROOT
-        / "Vandenberg"
+        / 'umbra/Vandenberg'
         / "results"
         / "analysis_block4"
         / "nearshore_sliding_spectrum_crops.npz"

@@ -69,12 +69,12 @@ from umbra_sar.scene_selection import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / "Block16_scene_selection"
+BASE = ROOT / 'umbra/selezione_scene/Block16_scene_selection'
 CONFIG_PATH = BASE / "BLOCK16A_CONFIG.json"
 CONFIG_HASH_PATH = BASE / "BLOCK16A_CONFIG.sha256"
 SNAPSHOTS = BASE / "catalog_snapshots"
-LEGACY_CACHE = ROOT / "Block8_validation" / "catalog_raw" / "umbra_stac_v2_sidecars.jsonl.gz"
-LAND_SHP = ROOT / "Block8_validation" / "catalog_raw" / "ne_10m_land" / "ne_10m_land.shp"
+LEGACY_CACHE = ROOT / 'umbra/validazione/Block8_validation' / "catalog_raw" / "umbra_stac_v2_sidecars.jsonl.gz"
+LAND_SHP = ROOT / 'umbra/validazione/Block8_validation' / "catalog_raw" / "ne_10m_land" / "ne_10m_land.shp"
 USER_AGENT = "Umbra-thesis-Block16A-metadata-only/1.0"
 
 
@@ -1029,9 +1029,9 @@ def sensitivity_summary(rows: Sequence[Mapping[str, Any]], config: Mapping[str, 
 
 
 def frozen_hashes() -> dict[str, str]:
-    paths = sorted((ROOT / "Block8_validation").rglob("*"))
+    paths = sorted((ROOT / 'umbra/validazione/Block8_validation').rglob("*"))
     result = {str(path.relative_to(ROOT)).replace("\\", "/"): sha256_file(path) for path in paths if path.is_file()}
-    classification = ROOT / "Vandenberg" / "results" / "analysis_block15" / "BLOCK15K_VANDENBERG_CLASSIFICATION.json"
+    classification = ROOT / 'umbra/Vandenberg' / "results" / "analysis_block15" / "BLOCK15K_VANDENBERG_CLASSIFICATION.json"
     result[str(classification.relative_to(ROOT)).replace("\\", "/")] = sha256_file(classification)
     return result
 

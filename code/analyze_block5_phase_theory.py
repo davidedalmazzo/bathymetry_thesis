@@ -17,9 +17,9 @@ from umbra_sar.wave_analysis import linear_phase_fit
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_DIR = ROOT / "Vandenberg/results/analysis_block5"
+OUTPUT_DIR = ROOT / 'umbra/Vandenberg/results/analysis_block5'
 FROZEN_PATH = OUTPUT_DIR / "BLOCK5_FROZEN_INPUTS.json"
-BLOCK4_PATH = ROOT / "Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json"
+BLOCK4_PATH = ROOT / 'umbra/Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json'
 
 
 def model_fit(times: np.ndarray, omega: float, reverse_ratio: float) -> dict[str, object]:

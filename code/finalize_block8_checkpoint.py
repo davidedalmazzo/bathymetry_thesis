@@ -10,7 +10,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / "Block8_validation"
+BASE = ROOT / 'umbra/validazione/Block8_validation'
 RESULTS = BASE / "results"
 
 
@@ -268,7 +268,7 @@ The complete catalog contains **no scene that satisfies all ideal gates simultan
 - NDBC historical spectral data: https://www.ndbc.noaa.gov/data/historical/
 - CDIP THREDDS data access: https://cdip.ucsd.edu/m/documents/data_access.html
 """
-    checkpoint = RESULTS / "CHECKPOINT_8.md"
+    checkpoint = RESULTS / 'docs/checkpoints/CHECKPOINT_8.md'
     checkpoint.write_text(report, encoding="utf-8")
     manifest = {"generated_utc": datetime.now(timezone.utc).isoformat(), "top_rows": len(top), "all_ranked_rows": len(ranked),
                 "decision_A": a["collect"], "decision_B": b["collect"], "decision_C": c["collect"],

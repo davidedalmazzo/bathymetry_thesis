@@ -1,5 +1,6 @@
 """Pre-registered Block15J coefficient-only multi-lag increment experiment."""
 from __future__ import annotations
+from repository_paths import resolve_historical
 import csv, hashlib, json
 from pathlib import Path
 import numpy as np
@@ -10,7 +11,7 @@ from umbra_sar.frequency_comparison import reference_fit, estimate_circular
 from umbra_sar.multilag_increment import increment_structure, primary_score, calibration_threshold, b_decision
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'Vandenberg/results/analysis_block15'
+OUT = ROOT / 'umbra/Vandenberg/results/analysis_block15'
 CFG = OUT / 'BLOCK15J_CONFIG.json'
 
 
@@ -167,13 +168,13 @@ def main():
     ax[1].set(xticks=range(4), xticklabels=['.6–2','2–5','5–12','12–23'], xlabel='lag class (s)', ylabel='normalised increment energy'); ax[1].legend(fontsize=7)
     fig.tight_layout(); fig.savefig(OUT/'BLOCK15J_INCREMENT_DIAGNOSTIC.png', dpi=160); plt.close(fig)
     tracked = ['code/umbra_sar/multilag_increment.py', 'code/analyze_block15j_multilag_increment.py',
-               'tests/test_multilag_increment.py', 'Vandenberg/results/analysis_block15/BLOCK15J_CONFIG.json',
-               'Vandenberg/results/analysis_block15/BLOCK15J_PROTOCOL.md', 'Vandenberg/results/analysis_block15/BLOCK15J_REPORT.md',
-               'Vandenberg/results/analysis_block15/BLOCK15J_RESULTS.csv', 'Vandenberg/results/analysis_block15/BLOCK15J_SUMMARY.json',
-               'Vandenberg/results/analysis_block15/BLOCK15J_INCREMENT_DIAGNOSTIC.png', 'WORKLOG.md']
+               'tests/test_multilag_increment.py', 'umbra/Vandenberg/results/analysis_block15/BLOCK15J_CONFIG.json',
+               'umbra/Vandenberg/results/analysis_block15/BLOCK15J_PROTOCOL.md', 'umbra/Vandenberg/results/analysis_block15/BLOCK15J_REPORT.md',
+               'umbra/Vandenberg/results/analysis_block15/BLOCK15J_RESULTS.csv', 'umbra/Vandenberg/results/analysis_block15/BLOCK15J_SUMMARY.json',
+               'umbra/Vandenberg/results/analysis_block15/BLOCK15J_INCREMENT_DIAGNOSTIC.png', 'WORKLOG.md']
     files = []
     for rel in tracked:
-        p = ROOT/rel
+        p = resolve_historical(rel, ROOT)
         files.append({'path': rel, 'bytes': p.stat().st_size,
                       'sha256': hashlib.sha256(p.read_bytes()).hexdigest()})
     write_json(OUT/'BLOCK15J_DELIVERY_MANIFEST.json', {

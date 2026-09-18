@@ -1,5 +1,6 @@
 """Execute the strictly bounded Block18 NDBC per-bin recovery."""
 from __future__ import annotations
+from repository_paths import resolve_historical
 
 import csv, hashlib, json, platform, sys
 from datetime import datetime, timezone
@@ -10,7 +11,7 @@ import numpy as np
 from umbra_sar.reference_recovery import (HTTPBudget, VARIABLES, fetch_limited,
     nearest_time_index, normalize_payload, parse_ascii_vector, parse_dds_dimensions, spectrum_metrics)
 
-ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/"Block18_reference_recovery"; B16=ROOT/"Block16_scene_selection"
+ROOT=Path(__file__).resolve().parents[1]; OUT=ROOT/'umbra/selezione_scene/Block18_reference_recovery'; B16=ROOT/'umbra/selezione_scene/Block16_scene_selection'
 RAW=OUT/"payloads_raw"; NORM=OUT/"normalized"; RAW.mkdir(exist_ok=True); NORM.mkdir(exist_ok=True)
 
 def dump(path,obj): path.write_text(json.dumps(obj,indent=2,sort_keys=True)+"\n",encoding="utf-8")
@@ -34,7 +35,7 @@ def main():
     prior_manifest=json.loads((B16/"BLOCK16A_DELIVERY_MANIFEST.json").read_text())
     wanted={a["historical_payload_sha256"] for a in cfg["acquisitions"]}; local_by_hash={}
     for rel,digest in prior_manifest.get("frozen_artifact_hashes",{}).items():
-        path=ROOT/rel
+        path=resolve_historical(rel, ROOT)
         if digest in wanted and path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest()==digest:
             local_by_hash[digest]=path
     base=cfg["sources"]["ndbc_aggregate"]

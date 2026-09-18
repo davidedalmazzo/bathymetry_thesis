@@ -1,4 +1,5 @@
 """Offline regression for resumed Block27 provenance and same-band direction."""
+from repository_paths import resolve_historical
 import importlib.util
 from pathlib import Path
 import numpy as np
@@ -25,11 +26,11 @@ def test_bearing_true_north_clockwise():
     assert abs(mod.bearing(mod.Point(0,0),mod.Point(1,0))-90)<1e-12
 
 def test_offline_reused_reference_distinct_from_nearest_station():
-    rr=mod.read(ROOT/'Block27_frequency_query/representativity_v1/ACQUISITION_AUDIT.csv')
+    rr=mod.read(ROOT/'umbra/selezione_scene/Block27_frequency_query/representativity_v1/ACQUISITION_AUDIT.csv')
     reused=[r for r in rr if r['reference_status']=='verified_local_Block18']
     assert len(reused)==4
     assert all(r['reference_station_id']=='42084' for r in reused)
     assert all(r['station_id']=='42094' for r in reused)
     # The nearest station of any instrument type is GRBL1, not the wave buoy.
     assert all(r['nearest_historical_station']=='GRBL1' for r in reused)
-    assert all(mod.sha(ROOT/r['payload_path'])==r['payload_sha256'] for r in reused)
+    assert all(mod.sha(resolve_historical(r['payload_path'], ROOT))==r['payload_sha256'] for r in reused)

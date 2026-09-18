@@ -24,9 +24,9 @@ from umbra_sar.physical_identification import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "Vandenberg/external/46218w9999.nc"
-FROZEN = ROOT / "Vandenberg/results/analysis_block5/BLOCK5_FROZEN_INPUTS.json"
-OUTPUT_DIR = ROOT / "Vandenberg/results/analysis_block5"
+SOURCE = ROOT / 'umbra/Vandenberg/external/46218w9999.nc'
+FROZEN = ROOT / 'umbra/Vandenberg/results/analysis_block5/BLOCK5_FROZEN_INPUTS.json'
+OUTPUT_DIR = ROOT / 'umbra/Vandenberg/results/analysis_block5'
 ACQUISITION = datetime(2025, 2, 16, 18, 55, 44, 274000, tzinfo=timezone.utc)
 SOURCE_URL = (
     "https://dods.ndbc.noaa.gov/thredds/fileServer/data/swden/46218/"

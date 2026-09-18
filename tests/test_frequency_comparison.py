@@ -15,7 +15,7 @@ ROOT = Path(__file__).resolve().parents[1]
 def times(real):
     if not real:
         return np.arange(32)*0.7
-    manifest = ROOT/'Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json'
+    manifest = ROOT/'umbra/Vandenberg/results/block12_backprojection/BLOCK12_SUBLOOK_MANIFEST.json'
     return np.array(json.loads(manifest.read_text())['mean_tx_time_per_look_s'])
 
 

@@ -30,7 +30,7 @@ from umbra_sar.wave_analysis import intensity_spectrum_crop
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 OUTPUT_DIR = VANDENBERG / "results" / "analysis_block5"
 WORK_DIR = OUTPUT_DIR / "_width_work"
 OUTPUT_NPZ = OUTPUT_DIR / "BLOCK5_WIDTH_SENSITIVITY_SPECTRA.npz"

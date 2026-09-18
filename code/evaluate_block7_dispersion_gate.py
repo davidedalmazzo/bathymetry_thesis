@@ -8,7 +8,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/"Vandenberg"/"results"/"analysis_block7";G=9.80665
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'umbra/Vandenberg'/"results"/"analysis_block7";G=9.80665
 
 
 def main():

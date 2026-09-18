@@ -57,7 +57,7 @@ def test_temporal_paths_and_roi_names_are_honest():
 
 
 def test_corrected_width_and_legacy_narrowing_on_archived_irregular_times():
-    p = Path("Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json")
+    p = Path('umbra/Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json')
     times = np.asarray(json.loads(p.read_text())["look_times_s"])
     corr=[]; old=[]
     for seed in range(40):
@@ -78,8 +78,8 @@ def test_epsilon_zero_reproducible_and_nonphysical_frequency_rejected():
 
 
 def test_frozen_vandenberg_invariants_are_unchanged():
-    b12=json.loads(Path("Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json").read_text())
-    b15=json.loads(Path("Vandenberg/results/analysis_block15/BLOCK15K_SUMMARY.json").read_text())
+    b12=json.loads(Path('umbra/Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json').read_text())
+    b15=json.loads(Path('umbra/Vandenberg/results/analysis_block15/BLOCK15K_SUMMARY.json').read_text())
     assert len(b12["look_times_s"]) == 32
     assert b15  # read-only guard: frozen artifact remains parseable and present
 

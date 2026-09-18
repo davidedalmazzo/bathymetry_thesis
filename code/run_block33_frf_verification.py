@@ -1,4 +1,5 @@
 """Offline Block33 verification; only tests/mocks and local files, never HTTP."""
+from repository_paths import resolve_historical
 import argparse
 import hashlib
 import json
@@ -9,15 +10,15 @@ from pathlib import Path
 from frf_client.transport import save_json, digest
 
 ROOT=Path(__file__).resolve().parents[1]
-BASE=ROOT/"Block33_frf_offline_correction"
+BASE=ROOT/'duck_frf/Block33_frf_offline_correction'
 
 
 def relative(path): return path.resolve().relative_to(ROOT).as_posix()
 
 
 def snapshot():
-    files=[p for p in (ROOT/"Block32_frf_client").rglob("*") if p.is_file()]
-    files += [ROOT/"CHECKPOINT_32.md"]
+    files=[p for p in (ROOT/'duck_frf/Block32_frf_client').rglob("*") if p.is_file()]
+    files += [ROOT/'docs/checkpoints/CHECKPOINT_32.md']
     save_json(BASE/"FROZEN_BASELINE.json",[{"path":relative(p),"sha256":digest(p.read_bytes()),"bytes":p.stat().st_size} for p in sorted(files)])
     result=subprocess.run(["git","-c",f"safe.directory={ROOT.as_posix()}","status","--short"],capture_output=True,text=True)
     save_json(BASE/"INITIAL_GIT.json",{"head":subprocess.check_output(["git","-c",f"safe.directory={ROOT.as_posix()}","rev-parse","HEAD"],text=True).strip(),"status":result.stdout})
@@ -30,9 +31,9 @@ def resolve(path,remaps=None):
         for prefix,destination in (remaps or {}).items():
             if path.lower().replace('\\','/').startswith(prefix.lower().replace('\\','/').rstrip('/')+'/'):
                 suffix=path[len(prefix.rstrip('/\\')):].lstrip('/\\').replace('\\','/')
-                return ROOT/destination/suffix
+                return resolve_historical(resolve_historical(destination, ROOT)/suffix, ROOT)
         return None
-    return ROOT/path.replace('\\','/')
+    return resolve_historical(path.replace('\\','/'), ROOT)
 
 
 def audit_entries(entries,remaps=None):
@@ -62,7 +63,7 @@ def main():
         import socket
         def forbidden(*args,**kwargs):raise AssertionError("Actual HTTP prohibited")
         socket.create_connection=forbidden
-        source=ROOT/"Block32_frf_client/cache";destination=BASE/"cache"
+        source=ROOT/'duck_frf/Block32_frf_client/cache';destination=BASE/"cache"
         if not source.is_dir():
             save_json(BASE/"REGRESSION_COMPARISON.json",{"status":"not_executable_private_cache_unavailable"});return 0
         if destination.exists():
@@ -73,16 +74,16 @@ def main():
         from frf_client.transport import Transport
         from frf_client.inputs import read_acquisitions
         from frf_client.client import Client
-        cfg=json.loads((ROOT/"Block32_frf_client/CONFIG.json").read_text())
+        cfg=json.loads((ROOT/'duck_frf/Block32_frf_client/CONFIG.json').read_text())
         transport=Transport(destination,offline=True,max_requests=cfg['max_requests'],max_bytes=cfg['max_bytes'])
-        records=read_acquisitions(ROOT/"Block32_frf_client/REGRESSION_ACQUISITIONS.json")
+        records=read_acquisitions(ROOT/'duck_frf/Block32_frf_client/REGRESSION_ACQUISITIONS.json')
         initial=transport.state.copy()
         Client(transport,cfg).run(records,BASE/"regressions",mode="offline")
         import csv
         comparisons=[]
         for acquisition in records:
             identifier=acquisition['acquisition_id']
-            old=ROOT/'Block32_frf_client/results'/identifier;new=BASE/'regressions'/identifier
+            old=ROOT/'duck_frf/Block32_frf_client/results'/identifier;new=BASE/'regressions'/identifier
             before=list(csv.DictReader((old/'OBSERVATIONS.csv').open(encoding='utf-8')))
             after=list(csv.DictReader((new/'OBSERVATIONS.csv').open(encoding='utf-8')))
             key=lambda r:(r['instrument_id'],r['family'],r['variable'],r['role'])
@@ -112,21 +113,21 @@ def main():
         while destination.exists():
             sequence+=1;destination=BASE/f"clean_tree_{sequence}"
         paths=subprocess.check_output(["git","-c",f"safe.directory={ROOT.as_posix()}","ls-files"],text=True).splitlines()
-        extra=["tests/test_block30_frf_conditions.py","tests/test_frf_block33.py","code/run_block33_frf_verification.py"]+[relative(p) for p in (ROOT/"tests/fixtures/frf_block33").glob("*")]+[relative(p) for p in (ROOT/"code/frf_client").glob("*.py")]
+        extra=["code/repository_paths.py","repository_paths.json","tests/test_block30_frf_conditions.py","tests/test_frf_block33.py","code/run_block33_frf_verification.py"]+[relative(p) for p in (ROOT/"tests/fixtures/frf_block33").glob("*")]+[relative(p) for p in (ROOT/"code/frf_client").glob("*.py")]
         selected=[p for p in paths if p.startswith("code/") or p.startswith("tests/") or p=="requirements-thesis.txt"]
         copied=[]
         for name in sorted(set(selected+extra)):
-            source=ROOT/name
+            source=resolve_historical(name, ROOT)
             if not source.is_file():continue
             target=destination/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source,target)
             copied.append({"path":name,"sha256":digest(source.read_bytes()),"tracked":name in paths})
         save_json(BASE/"CLEAN_TREE_INPUTS.json",{"note":"Tracked working-tree snapshot plus explicitly listed pending lightweight tests/fixtures; no cache/radar/env. Not a claim that uncommitted files are already in Git.","files":copied})
         return test_run("CLEAN_CLIENT_TESTS",["tests/test_frf_client.py","tests/test_frf_block33.py","tests/test_block30_frf_conditions.py","--basetemp","Block33_test_tmp","-q"],destination)
     baseline=json.loads((BASE/"FROZEN_BASELINE.json").read_text())
-    historical=json.loads((ROOT/"Block32_frf_client/FROZEN_INPUT_HASHES.json").read_text())
+    historical=json.loads((ROOT/'duck_frf/Block32_frf_client/FROZEN_INPUT_HASHES.json').read_text())
     remaps={"D:/Dati Tesi/Umbra":"."}
     save_json(BASE/"FROZEN_AUDIT.json",{"block32_artifacts_and_cache":audit_entries(baseline),"historical_inputs":audit_entries(historical,remaps),"absolute_path_remapping":remaps})
-    original_manifest=json.loads((ROOT/'Block32_frf_client/DELIVERY_MANIFEST.json').read_text())
+    original_manifest=json.loads((ROOT/'duck_frf/Block32_frf_client/DELIVERY_MANIFEST.json').read_text())
     save_json(BASE/'HISTORICAL_MANIFEST_AUDIT.json',{'frozen_artifact_references':audit_entries(original_manifest['artifacts'],remaps),
         'historical_code_references':audit_entries(original_manifest['code_sources'],remaps),
         'note':'Source mismatches due to authorized Block33 correction are expected and distinct from unchanged frozen artifacts. The historical manifest is preserved.'})
@@ -139,15 +140,15 @@ def main():
         try:installed=importlib.metadata.version(package)
         except importlib.metadata.PackageNotFoundError:installed=None
         dependencies.append({'package':package,'pinned':pin,'installed':installed,'status':'pinned_installed_match' if installed==pin else 'missing_or_version_mismatch'})
-    required=[relative(p) for p in (ROOT/'code/frf_client').glob('*.py')]+['code/run_block32_frf_client.py','code/run_block30_frf_conditions.py','code/run_block33_frf_verification.py','tests/test_frf_client.py','tests/test_frf_block33.py','tests/test_block30_frf_conditions.py','tests/conftest.py','requirements-thesis.txt','Block32_frf_client/REGRESSION_ACQUISITIONS.json']+[relative(p) for p in (ROOT/'tests/fixtures/frf_block33').glob('*')]
-    save_json(BASE/'REPRODUCIBILITY_AUDIT.json',{'dependencies':dependencies,'files':[{'path':path,'available':(ROOT/path).is_file(),'tracked':path in tracked,'sha256':digest((ROOT/path).read_bytes()) if (ROOT/path).is_file() else None} for path in sorted(required)],
+    required=[relative(p) for p in (ROOT/'code/frf_client').glob('*.py')]+['code/run_block32_frf_client.py','code/run_block30_frf_conditions.py','code/run_block33_frf_verification.py','tests/test_frf_client.py','tests/test_frf_block33.py','tests/test_block30_frf_conditions.py','tests/conftest.py','requirements-thesis.txt','duck_frf/Block32_frf_client/REGRESSION_ACQUISITIONS.json']+[relative(p) for p in (ROOT/'tests/fixtures/frf_block33').glob('*')]
+    save_json(BASE/'REPRODUCIBILITY_AUDIT.json',{'dependencies':dependencies,'files':[{'path':path,'available':(resolve_historical(path, ROOT)).is_file(),'tracked':path in tracked,'sha256':digest((resolve_historical(path, ROOT)).read_bytes()) if (resolve_historical(path, ROOT)).is_file() else None} for path in sorted(required)],
         'ordinary_offline_tests':['tests/test_frf_client.py','tests/test_frf_block33.py','tests/test_block30_frf_conditions.py'],
         'cache_regression_requires':'Verified private Block32 cache; otherwise explicitly not executable. No request or fabricated cache.',
         'historical_audit_requires':'Historical original exports/artifacts are not all tracked; statuses distinguish unavailable/unresolved/mismatch/verified.',
         'pending_versioning_note':'No commit/push authorized; clean-tree snapshot includes explicitly listed pending files, not a claim about current remote HEAD.',
         'actual_http_transactions':0})
     artifacts=[p for p in BASE.rglob("*") if p.is_file() and not any(x.startswith("clean_tree") or x=="cache" for x in p.parts) and p.name!="MANIFEST.json"]
-    code=[ROOT/"code/run_block33_frf_verification.py",ROOT/"code/run_block32_frf_client.py",ROOT/"tests/test_frf_block33.py",ROOT/"tests/test_block30_frf_conditions.py",ROOT/"code/README_FRF_CLIENT.md",ROOT/"CHECKPOINT_33.md"]+list((ROOT/"code/frf_client").glob("*.py"))+list((ROOT/"tests/fixtures/frf_block33").glob("*"))
+    code=[ROOT/"code/run_block33_frf_verification.py",ROOT/"code/run_block32_frf_client.py",ROOT/"tests/test_frf_block33.py",ROOT/"tests/test_block30_frf_conditions.py",ROOT/"code/README_FRF_CLIENT.md",ROOT/'docs/checkpoints/CHECKPOINT_33.md']+list((ROOT/"code/frf_client").glob("*.py"))+list((ROOT/"tests/fixtures/frf_block33").glob("*"))
     save_json(BASE/"MANIFEST.json",{"actual_http_transactions":0,"artifacts":[{"path":relative(p),"sha256":digest(p.read_bytes()),"bytes":p.stat().st_size} for p in sorted(artifacts+ [p for p in code if p.exists()])]})
     return 0
 

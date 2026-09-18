@@ -37,7 +37,7 @@ from umbra_sar.scene_selection import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-CONFIG = json.loads((ROOT / "Block16_scene_selection" / "BLOCK16A_CONFIG.json").read_text(encoding="utf-8"))
+CONFIG = json.loads((ROOT / 'umbra/selezione_scene/Block16_scene_selection' / "BLOCK16A_CONFIG.json").read_text(encoding="utf-8"))
 SNAPSHOT_TIME = datetime(2026, 9, 14, tzinfo=timezone.utc)
 
 
@@ -294,7 +294,7 @@ def test_public_asset_name_is_joined_by_kind_when_internal_name_differs():
 
 def test_block8_paths_are_not_outputs_of_new_module():
     source = (ROOT / "code" / "umbra_sar" / "scene_selection.py").read_text(encoding="utf-8")
-    assert "Block8_validation" not in source
+    assert 'umbra/validazione/Block8_validation' not in source
 
 
 def test_regression_old_manual_list_membership_cannot_change_classification():

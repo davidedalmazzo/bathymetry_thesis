@@ -13,7 +13,7 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / "Block8_validation"
+BASE = ROOT / 'umbra/validazione/Block8_validation'
 RESULTS = BASE / "results"
 WAVES = RESULTS / "wave_model_screen.csv"
 CASES = [

@@ -30,7 +30,7 @@ from umbra_sar.backprojection import (  # noqa: E402
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 SUPPORT_CENTER_E_N = (715510.6102416331, 3827627.093742074)
 SUPPORT_BEARING_DEG = 79.8357237
 SEA_SURFACE_HAE_M = -36.376          # NOAA GEOID18 at the ROI; NAVD88 zero

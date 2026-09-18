@@ -4,6 +4,7 @@ No CPHD/SICD reads, no inversion or external wave references. Existing results
 are protected by exclusive creation and input SHA checks (small files only).
 """
 from __future__ import annotations
+from repository_paths import resolve_historical
 
 import argparse
 import csv
@@ -19,8 +20,8 @@ from analyze_block12_phase_slope import detrended_spectrum, tukey2d
 from umbra_sar.frequency_comparison import local_msc, reference_fit, estimate_circular
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT/'Vandenberg/results/analysis_block15'
-BP = ROOT/'Vandenberg/results/block12_backprojection'
+OUT = ROOT/'umbra/Vandenberg/results/analysis_block15'
+BP = ROOT/'umbra/Vandenberg/results/block12_backprojection'
 CONFIG = OUT/'BLOCK15B_CONFIG.json'
 
 
@@ -45,7 +46,7 @@ def write_json(path, value):
 def prepare():
     OUT.mkdir(exist_ok=True)
     manifest = json.loads((BP/'BLOCK12_SUBLOOK_MANIFEST.json').read_text())
-    historical = ROOT/'Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json'
+    historical = ROOT/'umbra/Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE.json'
     old = json.loads(historical.read_text())
     inventory = json.loads((OUT/'BLOCK15A_INPUT_INVENTORY.json').read_text())
     audited = inventory['bp'][0]['verified_PVP_looks']
@@ -54,7 +55,7 @@ def prepare():
     stack = BP/'BLOCK12_SUBLOOKS_complex64.npy'
     header = np.load(stack, mmap_mode='r')
     guards = [BP/'BLOCK12_SUBLOOK_MANIFEST.json', historical,
-              ROOT/'Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json',
+              ROOT/'umbra/Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json',
               OUT/'BLOCK15A_AUDIT.md', OUT/'BLOCK15A_INPUT_INVENTORY.json',
               ROOT/'code/analyze_block12_phase_slope.py']
     cfg = dict(created_utc=datetime.now(timezone.utc).isoformat(),
@@ -111,8 +112,8 @@ def run():
     if any(OUT.glob('BLOCK15B_SUMMARY*.json')) or (OUT/'BLOCK15B_BINS.csv').exists():
         raise RuntimeError('Block15B outputs already exist; preserve them and use an explicit revision')
     for path, expected in cfg['frozen_sha256'].items():
-        assert digest(ROOT/path) == expected, f'Frozen input changed: {path}'
-    p = ROOT/cfg['stack']['path']
+        assert digest(resolve_historical(path, ROOT)) == expected, f'Frozen input changed: {path}'
+    p = resolve_historical(cfg['stack']['path'], ROOT)
     assert p.stat().st_size == cfg['stack']['bytes'] and p.stat().st_mtime_ns == cfg['stack']['mtime_ns']
     stack = np.load(p, mmap_mode='r')
     n, nr, nc = stack.shape; t = np.asarray(cfg['time_s']); bounds=cfg['search']['bounds']
@@ -140,7 +141,7 @@ def run():
     legacy_gamma=abs(F[0]*F[-1].conj())/np.sqrt(abs(F[0])**2*abs(F[-1])**2+1e-30)
     legacy_mask=band&(legacy_gamma>=0.3)&np.isfinite(historical_s)
     historical_peak=tuple(np.unravel_index(np.argmax(np.where(legacy_mask,power,-np.inf)),power.shape))
-    oldmap=ROOT/'Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE_MAP.npz'
+    oldmap=ROOT/'umbra/Vandenberg/results/analysis_block12/BLOCK12_PHASE_SLOPE_MAP.npz'
     with np.load(oldmap) as old:
         reproduction=dict(historical_peak_index=list(historical_peak), fixed_peak_index=list(fixed),
             max_slope_difference_rad_s=float(np.max(abs(historical_s-old['slope_rad_per_s']))),
@@ -236,7 +237,7 @@ def run():
     write_json(OUT/'BLOCK15B_ESTIMATOR_DETAILS.json',details)
     write_json(OUT/'BLOCK15B_SYNTHETIC_CONTAMINATION.json',synthetic)
     figures(rows, details, cfg, fixed, synthetic)
-    for path, expected in cfg['frozen_sha256'].items():assert digest(ROOT/path)==expected
+    for path, expected in cfg['frozen_sha256'].items():assert digest(resolve_historical(path, ROOT))==expected
     write_json(OUT/'BLOCK15B_MANIFEST.json',dict(config_sha256=digest(CONFIG),input=cfg['stack'],
         config_written_before_analysis=True, interpreter=sys.executable,
         source_sha256={p.relative_to(ROOT).as_posix():digest(p) for p in [Path(__file__),ROOT/'code/umbra_sar/frequency_comparison.py']},

@@ -50,7 +50,7 @@ from umbra_sar.aperture_weighting import (  # noqa: E402
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 GRAVITY_M_PER_S2 = 9.80665
 
 
@@ -157,7 +157,8 @@ def main() -> None:
         deweighted_k: list[np.ndarray] = []
         deweighted_p: list[np.ndarray] = []
         for entry in entries:
-            path = Path(str(entry["path"]).replace("\\", "/"))
+            from repository_paths import resolve_historical
+            path = resolve_historical(entry["path"])
             if not path.exists():
                 path = _relocate(path, args.manifest)
             image = np.load(path, mmap_mode="r")

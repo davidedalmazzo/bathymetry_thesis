@@ -27,10 +27,10 @@ from umbra_sar.ocean_sar_forward import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
-BLOCK8 = ROOT / "Block8_validation"
-BLOCK9 = ROOT / "Block9_validation"
-OUTPUT = ROOT / "Block10_validation"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
+BLOCK8 = ROOT / 'umbra/validazione/Block8_validation'
+BLOCK9 = ROOT / 'umbra/validazione/Block9_validation'
+OUTPUT = ROOT / 'umbra/validazione/Block10_validation'
 RESULTS = OUTPUT / "results"
 PLOTS = OUTPUT / "plots"
 ANGLE_CASES = ("range_0deg", "vandenberg_like_22deg")
@@ -70,12 +70,12 @@ def frozen_guard_paths() -> list[Path]:
         / "results"
         / "analysis_block4"
         / "BLOCK4_PHASE_METRICS_SAR_ONLY.json",
-        ROOT / "CHECKPOINT_5.md",
+        ROOT / 'docs/checkpoints/CHECKPOINT_5.md',
         VANDENBERG
         / "results"
         / "analysis_block5"
         / "BLOCK5_FROZEN_INPUTS.json",
-        VANDENBERG / "results" / "analysis_block6" / "CHECKPOINT_6.md",
+        VANDENBERG / "results" / "analysis_block6" / 'docs/checkpoints/CHECKPOINT_6.md',
         VANDENBERG
         / "results"
         / "analysis_block6"
@@ -84,15 +84,15 @@ def frozen_guard_paths() -> list[Path]:
         / "results"
         / "analysis_block6"
         / "BLOCK6_NEARSHORE_PHASE_SLOPE_MAP.npz",
-        VANDENBERG / "results" / "analysis_block7" / "CHECKPOINT_7.md",
+        VANDENBERG / "results" / "analysis_block7" / 'docs/checkpoints/CHECKPOINT_7.md',
         VANDENBERG
         / "results"
         / "analysis_block7"
         / "BLOCK7_SPATIAL_CONVERGENCE.json",
-        BLOCK8 / "results" / "CHECKPOINT_8.md",
+        BLOCK8 / "results" / 'docs/checkpoints/CHECKPOINT_8.md',
         BLOCK8 / "results" / "top16_candidates.csv",
         BLOCK8 / "results" / "ranked_candidates_all.csv",
-        BLOCK9 / "results" / "CHECKPOINT_9.md",
+        BLOCK9 / "results" / 'docs/checkpoints/CHECKPOINT_9.md',
         BLOCK9 / "results" / "BLOCK9_SYNTHETIC_VALIDATION_SUMMARY.json",
         BLOCK9 / "results" / "BLOCK9_SYNTHETIC_TRUTH.json",
         BLOCK9 / "results" / "BLOCK9_MANIFEST.json",
@@ -571,7 +571,8 @@ def plot_results(
 
     # Keep the real-data benchmark visibly separate from the synthetic curves.
     fig, axis = plt.subplots(figsize=(8.5, 4.8), constrained_layout=True)
-    with Path(benchmark["source_csv"]).open(newline="", encoding="utf-8") as stream:
+    from repository_paths import resolve_historical
+    with resolve_historical(benchmark["source_csv"]).open(newline="", encoding="utf-8") as stream:
         rows = [
             row
             for row in csv.DictReader(stream)
@@ -697,7 +698,7 @@ def write_checkpoint(summary: dict[str, Any]) -> Path:
         "# CHECKPOINT_10",
         "",
     ]
-    path = RESULTS / "CHECKPOINT_10.md"
+    path = RESULTS / 'docs/checkpoints/CHECKPOINT_10.md'
     path.write_text("\n".join(lines), encoding="utf-8")
     return path
 

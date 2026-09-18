@@ -1,0 +1,3273 @@
+{
+  "manifests": {
+    "duck_frf/Block32_frf_client/DELIVERY_MANIFEST.json": {
+      "counts": {
+        "hash_verified": 184
+      },
+      "entries": [
+        {
+          "original_path": "Block32_frf_client\\AUTH_TEMPLATE.env.example",
+          "resolved_path": "duck_frf/Block32_frf_client/AUTH_TEMPLATE.env.example",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\DELIVERY_AUDIT.json",
+          "resolved_path": "duck_frf/Block32_frf_client/DELIVERY_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\FROZEN_AUDIT.json",
+          "resolved_path": "duck_frf/Block32_frf_client/FROZEN_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\FROZEN_INPUT_HASHES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/FROZEN_INPUT_HASHES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1941935\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1941935/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_1942455\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_1942455/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\COSMO_2098202\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/COSMO_2098202/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\LEGACY_CACHE_AUDIT.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/LEGACY_CACHE_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\STATUS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/STATUS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\inventory_verification\\TDX-1_record_11\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/inventory_verification/TDX-1_record_11/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\REAL_ENDPOINT_REPORT.json",
+          "resolved_path": "duck_frf/Block32_frf_client/REAL_ENDPOINT_REPORT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\REGRESSION_ACQUISITIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/REGRESSION_ACQUISITIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\currents__awac-11m_profile.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/currents__awac-11m_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\currents__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/currents__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\waves__8m-array_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/waves__8m-array_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\waves__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/waves__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\waves__waverider-17m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/waves__waverider-17m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1941935\\waves__waverider-26m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1941935/waves__waverider-26m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\currents__awac-11m_profile.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/currents__awac-11m_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\currents__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/currents__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\waves__8m-array_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/waves__8m-array_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\waves__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/waves__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\waves__waverider-17m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/waves__waverider-17m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_1942455\\waves__waverider-26m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_1942455/waves__waverider-26m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\currents__awac-11m_profile.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/currents__awac-11m_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\currents__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/currents__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\water_level__eopNoaaTide_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/water_level__eopNoaaTide_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\waves__8m-array_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/waves__8m-array_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\waves__awac-11m_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/waves__awac-11m_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\waves__awac-11m_spectrum.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/waves__awac-11m_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\waves__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/waves__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\waves__waverider-17m_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/waves__waverider-17m_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\waves__waverider-17m_spectrum.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/waves__waverider-17m_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\waves__waverider-17m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/waves__waverider-17m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\waves__waverider-26m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/waves__waverider-26m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\COSMO_2098202\\wind__derived_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/COSMO_2098202/wind__derived_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\DISCOVERY_FAMILIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/DISCOVERY_FAMILIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\DISCOVERY_INSTRUMENTS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/DISCOVERY_INSTRUMENTS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\DISCOVERY_LAST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/DISCOVERY_LAST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\DISCOVERY_PRODUCTS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/DISCOVERY_PRODUCTS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\LEGACY_CACHE_AUDIT.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/LEGACY_CACHE_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\PRODUCT_METADATA.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/PRODUCT_METADATA.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\STATUS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/STATUS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\currents__awac-11m_profile.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/currents__awac-11m_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\currents__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/currents__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\water_level__eopNoaaTide_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/water_level__eopNoaaTide_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__8m-array_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/waves__8m-array_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__awac-11m_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/waves__awac-11m_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__awac-11m_spectrum.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/waves__awac-11m_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/waves__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__waverider-17m_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/waves__waverider-17m_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__waverider-17m_spectrum.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/waves__waverider-17m_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__waverider-17m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/waves__waverider-17m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\waves__waverider-26m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/waves__waverider-26m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\results\\TDX-1_record_11\\wind__derived_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/results/TDX-1_record_11/wind__derived_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\TEST_REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/TEST_REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\LEGACY_CACHE_AUDIT.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/LEGACY_CACHE_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\STATUS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/STATUS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\ACQUISITION.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\CONFIG.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\currents__awac-11m_profile.png",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/currents__awac-11m_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\currents__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/currents__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\DISTANCES.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\INVENTORY.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\MANIFEST.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/MANIFEST.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\MAP.png",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\REPORT.md",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\TENSORS.json",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\waves__8m-array_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/waves__8m-array_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\waves__awac-11m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/waves__awac-11m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\waves__waverider-17m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/waves__waverider-17m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\time_only_verification\\time_only_verification\\waves__waverider-26m_time.png",
+          "resolved_path": "duck_frf/Block32_frf_client/time_only_verification/time_only_verification/waves__waverider-26m_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block32_frf_client\\USER_REQUEST.txt",
+          "resolved_path": "duck_frf/Block32_frf_client/USER_REQUEST.txt",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "CHECKPOINT_32.md",
+          "resolved_path": "docs/checkpoints/CHECKPOINT_32.md",
+          "status": "hash_verified"
+        }
+      ]
+    },
+    "duck_frf/Block33_frf_offline_correction/MANIFEST.json": {
+      "counts": {
+        "hash_verified": 123,
+        "mismatch": 10
+      },
+      "entries": [
+        {
+          "original_path": "Block33_frf_offline_correction/CLEAN_CLIENT_TESTS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/CLEAN_CLIENT_TESTS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/CLEAN_TREE_INPUTS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/CLEAN_TREE_INPUTS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/DEFECT_REPORT.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/DEFECT_REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/FROZEN_AUDIT.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/FROZEN_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/FROZEN_BASELINE.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/FROZEN_BASELINE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/FULL_SUITE.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/FULL_SUITE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/HISTORICAL_MANIFEST_AUDIT.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/HISTORICAL_MANIFEST_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/INITIAL_GIT.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/INITIAL_GIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/PROTOCOL.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/PROTOCOL.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/REGRESSION_COMPARISON.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/REGRESSION_COMPARISON.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/REGRESSION_REPORT.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/REGRESSION_REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/CONFIG.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/currents__awac-11m__786ba8e3dd23_profile.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/currents__awac-11m__786ba8e3dd23_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/currents__awac-11m__786ba8e3dd23_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/currents__awac-11m__786ba8e3dd23_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/INVENTORY.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/MAP.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/REPORT.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/TENSORS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/waves__8m-array__d43004101098_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/waves__8m-array__d43004101098_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/waves__awac-11m__f54f96bb0374_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/waves__awac-11m__f54f96bb0374_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/waves__waverider-17m__2f2b81a6d78b_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/waves__waverider-17m__2f2b81a6d78b_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1941935/waves__waverider-26m__ad75fa11d25c_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1941935/waves__waverider-26m__ad75fa11d25c_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/CONFIG.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/currents__awac-11m__786ba8e3dd23_profile.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/currents__awac-11m__786ba8e3dd23_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/currents__awac-11m__786ba8e3dd23_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/currents__awac-11m__786ba8e3dd23_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/INVENTORY.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/MAP.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/REPORT.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/TENSORS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/waves__8m-array__d43004101098_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/waves__8m-array__d43004101098_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/waves__awac-11m__f54f96bb0374_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/waves__awac-11m__f54f96bb0374_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/waves__waverider-17m__2f2b81a6d78b_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/waves__waverider-17m__2f2b81a6d78b_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_1942455/waves__waverider-26m__ad75fa11d25c_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_1942455/waves__waverider-26m__ad75fa11d25c_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/CONFIG.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/INVENTORY.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/MAP.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/REPORT.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/TENSORS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/COSMO_2098202/wind__derived__67e3b4f6435d_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/COSMO_2098202/wind__derived__67e3b4f6435d_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/INVENTORY.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/STATUS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/STATUS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/CONFIG.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/INVENTORY.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/MAP.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/REPORT.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/TENSORS.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/regressions/TDX-1_record_11/wind__derived__67e3b4f6435d_time.png",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/regressions/TDX-1_record_11/wind__derived__67e3b4f6435d_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/REPORT.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/REPRODUCIBILITY_AUDIT.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/REPRODUCIBILITY_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/REPRODUCTION.json",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/REPRODUCTION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block33_frf_offline_correction/TEST_REPORT.md",
+          "resolved_path": "duck_frf/Block33_frf_offline_correction/TEST_REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "CHECKPOINT_33.md",
+          "resolved_path": "docs/checkpoints/CHECKPOINT_33.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/__init__.py",
+          "resolved_path": "code/frf_client/__init__.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/frf_client/catalog.py",
+          "resolved_path": "code/frf_client/catalog.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/client.py",
+          "resolved_path": "code/frf_client/client.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/frf_client/data.py",
+          "resolved_path": "code/frf_client/data.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/geometry.py",
+          "resolved_path": "code/frf_client/geometry.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/inputs.py",
+          "resolved_path": "code/frf_client/inputs.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/frf_client/output.py",
+          "resolved_path": "code/frf_client/output.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/frf_client/provenance.py",
+          "resolved_path": "code/frf_client/provenance.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/frf_client/survey.py",
+          "resolved_path": "code/frf_client/survey.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/temporal.py",
+          "resolved_path": "code/frf_client/temporal.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/transport.py",
+          "resolved_path": "code/frf_client/transport.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/README_FRF_CLIENT.md",
+          "resolved_path": "code/README_FRF_CLIENT.md",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/run_block32_frf_client.py",
+          "resolved_path": "code/run_block32_frf_client.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/run_block33_frf_verification.py",
+          "resolved_path": "code/run_block33_frf_verification.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "tests/fixtures/frf_block33/catalog.xml",
+          "resolved_path": "tests/fixtures/frf_block33/catalog.xml",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/fixtures/frf_block33/new.das",
+          "resolved_path": "tests/fixtures/frf_block33/new.das",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/fixtures/frf_block33/new.dds",
+          "resolved_path": "tests/fixtures/frf_block33/new.dds",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/test_block30_frf_conditions.py",
+          "resolved_path": "tests/test_block30_frf_conditions.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/test_frf_block33.py",
+          "resolved_path": "tests/test_frf_block33.py",
+          "status": "mismatch"
+        }
+      ]
+    },
+    "duck_frf/Block34_frf_operational/MANIFEST.json": {
+      "counts": {
+        "mismatch": 13,
+        "hash_verified": 319
+      },
+      "entries": [
+        {
+          "original_path": ".gitignore",
+          "resolved_path": ".gitignore",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "Block34_frf_operational/ACQUISITIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/ACQUISITIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/BUDGET_AUTHORIZED.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/BUDGET_AUTHORIZED.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/CACHE_REUSE_COMPARISON.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/CACHE_REUSE_COMPARISON.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/CACHE_REUSE_COMPARISON_INITIAL.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/CACHE_REUSE_COMPARISON_INITIAL.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/CLI_SMOKE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/CLI_SMOKE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/CLIENT_CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/CLIENT_CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/comparison/COMMON_RECORDS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/comparison/COMMON_RECORDS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/comparison/EVENT_PARAMETERS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/comparison/EVENT_PARAMETERS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/comparison/FOOTPRINTS_INSTRUMENTS.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/comparison/FOOTPRINTS_INSTRUMENTS.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/comparison/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/comparison/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/comparison/SPECTRA_OVERLAY.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/comparison/SPECTRA_OVERLAY.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/comparison/SPECTRAL_DIAGNOSTICS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/comparison/SPECTRAL_DIAGNOSTICS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/comparison/WAVE_CONTEXT.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/comparison/WAVE_CONTEXT.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/COSMO_2098202_footprint.geojson",
+          "resolved_path": "duck_frf/Block34_frf_operational/COSMO_2098202_footprint.geojson",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/LEGACY_CACHE_AUDIT.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/LEGACY_CACHE_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/RECOVERY_PLAN.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/RECOVERY_PLAN.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/RUN_STATE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/RUN_STATE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/STATUS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/STATUS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/SUMMARY.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/SUMMARY.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/dry_run/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/dry_run/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/DRY_RUN.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/DRY_RUN.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/FILES_TO_VERSION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/FILES_TO_VERSION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/FINAL_CACHED_REFRESH.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/FINAL_CACHED_REFRESH.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/FROZEN_AUDIT.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/FROZEN_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/FROZEN_BASELINE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/FROZEN_BASELINE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/FULL_SUITE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/FULL_SUITE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/INITIAL_GIT.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/INITIAL_GIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/INPUT_PROVENANCE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/INPUT_PROVENANCE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/ISOLATED_TESTS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/ISOLATED_TESTS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/LIVE_RUN.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/LIVE_RUN.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/NETWORK_AUDIT.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/NETWORK_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/COSMO_2098202/wind__derived__67e3b4f6435d_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/COSMO_2098202/wind__derived__67e3b4f6435d_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/LEGACY_CACHE_AUDIT.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/LEGACY_CACHE_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/RUN_STATE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/RUN_STATE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/STATUS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/STATUS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/SUMMARY.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/SUMMARY.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/wind__derived__67e3b4f6435d_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TDX-1_record_11/wind__derived__67e3b4f6435d_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/wind__derived__67e3b4f6435d_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/offline_reuse/TSX-1_record_12/wind__derived__67e3b4f6435d_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/OFFLINE_REUSE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/OFFLINE_REUSE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/PROTOCOL.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/PROTOCOL.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/COSMO_2098202/wind__derived__67e3b4f6435d_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/COSMO_2098202/wind__derived__67e3b4f6435d_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/LEGACY_CACHE_AUDIT.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/LEGACY_CACHE_AUDIT.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/RUN_STATE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/RUN_STATE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/STATUS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/STATUS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/SUMMARY.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/SUMMARY.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TDX-1_record_11/wind__derived__67e3b4f6435d_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TDX-1_record_11/wind__derived__67e3b4f6435d_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/ACQUISITION.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/ACQUISITION.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/ASSOCIATIONS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/ASSOCIATIONS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/COMPLETENESS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/COMPLETENESS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/CONFIG.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/CONFIG.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_profile.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/DISTANCES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/DISTANCES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/INVENTORY.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/INVENTORY.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/MAP.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/MAP.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/OBSERVATIONS.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/OBSERVATIONS.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/SEARCH_COVERAGE.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/SEARCH_COVERAGE.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/TENSORS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/TENSORS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/water_level__eopNoaaTide__daaa106786e8_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_spectrum.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/results/TSX-1_record_12/wind__derived__67e3b4f6435d_time.png",
+          "resolved_path": "duck_frf/Block34_frf_operational/results/TSX-1_record_12/wind__derived__67e3b4f6435d_time.png",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/SURVEY_SUBSETS.json",
+          "resolved_path": "duck_frf/Block34_frf_operational/SURVEY_SUBSETS.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/TDX-1_record_11_footprint.geojson",
+          "resolved_path": "duck_frf/Block34_frf_operational/TDX-1_record_11_footprint.geojson",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/TEST_REPORT.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/TEST_REPORT.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/TSX-1_record_12_footprint.geojson",
+          "resolved_path": "duck_frf/Block34_frf_operational/TSX-1_record_12_footprint.geojson",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "Block34_frf_operational/VISUAL_QA.md",
+          "resolved_path": "duck_frf/Block34_frf_operational/VISUAL_QA.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "CHECKPOINT_34.md",
+          "resolved_path": "docs/checkpoints/CHECKPOINT_34.md",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/__init__.py",
+          "resolved_path": "code/frf_client/__init__.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/catalog.py",
+          "resolved_path": "code/frf_client/catalog.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/client.py",
+          "resolved_path": "code/frf_client/client.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/comparison.py",
+          "resolved_path": "code/frf_client/comparison.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/data.py",
+          "resolved_path": "code/frf_client/data.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/delivery.py",
+          "resolved_path": "code/frf_client/delivery.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/frf_client/geometry.py",
+          "resolved_path": "code/frf_client/geometry.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/inputs.py",
+          "resolved_path": "code/frf_client/inputs.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/operational.py",
+          "resolved_path": "code/frf_client/operational.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/output.py",
+          "resolved_path": "code/frf_client/output.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/frf_client/provenance.py",
+          "resolved_path": "code/frf_client/provenance.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/frf_client/survey.py",
+          "resolved_path": "code/frf_client/survey.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/temporal.py",
+          "resolved_path": "code/frf_client/temporal.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client/transport.py",
+          "resolved_path": "code/frf_client/transport.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/frf_client_cli.py",
+          "resolved_path": "code/frf_client_cli.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "code/README_FRF_CLIENT.md",
+          "resolved_path": "code/README_FRF_CLIENT.md",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/run_block30_frf_conditions.py",
+          "resolved_path": "code/run_block30_frf_conditions.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/run_block32_frf_client.py",
+          "resolved_path": "code/run_block32_frf_client.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/run_block33_frf_verification.py",
+          "resolved_path": "code/run_block33_frf_verification.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "code/run_block34_frf_operational.py",
+          "resolved_path": "code/run_block34_frf_operational.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "examples/frf/acquisitions.json",
+          "resolved_path": "examples/frf/acquisitions.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "examples/frf/budget.json",
+          "resolved_path": "examples/frf/budget.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "examples/frf/client.json",
+          "resolved_path": "examples/frf/client.json",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "examples/frf/footprint.geojson",
+          "resolved_path": "examples/frf/footprint.geojson",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "examples/frf/roi.geojson",
+          "resolved_path": "examples/frf/roi.geojson",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "FRF_QUICKSTART.md",
+          "resolved_path": "docs/FRF_QUICKSTART.md",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "pytest.ini",
+          "resolved_path": "pytest.ini",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "README.md",
+          "resolved_path": "README.md",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "requirements-thesis.txt",
+          "resolved_path": "requirements-thesis.txt",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/conftest.py",
+          "resolved_path": "tests/conftest.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/fixtures/frf_block33/catalog.xml",
+          "resolved_path": "tests/fixtures/frf_block33/catalog.xml",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/fixtures/frf_block33/new.das",
+          "resolved_path": "tests/fixtures/frf_block33/new.das",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/fixtures/frf_block33/new.dds",
+          "resolved_path": "tests/fixtures/frf_block33/new.dds",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/test_block30_frf_conditions.py",
+          "resolved_path": "tests/test_block30_frf_conditions.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/test_frf_block33.py",
+          "resolved_path": "tests/test_frf_block33.py",
+          "status": "mismatch"
+        },
+        {
+          "original_path": "tests/test_frf_client.py",
+          "resolved_path": "tests/test_frf_client.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "tests/test_frf_operational.py",
+          "resolved_path": "tests/test_frf_operational.py",
+          "status": "hash_verified"
+        },
+        {
+          "original_path": "WORKLOG.md",
+          "resolved_path": "WORKLOG.md",
+          "status": "mismatch"
+        }
+      ]
+    }
+  },
+  "note": "Current code/docs can differ from historical sources; frozen artifact mismatch is separately checked. Original manifests are never rewritten."
+}

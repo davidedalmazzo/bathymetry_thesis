@@ -1,5 +1,6 @@
 """Resume Block27 with provenance-first, bounded observation recovery; no SAR."""
 from __future__ import annotations
+from repository_paths import resolve_historical
 import argparse, csv, hashlib, json, math, sys
 from datetime import datetime, timezone
 from pathlib import Path
@@ -20,7 +21,7 @@ from umbra_sar.geographic_preflight import local_projection, scale_bar_length
 from umbra_sar.reference_recovery import (HTTPBudget, fetch_limited, normalize_payload,
     parse_dds_dimensions, parse_ascii_vector, nearest_time_index, VARIABLES, spectrum_metrics)
 
-BASE = ROOT/'Block27_frequency_query'
+BASE = ROOT/'umbra/selezione_scene/Block27_frequency_query'
 OUT = BASE/'representativity_v1'
 TARGETS = {'51209':'Samoa','42087':'Tobago','41052':'Virgin_Islands','42094':'Louisiana'}
 def read(path):
@@ -54,15 +55,15 @@ def offline():
     if (OUT/'REQUEST_LOG.json').exists():
         raise RuntimeError('Existing recovery ledger: offline reset forbidden; use report/recover.')
     queue=read(BASE/'BLOCK27_QUERY_QUEUE.csv')
-    allrows={r['acquisition_key']:r for r in read(ROOT/'Block21_frequency_validation_selector/BLOCK21_ALL_CANDIDATES.csv')}
-    refs={r['acquisition_key']:r for r in read(ROOT/'Block21_frequency_validation_selector/BLOCK21_REFERENCE_AVAILABILITY.csv')}
-    old={r['acquisition_key']:r for r in read(ROOT/'Block18_reference_recovery/BLOCK18_REFERENCE_VALIDATION.csv')}
-    stations=parse_stations(ROOT/'Block16_scene_selection/cache/ndbc_stationmetadata.xml')
+    allrows={r['acquisition_key']:r for r in read(ROOT/'umbra/selezione_scene/Block21_frequency_validation_selector/BLOCK21_ALL_CANDIDATES.csv')}
+    refs={r['acquisition_key']:r for r in read(ROOT/'umbra/selezione_scene/Block21_frequency_validation_selector/BLOCK21_REFERENCE_AVAILABILITY.csv')}
+    old={r['acquisition_key']:r for r in read(ROOT/'umbra/selezione_scene/Block18_reference_recovery/BLOCK18_REFERENCE_VALIDATION.csv')}
+    stations=parse_stations(ROOT/'umbra/selezione_scene/Block16_scene_selection/cache/ndbc_stationmetadata.xml')
     records=[]; inventory=[]
-    for name in ['Block18_reference_recovery/BLOCK18_NORMALIZED_BINS.csv',
-                 'Block21_frequency_validation_selector/BLOCK21_REFERENCE_BINS.csv']:
-        rr=read(ROOT/name); keys=sorted({r['acquisition_key'] for r in rr})
-        inventory.append({'path':name,'sha256':sha(ROOT/name),'bin_rows':len(rr),'acquisition_keys':keys})
+    for name in ['umbra/selezione_scene/Block18_reference_recovery/BLOCK18_NORMALIZED_BINS.csv',
+                 'umbra/selezione_scene/Block21_frequency_validation_selector/BLOCK21_REFERENCE_BINS.csv']:
+        rr=read(resolve_historical(name, ROOT)); keys=sorted({r['acquisition_key'] for r in rr})
+        inventory.append({'path':name,'sha256':sha(resolve_historical(name, ROOT)),'bin_rows':len(rr),'acquisition_keys':keys})
     dump(OUT/'LOCAL_BIN_INVENTORY.json',inventory)
     for idx,q in enumerate(queue,1):
         if q['station_id'] not in TARGETS: continue
@@ -83,9 +84,9 @@ def offline():
         prior=refs.get(q['acquisition_key'],{})
         r['prior_reference_table_status']=prior.get('status','not_in_table')
         if q['acquisition_key'] in old:
-            v=old[q['acquisition_key']]; raw=ROOT/'Block18_reference_recovery/payloads_raw'/f"{q['collect_id']}_spectrum.ascii"
-            das=ROOT/'Block18_reference_recovery/payloads_raw/42084w9999.das'
-            expected=next(t['historical_payload_sha256'] for t in json.loads((ROOT/'Block18_reference_recovery/BLOCK18_CONFIG.json').read_text())['acquisitions'] if t['acquisition_key']==q['acquisition_key'])
+            v=old[q['acquisition_key']]; raw=ROOT/'umbra/selezione_scene/Block18_reference_recovery/payloads_raw'/f"{q['collect_id']}_spectrum.ascii"
+            das=ROOT/'umbra/selezione_scene/Block18_reference_recovery/payloads_raw/42084w9999.das'
+            expected=next(t['historical_payload_sha256'] for t in json.loads((ROOT/'umbra/selezione_scene/Block18_reference_recovery/BLOCK18_CONFIG.json').read_text())['acquisitions'] if t['acquisition_key']==q['acquisition_key'])
             if sha(raw)!=expected: raise ValueError('Block18 payload hash mismatch')
             n=normalize_payload(raw.read_text(),das.read_text(),observation_epoch_s=epoch(v['observation_utc']))
             dump(OUT/'normalized'/f"{q['collect_id']}.json",serial(n))
@@ -172,7 +173,7 @@ def recover():
 
 def maps_report():
     records=read(OUT/'ACQUISITION_AUDIT.csv')
-    land=read_esri_polygon_shapefile(ROOT/'Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.shp')
+    land=read_esri_polygon_shapefile(ROOT/'umbra/validazione/Block8_validation/catalog_raw/ne_10m_land/ne_10m_land.shp')
     tree=STRtree(land); (OUT/'maps').mkdir(exist_ok=True)
     for zone in TARGETS.values():
         rr=[r for r in records if r['zone']==zone]; c=shape(json.loads(rr[0]['roi_polygon_json'])).centroid

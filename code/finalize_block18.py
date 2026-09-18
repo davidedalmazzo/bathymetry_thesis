@@ -1,9 +1,10 @@
 """Create gate table, prior-manifest audit, summary annotations and manifest."""
+from repository_paths import resolve_historical
 import csv, hashlib, json, platform, sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-root=Path(__file__).resolve().parents[1]; out=root/"Block18_reference_recovery"; b16=root/"Block16_scene_selection"
+root=Path(__file__).resolve().parents[1]; out=root/'umbra/selezione_scene/Block18_reference_recovery'; b16=root/'umbra/selezione_scene/Block16_scene_selection'
 def sha(p): return hashlib.sha256(p.read_bytes()).hexdigest()
 def csvrows(p): return list(csv.DictReader(p.open(encoding="utf-8-sig")))
 def writecsv(p,rows):
@@ -31,8 +32,8 @@ writecsv(out/"BLOCK18_CANDIDATE_GATE_COMPARISON.csv",long)
 
 # Verify pertinent historical manifests without rewriting them.
 audits=[]
-for rel in ["Vandenberg/results/analysis_block15/BLOCK15K_DELIVERY_MANIFEST.json","Block16_scene_selection/BLOCK16A_DELIVERY_MANIFEST.json","Block17_selector_consolidation/BLOCK17_DELIVERY_MANIFEST.json"]:
- m=json.loads((root/rel).read_text()); records=[]
+for rel in ['umbra/Vandenberg/results/analysis_block15/BLOCK15K_DELIVERY_MANIFEST.json','umbra/selezione_scene/Block16_scene_selection/BLOCK16A_DELIVERY_MANIFEST.json','umbra/selezione_scene/Block17_selector_consolidation/BLOCK17_DELIVERY_MANIFEST.json']:
+ m=json.loads((resolve_historical(rel, root)).read_text()); records=[]
  def walk(x):
   if isinstance(x,dict):
    if isinstance(x.get("path"),str) and isinstance(x.get("sha256"),str): records.append((x["path"],x["sha256"]))
@@ -45,7 +46,7 @@ for rel in ["Vandenberg/results/analysis_block15/BLOCK15K_DELIVERY_MANIFEST.json
  seen=set(); bad=[]; missing=[]; checked=0
  for p,digest in records:
   if (p,digest) in seen: continue
-  seen.add((p,digest)); path=root/p
+  seen.add((p,digest)); path=resolve_historical(p, root)
   if not path.exists(): missing.append(p)
   elif sha(path)!=digest: bad.append(p)
   checked+=1
@@ -56,10 +57,10 @@ for rel in ["Vandenberg/results/analysis_block15/BLOCK15K_DELIVERY_MANIFEST.json
 summary=json.loads((out/"BLOCK18_SUMMARY.json").read_text()); summary.update({"tests":{"passed":187,"failed":0,"skipped":0},"offline_reproduction":"exact_4_acquisitions_392_bins_max_difference_0","prior_manifest_audit":"no unexpected mismatches; WORKLOG differences are later additive history","metric_changes":{"nonzero_count":1,"only":"2026-03-14 long-energy fraction: +0.0004688232536333803","category_effect":0},"next_step_not_started":"metadata-only assessment of station-42084 spatial representativeness for these four scenes"})
 (out/"BLOCK18_SUMMARY.json").write_text(json.dumps(summary,indent=2,sort_keys=True)+"\n",encoding="utf-8")
 
-inputs=["Block16_scene_selection/BLOCK16A_MEASURED_SPECTRA.csv","Block16_scene_selection/BLOCK16A_ALL_CANDIDATES.csv","Block16_scene_selection/BLOCK16A_CONFIG.json","Block16_scene_selection/BLOCK16A_DELIVERY_MANIFEST.json","Block17_selector_consolidation/BLOCK17_CONFIG.json","Block17_selector_consolidation/BLOCK17_DELIVERY_MANIFEST.json"]
+inputs=['umbra/selezione_scene/Block16_scene_selection/BLOCK16A_MEASURED_SPECTRA.csv','umbra/selezione_scene/Block16_scene_selection/BLOCK16A_ALL_CANDIDATES.csv','umbra/selezione_scene/Block16_scene_selection/BLOCK16A_CONFIG.json','umbra/selezione_scene/Block16_scene_selection/BLOCK16A_DELIVERY_MANIFEST.json','umbra/selezione_scene/Block17_selector_consolidation/BLOCK17_CONFIG.json','umbra/selezione_scene/Block17_selector_consolidation/BLOCK17_DELIVERY_MANIFEST.json']
 outputs=[str(p.relative_to(root)).replace('\\','/') for p in sorted(out.rglob('*')) if p.is_file() and p.name!="BLOCK18_DELIVERY_MANIFEST.json"]+[
  "code/umbra_sar/reference_recovery.py","code/run_block18_reference_recovery.py","code/reconcile_block18_local_payloads.py","code/verify_block18_offline.py","code/finalize_block18.py","tests/test_reference_recovery.py","WORKLOG.md"]
 def record(rel):
- p=root/rel; return {"path":rel,"bytes":p.stat().st_size,"sha256":sha(p)}
+ p=resolve_historical(rel, root); return {"path":rel,"bytes":p.stat().st_size,"sha256":sha(p)}
 manifest={"block":"18","generated_utc":datetime.now(timezone.utc).isoformat(),"config_sha256":sha(out/"BLOCK18_CONFIG.json"),"inputs":[record(x) for x in inputs],"outputs":[record(x) for x in outputs],"remote_responses":[record(str(p.relative_to(root)).replace('\\','/')) for p in sorted((out/"payloads_raw").iterdir())],"budget":{"transactions":7,"bytes":560916,"maximum_transactions":100,"maximum_bytes":52428800,"maximum_response_bytes":10485760},"environment":{"python":sys.version,"platform":platform.platform()},"tests":{"passed":187,"failed":0,"skipped":0},"scope":{"acquisitions":4,"sar_downloads":0,"sar_reads":0,"catalog_crawls":0,"vandenberg_reopened":False},"reproducibility":"exact offline from saved payloads"}
 (out/"BLOCK18_DELIVERY_MANIFEST.json").write_text(json.dumps(manifest,indent=2,sort_keys=True)+"\n",encoding="utf-8")

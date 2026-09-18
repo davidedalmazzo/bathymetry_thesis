@@ -25,7 +25,7 @@ from umbra_sar.wave_analysis import (
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 
 
 def block_average_columns(intensity: np.ndarray, factor: int = 8) -> np.ndarray:

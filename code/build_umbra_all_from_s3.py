@@ -21,7 +21,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 
-ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/"Block8_validation";RAW=BASE/"catalog_raw"
+ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'umbra/validazione/Block8_validation';RAW=BASE/"catalog_raw"
 ENDPOINT="https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/"
 
 

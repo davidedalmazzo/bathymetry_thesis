@@ -8,7 +8,7 @@ import pytest
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "Vandenberg/results/analysis_block5"
+OUT = ROOT / 'umbra/Vandenberg/results/analysis_block5'
 
 
 def sha256(path: Path) -> str:
@@ -21,7 +21,7 @@ def sha256(path: Path) -> str:
 
 def test_block5_frozen_sar_artifact_matches_immutable_block4() -> None:
     frozen = json.loads((OUT / "BLOCK5_FROZEN_INPUTS.json").read_text())
-    block4 = ROOT / "Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json"
+    block4 = ROOT / 'umbra/Vandenberg/results/analysis_block4/BLOCK4_PHASE_METRICS_SAR_ONLY.json'
     assert frozen["external_data_used_to_select_or_fit_these_values"] is False
     assert frozen["source_files"]["block4_sar_only_sha256"] == sha256(block4)
     assert frozen["source_files"]["block4_sar_only_sha256"] == (

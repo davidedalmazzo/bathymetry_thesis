@@ -31,9 +31,9 @@ from umbra_sar.wave_analysis import local_coherent_phase_slope_map
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
-BLOCK8 = ROOT / "Block8_validation"
-OUTPUT = ROOT / "Block9_validation"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
+BLOCK8 = ROOT / 'umbra/validazione/Block8_validation'
+OUTPUT = ROOT / 'umbra/validazione/Block9_validation'
 RESULTS = OUTPUT / "results"
 PLOTS = OUTPUT / "plots"
 G_M_PER_S2 = 9.80665
@@ -49,7 +49,7 @@ def sha256(path: Path) -> str:
 
 def frozen_guard_paths() -> list[Path]:
     return [
-        BLOCK8 / "results" / "CHECKPOINT_8.md",
+        BLOCK8 / "results" / 'docs/checkpoints/CHECKPOINT_8.md',
         BLOCK8 / "results" / "top16_candidates.csv",
         BLOCK8 / "results" / "ranked_candidates_all.csv",
         VANDENBERG
@@ -491,7 +491,8 @@ def plot_results(
 
     # Independent Block-6 recheck plot uses the primary-side CSV again only
     # for visualization; the numerical fit is already frozen in the JSON.
-    csv_path = Path(real["source_csv"])
+    from repository_paths import resolve_historical
+    csv_path = resolve_historical(real["source_csv"])
     with csv_path.open(newline="", encoding="utf-8") as stream:
         rows = [r for r in csv.DictReader(stream) if r["frozen_peak_lobe_flag"] == "True"]
     k = np.asarray([float(r["k_magnitude_rad_per_m"]) for r in rows])
@@ -521,7 +522,7 @@ def write_checkpoint(summary: dict[str, Any]) -> Path:
     full = summary["full_subaperture_surrogate"]
     controls = summary["negative_controls"]
     decision = summary["acceptance"]["decision"]
-    path = RESULTS / "CHECKPOINT_9.md"
+    path = RESULTS / 'docs/checkpoints/CHECKPOINT_9.md'
     lines = [
         "# CHECKPOINT_9 — end-to-end synthetic validation",
         "",

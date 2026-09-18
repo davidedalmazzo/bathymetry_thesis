@@ -1,6 +1,23 @@
-# Umbra SAR ocean-wave sub-aperture thesis project
+# SAR ocean-wave kinematics for coastal bathymetry — analysis pipeline
 
-Scientific Python project for investigating whether temporal ocean-wave information can be recovered from Umbra spotlight SAR sub-apertures and inter-look intensity cross-spectra. Vandenberg is the development/debug scene; separate open-ocean scenes are screened for validation.
+Scientific Python project investigating whether the **temporal** wave quantity —
+the angular frequency `omega` — can be recovered from the SAR data itself, from
+the phase of a cross-spectrum between two time-separated looks of the same sea.
+
+**The route is not fixed.** Two families of candidates are open, and this
+repository must not declare either as chosen:
+
+- **sub-aperture splitting** of a long-dwell spotlight acquisition (Umbra,
+  TerraSAR-X Staring Spotlight, COSMO-SkyMed CSG Spotlight-2A): the look
+  separation is chosen, up to about 0.65 of the dwell;
+- **inter-burst overlap** in TOPS (Sentinel-1 IW): the separation is fixed by
+  instrument timing, of order seconds, on an open archive, but the overlap phase
+  also carries the systematic term that spectral diversity uses for
+  co-registration, and over water there is no static reference for it.
+
+umbra/Vandenberg (Umbra) is the development and debug scene, and the folder name is
+historical: from Block 30 onward the candidate scenes are TerraSAR-X,
+COSMO-SkyMed and Sentinel-1 over the USACE Field Research Facility at Duck, NC.
 
 ## Repository scope
 
@@ -26,13 +43,22 @@ The verified suite at `CHECKPOINT_10` contains 57 passing tests, including SarPy
 
 ## Structure
 
+The Git repository stays at `D:\Dati Tesi\Umbra` (historical root name).
+Its contents are now grouped by function: `umbra/` for Umbra scenes,
+validation and scene selection; `duck_frf/` for Duck/CSK/TSX/FRF blocks;
+`docs/` for guides and `docs/checkpoints/` for root-level checkpoints;
+`scripts/` for maintenance; `code/`, `tests/`, `examples/` remain shared.
+See [layout and migration](docs/REPOSITORY_LAYOUT.md).
+Frozen block files retain their original contents: legacy paths are resolved
+using `repository_paths.json`, not edited in old manifests.
+
 - `code/umbra_sar/`: reusable metadata-aware SAR and wave-analysis library;
 - `code/analyze_block*.py`: reproducible analysis entry points;
 - `tests/`: synthetic, convention and artifact-regression tests;
-- `Vandenberg/metadata/`: SICD/CPHD metadata summaries and Doppler-to-time mapping;
-- `Vandenberg/results/analysis_block*/`: lightweight scientific outputs and checkpoints;
-- `Block8_validation/`: validation-scene screening and buoy matching;
-- `Block9_validation/`, `Block10_validation/`: synthetic and physical forward-model validation;
+- `umbra/Vandenberg/metadata/`: SICD/CPHD metadata summaries and Doppler-to-time mapping;
+- `umbra/Vandenberg/results/analysis_block*/`: lightweight scientific outputs and checkpoints;
+- `umbra/validazione/Block8_validation/`: validation-scene screening and buoy matching;
+- `umbra/validazione/Block9_validation/`, `umbra/validazione/Block10_validation/`: synthetic and physical forward-model validation;
 - `CHECKPOINT_*.md`, `WORKLOG.md`: chronological decisions and frozen results.
 
 ## Frozen conventions and quantities
@@ -40,10 +66,10 @@ The verified suite at `CHECKPOINT_10` contains 57 passing tests, including SarPy
 - SICD processed-aperture duration and CPHD available slow time are distinct quantities.
 - `Col.Sgn = -1` FFT/IFFT, Doppler-band order and cross-spectrum sign conventions are covered by numerical tests.
 - Cross-spectrum convention: `F_secondary * conj(F_reference)`.
-- The Vandenberg SAR-only value `T_SAR = 17.902230457 s` is frozen and must not be tuned to external buoy data.
+- The umbra/Vandenberg SAR-only value `T_SAR = 17.902230457 s` is frozen and must not be tuned to external buoy data.
 - Raw radar files are read-only; do not run large downloads or dwell sweeps without an explicit task.
 
-Start with [AGENTS.md](AGENTS.md), [TASK_SPEC.md](TASK_SPEC.md) and the checkpoints in numerical order. The most recent implemented scripts currently extend through Block 14, while formal checkpoint reports are present through Block 12.
+Start with [AGENTS.md](AGENTS.md), [TASK_SPEC.md](TASK_SPEC.md) and the checkpoints in numerical order. The implemented client and checkpoints extend through Block34; migration verification is recorded separately under `docs/reorganization/`.
 
 ## Operational FRF observational client (Blocks32–34)
 
@@ -52,14 +78,15 @@ inputs and offers inventory, limited fetch and offline dossier modes. It
 preserves per-instrument QC, temporal association, historical-position uncertainty
 and source spectra/profiles without reading radar data. See
 [client documentation](code/README_FRF_CLIENT.md) and
-[operational quickstart](FRF_QUICKSTART.md) and
-[Block34 checkpoint](CHECKPOINT_34.md). Stable entry point:
+[operational quickstart](docs/FRF_QUICKSTART.md) and
+[Block34 checkpoint](docs/checkpoints/CHECKPOINT_34.md). Stable entry point:
 `code/frf_client_cli.py`; the historical Block32 command remains available.
 Named persistent network tranches are separate from reusable configuration,
 acquisition inputs, verified payload cache and output directories. Missing
 products remain explicitly incomplete, not automatically substituted.
-Blocks33/34 may be local pending files until a separately authorized commit/push;
-their isolated source-copy test is not called a clean GitHub clone.
+Blocks33/34 were published in commit `691d44f`; the subsequent directory
+migration remains a local change until a separately authorized commit/push.
+Their isolated source-copy test is not called a clean GitHub clone.
 
 ## Data and licensing
 

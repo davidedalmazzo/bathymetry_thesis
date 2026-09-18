@@ -13,7 +13,7 @@ from umbra_sar.subaperture import make_window
 
 
 ROOT = Path(__file__).resolve().parents[1]
-V = ROOT / "Vandenberg"
+V = ROOT / 'umbra/Vandenberg'
 OUT = V / "results/analysis_block5"
 NPZ = OUT / "BLOCK5_WIDTH_SENSITIVITY_SPECTRA.npz"
 JSON_PATH = OUT / "BLOCK5_WIDTH_FORMATION.json"

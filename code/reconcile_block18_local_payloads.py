@@ -1,12 +1,13 @@
 """Offline provenance reconciliation after discovering Block16 manifest payloads."""
+from repository_paths import resolve_historical
 import csv, hashlib, json
 from pathlib import Path
 
-root=Path(__file__).resolve().parents[1]; out=root/"Block18_reference_recovery"; b16=root/"Block16_scene_selection"
+root=Path(__file__).resolve().parents[1]; out=root/'umbra/selezione_scene/Block18_reference_recovery'; b16=root/'umbra/selezione_scene/Block16_scene_selection'
 cfg=json.loads((out/"BLOCK18_CONFIG.json").read_text()); manifest=json.loads((b16/"BLOCK16A_DELIVERY_MANIFEST.json").read_text())
 targets={a["historical_payload_sha256"]:a for a in cfg["acquisitions"]}; found={}
 for rel,digest in manifest["frozen_artifact_hashes"].items():
- p=root/rel
+ p=resolve_historical(rel, root)
  if digest in targets and p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==digest: found[digest]=p
 audit=[]
 for digest,a in targets.items():

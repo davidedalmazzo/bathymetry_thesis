@@ -1,5 +1,6 @@
 """Block15K: pre-registered, partially paired SICD/BP causal closure."""
 from __future__ import annotations
+from repository_paths import resolve_historical
 import csv, hashlib, json, math
 from pathlib import Path
 import numpy as np
@@ -9,7 +10,7 @@ from umbra_sar.formation_path_comparison import (temporal_intersection, normaliz
     project_kernel_to_bins, common_spectrum, fixed_k_index, fixed_patch_coefficients, signed_phase_fit,
     patch_msc, conjugate_index, classify_gates, verify_hashes)
 
-ROOT=Path(__file__).resolve().parents[1]; V=ROOT/'Vandenberg'; OUT=V/'results/analysis_block15'; CFG=OUT/'BLOCK15K_CONFIG.json'
+ROOT=Path(__file__).resolve().parents[1]; V=ROOT/'umbra/Vandenberg'; OUT=V/'results/analysis_block15'; CFG=OUT/'BLOCK15K_CONFIG.json'
 ORIGINAL_EN=np.array([716210.6102416331,3827777.093742074]); ORIGINAL_RC=np.array([10000.,82800.])
 JAC=np.array([[-.4428968144347891,-.009929984691552818],[.07684305729344487,-.055618567392230034]])
 
@@ -165,18 +166,18 @@ def main():
             prior.append({'block':f'15{block}','path':str(p.relative_to(ROOT)).replace('\\','/'),'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),
                           'protection_before_15K':'hash in 15J manifest' if block=='J' and name not in ('BLOCK15J_DELIVERY_MANIFEST.json',) else ('not self-protected by 15I manifest' if block=='I' else 'manifest itself not self-hashed')})
     deliver=['code/umbra_sar/formation_path_comparison.py','code/analyze_block15k_path_closure.py','tests/test_formation_path_comparison.py',
-      'Vandenberg/results/analysis_block15/BLOCK15K_PROTOCOL.md','Vandenberg/results/analysis_block15/BLOCK15K_PROTOCOL.sha256','Vandenberg/results/analysis_block15/BLOCK15K_CONFIG.json',
-      'Vandenberg/results/analysis_block15/BLOCK15K_PATH_AUDIT.csv','Vandenberg/results/analysis_block15/BLOCK15K_MATCHED_RESULTS.csv','Vandenberg/results/analysis_block15/BLOCK15K_ABLATION_RESULTS.csv',
-      'Vandenberg/results/analysis_block15/BLOCK15K_FINAL_TIMESERIES.csv','Vandenberg/results/analysis_block15/BLOCK15K_APPLICABILITY_GATES.json',
-      'Vandenberg/results/analysis_block15/BLOCK15K_VANDENBERG_CLASSIFICATION.json','Vandenberg/results/analysis_block15/BLOCK15K_SUMMARY.json','Vandenberg/results/analysis_block15/BLOCK15K_REPORT.md',
-      'Vandenberg/results/analysis_block15/BLOCK15K_SLOPES.png','Vandenberg/results/analysis_block15/BLOCK15K_ABLATION_RESIDUAL.png',
-      'Vandenberg/results/analysis_block15/BLOCK15K_FINAL_RESIDUALS.png','Vandenberg/results/analysis_block15/BLOCK15K_APPLICABILITY.png','WORKLOG.md']
+      'umbra/Vandenberg/results/analysis_block15/BLOCK15K_PROTOCOL.md','umbra/Vandenberg/results/analysis_block15/BLOCK15K_PROTOCOL.sha256','umbra/Vandenberg/results/analysis_block15/BLOCK15K_CONFIG.json',
+      'umbra/Vandenberg/results/analysis_block15/BLOCK15K_PATH_AUDIT.csv','umbra/Vandenberg/results/analysis_block15/BLOCK15K_MATCHED_RESULTS.csv','umbra/Vandenberg/results/analysis_block15/BLOCK15K_ABLATION_RESULTS.csv',
+      'umbra/Vandenberg/results/analysis_block15/BLOCK15K_FINAL_TIMESERIES.csv','umbra/Vandenberg/results/analysis_block15/BLOCK15K_APPLICABILITY_GATES.json',
+      'umbra/Vandenberg/results/analysis_block15/BLOCK15K_VANDENBERG_CLASSIFICATION.json','umbra/Vandenberg/results/analysis_block15/BLOCK15K_SUMMARY.json','umbra/Vandenberg/results/analysis_block15/BLOCK15K_REPORT.md',
+      'umbra/Vandenberg/results/analysis_block15/BLOCK15K_SLOPES.png','umbra/Vandenberg/results/analysis_block15/BLOCK15K_ABLATION_RESIDUAL.png',
+      'umbra/Vandenberg/results/analysis_block15/BLOCK15K_FINAL_RESIDUALS.png','umbra/Vandenberg/results/analysis_block15/BLOCK15K_APPLICABILITY.png','WORKLOG.md']
     own=[]
     for rel in deliver:
-        p=ROOT/rel; own.append({'path':rel,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+        p=resolve_historical(rel, ROOT); own.append({'path':rel,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
     jmanifest=json.loads((OUT/'BLOCK15J_DELIVERY_MANIFEST.json').read_text()); jbad=[]
     for item in jmanifest['files']:
-        p=ROOT/item['path']; got=hashlib.sha256(p.read_bytes()).hexdigest()
+        p=resolve_historical(item['path'], ROOT); got=hashlib.sha256(p.read_bytes()).hexdigest()
         if got!=item['sha256']: jbad.append({'path':item['path'],'reason':'expected evolution by Block15K' if item['path']=='WORKLOG.md' else 'unexpected mismatch'})
     write_json(OUT/'BLOCK15K_DELIVERY_MANIFEST.json',{'block':'15K','status':'complete; Vandenberg frozen','protocol_sha256':protocol_hash,
       'tests':{'block15k_targeted':18,'full_suite_passed':135,'failed':0,'skipped':0},

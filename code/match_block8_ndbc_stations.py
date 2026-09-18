@@ -12,7 +12,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / "Block8_validation"
+BASE = ROOT / 'umbra/validazione/Block8_validation'
 RESULTS = BASE / "results"
 INPUT = RESULTS / "wave_model_screen.csv"
 STATIONS = BASE / "buoy_data" / "ndbc_stationmetadata.xml"

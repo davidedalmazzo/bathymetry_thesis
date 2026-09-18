@@ -18,7 +18,7 @@ from rasterio.merge import merge
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 OUT = VANDENBERG / "results" / "analysis_block7"
 BATHY = VANDENBERG / "bathymetry"
 FROZEN_BEARING_DEG = 79.8357237

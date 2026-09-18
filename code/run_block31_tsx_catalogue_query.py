@@ -53,7 +53,7 @@ import argparse, collections, json, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 BASE = "https://fedeo.ceos.org"
-OUTDIR = Path("Block31_tsx_duck_query")
+OUTDIR = Path('duck_frf/Block31_tsx_duck_query')
 BBOX = "-75.90,36.08,-75.55,36.30"     # molo FRF 36.1836 N, 75.7461 W
 DATETIME = None                         # tutto l'archivio
 

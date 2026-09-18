@@ -14,7 +14,7 @@ from sarpy.io.complex.sicd_elements.SICD import SICDType
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 SICD_XML = VANDENBERG / "metadata" / "SICD_METADATA.xml"
 ROI_DIR = VANDENBERG / "roi"
 DIAGNOSTIC_DIR = VANDENBERG / "results" / "diagnostics"

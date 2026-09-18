@@ -16,7 +16,7 @@ from umbra_sar.wave_analysis import intensity_spectrum_crop, physical_frequency_
 
 
 ROOT = Path(__file__).resolve().parents[1]
-V = ROOT / "Vandenberg"
+V = ROOT / 'umbra/Vandenberg'
 OUT = V / "results/analysis_block5"
 FROZEN_PATH = OUT / "BLOCK5_FROZEN_INPUTS.json"
 WIDTH_NPZ = OUT / "BLOCK5_WIDTH_SENSITIVITY_SPECTRA.npz"

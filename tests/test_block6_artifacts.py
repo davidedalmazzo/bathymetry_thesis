@@ -9,7 +9,7 @@ import numpy as np
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "Vandenberg" / "results" / "analysis_block6"
+OUTPUT = ROOT / 'umbra/Vandenberg' / "results" / "analysis_block6"
 
 
 def load_summary() -> dict:

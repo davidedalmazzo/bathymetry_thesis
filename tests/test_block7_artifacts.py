@@ -4,10 +4,11 @@ import math
 from pathlib import Path
 
 import numpy as np
+from repository_paths import resolve_historical
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "Vandenberg" / "results" / "analysis_block7"
+OUT = ROOT / 'umbra/Vandenberg' / "results" / "analysis_block7"
 
 
 def load(name):
@@ -19,11 +20,11 @@ def test_block7_geolocation_support_and_formed_arrays():
     assert math.isclose(support["geolocation_surface"]["projection_HAE_m"], -36.376, abs_tol=1e-12)
     assert support["candidate_rois"][-1]["L_parallel_m"] == 1440
     assert all(r["sicd_inside_image"] and r["maximum_elevation_NAVD88_m"] < -2 for r in support["candidate_rois"])
-    manifest = load_from_path(ROOT / "Vandenberg" / "results" / "block7_enlarged_nominal_sea_surface" / "BLOCK7_ENLARGED_NOMINAL_MANIFEST.json")
+    manifest = load_from_path(ROOT / 'umbra/Vandenberg' / "results" / "block7_enlarged_nominal_sea_surface" / "BLOCK7_ENLARGED_NOMINAL_MANIFEST.json")
     assert manifest["source_sicd_shape_rows_cols"] == [13310, 107800]
     assert "all 107800" in manifest["anti_bias_rule"]
     for path in manifest["files"]:
-        array = np.load(path, mmap_mode="r")
+        array = np.load(resolve_historical(path), mmap_mode="r")
         assert list(array.shape) == manifest["output_shape"]
         assert array.dtype == np.float32
         assert np.isfinite(array).all()

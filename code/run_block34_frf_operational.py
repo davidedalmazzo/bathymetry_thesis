@@ -1,4 +1,5 @@
 """Bounded FRF operational verification orchestrator; no radar/Git mutations."""
+from repository_paths import resolve_historical
 import argparse
 import csv
 import json
@@ -10,7 +11,7 @@ from frf_client.transport import save_json,digest
 from frf_client.inputs import adapt_cleos,adapt_eoweb,validate_batch
 from frf_client.provenance import audit
 
-ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'Block34_frf_operational'
+ROOT=Path(__file__).resolve().parents[1];BASE=ROOT/'duck_frf/Block34_frf_operational'
 TRANCHE='block34_october_2021'
 
 
@@ -31,8 +32,8 @@ def execute(name,cmd):
 
 
 def prepare():
-    eoweb=ROOT/'Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv'
-    cleos=ROOT/'Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json'
+    eoweb=ROOT/'duck_frf/Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv'
+    cleos=ROOT/'duck_frf/Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json'
     records=adapt_eoweb(eoweb,[12,11])+adapt_cleos(cleos,['2098202'])
     for r in records:
         r['source']=rel(eoweb if r['acquisition_id'].startswith(('TSX','TDX')) else cleos)
@@ -45,11 +46,11 @@ def prepare():
     save_json(BASE/'INPUT_PROVENANCE.json',{'original_exports':[{'path':rel(p),'sha256':digest(p.read_bytes())} for p in (eoweb,cleos)],'input_warnings':warnings,'roi':'none supplied; not invented'})
     for r in records:save_json(BASE/(r['acquisition_id']+'_footprint.geojson'),r['footprint'])
     frozen=[]
-    for name in ('Block32_frf_client','Block33_frf_offline_correction'):
-        for p in (ROOT/name).rglob('*'):
+    for name in ('duck_frf/Block32_frf_client','duck_frf/Block33_frf_offline_correction'):
+        for p in (resolve_historical(name, ROOT)).rglob('*'):
             if p.is_file() and not any(part.startswith('clean_tree') for part in p.parts):frozen.append({'path':rel(p),'sha256':digest(p.read_bytes()),'bytes':p.stat().st_size})
-    frozen.append({'path':'CHECKPOINT_32.md','sha256':digest((ROOT/'CHECKPOINT_32.md').read_bytes())})
-    frozen.append({'path':'CHECKPOINT_33.md','sha256':digest((ROOT/'CHECKPOINT_33.md').read_bytes())})
+    frozen.append({'path':'docs/checkpoints/CHECKPOINT_32.md','sha256':digest((ROOT/'docs/checkpoints/CHECKPOINT_32.md').read_bytes())})
+    frozen.append({'path':'docs/checkpoints/CHECKPOINT_33.md','sha256':digest((ROOT/'docs/checkpoints/CHECKPOINT_33.md').read_bytes())})
     save_json(BASE/'FROZEN_BASELINE.json',frozen)
     status=subprocess.check_output(['git','-c',f'safe.directory={ROOT.as_posix()}','status','--short'],text=True)
     save_json(BASE/'INITIAL_GIT.json',{'status':status,'note':'Block33 local changes retained; no assumption of publication, no commit/push'})
@@ -60,7 +61,7 @@ def main():
     if Path.cwd().resolve()!=ROOT:raise ValueError('Repository root required')
     os.environ.update(TEMP=str(ROOT/'_tmp'),TMP=str(ROOT/'_tmp'),MPLCONFIGDIR=str(ROOT/'_cache/matplotlib'))
     if args.phase=='prepare':prepare();return 0
-    if args.phase=='dry':return execute('DRY_RUN',command('offline',BASE/'dry_run',['--dry-run','--reuse-cache','Block32_frf_client/cache']))
+    if args.phase=='dry':return execute('DRY_RUN',command('offline',BASE/'dry_run',['--dry-run','--reuse-cache','duck_frf/Block32_frf_client/cache']))
     if args.phase in ('live','resume'):
         extra=['--tranche',TRANCHE,'--tranche-root',rel(BASE/'network')]
         if args.phase=='live':extra+=['--new-tranche']

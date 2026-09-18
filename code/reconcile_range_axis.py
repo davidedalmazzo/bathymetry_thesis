@@ -15,7 +15,7 @@ from umbra_sar.wave_analysis import axial_difference_deg
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 
 
 def enu_bearing(vector_ecf: np.ndarray, at_ecf: np.ndarray) -> float:

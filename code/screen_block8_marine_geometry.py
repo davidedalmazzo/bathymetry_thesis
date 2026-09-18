@@ -21,7 +21,7 @@ from shapely.ops import unary_union
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / "Block8_validation"
+BASE = ROOT / 'umbra/validazione/Block8_validation'
 RESULTS = BASE / "results"
 LAND_SHP = BASE / "catalog_raw" / "ne_10m_land" / "ne_10m_land.shp"
 CATALOG = BASE / "umbra_all.csv"

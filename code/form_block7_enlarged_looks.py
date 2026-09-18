@@ -22,7 +22,7 @@ from umbra_sar.subaperture import SicdSubapertureContext, SubapertureBand, image
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 OUTPUT = VANDENBERG / "results" / "block7_enlarged_nominal_sea_surface"
 
 

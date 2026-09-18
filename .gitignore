@@ -60,6 +60,25 @@ Block34_frf_operational/network/
 Block34_frf_operational/delivery_copy*/
 
 # OS/editor files
+# Reorganized layout: retain the same safety exclusions at native locations.
+umbra/Vandenberg/results/sublooks_complex*/
+umbra/Vandenberg/results/block4_sliding_complex/
+umbra/Vandenberg/results/block7_enlarged_nominal*/
+umbra/Vandenberg/results/block12_backprojection/
+umbra/Vandenberg/results/block13_backprojection/
+umbra/Vandenberg/results/_to_delete/
+umbra/validazione/Block8_validation/catalog_raw/
+umbra/validazione/Block8_validation/buoy_data/open_meteo_mfwam_cache/
+umbra/selezione_scene/Block16_scene_selection/cache/
+duck_frf/Block30_duck_csk_preflight/http_cache/
+duck_frf/Block32_frf_client/cache/
+duck_frf/Block33_frf_offline_correction/cache/
+duck_frf/Block33_frf_offline_correction/clean_tree*/
+duck_frf/Block34_frf_operational/cache/
+duck_frf/Block34_frf_operational/network/
+duck_frf/Block34_frf_operational/delivery_copy*/
+.pycache_tmp/
+docs/reorganization/frf_delivery/delivery_copy*/
 .DS_Store
 Thumbs.db
 Desktop.ini

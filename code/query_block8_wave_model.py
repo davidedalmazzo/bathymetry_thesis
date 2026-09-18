@@ -21,7 +21,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BASE = ROOT / "Block8_validation"
+BASE = ROOT / 'umbra/validazione/Block8_validation'
 RESULTS = BASE / "results"
 CACHE = BASE / "buoy_data" / "open_meteo_mfwam_cache"
 INPUT = RESULTS / "marine_geometry_screen.csv"

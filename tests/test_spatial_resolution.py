@@ -1,3 +1,4 @@
+from repository_paths import resolve_historical
 import numpy as np
 import pytest
 import json, hashlib
@@ -35,11 +36,11 @@ def test_local_maxima_does_not_count_conjugate_or_border_by_wrap():
 
 def test_block15h_keeps_the_real_peak_and_signed_convention_frozen():
  root=Path(__file__).resolve().parents[1]
- cfg=json.loads((root/'Vandenberg/results/analysis_block15/BLOCK15H_CONFIG.json').read_text())
+ cfg=json.loads((root/'umbra/Vandenberg/results/analysis_block15/BLOCK15H_CONFIG.json').read_text())
  assert cfg['fixed_peak']==[133,65]
  assert 'signed slope' in cfg['preprocessing']['phase_estimator']
 
 def test_block15h_prior_artifact_guards_match():
  root=Path(__file__).resolve().parents[1]
- cfg=json.loads((root/'Vandenberg/results/analysis_block15/BLOCK15H_CONFIG.json').read_text())
- assert all(hashlib.sha256((root/p).read_bytes()).hexdigest()==h for p,h in cfg['guard_sha256'].items())
+ cfg=json.loads((root/'umbra/Vandenberg/results/analysis_block15/BLOCK15H_CONFIG.json').read_text())
+ assert all(hashlib.sha256((resolve_historical(p, root)).read_bytes()).hexdigest()==h for p,h in cfg['guard_sha256'].items())

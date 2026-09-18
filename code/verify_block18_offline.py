@@ -8,7 +8,7 @@ def datetime_epoch(value):
  from datetime import datetime
  return datetime.fromisoformat(value).timestamp()
 
-root=Path(__file__).resolve().parents[1]; out=root/"Block18_reference_recovery"
+root=Path(__file__).resolve().parents[1]; out=root/'umbra/selezione_scene/Block18_reference_recovery'
 cfg=json.loads((out/"BLOCK18_CONFIG.json").read_text()); das=(out/"payloads_raw/42084w9999.das").read_text(errors="replace")
 saved=list(csv.DictReader((out/"BLOCK18_NORMALIZED_BINS.csv").open()))
 by={}

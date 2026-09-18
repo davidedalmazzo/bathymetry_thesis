@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "Vandenberg/results/analysis_block5"
+OUT = ROOT / 'umbra/Vandenberg/results/analysis_block5'
 
 
 def load(name: str):
@@ -114,7 +114,7 @@ Motivazione: a 17.9 s la boa mostra soltanto una coda debole (3% della densità 
 
 `CHECKPOINT_5`: arresto prima del dwell sweep 5-16 s e prima di qualsiasi inversione della profondità.
 """
-    (ROOT / "CHECKPOINT_5.md").write_text(report, encoding="utf-8")
+    (ROOT / 'docs/checkpoints/CHECKPOINT_5.md').write_text(report, encoding="utf-8")
 
     test_report = f"""# Synthetic and artifact regression report - Block 5
 
@@ -132,7 +132,7 @@ These tests validate numerical conventions, artifacts and guardrails. They do no
     (ROOT / "tests/TEST_REPORT_BLOCK5.md").write_text(
         test_report, encoding="utf-8"
     )
-    print(ROOT / "CHECKPOINT_5.md")
+    print(ROOT / 'docs/checkpoints/CHECKPOINT_5.md')
     print(ROOT / "tests/TEST_REPORT_BLOCK5.md")
 
 

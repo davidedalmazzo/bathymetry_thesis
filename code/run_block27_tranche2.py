@@ -1,5 +1,6 @@
 """User-authorized independent 30 HTTP/20 MiB tranche; preserve v1 and SAR."""
 from __future__ import annotations
+from repository_paths import resolve_historical
 import argparse, json, shutil, hashlib, re, os
 from datetime import datetime, timezone
 from pathlib import Path
@@ -114,7 +115,7 @@ def finish():
     from html import unescape
     rows=m.read(OUT/'ACQUISITION_AUDIT.csv');state=json.loads(STATE.read_text());logs=json.loads(LOG.read_text())
     inventory=[]
-    for p in sorted((m.ROOT/'Block8_validation/buoy_data').glob('246*.nc')):
+    for p in sorted((m.ROOT/'umbra/validazione/Block8_validation/buoy_data').glob('246*.nc')):
         with netcdf_file(p,'r',mmap=False) as d:
             t=d.variables['waveTime'].data
             inventory.append({'path':str(p.relative_to(m.ROOT)),'sha256':m.sha(p),
@@ -136,8 +137,8 @@ def finish():
     for r in rows:
         if r['reference_status'] not in ['verified_local_Block18','recovered']: continue
         npath=OUT/'normalized'/f"{r['collect_id']}.json"
-        saved=json.loads(npath.read_text());raw=m.ROOT/r['payload_path']
-        if r['reference_station_id']=='42084':das=m.ROOT/'Block18_reference_recovery/payloads_raw/42084w9999.das'
+        saved=json.loads(npath.read_text());raw=resolve_historical(r['payload_path'], m.ROOT)
+        if r['reference_station_id']=='42084':das=m.ROOT/'umbra/selezione_scene/Block18_reference_recovery/payloads_raw/42084w9999.das'
         else:
             ds=r['source_url'].split('.ascii?')[0];das=OUT/'raw'/(hashlib.sha256((ds+'.das').encode()).hexdigest()+'.txt')
         n=m.normalize_payload(raw.read_text(),das.read_text(),observation_epoch_s=float(saved['observation_epoch_s']))

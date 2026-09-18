@@ -5,7 +5,7 @@ Implementation: `code/umbra_sar/subaperture.py` and
 
 ## Non-negotiable conventions
 
-For the Vandenberg SICD metadata:
+For the umbra/Vandenberg SICD metadata:
 
 - `Grid.Type = RGAZIM`;
 - SICD Row / NumPy axis 0 is range;
@@ -110,11 +110,11 @@ scientific choice still requires primary-literature verification.
 
 ```powershell
 & '.venv\Scripts\python.exe' -B code\plan_subapertures.py `
-  --sicd-xml Vandenberg\metadata\SICD_METADATA.xml `
-  --cphd-json Vandenberg\metadata\CPHD_METADATA.json `
+  --sicd-xml umbra/Vandenberg\metadata\SICD_METADATA.xml `
+  --cphd-json umbra/Vandenberg\metadata\CPHD_METADATA.json `
   --duration 6 --mode tiled --overlap 0 `
   --window tukey --tukey-alpha 0.25 --normalization energy `
-  --output Vandenberg\metadata\SUBAPERTURE_PLAN_6S.json
+  --output umbra/Vandenberg\metadata\SUBAPERTURE_PLAN_6S.json
 ```
 
 This command reads metadata only and does not require the full NITF.

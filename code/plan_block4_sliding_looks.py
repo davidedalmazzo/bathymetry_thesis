@@ -17,7 +17,7 @@ from umbra_sar.subaperture import make_window
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 
 
 def main() -> None:

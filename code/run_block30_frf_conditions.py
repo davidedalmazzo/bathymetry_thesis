@@ -28,8 +28,8 @@ GAUGES = ["waverider-17m", "awac-11m", "awac-8m", "8m-array", "waverider-26m"]
 VARS = ["waveHs", "waveTp", "waveTm", "waveMeanDirection",
         "wavePeakDirectionPeakFrequency", "directionalPeakSpread"]
 
-SCENES_CSV = Path("Block30_duck_csk_preflight/BLOCK30_CSK_DUCK_SCENES.csv")
-OUTDIR     = Path("Block30_duck_csk_preflight")
+SCENES_CSV = Path('duck_frf/Block30_duck_csk_preflight/BLOCK30_CSK_DUCK_SCENES.csv')
+OUTDIR     = Path('duck_frf/Block30_duck_csk_preflight')
 
 G = 9.81
 OFFSHORE_DEG = 70.0        # asse cross-shore FRF, STIMATO dalle posizioni boe: da confermare

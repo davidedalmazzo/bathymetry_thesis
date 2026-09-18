@@ -6,7 +6,7 @@ Run from `D:\Dati Tesi\Umbra` with the workspace virtual environment:
 2. `python -B code/plan_block4_sliding_looks.py`
 3. `python -B code/form_block4_sliding_looks.py`
 4. `python -B code/analyze_block4_phase_timeseries.py`
-5. Only after step 4 is frozen, download the official NDBC station 46218 annual standard-meteorology NetCDF under `Vandenberg/external` and run `python -B code/compare_block4_external_ndbc.py`.
+5. Only after step 4 is frozen, download the official NDBC station 46218 annual standard-meteorology NetCDF under `umbra/Vandenberg/external` and run `python -B code/compare_block4_external_ndbc.py`.
 6. `python -B code/generate_checkpoint4_report.py`
 7. `python -m pytest -q`
 

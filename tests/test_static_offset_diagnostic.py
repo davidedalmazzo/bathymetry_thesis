@@ -4,7 +4,7 @@ import numpy as np
 import pytest
 from umbra_sar.static_offset_diagnostic import linear_parameters,fit_profile,compare_models,predict
 
-OLD=json.loads((Path(__file__).resolve().parents[1]/'Vandenberg/results/analysis_block15/BLOCK15B_CONFIG.json').read_text())
+OLD=json.loads((Path(__file__).resolve().parents[1]/'umbra/Vandenberg/results/analysis_block15/BLOCK15B_CONFIG.json').read_text())
 T=np.array(OLD['time_s']);T0=T.mean()
 
 

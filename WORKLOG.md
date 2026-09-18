@@ -1,5 +1,11 @@
 # Work log
 
+## 2026-09-18 — Complete in-repository layout migration
+
+- Continued the pre-existing staged directory moves after explicit user confirmation. Root and Git remote remain unchanged; shared code/tests/environments stay at root. Umbra artifacts live under umbra/, Duck/CSK/TSX/FRF under duck_frf/, guides/checkpoints under docs/, maintenance under scripts/.
+- Migrated executable path literals and dynamic historical-path readers. Added repository_paths.json and explicit resolver; frozen manifests retain original paths/content and expose original versus resolved paths during audits.
+- Restored native-layout ignore and byte-preservation rules. No radar data edits, environment relocation, download or scientific reprocessing. See docs/REPOSITORY_LAYOUT.md and docs/reorganization/ for tests/hash audits and remaining historical-reference limitations.
+
 ## 2026-09-18 — Block34 operational Duck/FRF client
 
 - Delivered stable mission-neutral CLI, separate inputs/config/budgets, persistent named tranches, verified cache reuse, early validation and explicit partial dossiers. See FRF_QUICKSTART.md and CHECKPOINT_34.md.

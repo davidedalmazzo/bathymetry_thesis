@@ -1,4 +1,5 @@
 """Samoa metadata, geometry, bounded ranges and nominal-plan regressions."""
+from repository_paths import resolve_historical
 import json,sys
 from pathlib import Path
 import numpy as np
@@ -7,7 +8,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'code'))
 import run_block28_samoa_preflight as m
 from sarpy.io.complex.sicd_elements.SICD import SICDType
 from umbra_sar.subaperture import SicdSubapertureContext,image_to_shifted_spectrum
-BASE=ROOT/'Block28_Samoa_metadata_preflight'
+BASE=ROOT/'umbra/samoa/Block28_Samoa_metadata_preflight'
 def load(name):return json.loads((BASE/name).read_text())
 
 def test_identity_and_distinct_apertures():
@@ -82,4 +83,4 @@ def test_budget_and_input_hashes():
     assert state['transactions']<=20 and state['total_bytes']<=20*1024**2
     assert sum(l['bytes'] for l in logs)==state['total_bytes']
     assert all(l['bytes']<=5*1024**2 for l in logs)
-    for p in load('INPUT_PROVENANCE.json'):assert m.sha(ROOT/p['path'])==p['sha256']
+    for p in load('INPUT_PROVENANCE.json'):assert m.sha(resolve_historical(p['path'], ROOT))==p['sha256']

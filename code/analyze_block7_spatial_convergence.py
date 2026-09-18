@@ -15,7 +15,7 @@ from scipy.signal.windows import tukey
 
 
 ROOT = Path(__file__).resolve().parents[1]
-VANDENBERG = ROOT / "Vandenberg"
+VANDENBERG = ROOT / 'umbra/Vandenberg'
 OUT = VANDENBERG / "results" / "analysis_block7"
 FORMED = VANDENBERG / "results" / "block7_enlarged_nominal_sea_surface"
 FROZEN_BEARING = 79.8357237
