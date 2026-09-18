@@ -1,0 +1,35 @@
+{
+  "acquisition_id": "TSX-1_record_12",
+  "timestamp_utc": "2021-10-12T11:07:16.616000+00:00",
+  "start_utc": "2021-10-12T11:07:16.616000+00:00",
+  "end_utc": "2021-10-12T11:07:17.048000+00:00",
+  "timestamp_semantics": "timestamp_of_catalogue_record_not_verified_aperture_center",
+  "footprint": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -75.77487236912111,
+          36.1992677362442
+        ],
+        [
+          -75.78049605591627,
+          36.1721431340831
+        ],
+        [
+          -75.72149718857452,
+          36.164173236129
+        ],
+        [
+          -75.71585232897257,
+          36.1912982731955
+        ],
+        [
+          -75.77487236912111,
+          36.1992677362442
+        ]
+      ]
+    ]
+  },
+  "source": "Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv"
+}

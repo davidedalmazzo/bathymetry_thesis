@@ -1,0 +1,29 @@
+{
+  "ERA5_ocean": {
+    "native_time": "hourly",
+    "published_availability": "1940 to present",
+    "published_grid": "0.5 degrees (~50 km)",
+    "scope": "global"
+  },
+  "MFWAM": {
+    "native_time": "3-hourly",
+    "published_availability": "October 2021 onward",
+    "published_grid": "0.08 degrees (~8 km)",
+    "scope": "global"
+  },
+  "SMOC_currents": {
+    "native_time": "hourly",
+    "published_availability": "January 2022 onward",
+    "published_grid": "0.08 degrees (~8 km)"
+  },
+  "documentation_recovered": true,
+  "event_subsets_retrieved": false,
+  "mask_verified": false,
+  "native_cell_indices_known": false,
+  "partitions": "documentation lists total, wind-wave, swell, secondary swell; variable availability depends on model",
+  "period_semantics": "mean swell_wave_period distinct from swell_wave_peak_period",
+  "reason_no_comparison": "Tranche transaction budget exhausted; product documentation does not certify event retrieval or local coastal homogeneity",
+  "same_buoy_assimilation_verified": false,
+  "source": "https://open-meteo.com/en/docs/marine-weather-api",
+  "wave_current_coupling_verified": false
+}

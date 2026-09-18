@@ -1,0 +1,25 @@
+{
+  "SICD_valid_support": "not verifiable",
+  "alternatives_proposed": 0,
+  "corrected_Block22_distances": {
+    "acquisition_key": "collect:f7ced35f-8a2c-45ef-a822-c442bb47662d",
+    "buoy_to_roi_center_m": "1206.525355321392",
+    "buoy_to_roi_polygon_m": "507.7448374967768",
+    "coast_accuracy_status": "mask_exact_not_real_coast_certification",
+    "coast_source": "Natural Earth 1:10m original boundary",
+    "collect_id": "f7ced35f-8a2c-45ef-a822-c442bb47662d",
+    "rank": "2",
+    "roi_center_to_coast_m": "757.0866589896522",
+    "roi_center_to_footprint_edge_m": "726.8231149692963",
+    "roi_disjoint_from_land_boundary": "True",
+    "roi_fully_in_mask_water": "True",
+    "roi_polygon_to_coast_m": "181.61567855242157",
+    "roi_polygon_to_footprint_edge_m": "90.06694423576836",
+    "roi_within_footprint": "True",
+    "station_id": "46268"
+  },
+  "minimum_STAC_footprint_edge_clearance_m": 90.06694423576836,
+  "minimum_mask_coast_clearance_m": 181.61567855242157,
+  "original_roi_unchanged": true,
+  "reason": "cannot optimize before verifying complex support"
+}

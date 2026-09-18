@@ -1,0 +1,12 @@
+{
+  "SICD_integrity_and_SHA256": "not_evaluable_no_download",
+  "buoy_comparison": "not_performed",
+  "land_control": "not_observed",
+  "overview": "not_run",
+  "real_phase": "not_measured",
+  "real_sublooks": "not_formed",
+  "real_support_pixel_values": "not_read",
+  "real_wave_peaks": "not_selected",
+  "reason": "Gate A CONDITIONAL",
+  "synthetic_support_diagnostic": "image_domain_only_not_substitute_for_real_trial"
+}

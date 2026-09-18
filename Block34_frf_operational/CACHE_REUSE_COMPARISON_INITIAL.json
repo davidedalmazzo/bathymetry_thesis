@@ -1,0 +1,142 @@
+{
+  "cases": [
+    {
+      "acquisition_id": "TSX-1_record_12",
+      "comparisons": [
+        {
+          "file": "OBSERVATIONS.csv",
+          "numerical_semantic_equal": true,
+          "before_sha256": "0a448f1c694ff8158770f1fea79136c12474eacc2bc4a0aca642282c33f64b4f",
+          "after_sha256": "0a448f1c694ff8158770f1fea79136c12474eacc2bc4a0aca642282c33f64b4f"
+        },
+        {
+          "file": "DISTANCES.csv",
+          "numerical_semantic_equal": true,
+          "before_sha256": "a378059c48d7bf9a0e450ae869de5a4c0aab0797804ba6451c6735a147857f38",
+          "after_sha256": "a378059c48d7bf9a0e450ae869de5a4c0aab0797804ba6451c6735a147857f38"
+        },
+        {
+          "file": "TENSORS.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "30c2beadcd7e48c81d2969da08432e92781606e05703b4cef767d51de776ebcc",
+          "after_sha256": "30c2beadcd7e48c81d2969da08432e92781606e05703b4cef767d51de776ebcc"
+        },
+        {
+          "file": "SPECTRAL_SUMMARIES.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "cbee717bf2eb995646456af09938700cf747fd1dddf1ab738678d4cd3f55af23",
+          "after_sha256": "cbee717bf2eb995646456af09938700cf747fd1dddf1ab738678d4cd3f55af23"
+        },
+        {
+          "file": "SEARCH_COVERAGE.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b",
+          "after_sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+        }
+      ]
+    },
+    {
+      "acquisition_id": "COSMO_2098202",
+      "comparisons": [
+        {
+          "file": "OBSERVATIONS.csv",
+          "numerical_semantic_equal": true,
+          "before_sha256": "e371b38c7e280fcdbba7577afaa903d0fc7bc7a3422b3151a7de0fde4ce67cca",
+          "after_sha256": "e371b38c7e280fcdbba7577afaa903d0fc7bc7a3422b3151a7de0fde4ce67cca"
+        },
+        {
+          "file": "DISTANCES.csv",
+          "numerical_semantic_equal": true,
+          "before_sha256": "0b049ca66f9b4b6ad2c349e3cf2ba2c420f709a2e4b440178500e9b93390c8d0",
+          "after_sha256": "0b049ca66f9b4b6ad2c349e3cf2ba2c420f709a2e4b440178500e9b93390c8d0"
+        },
+        {
+          "file": "TENSORS.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "30c2beadcd7e48c81d2969da08432e92781606e05703b4cef767d51de776ebcc",
+          "after_sha256": "30c2beadcd7e48c81d2969da08432e92781606e05703b4cef767d51de776ebcc"
+        },
+        {
+          "file": "SPECTRAL_SUMMARIES.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "0d1707e398c6f89b496b0a97bca508886d36f714955ee27e38eb58ada82a3cf7",
+          "after_sha256": "0d1707e398c6f89b496b0a97bca508886d36f714955ee27e38eb58ada82a3cf7"
+        },
+        {
+          "file": "SEARCH_COVERAGE.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b",
+          "after_sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+        }
+      ]
+    },
+    {
+      "acquisition_id": "TDX-1_record_11",
+      "comparisons": [
+        {
+          "file": "OBSERVATIONS.csv",
+          "numerical_semantic_equal": true,
+          "before_sha256": "222c4ce38dde2d500e9c19f03c2bbda78420316845c2f01b91c321f2cc9f2ea8",
+          "after_sha256": "222c4ce38dde2d500e9c19f03c2bbda78420316845c2f01b91c321f2cc9f2ea8"
+        },
+        {
+          "file": "DISTANCES.csv",
+          "numerical_semantic_equal": true,
+          "before_sha256": "9fdc75c6e2a485e3bd932cfac4aed61a56f404d890ebd0a33cf9b0d6df3e5a30",
+          "after_sha256": "9fdc75c6e2a485e3bd932cfac4aed61a56f404d890ebd0a33cf9b0d6df3e5a30"
+        },
+        {
+          "file": "TENSORS.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "30c2beadcd7e48c81d2969da08432e92781606e05703b4cef767d51de776ebcc",
+          "after_sha256": "30c2beadcd7e48c81d2969da08432e92781606e05703b4cef767d51de776ebcc"
+        },
+        {
+          "file": "SPECTRAL_SUMMARIES.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "96dd33889463eae8c0863d8a60376d5e30ee8764478db3f254892f845ccea90b",
+          "after_sha256": "96dd33889463eae8c0863d8a60376d5e30ee8764478db3f254892f845ccea90b"
+        },
+        {
+          "file": "SEARCH_COVERAGE.json",
+          "numerical_semantic_equal": true,
+          "before_sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b",
+          "after_sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+        }
+      ]
+    }
+  ],
+  "offline_run_state": {
+    "network_before": {
+      "transactions": 25,
+      "bytes": 3253569,
+      "max_transactions": 50,
+      "max_bytes": 104857600,
+      "created_utc": "2026-09-18T09:41:52.428354+00:00",
+      "historical_consumption": "not part of this tranche; not reconstructed",
+      "tranche_name": "block34_october_2021",
+      "max_response": 10485760
+    },
+    "network_after": {
+      "transactions": 25,
+      "bytes": 3253569,
+      "max_transactions": 50,
+      "max_bytes": 104857600,
+      "created_utc": "2026-09-18T09:41:52.428354+00:00",
+      "historical_consumption": "not part of this tranche; not reconstructed",
+      "tranche_name": "block34_october_2021",
+      "max_response": 10485760
+    },
+    "input_warnings": [
+      {
+        "acquisition_id": "COSMO_2098202",
+        "status": "second_precision_catalogue_reference_outside_original_fractional_start",
+        "not_physical_aperture": true
+      }
+    ],
+    "new_http_transactions": 0,
+    "new_received_bytes": 0,
+    "physical_representativity_verified": false
+  },
+  "actual_http_transactions": 0
+}

@@ -1,0 +1,28 @@
+{
+  "network_before": {
+    "transactions": 0,
+    "bytes": 0,
+    "max_transactions": 50,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-18T09:40:10.207991+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed"
+  },
+  "network_after": {
+    "transactions": 0,
+    "bytes": 0,
+    "max_transactions": 50,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-18T09:40:10.207991+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed"
+  },
+  "input_warnings": [
+    {
+      "acquisition_id": "COSMO_2098202",
+      "status": "second_precision_catalogue_reference_outside_original_fractional_start",
+      "not_physical_aperture": true
+    }
+  ],
+  "new_http_transactions": 0,
+  "new_received_bytes": 0,
+  "physical_representativity_verified": false
+}

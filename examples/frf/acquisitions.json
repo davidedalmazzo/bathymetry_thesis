@@ -1,0 +1,1 @@
+{"acquisitions":[{"acquisition_id":"example_only_not_sar_validation","timestamp_utc":"2021-10-12T11:07:16.616Z","footprint":{"type":"Polygon","coordinates":[[[-75.78,36.17],[-75.72,36.17],[-75.72,36.20],[-75.78,36.20],[-75.78,36.17]]]},"timestamp_semantics":"example_user_timestamp_not_verified_aperture_center"}]}

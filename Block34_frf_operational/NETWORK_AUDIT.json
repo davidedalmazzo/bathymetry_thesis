@@ -1,0 +1,362 @@
+{
+  "state": {
+    "transactions": 25,
+    "bytes": 3253569,
+    "max_transactions": 50,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-18T09:41:52.428354+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed",
+    "tranche_name": "block34_october_2021",
+    "max_response": 10485760
+  },
+  "started_transactions": 25,
+  "complete_response_bytes": 3253569,
+  "non_response_bytes_in_streaming_counter": 0,
+  "timeouts_or_failures": [
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time[509:1:515],latitude,longitude,waveHs[509:1:515],waveTp[509:1:515],waveTm[509:1:515],waveMeanDirection[509:1:515],wavePeakDirectionPeakFrequency[509:1:515],directionalPeakSpread[509:1:515],waveTm1[509:1:515],waveTm2[509:1:515],waveMeanDirectionPeakFrequency[509:1:515],waveFrequency,waveDirectionBins,waveEnergyDensity[509:1:515][0:1:61],directionalWaveEnergyDensity[509:1:515][0:1:61][0:1:71],waveA1Value[509:1:515][0:1:61],waveB1Value[509:1:515][0:1:61],waveA2Value[509:1:515][0:1:61],waveB2Value[509:1:515][0:1:61],qcFlagE[509:1:515],qcFlagD[509:1:515],waveDirectionEstimator[509:1:515],nominalDepth,gaugeDepth[509:1:515]",
+      "status": "timeout_retry_scheduled",
+      "utc": "2026-09-18T09:42:23.386301+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.ascii?time[2732:1:2771],latitude,longitude,waterLevel[2732:1:2771],predictedWaterLevel[2732:1:2771],residualWaterLevel[2732:1:2771],gapGauge[2732:1:2771]",
+      "status": "timeout_retry_scheduled",
+      "utc": "2026-09-18T09:42:52.469144+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc.das",
+      "status": "timeout_retry_scheduled",
+      "utc": "2026-09-18T09:43:22.198140+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc.das",
+      "status": "timeout",
+      "code": null,
+      "bytes_received": 0,
+      "utc": "2026-09-18T09:43:44.253626+00:00"
+    }
+  ],
+  "within_authorized_budget": true,
+  "ledger": [
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time[542:1:549],latitude,longitude,waveHs[542:1:549],waveTp[542:1:549],waveTm[542:1:549],waveMeanDirection[542:1:549],wavePeakDirectionPeakFrequency[542:1:549],directionalPeakSpread[542:1:549],waveTm1[542:1:549],waveTm2[542:1:549],waveMeanDirectionPeakFrequency[542:1:549],waveFrequency,waveDirectionBins,waveEnergyDensity[542:1:549][0:1:61],directionalWaveEnergyDensity[542:1:549][0:1:61][0:1:71],waveA1Value[542:1:549][0:1:61],waveB1Value[542:1:549][0:1:61],waveA2Value[542:1:549][0:1:61],waveB2Value[542:1:549][0:1:61],qcFlagE[542:1:549],qcFlagD[542:1:549],waveDirectionEstimator[542:1:549],nominalDepth,gaugeDepth[542:1:549]",
+      "status": "started",
+      "number": 1,
+      "utc": "2026-09-18T09:41:54.033901+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time[542:1:549],latitude,longitude,waveHs[542:1:549],waveTp[542:1:549],waveTm[542:1:549],waveMeanDirection[542:1:549],wavePeakDirectionPeakFrequency[542:1:549],directionalPeakSpread[542:1:549],waveTm1[542:1:549],waveTm2[542:1:549],waveMeanDirectionPeakFrequency[542:1:549],waveFrequency,waveDirectionBins,waveEnergyDensity[542:1:549][0:1:61],directionalWaveEnergyDensity[542:1:549][0:1:61][0:1:71],waveA1Value[542:1:549][0:1:61],waveB1Value[542:1:549][0:1:61],waveA2Value[542:1:549][0:1:61],waveB2Value[542:1:549][0:1:61],qcFlagE[542:1:549],qcFlagD[542:1:549],waveDirectionEstimator[542:1:549],nominalDepth,gaugeDepth[542:1:549]",
+      "status": "response",
+      "code": 200,
+      "bytes": 526595,
+      "utc": "2026-09-18T09:41:56.335211+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.dds",
+      "status": "started",
+      "number": 2,
+      "utc": "2026-09-18T09:41:56.515463+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.dds",
+      "status": "response",
+      "code": 200,
+      "bytes": 2341,
+      "utc": "2026-09-18T09:41:57.426375+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.ascii?time[274:1:277],latitude,longitude,waveHs[274:1:277],waveTp[274:1:277],waveTm[274:1:277],waveMeanDirection[274:1:277],wavePeakDirectionPeakFrequency[274:1:277],directionalPeakSpread[274:1:277],waveTm1[274:1:277],waveTm2[274:1:277],waveMeanDirectionPeakFrequency[274:1:277],waveFrequency,waveDirectionBins,waveEnergyDensity[274:1:277][0:1:61],directionalWaveEnergyDensity[274:1:277][0:1:61][0:1:71],waveA1Value[274:1:277][0:1:61],waveB1Value[274:1:277][0:1:61],waveA2Value[274:1:277][0:1:61],waveB2Value[274:1:277][0:1:61],qcFlagE[274:1:277],qcFlagD[274:1:277],waveDirectionEstimator[274:1:277],nominalDepth,gaugeDepth[274:1:277]",
+      "status": "started",
+      "number": 3,
+      "utc": "2026-09-18T09:41:57.534746+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.ascii?time[274:1:277],latitude,longitude,waveHs[274:1:277],waveTp[274:1:277],waveTm[274:1:277],waveMeanDirection[274:1:277],wavePeakDirectionPeakFrequency[274:1:277],directionalPeakSpread[274:1:277],waveTm1[274:1:277],waveTm2[274:1:277],waveMeanDirectionPeakFrequency[274:1:277],waveFrequency,waveDirectionBins,waveEnergyDensity[274:1:277][0:1:61],directionalWaveEnergyDensity[274:1:277][0:1:61][0:1:71],waveA1Value[274:1:277][0:1:61],waveB1Value[274:1:277][0:1:61],waveA2Value[274:1:277][0:1:61],waveB2Value[274:1:277][0:1:61],qcFlagE[274:1:277],qcFlagD[274:1:277],waveDirectionEstimator[274:1:277],nominalDepth,gaugeDepth[274:1:277]",
+      "status": "response",
+      "code": 200,
+      "bytes": 235920,
+      "utc": "2026-09-18T09:41:59.610634+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.ascii?time[309:1:313],latitude,longitude,waveHs[309:1:313],waveTp[309:1:313],waveTm[309:1:313],waveMeanDirection[309:1:313],wavePeakDirectionPeakFrequency[309:1:313],directionalPeakSpread[309:1:313],waveTm1[309:1:313],waveTm2[309:1:313],waveMeanDirectionPeakFrequency[309:1:313],waveFrequency,waveDirectionBins,waveEnergyDensity[309:1:313][0:1:61],directionalWaveEnergyDensity[309:1:313][0:1:61][0:1:71],waveA1Value[309:1:313][0:1:61],waveB1Value[309:1:313][0:1:61],waveA2Value[309:1:313][0:1:61],waveB2Value[309:1:313][0:1:61],qcFlagE[309:1:313],qcFlagD[309:1:313],waveDirectionEstimator[309:1:313],nominalDepth,gaugeDepth[309:1:313]",
+      "status": "started",
+      "number": 4,
+      "utc": "2026-09-18T09:41:59.798538+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.ascii?time[309:1:313],latitude,longitude,waveHs[309:1:313],waveTp[309:1:313],waveTm[309:1:313],waveMeanDirection[309:1:313],wavePeakDirectionPeakFrequency[309:1:313],directionalPeakSpread[309:1:313],waveTm1[309:1:313],waveTm2[309:1:313],waveMeanDirectionPeakFrequency[309:1:313],waveFrequency,waveDirectionBins,waveEnergyDensity[309:1:313][0:1:61],directionalWaveEnergyDensity[309:1:313][0:1:61][0:1:71],waveA1Value[309:1:313][0:1:61],waveB1Value[309:1:313][0:1:61],waveA2Value[309:1:313][0:1:61],waveB2Value[309:1:313][0:1:61],qcFlagE[309:1:313],qcFlagD[309:1:313],waveDirectionEstimator[309:1:313],nominalDepth,gaugeDepth[309:1:313]",
+      "status": "response",
+      "code": 200,
+      "bytes": 293546,
+      "utc": "2026-09-18T09:42:01.132705+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.dds",
+      "status": "started",
+      "number": 5,
+      "utc": "2026-09-18T09:42:01.234966+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.dds",
+      "status": "response",
+      "code": 200,
+      "bytes": 2310,
+      "utc": "2026-09-18T09:42:02.217315+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time[509:1:515],latitude,longitude,waveHs[509:1:515],waveTp[509:1:515],waveTm[509:1:515],waveMeanDirection[509:1:515],wavePeakDirectionPeakFrequency[509:1:515],directionalPeakSpread[509:1:515],waveTm1[509:1:515],waveTm2[509:1:515],waveMeanDirectionPeakFrequency[509:1:515],waveFrequency,waveDirectionBins,waveEnergyDensity[509:1:515][0:1:61],directionalWaveEnergyDensity[509:1:515][0:1:61][0:1:71],waveA1Value[509:1:515][0:1:61],waveB1Value[509:1:515][0:1:61],waveA2Value[509:1:515][0:1:61],waveB2Value[509:1:515][0:1:61],qcFlagE[509:1:515],qcFlagD[509:1:515],waveDirectionEstimator[509:1:515],nominalDepth,gaugeDepth[509:1:515]",
+      "status": "started",
+      "number": 6,
+      "utc": "2026-09-18T09:42:02.330492+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time[509:1:515],latitude,longitude,waveHs[509:1:515],waveTp[509:1:515],waveTm[509:1:515],waveMeanDirection[509:1:515],wavePeakDirectionPeakFrequency[509:1:515],directionalPeakSpread[509:1:515],waveTm1[509:1:515],waveTm2[509:1:515],waveMeanDirectionPeakFrequency[509:1:515],waveFrequency,waveDirectionBins,waveEnergyDensity[509:1:515][0:1:61],directionalWaveEnergyDensity[509:1:515][0:1:61][0:1:71],waveA1Value[509:1:515][0:1:61],waveB1Value[509:1:515][0:1:61],waveA2Value[509:1:515][0:1:61],waveB2Value[509:1:515][0:1:61],qcFlagE[509:1:515],qcFlagD[509:1:515],waveDirectionEstimator[509:1:515],nominalDepth,gaugeDepth[509:1:515]",
+      "status": "timeout_retry_scheduled",
+      "utc": "2026-09-18T09:42:23.386301+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time[509:1:515],latitude,longitude,waveHs[509:1:515],waveTp[509:1:515],waveTm[509:1:515],waveMeanDirection[509:1:515],wavePeakDirectionPeakFrequency[509:1:515],directionalPeakSpread[509:1:515],waveTm1[509:1:515],waveTm2[509:1:515],waveMeanDirectionPeakFrequency[509:1:515],waveFrequency,waveDirectionBins,waveEnergyDensity[509:1:515][0:1:61],directionalWaveEnergyDensity[509:1:515][0:1:61][0:1:71],waveA1Value[509:1:515][0:1:61],waveB1Value[509:1:515][0:1:61],waveA2Value[509:1:515][0:1:61],waveB2Value[509:1:515][0:1:61],qcFlagE[509:1:515],qcFlagD[509:1:515],waveDirectionEstimator[509:1:515],nominalDepth,gaugeDepth[509:1:515]",
+      "status": "started",
+      "number": 7,
+      "utc": "2026-09-18T09:42:24.404821+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time[509:1:515],latitude,longitude,waveHs[509:1:515],waveTp[509:1:515],waveTm[509:1:515],waveMeanDirection[509:1:515],wavePeakDirectionPeakFrequency[509:1:515],directionalPeakSpread[509:1:515],waveTm1[509:1:515],waveTm2[509:1:515],waveMeanDirectionPeakFrequency[509:1:515],waveFrequency,waveDirectionBins,waveEnergyDensity[509:1:515][0:1:61],directionalWaveEnergyDensity[509:1:515][0:1:61][0:1:71],waveA1Value[509:1:515][0:1:61],waveB1Value[509:1:515][0:1:61],waveA2Value[509:1:515][0:1:61],waveB2Value[509:1:515][0:1:61],qcFlagE[509:1:515],qcFlagD[509:1:515],waveDirectionEstimator[509:1:515],nominalDepth,gaugeDepth[509:1:515]",
+      "status": "response",
+      "code": 200,
+      "bytes": 460553,
+      "utc": "2026-09-18T09:42:26.525819+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time[571:1:577],latitude,longitude,waveHs[571:1:577],waveTp[571:1:577],waveTm[571:1:577],waveMeanDirection[571:1:577],wavePeakDirectionPeakFrequency[571:1:577],directionalPeakSpread[571:1:577],waveTm1[571:1:577],waveTm2[571:1:577],waveMeanDirectionPeakFrequency[571:1:577],waveFrequency,waveDirectionBins,waveEnergyDensity[571:1:577][0:1:61],directionalWaveEnergyDensity[571:1:577][0:1:61][0:1:71],waveA1Value[571:1:577][0:1:61],waveB1Value[571:1:577][0:1:61],waveA2Value[571:1:577][0:1:61],waveB2Value[571:1:577][0:1:61],qcFlagE[571:1:577],qcFlagD[571:1:577],waveDirectionEstimator[571:1:577],nominalDepth,gaugeDepth[571:1:577]",
+      "status": "started",
+      "number": 8,
+      "utc": "2026-09-18T09:42:26.806599+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time[571:1:577],latitude,longitude,waveHs[571:1:577],waveTp[571:1:577],waveTm[571:1:577],waveMeanDirection[571:1:577],wavePeakDirectionPeakFrequency[571:1:577],directionalPeakSpread[571:1:577],waveTm1[571:1:577],waveTm2[571:1:577],waveMeanDirectionPeakFrequency[571:1:577],waveFrequency,waveDirectionBins,waveEnergyDensity[571:1:577][0:1:61],directionalWaveEnergyDensity[571:1:577][0:1:61][0:1:71],waveA1Value[571:1:577][0:1:61],waveB1Value[571:1:577][0:1:61],waveA2Value[571:1:577][0:1:61],waveB2Value[571:1:577][0:1:61],qcFlagE[571:1:577],qcFlagD[571:1:577],waveDirectionEstimator[571:1:577],nominalDepth,gaugeDepth[571:1:577]",
+      "status": "response",
+      "code": 200,
+      "bytes": 461496,
+      "utc": "2026-09-18T09:42:28.058528+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time[270:1:273],latitude,longitude,waveHs[270:1:273],waveTp[270:1:273],waveTm[270:1:273],waveMeanDirection[270:1:273],wavePeakDirectionPeakFrequency[270:1:273],directionalPeakSpread[270:1:273],waveTm1[270:1:273],waveTm2[270:1:273],waveMeanDirectionPeakFrequency[270:1:273],waveFrequency,waveDirectionBins,waveEnergyDensity[270:1:273][0:1:61],directionalWaveEnergyDensity[270:1:273][0:1:61][0:1:71],waveA1Value[270:1:273][0:1:61],waveB1Value[270:1:273][0:1:61],waveA2Value[270:1:273][0:1:61],waveB2Value[270:1:273][0:1:61],qcFlagE[270:1:273],qcFlagD[270:1:273],waveDirectionEstimator[270:1:273],nominalDepth",
+      "status": "started",
+      "number": 9,
+      "utc": "2026-09-18T09:42:28.265874+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time[270:1:273],latitude,longitude,waveHs[270:1:273],waveTp[270:1:273],waveTm[270:1:273],waveMeanDirection[270:1:273],wavePeakDirectionPeakFrequency[270:1:273],directionalPeakSpread[270:1:273],waveTm1[270:1:273],waveTm2[270:1:273],waveMeanDirectionPeakFrequency[270:1:273],waveFrequency,waveDirectionBins,waveEnergyDensity[270:1:273][0:1:61],directionalWaveEnergyDensity[270:1:273][0:1:61][0:1:71],waveA1Value[270:1:273][0:1:61],waveB1Value[270:1:273][0:1:61],waveA2Value[270:1:273][0:1:61],waveB2Value[270:1:273][0:1:61],qcFlagE[270:1:273],qcFlagD[270:1:273],waveDirectionEstimator[270:1:273],nominalDepth",
+      "status": "response",
+      "code": 200,
+      "bytes": 268564,
+      "utc": "2026-09-18T09:42:29.529685+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202110.nc.ascii?time[136:1:137],latitude,longitude,depth,cellSize[136:1:137],blankDist[136:1:137],maxCell[136:1:137],aveTime[136:1:137],meanPressure[136:1:137],aveE[136:1:137],aveN[136:1:137],currentSpeed[136:1:137],currentDirection[136:1:137],currentEast[136:1:137][0:1:46],currentNorth[136:1:137][0:1:46],currentUp[136:1:137][0:1:46],qcFlag[136:1:137]",
+      "status": "started",
+      "number": 10,
+      "utc": "2026-09-18T09:42:29.717817+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202110.nc.ascii?time[136:1:137],latitude,longitude,depth,cellSize[136:1:137],blankDist[136:1:137],maxCell[136:1:137],aveTime[136:1:137],meanPressure[136:1:137],aveE[136:1:137],aveN[136:1:137],currentSpeed[136:1:137],currentDirection[136:1:137],currentEast[136:1:137][0:1:46],currentNorth[136:1:137][0:1:46],currentUp[136:1:137][0:1:46],qcFlag[136:1:137]",
+      "status": "response",
+      "code": 200,
+      "bytes": 9242,
+      "utc": "2026-09-18T09:42:30.481109+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc.ascii?time[1637:1:1660],latitude,longitude,windSpeed[1637:1:1660],vectorSpeed[1637:1:1660],sustWindSpeed[1637:1:1660],windGust[1637:1:1660],windDirection[1637:1:1660],maxWindSpeed[1637:1:1660],minWindSpeed[1637:1:1660],stdWindSpeed[1637:1:1660],gaugeElevation[1637:1:1660],qcFlagS[1637:1:1660],qcFlagD[1637:1:1660],id[1637:1:1660]",
+      "status": "started",
+      "number": 11,
+      "utc": "2026-09-18T09:42:30.610497+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc.ascii?time[1637:1:1660],latitude,longitude,windSpeed[1637:1:1660],vectorSpeed[1637:1:1660],sustWindSpeed[1637:1:1660],windGust[1637:1:1660],windDirection[1637:1:1660],maxWindSpeed[1637:1:1660],minWindSpeed[1637:1:1660],stdWindSpeed[1637:1:1660],gaugeElevation[1637:1:1660],qcFlagS[1637:1:1660],qcFlagD[1637:1:1660],id[1637:1:1660]",
+      "status": "response",
+      "code": 200,
+      "bytes": 3464,
+      "utc": "2026-09-18T09:42:31.298896+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.ascii?time[2732:1:2771],latitude,longitude,waterLevel[2732:1:2771],predictedWaterLevel[2732:1:2771],residualWaterLevel[2732:1:2771],gapGauge[2732:1:2771]",
+      "status": "started",
+      "number": 12,
+      "utc": "2026-09-18T09:42:31.434289+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.ascii?time[2732:1:2771],latitude,longitude,waterLevel[2732:1:2771],predictedWaterLevel[2732:1:2771],residualWaterLevel[2732:1:2771],gapGauge[2732:1:2771]",
+      "status": "timeout_retry_scheduled",
+      "utc": "2026-09-18T09:42:52.469144+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.ascii?time[2732:1:2771],latitude,longitude,waterLevel[2732:1:2771],predictedWaterLevel[2732:1:2771],residualWaterLevel[2732:1:2771],gapGauge[2732:1:2771]",
+      "status": "started",
+      "number": 13,
+      "utc": "2026-09-18T09:42:53.486496+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waterlevel/eopNoaaTide/2021/FRF-ocean_waterlevel_eopNoaaTide_202110.nc.ascii?time[2732:1:2771],latitude,longitude,waterLevel[2732:1:2771],predictedWaterLevel[2732:1:2771],residualWaterLevel[2732:1:2771],gapGauge[2732:1:2771]",
+      "status": "response",
+      "code": 200,
+      "bytes": 2546,
+      "utc": "2026-09-18T09:42:54.175860+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+      "status": "started",
+      "number": 14,
+      "utc": "2026-09-18T09:42:54.210005+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+      "status": "response",
+      "code": 200,
+      "bytes": 524654,
+      "utc": "2026-09-18T09:43:01.053549+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc.das",
+      "status": "started",
+      "number": 15,
+      "utc": "2026-09-18T09:43:01.151294+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc.das",
+      "status": "timeout_retry_scheduled",
+      "utc": "2026-09-18T09:43:22.198140+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc.das",
+      "status": "started",
+      "number": 16,
+      "utc": "2026-09-18T09:43:23.214877+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc.das",
+      "status": "timeout",
+      "code": null,
+      "bytes_received": 0,
+      "utc": "2026-09-18T09:43:44.253626+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc.das",
+      "status": "started",
+      "number": 17,
+      "utc": "2026-09-18T09:43:44.279008+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc.das",
+      "status": "response",
+      "code": 200,
+      "bytes": 38227,
+      "utc": "2026-09-18T09:43:45.296621+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc.dds",
+      "status": "started",
+      "number": 18,
+      "utc": "2026-09-18T09:43:45.338403+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc.dds",
+      "status": "response",
+      "code": 200,
+      "bytes": 534,
+      "utc": "2026-09-18T09:43:45.973325+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc.das",
+      "status": "started",
+      "number": 19,
+      "utc": "2026-09-18T09:43:46.001585+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc.das",
+      "status": "response",
+      "code": 200,
+      "bytes": 38227,
+      "utc": "2026-09-18T09:43:46.909924+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc.dds",
+      "status": "started",
+      "number": 20,
+      "utc": "2026-09-18T09:43:46.948305+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc.dds",
+      "status": "response",
+      "code": 200,
+      "bytes": 522,
+      "utc": "2026-09-18T09:43:47.639533+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc.das",
+      "status": "started",
+      "number": 21,
+      "utc": "2026-09-18T09:43:47.761839+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc.das",
+      "status": "response",
+      "code": 200,
+      "bytes": 38227,
+      "utc": "2026-09-18T09:43:48.764887+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc.dds",
+      "status": "started",
+      "number": 22,
+      "utc": "2026-09-18T09:43:48.805912+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc.dds",
+      "status": "response",
+      "code": 200,
+      "bytes": 522,
+      "utc": "2026-09-18T09:43:49.430004+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc.ascii?lat[0:1:2999],lon[0:1:2999],elevation[0:1:2999]",
+      "status": "started",
+      "number": 23,
+      "utc": "2026-09-18T09:46:21.680615+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc.ascii?lat[0:1:2999],lon[0:1:2999],elevation[0:1:2999]",
+      "status": "response",
+      "code": 200,
+      "bytes": 115223,
+      "utc": "2026-09-18T09:46:22.940269+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc.ascii?lat[0:1:2999],lon[0:1:2999],elevation[0:1:2999]",
+      "status": "started",
+      "number": 24,
+      "utc": "2026-09-18T09:46:23.135194+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc.ascii?lat[0:1:2999],lon[0:1:2999],elevation[0:1:2999]",
+      "status": "response",
+      "code": 200,
+      "bytes": 115349,
+      "utc": "2026-09-18T09:46:24.276242+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc.ascii?lat[0:1:2999],lon[0:1:2999],elevation[0:1:2999]",
+      "status": "started",
+      "number": 25,
+      "utc": "2026-09-18T09:46:24.450392+00:00"
+    },
+    {
+      "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc.ascii?lat[0:1:2999],lon[0:1:2999],elevation[0:1:2999]",
+      "status": "response",
+      "code": 200,
+      "bytes": 115507,
+      "utc": "2026-09-18T09:46:25.414780+00:00"
+    }
+  ],
+  "note": "Named tranche only; verified local reuse is not charged. Prior historical consumption not determinable, never zero."
+}

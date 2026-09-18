@@ -1,0 +1,22 @@
+{
+  "block": 23,
+  "status": "CHECKPOINT_23",
+  "candidate": "f7ced35f-8a2c-45ef-a822-c442bb47662d",
+  "identity_verified": true,
+  "catalog_duration_s": 15.0,
+  "vendor_collect_span_s": 15.101624,
+  "sicd_processed_aperture_s": null,
+  "cphd_tx_time_span_s": null,
+  "complex_availability": "declared_in_STAC_but_not_publicly_retrievable",
+  "wave_range": {
+    "frozen_propagation_to_deg": 37.31836855246769,
+    "vendor_center_range_proxy_axis_deg": 109.1379194925205,
+    "provisional_axial_difference_deg": 71.81955094005281,
+    "sicd_local_axis_verified": false
+  },
+  "roi": {"mask_coast_clearance_m": 181.61567855242157, "stac_footprint_clearance_m": 90.06694423576836, "sicd_valid_support_verified": false},
+  "preview": "not_evaluable_no_small_public_browse",
+  "decision": "NON_PRIORITY_FOR_THIS_EXPERIMENT",
+  "remote": {"transactions_all_executions": 10, "bytes_all_executions": 28424},
+  "prohibitions_observed": {"pixel_read": false, "signal_read": false, "buoy_query": false, "other_candidate": false, "Block20": false, "formation": false, "frequency_estimate": false, "commit": false, "push": false}
+}

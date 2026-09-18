@@ -1,6 +1,7 @@
 """Auditable HTTP with manual redirects, TLS, persistent limits and verified cache."""
 from __future__ import annotations
 import hashlib
+import http.client
 import json
 import time
 import urllib.error
@@ -47,20 +48,31 @@ class Transport:
     def __init__(self, directory, *, offline=False, max_requests=40,
                  max_bytes=100*1024**2, max_response=8*1024**2, timeout=30,
                  rate_seconds=.25, retries=1, failure_ttl=3600,
-                 hosts=("chldata.erdc.dren.mil",), opener=None):
+                 hosts=("chldata.erdc.dren.mil",), opener=None,
+                 tranche_directory=None,tranche_name=None,new_tranche=False):
         self.directory = Path(directory)
         self.directory.mkdir(parents=True, exist_ok=True)
         self.offline, self.max_response = offline, max_response
         self.timeout, self.rate_seconds, self.retries = timeout, rate_seconds, retries
         self.failure_ttl, self.hosts = failure_ttl, set(hosts)
-        self.state_path = self.directory / "NETWORK_STATE.json"
-        self.log_path = self.directory / "requests.jsonl"
+        budget_directory=Path(tranche_directory) if tranche_directory is not None else self.directory
+        self.state_path = budget_directory / "NETWORK_STATE.json"
+        self.log_path = budget_directory / "requests.jsonl"
+        if tranche_directory is not None:
+            if not tranche_name or tranche_name in ('.','..') or not __import__('re').fullmatch(r'[A-Za-z0-9_.-]+',tranche_name):
+                raise ValueError("Explicit safe tranche name required")
+            if new_tranche and self.state_path.exists():raise ValueError("Named tranche already exists; resume without --new-tranche")
+            if not new_tranche and not self.state_path.exists():raise ValueError("Unknown tranche: explicit --new-tranche required, no implicit reset")
         self.state = json.loads(self.state_path.read_text()) if self.state_path.exists() else {
             "transactions": 0, "bytes": 0, "max_transactions": max_requests,
             "max_bytes": max_bytes, "created_utc": datetime.now(timezone.utc).isoformat(),
             "historical_consumption": "not part of this tranche; not reconstructed"}
         if (self.state["max_transactions"], self.state["max_bytes"]) != (max_requests, max_bytes):
             raise ValueError("Persistent budget cannot be silently changed")
+        if tranche_directory is not None:
+            if self.state.get('tranche_name',tranche_name)!=tranche_name:raise ValueError("Tranche identity mismatch")
+            if self.state.get('max_response',max_response)!=max_response:raise ValueError("Persistent response limit cannot be enlarged")
+            self.state.update(tranche_name=tranche_name,max_response=max_response)
         save_json(self.state_path, self.state)  # exists BEFORE the first request
         self.opener = opener or urllib.request.build_opener(NoRedirect())
         self.last_request = 0.
@@ -130,6 +142,24 @@ class Transport:
             imported.append({"url": safe_url(url), "status": "verified_legacy_reused"})
         return imported
 
+    def import_verified(self,directory):
+        """Copy verified payloads only; never import/reset another tranche's state."""
+        imported=[]
+        for path in sorted(Path(directory).glob('*.json')):
+            entry=json.loads(path.read_text())
+            if entry.get('status')!='ok' or not entry.get('url'):continue
+            url=entry['url'];self._validate_url(url)
+            payload=path.with_suffix('.payload')
+            if not payload.exists():imported.append({'url':safe_url(url),'status':'source_payload_unavailable'});continue
+            raw=payload.read_bytes()
+            if digest(raw)!=entry['sha256']:imported.append({'url':safe_url(url),'status':'hash_mismatch_not_reused'});continue
+            target,metadata=self._paths(url)
+            if digest(url.encode())!=path.stem:imported.append({'url':safe_url(url),'status':'source_key_unresolved'});continue
+            if not metadata.exists() or json.loads(metadata.read_text()).get('status')!='ok':
+                target.write_bytes(raw);save_json(metadata,entry)
+            imported.append({'url':safe_url(url),'sha256':entry['sha256'],'status':'verified_payload_reused_no_network'})
+        return imported
+
     def cached(self, url):
         payload, meta = self._paths(url)
         if not meta.exists():
@@ -175,20 +205,40 @@ class Transport:
                 except urllib.error.HTTPError as exc:
                     response, code, headers = exc, exc.code, exc.headers
                 allowance = min(self.max_response, self.state["max_bytes"] - self.state["bytes"])
-                length = headers.get("Content-Length")
-                if length and int(length) > allowance:
+                # urllib exposes encoded entity bytes, not decompressed content.
+                # For chunked transfer Content-Length is not a comparable quantity.
+                transfer_encoding = headers.get("Transfer-Encoding", "").lower()
+                if transfer_encoding and transfer_encoding != "chunked":
+                    raise FetchError("unsupported_transfer_encoding")
+                length = None if transfer_encoding == "chunked" else headers.get("Content-Length")
+                if length is not None:
+                    try:
+                        length = int(length)
+                    except ValueError:
+                        raise FetchError("invalid_content_length") from None
+                    if length < 0:
+                        raise FetchError("invalid_content_length")
+                if length is not None and length > allowance:
                     raise FetchError("response_too_large")
                 pieces, used = [], 0
                 while used < allowance:
-                    chunk = response.read(min(65536, allowance-used))
+                    try:
+                        chunk = response.read(min(65536, allowance-used))
+                    except http.client.IncompleteRead as exc:
+                        partial = exc.partial
+                        self.state["bytes"] += len(partial)
+                        save_json(self.state_path,self.state)
+                        raise FetchError("truncated_response") from None
                     if not chunk:
                         break
                     pieces.append(chunk)
                     used += len(chunk)
                     self.state["bytes"] += len(chunk)
                     save_json(self.state_path, self.state)
-                if used == allowance and (not length or int(length) > used):
+                if used == allowance and (length is None or length > used):
                     raise FetchError("incomplete_budget_or_response_limit")
+                if length is not None and used != length:
+                    raise FetchError("truncated_response" if used < length else "content_length_mismatch")
                 raw = b"".join(pieces)
                 self.log(url=safe_url(url), status="response", code=code, bytes=used)
                 if code in (301, 302, 303, 307, 308):
@@ -214,7 +264,10 @@ class Transport:
                 payload, meta = self._paths(original_url)
                 payload.write_bytes(raw)
                 save_json(meta, {"url": safe_url(original_url), "final_url": safe_url(url),
-                                 "status": "ok", "sha256": digest(raw), "bytes": len(raw)})
+                                 "status": "ok", "sha256": digest(raw), "bytes": len(raw),
+                                 "content_length":length,"transfer_encoding":transfer_encoding or "identity",
+                                 "content_encoding":headers.get("Content-Encoding","identity"),
+                                 "length_comparison":"encoded_entity_bytes" if length is not None else "unknown_length_eof"})
                 return raw
             except (urllib.error.URLError, TimeoutError, OSError) as exc:
                 status = "timeout" if isinstance(exc, TimeoutError) or isinstance(getattr(exc,"reason",None), TimeoutError) else "transport_error"

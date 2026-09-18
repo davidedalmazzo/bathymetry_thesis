@@ -1,0 +1,13 @@
+{
+  "diagnostic": "URLError(ConnectionRefusedError(10061, 'Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione', None, 10061, None))",
+  "historical_budgets": "separate, unchanged",
+  "image_pixels_read": false,
+  "max_response_bytes": 5242880,
+  "max_total_bytes": 20971520,
+  "max_transactions": 20,
+  "signal_array_read": false,
+  "stage": "CHECKPOINT_28",
+  "total_bytes": 59642,
+  "tranche": "Samoa_complex_metadata_only",
+  "transactions": 16
+}

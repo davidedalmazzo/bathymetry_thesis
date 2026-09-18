@@ -1,0 +1,350 @@
+[
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2019/FRF-ocean_waves_waverider-17m_201910.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2019/FRF-ocean_waves_waverider-17m_201910.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202009.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202009.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202010.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202010.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202011.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202011.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202012.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2020/FRF-ocean_waves_waverider-17m_202012.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202104.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202104.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202106.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202106.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202107.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202107.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2019/FRF-ocean_waves_awac-11m_201910.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2019/FRF-ocean_waves_awac-11m_201910.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202009.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202009.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202010.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202010.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202011.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202011.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202012.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2020/FRF-ocean_waves_awac-11m_202012.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202104.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202104.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202106.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202106.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202107.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202107.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2019/FRF-ocean_waves_8m-array_201910.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2019/FRF-ocean_waves_8m-array_201910.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202009.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202009.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202010.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202010.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202011.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202011.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202012.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2020/FRF-ocean_waves_8m-array_202012.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202104.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202104.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202106.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202106.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202107.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202107.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202110.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2019/FRF-ocean_waves_waverider-26m_201910.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2019/FRF-ocean_waves_waverider-26m_201910.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202009.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202009.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202010.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202010.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202011.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202011.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202012.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2020/FRF-ocean_waves_waverider-26m_202012.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/oceanography/waves/awac-8m/catalog.xml",
+    "status": "hash_mismatch_not_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202104.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202104.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202106.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202106.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202107.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202107.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202110.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202101.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202101.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2023/FRF-ocean_waves_waverider-17m_202311.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2023/FRF-ocean_waves_waverider-17m_202311.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202101.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202101.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2023/FRF-ocean_waves_awac-11m_202311.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2023/FRF-ocean_waves_awac-11m_202311.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202101.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202101.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202101.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202101.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2023/FRF-ocean_waves_waverider-26m_202311.nc.das",
+    "status": "verified_legacy_reused"
+  },
+  {
+    "url": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2023/FRF-ocean_waves_waverider-26m_202311.nc.ascii?time,waveHs,waveTp,waveTm,waveMeanDirection,wavePeakDirectionPeakFrequency,directionalPeakSpread",
+    "status": "verified_legacy_reused"
+  }
+]

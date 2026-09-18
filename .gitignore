@@ -53,6 +53,11 @@ Block8_validation/catalog_raw/
 Block8_validation/buoy_data/open_meteo_mfwam_cache/
 Block30_duck_csk_preflight/http_cache/
 Block32_frf_client/cache/
+Block33_frf_offline_correction/cache/
+Block33_frf_offline_correction/clean_tree*/
+Block34_frf_operational/cache/
+Block34_frf_operational/network/
+Block34_frf_operational/delivery_copy*/
 
 # OS/editor files
 .DS_Store

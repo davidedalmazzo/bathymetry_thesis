@@ -1,0 +1,166 @@
+{
+  "artifacts": [
+    {
+      "bytes": 47236,
+      "path": "Block27_frequency_query\\representativity_v2\\ACQUISITION_AUDIT.csv",
+      "sha256": "8698a9b36ac4b9ba935a6ca06d5a017b4957d367b34f8146cfc6d49376c78aac"
+    },
+    {
+      "bytes": 832,
+      "path": "Block27_frequency_query\\representativity_v2\\DATASET_EVIDENCE.json",
+      "sha256": "500d020eada7a2431ff8cdd83f860d621e43f05b903624f17ea18a5286981a13"
+    },
+    {
+      "bytes": 4558,
+      "path": "Block27_frequency_query\\representativity_v2\\documentation_text\\41052_station.txt",
+      "sha256": "b4b0b48c3adbc87a4ae4134f2d1fb67442b7ba3babfd40c777394f227fc44833"
+    },
+    {
+      "bytes": 3924,
+      "path": "Block27_frequency_query\\representativity_v2\\documentation_text\\42087_station.txt",
+      "sha256": "868546bf88696ec1c844fcd7cc8ffa74e79dff1b5f9b451a93380c079aa085b3"
+    },
+    {
+      "bytes": 17177,
+      "path": "Block27_frequency_query\\representativity_v2\\documentation_text\\wave_model_documentation.txt",
+      "sha256": "343eeb2e7b74dd79bda08b59de38d479392af805421ffd812371bed5bdddc4fa"
+    },
+    {
+      "bytes": 925,
+      "path": "Block27_frequency_query\\representativity_v2\\LOCAL_BIN_INVENTORY.json",
+      "sha256": "23d554792241f959c4dfd08ecdd392e85c55ad67e636a230c4abe57e5b13cccc"
+    },
+    {
+      "bytes": 1936,
+      "path": "Block27_frequency_query\\representativity_v2\\LOCAL_CDIP_INVENTORY.json",
+      "sha256": "7e9cbe1be99fcbbdae8aaccd4c9c5557b72f093fadf56c596576ba8875eb12e6"
+    },
+    {
+      "bytes": 96194,
+      "path": "Block27_frequency_query\\representativity_v2\\maps\\Louisiana.png",
+      "sha256": "a893b87ed912ab4e9a266a20df76be5db11b38f8ddb94aedeb085dc136b4686f"
+    },
+    {
+      "bytes": 70802,
+      "path": "Block27_frequency_query\\representativity_v2\\maps\\Samoa.png",
+      "sha256": "db58d563bc0fe94c79332fa5b193f0bc710a186f5ef6b08f5dd12191c2673693"
+    },
+    {
+      "bytes": 108286,
+      "path": "Block27_frequency_query\\representativity_v2\\maps\\Tobago.png",
+      "sha256": "dde3e77ea558d4234c87cca429e191ff1a20beaef88489864f5e8b2c0e86e561"
+    },
+    {
+      "bytes": 67114,
+      "path": "Block27_frequency_query\\representativity_v2\\maps\\Virgin_Islands.png",
+      "sha256": "e8e1172c4f6f1c24a2d49eb43dfd30d9d74d587f1866296f523cee451fb95542"
+    },
+    {
+      "bytes": 1138,
+      "path": "Block27_frequency_query\\representativity_v2\\MODEL_ASSESSMENT.json",
+      "sha256": "ef95480c8245cfd51f4cbbe61abed6f2c096f8310274f4515a3c73e099409bfc"
+    },
+    {
+      "bytes": 12357,
+      "path": "Block27_frequency_query\\representativity_v2\\normalized\\1424a3c8-7285-4210-b965-069514c13a2a.json",
+      "sha256": "ce0f461c789aa649ba0e0050be40fc4a76addb9d21bf4c1cefdc0359fb1750f8"
+    },
+    {
+      "bytes": 18223,
+      "path": "Block27_frequency_query\\representativity_v2\\normalized\\2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd.json",
+      "sha256": "8e13bb362c8c504ded4a48caf5540363834ea99cbfb2028498669e86e612a63b"
+    },
+    {
+      "bytes": 18215,
+      "path": "Block27_frequency_query\\representativity_v2\\normalized\\98fe2c0f-44e9-41bd-bec6-af02b11f13a0.json",
+      "sha256": "0a3d453df84b56e88ebedb05a58c959da0d01cfa42458d3cac948bd5b372bb17"
+    },
+    {
+      "bytes": 18180,
+      "path": "Block27_frequency_query\\representativity_v2\\normalized\\9caef3b7-fc13-4aca-863b-acbb2fcc1e9f.json",
+      "sha256": "ad625d777891f587fb67ba75f4ff5473cd267bcb95c37d85365f81ccaf0f6344"
+    },
+    {
+      "bytes": 18177,
+      "path": "Block27_frequency_query\\representativity_v2\\normalized\\ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1.json",
+      "sha256": "57d6f269e110bf73abd8c6573951e5eff086846027980b6637613a94c4b7631b"
+    },
+    {
+      "bytes": 1043,
+      "path": "Block27_frequency_query\\representativity_v2\\OFFLINE_VERIFICATION.json",
+      "sha256": "9ff96b153e394e464054afcae461159d749b2d271e0285d41d708a7f763faae8"
+    },
+    {
+      "bytes": 407,
+      "path": "Block27_frequency_query\\representativity_v2\\PROTOCOL.md",
+      "sha256": "cf7cb1d8d4664eb74fbfbe639e47f35238f09871798a18accf220847e602a34b"
+    },
+    {
+      "bytes": 1741,
+      "path": "Block27_frequency_query\\representativity_v2\\raw\\06813051eb2c0acdf69547aacad127878148dce44529999a43723be50c9e2b76.txt",
+      "sha256": "97a315e2597cebfb7a673c73d83c2a39102cfa2951faec1906667e22396aff62"
+    },
+    {
+      "bytes": 10186,
+      "path": "Block27_frequency_query\\representativity_v2\\raw\\17d385f6487e88b4ffce594a605c3614d3ba125903eac81c8faa7988439a8ac1.txt",
+      "sha256": "162337cb27f5c8fbd2204abe17eee8efcdfad047928257ba6d32ff5513645067"
+    },
+    {
+      "bytes": 894360,
+      "path": "Block27_frequency_query\\representativity_v2\\raw\\3f9f8f639e3028b6f28bf2e248120881894da16fd18adc3007dc5fc9ff3d85e5.txt",
+      "sha256": "95787c194bb1c42e523d8c77ed2cd407d8f2ca0d4b53034bc9925e750b908019"
+    },
+    {
+      "bytes": 26873,
+      "path": "Block27_frequency_query\\representativity_v2\\raw\\af7f17f8073003fad5ecd83c656472a06794f79f32d1368d2466a4a6414d0f02.txt",
+      "sha256": "cb0c1c0765ced34cb4788fe5cbe152f9a37c0692492e4eaa92af9800fb816aec"
+    },
+    {
+      "bytes": 20745,
+      "path": "Block27_frequency_query\\representativity_v2\\raw\\b0de6b18a3a56f8081e21bd6a1cd67f6e322404578edf89f994d4da47e19acde.txt",
+      "sha256": "2c8cbae00c3a013e846ce75727ea603efbb0e840d64018edad8358265e2c2a59"
+    },
+    {
+      "bytes": 227585,
+      "path": "Block27_frequency_query\\representativity_v2\\raw\\b264a7b63d4a944a689842029a8b7f73223ecf95ad36cf974b54083166eb957d.txt",
+      "sha256": "ab04436a9acd93dee48e52c126ef0708db1c2ffb1d85bdde6c687c615941cc52"
+    },
+    {
+      "bytes": 2413,
+      "path": "Block27_frequency_query\\representativity_v2\\raw\\c02faa55407c06595f5c7876c08007d25a7e5d82aed3d39cc715dfc01b722d3b.txt",
+      "sha256": "7d4f11e98564adaa267f1529db596c51cb423d157d5017173ff2f99a81084527"
+    },
+    {
+      "bytes": 4787,
+      "path": "Block27_frequency_query\\representativity_v2\\REPORT.md",
+      "sha256": "c6bf3d4dbe47349aeb2ec509b1f722af508aafa236b65ea23f886d9eaf194953"
+    },
+    {
+      "bytes": 15404,
+      "path": "Block27_frequency_query\\representativity_v2\\REQUEST_LOG.json",
+      "sha256": "7d1029e6a59cf948207bfc03e71104c93a8fa7558b12b9430078e18a85c308e6"
+    },
+    {
+      "bytes": 816,
+      "path": "Block27_frequency_query\\representativity_v2\\STATE.json",
+      "sha256": "4db6f5c0fc8bffec679d0424a26f5bb7ab12b1a9c307e6e509e37a9a0bb07ec4"
+    },
+    {
+      "bytes": 3027,
+      "path": "Block27_frequency_query\\representativity_v2\\STATION_DOCUMENTATION_ASSESSMENT.json",
+      "sha256": "bc19c890fc9873acd19cd34526dae3900d27f33467d8e619a9521bca19cf5a40"
+    },
+    {
+      "bytes": 3059,
+      "path": "Block27_frequency_query\\representativity_v2\\STATION_HISTORY.json",
+      "sha256": "02cda54a2082646a813e6c994ee342354a937146b653d054ecb4a43f2d2688a3"
+    },
+    {
+      "bytes": 1627,
+      "path": "Block27_frequency_query\\representativity_v2\\SUMMARY.json",
+      "sha256": "50e8eca7577877576a9c3fea2993a084a7d52a4cc6c7876a87d56f2500a57f97"
+    }
+  ],
+  "source_queue_sha256": "7cf1d48d82322365c063418bd059734b5b1b1e520899dec8b6be616d38b654c1",
+  "version": "representativity_v2"
+}

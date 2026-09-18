@@ -1,0 +1,245 @@
+[
+  {
+    "bytes": 0,
+    "error": "URLError(ConnectionRefusedError(10061, 'Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione', None, 10061, None))",
+    "http_status": null,
+    "kind": "request",
+    "method": "HEAD",
+    "outcome": "failed",
+    "purpose": "pertinent_connectivity_and_sicd_size",
+    "range": null,
+    "timestamp_utc": "2026-09-16T10:08:32.262317+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_SICD.nitf"
+  },
+  {
+    "bytes": 0,
+    "content_length": "2551099862",
+    "content_range": null,
+    "http_status": 200,
+    "kind": "request",
+    "method": "HEAD",
+    "outcome": "recovered",
+    "purpose": "pertinent_connectivity_and_sicd_size",
+    "range": null,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timestamp_utc": "2026-09-16T10:09:00.014104+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_SICD.nitf"
+  },
+  {
+    "bytes": 6036,
+    "content_length": "6036",
+    "content_range": null,
+    "http_status": 200,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "official_stac",
+    "range": null,
+    "sha256": "4cd13f313f50d5442c47d540dca947029f35bb2f7b72a7bbb6bce1015ba8b2f8",
+    "timestamp_utc": "2026-09-16T10:09:18.016306+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09.stac.v2.json"
+  },
+  {
+    "bytes": 0,
+    "error": "<HTTPError 404: 'Not Found'>",
+    "http_status": 404,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "failed",
+    "purpose": "vendor_metadata",
+    "range": null,
+    "timestamp_utc": "2026-09-16T10:09:19.133083+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_METADATA.json"
+  },
+  {
+    "bytes": 0,
+    "error": "<HTTPError 404: 'Not Found'>",
+    "http_status": 404,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "failed",
+    "purpose": "advertised_sicd_xml",
+    "range": null,
+    "timestamp_utc": "2026-09-16T10:09:19.815200+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-36_UMBRA-09_SICD_MM.xml"
+  },
+  {
+    "bytes": 360,
+    "content_length": "360",
+    "content_range": "bytes 0-359/2551099862",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "NITF_fixed_main_header",
+    "range": [
+      0,
+      359
+    ],
+    "sha256": "f833259e26ec4bfe700dbdf5adbec46fc687309faea610a065623a0f241d71da",
+    "timestamp_utc": "2026-09-16T10:09:20.473571+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_SICD.nitf"
+  },
+  {
+    "bytes": 426,
+    "content_length": "426",
+    "content_range": "bytes 0-425/2551099862",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "NITF_complete_main_header",
+    "range": [
+      0,
+      425
+    ],
+    "sha256": "1b9ed0dc4e3632ed482844fbe6b66827148c8a89612473e54cf392a8ba618687",
+    "timestamp_utc": "2026-09-16T10:09:21.341422+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_SICD.nitf"
+  },
+  {
+    "bytes": 973,
+    "content_length": "973",
+    "content_range": "bytes 2551067957-2551068929/2551099862",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "DES_2_subheader",
+    "range": [
+      2551067957,
+      2551068929
+    ],
+    "sha256": "e212f78293e580c6f71760e95c81929897c9e9adaddc08292f41f95e35cab28d",
+    "timestamp_utc": "2026-09-16T10:09:22.108566+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_SICD.nitf"
+  },
+  {
+    "bytes": 30932,
+    "content_length": "30932",
+    "content_range": "bytes 2551068930-2551099861/2551099862",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "DES_2_XML_only",
+    "range": [
+      2551068930,
+      2551099861
+    ],
+    "sha256": "0f1bb05082cf5c569c1c8cca68f77064a6165f4cc4a07da37acf53caf1351ca6",
+    "timestamp_utc": "2026-09-16T10:09:23.096841+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_SICD.nitf"
+  },
+  {
+    "bytes": 0,
+    "error": "<HTTPError 404: 'Not Found'>",
+    "http_status": 404,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "failed",
+    "purpose": "vendor_metadata",
+    "range": null,
+    "timestamp_utc": "2026-09-16T10:11:44.108015+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_METADATA.json"
+  },
+  {
+    "bytes": 0,
+    "content_length": "25234138880",
+    "content_range": null,
+    "http_status": 200,
+    "kind": "request",
+    "method": "HEAD",
+    "outcome": "recovered",
+    "purpose": "public_CPHD_head",
+    "range": null,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timestamp_utc": "2026-09-16T10:11:45.697433+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  },
+  {
+    "bytes": 512,
+    "content_length": "512",
+    "content_range": "bytes 0-511/25234138880",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "CPHD_ASCII_header_only",
+    "range": [
+      0,
+      511
+    ],
+    "sha256": "a4913f8c0dd8d79ce2ba1c3550c333b866dfcf8e49f0aa065f0c1a78941177e7",
+    "timestamp_utc": "2026-09-16T10:11:46.417769+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  },
+  {
+    "bytes": 20379,
+    "content_length": "20379",
+    "content_range": "bytes 1024-21402/25234138880",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "CPHD_XML_only",
+    "range": [
+      1024,
+      21402
+    ],
+    "sha256": "be4743f3fd02ac94fea5571703b6739edbf23283a3660f86fb4533115ece7313",
+    "timestamp_utc": "2026-09-16T10:11:47.448045+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  },
+  {
+    "bytes": 8,
+    "content_length": "8",
+    "content_range": "bytes 668032-668039/25234138880",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "CPHD_PVP_TxTime_0",
+    "range": [
+      668032,
+      668039
+    ],
+    "sha256": "d4a19ce0c2490344c4239d2d24021a8932d4cede4f3f80eb333866f0de711282",
+    "timestamp_utc": "2026-09-16T10:11:48.219666+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  },
+  {
+    "bytes": 8,
+    "content_length": "8",
+    "content_range": "bytes 4750640-4750647/25234138880",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "CPHD_PVP_TxTime_0.5",
+    "range": [
+      4750640,
+      4750647
+    ],
+    "sha256": "77dbb066415dd6006076045606f4b30d39b85c315a167106dd734e1dcdc53ac2",
+    "timestamp_utc": "2026-09-16T10:11:48.952440+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  },
+  {
+    "bytes": 8,
+    "content_length": "8",
+    "content_range": "bytes 8832872-8832879/25234138880",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "CPHD_PVP_TxTime_1",
+    "range": [
+      8832872,
+      8832879
+    ],
+    "sha256": "e0fddc9ed6deb29d0b1f93e9d52516e82245ca49073607e838aec7160d9163dc",
+    "timestamp_utc": "2026-09-16T10:11:50.163510+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  }
+]

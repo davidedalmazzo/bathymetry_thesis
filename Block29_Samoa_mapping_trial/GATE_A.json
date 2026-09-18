@@ -1,0 +1,32 @@
+{
+  "ROI_local_gradient_only_max_center_offset_s": 0.35756985548704523,
+  "SCP_radial_only_max_center_sensitivity_s": 0.03786135002630764,
+  "SICD_download_authorized_by_gate": false,
+  "candidate_kernel_count": 90,
+  "checks": {
+    "ARP_geometry_timing": true,
+    "PFA_angle_monotone": true,
+    "all_candidate_kernels_identifiable": false,
+    "baseline_sensitivity": true,
+    "center_sensitivity": false,
+    "duration_sensitivity": true,
+    "frequency_support": false,
+    "poly_geometry_timing": true,
+    "processed_support": false,
+    "temporal_continuity": true
+  },
+  "config_sha256": "5b264e836dc1b6dbe93d4ac114be01fe0d94f9228c40faac173bdc86a2330c7c",
+  "interpretation_caveat": "Global PFA output coordinates are shared across the image. ROI-point phase-gradient projections are local stationary-phase diagnostics, NOT a verified re-indexing of that shared output grid. Large local offsets may be deterministic focus-phase/carrier effects; this block does not prove their full magnitude is physical timing bias. Correct local/global kernel transport is unresolved, so the gate is conditional rather than a declaration of scene failure.",
+  "kernel_exact": false,
+  "kernels_not_identifiable_count": 19,
+  "maximum_baseline_fractional_sensitivity": 0.045809796067644015,
+  "maximum_center_sensitivity_s": 0.39228050982265494,
+  "maximum_duration_fractional_sensitivity": 0.045916157443997685,
+  "one_dimensional_Col_adequacy": "geometry-only bands depend on Row frequency and ROI point; see measured sensitivities",
+  "result": "CONDITIONAL",
+  "uniform_k_vs_time_max_center_difference_s": 0.0008877341003259431,
+  "unknown_kernel_weights": [
+    "supplier polar interpolation details",
+    "illumination pulse weights not proven by UNIFORM output weighting"
+  ]
+}

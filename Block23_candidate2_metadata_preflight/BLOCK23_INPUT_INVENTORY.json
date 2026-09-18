@@ -1,0 +1,21 @@
+{
+  "start_commit": "1eb6e75caf20adbb3f51b1e810eb2b9cb817b067",
+  "candidate": "f7ced35f-8a2c-45ef-a822-c442bb47662d",
+  "inputs": [
+    "Block21_frequency_validation_selector/BLOCK21_SHORTLIST.csv",
+    "Block21_frequency_validation_selector/BLOCK21_CANDIDATE_2.md",
+    "Block21_frequency_validation_selector/BLOCK21_ALL_CANDIDATES.csv",
+    "Block21_frequency_validation_selector/reference_normalized/f7ced35f-8a2c-45ef-a822-c442bb47662d_metrics.json",
+    "Block21_frequency_validation_selector/BLOCK21_DELIVERY_MANIFEST.json",
+    "Block22_geographic_visual_preflight/BLOCK22_DISTANCES.csv",
+    "Block22_geographic_visual_preflight/BLOCK22_REPORT.md",
+    "Block22_geographic_visual_preflight/BLOCK22_DELIVERY_MANIFEST.json",
+    "Block16_scene_selection/catalog_snapshots/20260913T231747Z/listing_s3.csv.gz"
+  ],
+  "preexisting_untracked_preserved": [
+    "COMMIT_MSG_BLOCK17_18.txt", "PUSH_BLOCK17_18.bat",
+    "five Vandenberg Block15 B/C/D output files"
+  ],
+  "Block20_used": false,
+  "other_candidates_used": false
+}

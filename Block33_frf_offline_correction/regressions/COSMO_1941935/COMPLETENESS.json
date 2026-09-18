@@ -1,0 +1,100 @@
+[
+  {
+    "instrument_id": "FRF:waverider-17m",
+    "family": "waves",
+    "required_variables": [
+      "waveHs",
+      "waveTp",
+      "waveMeanDirectionPeakFrequency"
+    ],
+    "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202106.nc",
+    "offset_seconds": -1744011.911996603,
+    "scope": "nearest raw context diagnostic, NOT representative event state",
+    "valid_fractions": {
+      "waveHs": 1.0,
+      "waveTp": 1.0,
+      "waveMeanDirectionPeakFrequency": null
+    },
+    "joint_all_requested_valid": false,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  },
+  {
+    "instrument_id": "FRF:awac-11m",
+    "family": "waves",
+    "required_variables": [
+      "waveHs",
+      "waveTp",
+      "waveMeanDirectionPeakFrequency"
+    ],
+    "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202106.nc",
+    "offset_seconds": 188.58800077438354,
+    "scope": "nearest raw context diagnostic, NOT representative event state",
+    "valid_fractions": {
+      "waveHs": 1.0,
+      "waveTp": 1.0,
+      "waveMeanDirectionPeakFrequency": null
+    },
+    "joint_all_requested_valid": false,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  },
+  {
+    "instrument_id": "FRF:8m-array",
+    "family": "waves",
+    "required_variables": [
+      "waveHs",
+      "waveTp",
+      "waveMeanDirectionPeakFrequency"
+    ],
+    "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/8m-array/2021/FRF-ocean_waves_8m-array_202106.nc",
+    "offset_seconds": 188.08800339698792,
+    "scope": "nearest raw context diagnostic, NOT representative event state",
+    "valid_fractions": {
+      "waveHs": 1.0,
+      "waveTp": 1.0,
+      "waveMeanDirectionPeakFrequency": null
+    },
+    "joint_all_requested_valid": false,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  },
+  {
+    "instrument_id": "FRF:waverider-26m",
+    "family": "waves",
+    "required_variables": [
+      "waveHs",
+      "waveTp",
+      "waveMeanDirectionPeakFrequency"
+    ],
+    "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-26m/2021/FRF-ocean_waves_waverider-26m_202106.nc",
+    "offset_seconds": 188.08800339698792,
+    "scope": "nearest raw context diagnostic, NOT representative event state",
+    "valid_fractions": {
+      "waveHs": 1.0,
+      "waveTp": 1.0,
+      "waveMeanDirectionPeakFrequency": null
+    },
+    "joint_all_requested_valid": false,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  },
+  {
+    "instrument_id": "FRF:awac-11m",
+    "family": "currents",
+    "required_variables": [
+      "currentEast",
+      "currentNorth"
+    ],
+    "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202106.nc",
+    "offset_seconds": 2888.088003396988,
+    "scope": "nearest raw context diagnostic, NOT representative event state",
+    "valid_fractions": {
+      "currentEast": 1.0,
+      "currentNorth": 1.0
+    },
+    "joint_all_requested_valid": true,
+    "only_requested_variables_counted": true,
+    "qc_policy_applied_separately": true
+  }
+]

@@ -1,0 +1,109 @@
+{
+  "acquisitions": [
+    {
+      "acquisition_id": "TSX-1_record_12",
+      "timestamp_utc": "2021-10-12T11:07:16.616000+00:00",
+      "start_utc": "2021-10-12T11:07:16.616000+00:00",
+      "end_utc": "2021-10-12T11:07:17.048000+00:00",
+      "timestamp_semantics": "timestamp_of_catalogue_record_not_verified_aperture_center",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.77487236912111,
+              36.1992677362442
+            ],
+            [
+              -75.78049605591627,
+              36.1721431340831
+            ],
+            [
+              -75.72149718857452,
+              36.164173236129
+            ],
+            [
+              -75.71585232897257,
+              36.1912982731955
+            ],
+            [
+              -75.77487236912111,
+              36.1992677362442
+            ]
+          ]
+        ]
+      },
+      "source": "Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv"
+    },
+    {
+      "acquisition_id": "COSMO_2098202",
+      "timestamp_utc": "2021-10-13T22:45:03+00:00",
+      "start_utc": "2021-10-13T22:45:03.517000+00:00",
+      "end_utc": "2021-10-13T22:45:11.392000+00:00",
+      "timestamp_semantics": "requested_catalogue_timestamp_at_second_precision_not_verified_aperture_center",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.67115,
+              36.126213
+            ],
+            [
+              -75.6521,
+              36.219288
+            ],
+            [
+              -75.767075,
+              36.232708
+            ],
+            [
+              -75.785896,
+              36.141914
+            ],
+            [
+              -75.67115,
+              36.126213
+            ]
+          ]
+        ]
+      },
+      "source": "Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json"
+    },
+    {
+      "acquisition_id": "TDX-1_record_11",
+      "timestamp_utc": "2021-10-13T23:00:15.669000+00:00",
+      "start_utc": "2021-10-13T23:00:15.669000+00:00",
+      "end_utc": "2021-10-13T23:00:16.101000+00:00",
+      "timestamp_semantics": "timestamp_of_catalogue_record_not_verified_aperture_center",
+      "footprint": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -75.71619622454091,
+              36.1732784932615
+            ],
+            [
+              -75.72194184766971,
+              36.2003910366816
+            ],
+            [
+              -75.78272395629978,
+              36.1920047521163
+            ],
+            [
+              -75.77695646885428,
+              36.1648919540011
+            ],
+            [
+              -75.71619622454091,
+              36.1732784932615
+            ]
+          ]
+        ]
+      },
+      "source": "Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv"
+    }
+  ]
+}

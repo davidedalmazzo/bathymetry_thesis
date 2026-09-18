@@ -1,0 +1,1 @@
+<catalog xmlns="http://www.unidata.ucar.edu/namespaces/thredds/InvCatalog/v1.0"><service serviceType="OpenDAP" base="/thredds/dodsC/"/><dataset name="new_202402.nc" urlPath="frf/new_202402.nc"/></catalog>

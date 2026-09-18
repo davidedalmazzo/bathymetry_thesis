@@ -1,0 +1,9 @@
+{
+  "large_GEC_size_bytes": 682400130,
+  "large_SIDD_size_bytes": 512096556,
+  "official_small_preview_advertised": false,
+  "preview_downloaded": false,
+  "private_COG_overview_not_verified_as_small_public_asset": true,
+  "source": "recovered official STAC plus complete cached public-prefix listing",
+  "wave_structure_status": "not_evaluable_no_small_official_preview"
+}

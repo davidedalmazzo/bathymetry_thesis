@@ -1,0 +1,315 @@
+{
+  "Grid": {
+    "Col": {
+      "DeltaK1": -1.1600736933878177,
+      "DeltaK2": 1.1600736933878177,
+      "DeltaKCOAPoly": {
+        "Coefs": [
+          [
+            0.0
+          ]
+        ]
+      },
+      "ImpRespBW": 2.3201473867756355,
+      "ImpRespWid": 0.38182122241211225,
+      "KCtr": 0.0,
+      "SS": 0.34479848507697236,
+      "Sgn": -1,
+      "UVectECF": {
+        "X": -0.00282017336336627,
+        "Y": 0.14907671295920913,
+        "Z": -0.9888216119581318
+      },
+      "WgtType": {
+        "WindowName": "UNIFORM"
+      }
+    },
+    "ImagePlane": "SLANT",
+    "Row": {
+      "DeltaK1": -2.566605924325953,
+      "DeltaK2": 2.566605924325953,
+      "DeltaKCOAPoly": {
+        "Coefs": [
+          [
+            0.0
+          ]
+        ]
+      },
+      "ImpRespBW": 5.133211848651906,
+      "ImpRespWid": 0.17258200637728532,
+      "KCtr": 64.73675320801252,
+      "SS": 0.15584784411539482,
+      "Sgn": -1,
+      "UVectECF": {
+        "X": 0.8897469607226061,
+        "Y": 0.45172072669498425,
+        "Z": 0.06556470818238205
+      },
+      "WgtType": {
+        "WindowName": "UNIFORM"
+      }
+    },
+    "TimeCOAPoly": {
+      "Coefs": [
+        [
+          2.216766423959301
+        ]
+      ]
+    },
+    "Type": "RGAZIM"
+  },
+  "ImageFormation": {
+    "AzAutofocus": "NO",
+    "ImageBeamComp": "SV",
+    "ImageFormAlgo": "PFA",
+    "RcvChanProc": {
+      "ChanIndices": [
+        1
+      ],
+      "NumChanProc": 1
+    },
+    "RgAutofocus": "NO",
+    "STBeamComp": "NO",
+    "TEndProc": 3.6984371116048296,
+    "TStartProc": 0.7230740674611376,
+    "TxFrequencyProc": {
+      "MaxProc": 10088519732.970345,
+      "MinProc": 9319070634.199306
+    },
+    "TxRcvPolarizationProc": "H:H"
+  },
+  "PFA": {
+    "FPN": {
+      "X": -0.9560044508006891,
+      "Y": -0.1588862009902899,
+      "Z": -0.24659818568705272
+    },
+    "IPN": {
+      "X": -0.45644538830739223,
+      "Y": 0.879616120092983,
+      "Z": 0.1339144830310783
+    },
+    "Kaz1": -1.1600736933878177,
+    "Kaz2": 1.1600736933878177,
+    "Krg1": 62.17014728368656,
+    "Krg2": 67.30335913233846,
+    "PolarAngPoly": {
+      "Coefs": [
+        0.027634190033463953,
+        -0.012385728208863075,
+        -3.739699229230796e-05,
+        5.251787680707486e-07,
+        5.491754074035444e-09,
+        -3.477353028805678e-11
+      ]
+    },
+    "PolarAngRefTime": 2.216766423959301,
+    "SpatialFreqSFPoly": {
+      "Coefs": [
+        0.9999999999999901,
+        1.1609517666251739e-11,
+        0.043553438899759295,
+        -0.0015076959322334934,
+        -0.01293091369105974,
+        -0.0006760122421697679
+      ]
+    }
+  },
+  "Timeline": {
+    "CollectDuration": 3.7008027066666664,
+    "CollectStart": "2025-03-31T21:51:36.000000Z",
+    "IPP": [
+      {
+        "IPPEnd": 21767,
+        "IPPPoly": {
+          "Coefs": [
+            22.8298766457267,
+            5850.69269043213,
+            8.91975129468704,
+            -0.12180633666508078,
+            -0.000874955495594267,
+            5.832775062086329e-06
+          ]
+        },
+        "IPPStart": 52,
+        "TEnd": 3.696903729701192,
+        "TStart": 0.004985717333333333,
+        "index": 1
+      }
+    ]
+  },
+  "context": {
+    "axis": {
+      "azimuth_axis": 1,
+      "azimuth_sample_spacing_m": 0.34479848507697236,
+      "azimuth_sgn": -1,
+      "delta_k1_per_m": -1.1600736933878177,
+      "delta_k2_per_m": 1.1600736933878177,
+      "delta_kcoa_constant_per_m": 0.0,
+      "grid_type": "RGAZIM",
+      "native_weight_name": "UNIFORM",
+      "native_weight_samples_present": false,
+      "range_axis": 0
+    },
+    "collect_id": "1424a3c8-7285-4210-b965-069514c13a2a",
+    "durations": {
+      "cphd_slow_time_dwell_s": 3.6917706986666667,
+      "processed_aperture_duration_s": 2.975363044143692,
+      "sicd_timeline_collect_duration_s": 3.7008027066666664
+    },
+    "original_sicd_identifier": "2025-03-31-21-51-36_Umbra-09",
+    "t_start_proc_from_collect_start_s": 0.7230740674611376
+  },
+  "full_azimuth_requirement": "Read full Col extent per range chunk before Doppler decomposition; preserve and propagate oblique ValidData mask. Quantify edge/invalid-data leakage before phase interpretation; do not pre-cut the 1500m ROI.",
+  "future_physical_mapping": "Use CPHD/PVP TxTime, Tx/RcvPos/Vel, SRPPos and aFDOP over processed support; PFA PolarAngPoly provides geometric check. Three TxTime samples do not validate full mapping.",
+  "nominal_timing_not_exact": true,
+  "numerical_sign_tests_required_and_reused": true,
+  "plans": [
+    {
+      "bands": [
+        {
+          "center_fraction_in_support": 0.2647396431180215,
+          "nominal_center_time_from_collect_start_s": 1.5107706179142886,
+          "realized_bandwidth_fraction": 0.470520713763957,
+          "realized_nominal_duration_s": 1.3999699432373898,
+          "requested_bandwidth_fraction": 0.47053081564469024,
+          "requested_nominal_duration_s": 1.4,
+          "start": 2961,
+          "stop": 11979,
+          "support_start": 2396,
+          "support_stop": 21562,
+          "timing_model": "nominal_linear_bandwidth_to_processed_time"
+        },
+        {
+          "center_fraction_in_support": 0.7352603568819785,
+          "nominal_center_time_from_collect_start_s": 2.9107405611516786,
+          "realized_bandwidth_fraction": 0.470520713763957,
+          "realized_nominal_duration_s": 1.3999699432373898,
+          "requested_bandwidth_fraction": 0.47053081564469024,
+          "requested_nominal_duration_s": 1.4,
+          "start": 11979,
+          "stop": 20997,
+          "support_start": 2396,
+          "support_stop": 21562,
+          "timing_model": "nominal_linear_bandwidth_to_processed_time"
+        }
+      ],
+      "col_impulse_width_image_plane_m_approx": 0.8114691104534058,
+      "col_impulse_width_surface_m_approx": 1.0715840470517148,
+      "col_resolution_scale_approx": 2.1252593172454946,
+      "disjoint_Doppler_support": true,
+      "label": "two_nonoverlap",
+      "look_count": 2,
+      "nominal_look_s": 1.4,
+      "overlap_fraction": 0.0,
+      "resolution_caveat": "Uniform native weighting; estimates scale full impulse width by reciprocal retained fraction; smooth windows further broaden. Not a measured sublook PSF.",
+      "statistically_independent": false,
+      "timing_model": "nominal_linear_bandwidth_to_processed_time; not PVP validated"
+    },
+    {
+      "bands": [
+        {
+          "center_fraction_in_support": 0.18071063341333612,
+          "nominal_center_time_from_collect_start_s": 1.260753807802976,
+          "realized_bandwidth_fraction": 0.3192632787227382,
+          "realized_nominal_duration_s": 0.9499241608637823,
+          "requested_bandwidth_fraction": 0.319288767758897,
+          "requested_nominal_duration_s": 0.95,
+          "start": 2800,
+          "stop": 8919,
+          "support_start": 2396,
+          "support_stop": 21562,
+          "timing_model": "nominal_linear_bandwidth_to_processed_time"
+        },
+        {
+          "center_fraction_in_support": 0.4999739121360743,
+          "nominal_center_time_from_collect_start_s": 2.2106779686667584,
+          "realized_bandwidth_fraction": 0.3192632787227382,
+          "realized_nominal_duration_s": 0.9499241608637823,
+          "requested_bandwidth_fraction": 0.319288767758897,
+          "requested_nominal_duration_s": 0.95,
+          "start": 8919,
+          "stop": 15038,
+          "support_start": 2396,
+          "support_stop": 21562,
+          "timing_model": "nominal_linear_bandwidth_to_processed_time"
+        },
+        {
+          "center_fraction_in_support": 0.8192371908588125,
+          "nominal_center_time_from_collect_start_s": 3.160602129530541,
+          "realized_bandwidth_fraction": 0.3192632787227382,
+          "realized_nominal_duration_s": 0.9499241608637823,
+          "requested_bandwidth_fraction": 0.319288767758897,
+          "requested_nominal_duration_s": 0.95,
+          "start": 15038,
+          "stop": 21157,
+          "support_start": 2396,
+          "support_stop": 21562,
+          "timing_model": "nominal_linear_bandwidth_to_processed_time"
+        }
+      ],
+      "col_impulse_width_image_plane_m_approx": 1.1958492154050189,
+      "col_impulse_width_surface_m_approx": 1.5791764903920005,
+      "col_resolution_scale_approx": 3.131961099098623,
+      "disjoint_Doppler_support": true,
+      "label": "three_nonoverlap",
+      "look_count": 3,
+      "nominal_look_s": 0.95,
+      "overlap_fraction": 0.0,
+      "resolution_caveat": "Uniform native weighting; estimates scale full impulse width by reciprocal retained fraction; smooth windows further broaden. Not a measured sublook PSF.",
+      "statistically_independent": false,
+      "timing_model": "nominal_linear_bandwidth_to_processed_time; not PVP validated"
+    },
+    {
+      "bands": [
+        {
+          "center_fraction_in_support": 0.3487164770948555,
+          "nominal_center_time_from_collect_start_s": 1.7606321862931509,
+          "realized_bandwidth_fraction": 0.6049775644370239,
+          "realized_nominal_duration_s": 1.80002788776198,
+          "requested_bandwidth_fraction": 0.6049681915431733,
+          "requested_nominal_duration_s": 1.8,
+          "start": 3282,
+          "stop": 14877,
+          "support_start": 2396,
+          "support_stop": 21562,
+          "timing_model": "nominal_linear_bandwidth_to_processed_time"
+        },
+        {
+          "center_fraction_in_support": 0.6512313471772931,
+          "nominal_center_time_from_collect_start_s": 2.660723751040366,
+          "realized_bandwidth_fraction": 0.6049775644370239,
+          "realized_nominal_duration_s": 1.80002788776198,
+          "requested_bandwidth_fraction": 0.6049681915431733,
+          "requested_nominal_duration_s": 1.8,
+          "start": 9080,
+          "stop": 20675,
+          "support_start": 2396,
+          "support_stop": 21562,
+          "timing_model": "nominal_linear_bandwidth_to_processed_time"
+        }
+      ],
+      "col_impulse_width_image_plane_m_approx": 0.63114264146376,
+      "col_impulse_width_surface_m_approx": 0.8334542588180003,
+      "col_resolution_scale_approx": 1.6529794689687176,
+      "disjoint_Doppler_support": false,
+      "label": "two_overlapping",
+      "look_count": 2,
+      "nominal_look_s": 1.8,
+      "overlap_fraction": 0.5,
+      "resolution_caveat": "Uniform native weighting; estimates scale full impulse width by reciprocal retained fraction; smooth windows further broaden. Not a measured sublook PSF.",
+      "statistically_independent": false,
+      "timing_model": "nominal_linear_bandwidth_to_processed_time; not PVP validated"
+    }
+  ],
+  "support": {
+    "bin_spacing_per_m": 0.00012105537862755067,
+    "fft_size": 23958,
+    "realized_lower_per_m": -1.1600736933878182,
+    "realized_upper_per_m": 1.1600736933878182,
+    "requested_lower_per_m": -1.1600736933878177,
+    "requested_upper_per_m": 1.1600736933878177,
+    "start": 2396,
+    "stop": 21562
+  }
+}

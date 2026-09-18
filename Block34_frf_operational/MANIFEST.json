@@ -1,0 +1,1675 @@
+{
+  "named_tranche": {
+    "transactions": 25,
+    "bytes": 3253569,
+    "max_transactions": 50,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-18T09:41:52.428354+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed",
+    "tranche_name": "block34_october_2021",
+    "max_response": 10485760
+  },
+  "root_relative_paths": true,
+  "artifacts": [
+    {
+      "path": ".gitignore",
+      "bytes": 1172,
+      "sha256": "a1d8f5cf09103b2815d63b866f8482bfd04c23e186c7f29b2970caf20ed0f5bc"
+    },
+    {
+      "path": "Block34_frf_operational/ACQUISITIONS.json",
+      "bytes": 3044,
+      "sha256": "163c5f581b2bf05a129d1f6e95b6da3086f3018a165de7bf0b61ed991971b375"
+    },
+    {
+      "path": "Block34_frf_operational/BUDGET_AUTHORIZED.json",
+      "bytes": 168,
+      "sha256": "59e0b324f390babef08e9d3ac982b6977865676ae27b34fbb7ad6f182bc783cb"
+    },
+    {
+      "path": "Block34_frf_operational/CACHE_REUSE_COMPARISON.json",
+      "bytes": 5892,
+      "sha256": "db60cdd4b09943726be039198278d42831dc77595254e6a1bc43592d77983a81"
+    },
+    {
+      "path": "Block34_frf_operational/CACHE_REUSE_COMPARISON_INITIAL.json",
+      "bytes": 5892,
+      "sha256": "f5def400d61b93b41826aefc84079154883c09bd275e3c5418086df528c287b8"
+    },
+    {
+      "path": "Block34_frf_operational/CLI_SMOKE.json",
+      "bytes": 4259,
+      "sha256": "a2e17c525e5aff18269ce0148ca0f36605bb51e7a2b9a3b446f4f0553151e03a"
+    },
+    {
+      "path": "Block34_frf_operational/CLIENT_CONFIG.json",
+      "bytes": 619,
+      "sha256": "795d6f1e95d5f54c8ec610b9edcb50b4824dff0af8c5097ab13066fe9c9047d2"
+    },
+    {
+      "path": "Block34_frf_operational/comparison/COMMON_RECORDS.json",
+      "bytes": 15371,
+      "sha256": "cdc74c6e842ca549d1c7d178b7755aba15583ed688c59c4d607f228332388841"
+    },
+    {
+      "path": "Block34_frf_operational/comparison/EVENT_PARAMETERS.csv",
+      "bytes": 99675,
+      "sha256": "643967ebf319bb4978fd90925f929fd2a907d5f37cc7ed101de39415f28b026b"
+    },
+    {
+      "path": "Block34_frf_operational/comparison/FOOTPRINTS_INSTRUMENTS.png",
+      "bytes": 110219,
+      "sha256": "a5b94c699df1b417e6df7ad2e49019d0fcc49b0d9faad267afc9d125fcdb3f63"
+    },
+    {
+      "path": "Block34_frf_operational/comparison/REPORT.md",
+      "bytes": 5030,
+      "sha256": "3d1126a9f6dfdb1dd8a149932bffce428d78d9f9fc8feefa8f075004eb6809a0"
+    },
+    {
+      "path": "Block34_frf_operational/comparison/SPECTRA_OVERLAY.png",
+      "bytes": 178946,
+      "sha256": "92218801266a74b0914a0f2701bc8809ddfee94826aea17f8fbab4692da77f70"
+    },
+    {
+      "path": "Block34_frf_operational/comparison/SPECTRAL_DIAGNOSTICS.json",
+      "bytes": 116099,
+      "sha256": "3992efaf616397329415ce480c84d06bfc977ee8a6c1fb6d7c92662a96fa97cc"
+    },
+    {
+      "path": "Block34_frf_operational/comparison/WAVE_CONTEXT.png",
+      "bytes": 85361,
+      "sha256": "a686aaf85fe8b177cbcc3c5f75f1b056767ad7097a96fdac0fdc4b7d8a7ed345"
+    },
+    {
+      "path": "Block34_frf_operational/COSMO_2098202_footprint.geojson",
+      "bytes": 355,
+      "sha256": "db730cbd3b83277b0919c632a25c571ac65e3b27b8104957bb35e79e2ad55118"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/ACQUISITION.json",
+      "bytes": 825,
+      "sha256": "dbf226b9a025b9f2e9c931e3986bc54198066f1568ecc5dd9ab80c965a369a7e"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/ASSOCIATIONS.json",
+      "bytes": 27055,
+      "sha256": "8bba83912fdf82e5e40712a4ff5393e3434af2811765a82f6c0289655c7cf807"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/COMPLETENESS.json",
+      "bytes": 2813,
+      "sha256": "463199c93ae0f433af1d07c3ca5dfbc7034358a46916aebf9de9758bcdf43f27"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/DISTANCES.csv",
+      "bytes": 2965,
+      "sha256": "2a40bf7f9e1866d486facf90fd35385cd2e6fb59149058220c7280b91723eec9"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/INVENTORY.json",
+      "bytes": 91026,
+      "sha256": "713ad327b57b5a2400ddc6664ebae265ba810bd6ce78926b2b9385af16a10963"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/MAP.png",
+      "bytes": 61646,
+      "sha256": "6b028e239420e697be0114978f18e5652f747275032f96f4553cc72a1352a84a"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/OBSERVATIONS.csv",
+      "bytes": 13161,
+      "sha256": "c64330743ba2577a5b1b8a46c377ab5ca288e7023c519e404e5bde4162e53ff8"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/PROVENANCE_WARNINGS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/REPORT.md",
+      "bytes": 6527,
+      "sha256": "815bc7d6386d574aed8a24f8179c2e65b2ba52d3ff493eb877c397d999149834"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/SEARCH_COVERAGE.json",
+      "bytes": 2214,
+      "sha256": "544caaec280009fd4fa6e8936fcca3569539732417e92cf8a648740b3b32427a"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/TENSORS.json",
+      "bytes": 1335374,
+      "sha256": "6223b83f276315ff7ba1107d2029917c002522de7dda20d903e53b61087b1d8d"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 46366,
+      "sha256": "e947060d40358853d1421b3dffe41cd236881143802350f7d23a0729c3d7c3e2"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 45775,
+      "sha256": "29e056dc23c835ef8412b9583ffb801088e3a5df2434fbfb4eb4c91f5bc106da"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 48078,
+      "sha256": "551efc29cf5e0171afc124badf794740d379b0ff0a0ad534f72b88763d822cb3"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 45612,
+      "sha256": "575b9921178cd6935457420a64852722e43f77d6d78e56e55ab4daeed1a291bc"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/INVENTORY.json",
+      "bytes": 91026,
+      "sha256": "713ad327b57b5a2400ddc6664ebae265ba810bd6ce78926b2b9385af16a10963"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/LEGACY_CACHE_AUDIT.json",
+      "bytes": 62681,
+      "sha256": "eb80d8cba6d35e0b7f4af06a920050252f8a6def6f4d82be95af28169c3c7812"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/RECOVERY_PLAN.json",
+      "bytes": 55169,
+      "sha256": "6e89ba5154667d79ca5b0897bd92fc4aeabb5ef2d224dd422493b07c70487f2a"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/RUN_STATE.json",
+      "bytes": 844,
+      "sha256": "27b635a408c7e1e213bbc584f0103beff76b2e190ea3600b773e404ab29fd793"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/STATUS.json",
+      "bytes": 2582,
+      "sha256": "631693ffae70258d39714fcf6adcfe865c96860f0f0126bf04c8758512ccb0d7"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/SUMMARY.md",
+      "bytes": 942,
+      "sha256": "e943072d92261204cbab60f83c74a7fa93fd4f2d95a44eb58009fe5a72d784c7"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/ACQUISITION.json",
+      "bytes": 881,
+      "sha256": "54a6ae5b045c0eabec864ac7a2b4e3a307d76cdde930f207d2ea12381e4d3cbf"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/ASSOCIATIONS.json",
+      "bytes": 27103,
+      "sha256": "ea0501d494283e35d1ba89c4886522c96e34ea4971129b30abd62e56e72be538"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/COMPLETENESS.json",
+      "bytes": 2821,
+      "sha256": "5433ca285581d39a6e7df9c8cfe521e1e691c87d0573c883d0adaebc78c46aa0"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/DISTANCES.csv",
+      "bytes": 2977,
+      "sha256": "af2d73cb5e808f184216a076c94c035fbfb6ba7e9ab51e58dacda91d1419eea0"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/INVENTORY.json",
+      "bytes": 91026,
+      "sha256": "713ad327b57b5a2400ddc6664ebae265ba810bd6ce78926b2b9385af16a10963"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/MAP.png",
+      "bytes": 50899,
+      "sha256": "2d7bb16771c3eff97e820039dc5ac00baaea2acbb820ef6079b49dd7c3a6316a"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/OBSERVATIONS.csv",
+      "bytes": 13257,
+      "sha256": "aae0e688ac8ad89fbfa8df5297476c3f1e49004f84d05be6e4d6cd9e258b01f0"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/REPORT.md",
+      "bytes": 6516,
+      "sha256": "d7c19cbcfafdd04788dcdd3d465452338f3550a25f59e11ff41c38cff3f4b560"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/SEARCH_COVERAGE.json",
+      "bytes": 2214,
+      "sha256": "544caaec280009fd4fa6e8936fcca3569539732417e92cf8a648740b3b32427a"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/TENSORS.json",
+      "bytes": 1335374,
+      "sha256": "6223b83f276315ff7ba1107d2029917c002522de7dda20d903e53b61087b1d8d"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 46401,
+      "sha256": "1348f1ed4d47c285ba15c6ea69b8bb0b9e5869c09fcc20e39601c09dbd74cea6"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 45868,
+      "sha256": "064afc3d456aa13a1657d262a00a194c787752580363a564c160f819d9f551e0"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 48094,
+      "sha256": "8382748703fb6e32ded044bf17546085377de7cb959ae847a592845c87ed16c3"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 45547,
+      "sha256": "8accff5954eb5b51a4b401ecbf3aa4d18133eaa641b17054e6011b1702bdfc4a"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/ACQUISITION.json",
+      "bytes": 880,
+      "sha256": "0c821be77a095a35a3aa969c1c72782b945bda25a19ef21f2a7ee08fcda701da"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/ASSOCIATIONS.json",
+      "bytes": 27085,
+      "sha256": "27e1f4c8e47aa25a5914eff35d848ff9f7101c26e54af368d9becb4deeb0fd01"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/COMPLETENESS.json",
+      "bytes": 2818,
+      "sha256": "99290c9a337dc37abc975a13e0e394b498f7c3aae18deae1e8ab566bcf931d43"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/DISTANCES.csv",
+      "bytes": 2981,
+      "sha256": "031f30458b2a1e182a85a56509e3721e6b6c20186eb39e15ae17da59deb3f6f9"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/INVENTORY.json",
+      "bytes": 91026,
+      "sha256": "713ad327b57b5a2400ddc6664ebae265ba810bd6ce78926b2b9385af16a10963"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/MAP.png",
+      "bytes": 52594,
+      "sha256": "9a5a961c2ac58545c07870536707e21f5792012cc89da14b99486e53e1091d8e"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/OBSERVATIONS.csv",
+      "bytes": 13238,
+      "sha256": "a14da7b10cd2ec16b61ce7a133aedc4608ed1c6087df07bcc244c8be492b9aa8"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/REPORT.md",
+      "bytes": 6527,
+      "sha256": "ede23e33d73f77ecfb9587a7acd932c1956a04bd16e5ae28f0b7a06fce19321a"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/SEARCH_COVERAGE.json",
+      "bytes": 2214,
+      "sha256": "544caaec280009fd4fa6e8936fcca3569539732417e92cf8a648740b3b32427a"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+      "bytes": 8,
+      "sha256": "7703741f562b3f2c276fc35a9aba6f2de114df21e80f56ebf257cdb5ea03115c"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/TENSORS.json",
+      "bytes": 1335374,
+      "sha256": "6223b83f276315ff7ba1107d2029917c002522de7dda20d903e53b61087b1d8d"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 45973,
+      "sha256": "31361b373cabc5412ae0f8402fde5b00ad3ba0ecef5375efd1a356a1b6228503"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 45834,
+      "sha256": "b91365d4ff2fc33c8ee97cc6204bbca072731c75f34eeafda558e95b39657e67"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 47786,
+      "sha256": "c11fa0bcac6cfa04575a6b6288a2409e634f9c41a1053ce36a35979bb23269f9"
+    },
+    {
+      "path": "Block34_frf_operational/dry_run/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 44853,
+      "sha256": "879175304c17e9ef7b68fe461b8da8ff7b5e72efb5ae1fd5e77381833d643eb0"
+    },
+    {
+      "path": "Block34_frf_operational/DRY_RUN.json",
+      "bytes": 826,
+      "sha256": "93f371e14a16ff90ac815d95449a0051ac23eb0405e8f80105fcfaafd10488e6"
+    },
+    {
+      "path": "Block34_frf_operational/FILES_TO_VERSION.json",
+      "bytes": 9368,
+      "sha256": "7eb43342e5300056ee4254e3fcff117f812a1024d35e1ce1d67f1e5cc26da89c"
+    },
+    {
+      "path": "Block34_frf_operational/FINAL_CACHED_REFRESH.json",
+      "bytes": 948,
+      "sha256": "dd0c4ac335f8eb3991ed069442150a06023f7b609fed92a3f1c7885b2bbf229d"
+    },
+    {
+      "path": "Block34_frf_operational/FROZEN_AUDIT.json",
+      "bytes": 229046,
+      "sha256": "d80d9b8519af2df4caeb4336afb10266bbc30a197d8e3a2a92f9468c37fc4981"
+    },
+    {
+      "path": "Block34_frf_operational/FROZEN_BASELINE.json",
+      "bytes": 177626,
+      "sha256": "65b6cf1558a20aecb5c502b2d2101e8a9cf7a1d551443b9634be79dff2f5b91d"
+    },
+    {
+      "path": "Block34_frf_operational/FULL_SUITE.json",
+      "bytes": 589,
+      "sha256": "d075ef8e974d8d75b0ccaaa77a2f594654247ca9b88913576c29cfff41474753"
+    },
+    {
+      "path": "Block34_frf_operational/INITIAL_GIT.json",
+      "bytes": 2218,
+      "sha256": "5c246ca37862d0d74abaddda1bb64875c380f760dcb48952e0a4b20b61631833"
+    },
+    {
+      "path": "Block34_frf_operational/INPUT_PROVENANCE.json",
+      "bytes": 677,
+      "sha256": "4d4c08a5fb4fc3d3852c2df9756dcaae03f1ce64bf58209dd5eda27481afcd21"
+    },
+    {
+      "path": "Block34_frf_operational/ISOLATED_TESTS.json",
+      "bytes": 702,
+      "sha256": "b2e260e85755d2762c63f8208a26d3414a8859c034110ed8dc7d6cc4beb52b67"
+    },
+    {
+      "path": "Block34_frf_operational/LIVE_RUN.json",
+      "bytes": 968,
+      "sha256": "b4cd6d12802f93f173d0e7f5ce1e100c415f4f115971ce22ee407d3f63eaf9e5"
+    },
+    {
+      "path": "Block34_frf_operational/NETWORK_AUDIT.json",
+      "bytes": 27436,
+      "sha256": "73e38048cbe1560dca7b60471d8852e3f340b39eaceb9bc799991b6cce08109c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/ACQUISITION.json",
+      "bytes": 825,
+      "sha256": "dbf226b9a025b9f2e9c931e3986bc54198066f1568ecc5dd9ab80c965a369a7e"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/ASSOCIATIONS.json",
+      "bytes": 237476,
+      "sha256": "8d4a3d16ad9ca2f0d7325e5b1b5e13c333f8e94616257fdfbf4185994c5ac6b5"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/COMPLETENESS.json",
+      "bytes": 4659,
+      "sha256": "69ec1248da1f84d5cea74c0c381b0921b7939d2576dffc6e6aab54dc209f924c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_profile.png",
+      "bytes": 45354,
+      "sha256": "a1f5b450b50a320a5a01ae047cd6eebbae213a063e46e6a8e7bf0cfd71382f79"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_time.png",
+      "bytes": 35289,
+      "sha256": "0fb9ec7f82290f306670a357360a83a666a749b821c03bdfc156d90533b29559"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/DISTANCES.csv",
+      "bytes": 9936,
+      "sha256": "5b7cdc783241e9ec31f98c9514138224bcb29c27096422aea5ec5a8d88e0c46a"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/INVENTORY.json",
+      "bytes": 7231817,
+      "sha256": "473786da2f138a4712653b28c76ce1a74e5def7fcd7e1b4c71590ad0e23c8ca6"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/MAP.png",
+      "bytes": 81249,
+      "sha256": "a221f32689e60ad8d53e5357a40c68e5fb5702c112152d9429b7b10976b9caf4"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/OBSERVATIONS.csv",
+      "bytes": 328412,
+      "sha256": "e371b38c7e280fcdbba7577afaa903d0fc7bc7a3422b3151a7de0fde4ce67cca"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/REPORT.md",
+      "bytes": 7106448,
+      "sha256": "6eac2f3b525eb876e6600359faf1cc9f6f85a8114a496ceaa48207ca8aeb1b74"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/SEARCH_COVERAGE.json",
+      "bytes": 2130,
+      "sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+      "bytes": 3379,
+      "sha256": "49516811cef0fefddba1ea14d9245bf0e11d3172293087d0d4052ad82c1c33dd"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+      "bytes": 17931,
+      "sha256": "0d1707e398c6f89b496b0a97bca508886d36f714955ee27e38eb58ada82a3cf7"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/TENSORS.json",
+      "bytes": 12133679,
+      "sha256": "e924eb76f5aea04b71128e141a96e205dc6fd3fccdd917d77aab623ca5cd0786"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/water_level__eopNoaaTide__daaa106786e8_time.png",
+      "bytes": 30363,
+      "sha256": "7aa8f6987c3cc9565b6e11e39115d038982d781b4a2c0db235dfe4299e1923c1"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+      "bytes": 23659,
+      "sha256": "0ac6fee1398712e99bd6c34a8d5e922e7ebf6519e7f2334298a9753bdfeba774"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_spectrum.png",
+      "bytes": 34072,
+      "sha256": "2d7e8394f5a037e482c2492290ef5fe9450e8742c66ff54cf4e55f440cabb340"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 34792,
+      "sha256": "aabdd023979fcd5d6fad6d5e0db39d3f5a289749d6159591d154e00a14fa52a6"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+      "bytes": 26449,
+      "sha256": "c7666082c603d9551aeb83b717ada2e3aa539ab9c5a1d1ebcfbdf91a7d6d458e"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_spectrum.png",
+      "bytes": 38540,
+      "sha256": "e1e128aa7357c99e8a1539883699add365a01db05d46e878ed8069bb173b17dc"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 33300,
+      "sha256": "3c949d59317c3d7a28eebf3f6e602d66fe945a207b5c8c9baebf6e19d21cd0b2"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+      "bytes": 25783,
+      "sha256": "42d79a088d8254915f27e70a98ead5a7a8f81b0c1b6d99b53d9be4a2794abb2c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+      "bytes": 35769,
+      "sha256": "7e8b1d284c20ef8e22a1c5943fc0d1e9048eebbf7758f550fbec94f2d5e5a6e3"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 35690,
+      "sha256": "50619eb0caa87bcdc337be5949e34757173b84ff9912cc8fe592969aef834c4b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+      "bytes": 24239,
+      "sha256": "4b96579d2b4d9dd9ca0949d777e403ce1e546fa307120b5443b18a948ecaf173"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_spectrum.png",
+      "bytes": 35961,
+      "sha256": "7aebe584ed3d5b4e89b30dd4291315a93d402d3f762044472536c905a9eb0841"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 36571,
+      "sha256": "569d60a85210bc219734012404baaf13e11b6faa8539e225e27ebce899abeea2"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/COSMO_2098202/wind__derived__67e3b4f6435d_time.png",
+      "bytes": 38785,
+      "sha256": "75d080366d0916b578768b2a15a07fc9d4ba5988acab11b872606bbed0ad6592"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/INVENTORY.json",
+      "bytes": 7231817,
+      "sha256": "473786da2f138a4712653b28c76ce1a74e5def7fcd7e1b4c71590ad0e23c8ca6"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/LEGACY_CACHE_AUDIT.json",
+      "bytes": 20853,
+      "sha256": "9d22772e44080b1891473a19daf8fad2198c23b9a918168d8558b98e00a5e0a9"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/RUN_STATE.json",
+      "bytes": 1010,
+      "sha256": "03fc164abd83f9b8bac00c872bef8a54d93f53cee2c7ed4b27adedfa71bb050c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/STATUS.json",
+      "bytes": 472,
+      "sha256": "121e11a26747f0bc6cedc28985e27da8dfc600ea3c3847c12e6df063d5a00459"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/SUMMARY.md",
+      "bytes": 928,
+      "sha256": "65806edd732637c09b06ad762d4c10e34f0da2cc1b4adcb1f9d9759ede7a1c25"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/ACQUISITION.json",
+      "bytes": 881,
+      "sha256": "54a6ae5b045c0eabec864ac7a2b4e3a307d76cdde930f207d2ea12381e4d3cbf"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/ASSOCIATIONS.json",
+      "bytes": 238661,
+      "sha256": "b502677cff7fd003b8ccaae1cc7c7f2a1eb977bfa7a31a4ffe5b8fb6264d2f7d"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/COMPLETENESS.json",
+      "bytes": 4672,
+      "sha256": "e633260025df6c3d272f708a7ec9ba7a9db909d3c85d26f106587b9d45090b61"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_profile.png",
+      "bytes": 45354,
+      "sha256": "a1f5b450b50a320a5a01ae047cd6eebbae213a063e46e6a8e7bf0cfd71382f79"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_time.png",
+      "bytes": 35230,
+      "sha256": "abb92c33ce604032a5770f02ca4f0603345aa17a8beb2beaa39b7028f7fee0a8"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/DISTANCES.csv",
+      "bytes": 10739,
+      "sha256": "81cbcb3168f1aa440ddcfba03d9222f9dc7115f68169060c36f50a4df4ab7231"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/INVENTORY.json",
+      "bytes": 7231817,
+      "sha256": "473786da2f138a4712653b28c76ce1a74e5def7fcd7e1b4c71590ad0e23c8ca6"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/MAP.png",
+      "bytes": 71572,
+      "sha256": "da8add20aadb40cf0ae1c4101b8325edc8aeae875ad56e60ddcdbd5dc94ff8a3"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/OBSERVATIONS.csv",
+      "bytes": 330407,
+      "sha256": "222c4ce38dde2d500e9c19f03c2bbda78420316845c2f01b91c321f2cc9f2ea8"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/REPORT.md",
+      "bytes": 7106560,
+      "sha256": "535360698800cf618b753786b6b9852d95e3cb3d96e74a3b6b6a6fe3fc214961"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/SEARCH_COVERAGE.json",
+      "bytes": 2130,
+      "sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+      "bytes": 3387,
+      "sha256": "027f6311e07c04af808326a838f1ca65fa901d22c1f131326c1e4aef8c82a112"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+      "bytes": 17939,
+      "sha256": "96dd33889463eae8c0863d8a60376d5e30ee8764478db3f254892f845ccea90b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/TENSORS.json",
+      "bytes": 12133679,
+      "sha256": "e924eb76f5aea04b71128e141a96e205dc6fd3fccdd917d77aab623ca5cd0786"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/water_level__eopNoaaTide__daaa106786e8_time.png",
+      "bytes": 30257,
+      "sha256": "774007c8ecce403f287f2925b90782092d66235939429db67a8dc63b6351e489"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+      "bytes": 23659,
+      "sha256": "0ac6fee1398712e99bd6c34a8d5e922e7ebf6519e7f2334298a9753bdfeba774"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_spectrum.png",
+      "bytes": 34072,
+      "sha256": "2d7e8394f5a037e482c2492290ef5fe9450e8742c66ff54cf4e55f440cabb340"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 34839,
+      "sha256": "51331b668bbf10b16015b14854699daf9e4edc752276b9d41cfb59863e2be936"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+      "bytes": 26449,
+      "sha256": "c7666082c603d9551aeb83b717ada2e3aa539ab9c5a1d1ebcfbdf91a7d6d458e"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_spectrum.png",
+      "bytes": 38540,
+      "sha256": "e1e128aa7357c99e8a1539883699add365a01db05d46e878ed8069bb173b17dc"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 33331,
+      "sha256": "f28d980021b75612a629409fcd7302da00cf0cb815a5268ebdca2da55d01a401"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+      "bytes": 25783,
+      "sha256": "42d79a088d8254915f27e70a98ead5a7a8f81b0c1b6d99b53d9be4a2794abb2c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+      "bytes": 35769,
+      "sha256": "7e8b1d284c20ef8e22a1c5943fc0d1e9048eebbf7758f550fbec94f2d5e5a6e3"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 35573,
+      "sha256": "093e1bed3700b4494941add4fa69afce10a9dab462983cdddb7b08d3ce8f5c12"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+      "bytes": 24239,
+      "sha256": "4b96579d2b4d9dd9ca0949d777e403ce1e546fa307120b5443b18a948ecaf173"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_spectrum.png",
+      "bytes": 35961,
+      "sha256": "7aebe584ed3d5b4e89b30dd4291315a93d402d3f762044472536c905a9eb0841"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 36535,
+      "sha256": "568070a20620d5779a43692d2e533e2454f393b1f9e7b244fc4a9a6be5a4604d"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TDX-1_record_11/wind__derived__67e3b4f6435d_time.png",
+      "bytes": 38665,
+      "sha256": "ac65fe029f9d731371eb64f87fb00504fd305a12e818ffe2328b7c7561dee633"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/ACQUISITION.json",
+      "bytes": 880,
+      "sha256": "0c821be77a095a35a3aa969c1c72782b945bda25a19ef21f2a7ee08fcda701da"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/ASSOCIATIONS.json",
+      "bytes": 238272,
+      "sha256": "c2024331f6d3fd773fe8c30e3fc8dc76707a3da14513aee88e60304c39168b7b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/COMPLETENESS.json",
+      "bytes": 4667,
+      "sha256": "a583a1a358e335c940feede5d827171076d1ad14a32e3632faea1d062a181220"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_profile.png",
+      "bytes": 43780,
+      "sha256": "d38dccedfb5402b5d029e50f021506725c1494eb5fefc1d5f5261d4e9488975c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_time.png",
+      "bytes": 35369,
+      "sha256": "16bab2f0f1443b32c8061c73bfe6f6b7bc474ec63b5cfd39e5b339284e04018b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/DISTANCES.csv",
+      "bytes": 9512,
+      "sha256": "c98f46b6b9d6d220eaa53b6cb3cdfd7417f32fb9f57fadb4cdcb27cbc86762f7"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/INVENTORY.json",
+      "bytes": 7231817,
+      "sha256": "473786da2f138a4712653b28c76ce1a74e5def7fcd7e1b4c71590ad0e23c8ca6"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/MAP.png",
+      "bytes": 72882,
+      "sha256": "9c5f4403b1121cb02ab87b7bacb059128aea77031ab4029c4c5c2f20aedb667b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/OBSERVATIONS.csv",
+      "bytes": 329748,
+      "sha256": "0a448f1c694ff8158770f1fea79136c12474eacc2bc4a0aca642282c33f64b4f"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/REPORT.md",
+      "bytes": 7106599,
+      "sha256": "208558406bbf1594fec5cb6eed5de79899b72641860364e3d09569daf62a432e"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/SEARCH_COVERAGE.json",
+      "bytes": 2130,
+      "sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+      "bytes": 3375,
+      "sha256": "dd53997454b1d85b46c8370066803412b7a91de4d68e6b30ac042a14b0f73daa"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+      "bytes": 17931,
+      "sha256": "cbee717bf2eb995646456af09938700cf747fd1dddf1ab738678d4cd3f55af23"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/TENSORS.json",
+      "bytes": 12133679,
+      "sha256": "e924eb76f5aea04b71128e141a96e205dc6fd3fccdd917d77aab623ca5cd0786"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/water_level__eopNoaaTide__daaa106786e8_time.png",
+      "bytes": 29939,
+      "sha256": "0880008b01300df78d65a11366c9c9d5ab9bd89406d212a0c619044aad97a3cc"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+      "bytes": 24349,
+      "sha256": "47ec22ff10cc96435cb2323885db108265e5e39c689d6e70d967bdccd9d283d5"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_spectrum.png",
+      "bytes": 34635,
+      "sha256": "1d1d3c88ca167a1d95bb1c9beabd64adbfd7de1d0bcf25fa0f5fe1082526161f"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 34929,
+      "sha256": "b675a1c3b5fdaa33bedec19389588e6b36d652038c28d924573a5d011499218b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+      "bytes": 25555,
+      "sha256": "91112ccfad5d8bf172d9f0e2dfc819bbce9e5f68a885d5f289ee40156f14eaf6"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_spectrum.png",
+      "bytes": 37072,
+      "sha256": "e69625f38b75a5f879468b3dbc51261ee1111e016eb082179183acdabd5dd875"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 33393,
+      "sha256": "8cfd60080381a0a5b335b68286682343d716e6aebe2fc31d2136507e5a10ecfb"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+      "bytes": 25955,
+      "sha256": "bfd62b2aabbfae8f43a7b985d0f20a49cdac47112ce243db04195c702661d34c"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+      "bytes": 37752,
+      "sha256": "9cb10420af88114a23a1e06eb48ee207af2a25c1c88d1a8cdd3b28bc74602bfd"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 35437,
+      "sha256": "f18d26089e3ef3a57989092b5171d0313e256cde8406abb752d7c0b4a826a103"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+      "bytes": 27669,
+      "sha256": "9299a47c6ff150b7cb971c0c6765d0c83c4b0bb9845efba2f07a73b31caaca9b"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_spectrum.png",
+      "bytes": 36102,
+      "sha256": "1c17f9c55124a14cc5eeed42a9169d0a9ba0ca168fd9411f0014eefb6166a1f7"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 36360,
+      "sha256": "8701032e4fb26bd5f6a5af3fd41190e35b30b5b6e7dbab0be2f7d2c4c466717d"
+    },
+    {
+      "path": "Block34_frf_operational/offline_reuse/TSX-1_record_12/wind__derived__67e3b4f6435d_time.png",
+      "bytes": 38624,
+      "sha256": "1f12ecf42cbd389db78b611296267aef85c648aede2477629fb844d88df008bd"
+    },
+    {
+      "path": "Block34_frf_operational/OFFLINE_REUSE.json",
+      "bytes": 954,
+      "sha256": "0f695d3e884cae05a80ecf3045927add379bd00a9b4003f1b9cd9fa6fdcff70d"
+    },
+    {
+      "path": "Block34_frf_operational/PROTOCOL.md",
+      "bytes": 1024,
+      "sha256": "60d52a6d9e638c50fd8af68cb9c6b58cd2bad5f8e89174468cc760b6d51317ff"
+    },
+    {
+      "path": "Block34_frf_operational/REPORT.md",
+      "bytes": 4974,
+      "sha256": "9826f06eb8c579a5bca33d9d0f260a6dccb424e75e166720b58e2411801f647a"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/ACQUISITION.json",
+      "bytes": 825,
+      "sha256": "dbf226b9a025b9f2e9c931e3986bc54198066f1568ecc5dd9ab80c965a369a7e"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/ASSOCIATIONS.json",
+      "bytes": 237476,
+      "sha256": "8d4a3d16ad9ca2f0d7325e5b1b5e13c333f8e94616257fdfbf4185994c5ac6b5"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/COMPLETENESS.json",
+      "bytes": 4659,
+      "sha256": "69ec1248da1f84d5cea74c0c381b0921b7939d2576dffc6e6aab54dc209f924c"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_profile.png",
+      "bytes": 45354,
+      "sha256": "a1f5b450b50a320a5a01ae047cd6eebbae213a063e46e6a8e7bf0cfd71382f79"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/currents__awac-11m__1e8cc1746ef4_time.png",
+      "bytes": 35289,
+      "sha256": "0fb9ec7f82290f306670a357360a83a666a749b821c03bdfc156d90533b29559"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/DISTANCES.csv",
+      "bytes": 9936,
+      "sha256": "5b7cdc783241e9ec31f98c9514138224bcb29c27096422aea5ec5a8d88e0c46a"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/INVENTORY.json",
+      "bytes": 7231817,
+      "sha256": "473786da2f138a4712653b28c76ce1a74e5def7fcd7e1b4c71590ad0e23c8ca6"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/MAP.png",
+      "bytes": 81249,
+      "sha256": "a221f32689e60ad8d53e5357a40c68e5fb5702c112152d9429b7b10976b9caf4"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/OBSERVATIONS.csv",
+      "bytes": 328412,
+      "sha256": "e371b38c7e280fcdbba7577afaa903d0fc7bc7a3422b3151a7de0fde4ce67cca"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/REPORT.md",
+      "bytes": 7106448,
+      "sha256": "6eac2f3b525eb876e6600359faf1cc9f6f85a8114a496ceaa48207ca8aeb1b74"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/SEARCH_COVERAGE.json",
+      "bytes": 2130,
+      "sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/SPECTRAL_SUMMARIES.csv",
+      "bytes": 3379,
+      "sha256": "49516811cef0fefddba1ea14d9245bf0e11d3172293087d0d4052ad82c1c33dd"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/SPECTRAL_SUMMARIES.json",
+      "bytes": 17931,
+      "sha256": "0d1707e398c6f89b496b0a97bca508886d36f714955ee27e38eb58ada82a3cf7"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/TENSORS.json",
+      "bytes": 12133679,
+      "sha256": "e924eb76f5aea04b71128e141a96e205dc6fd3fccdd917d77aab623ca5cd0786"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/water_level__eopNoaaTide__daaa106786e8_time.png",
+      "bytes": 30363,
+      "sha256": "7aa8f6987c3cc9565b6e11e39115d038982d781b4a2c0db235dfe4299e1923c1"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+      "bytes": 23659,
+      "sha256": "0ac6fee1398712e99bd6c34a8d5e922e7ebf6519e7f2334298a9753bdfeba774"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_spectrum.png",
+      "bytes": 34072,
+      "sha256": "2d7e8394f5a037e482c2492290ef5fe9450e8742c66ff54cf4e55f440cabb340"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 34792,
+      "sha256": "aabdd023979fcd5d6fad6d5e0db39d3f5a289749d6159591d154e00a14fa52a6"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+      "bytes": 26449,
+      "sha256": "c7666082c603d9551aeb83b717ada2e3aa539ab9c5a1d1ebcfbdf91a7d6d458e"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_spectrum.png",
+      "bytes": 38540,
+      "sha256": "e1e128aa7357c99e8a1539883699add365a01db05d46e878ed8069bb173b17dc"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 33300,
+      "sha256": "3c949d59317c3d7a28eebf3f6e602d66fe945a207b5c8c9baebf6e19d21cd0b2"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+      "bytes": 25783,
+      "sha256": "42d79a088d8254915f27e70a98ead5a7a8f81b0c1b6d99b53d9be4a2794abb2c"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+      "bytes": 35769,
+      "sha256": "7e8b1d284c20ef8e22a1c5943fc0d1e9048eebbf7758f550fbec94f2d5e5a6e3"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 35690,
+      "sha256": "50619eb0caa87bcdc337be5949e34757173b84ff9912cc8fe592969aef834c4b"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+      "bytes": 24239,
+      "sha256": "4b96579d2b4d9dd9ca0949d777e403ce1e546fa307120b5443b18a948ecaf173"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_spectrum.png",
+      "bytes": 35961,
+      "sha256": "7aebe584ed3d5b4e89b30dd4291315a93d402d3f762044472536c905a9eb0841"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 36571,
+      "sha256": "569d60a85210bc219734012404baaf13e11b6faa8539e225e27ebce899abeea2"
+    },
+    {
+      "path": "Block34_frf_operational/results/COSMO_2098202/wind__derived__67e3b4f6435d_time.png",
+      "bytes": 38785,
+      "sha256": "75d080366d0916b578768b2a15a07fc9d4ba5988acab11b872606bbed0ad6592"
+    },
+    {
+      "path": "Block34_frf_operational/results/INVENTORY.json",
+      "bytes": 7231817,
+      "sha256": "473786da2f138a4712653b28c76ce1a74e5def7fcd7e1b4c71590ad0e23c8ca6"
+    },
+    {
+      "path": "Block34_frf_operational/results/LEGACY_CACHE_AUDIT.json",
+      "bytes": 20853,
+      "sha256": "9d22772e44080b1891473a19daf8fad2198c23b9a918168d8558b98e00a5e0a9"
+    },
+    {
+      "path": "Block34_frf_operational/results/RUN_STATE.json",
+      "bytes": 1010,
+      "sha256": "03fc164abd83f9b8bac00c872bef8a54d93f53cee2c7ed4b27adedfa71bb050c"
+    },
+    {
+      "path": "Block34_frf_operational/results/STATUS.json",
+      "bytes": 472,
+      "sha256": "121e11a26747f0bc6cedc28985e27da8dfc600ea3c3847c12e6df063d5a00459"
+    },
+    {
+      "path": "Block34_frf_operational/results/SUMMARY.md",
+      "bytes": 928,
+      "sha256": "65806edd732637c09b06ad762d4c10e34f0da2cc1b4adcb1f9d9759ede7a1c25"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/ACQUISITION.json",
+      "bytes": 881,
+      "sha256": "54a6ae5b045c0eabec864ac7a2b4e3a307d76cdde930f207d2ea12381e4d3cbf"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/ASSOCIATIONS.json",
+      "bytes": 238661,
+      "sha256": "b502677cff7fd003b8ccaae1cc7c7f2a1eb977bfa7a31a4ffe5b8fb6264d2f7d"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/COMPLETENESS.json",
+      "bytes": 4672,
+      "sha256": "e633260025df6c3d272f708a7ec9ba7a9db909d3c85d26f106587b9d45090b61"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_profile.png",
+      "bytes": 45354,
+      "sha256": "a1f5b450b50a320a5a01ae047cd6eebbae213a063e46e6a8e7bf0cfd71382f79"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/currents__awac-11m__1e8cc1746ef4_time.png",
+      "bytes": 35230,
+      "sha256": "abb92c33ce604032a5770f02ca4f0603345aa17a8beb2beaa39b7028f7fee0a8"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/DISTANCES.csv",
+      "bytes": 10739,
+      "sha256": "81cbcb3168f1aa440ddcfba03d9222f9dc7115f68169060c36f50a4df4ab7231"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/INVENTORY.json",
+      "bytes": 7231817,
+      "sha256": "473786da2f138a4712653b28c76ce1a74e5def7fcd7e1b4c71590ad0e23c8ca6"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/MAP.png",
+      "bytes": 71572,
+      "sha256": "da8add20aadb40cf0ae1c4101b8325edc8aeae875ad56e60ddcdbd5dc94ff8a3"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/OBSERVATIONS.csv",
+      "bytes": 330407,
+      "sha256": "222c4ce38dde2d500e9c19f03c2bbda78420316845c2f01b91c321f2cc9f2ea8"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/REPORT.md",
+      "bytes": 7106560,
+      "sha256": "535360698800cf618b753786b6b9852d95e3cb3d96e74a3b6b6a6fe3fc214961"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/SEARCH_COVERAGE.json",
+      "bytes": 2130,
+      "sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/SPECTRAL_SUMMARIES.csv",
+      "bytes": 3387,
+      "sha256": "027f6311e07c04af808326a838f1ca65fa901d22c1f131326c1e4aef8c82a112"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/SPECTRAL_SUMMARIES.json",
+      "bytes": 17939,
+      "sha256": "96dd33889463eae8c0863d8a60376d5e30ee8764478db3f254892f845ccea90b"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/TENSORS.json",
+      "bytes": 12133679,
+      "sha256": "e924eb76f5aea04b71128e141a96e205dc6fd3fccdd917d77aab623ca5cd0786"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/water_level__eopNoaaTide__daaa106786e8_time.png",
+      "bytes": 30257,
+      "sha256": "774007c8ecce403f287f2925b90782092d66235939429db67a8dc63b6351e489"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+      "bytes": 23659,
+      "sha256": "0ac6fee1398712e99bd6c34a8d5e922e7ebf6519e7f2334298a9753bdfeba774"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_spectrum.png",
+      "bytes": 34072,
+      "sha256": "2d7e8394f5a037e482c2492290ef5fe9450e8742c66ff54cf4e55f440cabb340"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 34839,
+      "sha256": "51331b668bbf10b16015b14854699daf9e4edc752276b9d41cfb59863e2be936"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+      "bytes": 26449,
+      "sha256": "c7666082c603d9551aeb83b717ada2e3aa539ab9c5a1d1ebcfbdf91a7d6d458e"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_spectrum.png",
+      "bytes": 38540,
+      "sha256": "e1e128aa7357c99e8a1539883699add365a01db05d46e878ed8069bb173b17dc"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 33331,
+      "sha256": "f28d980021b75612a629409fcd7302da00cf0cb815a5268ebdca2da55d01a401"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+      "bytes": 25783,
+      "sha256": "42d79a088d8254915f27e70a98ead5a7a8f81b0c1b6d99b53d9be4a2794abb2c"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+      "bytes": 35769,
+      "sha256": "7e8b1d284c20ef8e22a1c5943fc0d1e9048eebbf7758f550fbec94f2d5e5a6e3"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 35573,
+      "sha256": "093e1bed3700b4494941add4fa69afce10a9dab462983cdddb7b08d3ce8f5c12"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+      "bytes": 24239,
+      "sha256": "4b96579d2b4d9dd9ca0949d777e403ce1e546fa307120b5443b18a948ecaf173"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_spectrum.png",
+      "bytes": 35961,
+      "sha256": "7aebe584ed3d5b4e89b30dd4291315a93d402d3f762044472536c905a9eb0841"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 36535,
+      "sha256": "568070a20620d5779a43692d2e533e2454f393b1f9e7b244fc4a9a6be5a4604d"
+    },
+    {
+      "path": "Block34_frf_operational/results/TDX-1_record_11/wind__derived__67e3b4f6435d_time.png",
+      "bytes": 38665,
+      "sha256": "ac65fe029f9d731371eb64f87fb00504fd305a12e818ffe2328b7c7561dee633"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/ACQUISITION.json",
+      "bytes": 880,
+      "sha256": "0c821be77a095a35a3aa969c1c72782b945bda25a19ef21f2a7ee08fcda701da"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/ASSOCIATIONS.json",
+      "bytes": 238272,
+      "sha256": "c2024331f6d3fd773fe8c30e3fc8dc76707a3da14513aee88e60304c39168b7b"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/COMPLETENESS.json",
+      "bytes": 4667,
+      "sha256": "a583a1a358e335c940feede5d827171076d1ad14a32e3632faea1d062a181220"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/CONFIG.json",
+      "bytes": 804,
+      "sha256": "d487ff563fa985c015ce01f8b6551972ba50112c6378704a114891f90107ceda"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_profile.png",
+      "bytes": 43780,
+      "sha256": "d38dccedfb5402b5d029e50f021506725c1494eb5fefc1d5f5261d4e9488975c"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/currents__awac-11m__1e8cc1746ef4_time.png",
+      "bytes": 35369,
+      "sha256": "16bab2f0f1443b32c8061c73bfe6f6b7bc474ec63b5cfd39e5b339284e04018b"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/DISTANCES.csv",
+      "bytes": 9512,
+      "sha256": "c98f46b6b9d6d220eaa53b6cb3cdfd7417f32fb9f57fadb4cdcb27cbc86762f7"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/DUPLICATE_SAMPLES.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/INVENTORY.json",
+      "bytes": 7231817,
+      "sha256": "473786da2f138a4712653b28c76ce1a74e5def7fcd7e1b4c71590ad0e23c8ca6"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/MAP.png",
+      "bytes": 72882,
+      "sha256": "9c5f4403b1121cb02ab87b7bacb059128aea77031ab4029c4c5c2f20aedb667b"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/OBSERVATIONS.csv",
+      "bytes": 329748,
+      "sha256": "0a448f1c694ff8158770f1fea79136c12474eacc2bc4a0aca642282c33f64b4f"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/PROVENANCE_WARNINGS.json",
+      "bytes": 532,
+      "sha256": "966e61c387f44629985812be30cf8b6805c3cbb2ed010ca79b630d407569c71c"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/REPORT.md",
+      "bytes": 7106599,
+      "sha256": "208558406bbf1594fec5cb6eed5de79899b72641860364e3d09569daf62a432e"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/SEARCH_COVERAGE.json",
+      "bytes": 2130,
+      "sha256": "448a39176223c663b0ea8280fd2470ec0b6db42a18fabe679b7ce2ed5395d67b"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/SPECTRAL_SUMMARIES.csv",
+      "bytes": 3375,
+      "sha256": "dd53997454b1d85b46c8370066803412b7a91de4d68e6b30ac042a14b0f73daa"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/SPECTRAL_SUMMARIES.json",
+      "bytes": 17931,
+      "sha256": "cbee717bf2eb995646456af09938700cf747fd1dddf1ab738678d4cd3f55af23"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/TENSORS.json",
+      "bytes": 12133679,
+      "sha256": "e924eb76f5aea04b71128e141a96e205dc6fd3fccdd917d77aab623ca5cd0786"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/water_level__eopNoaaTide__daaa106786e8_time.png",
+      "bytes": 29939,
+      "sha256": "0880008b01300df78d65a11366c9c9d5ab9bd89406d212a0c619044aad97a3cc"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_directional_spectrum.png",
+      "bytes": 24349,
+      "sha256": "47ec22ff10cc96435cb2323885db108265e5e39c689d6e70d967bdccd9d283d5"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_spectrum.png",
+      "bytes": 34635,
+      "sha256": "1d1d3c88ca167a1d95bb1c9beabd64adbfd7de1d0bcf25fa0f5fe1082526161f"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__8m-array__0a92a09b5a0f_time.png",
+      "bytes": 34929,
+      "sha256": "b675a1c3b5fdaa33bedec19389588e6b36d652038c28d924573a5d011499218b"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_directional_spectrum.png",
+      "bytes": 25555,
+      "sha256": "91112ccfad5d8bf172d9f0e2dfc819bbce9e5f68a885d5f289ee40156f14eaf6"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_spectrum.png",
+      "bytes": 37072,
+      "sha256": "e69625f38b75a5f879468b3dbc51261ee1111e016eb082179183acdabd5dd875"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__awac-11m__ac63f1b339a0_time.png",
+      "bytes": 33393,
+      "sha256": "8cfd60080381a0a5b335b68286682343d716e6aebe2fc31d2136507e5a10ecfb"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_directional_spectrum.png",
+      "bytes": 25955,
+      "sha256": "bfd62b2aabbfae8f43a7b985d0f20a49cdac47112ce243db04195c702661d34c"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_spectrum.png",
+      "bytes": 37752,
+      "sha256": "9cb10420af88114a23a1e06eb48ee207af2a25c1c88d1a8cdd3b28bc74602bfd"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-17m__4e2d54ee6b11_time.png",
+      "bytes": 35437,
+      "sha256": "f18d26089e3ef3a57989092b5171d0313e256cde8406abb752d7c0b4a826a103"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_directional_spectrum.png",
+      "bytes": 27669,
+      "sha256": "9299a47c6ff150b7cb971c0c6765d0c83c4b0bb9845efba2f07a73b31caaca9b"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_spectrum.png",
+      "bytes": 36102,
+      "sha256": "1c17f9c55124a14cc5eeed42a9169d0a9ba0ca168fd9411f0014eefb6166a1f7"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/waves__waverider-26m__5f926ab212a7_time.png",
+      "bytes": 36360,
+      "sha256": "8701032e4fb26bd5f6a5af3fd41190e35b30b5b6e7dbab0be2f7d2c4c466717d"
+    },
+    {
+      "path": "Block34_frf_operational/results/TSX-1_record_12/wind__derived__67e3b4f6435d_time.png",
+      "bytes": 38624,
+      "sha256": "1f12ecf42cbd389db78b611296267aef85c648aede2477629fb844d88df008bd"
+    },
+    {
+      "path": "Block34_frf_operational/SURVEY_SUBSETS.json",
+      "bytes": 1698362,
+      "sha256": "0d5c609d4c0b9769f956d3fc08db12576c17bdde1331f5978549b97f66bfb7bf"
+    },
+    {
+      "path": "Block34_frf_operational/TDX-1_record_11_footprint.geojson",
+      "bytes": 434,
+      "sha256": "6a43cbc5f785dea9c0439d233eb0433ff0d6241b4664f252c9970976b8d66bc6"
+    },
+    {
+      "path": "Block34_frf_operational/TEST_REPORT.md",
+      "bytes": 1116,
+      "sha256": "f460cfaffdf14f6d14aad9074e4d40ec595c171cf6cb452eb092fda3396b3701"
+    },
+    {
+      "path": "Block34_frf_operational/TSX-1_record_12_footprint.geojson",
+      "bytes": 433,
+      "sha256": "000a22d034c590e9dfc27fc72b929717f884c83983829515f14d29e03122d0f3"
+    },
+    {
+      "path": "Block34_frf_operational/VISUAL_QA.md",
+      "bytes": 737,
+      "sha256": "bfbf9fcfe0cd50f05a32807c200b90d76f9e085509fe002829a554e6f149fe3f"
+    },
+    {
+      "path": "CHECKPOINT_34.md",
+      "bytes": 1397,
+      "sha256": "4d41096bb3ebe8ac7714b79bfa504ea15f4e845138b9ab379f591c6e9fbca523"
+    },
+    {
+      "path": "code/frf_client/__init__.py",
+      "bytes": 90,
+      "sha256": "a97be18e186998173c52a07aa24d7dadfb8d3af9957b8bb7f87d65bee8739cc9"
+    },
+    {
+      "path": "code/frf_client/catalog.py",
+      "bytes": 2404,
+      "sha256": "050f7b0fe0df0b3050aeca7222b4834a738b47ba50455e8c9e7bcdd262815ed6"
+    },
+    {
+      "path": "code/frf_client/client.py",
+      "bytes": 29271,
+      "sha256": "1edf365268f54f96da1278d24ef0be6e307e3b1428cc2405e6a1f848a9dbf1e4"
+    },
+    {
+      "path": "code/frf_client/comparison.py",
+      "bytes": 11731,
+      "sha256": "78a75bebed0c99f9fa1e0679c4c549ca6fc7bb62a1456b8d5e1a91835c854bfe"
+    },
+    {
+      "path": "code/frf_client/data.py",
+      "bytes": 9325,
+      "sha256": "6b63c970449ef5fa1e0750fe6a074b28dfdc59c31263ca452c4c713ad3b189f5"
+    },
+    {
+      "path": "code/frf_client/delivery.py",
+      "bytes": 6203,
+      "sha256": "65a13903fe86ba791a821fdf0f712cbc193be919579feb357e58d4f633197433"
+    },
+    {
+      "path": "code/frf_client/geometry.py",
+      "bytes": 3650,
+      "sha256": "926aa90918f1e1808cf7e784dff4d9966e71b050f92f8076cc54f72318743044"
+    },
+    {
+      "path": "code/frf_client/inputs.py",
+      "bytes": 5602,
+      "sha256": "9137def7df30c0bd19d2d2a1cad8065999167c4242280b7ef67f17ae28a017aa"
+    },
+    {
+      "path": "code/frf_client/operational.py",
+      "bytes": 3252,
+      "sha256": "8434b7464c2830a6d12032b3b4d9e2b61ae8ab956a14bb02715f571cf2f0f725"
+    },
+    {
+      "path": "code/frf_client/output.py",
+      "bytes": 33138,
+      "sha256": "445e1768095549946baebe1ad67e11caffb2b74db8fbbc892fff598dc97f7528"
+    },
+    {
+      "path": "code/frf_client/provenance.py",
+      "bytes": 1125,
+      "sha256": "f1f0e25ee3a40f7f1d0fb2918f02c45e8b944ab4b2abfef7f578c70c58188352"
+    },
+    {
+      "path": "code/frf_client/survey.py",
+      "bytes": 3937,
+      "sha256": "e3507cec18e076931c458998a6a25e6a649cf670adca92f1400f5b6761d641b5"
+    },
+    {
+      "path": "code/frf_client/temporal.py",
+      "bytes": 1278,
+      "sha256": "deea5d15eb6a06d07a91b001388f5ce999d9604c132dcf317a5966d2cd3795e6"
+    },
+    {
+      "path": "code/frf_client/transport.py",
+      "bytes": 15590,
+      "sha256": "6b236738df45c173c137cbea693c8fcb57e9421d7c3def7d03e533682c957b2b"
+    },
+    {
+      "path": "code/frf_client_cli.py",
+      "bytes": 199,
+      "sha256": "79ca56d9057ce80e627a605fefd820887f628d949d3555fecbf83be165c1daff"
+    },
+    {
+      "path": "code/README_FRF_CLIENT.md",
+      "bytes": 16454,
+      "sha256": "09a27f08174b046580f1820d2a21d0c7d653e64b562fb2009d5d1f46ea9f91b7"
+    },
+    {
+      "path": "code/run_block30_frf_conditions.py",
+      "bytes": 14563,
+      "sha256": "ba13f0e9dc5e6f743f571de5c00d80b8c4b53dd2e4284c5c2b2a32f8dbda4007"
+    },
+    {
+      "path": "code/run_block32_frf_client.py",
+      "bytes": 8614,
+      "sha256": "2e02232148c72f7b5452683064b4508d21479db6db15913b66c1bbce77c0258f"
+    },
+    {
+      "path": "code/run_block33_frf_verification.py",
+      "bytes": 12523,
+      "sha256": "041719441ca783a1e2871201c161d50aeded15b6f474f95bfc0f0464513807c7"
+    },
+    {
+      "path": "code/run_block34_frf_operational.py",
+      "bytes": 9317,
+      "sha256": "bcaec0d79d888687210b7b29401c77c60cf2249a26db4b0d730b3b20014231da"
+    },
+    {
+      "path": "examples/frf/acquisitions.json",
+      "bytes": 315,
+      "sha256": "7ba35dd3f75e467fc75ff7788460c9aa361f00ce8d13868da60b0f474db87bf4"
+    },
+    {
+      "path": "examples/frf/budget.json",
+      "bytes": 172,
+      "sha256": "e9a5f2c0a7f0c679e5421405d52081cac92a6817356abce0be4477f4b11f4d61"
+    },
+    {
+      "path": "examples/frf/client.json",
+      "bytes": 561,
+      "sha256": "59d70c0f9c2105cf4bd88b7a81ea33823dd74578525ee3b2ac99d613d2d70f11"
+    },
+    {
+      "path": "examples/frf/footprint.geojson",
+      "bytes": 112,
+      "sha256": "14e03b9512c4fd9ef0f2b585918440de7b52a2ae574889050bedc90b07bf77d9"
+    },
+    {
+      "path": "examples/frf/roi.geojson",
+      "bytes": 112,
+      "sha256": "de4260403a5d04be6aeb7a79a04a7e88250fc6a911c9c626571dad9ec0405883"
+    },
+    {
+      "path": "FRF_QUICKSTART.md",
+      "bytes": 5554,
+      "sha256": "977195ad5a26c67cc67fb99d27a88edb89c619703974deb1752f87b87ae48c63"
+    },
+    {
+      "path": "pytest.ini",
+      "bytes": 41,
+      "sha256": "6a96ba0e2d5a8296fb90f474da9d2f0173d3e41eba18965513f711104155f913"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4020,
+      "sha256": "66f0752932e67704f3399b7fceca6b0f4e980f656a5d6e0c63582f2e438e98db"
+    },
+    {
+      "path": "requirements-thesis.txt",
+      "bytes": 392,
+      "sha256": "715cae35aed31da317b03bf762863c272149d44b77a3ab9fdd892b23a9fda144"
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 203,
+      "sha256": "213b1aac3401e80906b905f36c88c3694edb37dd98953d624aeb850153f1341d"
+    },
+    {
+      "path": "tests/fixtures/frf_block33/catalog.xml",
+      "bytes": 205,
+      "sha256": "64d82aadbe83706b10b3835e1ee00fa911fd917989998da09e4298953a6c4218"
+    },
+    {
+      "path": "tests/fixtures/frf_block33/new.das",
+      "bytes": 190,
+      "sha256": "b09c57ec69d302b3b41418879c3b4dbd38dedee398f814e3fc80fdfe46e27ca7"
+    },
+    {
+      "path": "tests/fixtures/frf_block33/new.dds",
+      "bytes": 67,
+      "sha256": "c397fb614ab501e41231f5bc9557f4f47316743c6ecfbee0958f9a64d368369f"
+    },
+    {
+      "path": "tests/test_block30_frf_conditions.py",
+      "bytes": 971,
+      "sha256": "d9a7fa5a0c05ae0436d9ca207bcc45ed53b74b42f44ef08b6c19551f8de0557a"
+    },
+    {
+      "path": "tests/test_frf_block33.py",
+      "bytes": 20942,
+      "sha256": "f9320bfc7c33d8ccf21e525dd48ea8a93c672d2117ab220ac9237c1f2ccb599e"
+    },
+    {
+      "path": "tests/test_frf_client.py",
+      "bytes": 15275,
+      "sha256": "442cce528c6cc12d8601b253390fe380b3a65bc6803dfe822de65966781104fa"
+    },
+    {
+      "path": "tests/test_frf_operational.py",
+      "bytes": 7494,
+      "sha256": "6ced7adf01231d86524499ae5daafa52e632239a1fad496853217b6d7367b6c6"
+    },
+    {
+      "path": "WORKLOG.md",
+      "bytes": 56109,
+      "sha256": "c29956d3f947efba64a8b69cfbe493aa82aa8fb3dd636ac7a93ecc62d0727891"
+    }
+  ]
+}

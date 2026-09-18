@@ -1,0 +1,36 @@
+{
+  "ROI_image_coordinate_pushforward": {
+    "col_ground_m_per_pixel": 0.4553230077354839,
+    "col_surface_bearing_deg": 150.1300174926206,
+    "row_ground_m_per_pixel": 0.5763826766201465,
+    "row_surface_bearing_deg": 278.7339053325051
+  },
+  "ROI_surface_LOS": {
+    "LOS_towards_sensor_bearing_deg": 59.97364656366672,
+    "incidence_deg": 20.247893649781137
+  },
+  "SCP_image_coordinate_pushforward": {
+    "col_ground_m_per_pixel": 0.4530735835077516,
+    "col_surface_bearing_deg": 150.4268489252877,
+    "row_ground_m_per_pixel": 0.5757196938454265,
+    "row_surface_bearing_deg": 278.758087183969
+  },
+  "Snell_applied": false,
+  "band_reselected": false,
+  "buoy_band_hz": [
+    0.07,
+    0.075
+  ],
+  "buoy_direction_is_local_roi_measurement": false,
+  "buoy_propagation_to_deg": 20.878036517434737,
+  "grid_Col_UVect_horizontal_projection_bearing_deg": 188.7038595178561,
+  "grid_Row_UVect_horizontal_projection_bearing_deg": 240.2714151393144,
+  "interpretation": "Horizontal UVect projection is a vector in the local tangent plane, not the same as push-forward of a row-coordinate displacement at constant image Col. For range-aligned scattering use local LOS; for spatial FFT map BOTH coordinate axes/Jacobian, not a rotation alone.",
+  "scpc oa_azimuth_LOS_deg": 60.27141457205895,
+  "scpc oa_incidence_deg": 20.191808199195915,
+  "sicd_GridRow_horizontal_axial_difference_deg": 39.39337862187966,
+  "sicd_image_Row_surface_pushforward_axial_difference_at_ROI_deg": 77.85586881507038,
+  "sicd_surface_LOS_axial_difference_at_ROI_deg": 39.09561004623198,
+  "surface_HAE_m": 30.837378091278257,
+  "vendor_axial_difference_deg": 39.393378054624236
+}

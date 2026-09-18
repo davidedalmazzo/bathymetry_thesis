@@ -20,3 +20,17 @@
 
 # Preserve exact artifact bytes: Block32 manifests use SHA256, including EOLs.
 Block32_frf_client/** -text
+
+# Preserve byte-level provenance of subsequently published block artifacts.
+Block23_candidate2_metadata_preflight/** -text
+Block24_shortlist_triage/** -text
+Block25_reference_gate/** -text
+Block26_frequency_query/** -text
+Block27_frequency_query/** -text
+Block28_Samoa_metadata_preflight/** -text
+Block29_Samoa_mapping_trial/** -text
+Block30_duck_csk_preflight/** -text
+Block31_tsx_duck_query/** -text
+Block32_duck_candidati_unificati/** -text
+Block33_frf_offline_correction/** -text
+Block34_frf_operational/** -text

@@ -1,0 +1,40 @@
+[
+  {
+    "frequency_bins": 64,
+    "instrument": "{'long_name': b'instrumentation_attributes', 'make_model': b'Datawell DWR-M3 directional buoy', 'serial_number': b'Hull: 30252; hatchcover: 70291', 'documentation_url': b'http://datawell.nl', 'mooring': b'Datawell-compliant'}",
+    "matches_queue_dates": false,
+    "path": "Block8_validation\\buoy_data\\246p1_d02.nc",
+    "sha256": "c7450c7583aff1e21a5f4b490b766765a43981b4587ba282e413f1c09e9c1097",
+    "spectral_variables": [
+      "waveEnergyDensity",
+      "waveMeanDirection",
+      "waveA1Value",
+      "waveB1Value",
+      "waveA2Value",
+      "waveB2Value"
+    ],
+    "status": "locally_available_but_outside_event_time",
+    "time_start": "2019-11-04T20:00:00+00:00",
+    "time_stop": "2019-11-09T07:30:00+00:00",
+    "title": "Directional wave and sea surface temperature measurements collected in situ by Datawell DWR-M3 directional buoy located near GRAND ISLE, LA from 2019/11/04 20:00:00 to 2019/11/09 07:59:59."
+  },
+  {
+    "frequency_bins": 64,
+    "instrument": "{'long_name': b'instrumentation_attributes', 'make_model': b'Multiple sensors possibly used. Please refer to per-deployment datasets.', 'documentation_url': b'http://datawell.nl', 'mooring': b'Datawell-compliant'}",
+    "matches_queue_dates": false,
+    "path": "Block8_validation\\buoy_data\\246p1_historic.nc",
+    "sha256": "573b70fbf3e6caa01992ce4beab4a21a0bff5559d46d612df550073ae3f829c9",
+    "spectral_variables": [
+      "waveEnergyDensity",
+      "waveMeanDirection",
+      "waveA1Value",
+      "waveB1Value",
+      "waveA2Value",
+      "waveB2Value"
+    ],
+    "status": "locally_available_but_outside_event_time",
+    "time_start": "2019-09-05T17:00:00+00:00",
+    "time_stop": "2019-11-09T07:30:00+00:00",
+    "title": "Directional wave and sea surface temperature measurements collected in situ by Datawell Waverider buoys located near GRAND ISLE, LA from 2019/09/05 to 2019/11/09."
+  }
+]

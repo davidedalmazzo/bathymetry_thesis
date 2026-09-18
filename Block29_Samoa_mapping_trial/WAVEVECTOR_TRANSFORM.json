@@ -1,0 +1,15 @@
+{
+  "J_ground_EN_m_per_image_RowCol_m": [
+    [
+      -3.655482331568434,
+      0.6576773304402105
+    ],
+    [
+      0.5615822719817979,
+      -1.1451235708682876
+    ]
+  ],
+  "LOS_vs_Grid_vs_pushforward_source": "Block28 GEOMETRY.json retained unchanged",
+  "condition_number": 3.7758257707394702,
+  "mapping": "k_ground_rad_per_m = inverse(J).T @ k_image_rad_per_m"
+}

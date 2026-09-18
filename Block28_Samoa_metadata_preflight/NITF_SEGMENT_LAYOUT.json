@@ -1,0 +1,23 @@
+[
+  {
+    "data_offset": 1178,
+    "data_size": 2551047840,
+    "kind": "ImageSegments",
+    "offset": 426,
+    "subheader_size": 752
+  },
+  {
+    "data_offset": 2551049300,
+    "data_size": 18657,
+    "kind": "TextSegments",
+    "offset": 2551049018,
+    "subheader_size": 282
+  },
+  {
+    "data_offset": 2551068930,
+    "data_size": 30932,
+    "kind": "DataExtensions",
+    "offset": 2551067957,
+    "subheader_size": 973
+  }
+]

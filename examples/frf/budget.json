@@ -1,0 +1,1 @@
+{"max_requests":50,"max_bytes":104857600,"max_response":10485760,"note":"Template only: limits are not authorization. Network use requires user-authorized named tranche."}

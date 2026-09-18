@@ -1,0 +1,365 @@
+Implementa il prossimo blocco Samoa: verifica del mapping Doppler–tempo e, se superata, prima prova tecnica sul SICD.
+
+Usa il primo identificatore libero e una nuova directory.
+Non sovrascrivere Block28 o altri risultati congelati.
+
+OBIETTIVO
+
+Rispondere alla domanda:
+“Nel supporto valido di Samoa sono presenti strutture ondose e la loro
+evoluzione di fase è misurabile senza dipendere in modo dominante da
+errori temporali, geometria o leakage del processing?”
+
+Questo blocco verifica la catena tecnica.
+Non deve produrre una validazione batimetrica o una correzione q.
+
+SCENA
+
+2025-03-31-21-51-37_UMBRA-09
+collect_id: 1424a3c8-7285-4210-b965-069514c13a2a
+
+Valori da verificare contro Block28:
+- SICD: 2.551.099.862 byte;
+- CPHD: 25.234.138.880 byte;
+- apertura SICD processata: 2,975363044 s;
+- span CPHD TxTime: 3,691770699 s;
+- polarizzazione H:H.
+
+Non trasferire automaticamente parametri o deweighting da Vandenberg.
+
+LETTURA INIZIALE
+
+Segui AGENTS.md e l’ordine prescritto.
+
+Leggi:
+- protocollo, scheda, codice e manifest Block28;
+- codice della decomposizione SICD esistente;
+- verifiche precedenti su mapping Doppler–tempo, segni e geometria;
+- metadati SICD/PFA e CPHD già archiviati;
+- ROI Samoa e riferimento 51209 già verificato.
+
+Usa workspace e ambiente prescritti.
+Registra commit, stato del worktree e modifiche preesistenti.
+
+Salva un protocollo prima delle nuove elaborazioni:
+- mapping da verificare;
+- criteri di accettazione;
+- controlli sul supporto;
+- configurazioni candidate;
+- budget;
+- criteri di arresto.
+
+AUTORIZZAZIONE
+
+Sono autorizzati:
+1. recupero mirato di metadati e campi PVP necessari;
+2. se il gate tecnico della fase A è superato, download del solo SICD;
+3. lettura del SICD e prima elaborazione limitata descritta sotto.
+
+Il download SICD è quindi autorizzato condizionatamente al gate:
+non chiedere un’altra conferma se le condizioni previste sono soddisfatte.
+
+Non sono autorizzati:
+- download completo CPHD o lettura del suo signal array;
+- nuova retroproiezione;
+- dwell sweep;
+- nuova inversione;
+- correzione delle frequenze con q;
+- elaborazioni Vandenberg;
+- AIS;
+- commit o push.
+
+FASE A — MAPPING DOPPLER–TEMPO
+
+1. INVENTARIO DEI PVP
+
+Riusa XML e header verificati Block28.
+
+Identifica i campi necessari per ricostruire:
+- tempi;
+- posizioni e geometria Tx/Rcv;
+- informazioni di frequenza e supporto pertinenti;
+- validità dei vettori.
+
+Recupera soltanto i campi o blocchi PVP necessari tramite byte-range.
+È ammesso leggere l’intero blocco PVP se compatto e dentro budget.
+Non leggere il signal array.
+
+Verifica:
+- offset, formato, endianness e unità;
+- numero e ordinamento dei vettori;
+- monotonicità;
+- gap o anomalie temporali;
+- associazione con la stessa acquisizione SICD.
+
+Se campioni soltanto parte dei vettori, dichiara quale continuità
+rimane non verificata.
+
+2. DERIVAZIONE DEL MAPPING
+
+Ricostruisci la relazione fra:
+- slow time CPHD;
+- geometria di acquisizione;
+- coordinate spettrali del prodotto PFA;
+- bande effettivamente selezionate dalla decomposizione SICD.
+
+Non assumere che frazione di bandwidth e frazione di durata coincidano.
+TimeCOAPoly costante non assegna da solo un tempo fisico a ciascuna banda.
+
+Valuta il mapping al centro e in pochi punti rappresentativi della ROI.
+Verifica se una decomposizione monodimensionale lungo Col sia adeguata
+nel caso squintato o richieda un trattamento diverso.
+
+Distingui:
+- mapping derivato dai metadati;
+- pesi temporali ricostruibili;
+- approssimazioni;
+- dettagli del processing del fornitore non disponibili.
+
+Non chiamare “esatto” un kernel temporale che dipende da pesi sconosciuti.
+
+Per ogni banda candidata determina, quando identificabile:
+- supporto temporale;
+- tempo centrale e sua definizione;
+- durata effettiva;
+- sovrapposizione con le altre bande;
+- sensibilità alle approssimazioni.
+
+3. GEOMETRIA E SEGNI
+
+Mantieni distinti:
+- LOS fisica;
+- Grid.Row proiettata orizzontalmente;
+- push-forward delle coordinate immagine sulla superficie.
+
+Trasforma i vettori d’onda usando il Jacobiano completo e la corretta
+trasformazione inversa trasposta, con unità documentate.
+
+Verifica numericamente:
+- FFT/IFFT;
+- segni;
+- lobo coniugato;
+- F_secondary * conj(F_reference);
+- trasformazione immagine–suolo.
+
+Col.Sgn nei metadati non sostituisce i test numerici.
+
+Usa controlli sintetici piccoli e noti.
+Un sintetico nel dominio immagine verifica quel tratto di catena,
+non l’intero simulatore fisico SAR.
+
+4. GATE A
+
+Prima del download SICD produci un esito esplicito:
+
+PASS:
+mapping sufficiente per assegnare tempi fisici alle bande della prova,
+con approssimazioni quantificate e criteri prefissati rispettati.
+
+CONDITIONAL/FAIL:
+mapping ambiguo, informazioni mancanti o sensibilità incompatibile
+con l’interpretazione temporale prevista.
+
+Non fissare le tolleranze dopo aver visto i risultati.
+Motivale rispetto all’errore che introdurrebbero nella pendenza,
+senza tararle sul periodo della boa.
+
+Se CONDITIONAL/FAIL:
+salva risultati e impedimento specifico; non scaricare il SICD.
+Non avviare automaticamente un altro percorso di formazione.
+
+FASE B — DOWNLOAD SICD, SOLO DOPO PASS
+
+5. DOWNLOAD CONTROLLATO
+
+Scarica il solo SICD verificato, 2.551.099.862 byte.
+
+Prima controlla:
+- spazio libero;
+- eventuale copia locale già completa;
+- URL, identità ed eventuale versione/ETag.
+
+Usa download riprendibile con file temporaneo.
+Verifica dimensione, integrità NITF e corrispondenza dei metadati.
+Calcola SHA-256 locale.
+Non interpretare automaticamente ETag come checksum MD5.
+
+Non sostituire il prodotto con un processing diverso senza documentarlo.
+Se dimensione o identità differiscono, fermati prima del trasferimento completo.
+
+Non duplicare il SICD.
+Mantieni gli intermedi entro 5 GiB, evitando stack completi non necessari.
+
+FASE C — PRIMA PROVA LIMITATA
+
+6. OVERVIEW E ROI
+
+Genera un’overview dell’intensità SICD con riduzione antialias appropriata.
+
+Mostra:
+- supporto valido;
+- costa disponibile;
+- ROI congelata;
+- direzioni degli assi;
+- eventuali zone di terra utilizzabili come controllo.
+
+Verifica visivamente:
+- mare e terra;
+- strutture ondose;
+- scie, bersagli brillanti e contaminazioni;
+- compatibilità della maschera con i pixel effettivi.
+
+Conserva la ROI congelata come primaria.
+È ammessa una sola alternativa, scelta con criteri geografici e visivi
+dichiarati prima di esaminare pendenze o accordo con la boa.
+
+Non usare Tp o direzione della boa per selezionare un picco favorevole.
+
+7. SUPPORTO VALIDO OBLIQUO E LEAKAGE
+
+La ROI contenuta nel poligono valido non garantisce che lo strip necessario
+alla decomposizione sia interamente valido.
+
+Verifica:
+- maschera lungo l’intera estensione richiesta dalla trasformata;
+- valori fuori supporto;
+- discontinuità;
+- effetto dei bordi obliqui sulle bande estratte;
+- guard regions e supporto interno affidabile.
+
+Non effettuare un piccolo crop azimutale prima della decomposizione
+se il metodo richiede l’intera estensione.
+
+Non riempire implicitamente le regioni invalide fingendo che siano dati.
+Se usi maschera, padding o taper, dichiarane l’effetto.
+
+Esegui un controllo sintetico mirato con la stessa geometria della maschera
+per verificare se un pattern statico o una sinusoide nota acquisiscano
+pendenze artificiali.
+
+Confronta soltanto:
+- trattamento primario prefissato;
+- una variante di sensibilità sul supporto o taper.
+
+Non cercare molte finestre finché compare una pendenza desiderata.
+
+Se la leakage domina o non è controllabile, fermati prima
+dell’interpretazione fisica.
+
+8. SOTTOAPERTURE
+
+Usa una configurazione primaria e una sola configurazione di controllo,
+scelte dopo il mapping ma prima di osservare l’accordo con la boa.
+
+Deriva durata e tempi dai supporti effettivi.
+I piani nominali Block28 non sono automaticamente tempi validati.
+
+Per una verifica della linearità temporale servono almeno tre centri
+distinti: due look consentono soltanto una differenza di fase.
+Se è disponibile solo una coppia affidabile, limita esplicitamente
+l’obiettivo a quella misura.
+
+Non aumentare il numero di look sovrapposti per simulare repliche indipendenti.
+
+Riporta risoluzione prevista ed effettiva quando stimabile.
+Non equiparare passo dei pixel e risoluzione.
+
+9. MISURA ESPLORATIVA DELLA FASE
+
+Definisci la selezione spaziale usando soltanto i dati SAR e criteri
+prefissati, senza imporre dispersione o frequenza della boa.
+
+Conserva:
+- coefficienti complessi delle intensità;
+- k vettoriale e convenzioni;
+- cross-spettri;
+- fasi wrapped e trattamento dell’unwrapping;
+- tempi fisici;
+- ampiezze e diagnostiche disponibili.
+
+Se stimi pendenze:
+- conserva il segno;
+- documenta sensibilità a supporto e configurazione;
+- non usare bin o look correlati come repliche indipendenti;
+- non chiamare intervallo di confidenza la sola dispersione fra varianti;
+- non usare soltanto R² come validità fisica.
+
+Se esiste un controllo terrestre adeguato, applica la stessa procedura.
+Non sottrarre automaticamente la sua pendenza al mare.
+
+10. RUOLO DELLA BOA
+
+Lo spettro 51209 è già noto: non chiamare questa analisi “cieca”.
+
+Per questo blocco:
+- non ottimizzare parametri sull’accordo con la boa;
+- non applicare q;
+- non imporre il periodo 13.33 s;
+- non trattare la direzione alla boa come verità locale.
+
+Conserva il riferimento e prepara il confronto successivo.
+L’esito primario resta la misurabilità tecnica della fase.
+
+Eventuali confronti numerici mostrati devono essere etichettati come
+esplorativi, senza dichiarare validazione indipendente conclusa.
+
+BUDGET E TEST
+
+Fase A:
+- massimo 60 transazioni HTTP;
+- massimo 100 MiB di metadati/PVP;
+- massimo 10 MiB per risposta;
+- retry e redirect conteggiati.
+
+Fase B:
+trasferimento del solo SICD, con tentativi riprendibili e traffico totale
+massimo di 3 GiB per il download.
+
+Mantieni registri separati delle due fasi.
+Se un budget è insufficiente, salva lo stato senza ampliarlo automaticamente.
+
+Riusa i test esistenti e aggiungi verifiche mirate per:
+- parsing PVP;
+- mapping e unità;
+- trasformazione dei vettori d’onda;
+- segni e coniugati;
+- supporto obliquo;
+- pattern statico e dinamica nota;
+- rispetto dei byte-range;
+- riproducibilità.
+
+Esegui la suite completa nell’ambiente prescritto.
+Verifica gli hash pertinenti senza riscrivere quelli storici.
+
+CONSEGNE
+
+Salva:
+- protocollo e configurazione;
+- input e provenienza;
+- mapping e gate A;
+- registro download e integrità;
+- overview e ROI;
+- diagnostiche del supporto;
+- sottoaperture limitate;
+- coefficienti e risultati esplorativi;
+- figure essenziali;
+- report, summary e manifest.
+
+Aggiorna WORKLOG.
+
+CONCLUSIONE
+
+Riporta separatamente:
+1. mapping temporale verificato e limiti;
+2. integrità del SICD;
+3. struttura ondosa osservabile;
+4. effetto di maschera e leakage;
+5. fase misurabile e stabilità delle pendenze;
+6. interpretazione fisica ancora non dimostrata;
+7. test, richieste, byte e hash;
+8. un solo prossimo passo.
+
+È ammesso concludere che il supporto non consente una misura affidabile.
+Non introdurre altre elaborazioni per forzare un risultato positivo.
+
+Fermati al termine della prova.

@@ -1,0 +1,24 @@
+[
+  {
+    "das_path": "Block27_frequency_query\\representativity_v2\\raw\\c02faa55407c06595f5c7876c08007d25a7e5d82aed3d39cc715dfc01b722d3b.txt",
+    "dataset": "https://dods.ndbc.noaa.gov/thredds/dodsC/data/swden/51209/51209w9999.nc",
+    "dds_path": "Block27_frequency_query\\representativity_v2\\raw\\06813051eb2c0acdf69547aacad127878148dce44529999a43723be50c9e2b76.txt",
+    "dimensions": {
+      "frequency": 64,
+      "latitude": 1,
+      "longitude": 1,
+      "time": 74519
+    },
+    "operational_continuity_not_inferred_from_endpoints": true,
+    "station": "51209",
+    "time_start": "2017-03-30T16:00:00+00:00",
+    "time_stop": "2026-09-16T09:00:00+00:00",
+    "variables": [
+      "spectral_wave_density",
+      "mean_wave_dir",
+      "principal_wave_dir",
+      "wave_spectrum_r1",
+      "wave_spectrum_r2"
+    ]
+  }
+]

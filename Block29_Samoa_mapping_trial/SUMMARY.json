@@ -1,0 +1,72 @@
+{
+  "PVP_audit": {
+    "ARP_vs_PVP_angle_equivalent_time_error_max_s": 3.5360771856728653e-07,
+    "CPHD_ETag_matches_frozen_public_listing": true,
+    "CPHD_SGN": -1,
+    "PFA_scale_geometry_vs_polynomial_max_absolute_residual": 3.1460878346933896e-10,
+    "PVP_sha256": "fab41f82c904d8794595c261708942cd6015274bedc414e465c9ded3ca26c0f9",
+    "PulseNumber_monotone": true,
+    "RcvTime_monotone": true,
+    "SIGNAL_values": [
+      1
+    ],
+    "TxTime_monotone": true,
+    "TxTime_span_s": 3.6917706986666667,
+    "Tx_Rcv_scatter_closure_max_s": 8.545251750993743e-09,
+    "all_time_continuity_verified": true,
+    "declared_format_and_offsets_source": "SarPy CPHDType.PVP.get_vector_dtype from original XML, not an all-double reinterpretation",
+    "dt_max_s": 0.0001709173333333345,
+    "dt_median_s": 0.00016999466666667296,
+    "dt_min_s": 0.00016916266666644475,
+    "dtype": "{'names': ['TxTime', 'TxPos', 'TxVel', 'RcvTime', 'RcvPos', 'RcvVel', 'SRPPos', 'aFDOP', 'aFRR1', 'aFRR2', 'FX1', 'FX2', 'TOA1', 'TOA2', 'TOAE1', 'TOAE2', 'TDTropoSRP', 'SC0', 'SCSS', 'SIGNAL', 'TxACX', 'TxACY', 'TxEB', 'RcvACX', 'RcvACY', 'RcvEB', 'PulseNumber'], 'formats': ['>f8', ('>f8', (3,)), ('>f8', (3,)), '>f8', ('>f8', (3,)), ('>f8', (3,)), ('>f8', (3,)), '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>i8', ('>f8', (3,)), ('>f8', (3,)), ('>f8', (2,)), ('>f8', (3,)), ('>f8', (3,)), ('>f8', (2,)), '>u8'], 'offsets': [0, 8, 32, 120, 128, 152, 240, 264, 272, 280, 288, 296, 304, 312, 320, 328, 336, 344, 352, 360, 56, 80, 104, 176, 200, 224, 368], 'itemsize': 376}",
+    "gap_max_to_median_ratio": 1.0054276212586757,
+    "poly_geometry_equivalent_time_error_max_s": 1.0817429436716658e-08,
+    "record_bytes": 376,
+    "required_fields_finite": true,
+    "scatter_time_monotone": true,
+    "units": "Tx/RcvTime seconds since CollectionStart; positions metres ECF; velocities m/s; FX Hz; derived PFA k cycles/m",
+    "vectors": 21716
+  },
+  "SICD_downloaded": false,
+  "automatic_alternate_formation": false,
+  "gate_A": {
+    "ROI_local_gradient_only_max_center_offset_s": 0.35756985548704523,
+    "SCP_radial_only_max_center_sensitivity_s": 0.03786135002630764,
+    "SICD_download_authorized_by_gate": false,
+    "candidate_kernel_count": 90,
+    "checks": {
+      "ARP_geometry_timing": true,
+      "PFA_angle_monotone": true,
+      "all_candidate_kernels_identifiable": false,
+      "baseline_sensitivity": true,
+      "center_sensitivity": false,
+      "duration_sensitivity": true,
+      "frequency_support": false,
+      "poly_geometry_timing": true,
+      "processed_support": false,
+      "temporal_continuity": true
+    },
+    "config_sha256": "5b264e836dc1b6dbe93d4ac114be01fe0d94f9228c40faac173bdc86a2330c7c",
+    "interpretation_caveat": "Global PFA output coordinates are shared across the image. ROI-point phase-gradient projections are local stationary-phase diagnostics, NOT a verified re-indexing of that shared output grid. Large local offsets may be deterministic focus-phase/carrier effects; this block does not prove their full magnitude is physical timing bias. Correct local/global kernel transport is unresolved, so the gate is conditional rather than a declaration of scene failure.",
+    "kernel_exact": false,
+    "kernels_not_identifiable_count": 19,
+    "maximum_baseline_fractional_sensitivity": 0.045809796067644015,
+    "maximum_center_sensitivity_s": 0.39228050982265494,
+    "maximum_duration_fractional_sensitivity": 0.045916157443997685,
+    "one_dimensional_Col_adequacy": "geometry-only bands depend on Row frequency and ROI point; see measured sensitivities",
+    "result": "CONDITIONAL",
+    "uniform_k_vs_time_max_center_difference_s": 0.0008877341003259431,
+    "unknown_kernel_weights": [
+      "supplier polar interpolation details",
+      "illumination pulse weights not proven by UNIFORM output weighting"
+    ]
+  },
+  "phase_A_bytes": 8165216,
+  "phase_A_transactions": 3,
+  "phase_B_status": "not_started_gate_CONDITIONAL",
+  "physical_interpretation_demonstrated": false,
+  "real_phase_measured": false,
+  "real_wave_structure_observed": false,
+  "status": "CHECKPOINT_29",
+  "synthetic_diagnostic_domain": "image only"
+}

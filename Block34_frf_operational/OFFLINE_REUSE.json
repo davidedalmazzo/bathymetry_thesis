@@ -1,0 +1,25 @@
+{
+  "command": [
+    ".venv-umbra-thesis\\Scripts\\python.exe",
+    "code/frf_client_cli.py",
+    "--mode",
+    "offline",
+    "--config",
+    "Block34_frf_operational/CLIENT_CONFIG.json",
+    "--budget-config",
+    "Block34_frf_operational/BUDGET_AUTHORIZED.json",
+    "--input",
+    "Block34_frf_operational/ACQUISITIONS.json",
+    "--cache",
+    "Block34_frf_operational/cache",
+    "--output",
+    "Block34_frf_operational/offline_reuse",
+    "--tranche",
+    "block34_october_2021",
+    "--tranche-root",
+    "Block34_frf_operational/network"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"transactions\": 25,\n  \"bytes\": 3253569,\n  \"max_transactions\": 50,\n  \"max_bytes\": 104857600,\n  \"created_utc\": \"2026-09-18T09:41:52.428354+00:00\",\n  \"historical_consumption\": \"not part of this tranche; not reconstructed\",\n  \"tranche_name\": \"block34_october_2021\",\n  \"max_response\": 10485760\n}\n",
+  "stderr": ""
+}

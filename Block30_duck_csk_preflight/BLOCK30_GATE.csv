@@ -1,0 +1,19 @@
+acq_utc,product_id,node,inc_deg,Hs_m,Tp_s,meanDir_deg,gauge,dt_min,over_60_min,k_dir_deg,range_dir_deg,phi_k_range_deg,L_17m_m,L_azimutale_apparente_m,lambda_cutoff_m,cutoff_margin,T_base_s,dphi_deg,dphi_in_45_180,offshore_extent_km,wr17m_in_footprint,nearest_gauge,nearest_dt_min,nearest_over_60_min,temporal_reference_usable,status
+2020-09-09 10:42:54,1443707,ASCENDING,34.61,1.161,5.495,79.048,waverider-17m,-12.9,False,259.0,79.7,0.7,46.4,4076.7,166,24.49,0.98,64,True,5.41,True,waverider-17m,-12.9,False,True,
+2020-09-08 10:54:54,1442832,ASCENDING,50.59,1.02,7.273,82.957,waverider-17m,5.1,False,263.0,81.2,1.8,74.7,2436.7,106,22.95,1.23,61,True,5.49,True,waverider-17m,5.1,False,True,
+2020-12-11 22:56:54,1652288,DESCENDING,30.48,0.42,9.828,89.754,waverider-17m,3.1,False,269.8,281.2,11.4,113.8,573.3,34,16.94,0.95,35,False,7.68,True,waverider-17m,3.1,False,True,
+2019-10-02 10:43:03,1157279,ASCENDING,34.7,1.373,13.514,93.386,waverider-17m,-10.1,False,273.4,79.5,13.9,166.9,695.3,80,8.69,0.99,26,False,6.05,True,waverider-17m,-10.1,False,True,
+2020-11-10 10:36:52,1589659,ASCENDING,23.72,0.844,10.256,109.051,waverider-17m,-6.9,False,289.1,78.5,30.6,120.1,236.2,66,3.6,0.9,32,False,3.19,False,waverider-17m,-6.9,False,True,
+2020-09-11 22:50:52,1445895,DESCENDING,40.12,0.922,9.975,69.436,waverider-17m,9.1,False,249.4,280.2,30.8,115.9,226.7,72,3.15,1.05,38,False,7.63,True,waverider-17m,9.1,False,True,
+2021-04-21 10:42:51,1817405,ASCENDING,34.67,0.52,6.568,101.49,waverider-17m,-12.8,False,281.5,79.7,21.8,63.5,171.0,62,2.74,0.99,54,True,5.3,True,waverider-17m,-12.8,False,True,
+2021-07-01 10:54:54,1942002,ASCENDING,50.63,0.393,7.533,131.917,waverider-17m,5.1,False,311.9,81.2,50.7,78.8,101.8,39,2.58,1.23,59,True,5.63,True,waverider-17m,5.1,False,True,
+2021-10-13 22:45:03,2098202,DESCENDING,47.72,1.108,9.547,59.255,waverider-17m,15.0,False,239.3,279.5,40.2,109.6,169.6,89,1.91,1.17,44,False,9.59,True,waverider-17m,15.0,False,True,
+2020-11-13 10:42:51,1598376,ASCENDING,34.51,1.403,6.088,62.12,waverider-17m,-12.8,False,242.1,79.5,17.4,55.8,186.8,182,1.03,0.98,58,True,5.45,True,waverider-17m,-12.8,False,True,
+2020-09-08 22:44:52,1443251,DESCENDING,47.75,1.062,4.957,75.513,waverider-17m,-14.9,False,255.5,279.3,23.8,38.1,94.6,164,0.58,1.17,85,True,9.76,True,waverider-17m,-14.9,False,True,
+2020-12-10 22:56:54,1651720,DESCENDING,30.48,0.813,5.642,46.66,waverider-17m,3.1,False,226.7,281.1,54.4,48.7,59.9,114,0.52,0.95,61,True,7.86,True,waverider-17m,3.1,False,True,
+2020-10-09 10:36:55,1505527,ASCENDING,23.75,0.948,5.495,37.353,waverider-17m,-6.9,False,217.4,78.6,41.2,46.4,70.4,137,0.51,0.9,59,True,2.53,False,waverider-17m,-6.9,False,True,
+2021-04-22 22:50:52,1822894,DESCENDING,39.98,0.595,5.249,16.312,waverider-17m,9.1,False,196.3,280.1,83.8,42.6,42.8,88,0.48,1.05,72,True,7.8,True,waverider-17m,9.1,False,True,
+2020-10-08 22:56:58,1504216,DESCENDING,30.44,0.681,4.745,34.586,waverider-17m,3.0,False,214.6,281.2,66.6,35.0,38.2,114,0.34,0.95,72,True,7.89,True,waverider-17m,3.0,False,True,
+2021-04-22 10:42:49,1821124,ASCENDING,34.62,1.444,5.908,14.574,waverider-17m,-12.8,False,194.6,79.5,64.9,52.9,58.4,193,0.3,0.98,60,True,5.65,True,waverider-17m,-12.8,False,True,
+2021-06-29 22:56:51,1941935,DESCENDING,30.56,0.475,8.214,124.829,waverider-17m,-29066.8,True,304.8,281.1,23.7,89.4,222.1,46,4.85,0.95,42,False,7.72,True,awac-11m,3.2,False,False,stale_wr17_reference_diagnostic_only
+2021-06-30 10:54:50,1942455,ASCENDING,50.58,0.475,8.214,124.829,waverider-17m,-29784.8,True,304.8,81.1,43.7,89.4,129.3,44,2.95,1.23,54,True,5.46,True,awac-11m,5.2,False,False,stale_wr17_reference_diagnostic_only

@@ -1,0 +1,9 @@
+{
+  "TEMP": "D:\\Dati Tesi\\Umbra\\_tmp",
+  "TMP": "D:\\Dati Tesi\\Umbra\\_tmp",
+  "commit": "1eb6e75caf20adbb3f51b1e810eb2b9cb817b067",
+  "cwd": "D:\\Dati Tesi\\Umbra",
+  "preexisting_worktree": " M WORKLOG.md\n?? Block23_candidate2_metadata_preflight/\n?? Block24_shortlist_triage/\n?? Block25_reference_gate/\n?? Block26_frequency_query/\n?? Block27_frequency_query/\n?? Block28_Samoa_metadata_preflight/\n?? CHECKPOINT_28.md\n?? COMMIT_MSG_BLOCK17_18.txt\n?? PUSH_BLOCK17_18.bat\n?? Vandenberg/results/analysis_block15/BLOCK15B_ESTIMATOR_DETAILS.json\n?? Vandenberg/results/analysis_block15/BLOCK15C_RESIDUALS.npz\n?? Vandenberg/results/analysis_block15/BLOCK15C_RESULTS.csv\n?? Vandenberg/results/analysis_block15/BLOCK15D_RESULTS.json\n?? Vandenberg/results/analysis_block15/BLOCK15D_SYNTHETIC.json\n?? code/analyze_block24_shortlist_triage.py\n?? code/run_block23_candidate2_preflight.py\n?? code/run_block25_reference_gate.py\n?? code/run_block26_frequency_query.py\n?? code/run_block27_frequency_query.py\n?? code/run_block27_representativity.py\n?? code/run_block27_tranche2.py\n?? code/run_block28_samoa_preflight.py\n?? code/run_block29_samoa_mapping.py\n?? code/umbra_sar/pfa_time_mapping.py\n?? tests/test_block27_representativity.py\n?? tests/test_block27_tranche2.py\n?? tests/test_block28_samoa_preflight.py\n?? tests/test_candidate2_preflight.py\n",
+  "python": "D:\\Dati Tesi\\Umbra\\.venv-umbra-thesis\\Scripts\\python.exe",
+  "started_utc": "2026-09-16T10:41:34.437359+00:00"
+}

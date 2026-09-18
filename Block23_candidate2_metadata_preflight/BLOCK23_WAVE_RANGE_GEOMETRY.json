@@ -1,0 +1,14 @@
+{
+  "axial_difference_deg": null,
+  "band_reselected": false,
+  "candidate1_Block22_axial_difference_deg": 67.17,
+  "directed_difference_deg": null,
+  "direction_resultant": 0.9970494255000656,
+  "range_axis": "unknown_without_SICD_or_CPHD_metadata",
+  "wave_band_hz": [
+    0.0575,
+    0.0775
+  ],
+  "wave_period_s": 15.384615384615383,
+  "wave_propagation_to_deg": 37.31836855246769
+}

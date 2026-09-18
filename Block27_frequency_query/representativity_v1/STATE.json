@@ -1,0 +1,10 @@
+{
+  "max_total_bytes": 20971520,
+  "max_transactions": 30,
+  "prior_budget_reconciled": false,
+  "prior_spending_evidence": "No recovery payload/log/state found under Blocks25\u201327; earlier Block18/21 budgets are separate historical phases. Unlogged previous spending cannot be reconstructed.",
+  "queue_sha256": "7cf1d48d82322365c063418bd059734b5b1b1e520899dec8b6be616d38b654c1",
+  "stage": "offline_reconciled",
+  "total_bytes": 0,
+  "transactions": 0
+}

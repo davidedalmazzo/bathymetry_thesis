@@ -1,0 +1,77 @@
+{
+  "PVP_fields": [
+    "TxTime",
+    "TxPos",
+    "TxVel",
+    "RcvTime",
+    "RcvPos",
+    "RcvVel",
+    "SRPPos",
+    "aFDOP",
+    "aFRR1",
+    "aFRR2",
+    "FX1",
+    "FX2",
+    "TOA1",
+    "TOA2",
+    "TOAE1",
+    "TOAE2",
+    "TDTropoSRP",
+    "SC0",
+    "SCSS",
+    "SIGNAL",
+    "TxAntenna",
+    "RcvAntenna",
+    "AddedPVP"
+  ],
+  "channels": [
+    {
+      "Identifier": "Primary",
+      "NumSamples": "145200",
+      "NumVectors": "21716",
+      "PVPArrayByteOffset": "0",
+      "SignalArrayByteOffset": "0"
+    }
+  ],
+  "collection_start": "2025-03-31T21:51:36.000000Z",
+  "collector": "Umbra-09",
+  "core_name": "2025-03-31-21-51-36_Umbra-09",
+  "first_last_TxTime_span_s": 3.6917706986666667,
+  "full_PVP_time_sequence_validated": false,
+  "header_fields": {
+    "CLASSIFICATION": "UNCLASSIFIED",
+    "PVP_BLOCK_BYTE_OFFSET": 668032,
+    "PVP_BLOCK_SIZE": 8165216,
+    "RELEASE_INFO": "",
+    "SIGNAL_BLOCK_BYTE_OFFSET": 8833280,
+    "SIGNAL_BLOCK_SIZE": 25225305600,
+    "SUPPORT_BLOCK_BYTE_OFFSET": 21440,
+    "SUPPORT_BLOCK_SIZE": 646560,
+    "XML_BLOCK_BYTE_OFFSET": 1024,
+    "XML_BLOCK_SIZE": 20379,
+    "format": "CPHD/1.1.0"
+  },
+  "num_bytes_pvp": 376,
+  "sampled_TxTime": [
+    {
+      "byte_offset": 668032,
+      "tx_time_s": 0.005019530666666667,
+      "vector_index": 0
+    },
+    {
+      "byte_offset": 4750640,
+      "tx_time_s": 1.855752864,
+      "vector_index": 10858
+    },
+    {
+      "byte_offset": 8832872,
+      "tx_time_s": 3.6967902293333332,
+      "vector_index": 21715
+    }
+  ],
+  "signal_array_read": false,
+  "signal_block_byte_offset": 8833280,
+  "size_bytes": 25234138880,
+  "size_matches_listing": true,
+  "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+}

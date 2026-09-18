@@ -1,0 +1,18 @@
+{
+  "acquisitions": 23,
+  "priority_candidate": null,
+  "reference_status_counts": {
+    "archive_not_queried": 19,
+    "verified_local_Block18": 4
+  },
+  "roi_containment_failures": 0,
+  "status": "partial_not_scientifically_complete",
+  "total_bytes": 0,
+  "transactions": 0,
+  "unresolved": [
+    "adequate Tobago coastline",
+    "historical instrument/product coverage documentation",
+    "event model native resolution and assimilation",
+    "unlogged prior spending cannot be excluded"
+  ]
+}

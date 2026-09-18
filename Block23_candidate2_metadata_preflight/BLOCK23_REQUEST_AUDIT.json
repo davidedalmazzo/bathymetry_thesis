@@ -1,0 +1,10 @@
+{
+  "all_executions": {"transactions": 10, "bytes": 28424},
+  "retained_final_availability_log": {"transactions": 6, "bytes": 11982},
+  "preliminary_runs": [
+    {"transactions": 2, "bytes": 8221, "result": "STAC 200; declared SICD name 404"},
+    {"transactions": 2, "bytes": 8221, "result": "STAC 200; SICD alias 404"}
+  ],
+  "limits_respected": true,
+  "note": "The final six-request matrix supersedes the preliminary name probes; all attempts are counted here."
+}

@@ -1,0 +1,12 @@
+acq_utc,product_id,node,inc_deg,Hs_m,Tp_s,meanDir_deg,gauge,dt_min,over_60_min,k_dir_deg,range_dir_deg,phi_k_range_deg,L_17m_m,L_azimutale_apparente_m,lambda_cutoff_m,cutoff_margin,T_base_s,dphi_deg,dphi_in_45_180,offshore_extent_km,wr17m_in_footprint,nearest_gauge,nearest_dt_min,nearest_over_60_min,temporal_reference_usable,status
+2020-12-09 23:00:08,XXXXB00000000563119448418,ASCENDING,40.36,0.515,11.08,81.153,waverider-17m,-0.1,False,261.2,80.3,0.9,132.1,8874.4,30,293.16,3.65,119,True,3.86,True,waverider-17m,-0.1,False,True,
+2023-11-06 22:51:53,XXXXB00000000657621626817,ASCENDING,23.25,0.922,8.032,79.356,waverider-17m,8.1,False,259.4,79.0,0.4,86.6,13934.8,76,182.88,3.08,138,True,4.13,True,waverider-17m,8.1,False,True,
+2020-09-07 22:51:35,XXXXB00000000555325955346,ASCENDING,23.25,1.266,7.843,79.327,waverider-17m,8.4,False,259.3,79.0,0.3,83.6,14656.5,107,136.79,3.08,141,True,4.03,True,waverider-17m,8.4,False,True,
+2020-11-10 11:15:43,XXXXB00000000563118922512,DESCENDING,26.41,0.833,7.394,108.638,waverider-17m,14.3,False,288.6,280.8,7.8,76.6,561.8,75,7.53,3.16,154,True,3.78,False,waverider-17m,14.3,False,True,
+2020-09-11 11:07:08,XXXXB00000000555326017173,DESCENDING,42.64,0.938,7.194,106.675,waverider-17m,-7.1,False,286.7,279.5,7.2,73.5,588.2,85,6.96,3.76,188,False,3.19,False,waverider-17m,-7.1,False,True,
+2021-04-20 23:00:07,XXXXB00000000573568201727,ASCENDING,40.36,0.639,8.547,107.405,waverider-17m,-0.1,False,287.4,80.3,27.1,94.5,207.4,49,4.26,3.65,154,True,2.9,False,waverider-17m,-0.1,False,True,
+2021-10-13 23:00:15,XXXXB00000000589635302831,ASCENDING,40.36,1.108,9.547,59.255,waverider-17m,-0.2,False,239.3,80.3,21.0,109.6,305.2,76,4.04,3.65,138,True,2.98,False,waverider-17m,-0.2,False,True,
+2020-10-08 11:15:42,XXXXB00000000555326501192,DESCENDING,26.41,0.5,9.276,42.53,waverider-17m,14.3,False,222.5,280.8,58.3,105.5,124.1,36,3.48,3.16,123,True,3.75,False,waverider-17m,14.3,False,True,
+2021-10-12 11:07:16,XXXXB00000000589635259468,DESCENDING,42.64,1.457,9.191,50.002,waverider-17m,-7.3,False,230.0,279.5,49.5,104.3,137.1,103,1.33,3.76,147,True,3.15,False,waverider-17m,-7.3,False,True,
+2020-11-12 22:51:36,XXXXB00000000563118981344,ASCENDING,23.25,1.277,5.355,58.322,waverider-17m,8.4,False,238.3,79.0,20.7,44.2,125.2,158,0.79,3.08,207,False,4.5,False,waverider-17m,8.4,False,True,
+2021-01-21 11:07:06,XXXXB00000000563120192176,DESCENDING,42.64,0.463,6.678,72.839,waverider-17m,592.9,True,252.8,279.5,26.7,65.3,145.4,45,3.24,3.76,203,False,2.99,False,awac-11m,-7.1,False,False,stale_wr17_reference_diagnostic_only

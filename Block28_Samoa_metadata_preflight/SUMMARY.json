@@ -1,0 +1,18 @@
+{
+  "CPHD_first_last_TxTime_span_s": 3.6917706986666667,
+  "CPHD_size_bytes": 25234138880,
+  "SICD_IPP_span_s": 3.691918012367859,
+  "SICD_processed_aperture_s": 2.975363044143692,
+  "SICD_size_bytes": 2551099862,
+  "SICD_timeline_collect_duration_s": 3.7008027066666664,
+  "automatic_download": false,
+  "catalog_duration_s": 3.6,
+  "decision": "B",
+  "decision_reason": "Metadata pathway feasible, but validate squinted PFA Doppler\u2013PVP timing and oblique valid-support leakage before interpreting phase; buoy-to-ROI exposure remains conditional.",
+  "no_scientific_validation_claim": true,
+  "roi_valid_at_stated_HAE": true,
+  "status": "CHECKPOINT_28",
+  "total_bytes": 59642,
+  "transactions": 16,
+  "wave_period_is_observational_not_SAR_estimate": true
+}

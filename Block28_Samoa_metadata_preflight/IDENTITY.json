@@ -1,0 +1,20 @@
+{
+  "association_verified": true,
+  "catalog_center_time": "2025-03-31T21:51:37.800000Z",
+  "collect_id_catalog": "1424a3c8-7285-4210-b965-069514c13a2a",
+  "collect_id_sicd": "1424a3c8-7285-4210-b965-069514c13a2a",
+  "collect_id_stac": "1424a3c8-7285-4210-b965-069514c13a2a",
+  "collection_start_cphd": "2025-03-31T21:51:36.000000Z",
+  "collection_start_sicd": "2025-03-31T21:51:36.000000Z",
+  "collector_cphd": "Umbra-09",
+  "collector_sicd": "Umbra-09",
+  "core_name_cphd": "2025-03-31-21-51-36_Umbra-09",
+  "core_name_sicd": "2025-03-31-21-51-36_Umbra-09",
+  "sicd_processing_software": {
+    "Application": "Umbra SAR Processor 5.0.20",
+    "DateTime": "2026-07-01T22:31:52.250648Z",
+    "Profile": "sarpy 1.3.58",
+    "Site": "Goleta, CA"
+  },
+  "stac_processing_version": "5.0.20"
+}

@@ -1,0 +1,21 @@
+{
+  "command": [
+    ".venv-umbra-thesis/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/test_frf_client.py",
+    "tests/test_frf_block33.py",
+    "tests/test_frf_operational.py",
+    "tests/test_block30_frf_conditions.py",
+    "--basetemp",
+    "_tmp/tests",
+    "-q"
+  ],
+  "source_copy": "Block34_frf_operational/delivery_copy_5",
+  "exit_code": 0,
+  "stdout": "........................................................................ [ 92%]\n......                                                                   [100%]\n78 passed in 24.59s\n",
+  "stderr": "",
+  "not_a_github_clone": true,
+  "private_cache_radar_credentials": false,
+  "actual_http_transactions": 0
+}

@@ -1,0 +1,16 @@
+{
+  "errors": [],
+  "network": {
+    "transactions": 25,
+    "bytes": 3253569,
+    "max_transactions": 50,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-18T09:41:52.428354+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed",
+    "tranche_name": "block34_october_2021",
+    "max_response": 10485760
+  },
+  "no_radar_access": true,
+  "mode": "offline",
+  "event_representative_state": "not mixed across instruments"
+}

@@ -1,0 +1,13 @@
+{
+  "TEMP": "D:\\Dati Tesi\\Umbra\\_tmp",
+  "TMP": "D:\\Dati Tesi\\Umbra\\_tmp",
+  "cwd": "D:\\Dati Tesi\\Umbra",
+  "packages": {
+    "numpy": "2.5.2",
+    "sarpy": "2.0.1",
+    "scipy": "1.18.1",
+    "shapely": "2.1.2"
+  },
+  "python_executable": "D:\\Dati Tesi\\Umbra\\.venv-umbra-thesis\\Scripts\\python.exe",
+  "python_version": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]"
+}

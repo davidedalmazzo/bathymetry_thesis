@@ -1,0 +1,20 @@
+{
+  "original_exports": [
+    {
+      "path": "Block31_tsx_duck_query/eoweb_export/resultTableExport_1789663304925.csv",
+      "sha256": "4910cca73a533381aa0d40dd1eb5ef900533b9b8582c2fc206d61d15788f0159"
+    },
+    {
+      "path": "Block30_duck_csk_preflight/cleos_export/results_COSMO-SkyMed_20190911_20260916.json",
+      "sha256": "1db5840469f796567f004e41a2895597db5f63e1a083d27d71c1dcae0de8794f"
+    }
+  ],
+  "input_warnings": [
+    {
+      "acquisition_id": "COSMO_2098202",
+      "status": "second_precision_catalogue_reference_outside_original_fractional_start",
+      "not_physical_aperture": true
+    }
+  ],
+  "roi": "none supplied; not invented"
+}

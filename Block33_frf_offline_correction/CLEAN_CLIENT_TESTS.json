@@ -1,0 +1,18 @@
+{
+  "command": [
+    ".venv-umbra-thesis/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "tests/test_frf_client.py",
+    "tests/test_frf_block33.py",
+    "tests/test_block30_frf_conditions.py",
+    "--basetemp",
+    "Block33_test_tmp",
+    "-q"
+  ],
+  "cwd": "Block33_frf_offline_correction/clean_tree_4",
+  "exit_code": 0,
+  "stdout": "....................................................................     [100%]\n68 passed in 23.58s\n",
+  "stderr": "",
+  "actual_http_transactions": 0
+}

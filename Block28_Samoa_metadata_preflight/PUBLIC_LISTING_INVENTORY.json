@@ -1,0 +1,42 @@
+{
+  "assets": [
+    {
+      "etag": "330ef0a47f3f42bd0dbe574751075510-1",
+      "key": "sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09.stac.v2.json",
+      "last_modified": "2026-07-01T23:08:12.000Z",
+      "size_bytes": "6036",
+      "storage_class": "STANDARD"
+    },
+    {
+      "etag": "24aee84968ef6791bd408362b78c1ff0-482",
+      "key": "sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd",
+      "last_modified": "2026-07-01T23:08:12.000Z",
+      "size_bytes": "25234138880",
+      "storage_class": "INTELLIGENT_TIERING"
+    },
+    {
+      "etag": "c9cf7c99f8bca2e82ec3cecbd7e1d3df-14",
+      "key": "sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_GEC.tif",
+      "last_modified": "2026-07-01T23:08:12.000Z",
+      "size_bytes": "682400130",
+      "storage_class": "INTELLIGENT_TIERING"
+    },
+    {
+      "etag": "c220407b9ff2abbf2702e8218ad8e875-49",
+      "key": "sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_SICD.nitf",
+      "last_modified": "2026-07-01T23:08:12.000Z",
+      "size_bytes": "2551099862",
+      "storage_class": "INTELLIGENT_TIERING"
+    },
+    {
+      "etag": "86363c2b49d60292c4e84c970bdb6ef1-10",
+      "key": "sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_SIDD.nitf",
+      "last_modified": "2026-07-01T23:08:12.000Z",
+      "size_bytes": "512096556",
+      "storage_class": "INTELLIGENT_TIERING"
+    }
+  ],
+  "normalization_discrepancy": "CPHD exists in public listing but is omitted from normalized STAC asset inventory",
+  "sha256": "3c5b9c11b1540cbc6b790a3130abf1655e6125c0e3345f6cbdea2d9639949352",
+  "source": "Block16_scene_selection\\catalog_snapshots\\20260913T231747Z\\listing_s3.csv.gz"
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "bytes": 0,
+    "error": "URLError(ConnectionRefusedError(10061, 'Impossibile stabilire la connessione. Rifiuto persistente del computer di destinazione', None, 10061, None))",
+    "kind": "request",
+    "method": "HEAD",
+    "outcome": "failed",
+    "purpose": "CPHD_identity_connectivity_HEAD",
+    "range": null,
+    "timestamp_utc": "2026-09-16T10:41:38.339792+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  },
+  {
+    "bytes": 0,
+    "content_length": "25234138880",
+    "content_range": null,
+    "etag": "\"24aee84968ef6791bd408362b78c1ff0-482\"",
+    "http_status": 200,
+    "kind": "request",
+    "method": "HEAD",
+    "outcome": "recovered",
+    "purpose": "CPHD_identity_connectivity_HEAD",
+    "range": null,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "timestamp_utc": "2026-09-16T10:42:02.148047+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  },
+  {
+    "bytes": 8165216,
+    "content_length": "8165216",
+    "content_range": "bytes 668032-8833247/25234138880",
+    "etag": "\"24aee84968ef6791bd408362b78c1ff0-482\"",
+    "http_status": 206,
+    "kind": "request",
+    "method": "GET",
+    "outcome": "recovered",
+    "purpose": "complete_compact_PVP_only",
+    "range": [
+      668032,
+      8833247
+    ],
+    "sha256": "fab41f82c904d8794595c261708942cd6015274bedc414e465c9ded3ca26c0f9",
+    "timestamp_utc": "2026-09-16T10:42:03.496675+00:00",
+    "url": "https://umbra-open-data-catalog.s3.us-west-2.amazonaws.com/sar-data/task-data/4c024a7f-9610-4b41-8714-4fe18610bb7c/2025-03-31-21-51-37_UMBRA-09/2025-03-31-21-51-37_UMBRA-09_CPHD.cphd"
+  }
+]

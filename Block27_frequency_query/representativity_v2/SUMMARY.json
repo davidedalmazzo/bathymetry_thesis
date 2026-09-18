@@ -1,0 +1,58 @@
+{
+  "acquisitions_without_established_spectrum": 18,
+  "historical_consumption": "consumo storico non determinabile",
+  "new_references": 1,
+  "offline_payload_checks": [
+    {
+      "bin_count": 64,
+      "collect": "1424a3c8-7285-4210-b965-069514c13a2a",
+      "hash_verified": true,
+      "joint_energy_coverage": 1.0,
+      "offline_reparse_identical": true,
+      "station": "51209"
+    },
+    {
+      "bin_count": 98,
+      "collect": "2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+      "hash_verified": true,
+      "joint_energy_coverage": 1.0,
+      "offline_reparse_identical": true,
+      "station": "42084"
+    },
+    {
+      "bin_count": 98,
+      "collect": "ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1",
+      "hash_verified": true,
+      "joint_energy_coverage": 1.0,
+      "offline_reparse_identical": true,
+      "station": "42084"
+    },
+    {
+      "bin_count": 98,
+      "collect": "9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+      "hash_verified": true,
+      "joint_energy_coverage": 1.0,
+      "offline_reparse_identical": true,
+      "station": "42084"
+    },
+    {
+      "bin_count": 98,
+      "collect": "98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+      "hash_verified": true,
+      "joint_energy_coverage": 1.0,
+      "offline_reparse_identical": true,
+      "station": "42084"
+    }
+  ],
+  "old_cumulative_limit_certified": false,
+  "priority_candidate": null,
+  "reference_status_counts": {
+    "recovered": 1,
+    "request_failed": 18,
+    "verified_local_Block18": 4
+  },
+  "status": "checkpoint_transaction_budget_exhausted",
+  "total_bytes": 1183903,
+  "transactions": 30,
+  "verified_local_references_reused": 4
+}

@@ -1,0 +1,35 @@
+{
+ "base": "https://fedeo.ceos.org",
+ "bbox": "-75.90,36.08,-75.55,36.30",
+ "datetime": null,
+ "modes": [
+  {
+   "mode": "StaringSpotlight",
+   "collection": "bb9fdc41-1a19-4793-aca1-a6f5f28d592d",
+   "delta_az_m": 0.24,
+   "n_items": 0,
+   "note": "rete non raggiungibile: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1032)"
+  },
+  {
+   "mode": "HighResolutionSpotlight",
+   "collection": "aae157df-5b91-4a49-b00b-d81729a566d7",
+   "delta_az_m": 1.0,
+   "n_items": 0,
+   "note": "rete non raggiungibile: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1032)"
+  },
+  {
+   "mode": "Spotlight",
+   "collection": "fa8dc12c-b6c5-4ff4-9781-a39c8775d4fa",
+   "delta_az_m": 2.0,
+   "n_items": 0,
+   "note": "rete non raggiungibile: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1032)"
+  },
+  {
+   "mode": "StripMap",
+   "collection": "53554204-282b-457e-b36d-a168679a0c1f",
+   "delta_az_m": 3.0,
+   "n_items": 0,
+   "note": "rete non raggiungibile: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1032)"
+  }
+ ]
+}

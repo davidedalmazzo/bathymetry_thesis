@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-16T09:58:47.364054+00:00",
+  "historical_bytes": null,
+  "historical_consumption": "consumo storico non determinabile",
+  "historical_transactions": null,
+  "history_search": "Blocks25\u201327 and _cache filename inventory: no attributable prior recovery ledger located; Block8/16/18/21 records belong to earlier separate activities.",
+  "max_total_bytes": 20971520,
+  "max_transactions": 30,
+  "old_cumulative_limit_certified": false,
+  "queue_sha256": "7cf1d48d82322365c063418bd059734b5b1b1e520899dec8b6be616d38b654c1",
+  "stage": "transaction_budget_exhausted",
+  "total_bytes": 1183903,
+  "tranche": "new_user_authorized_2026-09-16",
+  "transactions": 30,
+  "transport_change": "Sandbox proxy refused connections; authorized direct network execution is new diagnostic information."
+}

@@ -1,0 +1,31 @@
+Add Block 17 selector consolidation and Block 18 reference recovery
+
+Block 17 — selector consolidation and criteria audit (no network, no SAR reads):
+- corrected reference path: stop at the first ADMISSIBLE reference rather than
+  the first successful HTTP response; out-of-tolerance spectra no longer take
+  priority over the model; joint directional completeness across density,
+  alpha1, alpha2, r1 and r2 in the band actually used; NDBC spectral size read
+  from metadata instead of a fixed 98 bins; aggregate vs annual archive
+  distinguished; integration no longer crosses missing bands implicitly
+- renamed misleading metrics: competing_system_count -> spectral local maxima;
+  independent_look_count documented as a nominal non-overlapping aperture count,
+  not statistical independence; CPHD and SICD temporal budgets kept separate;
+  marine ROI proxy named for what it measures
+- confirmed a defect in the synthetic band generator: double Gaussian weighting
+  produced sigma_eff ~ sigma/sqrt(2) (measured 0.7062-0.7079 vs 1/sqrt(2)).
+  Thresholds derived from it are withdrawn.
+- Block16A baseline reproduced exactly: A=0, B=1, C=33, D=10106, 0 changes
+
+Block 18 — per-bin reference recovery for the four measured acquisitions:
+- 4/4 references recovered and admissible (station 42084, within 34.2 km and
+  the frozen 3600 s tolerance; joint energy coverage 1.0)
+- payloads byte-identical to the Block16A originals; 7 HTTP transactions,
+  560916 bytes, well inside the declared budget
+- 0 category changes: all four still fail on physical gates, not on references
+
+Also adds docs/NOTE_accuracy_envelope_open.md, recording the resolution/WKB
+accuracy argument together with the four objections that keep it exploratory.
+
+Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_01BqeFTVRbSLGYKjswoUEWof
+

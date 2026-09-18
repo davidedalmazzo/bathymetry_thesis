@@ -1,0 +1,5 @@
+{
+  "reason": "declared by STAC but absent from public listing and all scoped object names return 404",
+  "signal_or_pixels_read": false,
+  "status": "NOT_VERIFIABLE_NO_PUBLIC_OBJECT"
+}

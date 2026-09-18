@@ -162,8 +162,9 @@ def associate(times, target, eligible, tolerance_seconds, intervals=None):
 
 def spectral_summary(f, energy, valid, widths=None):
     """Rectangular bin integration; never bridge missing bins."""
-    f, energy, valid = np.asarray(f), np.asarray(energy), np.asarray(valid, bool)
-    if f.ndim != 1 or len(f) < 2 or len(f) != len(energy) or np.any(np.diff(f) <= 0):
+    f, energy, valid = np.asarray(f,float), np.asarray(energy,float), np.asarray(valid, bool)
+    if (f.ndim != 1 or len(f) < 2 or energy.shape != f.shape or valid.shape != f.shape
+            or not np.all(np.isfinite(f)) or np.any(f <= 0) or np.any(np.diff(f) <= 0)):
         raise ValueError("Invalid spectral grid")
     origin = "provided"
     if widths is None:
@@ -171,18 +172,23 @@ def spectral_summary(f, energy, valid, widths=None):
         widths = np.diff(edges)
         origin = "reconstructed_midpoint_edges"
     widths = np.asarray(widths)
-    if widths.shape != f.shape or np.any(widths <= 0):
+    if widths.shape != f.shape or not np.all(np.isfinite(widths)) or np.any(widths <= 0):
         raise ValueError("Invalid bin widths")
     good = valid & np.isfinite(energy) & (energy >= 0) & (f > 0)
     m0 = float(np.sum(energy[good]*widths[good]))
     m1 = float(np.sum(energy[good]*widths[good]*f[good]))
     m2 = float(np.sum(energy[good]*widths[good]*f[good]**2))
-    peak = int(np.argmax(np.where(good, energy, -np.inf))) if np.any(good) else None
+    has_bins = bool(np.any(good))
+    peak = int(np.argmax(np.where(good, energy, -np.inf))) if has_bins and m0 > 0 else None
+    status = "no_valid_spectral_bins" if not has_bins else "valid_zero_energy" if m0 == 0 else "partial_spectrum" if not np.all(good) else "complete_spectrum"
     return {"formula": "mn=sum_valid(E(f)*df*f**n); Hm0=4sqrt(m0); Tm01=m0/m1; Tm02=sqrt(m0/m2)",
             "bin_width_origin": origin, "widths_hz": widths.tolist(),
             "valid_band_hz": [float(f[good].min()),float(f[good].max())] if np.any(good) else None,
             "valid_bin_fraction": float(np.mean(good)), "missing_bin_indices": np.flatnonzero(~good).tolist(),
-            "m0_m2": m0, "Hm0_m": 4*math.sqrt(m0),
+            "status":status,"valid_mask":good.tolist(),"valid_bin_count":int(np.sum(good)),
+            "valid_bandwidth_hz":float(np.sum(widths[good])),
+            "m0_m2": m0 if has_bins else None,"m1":m1 if has_bins else None,"m2":m2 if has_bins else None,
+            "Hm0_m": 4*math.sqrt(m0) if has_bins else None,
             "Tm01_s": m0/m1 if m1 else None, "Tm02_s": math.sqrt(m0/m2) if m2 else None,
             "Tp_bin_s": 1/float(f[peak]) if peak is not None else None,
             "peak_bin": peak, "partial_integral": not bool(np.all(good)),

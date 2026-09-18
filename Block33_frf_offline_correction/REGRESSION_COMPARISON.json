@@ -1,0 +1,207 @@
+{
+  "actual_http_transactions": 0,
+  "initial_copied_state": {
+    "transactions": 40,
+    "bytes": 2412291,
+    "max_transactions": 40,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-17T17:05:33.353298+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed"
+  },
+  "final_copied_state": {
+    "transactions": 40,
+    "bytes": 2412291,
+    "max_transactions": 40,
+    "max_bytes": 104857600,
+    "created_utc": "2026-09-17T17:05:33.353298+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed"
+  },
+  "cases": [
+    {
+      "acquisition_id": "TDX-1_record_11",
+      "old_rows": 233,
+      "new_rows": 233,
+      "common_rows": 233,
+      "changed": [],
+      "removed_keys": [],
+      "added_keys": [],
+      "spectral_comparison": [
+        {
+          "instrument_id": "FRF:waverider-17m",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "differences": {}
+        }
+      ],
+      "nearest_context_position_comparison": [
+        {
+          "instrument_id": "FRF:waverider-17m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:8m-array",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:waverider-26m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "family": "currents",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:derived",
+          "family": "wind",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:eopNoaaTide",
+          "family": "water_level",
+          "differences": {}
+        }
+      ]
+    },
+    {
+      "acquisition_id": "COSMO_2098202",
+      "old_rows": 233,
+      "new_rows": 233,
+      "common_rows": 233,
+      "changed": [],
+      "removed_keys": [],
+      "added_keys": [],
+      "spectral_comparison": [
+        {
+          "instrument_id": "FRF:waverider-17m",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "differences": {}
+        }
+      ],
+      "nearest_context_position_comparison": [
+        {
+          "instrument_id": "FRF:waverider-17m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:8m-array",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:waverider-26m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "family": "currents",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:derived",
+          "family": "wind",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:eopNoaaTide",
+          "family": "water_level",
+          "differences": {}
+        }
+      ]
+    },
+    {
+      "acquisition_id": "COSMO_1942455",
+      "old_rows": 69,
+      "new_rows": 69,
+      "common_rows": 69,
+      "changed": [],
+      "removed_keys": [],
+      "added_keys": [],
+      "spectral_comparison": [],
+      "nearest_context_position_comparison": [
+        {
+          "instrument_id": "FRF:waverider-17m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:8m-array",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:waverider-26m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "family": "currents",
+          "differences": {}
+        }
+      ]
+    },
+    {
+      "acquisition_id": "COSMO_1941935",
+      "old_rows": 69,
+      "new_rows": 69,
+      "common_rows": 69,
+      "changed": [],
+      "removed_keys": [],
+      "added_keys": [],
+      "spectral_comparison": [],
+      "nearest_context_position_comparison": [
+        {
+          "instrument_id": "FRF:waverider-17m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:8m-array",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:waverider-26m",
+          "family": "waves",
+          "differences": {}
+        },
+        {
+          "instrument_id": "FRF:awac-11m",
+          "family": "currents",
+          "differences": {}
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "bytes": 6433,
+    "path": "Block28_Samoa_metadata_preflight\\DELIVERY_MANIFEST.json",
+    "sha256": "2e85de476564c007ea3f71e8108c4b21ba6c06b19de121054148f08f2022b558"
+  },
+  {
+    "bytes": 30932,
+    "path": "Block28_Samoa_metadata_preflight\\raw\\sicd.xml",
+    "sha256": "0f1bb05082cf5c569c1c8cca68f77064a6165f4cc4a07da37acf53caf1351ca6"
+  },
+  {
+    "bytes": 20379,
+    "path": "Block28_Samoa_metadata_preflight\\raw\\cphd.xml",
+    "sha256": "be4743f3fd02ac94fea5571703b6739edbf23283a3660f86fb4533115ece7313"
+  },
+  {
+    "bytes": 1847,
+    "path": "Block28_Samoa_metadata_preflight\\CPHD_METADATA.json",
+    "sha256": "a83e357362dba2ed45bfb0fee710a949a58ce913088abf9894e3dfaf0c57419b"
+  },
+  {
+    "bytes": 12322,
+    "path": "Block28_Samoa_metadata_preflight\\LOCAL_INPUTS.json",
+    "sha256": "0f624145e689480c3b2a7d5a3b323d1ab86032cf47e638cff557f6cbf3c77111"
+  },
+  {
+    "bytes": 10917,
+    "path": "Block28_Samoa_metadata_preflight\\SUBAPERTURE_METADATA_AND_PLANS.json",
+    "sha256": "949a2cccb429275d1c57f2bb35cef89fbfca2d627cbdf9bab775f2723cf70730"
+  }
+]

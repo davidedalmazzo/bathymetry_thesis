@@ -11,8 +11,8 @@ def validate(record):
     allowed={"acquisition_id","timestamp_utc","start_utc","end_utc","timestamp_semantics","footprint","roi","source"}
     if set(record)-allowed:
         raise ValueError("Unsupported acquisition properties; do not pass assets or credentials")
-    if not record.get("acquisition_id"):
-        raise ValueError("acquisition_id required")
+    if not isinstance(record.get("acquisition_id"),str) or not record['acquisition_id'].strip():
+        raise ValueError("Nonempty string acquisition_id required")
     record["timestamp_utc"] = utc(record["timestamp_utc"]).isoformat()
     for key in ("start_utc", "end_utc"):
         if record.get(key):
@@ -25,6 +25,26 @@ def validate(record):
     if not record.get("timestamp_semantics"):
         record["timestamp_semantics"]="user_supplied_acquisition_timestamp_not_verified_aperture_center"
     return record
+
+
+def validate_batch(records,roi_policy='reject'):
+    """Validate before any transport/discovery; never infer aperture semantics."""
+    import re
+    if not records:raise ValueError("Empty acquisition manifest")
+    records=[validate(r) for r in records]
+    ids=[re.sub(r'[^A-Za-z0-9_.-]','_',str(r['acquisition_id'])) for r in records]
+    if len(ids)!=len(set(ids)):raise ValueError("Duplicate/colliding acquisition IDs")
+    warnings=[]
+    for r in records:
+        if r.get('start_utc') and utc(r['timestamp_utc'])<utc(r['start_utc']):
+            if 'second_precision' not in r.get('timestamp_semantics',''):raise ValueError("Timestamp precedes supplied interval")
+            warnings.append({'acquisition_id':r['acquisition_id'],'status':'second_precision_catalogue_reference_outside_original_fractional_start','not_physical_aperture':True})
+        if r.get('end_utc') and utc(r['timestamp_utc'])>utc(r['end_utc']):raise ValueError("Timestamp follows supplied interval")
+        fp,roi=polygon(r.get('footprint')),polygon(r.get('roi'))
+        if fp is not None and roi is not None and not fp.covers(roi):
+            if roi_policy!='allow':raise ValueError("ROI outside footprint; explicitly select --roi-outside allow")
+            warnings.append({'acquisition_id':r['acquisition_id'],'status':'roi_outside_footprint_explicitly_allowed','no_clipping':True})
+    return records,warnings
 
 
 def read_acquisitions(path):

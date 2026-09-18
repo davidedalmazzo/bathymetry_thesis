@@ -1,0 +1,28 @@
+{
+  "ARP_vs_PVP_angle_equivalent_time_error_max_s": 3.5360771856728653e-07,
+  "CPHD_ETag_matches_frozen_public_listing": true,
+  "CPHD_SGN": -1,
+  "PFA_scale_geometry_vs_polynomial_max_absolute_residual": 3.1460878346933896e-10,
+  "PVP_sha256": "fab41f82c904d8794595c261708942cd6015274bedc414e465c9ded3ca26c0f9",
+  "PulseNumber_monotone": true,
+  "RcvTime_monotone": true,
+  "SIGNAL_values": [
+    1
+  ],
+  "TxTime_monotone": true,
+  "TxTime_span_s": 3.6917706986666667,
+  "Tx_Rcv_scatter_closure_max_s": 8.545251750993743e-09,
+  "all_time_continuity_verified": true,
+  "declared_format_and_offsets_source": "SarPy CPHDType.PVP.get_vector_dtype from original XML, not an all-double reinterpretation",
+  "dt_max_s": 0.0001709173333333345,
+  "dt_median_s": 0.00016999466666667296,
+  "dt_min_s": 0.00016916266666644475,
+  "dtype": "{'names': ['TxTime', 'TxPos', 'TxVel', 'RcvTime', 'RcvPos', 'RcvVel', 'SRPPos', 'aFDOP', 'aFRR1', 'aFRR2', 'FX1', 'FX2', 'TOA1', 'TOA2', 'TOAE1', 'TOAE2', 'TDTropoSRP', 'SC0', 'SCSS', 'SIGNAL', 'TxACX', 'TxACY', 'TxEB', 'RcvACX', 'RcvACY', 'RcvEB', 'PulseNumber'], 'formats': ['>f8', ('>f8', (3,)), ('>f8', (3,)), '>f8', ('>f8', (3,)), ('>f8', (3,)), ('>f8', (3,)), '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>f8', '>i8', ('>f8', (3,)), ('>f8', (3,)), ('>f8', (2,)), ('>f8', (3,)), ('>f8', (3,)), ('>f8', (2,)), '>u8'], 'offsets': [0, 8, 32, 120, 128, 152, 240, 264, 272, 280, 288, 296, 304, 312, 320, 328, 336, 344, 352, 360, 56, 80, 104, 176, 200, 224, 368], 'itemsize': 376}",
+  "gap_max_to_median_ratio": 1.0054276212586757,
+  "poly_geometry_equivalent_time_error_max_s": 1.0817429436716658e-08,
+  "record_bytes": 376,
+  "required_fields_finite": true,
+  "scatter_time_monotone": true,
+  "units": "Tx/RcvTime seconds since CollectionStart; positions metres ECF; velocities m/s; FX Hz; derived PFA k cycles/m",
+  "vectors": 21716
+}

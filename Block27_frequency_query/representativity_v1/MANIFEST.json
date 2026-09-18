@@ -1,0 +1,76 @@
+{
+  "artifacts": [
+    {
+      "bytes": 40943,
+      "path": "Block27_frequency_query\\representativity_v1\\ACQUISITION_AUDIT.csv",
+      "sha256": "9f4c850c57861d5ec9d029cb16b43c6e9e55438eeda477433c3d205ba1d4da4e"
+    },
+    {
+      "bytes": 925,
+      "path": "Block27_frequency_query\\representativity_v1\\LOCAL_BIN_INVENTORY.json",
+      "sha256": "23d554792241f959c4dfd08ecdd392e85c55ad67e636a230c4abe57e5b13cccc"
+    },
+    {
+      "bytes": 96194,
+      "path": "Block27_frequency_query\\representativity_v1\\maps\\Louisiana.png",
+      "sha256": "a893b87ed912ab4e9a266a20df76be5db11b38f8ddb94aedeb085dc136b4686f"
+    },
+    {
+      "bytes": 70802,
+      "path": "Block27_frequency_query\\representativity_v1\\maps\\Samoa.png",
+      "sha256": "db58d563bc0fe94c79332fa5b193f0bc710a186f5ef6b08f5dd12191c2673693"
+    },
+    {
+      "bytes": 108286,
+      "path": "Block27_frequency_query\\representativity_v1\\maps\\Tobago.png",
+      "sha256": "dde3e77ea558d4234c87cca429e191ff1a20beaef88489864f5e8b2c0e86e561"
+    },
+    {
+      "bytes": 67114,
+      "path": "Block27_frequency_query\\representativity_v1\\maps\\Virgin_Islands.png",
+      "sha256": "e8e1172c4f6f1c24a2d49eb43dfd30d9d74d587f1866296f523cee451fb95542"
+    },
+    {
+      "bytes": 18223,
+      "path": "Block27_frequency_query\\representativity_v1\\normalized\\2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd.json",
+      "sha256": "8e13bb362c8c504ded4a48caf5540363834ea99cbfb2028498669e86e612a63b"
+    },
+    {
+      "bytes": 18215,
+      "path": "Block27_frequency_query\\representativity_v1\\normalized\\98fe2c0f-44e9-41bd-bec6-af02b11f13a0.json",
+      "sha256": "0a3d453df84b56e88ebedb05a58c959da0d01cfa42458d3cac948bd5b372bb17"
+    },
+    {
+      "bytes": 18180,
+      "path": "Block27_frequency_query\\representativity_v1\\normalized\\9caef3b7-fc13-4aca-863b-acbb2fcc1e9f.json",
+      "sha256": "ad625d777891f587fb67ba75f4ff5473cd267bcb95c37d85365f81ccaf0f6344"
+    },
+    {
+      "bytes": 18177,
+      "path": "Block27_frequency_query\\representativity_v1\\normalized\\ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1.json",
+      "sha256": "57d6f269e110bf73abd8c6573951e5eff086846027980b6637613a94c4b7631b"
+    },
+    {
+      "bytes": 3473,
+      "path": "Block27_frequency_query\\representativity_v1\\REPORT.md",
+      "sha256": "be0c7f7bcddd0b4292956a05f57c32b223a303010349dd48ac79764d9e6b3f2f"
+    },
+    {
+      "bytes": 459,
+      "path": "Block27_frequency_query\\representativity_v1\\STATE.json",
+      "sha256": "6358b99a39bdfbf5c4690b422a81a820b1efad720f6125882610a82147739222"
+    },
+    {
+      "bytes": 3059,
+      "path": "Block27_frequency_query\\representativity_v1\\STATION_HISTORY.json",
+      "sha256": "02cda54a2082646a813e6c994ee342354a937146b653d054ecb4a43f2d2688a3"
+    },
+    {
+      "bytes": 498,
+      "path": "Block27_frequency_query\\representativity_v1\\SUMMARY.json",
+      "sha256": "2748adb473271c64a82d844f9ee3356a41dac4b45ff5585370ad72e8f448f9ed"
+    }
+  ],
+  "source_queue_sha256": "7cf1d48d82322365c063418bd059734b5b1b1e520899dec8b6be616d38b654c1",
+  "version": "representativity_v1"
+}

@@ -1,0 +1,25 @@
+[
+  {
+    "acquisition_keys": [
+      "collect:2e7cb37a-42d6-4cfb-9e6e-d70de77d79dd",
+      "collect:98fe2c0f-44e9-41bd-bec6-af02b11f13a0",
+      "collect:9caef3b7-fc13-4aca-863b-acbb2fcc1e9f",
+      "collect:ae8a3c9f-ee1e-4fad-82d1-ffe5ec409cf1"
+    ],
+    "bin_rows": 392,
+    "path": "Block18_reference_recovery/BLOCK18_NORMALIZED_BINS.csv",
+    "sha256": "dc34d5e9af1352475dd2c26c85977fa612c8a15c0777c73473bbbb438e6e9075"
+  },
+  {
+    "acquisition_keys": [
+      "collect:407028c8-ed44-4823-b48a-d7242b63c281",
+      "collect:5d3be8ac-cf8d-45e2-b7c1-a92cf70c3539",
+      "collect:d6be5aba-1186-4401-b2e8-defbeeb6fb20",
+      "collect:e6b4c32d-bda9-4f75-a9a4-8dcfe0291a4f",
+      "collect:f7ced35f-8a2c-45ef-a822-c442bb47662d"
+    ],
+    "bin_rows": 388,
+    "path": "Block21_frequency_validation_selector/BLOCK21_REFERENCE_BINS.csv",
+    "sha256": "77c4fba096227639ca7e8da949d061e2ec71b594b1d953cf9cfacac62008033d"
+  }
+]

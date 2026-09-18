@@ -1,0 +1,33 @@
+{
+  "budget_A": {
+    "automatic_retries": 0,
+    "response_bytes": 10485760,
+    "total_bytes": 104857600,
+    "transactions": 60
+  },
+  "budget_B": {
+    "intermediates_bytes": 5368709120,
+    "sole_sicd_bytes": 2551099862,
+    "traffic_bytes": 3221225472
+  },
+  "collect_id": "1424a3c8-7285-4210-b965-069514c13a2a",
+  "control_look_plan": "two_nonoverlap",
+  "criteria_frozen_before_pvp": true,
+  "gate_policy": "all timing/geometry checks must pass; CONDITIONAL disables SICD download",
+  "maximum_baseline_fractional_sensitivity": 0.05,
+  "maximum_center_sensitivity_s": 0.05,
+  "maximum_duration_fractional_sensitivity": 0.1,
+  "maximum_endpoint_clock_discrepancy_s": 0.005,
+  "maximum_poly_geometry_equivalent_time_error_s": 0.01,
+  "maximum_temporal_gap_median_ratio": 1.5,
+  "points": "SCP, frozen ROI centre and four corners; fixed declared PFA plane/basis",
+  "primary_look_plan": "three_nonoverlap",
+  "radial_samples": "PFA Krg1, middle, Krg2; inherited rectangular Col bands",
+  "support_control": "single explicit taper sensitivity, no optimization",
+  "support_primary": "full azimuth, preserve oblique validity; no small pre-FFT crop",
+  "tolerance_rationale": "A 0.05 s unmodelled center shift introduces 0.05 rad at a diagnostic unit angular frequency 1 rad/s; 5% differential baseline error directly gives ~5% slope scale error. Duration variation limited to 10% to prevent comparing unlike temporal averaging. These are technical tolerances, not buoy period gates.",
+  "weight_cases": [
+    "uniform output-k",
+    "uniform time"
+  ]
+}

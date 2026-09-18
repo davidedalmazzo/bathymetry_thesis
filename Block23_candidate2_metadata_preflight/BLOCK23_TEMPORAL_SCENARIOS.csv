@@ -1,0 +1,5 @@
+path,duration_s,look_to_period_ratio,look_duration_s,sliding_step_s,sliding_center_count,sliding_center_span_s,nominal_nonoverlap_count,sliding_looks_statistically_independent,overlap_fraction,observable_cycles,phase_span_rad
+catalog_descriptor_only,15.0,0.0975,1.5,1.0,14,13.0,10,False,0.33333333333333337,0.9750000000000001,5.309291584566751
+catalog_descriptor_only,15.0,0.1625,2.5,1.0,13,12.0,6,False,0.6,0.9750000000000001,4.900884539600078
+catalog_descriptor_only,15.0,0.26,4.0,1.0,12,11.0,3,False,0.75,0.9750000000000001,4.4924774946334045
+catalog_descriptor_only,15.0,0.39,6.0,1.0,10,9.0,2,False,0.8333333333333334,0.9750000000000001,3.6756634047000585

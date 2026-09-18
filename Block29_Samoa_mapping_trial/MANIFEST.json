@@ -1,0 +1,134 @@
+{
+  "artifacts": [
+    {
+      "bytes": 24174,
+      "path": "Block29_Samoa_mapping_trial\\BAND_TIMES.csv",
+      "sha256": "8ea990cdc4f62ba12bbda92313c763d196fba3338915eb709bc83f1a58c41db0"
+    },
+    {
+      "bytes": 1557,
+      "path": "Block29_Samoa_mapping_trial\\CONFIG.json",
+      "sha256": "5b264e836dc1b6dbe93d4ac114be01fe0d94f9228c40faac173bdc86a2330c7c"
+    },
+    {
+      "bytes": 65,
+      "path": "Block29_Samoa_mapping_trial\\CONFIG.sha256",
+      "sha256": "3a62c82abe2b740b77ce10af27c5864e043c5dc181941708f4000eda63794d1f"
+    },
+    {
+      "bytes": 69431,
+      "path": "Block29_Samoa_mapping_trial\\figures\\pfa_mapping.png",
+      "sha256": "e7222d2b1d6b7cc61d7b53f0860b27e21f1538bde45f5c33e43957810b583693"
+    },
+    {
+      "bytes": 79477,
+      "path": "Block29_Samoa_mapping_trial\\figures\\synthetic_mask_phase.png",
+      "sha256": "50ebfae0668e6270f5f0d712aa87430c8d73b589ac1009fbf364b1a4b1976fa0"
+    },
+    {
+      "bytes": 1780,
+      "path": "Block29_Samoa_mapping_trial\\GATE_A.json",
+      "sha256": "9d67e9e6b966f887fc970c00997c988984aae8fa4d7c351484374d7b9782e2cc"
+    },
+    {
+      "bytes": 1971737,
+      "path": "Block29_Samoa_mapping_trial\\GEOMETRIC_KERNELS.json",
+      "sha256": "4ebc473bbc10b1adf98399f1fe856e5ce727fa68680664a9ef9290d0ab351c66"
+    },
+    {
+      "bytes": 1499,
+      "path": "Block29_Samoa_mapping_trial\\INITIAL_STATE.json",
+      "sha256": "5aa79957bcb84b2e997d2c223813d8223b15b8466cd4054155f3997ac5dbe8fa"
+    },
+    {
+      "bytes": 1079,
+      "path": "Block29_Samoa_mapping_trial\\INPUT_PROVENANCE.json",
+      "sha256": "e89760ab5d3bd0f1b56d3f6ff76ad2102f78f100fa348373f41a60dd36a02a35"
+    },
+    {
+      "bytes": 873873,
+      "path": "Block29_Samoa_mapping_trial\\PFA_MAPPING.npz",
+      "sha256": "bb9cfd9c14acd2b1577a947cd9d6b539b4c366b5bf86d31b16f443fd9a87d5c2"
+    },
+    {
+      "bytes": 1933,
+      "path": "Block29_Samoa_mapping_trial\\PHASE_A_REQUEST_LOG.json",
+      "sha256": "348ae8ef63d57fb4d1c2010ddbdf7359859512007a4525d063b4e90d73f43892"
+    },
+    {
+      "bytes": 95,
+      "path": "Block29_Samoa_mapping_trial\\PHASE_A_STATE.json",
+      "sha256": "7fb9c0d637ae3af8058b8ad9e2d7c925e21ac1fbc7fe039a8c3617597652e403"
+    },
+    {
+      "bytes": 151,
+      "path": "Block29_Samoa_mapping_trial\\PHASE_B_DOWNLOAD_STATE.json",
+      "sha256": "87ecfc77e64cff5d243f9b311c6758db7dd528e0839a7035adcf0624ede65bfd"
+    },
+    {
+      "bytes": 1812,
+      "path": "Block29_Samoa_mapping_trial\\PROTOCOL.md",
+      "sha256": "44b938ff2be6d9c62cec48d157d6d7ae45c7c0b968d0c286eb0392467e33cfcc"
+    },
+    {
+      "bytes": 1899,
+      "path": "Block29_Samoa_mapping_trial\\PVP_AUDIT.json",
+      "sha256": "36745715a628ae4da7887196ce0e65532e6bf34d5546bcf21fb9415c8cb7f230"
+    },
+    {
+      "bytes": 8165216,
+      "path": "Block29_Samoa_mapping_trial\\raw\\pvp_block.bin",
+      "sha256": "fab41f82c904d8794595c261708942cd6015274bedc414e465c9ded3ca26c0f9"
+    },
+    {
+      "bytes": 424,
+      "path": "Block29_Samoa_mapping_trial\\REAL_TRIAL_NOT_RUN.json",
+      "sha256": "bd0afb3bfdfa07c9d3bda0fee4a306ce7d92a5f09d04cc5b699eb9c106318fc6"
+    },
+    {
+      "bytes": 7337,
+      "path": "Block29_Samoa_mapping_trial\\REPORT.md",
+      "sha256": "769fa378a000e877468fc5da4d3eec2b282b4e1ab521176e7b41147282087f04"
+    },
+    {
+      "bytes": 4204,
+      "path": "Block29_Samoa_mapping_trial\\SUMMARY.json",
+      "sha256": "16a51ccce4b258e4cb3fdbdcc211117b8fc5857d158afb5d31235f4e1acda5af"
+    },
+    {
+      "bytes": 12654,
+      "path": "Block29_Samoa_mapping_trial\\SYNTHETIC_SUPPORT_DIAGNOSTIC.json",
+      "sha256": "ce101467389583f137291fdd11d8f7f5e7c96aebd88d14de604abf3f37f08f33"
+    },
+    {
+      "bytes": 1288,
+      "path": "Block29_Samoa_mapping_trial\\TEST_REPORT.md",
+      "sha256": "8f73ea96154a4f075e992ebdf87b8575b4edbc6ddb77bfed870b4323075a7fdd"
+    },
+    {
+      "bytes": 11506,
+      "path": "Block29_Samoa_mapping_trial\\USER_REQUEST.txt",
+      "sha256": "4a5fce13ece9d81ec32380ec94adf2ab2d19afabfcb96b697d71f72bb037dcc2"
+    },
+    {
+      "bytes": 371,
+      "path": "Block29_Samoa_mapping_trial\\WAVEVECTOR_TRANSFORM.json",
+      "sha256": "e8b4b8b43c9f9e32c5c446cbae068d245ba00938208b6f1c66627d5d025d8e5b"
+    }
+  ],
+  "block": 29,
+  "code_sources": [
+    {
+      "path": "code\\run_block29_samoa_mapping.py",
+      "sha256": "5d18ce7064330dbbc11d69710f38c68cf0c2a8f14ce62cd76ac6ad6e205de68a"
+    },
+    {
+      "path": "code\\umbra_sar\\pfa_time_mapping.py",
+      "sha256": "f1d448f56006328bf7675a9e55ff529e1541d70b367bcbcccd7405c16e01c32f"
+    },
+    {
+      "path": "tests\\test_block29_samoa_mapping.py",
+      "sha256": "8337c47606610ec3ddbf5e25b3959928188f78c2f6de8e1f992b94e2bad925f2"
+    }
+  ]
+}

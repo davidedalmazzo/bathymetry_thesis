@@ -1,0 +1,177 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1847,
+      "path": "Block28_Samoa_metadata_preflight\\CPHD_METADATA.json",
+      "sha256": "a83e357362dba2ed45bfb0fee710a949a58ce913088abf9894e3dfaf0c57419b"
+    },
+    {
+      "bytes": 1666,
+      "path": "Block28_Samoa_metadata_preflight\\GEOMETRY.json",
+      "sha256": "fd4c538828b137d1559619082aa977133b328565bc2fab6afb57acd11c5edcbd"
+    },
+    {
+      "bytes": 789,
+      "path": "Block28_Samoa_metadata_preflight\\IDENTITY.json",
+      "sha256": "5480faac72575b10041d38686e52520643cf8a449d9c21bcb19554c66e923fca"
+    },
+    {
+      "bytes": 860,
+      "path": "Block28_Samoa_metadata_preflight\\INPUT_PROVENANCE.json",
+      "sha256": "04920eccb6100cac27b61fa2374ff5607bc398c5b60176a62e7bed757da9c4c7"
+    },
+    {
+      "bytes": 12322,
+      "path": "Block28_Samoa_metadata_preflight\\LOCAL_INPUTS.json",
+      "sha256": "0f624145e689480c3b2a7d5a3b323d1ab86032cf47e638cff557f6cbf3c77111"
+    },
+    {
+      "bytes": 430,
+      "path": "Block28_Samoa_metadata_preflight\\NITF_SEGMENT_LAYOUT.json",
+      "sha256": "faf6f8b2bee4f882e4dbf196d63c6f53cd94977084ba3f54c2cd84bd1bccdf4e"
+    },
+    {
+      "bytes": 374,
+      "path": "Block28_Samoa_metadata_preflight\\PREVIEW_ASSESSMENT.json",
+      "sha256": "e3cb660dd159af56644b651a84b72e407510423916ecf12618507bc2d2364ec7"
+    },
+    {
+      "bytes": 520,
+      "path": "Block28_Samoa_metadata_preflight\\PROTOCOL.md",
+      "sha256": "2c24f603e13d9f8326b9fd64154df4de36f69a5f4377947349f24b4aa46988d5"
+    },
+    {
+      "bytes": 1975,
+      "path": "Block28_Samoa_metadata_preflight\\PUBLIC_LISTING_INVENTORY.json",
+      "sha256": "82db1ccf9106fd32842ae1fabc5b8a59d8d23577cfc20ea8856081c375f390f9"
+    },
+    {
+      "bytes": 20379,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\cphd.xml",
+      "sha256": "be4743f3fd02ac94fea5571703b6739edbf23283a3660f86fb4533115ece7313"
+    },
+    {
+      "bytes": 512,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\cphd_header.bin",
+      "sha256": "a4913f8c0dd8d79ce2ba1c3550c333b866dfcf8e49f0aa065f0c1a78941177e7"
+    },
+    {
+      "bytes": 973,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\des_2_subheader.bin",
+      "sha256": "e212f78293e580c6f71760e95c81929897c9e9adaddc08292f41f95e35cab28d"
+    },
+    {
+      "bytes": 30932,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\des_2_xml.bin",
+      "sha256": "0f1bb05082cf5c569c1c8cca68f77064a6165f4cc4a07da37acf53caf1351ca6"
+    },
+    {
+      "bytes": 360,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\nitf_fixed_header.bin",
+      "sha256": "f833259e26ec4bfe700dbdf5adbec46fc687309faea610a065623a0f241d71da"
+    },
+    {
+      "bytes": 426,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\nitf_main_header.bin",
+      "sha256": "1b9ed0dc4e3632ed482844fbe6b66827148c8a89612473e54cf392a8ba618687"
+    },
+    {
+      "bytes": 6036,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\official_stac.json",
+      "sha256": "4cd13f313f50d5442c47d540dca947029f35bb2f7b72a7bbb6bce1015ba8b2f8"
+    },
+    {
+      "bytes": 30932,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\sicd.xml",
+      "sha256": "0f1bb05082cf5c569c1c8cca68f77064a6165f4cc4a07da37acf53caf1351ca6"
+    },
+    {
+      "bytes": 8,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\txtime_0.bin",
+      "sha256": "d4a19ce0c2490344c4239d2d24021a8932d4cede4f3f80eb333866f0de711282"
+    },
+    {
+      "bytes": 8,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\txtime_10858.bin",
+      "sha256": "77dbb066415dd6006076045606f4b30d39b85c315a167106dd734e1dcdc53ac2"
+    },
+    {
+      "bytes": 8,
+      "path": "Block28_Samoa_metadata_preflight\\raw\\txtime_21715.bin",
+      "sha256": "e0fddc9ed6deb29d0b1f93e9d52516e82245ca49073607e838aec7160d9163dc"
+    },
+    {
+      "bytes": 9416,
+      "path": "Block28_Samoa_metadata_preflight\\REQUEST_LOG.json",
+      "sha256": "ae9a61762c5bd74d8d037d7d7c8508ff722c55b8865d21649df0bb6e54b9ee05"
+    },
+    {
+      "bytes": 44634,
+      "path": "Block28_Samoa_metadata_preflight\\ROI_VALID_SUPPORT.json",
+      "sha256": "3316699d6c311676a5c9f6b4c1a7a0824ec35e45938237542ab230bddb4ee7ae"
+    },
+    {
+      "bytes": 433,
+      "path": "Block28_Samoa_metadata_preflight\\RUNTIME.json",
+      "sha256": "8ef2277b2f5a6733d58568448cc0accb68ee1aace44bf9474fe7508dda614aa5"
+    },
+    {
+      "bytes": 6529,
+      "path": "Block28_Samoa_metadata_preflight\\SAMOA_CARD.md",
+      "sha256": "6084aa3fe0d8b4eb9dc75178af295541988501cc987687f66469bdeb575be5c3"
+    },
+    {
+      "bytes": 31566,
+      "path": "Block28_Samoa_metadata_preflight\\SICD_METADATA.json",
+      "sha256": "8b8cb7739d68e6a20ba0321024486817777a57d545d02fc98889b2be2fa06e16"
+    },
+    {
+      "bytes": 294,
+      "path": "Block28_Samoa_metadata_preflight\\SICD_PUBLIC_HEAD.json",
+      "sha256": "90fb1b4680532f7c7da192de606516de0a68a119911a174ad5d62e105082e23d"
+    },
+    {
+      "bytes": 486,
+      "path": "Block28_Samoa_metadata_preflight\\STATE.json",
+      "sha256": "92e0afcdc213da49502497e56a9155e107463fca7145a75bb113394253e91203"
+    },
+    {
+      "bytes": 10917,
+      "path": "Block28_Samoa_metadata_preflight\\SUBAPERTURE_METADATA_AND_PLANS.json",
+      "sha256": "949a2cccb429275d1c57f2bb35cef89fbfca2d627cbdf9bab775f2723cf70730"
+    },
+    {
+      "bytes": 765,
+      "path": "Block28_Samoa_metadata_preflight\\SUMMARY.json",
+      "sha256": "f1daa615294b329b08d71cde59fec27e993ef63385d70276ae43115fde601bc0"
+    },
+    {
+      "bytes": 1028,
+      "path": "Block28_Samoa_metadata_preflight\\TEST_REPORT.md",
+      "sha256": "dd26d138e442fc6410792b57e61e3460bf35022ddcbb495ff17a5feaef3500b2"
+    }
+  ],
+  "block": 28,
+  "code_sources": [
+    {
+      "path": "code\\run_block28_samoa_preflight.py",
+      "sha256": "26379a39bc1e02e49bc9e6b6913ad44e2e8f19586608dae7e3f82ceea48b4772"
+    },
+    {
+      "path": "code\\umbra_sar\\subaperture.py",
+      "sha256": "01fbdf7f4b80279d8907f725e108b406110a1b0ebe56fb87bece9d8d2852535f"
+    },
+    {
+      "path": "code\\umbra_sar\\geographic_preflight.py",
+      "sha256": "c1922b46c70bdad827565a87f6ff3d8eff976e3b461e6213b99b6809c72e8b54"
+    },
+    {
+      "path": "code\\run_block16a_scene_selection.py",
+      "sha256": "9f2017f8a52825c2bf74ec178c0cc4a14db34249ddf4d36bfda13c53c910c504"
+    },
+    {
+      "path": "tests\\test_block28_samoa_preflight.py",
+      "sha256": "70b6a3fabfbcc2f645f6f9041705d76ccf1855de810f9b193bd844265cec2649"
+    }
+  ]
+}

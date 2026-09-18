@@ -1,5 +1,21 @@
 # Work log
 
+## 2026-09-18 — Block34 operational Duck/FRF client
+
+- Delivered stable mission-neutral CLI, separate inputs/config/budgets, persistent named tranches, verified cache reuse, early validation and explicit partial dossiers. See FRF_QUICKSTART.md and CHECKPOINT_34.md.
+- Three original October events recovered: waves/spectra/QC, currents/wind/level, three bounded survey subsets NAVD88. New tranche: 25 HTTP / 3,253,569 bytes; historical consumption not determinable. Survey 20211013 metadata timeout remains explicit.
+- 8m-array longitude variable/nominal conflict preserved without sign correction; position unresolved, wave values unchanged. WR/AWAC native peaks still differ; no automatic physical explanation or scene selection.
+- 320 full tests; 78 isolated already included; five offline CLI smokes, mock budget/resume tests, 15 equivalent cached-output comparisons, visual QA. Local isolated source copy, not a GitHub clone; existing thesis interpreter, not clean installation.
+- Frozen artifacts/checkpoints audited, current provenance/relative manifest and exact pending file list saved. No radar access, inversion, dwell sweep, commit/push, or changes to frozen outputs/cache/budgets.
+
+## 2026-09-18 — Block33 offline FRF correction
+
+- Reproduced 11 reported failures before source edits; froze 438 available Block32 artifacts/cache files. No real HTTP, source cache/budget reset, SAR or changes to frozen dossiers/configs/manifests.
+- Corrected metadata-only new-product inventory, calendar/year/leap context months, separate far-event windows, cross-file provenance/duplicates/grids, missing/zero spectra, selected-sample positions and both deployment boundaries, Content-Length truncation/resume. Defaults no longer overwrite frozen Block32 output/cache.
+- 310 full ordinary tests passed; 68 isolated corrected-source client/Block30 tests passed, without private cache/radar/credentials. Explicitly audited pending lightweight source/test/fixture files and matching pinned installed dependencies; no clean-install or published-HEAD claim.
+- Four cached regenerated dossiers retain 604 compared observation rows, exact timestamps/offsets/QC and spectral/context-distance values; 438 baseline file hashes and 163 historical input hashes verified unchanged. Historical corrected-code hash mismatches are separate, not concealed as artifact verification. Manifest paths relative to root and absolute historical remapping explicit.
+- Saved protocol, defects, tests, clone input/dependency audit, regression comparison/dossiers, frozen audit and manifest under Block33_frf_offline_correction. Stop CHECKPOINT_33 with source-layout/coverage/deployment/history limits; no commit/push.
+
 ## 2026-09-17 — Block32 mission-neutral FRF observation client
 
 - Read task/repository instructions, frozen Block30 code/cache/tests/notes and original Block31 EOWEB record 11. Created next unused block32, strict adapters and reusable library/CLI, preserving all frozen inputs/results.

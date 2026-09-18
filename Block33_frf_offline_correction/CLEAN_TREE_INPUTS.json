@@ -1,0 +1,825 @@
+{
+  "note": "Tracked working-tree snapshot plus explicitly listed pending lightweight tests/fixtures; no cache/radar/env. Not a claim that uncommitted files are already in Git.",
+  "files": [
+    {
+      "path": "code/README_BLOCK3.md",
+      "sha256": "6822b66cf02dd7fa239feaf9500dcdb6a53d884b4ca93d42744162e1b3b26516",
+      "tracked": true
+    },
+    {
+      "path": "code/README_BLOCK4.md",
+      "sha256": "77ed1a095ddf482f8481272e023393a14c9cf52c07599a2c2fb88c78f71b59ad",
+      "tracked": true
+    },
+    {
+      "path": "code/README_FRF_CLIENT.md",
+      "sha256": "862c9534a2c7dc62fad4b17d0cd9a68113d4764a78be6731507ac79592164e0d",
+      "tracked": true
+    },
+    {
+      "path": "code/README_SUBAPERTURE.md",
+      "sha256": "d2a40ff3d136e265a9e36fe00085b1e8478b16c9c80a58a3105277c966bdbb1f",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block10_ocean_sar_forward.py",
+      "sha256": "bbb759da5438a594603ec8cbe25829b696c7fd48fc20ad81ae3c29e6eacd9f04",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block11_energy_centroid.py",
+      "sha256": "bb271d27b7f37627579ed515f12a376a522cb74f431e606bcc12c0fa8b4d4100",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block11_pairwise_omega.py",
+      "sha256": "e3b93e3aa8845cdc6ac0ea36df203aeb9af578b168b68ea6ee552f7a7c1ce7fc",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block12_dispersion.py",
+      "sha256": "0716a62e8da1e9a395d9c54a969cda957337e6d9607a208a7ade2a1666ff83f3",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block12_phase_slope.py",
+      "sha256": "c2124a621c54820e5799a4fc1aaf88ae9887080092a6c3e7ec645675d98ad154",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block13_sliding.py",
+      "sha256": "55257ad9865789028fba9e106ef9a6c111343ff5681445ac58c4fc0b0c02885e",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block14_nonlinearity.py",
+      "sha256": "1048522f2a3ed0420fd9e146b5ad1ee5c929a14f6e899849be376e0f8842ae7a",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15_mixture.py",
+      "sha256": "38deaeb7f5286a55a33b1df0d5f40400a9c57f4ddf3893eb2dfff72dea0c6ddb",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15b_frequency.py",
+      "sha256": "563bbb11c8840ae8fc69da76acc8f876515f6cd9f967c5a58c4c0fa4af2b8d03",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15c_contamination.py",
+      "sha256": "4066471ccc22265f7269dc0df2fef50ca2d1c498524f57415b92e21acb79bf73",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15d_static_offset.py",
+      "sha256": "2bab4d546f328510065bbd20ed195a400b08fbb36113e9719e5819fbd3dfe4ba",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15e_robustness.py",
+      "sha256": "f6c927ccc221396048178940b7748e53820fd9287ea9cb1c121d5c00e037e2bf",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15f_look_geometry.py",
+      "sha256": "9d3f7d41d2c733f686884231a9e5bdea2ee9e4d2d5911bbf52dcd0d8680b6e8f",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15g_separability.py",
+      "sha256": "54672c80a727de8da255151c34bdc370acbbb7a42dc93bc41b83c99c788cc504",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15h_spatial_resolution.py",
+      "sha256": "d9e571ffb2ffd2c05f2f06cceaa9da4794143e3925cdd3f2240f89cf8b01856c",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15i_discriminant.py",
+      "sha256": "d3f4104a1b4edd281ed633e9fad72685d7d5f3b667f67244e3254aec3f4b647a",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15j_multilag_increment.py",
+      "sha256": "86ad94aee098cf1d543bed983c026d6efd062c788978a78a26b9191c95533fa2",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block15k_path_closure.py",
+      "sha256": "5f99eecfe02bea0c516bda808795ed45e8760c14a1b5f2ef340a1fe5c47b5c2a",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block16_buoy_spectrum_audit.py",
+      "sha256": "c9b35c5876fd2818950647e6e45dc60d9df4a461855d772d8618f2fe1df82a26",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block16_width_criterion.py",
+      "sha256": "a291531ef956c783ff3763f1de6f8ca6dadfc6471e6fb992b0a8ccacd27932c0",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block19_feasibility_screen.py",
+      "sha256": "9e75e7dbb5801bbd2bf6ec264dd98c5fd87c6c5d9ca6f28727740d4792310acc",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block20_dispersion_consistency.py",
+      "sha256": "dd8719867255083e962844ef88cb4de4a34a7df7e38e4fb325525128dc624827",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block3_sublooks.py",
+      "sha256": "ab0c690949a8ade9337d4be284b6759ae5e819c8168ff51c09cf6668b23a59eb",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block4_phase_timeseries.py",
+      "sha256": "9e11ebbcf22bdcd1aeb41d9ddd32902b04c27f94a43c48c27261ee81caa60020",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block5_dispersion_diagnostic.py",
+      "sha256": "66d0d85f2d5ae34bf95dbbddce3776897e5befe0c075f40ab4a57d9a08c1e2a5",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block5_ndbc_spectrum.py",
+      "sha256": "ea3f9d97c762fda87e1f5b57227bb588173a49643e9d3aa1fc737a3bf20262eb",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block5_phase_theory.py",
+      "sha256": "c8c75caa1b230e724a26190533e15c9f33186c4d60f4725dd964e88f7514c039",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block5_sar_sensitivity.py",
+      "sha256": "5a4cf5742646202cdc9c86a83dfb859b32ed2fe682fee1a353a219e332fec948",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block6_phase_slope_map.py",
+      "sha256": "bf7ea7edc7e31d00ccbddb54023fadc06001baf6aae53f39837016b970dca1a4",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block7_bathy_residual.py",
+      "sha256": "39c4444001405cdbf218d1841e3c7d6672341044e03407eb8c9039377b4ae050",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block7_spatial_convergence.py",
+      "sha256": "0617c2a65cb67c9a4a88a5ed1b528f6f9b59e7c72fd3c5003090f4fa8281a7cb",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block8_ndbc_short_spectra.py",
+      "sha256": "29eee85ec4c77e71841cf0c8d1e61efeb60f1c9cf2fa46d6ee5f8a793641ceb0",
+      "tracked": true
+    },
+    {
+      "path": "code/analyze_block9_synthetic_validation.py",
+      "sha256": "c95c90be90a11d5a27d01aa8b2b516da6084aa7bd1d1be5e55a91795b904b531",
+      "tracked": true
+    },
+    {
+      "path": "code/audit_block32_frf_delivery.py",
+      "sha256": "d0332549f91bbaa1796e44a6f3000384eada9419949e703259bd87f72ab75e78",
+      "tracked": true
+    },
+    {
+      "path": "code/build_block17_manifest.py",
+      "sha256": "c9ab7c09b63c6e2d6a4eebba55811fdeb00816d49e4203b1a2280bb2a7f130b2",
+      "tracked": true
+    },
+    {
+      "path": "code/build_umbra_all_from_s3.py",
+      "sha256": "df47b90dc161e7379561e503a7c197b6f47a8829c81cf62bb4cdc3ef8fbe9b21",
+      "tracked": true
+    },
+    {
+      "path": "code/compare_block4_external_ndbc.py",
+      "sha256": "cc71be4f986da39d5606985bf4757ccb0cdde6c8b83dddb1f450549863bbc1e7",
+      "tracked": true
+    },
+    {
+      "path": "code/cphd_doppler_time_mapping.py",
+      "sha256": "9b44d1f3c7a6876ad653775a6cf97e573d93f9ce9dd4ad1ce1f9960812ad60c3",
+      "tracked": true
+    },
+    {
+      "path": "code/cphd_inspect.py",
+      "sha256": "85039386f073deaa81dcd072f487162786310edf73881d62658ce9e878eed5f3",
+      "tracked": true
+    },
+    {
+      "path": "code/crawl_umbra_open_catalog.py",
+      "sha256": "7013c6ec1b1267b1359844599b896d048571905936b89ec4ee38786f50cae69f",
+      "tracked": true
+    },
+    {
+      "path": "code/download_verified_sicd.ps1",
+      "sha256": "99fbb2681524cb746c894ba870c8d3e3deadcf345533825aba38dd54646018db",
+      "tracked": true
+    },
+    {
+      "path": "code/evaluate_block7_dispersion_gate.py",
+      "sha256": "0b353aedbc9d2297fe81c30c5d28f772cf5aef02c07ca44a139c93d42802da09",
+      "tracked": true
+    },
+    {
+      "path": "code/finalize_block18.py",
+      "sha256": "914f1a3b720ed2c278f49e06642c14322cc3862cdabd16e1a82c66af7529aa90",
+      "tracked": true
+    },
+    {
+      "path": "code/finalize_block5_width_formation.py",
+      "sha256": "2c5a7408f988862b3e6dee0d58f619e8bdf32533781a59285d63b369550ec6d4",
+      "tracked": true
+    },
+    {
+      "path": "code/finalize_block8_checkpoint.py",
+      "sha256": "c7e48345287bac0a39011fbc300dc53ebe31f7d80eca53e1234f0205dfe17060",
+      "tracked": true
+    },
+    {
+      "path": "code/finalize_verified_sicd.ps1",
+      "sha256": "f9f945f3ff038ddf021259cefd152a361e84bc68b5af4f18922c4b58e55f2af7",
+      "tracked": true
+    },
+    {
+      "path": "code/fix_block14_json_provenance.py",
+      "sha256": "5f31538c836f603d165461034e6787caa36f74830ef7d82a42d12ed3385e2fe6",
+      "tracked": true
+    },
+    {
+      "path": "code/form_block12_backprojection.py",
+      "sha256": "1979831725935cde73be677552c56ac39416864c14527fa418be044e05515783",
+      "tracked": true
+    },
+    {
+      "path": "code/form_block4_sliding_looks.py",
+      "sha256": "2fbd1e89b2dd7ce3868931bb5bbcd837f50163d284d402b1d4c03e3c7ea57781",
+      "tracked": true
+    },
+    {
+      "path": "code/form_block5_width_sensitivity.py",
+      "sha256": "e4a6094ac8795753278da2f766123423d38e30be32c857ae5f5399c30a7fa4c2",
+      "tracked": true
+    },
+    {
+      "path": "code/form_block7_enlarged_looks.py",
+      "sha256": "3e8cfdb93dd3d70b2ebf799425b213bb26c6dfe53527aca8beb3e1473d9cb169",
+      "tracked": true
+    },
+    {
+      "path": "code/form_nominal_6s_sublooks.py",
+      "sha256": "33cdb11a5b2a7e51e82205f69397c404951dd6b8cad356a204c1b58f3ef09707",
+      "tracked": true
+    },
+    {
+      "path": "code/freeze_block5_inputs.py",
+      "sha256": "5005b9418ec2c8b523ab8a5fa92cc87f2f25c16bfaa1f5c020d2157d4854d604",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/__init__.py",
+      "sha256": "858ca64d90c6a0f48ec1b2471a56382bd0aba6bed22fbc9680aacd57894265e3",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/catalog.py",
+      "sha256": "050f7b0fe0df0b3050aeca7222b4834a738b47ba50455e8c9e7bcdd262815ed6",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/client.py",
+      "sha256": "a9ca0e323e8e812db7efc3f79f3593baa791003b7d8803dfaaab76eac9559816",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/data.py",
+      "sha256": "6b63c970449ef5fa1e0750fe6a074b28dfdc59c31263ca452c4c713ad3b189f5",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/geometry.py",
+      "sha256": "926aa90918f1e1808cf7e784dff4d9966e71b050f92f8076cc54f72318743044",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/inputs.py",
+      "sha256": "1da89717057717c37715579acfbfa306962fbff4a07b013761ff9e3896b6cc42",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/output.py",
+      "sha256": "6c6cf94768595a34869ed152eba508ebe08f1cea616436f5003d24a157f70af9",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/provenance.py",
+      "sha256": "f1f0e25ee3a40f7f1d0fb2918f02c45e8b944ab4b2abfef7f578c70c58188352",
+      "tracked": false
+    },
+    {
+      "path": "code/frf_client/survey.py",
+      "sha256": "e3507cec18e076931c458998a6a25e6a649cf670adca92f1400f5b6761d641b5",
+      "tracked": true
+    },
+    {
+      "path": "code/frf_client/temporal.py",
+      "sha256": "deea5d15eb6a06d07a91b001388f5ce999d9604c132dcf317a5966d2cd3795e6",
+      "tracked": false
+    },
+    {
+      "path": "code/frf_client/transport.py",
+      "sha256": "dc72b8882f7697a6e87f631ae554e58eaedd4ad342c2e996216e19fda4828064",
+      "tracked": true
+    },
+    {
+      "path": "code/generate_checkpoint3_report.py",
+      "sha256": "efb37b491f2ebfece5ec59e4d6da921cad0aaf406c44a67fd7d95186a9f07eff",
+      "tracked": true
+    },
+    {
+      "path": "code/generate_checkpoint4_report.py",
+      "sha256": "eaf568bafe0e6c29a5b9fa5406e37ba7a4eed392a54f47c3bb264125024c3b36",
+      "tracked": true
+    },
+    {
+      "path": "code/generate_checkpoint5_report.py",
+      "sha256": "9faca95dd9b6679eca6dfc593a6447f093bc0f842a6256c27e1205de974777e3",
+      "tracked": true
+    },
+    {
+      "path": "code/list_umbra_s3_objects.py",
+      "sha256": "cc3c2ffc3106521697d6bd54272c5884c88c223e006780cc03f808b5d3e08522",
+      "tracked": true
+    },
+    {
+      "path": "code/make_gec_overview.py",
+      "sha256": "698357bff53cb74e9041c3efd801069e92453be3fbe74182f830208f1ecb7132",
+      "tracked": true
+    },
+    {
+      "path": "code/match_block8_ndbc_stations.py",
+      "sha256": "17cc73f1a46fb849e40104f77abd57a6a8e8eb0b3d382bd07ac8554032182852",
+      "tracked": true
+    },
+    {
+      "path": "code/plan_block4_sliding_looks.py",
+      "sha256": "72fd12425e4e471d2f0b5e8e59800289896a3945729b80abb2957eb7ad4fa5b7",
+      "tracked": true
+    },
+    {
+      "path": "code/plan_block7_support.py",
+      "sha256": "cba2b402f4a84c21ac3a3f52ab3c71c9754af9b47fb3bd250e167c400e086c5f",
+      "tracked": true
+    },
+    {
+      "path": "code/plan_subapertures.py",
+      "sha256": "897b95548671200f0dea0fc83f099de45b9add7b2f9c5d9d8da1b76fc64e0fef",
+      "tracked": true
+    },
+    {
+      "path": "code/plot_block15d_static_offset.py",
+      "sha256": "c1b8e908056f16ee148b7c0f664a828b2578d9440ecdc32dade99efa0a22ef16",
+      "tracked": true
+    },
+    {
+      "path": "code/plot_block15e_robustness.py",
+      "sha256": "75621fdedeba4e77447a8c8ed49130c74aaba8a666aa454cde6131cd5398774f",
+      "tracked": true
+    },
+    {
+      "path": "code/plot_block15f_look_geometry.py",
+      "sha256": "f65cc39d9ee57b4dc0f75f90299fd7f62e2efeb2983f0e65d3190b2b62b73306",
+      "tracked": true
+    },
+    {
+      "path": "code/plot_block15g_separability.py",
+      "sha256": "3efaaf9afbc76b1cb9f6e8c077dc1f2433058087614a7bfc74c66ea5f885b4e0",
+      "tracked": true
+    },
+    {
+      "path": "code/plot_nominal_doppler_windows.py",
+      "sha256": "0046611b8811964e0f4f5d92e70af1476f0233038091ea3d3aed72c37d30df11",
+      "tracked": true
+    },
+    {
+      "path": "code/query_block8_wave_model.py",
+      "sha256": "33ad11c0298b963d42d5d84cd920f0fea547303f8cb9664ecc4aad1302e8ce48",
+      "tracked": true
+    },
+    {
+      "path": "code/reconcile_block18_local_payloads.py",
+      "sha256": "91ced9526055ef242665a9c9f99fcefbdd1146638e2036535d489ff8f9aff432",
+      "tracked": true
+    },
+    {
+      "path": "code/reconcile_range_axis.py",
+      "sha256": "2dc39ca00fc9e5b711a50ac3764eb2f8e8ab36a83bb5487f1c3d86112ced07c6",
+      "tracked": true
+    },
+    {
+      "path": "code/run_block16a_scene_selection.py",
+      "sha256": "9f2017f8a52825c2bf74ec178c0cc4a14db34249ddf4d36bfda13c53c910c504",
+      "tracked": true
+    },
+    {
+      "path": "code/run_block17_selector_consolidation.py",
+      "sha256": "a73c8a56c9bda59d9d86a9d6c0279bd7eef8f6e9251602d06a1acb73ebbe3e90",
+      "tracked": true
+    },
+    {
+      "path": "code/run_block18_reference_recovery.py",
+      "sha256": "faa626504bcb2a22c12a75af7d1e38a8968e77e185baec45d9615469c5a850e5",
+      "tracked": true
+    },
+    {
+      "path": "code/run_block21_frequency_selector.py",
+      "sha256": "d2000e76acf2eeb9d5529517ba0b93e0d792ae3e99bdbba0f3f077947173fa36",
+      "tracked": true
+    },
+    {
+      "path": "code/run_block22_geographic_preflight.py",
+      "sha256": "8a8f162be61e44f0b0a9d37d08dc18f1d49fa1c5cb38996d6ea38f04e1f2689a",
+      "tracked": true
+    },
+    {
+      "path": "code/run_block30_frf_conditions.py",
+      "sha256": "ba13f0e9dc5e6f743f571de5c00d80b8c4b53dd2e4284c5c2b2a32f8dbda4007",
+      "tracked": true
+    },
+    {
+      "path": "code/run_block32_frf_client.py",
+      "sha256": "3fe10c4a5f363456e0d5e6a80304b252403507481612f4596fa352f1c21e0cfd",
+      "tracked": true
+    },
+    {
+      "path": "code/run_block33_frf_verification.py",
+      "sha256": "041719441ca783a1e2871201c161d50aeded15b6f474f95bfc0f0464513807c7",
+      "tracked": false
+    },
+    {
+      "path": "code/screen_block8_marine_geometry.py",
+      "sha256": "cbbe585c53a73d92639f6808f4e9f94e54e6228100e7a8c0736382095907a885",
+      "tracked": true
+    },
+    {
+      "path": "code/select_vandenberg_rois.py",
+      "sha256": "242bac4c4102e4df8e6fa01660145798024d6a78711db888543a47c9ef57ba16",
+      "tracked": true
+    },
+    {
+      "path": "code/sicd_metadata_from_ranges.py",
+      "sha256": "cdeea8a954b078d37c1add63a3520541665c3aab7be8c13bad340b2163523fa9",
+      "tracked": true
+    },
+    {
+      "path": "code/summarize_block15b_diagnostics.py",
+      "sha256": "3dd9a4d912c5c499df29d26e38546ae302ea923e90d6a83b681140baea4a8827",
+      "tracked": true
+    },
+    {
+      "path": "code/summarize_block15c_contamination.py",
+      "sha256": "0f6dae5601bed663aa660a2d1945f00cec0acb8622ce3a10673d33de20236d06",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/__init__.py",
+      "sha256": "7a8cebd6158364e6e891530239c44856bb4bb303224a82d432fd71ec538e8cf9",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/aperture_weighting.py",
+      "sha256": "39c388723609881473c90e10674b05d908637c85eb2cc89bb71a7db0b934fe37",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/backprojection.py",
+      "sha256": "2a7e8a8b85cbd221379eeb26fff2567b73f65c974a6bb7149b90e1f78e380171",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/contamination_diagnostic.py",
+      "sha256": "6b72937c0444b5cc7e9fba401d8d75e0f2bc8e607a09d06c05da2e6c9894a168",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/correlated_offset_validation.py",
+      "sha256": "a724bde8d63790fdf2808ee7c42884b84deda56508507f896281fc2a89754063",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/cross_spectrum.py",
+      "sha256": "a5b68061f171af384bd6aea00a1e017026daa907c3be531f0f5b64113ee0bc59",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/formation_path_comparison.py",
+      "sha256": "94475275092df4541da0d6a590d88a799c779fdfae1e5f3da70225de9d2dea35",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/frequency_comparison.py",
+      "sha256": "08d0c60f1374a39511fa5ce285cc9e60b937bb10378d4bc73b62ca0ecaa69d73",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/frequency_validation_selector.py",
+      "sha256": "6ad688d1fa9307809e5963d071cef2de9d9119357d61765e017808779fde8c4b",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/geographic_preflight.py",
+      "sha256": "c1922b46c70bdad827565a87f6ff3d8eff976e3b461e6213b99b6809c72e8b54",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/look_transfer_geometry.py",
+      "sha256": "49623db86501772a94b7a754d3a808e9dd01e36be0434b55ffb1b3f1d0cd8a19",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/multilag_increment.py",
+      "sha256": "a52dff7a384f600f085d148dc30ef5a99c266d56ae1ac2396cf7b475f67479cc",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/ocean_sar_forward.py",
+      "sha256": "b6a163845618711e017583a26ca63af5b3c5850726860d471c476e97b8655cc8",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/physical_identification.py",
+      "sha256": "3692f05322cf340eb967ed6575cb17a4fae8b214b78c8abb240ef20b83b62e18",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/reference_recovery.py",
+      "sha256": "98e42ddea3c2c702e882d9d3fd67e5af4226006a580a5c71f3fedb8508c3c5de",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/scene_selection.py",
+      "sha256": "62862bbc35ebe1ab78a1f451dcf62b520242335be7375a32d0dbb879238b18d0",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/selector_consolidation.py",
+      "sha256": "87b0c5d7a3aca192f4608e19bdb7983bf26d8fa249b0f12c47058d740b6b6013",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/spatial_resolution.py",
+      "sha256": "624077f6dd4ad61ec3e677b0a55a5a471cccf1bc91d512d70d5b52585b3b5648",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/static_offset_diagnostic.py",
+      "sha256": "9bb1038493d4d0ef4c48f6b51750787f2dd5982c0402eb8c6e66621a3e5e7d95",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/subaperture.py",
+      "sha256": "01fbdf7f4b80279d8907f725e108b406110a1b0ebe56fb87bece9d8d2852535f",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/synthetic_validation.py",
+      "sha256": "0388482340ffd7afa83850ed59dc353611668baf928e945c333355e9d0c5559e",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/two_component_separability.py",
+      "sha256": "0bd136095db216093ed1c1ed4dc0794d5177df97ca4b750074522133098d006a",
+      "tracked": true
+    },
+    {
+      "path": "code/umbra_sar/wave_analysis.py",
+      "sha256": "2c02c07eb3ba68885d8703da7132c20d66844d7c77ec49736de531882c2a4ac4",
+      "tracked": true
+    },
+    {
+      "path": "code/validate_block15_estimator_mixture.py",
+      "sha256": "895d57a3afe48dd1ce29238eb9b28c21f539ad30c67ab39ffa51e7001b8374f2",
+      "tracked": true
+    },
+    {
+      "path": "code/verify_block18_offline.py",
+      "sha256": "7561ba38cc9422e8c0bab265478c05e7fe10e0a09211651151dfa20bc001a590",
+      "tracked": true
+    },
+    {
+      "path": "code/verify_downloaded_sicd.py",
+      "sha256": "341b49d12b90e340ad8371702b741813079c637d52957750ed333b8c62e3f3e7",
+      "tracked": true
+    },
+    {
+      "path": "code/verify_s3_multipart_etag.py",
+      "sha256": "41472b35ce225b7d90808392aea391ede767550b50d678e33c8a8f45ed72eb8e",
+      "tracked": true
+    },
+    {
+      "path": "requirements-thesis.txt",
+      "sha256": "715cae35aed31da317b03bf762863c272149d44b77a3ab9fdd892b23a9fda144",
+      "tracked": true
+    },
+    {
+      "path": "tests/README.md",
+      "sha256": "2c7bdfb06423599a60f6a5b2485cf9a2745396902ed95c1f272c65d368dda0ac",
+      "tracked": true
+    },
+    {
+      "path": "tests/TEST_METRICS.json",
+      "sha256": "6158332dc90c5e103657bd7361e8e90aac0be10c5746edfe756f6d4f363519cd",
+      "tracked": true
+    },
+    {
+      "path": "tests/TEST_REPORT.md",
+      "sha256": "a8a45454c741b7ee3bc5f7ed1f68a3200ae7fb5c58c9ac31d42bd5e6c44e5417",
+      "tracked": true
+    },
+    {
+      "path": "tests/TEST_REPORT_BLOCK3.md",
+      "sha256": "049cb59311cb4af3aae227d06a2ea718ec4b78fdbe59de2e61396397a20e5d8d",
+      "tracked": true
+    },
+    {
+      "path": "tests/TEST_REPORT_BLOCK4.md",
+      "sha256": "f16391b167c6491d7ae8210920c21bde5acd887b9e7260b909f8113e4a80db4b",
+      "tracked": true
+    },
+    {
+      "path": "tests/TEST_REPORT_BLOCK5.md",
+      "sha256": "56242f8a05a7a6c6826b7137f7c53426fe2cac10135785cebec55634e3df659b",
+      "tracked": true
+    },
+    {
+      "path": "tests/TEST_REPORT_BLOCK6.md",
+      "sha256": "bcf7fb5eebe96eb3e3e6bbf492adff9e86b9207fc2538b9c43c69dad3191a0ba",
+      "tracked": true
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "213b1aac3401e80906b905f36c88c3694edb37dd98953d624aeb850153f1341d",
+      "tracked": true
+    },
+    {
+      "path": "tests/fixtures/frf_block33/catalog.xml",
+      "sha256": "64d82aadbe83706b10b3835e1ee00fa911fd917989998da09e4298953a6c4218",
+      "tracked": false
+    },
+    {
+      "path": "tests/fixtures/frf_block33/new.das",
+      "sha256": "b09c57ec69d302b3b41418879c3b4dbd38dedee398f814e3fc80fdfe46e27ca7",
+      "tracked": false
+    },
+    {
+      "path": "tests/fixtures/frf_block33/new.dds",
+      "sha256": "c397fb614ab501e41231f5bc9557f4f47316743c6ecfbee0958f9a64d368369f",
+      "tracked": false
+    },
+    {
+      "path": "tests/generate_test_report.py",
+      "sha256": "b24cb238cb88621e6fac5c6b11dfb8c16fd3a11c2a8c1b21b193b0344568affe",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_block10_ocean_sar_forward.py",
+      "sha256": "fcc2c4d48aedda6e1a1a80bed9f5909b7b81e9827fc5b77b9f741b5af15e09c4",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_block30_frf_conditions.py",
+      "sha256": "d9a7fa5a0c05ae0436d9ca207bcc45ed53b74b42f44ef08b6c19551f8de0557a",
+      "tracked": false
+    },
+    {
+      "path": "tests/test_block5_artifacts.py",
+      "sha256": "30bdceef670e9f7381e7d2a8e29fd78ad296e3a8c1b3a60d54bc3ab68a255a9f",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_block6_artifacts.py",
+      "sha256": "34861fd283d1e58a3510e8849f0e2018b914a3f67c0446c703d4563cba8976c3",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_block7_artifacts.py",
+      "sha256": "01af1e6cb15210869c95642660f7e16ee489f18c22a60ee8808481d201130b67",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_block9_synthetic_validation.py",
+      "sha256": "db93bf2ff8fe31bb24f6e77bcfe458961a1197f8f72bd73627556e8adf7b99c4",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_contamination_diagnostic.py",
+      "sha256": "74770795668106e41973dae82d034772898939fb477a363253a34a7b31dcc092",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_correlated_offset_validation.py",
+      "sha256": "3d2d07ba232a99d4993e278775a8ff703ec4436df77e39c6f9ad13651eaf2b35",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_formation_path_comparison.py",
+      "sha256": "e5318e333c6c48fbf2d7ee22d6c905df731031f9418d149f8b89266103ae28a2",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_frequency_comparison.py",
+      "sha256": "9be90a3ffc20f92663b9df8d7ae04d222aedd3945b8a0a0cc6d54e04eeb70cd0",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_frequency_validation_selector.py",
+      "sha256": "00d69348a55f3ffadc9baaa8e685bed6226e7e6fe8f50a43cf42f199b565cd92",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_frf_block33.py",
+      "sha256": "f9320bfc7c33d8ccf21e525dd48ea8a93c672d2117ab220ac9237c1f2ccb599e",
+      "tracked": false
+    },
+    {
+      "path": "tests/test_frf_client.py",
+      "sha256": "442cce528c6cc12d8601b253390fe380b3a65bc6803dfe822de65966781104fa",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_geographic_preflight.py",
+      "sha256": "91b9995bd8e9bbe45e56c2d2fa547d04f3cbfb0618c4653d8a9a9e7701696e3b",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_look_transfer_geometry.py",
+      "sha256": "45b5ed14409eb0cd10053d9c7e9d13e48ad8c2d06fe193f7967c4f7e465840e7",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_multilag_increment.py",
+      "sha256": "7c21c90a9c95d2b2423e90447929ab902c61e6ddfde8f6c39ded73b481f4299f",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_phase_slope_map.py",
+      "sha256": "98a8342ec7362c8747a2e712b4b26ce562c2f8ada68c956800d1983daed0d621",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_physical_identification.py",
+      "sha256": "71af9ef63decfd035fed2994d1833521ba3a8ed26ae8494fef91ab6708302694",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_reference_recovery.py",
+      "sha256": "bcaf99ea68771acbf9e93260a3ac6391f6af24b1051c57e57e2987df9cc24bfb",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_scene_selection.py",
+      "sha256": "4c7da00be1a1bff055b540f26850da3e556ab9b5f239be274c86a67476aec738",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_selector_consolidation.py",
+      "sha256": "6a102ee19ef600ad37c4b001d56ababf559ad0815873e1e65715f6aa0dffc504",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_spatial_resolution.py",
+      "sha256": "2435e187a0fc068d57163384a71fd3e761e753b44ffe815ef435c1eb7c01cfe9",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_static_offset_diagnostic.py",
+      "sha256": "ab52f695305f392143c4bb08599e7a5b68f8f0b88d055f654a040b6c94cbcf5b",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_subaperture.py",
+      "sha256": "e5c670df2ab2cf382bafb8cd4a2683ce09437869f05b6847ff1891daafe2ba23",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_two_component_separability.py",
+      "sha256": "c52941b290cf7bf6ed52c1980748f2432573ffa45db13870140165faebb560d4",
+      "tracked": true
+    },
+    {
+      "path": "tests/test_wave_analysis.py",
+      "sha256": "9ddcbd525086d5fd1539240ba5e19a6f36f87dabf01b271c8b6edc08d4631894",
+      "tracked": true
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "active_start": "2018-06-28",
+    "active_stop": "",
+    "station_id": "41052",
+    "station_lat": 18.249,
+    "station_lon": -64.763,
+    "station_name": "South of St. John, VI",
+    "station_owner": "Caribbean Integrated Coastal Ocean Observing System (CarICoos)",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2011-03-24",
+    "active_stop": "2018-06-28",
+    "station_id": "41052",
+    "station_lat": 18.249,
+    "station_lon": -64.763,
+    "station_name": "South of St. John, VI",
+    "station_owner": "Caribbean Integrated Coastal Ocean Observing System (CarICoos)",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2021-06-01",
+    "active_stop": "",
+    "station_id": "42084",
+    "station_lat": 28.988,
+    "station_lon": -89.649,
+    "station_name": "Southwest Pass Entrance W, LA (256)",
+    "station_owner": "SCRIPPS",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2014-09-23",
+    "active_stop": "",
+    "station_id": "42087",
+    "station_lat": 11.185,
+    "station_lon": -60.848,
+    "station_name": "Buccoo Reef, Buccoo Marine Park, TT",
+    "station_owner": "Integrated Coral Observing Network (ICON)",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2019-09-04",
+    "active_stop": "",
+    "station_id": "42094",
+    "station_lat": 29.085,
+    "station_lon": -89.907,
+    "station_name": "Grand Isle, LA (246)",
+    "station_owner": "SCRIPPS",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2024-06-14",
+    "active_stop": "",
+    "station_id": "51209",
+    "station_lat": -14.273,
+    "station_lon": -170.501,
+    "station_name": "Aunuu, American Samoa (189)",
+    "station_owner": "Pacific Islands Ocean Observing System",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2018-05-24",
+    "active_stop": "2024-06-14",
+    "station_id": "51209",
+    "station_lat": -14.273,
+    "station_lon": -170.501,
+    "station_name": "Aunuu, American Samoa (189)",
+    "station_owner": "Pacific Islands Ocean Observing System",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2017-03-30",
+    "active_stop": "2018-05-24",
+    "station_id": "51209",
+    "station_lat": -14.264,
+    "station_lon": -170.493,
+    "station_name": "Aunuu, American Samoa (189)",
+    "station_owner": "Pacific Islands Ocean Observing System",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2016-03-02",
+    "active_stop": "2017-03-30",
+    "station_id": "51209",
+    "station_lat": -14.265,
+    "station_lon": -170.494,
+    "station_name": "Aunuu, American Samoa (189)",
+    "station_owner": "Pacific Islands Ocean Observing System",
+    "station_program": "IOOS Partners"
+  },
+  {
+    "active_start": "2014-10-24",
+    "active_stop": "2016-03-02",
+    "station_id": "51209",
+    "station_lat": -14.265,
+    "station_lon": -170.493,
+    "station_name": "Aunuu, American Samoa (189)",
+    "station_owner": "Pacific Islands Ocean Observing System",
+    "station_program": "IOOS Partners"
+  }
+]

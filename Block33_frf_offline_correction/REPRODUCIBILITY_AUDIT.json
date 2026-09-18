@@ -1,0 +1,303 @@
+{
+  "dependencies": [
+    {
+      "package": "colorama",
+      "pinned": "0.4.6",
+      "installed": "0.4.6",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "contourpy",
+      "pinned": "1.3.3",
+      "installed": "1.3.3",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "cycler",
+      "pinned": "0.12.1",
+      "installed": "0.12.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "Deprecated",
+      "pinned": "1.3.1",
+      "installed": "1.3.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "fonttools",
+      "pinned": "4.64.0",
+      "installed": "4.64.0",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "h5py",
+      "pinned": "3.16.0",
+      "installed": "3.16.0",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "iniconfig",
+      "pinned": "2.3.0",
+      "installed": "2.3.0",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "jbpy",
+      "pinned": "0.6.1",
+      "installed": "0.6.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "kiwisolver",
+      "pinned": "1.5.1",
+      "installed": "1.5.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "lxml",
+      "pinned": "6.1.2",
+      "installed": "6.1.2",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "matplotlib",
+      "pinned": "3.11.1",
+      "installed": "3.11.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "numpy",
+      "pinned": "2.5.2",
+      "installed": "2.5.2",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "packaging",
+      "pinned": "26.3",
+      "installed": "26.3",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "pillow",
+      "pinned": "12.3.0",
+      "installed": "12.3.0",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "pluggy",
+      "pinned": "1.6.0",
+      "installed": "1.6.0",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "Pygments",
+      "pinned": "2.21.0",
+      "installed": "2.21.0",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "pyparsing",
+      "pinned": "3.3.2",
+      "installed": "3.3.2",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "pytest",
+      "pinned": "9.1.1",
+      "installed": "9.1.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "python-dateutil",
+      "pinned": "2.9.0.post0",
+      "installed": "2.9.0.post0",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "sarkit",
+      "pinned": "1.10.1",
+      "installed": "1.10.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "sarpy",
+      "pinned": "2.0.1",
+      "installed": "2.0.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "scipy",
+      "pinned": "1.18.1",
+      "installed": "1.18.1",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "shapely",
+      "pinned": "2.1.2",
+      "installed": "2.1.2",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "six",
+      "pinned": "1.17.0",
+      "installed": "1.17.0",
+      "status": "pinned_installed_match"
+    },
+    {
+      "package": "wrapt",
+      "pinned": "2.4.0",
+      "installed": "2.4.0",
+      "status": "pinned_installed_match"
+    }
+  ],
+  "files": [
+    {
+      "path": "Block32_frf_client/REGRESSION_ACQUISITIONS.json",
+      "available": true,
+      "tracked": true,
+      "sha256": "ecf4cba71b38a7913e8723fdbeb345d4ff12a82efd064284f497236eb3384837"
+    },
+    {
+      "path": "code/frf_client/__init__.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "858ca64d90c6a0f48ec1b2471a56382bd0aba6bed22fbc9680aacd57894265e3"
+    },
+    {
+      "path": "code/frf_client/catalog.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "050f7b0fe0df0b3050aeca7222b4834a738b47ba50455e8c9e7bcdd262815ed6"
+    },
+    {
+      "path": "code/frf_client/client.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "a9ca0e323e8e812db7efc3f79f3593baa791003b7d8803dfaaab76eac9559816"
+    },
+    {
+      "path": "code/frf_client/data.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "6b63c970449ef5fa1e0750fe6a074b28dfdc59c31263ca452c4c713ad3b189f5"
+    },
+    {
+      "path": "code/frf_client/geometry.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "926aa90918f1e1808cf7e784dff4d9966e71b050f92f8076cc54f72318743044"
+    },
+    {
+      "path": "code/frf_client/inputs.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "1da89717057717c37715579acfbfa306962fbff4a07b013761ff9e3896b6cc42"
+    },
+    {
+      "path": "code/frf_client/output.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "6c6cf94768595a34869ed152eba508ebe08f1cea616436f5003d24a157f70af9"
+    },
+    {
+      "path": "code/frf_client/provenance.py",
+      "available": true,
+      "tracked": false,
+      "sha256": "f1f0e25ee3a40f7f1d0fb2918f02c45e8b944ab4b2abfef7f578c70c58188352"
+    },
+    {
+      "path": "code/frf_client/survey.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "e3507cec18e076931c458998a6a25e6a649cf670adca92f1400f5b6761d641b5"
+    },
+    {
+      "path": "code/frf_client/temporal.py",
+      "available": true,
+      "tracked": false,
+      "sha256": "deea5d15eb6a06d07a91b001388f5ce999d9604c132dcf317a5966d2cd3795e6"
+    },
+    {
+      "path": "code/frf_client/transport.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "dc72b8882f7697a6e87f631ae554e58eaedd4ad342c2e996216e19fda4828064"
+    },
+    {
+      "path": "code/run_block30_frf_conditions.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "ba13f0e9dc5e6f743f571de5c00d80b8c4b53dd2e4284c5c2b2a32f8dbda4007"
+    },
+    {
+      "path": "code/run_block32_frf_client.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "3fe10c4a5f363456e0d5e6a80304b252403507481612f4596fa352f1c21e0cfd"
+    },
+    {
+      "path": "code/run_block33_frf_verification.py",
+      "available": true,
+      "tracked": false,
+      "sha256": "041719441ca783a1e2871201c161d50aeded15b6f474f95bfc0f0464513807c7"
+    },
+    {
+      "path": "requirements-thesis.txt",
+      "available": true,
+      "tracked": true,
+      "sha256": "715cae35aed31da317b03bf762863c272149d44b77a3ab9fdd892b23a9fda144"
+    },
+    {
+      "path": "tests/conftest.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "213b1aac3401e80906b905f36c88c3694edb37dd98953d624aeb850153f1341d"
+    },
+    {
+      "path": "tests/fixtures/frf_block33/catalog.xml",
+      "available": true,
+      "tracked": false,
+      "sha256": "64d82aadbe83706b10b3835e1ee00fa911fd917989998da09e4298953a6c4218"
+    },
+    {
+      "path": "tests/fixtures/frf_block33/new.das",
+      "available": true,
+      "tracked": false,
+      "sha256": "b09c57ec69d302b3b41418879c3b4dbd38dedee398f814e3fc80fdfe46e27ca7"
+    },
+    {
+      "path": "tests/fixtures/frf_block33/new.dds",
+      "available": true,
+      "tracked": false,
+      "sha256": "c397fb614ab501e41231f5bc9557f4f47316743c6ecfbee0958f9a64d368369f"
+    },
+    {
+      "path": "tests/test_block30_frf_conditions.py",
+      "available": true,
+      "tracked": false,
+      "sha256": "d9a7fa5a0c05ae0436d9ca207bcc45ed53b74b42f44ef08b6c19551f8de0557a"
+    },
+    {
+      "path": "tests/test_frf_block33.py",
+      "available": true,
+      "tracked": false,
+      "sha256": "f9320bfc7c33d8ccf21e525dd48ea8a93c672d2117ab220ac9237c1f2ccb599e"
+    },
+    {
+      "path": "tests/test_frf_client.py",
+      "available": true,
+      "tracked": true,
+      "sha256": "442cce528c6cc12d8601b253390fe380b3a65bc6803dfe822de65966781104fa"
+    }
+  ],
+  "ordinary_offline_tests": [
+    "tests/test_frf_client.py",
+    "tests/test_frf_block33.py",
+    "tests/test_block30_frf_conditions.py"
+  ],
+  "cache_regression_requires": "Verified private Block32 cache; otherwise explicitly not executable. No request or fabricated cache.",
+  "historical_audit_requires": "Historical original exports/artifacts are not all tracked; statuses distinguish unavailable/unresolved/mismatch/verified.",
+  "pending_versioning_note": "No commit/push authorized; clean-tree snapshot includes explicitly listed pending files, not a claim about current remote HEAD.",
+  "actual_http_transactions": 0
+}

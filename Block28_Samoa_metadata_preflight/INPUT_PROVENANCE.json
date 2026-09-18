@@ -1,0 +1,22 @@
+[
+  {
+    "bytes": 50729549,
+    "path": "Block21_frequency_validation_selector\\BLOCK21_ALL_CANDIDATES.csv",
+    "sha256": "453e22c488967bded8e59ba2994505dd7073b1c42f0a8f08211be2a220efe9d1"
+  },
+  {
+    "bytes": 47236,
+    "path": "Block27_frequency_query\\representativity_v2\\ACQUISITION_AUDIT.csv",
+    "sha256": "8698a9b36ac4b9ba935a6ca06d5a017b4957d367b34f8146cfc6d49376c78aac"
+  },
+  {
+    "bytes": 10186,
+    "path": "Block27_frequency_query\\representativity_v2\\raw\\17d385f6487e88b4ffce594a605c3614d3ba125903eac81c8faa7988439a8ac1.txt",
+    "sha256": "162337cb27f5c8fbd2204abe17eee8efcdfad047928257ba6d32ff5513645067"
+  },
+  {
+    "bytes": 12357,
+    "path": "Block27_frequency_query\\representativity_v2\\normalized\\1424a3c8-7285-4210-b965-069514c13a2a.json",
+    "sha256": "ce0f461c789aa649ba0e0050be40fc4a76addb9d21bf4c1cefdc0359fb1750f8"
+  }
+]
