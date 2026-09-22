@@ -1,0 +1,164 @@
+[
+  {
+    "uuid": "c49a9c1f-9b00-5676-ab05-683975d898a2",
+    "credentials_configured": false,
+    "protected_content_not_bypassed": true,
+    "preview": {
+      "source": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(646964cc-c740-431b-978c-06461df1b5a5)/$value",
+      "file": "previews\\c49a9c1f-9b00-5676-ab05-683975d898a2.png",
+      "bytes": 45897,
+      "interpretation": "compressed auxiliary only; no k or recoverability measurement"
+    },
+    "annotations": {
+      "result": [
+        {
+          "Id": "s1a-iw2-slc-vh-20211028t230636-20211028t230701-040326-04c765-002.xml",
+          "Name": "s1a-iw2-slc-vh-20211028t230636-20211028t230701-040326-04c765-002.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw2-slc-vh-20211028t230636-20211028t230701-040326-04c765-002.xml)/Nodes"
+          },
+          "ContentLength": 884791,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml",
+          "Name": "s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml)/Nodes"
+          },
+          "ContentLength": 884745,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "s1a-iw3-slc-vh-20211028t230637-20211028t230702-040326-04c765-003.xml",
+          "Name": "s1a-iw3-slc-vh-20211028t230637-20211028t230702-040326-04c765-003.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw3-slc-vh-20211028t230637-20211028t230702-040326-04c765-003.xml)/Nodes"
+          },
+          "ContentLength": 798279,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+          "Name": "s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/Nodes"
+          },
+          "ContentLength": 798263,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "calibration",
+          "Name": "calibration",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes"
+          },
+          "ContentLength": 0,
+          "ChildrenNumber": 12
+        },
+        {
+          "Id": "s1a-iw1-slc-vh-20211028t230638-20211028t230703-040326-04c765-001.xml",
+          "Name": "s1a-iw1-slc-vh-20211028t230638-20211028t230703-040326-04c765-001.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw1-slc-vh-20211028t230638-20211028t230703-040326-04c765-001.xml)/Nodes"
+          },
+          "ContentLength": 893355,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml",
+          "Name": "s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml)/Nodes"
+          },
+          "ContentLength": 893398,
+          "ChildrenNumber": 0
+        }
+      ]
+    },
+    "annotation_content_error": {
+      "status": "authentication_required",
+      "code": 401,
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml)/$value"
+    }
+  },
+  {
+    "uuid": "d982f98d-9739-5a03-aa42-27407da87d7e",
+    "credentials_configured": false,
+    "protected_content_not_bypassed": true,
+    "preview": {
+      "source": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(9b9e42a7-c083-438c-a640-3aba0bfe8f42)/$value",
+      "file": "previews\\d982f98d-9739-5a03-aa42-27407da87d7e.png",
+      "bytes": 23559,
+      "interpretation": "compressed auxiliary only; no k or recoverability measurement"
+    },
+    "annotations": {
+      "result": [
+        {
+          "Id": "s1a-iw1-slc-vv-20211011t225806-20211011t225834-040078-04bec7-004.xml",
+          "Name": "s1a-iw1-slc-vv-20211011t225806-20211011t225834-040078-04bec7-004.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes(s1a-iw1-slc-vv-20211011t225806-20211011t225834-040078-04bec7-004.xml)/Nodes"
+          },
+          "ContentLength": 912565,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "s1a-iw2-slc-vh-20211011t225807-20211011t225834-040078-04bec7-002.xml",
+          "Name": "s1a-iw2-slc-vh-20211011t225807-20211011t225834-040078-04bec7-002.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes(s1a-iw2-slc-vh-20211011t225807-20211011t225834-040078-04bec7-002.xml)/Nodes"
+          },
+          "ContentLength": 906608,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "s1a-iw2-slc-vv-20211011t225807-20211011t225834-040078-04bec7-005.xml",
+          "Name": "s1a-iw2-slc-vv-20211011t225807-20211011t225834-040078-04bec7-005.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes(s1a-iw2-slc-vv-20211011t225807-20211011t225834-040078-04bec7-005.xml)/Nodes"
+          },
+          "ContentLength": 906561,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "s1a-iw3-slc-vh-20211011t225808-20211011t225835-040078-04bec7-003.xml",
+          "Name": "s1a-iw3-slc-vh-20211011t225808-20211011t225835-040078-04bec7-003.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes(s1a-iw3-slc-vh-20211011t225808-20211011t225835-040078-04bec7-003.xml)/Nodes"
+          },
+          "ContentLength": 814650,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "s1a-iw3-slc-vv-20211011t225808-20211011t225835-040078-04bec7-006.xml",
+          "Name": "s1a-iw3-slc-vv-20211011t225808-20211011t225835-040078-04bec7-006.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes(s1a-iw3-slc-vv-20211011t225808-20211011t225835-040078-04bec7-006.xml)/Nodes"
+          },
+          "ContentLength": 814638,
+          "ChildrenNumber": 0
+        },
+        {
+          "Id": "calibration",
+          "Name": "calibration",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes"
+          },
+          "ContentLength": 0,
+          "ChildrenNumber": 12
+        },
+        {
+          "Id": "s1a-iw1-slc-vh-20211011t225806-20211011t225834-040078-04bec7-001.xml",
+          "Name": "s1a-iw1-slc-vh-20211011t225806-20211011t225834-040078-04bec7-001.xml",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes(s1a-iw1-slc-vh-20211011t225806-20211011t225834-040078-04bec7-001.xml)/Nodes"
+          },
+          "ContentLength": 912510,
+          "ChildrenNumber": 0
+        }
+      ]
+    },
+    "annotation_content_error": "content endpoint protected: not retried without credentials"
+  }
+]

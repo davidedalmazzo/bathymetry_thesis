@@ -1,0 +1,14 @@
+{
+  "command": [
+    ".venv-umbra-thesis/Scripts/python.exe",
+    "-m",
+    "pytest",
+    "-q",
+    "--basetemp=D:/Dati Tesi/Umbra/_tmp/pytest_block37_final_20260920"
+  ],
+  "exit_code": 0,
+  "summary": "370 passed, 1 warning in 40.39 s",
+  "warning": "synthetic complex GeoTIFF has identity geotransform and is intentionally not georeferenced",
+  "interpreter": "D:/Dati Tesi/Umbra/.venv-umbra-thesis/Scripts/python.exe",
+  "authoritative_complete_suite": true
+}

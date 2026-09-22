@@ -60,11 +60,15 @@ def ascii_arrays(text):
         raise ValueError("Not DAP2 ASCII data")
     body = re.split(r"^-{10,}\s*$", text, flags=re.M)[1]
     headings = list(re.finditer(r"^\s*([A-Za-z_]\w*(?:\.[A-Za-z_]\w*)*)((?:\[\d+\])*)\s*$", body, re.M))
+    inline_scalars = list(re.finditer(r"^\s*([A-Za-z_]\w*)\s*,\s*([^,\n]+)\s*$",body,re.M))
     result = {}
     for j, heading in enumerate(headings):
         name = heading[1]
         dims = tuple(int(x) for x in re.findall(r"\[(\d+)\]", heading[2]))
-        fragment = body[heading.end():headings[j+1].start() if j+1 < len(headings) else len(body)]
+        end = headings[j+1].start() if j+1 < len(headings) else len(body)
+        # An inline scalar also terminates the preceding vector/GRID body.
+        end = min([end]+[s.start() for s in inline_scalars if heading.end() <= s.start() < end])
+        fragment = body[heading.end():end]
         if len(dims) <= 1 and "." not in name:
             values = parse_ascii_vector("--------------------\n" + heading[0] + fragment, name)
         else:
@@ -83,14 +87,14 @@ def ascii_arrays(text):
             raise ValueError(f"Shape mismatch for {name}: {len(values)} vs {dims}")
         array = np.asarray(values, float).reshape(dims or ())
         result[name] = array
-    if not result:
-        raise ValueError("Empty DAP payload")
     # DAP2 scalars are inline ("latitude, 36.2"), unlike array headings.
-    for scalar in re.finditer(r"^\s*([A-Za-z_]\w*)\s*,\s*([^,\n]+)\s*$",body,re.M):
+    for scalar in inline_scalars:
         try:
             result[scalar[1]] = np.asarray(float(scalar[2]))
         except ValueError:
             continue
+    if not result:
+        raise ValueError("Empty DAP payload")
     # DAP2 GRID returns array.array plus array.dimension maps. Validate, then
     # canonicalize them; otherwise a retrieved spectrum would be invisible.
     canonical = {}

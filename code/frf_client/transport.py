@@ -26,7 +26,15 @@ def save_json(path, obj):
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_suffix(path.suffix + ".tmp")
     temporary.write_text(json.dumps(obj, indent=2, allow_nan=False), encoding="utf-8")
-    temporary.replace(path)
+    # Windows readers/antivirus may briefly deny atomic replacement. This is a
+    # local persistence retry only; it never repeats an HTTP transaction.
+    for attempt in range(6):
+        try:
+            temporary.replace(path)
+            break
+        except PermissionError:
+            if attempt == 5:raise
+            time.sleep(.05)
 
 
 def safe_url(url):
@@ -142,13 +150,15 @@ class Transport:
             imported.append({"url": safe_url(url), "status": "verified_legacy_reused"})
         return imported
 
-    def import_verified(self,directory):
+    def import_verified(self,directory,predicate=None):
         """Copy verified payloads only; never import/reset another tranche's state."""
         imported=[]
         for path in sorted(Path(directory).glob('*.json')):
             entry=json.loads(path.read_text())
             if entry.get('status')!='ok' or not entry.get('url'):continue
-            url=entry['url'];self._validate_url(url)
+            url=entry['url']
+            if predicate is not None and not predicate(url):continue
+            self._validate_url(url)
             payload=path.with_suffix('.payload')
             if not payload.exists():imported.append({'url':safe_url(url),'status':'source_payload_unavailable'});continue
             raw=payload.read_bytes()
@@ -174,8 +184,17 @@ class Transport:
             raise FetchError("cache_hash_mismatch")
         return raw
 
-    def get(self, url):
+    def get(self, url, *, authorization_bearer=None):
+        """GET with an optional in-memory bearer token that is never persisted.
+
+        The URL remains the cache identity. Authentication material is accepted
+        only as a syntactically safe bearer value and is absent from logs,
+        metadata, exceptions and cache provenance.
+        """
         self._validate_url(url)
+        if authorization_bearer is not None:
+            if not isinstance(authorization_bearer,str) or not authorization_bearer or any(c.isspace() for c in authorization_bearer):
+                raise FetchError("invalid_bearer_token")
         try:
             return self.cached(url)
         except FetchError as exc:
@@ -184,6 +203,7 @@ class Transport:
         if self.offline:
             raise FetchError("offline_cache_miss")
         original_url, redirects, retry = url, 0, 0
+        credential_host=urlsplit(url).hostname if authorization_bearer is not None else None
         while True:
             self._validate_url(url)
             if self.state["transactions"] >= self.state["max_transactions"] or self.state["bytes"] >= self.state["max_bytes"]:
@@ -200,7 +220,10 @@ class Transport:
             code, headers = None, {}
             try:
                 try:
-                    response = self.opener.open(urllib.request.Request(url, headers={"User-Agent": "FRF-thesis-client/0.1"}), timeout=self.timeout)
+                    headers={"User-Agent": "FRF-thesis-client/0.1"}
+                    if authorization_bearer is not None:
+                        headers["Authorization"]="Bearer "+authorization_bearer
+                    response = self.opener.open(urllib.request.Request(url, headers=headers), timeout=self.timeout)
                     code, headers = response.status, response.headers
                 except urllib.error.HTTPError as exc:
                     response, code, headers = exc, exc.code, exc.headers
@@ -244,7 +267,10 @@ class Transport:
                 if code in (301, 302, 303, 307, 308):
                     if redirects >= 4 or not headers.get("Location"):
                         raise FetchError("redirect_limit")
-                    url = urljoin(url, headers["Location"])
+                    target=urljoin(url, headers["Location"])
+                    if credential_host is not None and urlsplit(target).hostname!=credential_host:
+                        raise FetchError("authenticated_cross_origin_redirect")
+                    url = target
                     redirects += 1
                     continue
                 if code in (429, 500, 502, 503, 504) and retry < self.retries:
@@ -279,11 +305,63 @@ class Transport:
                 self._failure(original_url, status, bytes_received=self.state["bytes"]-starting_bytes)
                 raise FetchError(status) from None
             except FetchError as exc:
-                self._failure(original_url, exc.status, exc.code, bytes_received=self.state["bytes"]-starting_bytes)
+                if authorization_bearer is not None and exc.status=='authentication_required':
+                    self.log(url=safe_url(original_url),status=exc.status,code=exc.code,
+                             bytes_received=self.state['bytes']-starting_bytes,cache='not_persisted_for_token_refresh')
+                else:
+                    self._failure(original_url, exc.status, exc.code, bytes_received=self.state["bytes"]-starting_bytes)
                 raise
             finally:
                 if response is not None:
                     response.close()
+
+    def post_form_secret(self,url,fields):
+        """POST a secret form without caching or persisting body/response content.
+
+        The transaction and encoded response bytes share this transport's
+        persistent budget. Redirects and automatic retries are deliberately
+        refused; callers bound any credential/MFA/refresh attempts.
+        """
+        self._validate_url(url)
+        if not isinstance(fields,dict) or not fields or not all(isinstance(k,str) and isinstance(v,str) for k,v in fields.items()):
+            raise FetchError('invalid_secret_form')
+        if self.offline:raise FetchError('offline_cache_miss')
+        if self.state['transactions']>=self.state['max_transactions'] or self.state['bytes']>=self.state['max_bytes']:
+            raise FetchError('incomplete_budget')
+        body=urlencode(fields).encode('utf-8');response=None
+        self.state['transactions']+=1;save_json(self.state_path,self.state)
+        self.log(url=safe_url(url),status='secret_post_started',number=self.state['transactions'])
+        try:
+            request=urllib.request.Request(url,data=body,headers={'Content-Type':'application/x-www-form-urlencoded','User-Agent':'thesis-cdse-auth/1.0'},method='POST')
+            try:
+                response=self.opener.open(request,timeout=self.timeout);code=response.status;headers=response.headers
+            except urllib.error.HTTPError as exc:
+                response=exc;code=exc.code;headers=exc.headers
+            if code in (301,302,303,307,308):raise FetchError('authentication_redirect_refused',code)
+            allowance=min(self.max_response,1024*1024,self.state['max_bytes']-self.state['bytes'])
+            length=headers.get('Content-Length')
+            if length is not None:
+                try:length=int(length)
+                except ValueError:raise FetchError('invalid_content_length') from None
+                if length<0 or length>allowance:raise FetchError('response_too_large')
+            chunks=[];used=0
+            while used<allowance:
+                chunk=response.read(min(65536,allowance-used))
+                if not chunk:break
+                chunks.append(chunk);used+=len(chunk);self.state['bytes']+=len(chunk);save_json(self.state_path,self.state)
+            if used==allowance and (length is None or length>used):raise FetchError('incomplete_budget_or_response_limit')
+            if length is not None and used!=length:raise FetchError('truncated_response')
+            self.log(url=safe_url(url),status='secret_post_response',code=code,bytes=used)
+            if code!=200:raise FetchError('authentication_failed' if code in (400,401) else 'authentication_http_error',code)
+            return b''.join(chunks)
+        except (urllib.error.URLError,TimeoutError,OSError):
+            self.log(url=safe_url(url),status='authentication_transport_error')
+            raise FetchError('transport_error') from None
+        except FetchError as exc:
+            self.log(url=safe_url(url),status=exc.status,code=exc.code)
+            raise
+        finally:
+            if response is not None:response.close()
 
     def _failure(self, url, status, code=None, bytes_received=0):
         self.log(url=safe_url(url), status=status, code=code, bytes_received=bytes_received)

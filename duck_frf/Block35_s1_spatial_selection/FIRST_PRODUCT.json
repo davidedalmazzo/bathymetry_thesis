@@ -1,0 +1,426 @@
+{
+  "decision": "conditional first technical IW SLC download, NOT method validation",
+  "product": {
+    "uuid": "c49a9c1f-9b00-5676-ab05-683975d898a2",
+    "name": "S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE",
+    "acquisition_key": "S1A|040326|04C765",
+    "slice_key": "S1A|20211028T230636|20211028T230703|040326|04C765",
+    "platform": "SENTINEL-1-A",
+    "mode": "IW",
+    "product_type": "IW_SLC__1S",
+    "polarisation": "VV&VH",
+    "start_utc": "2021-10-28T23:06:36.323000Z",
+    "end_utc": "2021-10-28T23:07:03.267000Z",
+    "timestamp_semantics": "catalogue ContentDate start/end; not local ROI sensing time",
+    "relative_orbit": 4,
+    "absolute_orbit": 40326,
+    "orbit_direction": "ASCENDING",
+    "slice_number": 19,
+    "bytes": 7799368890,
+    "online": true,
+    "processing_version": null,
+    "modification_utc": "2025-11-25T06:10:38.533356Z",
+    "publication_utc": "2021-10-29T12:32:57.732420Z",
+    "origin_utc": "2021-10-29T12:24:00.495000Z",
+    "footprint": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.134468,
+              35.669724
+            ],
+            [
+              -75.339592,
+              36.072639
+            ],
+            [
+              -75.668571,
+              37.691841
+            ],
+            [
+              -78.52536,
+              37.290447
+            ],
+            [
+              -78.134468,
+              35.669724
+            ]
+          ]
+        ]
+      ]
+    },
+    "marine_screening_fraction": 1.0,
+    "range_edge_proxy_axial_deg": 80.87116662500057,
+    "range_proxy_status": "longest footprint edge only; NOT local projected SAR range",
+    "local_range_deg": null,
+    "local_incidence_deg": null,
+    "checksums_vendor": [
+      {
+        "Value": "d1886a92315be184489eea0e072c0578",
+        "Algorithm": "MD5",
+        "ChecksumDate": "2025-11-25T06:10:22.291058Z"
+      },
+      {
+        "Value": "3a0a3ec0f4ae49eb4311295a54aa8192b6fbe2bea258bb47e4546be463cc8c03",
+        "Algorithm": "BLAKE3",
+        "ChecksumDate": "2025-11-25T06:10:38.149774Z"
+      }
+    ],
+    "assets": null,
+    "s3_path": "/eodata/Sentinel-1/SAR/SLC/2021/10/28/S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE"
+  },
+  "observational_evidence": {
+    "uuid": "c49a9c1f-9b00-5676-ab05-683975d898a2",
+    "name": "S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE",
+    "acquisition_key": "S1A|040326|04C765",
+    "start_utc": "2021-10-28T23:06:36.323000Z",
+    "end_utc": "2021-10-28T23:07:03.267000Z",
+    "bytes": 7799368890,
+    "online": true,
+    "relative_orbit": 4,
+    "orbit_direction": "ASCENDING",
+    "marine_screening_fraction": 1.0,
+    "range_edge_proxy_axial_deg": 80.87116662500057,
+    "local_range_deg": null,
+    "local_incidence_deg": null,
+    "technical_status": "catalogue marine coverage",
+    "geometry_status": "conditional: catalogue footprint is not burst valid support",
+    "waverider-17m__waveHs": 1.7103801,
+    "waverider-17m__waveHs__offset_s": -396.3229966163635,
+    "waverider-17m__waveHs__time_utc": "2021-10-28T23:00:00.000003+00:00",
+    "waverider-17m__waveTp": 11.396011,
+    "waverider-17m__waveTp__offset_s": -396.3229966163635,
+    "waverider-17m__waveTp__time_utc": "2021-10-28T23:00:00.000003+00:00",
+    "waverider-17m__waveTm": 8.398706,
+    "waverider-17m__waveTm__offset_s": -396.3229966163635,
+    "waverider-17m__waveTm__time_utc": "2021-10-28T23:00:00.000003+00:00",
+    "waverider-17m__waveMeanDirectionPeakFrequency": 66.34158,
+    "waverider-17m__waveMeanDirectionPeakFrequency__offset_s": -396.3229966163635,
+    "waverider-17m__waveMeanDirectionPeakFrequency__time_utc": "2021-10-28T23:00:00.000003+00:00",
+    "waverider-17m__wavePeakDirectionPeakFrequency": 70.0,
+    "waverider-17m__wavePeakDirectionPeakFrequency__offset_s": -396.3229966163635,
+    "waverider-17m__wavePeakDirectionPeakFrequency__time_utc": "2021-10-28T23:00:00.000003+00:00",
+    "waverider-17m__directionalPeakSpread": 23.245344,
+    "waverider-17m__directionalPeakSpread__offset_s": -396.3229966163635,
+    "waverider-17m__directionalPeakSpread__time_utc": "2021-10-28T23:00:00.000003+00:00",
+    "waverider-17m__direction_estimator": "waveMeanDirectionPeakFrequency",
+    "waverider-17m__peak_toward_deg": 246.34158,
+    "waverider-17m__axial_delta_footprint_proxy_deg": 14.529586625000576,
+    "waverider-17m__reference_status": "QC-checked event scalars; not automatically local truth",
+    "waverider-17m__nearest_raw_gt_60min": false,
+    "awac-11m__waveHs": 1.717457,
+    "awac-11m__waveHs__offset_s": -395.8229992389679,
+    "awac-11m__waveHs__time_utc": "2021-10-28T23:00:00.500001+00:00",
+    "awac-11m__waveTp": 10.869565,
+    "awac-11m__waveTp__offset_s": -395.8229992389679,
+    "awac-11m__waveTp__time_utc": "2021-10-28T23:00:00.500001+00:00",
+    "awac-11m__waveTm": 8.675288,
+    "awac-11m__waveTm__offset_s": -395.8229992389679,
+    "awac-11m__waveTm__time_utc": "2021-10-28T23:00:00.500001+00:00",
+    "awac-11m__waveMeanDirectionPeakFrequency": 66.40836,
+    "awac-11m__waveMeanDirectionPeakFrequency__offset_s": -395.8229992389679,
+    "awac-11m__waveMeanDirectionPeakFrequency__time_utc": "2021-10-28T23:00:00.500001+00:00",
+    "awac-11m__wavePeakDirectionPeakFrequency": 70.0,
+    "awac-11m__wavePeakDirectionPeakFrequency__offset_s": -395.8229992389679,
+    "awac-11m__wavePeakDirectionPeakFrequency__time_utc": "2021-10-28T23:00:00.500001+00:00",
+    "awac-11m__directionalPeakSpread": 24.212297,
+    "awac-11m__directionalPeakSpread__offset_s": -395.8229992389679,
+    "awac-11m__directionalPeakSpread__time_utc": "2021-10-28T23:00:00.500001+00:00",
+    "awac-11m__direction_estimator": "waveMeanDirectionPeakFrequency",
+    "awac-11m__peak_toward_deg": 246.40836000000002,
+    "awac-11m__axial_delta_footprint_proxy_deg": 14.462806625000553,
+    "awac-11m__reference_status": "QC-checked event scalars; not automatically local truth",
+    "awac-11m__nearest_raw_gt_60min": false,
+    "roi_contained_in_catalogue_footprint": true,
+    "catalogue_roi_boundary_margin_approx_m": 18729.68069500234,
+    "catalogue_margin_scope": "local cylindrical equal-area distance approximation; NOT valid burst/pixel margin",
+    "reference_spectra_available": 2,
+    "reference_is_local_truth": false,
+    "waverider-17m__roi_min_distance_m": 2980.8573650841136,
+    "waverider-17m__roi_center_distance_m": 3272.836478819008,
+    "waverider-17m__position_status": "dated_product_coordinates_nominal_not_proven_measured; conflicting_nominal_metadata",
+    "awac-11m__roi_min_distance_m": 452.6904598262196,
+    "awac-11m__roi_center_distance_m": 732.4036180061787,
+    "awac-11m__position_status": "dated_product_coordinates_nominal_not_proven_measured; conflicting_nominal_metadata",
+    "FRF:derived__windSpeed": 8.969828,
+    "FRF:derived__windSpeed__offset_s": 203.67700791358948,
+    "FRF:derived__windSpeed__qc": "1.0",
+    "FRF:derived__windSpeed__source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc",
+    "FRF:derived__windDirection": 56.011242,
+    "FRF:derived__windDirection__offset_s": 203.67700791358948,
+    "FRF:derived__windDirection__qc": "1.0",
+    "FRF:derived__windDirection__source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc",
+    "FRF:derived__gaugeElevation": 19.64,
+    "FRF:derived__gaugeElevation__offset_s": 203.67700791358948,
+    "FRF:derived__gaugeElevation__qc": "1.0",
+    "FRF:derived__gaugeElevation__source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/meteorology/wind/derived/2021/FRF-met_wind_derived_202110.nc",
+    "water_level_reference_datum": "NAVD88",
+    "water_level_source_caveat": "source says NOAA preliminary, possibly substitute gauges; archive QA and dataSource not resolved",
+    "water_level_context_m": 0.235,
+    "water_level_context_offset_s": -36.322998046875,
+    "water_level_context_qc_status": "qc_unknown",
+    "water_level_context_NOT_representative": true,
+    "wind_averaging_definition": "10-minute source mean; timestamp anchor unresolved",
+    "wind_elevation_definition": "gaugeElevation above NAVD88, not corrected to 10 m or instantaneous water",
+    "waverider-17m__Hm0_m": 1.7103800078812894,
+    "waverider-17m__f_peak_bin_hz": 0.085,
+    "waverider-17m__T_peak_bin_s": 11.76470588235294,
+    "waverider-17m__half_max_width_hz": 0.03,
+    "waverider-17m__half_max_energy_fraction": 0.3837608750061826,
+    "waverider-17m__valid_bin_fraction": 1.0,
+    "awac-11m__Hm0_m": 1.7174570466943269,
+    "awac-11m__f_peak_bin_hz": 0.0925,
+    "awac-11m__T_peak_bin_s": 10.81081081081081,
+    "awac-11m__half_max_width_hz": 0.022500000000000006,
+    "awac-11m__half_max_energy_fraction": 0.36242754233770336,
+    "awac-11m__valid_bin_fraction": 1.0,
+    "currents_status": "profile query timeout; no wave-effective current inferred",
+    "local_geometry_status": "annotation inventory public, XML content requires CDSE authentication; not verified"
+  },
+  "roi": {
+    "frf_bounds_m": [
+      300.0,
+      850.0,
+      700.0,
+      1000.0
+    ],
+    "geojson": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -75.7489408456981,
+            36.184434192155784
+          ],
+          [
+            -75.7431306445405,
+            36.18597804029508
+          ],
+          [
+            -75.7441694582255,
+            36.188547156296984
+          ],
+          [
+            -75.7499796593831,
+            36.187003308157685
+          ],
+          [
+            -75.7489408456981,
+            36.184434192155784
+          ]
+        ]
+      ]
+    },
+    "coordinate_mapping": "local affine approximation fitted to source xFRF/yFRF and geographic point pairs; not a SAR pixel geolocator",
+    "coordinate_mapping_residual_p95_m": 0.010221681115752423,
+    "coordinate_mapping_source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+    "selection_reason": "north of pier profiles 514/520, away from beach; actual survey point envelope, no predicted k/depth agreement criterion",
+    "marine_status": "preliminary offshore FRF location; negative measured bed elevations support water, exact shoreline/structures and SAR valid pixels still require confirmation",
+    "pier_alongshore_min_separation_m": 180.0,
+    "survey_checks": [
+      {
+        "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "points_in_roi": 1702,
+        "complete_source_indices": true,
+        "vertical_datum": "NAVD88",
+        "water_depth_status": "bed elevation NAVD88, NOT instantaneous water depth",
+        "elevation_percentiles_NAVD88_m": [
+          -5.08,
+          -4.202500000000001,
+          -3.622
+        ],
+        "survey_point_time_min_utc": "2021-10-04T16:02:32+00:00",
+        "survey_point_time_max_utc": "2021-10-04T17:37:01+00:00",
+        "profiles": [
+          731.0,
+          777.0,
+          823.0,
+          869.0,
+          914.0,
+          960.0
+        ],
+        "roi_grid_nearest_point_distance_p50_p95_max_m": [
+          113.78310364900408,
+          363.5967084331884,
+          391.93563756565953
+        ],
+        "all_measured_elevations_below_NAVD88_zero": true,
+        "gradient_status": "not a continuous surface; global planar gradient deliberately not asserted",
+        "adjacent_observed_segment_diagnostic": {
+          "scale_policy": "only consecutive source indices, same profile, spacing 1-20 m; not cross-profile surface gradient",
+          "count": 15,
+          "spacing_p50_m": 1.022158500429351,
+          "absolute_slope_p50_p95": [
+            0.010700384042348434,
+            0.02087465962939618
+          ]
+        }
+      },
+      {
+        "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "points_in_roi": 1823,
+        "complete_source_indices": true,
+        "vertical_datum": "NAVD88",
+        "water_depth_status": "bed elevation NAVD88, NOT instantaneous water depth",
+        "elevation_percentiles_NAVD88_m": [
+          -6.1738,
+          -4.341,
+          -3.6321000000000003
+        ],
+        "survey_point_time_min_utc": "2021-10-15T16:45:31+00:00",
+        "survey_point_time_max_utc": "2021-10-15T20:04:47+00:00",
+        "profiles": [
+          731.0,
+          777.0,
+          823.0,
+          869.0,
+          914.0,
+          960.0
+        ],
+        "roi_grid_nearest_point_distance_p50_p95_max_m": [
+          70.67600724432585,
+          251.4758223961633,
+          306.34338991726264
+        ],
+        "all_measured_elevations_below_NAVD88_zero": true,
+        "gradient_status": "not a continuous surface; global planar gradient deliberately not asserted",
+        "adjacent_observed_segment_diagnostic": {
+          "scale_policy": "only consecutive source indices, same profile, spacing 1-20 m; not cross-profile surface gradient",
+          "count": 22,
+          "spacing_p50_m": 1.0213057763810292,
+          "absolute_slope_p50_p95": [
+            0.007826861561778154,
+            0.011702526230545423
+          ]
+        }
+      },
+      {
+        "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "points_in_roi": 1199,
+        "complete_source_indices": true,
+        "vertical_datum": "NAVD88",
+        "water_depth_status": "bed elevation NAVD88, NOT instantaneous water depth",
+        "elevation_percentiles_NAVD88_m": [
+          -8.1142,
+          -6.194,
+          -3.7436000000000007
+        ],
+        "survey_point_time_min_utc": "2021-10-24T15:26:32+00:00",
+        "survey_point_time_max_utc": "2021-10-24T16:03:18+00:00",
+        "profiles": [
+          731.0,
+          777.0,
+          823.0,
+          869.0,
+          914.0,
+          960.0
+        ],
+        "roi_grid_nearest_point_distance_p50_p95_max_m": [
+          14.609534763297601,
+          40.06355938773728,
+          63.709663254485996
+        ],
+        "all_measured_elevations_below_NAVD88_zero": true,
+        "gradient_status": "not a continuous surface; global planar gradient deliberately not asserted",
+        "adjacent_observed_segment_diagnostic": {
+          "scale_policy": "only consecutive source indices, same profile, spacing 1-20 m; not cross-profile surface gradient",
+          "count": 1193,
+          "spacing_p50_m": 2.459469251688343,
+          "absolute_slope_p50_p95": [
+            0.009567347128138778,
+            0.015453629123572147
+          ]
+        }
+      },
+      {
+        "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "points_in_roi": 0,
+        "complete_source_indices": true,
+        "vertical_datum": "NAVD88",
+        "water_depth_status": "bed elevation NAVD88, NOT instantaneous water depth"
+      }
+    ]
+  },
+  "why": "predeclared narrower measured peak spread first; substantial wave energy, both spectral references available; no alignment gate based on footprint proxy",
+  "alternative": {
+    "uuid": "d982f98d-9739-5a03-aa42-27407da87d7e",
+    "name": "S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE",
+    "acquisition_key": "S1A|040078|04BEC7",
+    "slice_key": "S1A|20211011T225806|20211011T225835|040078|04BEC7",
+    "platform": "SENTINEL-1-A",
+    "mode": "IW",
+    "product_type": "IW_SLC__1S",
+    "polarisation": "VV&VH",
+    "start_utc": "2021-10-11T22:58:06.126000Z",
+    "end_utc": "2021-10-11T22:58:35.946000Z",
+    "timestamp_semantics": "catalogue ContentDate start/end; not local ROI sensing time",
+    "relative_orbit": 106,
+    "absolute_orbit": 40078,
+    "orbit_direction": "ASCENDING",
+    "slice_number": 1,
+    "bytes": 8501409069,
+    "online": true,
+    "processing_version": null,
+    "modification_utc": "2025-11-25T09:56:34.784603Z",
+    "publication_utc": "2021-10-12T03:44:58.457736Z",
+    "origin_utc": "2021-10-12T03:37:00.232000Z",
+    "footprint": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -75.811821,
+              34.68166
+            ],
+            [
+              -73.081009,
+              35.0811
+            ],
+            [
+              -73.44294,
+              36.873524
+            ],
+            [
+              -76.238625,
+              36.475948
+            ],
+            [
+              -75.811821,
+              34.68166
+            ]
+          ]
+        ]
+      ]
+    },
+    "marine_screening_fraction": 1.0,
+    "range_edge_proxy_axial_deg": 80.82480928519306,
+    "range_proxy_status": "longest footprint edge only; NOT local projected SAR range",
+    "local_range_deg": null,
+    "local_incidence_deg": null,
+    "checksums_vendor": [
+      {
+        "Value": "167e9e471425ddb2ac1df706f763fa42",
+        "Algorithm": "MD5",
+        "ChecksumDate": "2025-11-25T09:56:18.427421Z"
+      },
+      {
+        "Value": "4793284a547ffc05d7339047c1fa13a3ca20f06a9a4eb77a3e24fcf555afa569",
+        "Algorithm": "BLAKE3",
+        "ChecksumDate": "2025-11-25T09:56:34.376832Z"
+      }
+    ],
+    "assets": null,
+    "s3_path": "/eodata/Sentinel-1/SAR/SLC/2021/10/11/S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE"
+  },
+  "remaining_checks": [
+    "authenticate to retrieve VV annotations of all three subswaths and manifest",
+    "geolocate marine ROI onto burst valid support, margins and burst seams; local projected range/incidence",
+    "confirm actual wave signature/spatial convergence in complex SAR, without imposed predicted k",
+    "verify tide gauge source/archive QC and local water-level representativity; metadata datum NAVD88 retained separately from bed epoch; absent representative currents"
+  ],
+  "no_download_executed": true,
+  "no_temporal_validation_claim": true
+}

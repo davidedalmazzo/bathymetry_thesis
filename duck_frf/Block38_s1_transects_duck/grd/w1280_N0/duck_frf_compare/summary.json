@@ -1,0 +1,15 @@
+{
+  "frf_affine_fit": {
+    "n_points": 32935,
+    "residual_p50_m": 0.003520089924645695,
+    "residual_p95_m": 0.012823793422946515,
+    "residual_max_m": 0.02177680419723457
+  },
+  "survey": "20211024",
+  "n_windows_with_survey": 0,
+  "note": "overlapping windows are not independent; eta (event water level, NAVD88) unknown; bed elevation != depth",
+  "frf_axial_propagation_deg": [
+    66.34158,
+    66.40836000000002
+  ]
+}

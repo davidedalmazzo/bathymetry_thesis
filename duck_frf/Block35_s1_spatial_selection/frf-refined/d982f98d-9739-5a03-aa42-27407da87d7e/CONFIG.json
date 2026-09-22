@@ -1,0 +1,59 @@
+{
+  "timeout_seconds": 30,
+  "rate_seconds": 0.25,
+  "retries": 1,
+  "failure_ttl_seconds": 3600,
+  "time_tolerance_seconds": {
+    "waves": 3600,
+    "wind": 1800,
+    "currents": 3600,
+    "water_level": 1800,
+    "bathymetry": 2592000
+  },
+  "event_context_seconds": 1800,
+  "accepted_qc_flags": [
+    1
+  ],
+  "accept_unknown_qc": false,
+  "interpolation": false,
+  "bathymetry_download": false,
+  "families": [
+    "waves"
+  ],
+  "wave_instruments": [
+    "waverider-17m",
+    "awac-11m"
+  ],
+  "spectral_instruments": [
+    "waverider-17m",
+    "awac-11m"
+  ],
+  "legacy_cache": "Block30_duck_csk_preflight/http_cache",
+  "max_survey_metadata_products": 1,
+  "observation_variables": {
+    "waves": [
+      "waveHs",
+      "waveTp",
+      "waveTm",
+      "waveMeanDirection",
+      "wavePeakDirectionPeakFrequency",
+      "directionalPeakSpread",
+      "waveTm1",
+      "waveTm2",
+      "waveMeanDirectionPeakFrequency",
+      "waveFrequency",
+      "waveEnergyDensity",
+      "waveA1Value",
+      "waveB1Value",
+      "waveA2Value",
+      "waveB2Value",
+      "waveFrequencyBandwidth",
+      "frequencyBounds",
+      "qcFlagE",
+      "qcFlagD",
+      "waveDirectionEstimator",
+      "nominalDepth",
+      "gaugeDepth"
+    ]
+  }
+}

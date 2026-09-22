@@ -1,0 +1,23 @@
+{
+  "visibility": "visible_but_weak_and_speckle_contaminated_manual_audit",
+  "visual_features": {
+    "periodic_crest_like_streaks": true,
+    "multiple_clean_bands": false,
+    "coast_or_pier_in_roi": false,
+    "ship_or_wake_confidently_identified": false,
+    "burst_join_in_roi": false,
+    "isolated_bright_pixels": true
+  },
+  "measurability": "primary_bilinear_lobe_stable_with_material_nearest_neighbor_sensitivity",
+  "association": "identifiable",
+  "conditional_inversion_executed": true,
+  "validation": "not_established; conditional inversion only and NAVD88 bed elevation is not instantaneous water depth",
+  "primary_wavelength_range_m": [
+    76.62687959060449,
+    77.13613056945611
+  ],
+  "primary_axial_direction_range_deg": 0.5265783887923732,
+  "primary_lobe_background_min": 54.82640129698393,
+  "nearest_neighbor_sensitivity": "selects a distinct 42-45 m, 43-44 degree family",
+  "noise_subtraction_sensitivity": "unavailable because 12-13 percent non-positive powers remain masked"
+}

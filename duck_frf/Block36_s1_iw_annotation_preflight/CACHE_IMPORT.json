@@ -1,0 +1,97 @@
+[
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(646964cc-c740-431b-978c-06461df1b5a5)/$value",
+    "sha256": "f7f88f4e45038daa03d4efd64b26a13c2f30cfa27a1b8550e54d39ff823cc138",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes",
+    "sha256": "be1ce9951c6725b0ff2adda5e886de26a2b952e14d41768774535cbc9ec5f769",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes",
+    "sha256": "4785fb92487d2e7a58f1119ec18a371a4da4bf5366e38be1450aefb4a4ea0a36",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://documentation.dataspace.copernicus.eu/APIs/OData.html",
+    "sha256": "4c527bef3f7383d4e76f6b30b2e1fc74a204ddb6361d91737cf52d32c2cbc472",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(9b9e42a7-c083-438c-a640-3aba0bfe8f42)/$value",
+    "sha256": "c710e49933bf6975f6492163381455a40a1f54cc135d55838ed988f38d1d53e6",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products?%24filter=Collection%2FName+eq+%27SENTINEL-1%27+and+contains%28Name%2C%27_IW_SLC_%27%29+and+ContentDate%2FStart+ge+2021-10-01T00%3A00%3A00Z+and+ContentDate%2FStart+lt+2021-11-01T00%3A00%3A00Z+and+OData.CSC.Intersects%28area%3Dgeography%27SRID%3D4326%3BPOLYGON+%28%28-75.751+36.165%2C+-75.585+36.165%2C+-75.585+36.265%2C+-75.751+36.265%2C+-75.751+36.165%29%29%27%29&%24expand=Attributes&%24top=100&%24orderby=ContentDate%2FStart+asc&%24count=true",
+    "sha256": "a884cbbae040143b5ead5927edf5380ed266ad2280f9a9e43d3c6a990b0e24e3",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(2ce151c3-c6f7-5d3a-a22e-84f87985d8a6)/Nodes",
+    "sha256": "fbf7c92d1c1b845f350038ea4dbb0810e12b78c635cbd0f8a178239914a0ec95",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(b1d1d660-87fc-5790-9275-8df4034e8d82)/Nodes",
+    "sha256": "5a0a4b7919751e298f9512b121c3401f7f97c15f799aa1769001a33af3048c27",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)?%24expand=Assets",
+    "sha256": "1278e0fcf3f6471babb6175e3606085f2326b121227a8576c8a8cf359ee4384a",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes",
+    "sha256": "131ac2ac95797a10319c0507454f869b2be45f31365f671b8d5cc5b7c6e99e65",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products?%24filter=Collection%2FName+eq+%27SENTINEL-1%27+and+contains%28Name%2C%27_IW_SLC_%27%29+and+ContentDate%2FStart+ge+2021-10-01T00%3A00%3A00Z+and+ContentDate%2FStart+lt+2021-11-01T00%3A00%3A00Z+and+OData.CSC.Intersects%28area%3Dgeography%27SRID%3D4326%3BPOLYGON+%28%28-75.751+36.165%2C+-75.585+36.165%2C+-75.585+36.265%2C+-75.751+36.265%2C+-75.751+36.165%29%29%27%29&%24expand=Attributes&%24top=1&%24orderby=ContentDate%2FStart+asc&%24count=true",
+    "sha256": "fedda14a9278de71975eb4728a39b5955092e12eedd158b017c86ca02e4b5245",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(8c0eeb27-1c9a-53e8-9bd2-846811270477)/Nodes",
+    "sha256": "0ce0877753f6482d20996898a816d8e813d6ff155b2609fa44c556b3e0d783ad",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes",
+    "sha256": "43d02aa06146c7ba9a3a981260b152ddd3ec0a929577ae2e7e65742e77c79bd2",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)?%24expand=Assets",
+    "sha256": "def5c50db37151e1a7dcdd7c6d2aa7a8a8ef0786c5c30556cf3eebafff84b310",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(8c0eeb27-1c9a-53e8-9bd2-846811270477)?%24expand=Assets",
+    "sha256": "748109ee9cf61858ae0d8479d99a91bb24d3544a227710de60fe3b95df522279",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes",
+    "sha256": "8a9f42f6e13b31a179d5063fe513ff42e7caff461a2616cebe0bde4aca5e1792",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(b1d1d660-87fc-5790-9275-8df4034e8d82)?%24expand=Assets",
+    "sha256": "6b4e61c46f2ed7a8fda2da6c4f0579085b4f7e2c0e496ffc1f7bcd38ff24d5eb",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes",
+    "sha256": "45538337348ec0dfa1e16e470f6eaa8e39ffbed0259878136a13ad389c398a62",
+    "status": "verified_payload_reused_no_network"
+  },
+  {
+    "url": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products(2ce151c3-c6f7-5d3a-a22e-84f87985d8a6)?%24expand=Assets",
+    "sha256": "b1b6e4d4663792f99abbb9d4e7ab010f92b9d8cf84f4f3b7a79f747f2b3962a6",
+    "status": "verified_payload_reused_no_network"
+  }
+]

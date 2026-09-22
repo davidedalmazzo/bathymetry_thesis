@@ -1,0 +1,8 @@
+{
+  "gate": "READY",
+  "credentials_configured": true,
+  "pertinent_subswath": "IW3",
+  "reasons": [],
+  "not_wave_or_bathymetry_validation": true,
+  "full_product_downloaded": false
+}

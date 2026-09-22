@@ -1,0 +1,34 @@
+{
+  "acquisition_id": "c49a9c1f-9b00-5676-ab05-683975d898a2",
+  "timestamp_utc": "2021-10-28T23:06:36.323000Z",
+  "footprint": {
+    "type": "MultiPolygon",
+    "coordinates": [
+      [
+        [
+          [
+            -78.134468,
+            35.669724
+          ],
+          [
+            -75.339592,
+            36.072639
+          ],
+          [
+            -75.668571,
+            37.691841
+          ],
+          [
+            -78.52536,
+            37.290447
+          ],
+          [
+            -78.134468,
+            35.669724
+          ]
+        ]
+      ]
+    ]
+  },
+  "timestamp_semantics": "catalogue ContentDate start/end; not local ROI sensing time"
+}

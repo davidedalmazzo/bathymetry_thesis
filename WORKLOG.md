@@ -822,3 +822,227 @@ modified.
   versioned report/gate/kernels/figures/phase-A-and-B states/test report/manifest;
   stop CHECKPOINT_29. No q/inversion/dwell sweep/CPHD signal/Vandenberg/AIS,
   no commit/push, no frozen artifact/hash rewrite.
+
+## 2026-09-18 — Block35 Duck Sentinel-1 spatial selection
+
+- Audited retired Block33 S1 scripts: point-only query, incomplete pagination,
+  volatile budgets, duplicate FRF parser, fixed incidence/depth/gradient and
+  unvalidated cutoffs. Replaced with deprecated wrappers of stable entry points;
+  native next free result directory is duck_frf/Block35_s1_spatial_selection.
+- Frozen protocol/config before public requests. Actual documented CDSE OData
+  October query completed: eight IW SLC products, five physical datatake passes;
+  all UUIDs retained, five covering slices, no date extension/fallback needed.
+- Reused verified FRF payloads with operational client. Pass A monthly scalar/QC
+  for every product; Pass B spectra/ancillary for five passes. Smaller distinct
+  projection recovered WR17 E(f)/moments after 3D timeout; failed URLs not retried.
+- Traversed complete bounded geographic survey vectors before filtering. Oct24
+  provides actual northern-ROI support; nominal nearest Oct27 has zero points
+  there. Kept per-point dates, NAVD88/geoid2003, NAD83-to-WGS84 geolocation caveat,
+  sample gaps/coverage, measured segment scales and nonlocal frequency limits.
+- Selected October28 S1A IW SLC UUID c49a9c1f-9b00-5676-ab05-683975d898a2 as a
+  conditional first technical spatial trial; October11 is alternate. Public
+  Assets/Nodes and two quicklooks verified; annotation XML returned 401 with no
+  configured credentials. Local range/incidence/burst valid support remain open.
+- New tranche 73 charged attempts (72 HTTP + one conservative persistence
+  reserve), 7,041,606 bytes. Includes failures/400 expansion correction/401;
+  historical consumption not determinable from this ledger, no old-budget claim.
+- Analytic dispersion derivatives verified with toy finite differences only;
+  no actual inversion, universal FFT uncertainty/RMSE bound or imposed SAR k.
+- All 810 frozen hashes unchanged. Full suite/test provenance in Block35 report.
+  No SAR pixels/download/formation/dwell sweep, no Vandenberg, no commit/push.
+
+## 2026-09-19 — Block36 Duck Sentinel-1 annotation preflight
+
+- Kept the Block35 October 28 product/ROI fixed and made no October 11 query.
+- Added a secret-safe CDSE bearer loader, persistent metadata-only 40-request /
+  50 MiB tranche, strict manifest/annotation allow-list and resumable full-product
+  downloader that remains unexecuted.
+- No credential was configured, so no protected request was attempted: actual
+  usage 0 transactions/0 bytes. Subswath, burst, valid coverage, local range,
+  incidence and Jacobian remain explicitly unknown; gate `BLOCKED`.
+- Added secure Sentinel-1 IW XML parsing, exact per-line valid-burst support,
+  geolocation/Jacobian and k-transform routines plus a preregistered spatial
+  intensity-spectrum plan. No pixel read, frequency retrieval or inversion.
+- Initial blocked-state focused suite reached 16 passed; final authenticated
+  artifact counts are recorded below. Frozen audit remained unchanged.
+
+### 2026-09-20 — Block36 local CDSE login preparation
+
+- Replaced the manual-token-only setup with a root Git-ignored `.env` holding
+  `CDSE_USERNAME`/`CDSE_PASSWORD`; added an empty tracked `.env.example` and
+  verified `.env` is absent from the Git index. Existing files are never copied
+  or overwritten automatically. Direct `CDSE_ACCESS_TOKEN` remains supported.
+- Implemented the official CDSE Keycloak password flow (`cdse-public`), one
+  hidden local TOTP prompt when required, in-memory access/refresh tokens,
+  expiry handling, maximum three auth requests and one post-401 metadata retry.
+  Authentication uses the existing Block36 budget; secret requests/responses
+  are never cached or logged. No live login or protected request was made.
+
+### 2026-09-20 — Block36 authenticated completion
+
+- Login succeeded without MFA. Corrected the real SAFE lexical UTC form: its
+  timestamp fields omit `Z` but are UTC by field semantics; added regression.
+- Retrieved/hash-verified only manifest, VV IW1/IW2/IW3 annotations and the
+  matching IW3 calibration/noise XML. No TIFF, SAFE/ZIP or SAR pixel read.
+- Fixed ROI is 100% valid in IW3 burst 0, with no seam. Range bearing
+  80.571242°, azimuth 350.453641°, incidence 44.163763° and explicit local
+  Jacobian; measured FRF axial mismatch is 14.23°/14.16°.
+- Gate `READY` for the first spatial trial only. Final ledger 12/40 requests,
+  3,819,945/52,428,800 bytes, including one retained sandbox transport failure.
+  Focused tests 17 passed; authoritative suite 360 passed; frozen audit 810/810.
+  Full product download remains not executed. No commit/push.
+
+## 2026-09-20 — Block37 Duck Sentinel-1 real spatial trial
+
+- Froze product, VV/IW3/burst-0 support, three FRF windows, radiometry,
+  taper/detrending, FFT convention and stability gates before reading pixels.
+- Downloaded only the frozen UUID: 7,799,368,890 bytes, vendor MD5 matched and
+  local SHA-256 recorded. ZIP and extracted SAFE remain Git-ignored.
+- Bounded complex reads are entirely valid. Primary bilinear spectra are stable:
+  wavelength 76.63–77.14 m, axial bearing 85.36–85.88 degrees and
+  lobe/background 54.8–93.6.
+- Detrend/taper/raw variants retain that family. Nearest resampling selects
+  42–45 m at 43–44 degrees; noise subtraction masks 12–13% and is left
+  unavailable without filling.
+- Complete WR17/AWAC spectra support a broad compatible system. Conditional U=0
+  depths are 4.535/5.477 m, with frequency/current sensitivity about
+  3.72–6.57 m. NAVD88 bed elevations are not event depth, so validation remains
+  unestablished.
+- Focused suite 10 passed; full suite 370 passed; frozen baseline 810/810.
+  No commit or push.
+
+## 2026-09-21 — Block38 scene-generic S1 transect tool (paper-inspired) and geolocation fix
+
+- Implemented Mudiyanselage et al. (2024) window overlap (50 m steps along transects)
+  and contour-blob peak identification (`code/s1_paper_peak.py`). The released
+  Mendeley code contains only the ArcPy subset extractor, `FastPeakFind.m`, `cmocean.m`;
+  the contour main script is absent. Paper-text reading is primary; the FastPeakFind
+  recipe loses the 1–3-pixel top-level blobs on synthetic speckled swell (0/20 found).
+- Replaced the Duck-specific runner/JSON configs with one scene-generic CLI
+  `code/s1_transect_bathy.py` (bbox + SAFE; SAR-derived instantaneous land/sea mask,
+  coastline, seaward transects; native-sample spectra; optional in-situ period).
+- **Found and fixed a geolocation error in Blocks 36/37** (line-number vs burst-time
+  interpolation, ~105 lines ≈ 1.4 km along azimuth, 12 % Jacobian line-spacing error):
+  `docs/NOTE_S1_GEOLOCATION_BURST_TIME.md`, `code/s1_iw_geometry.py`. Block37
+  λ≈77 m result and its survey context are superseded; frozen files untouched.
+- Duck run (`duck_frf/Block38_s1_transects_duck`, N=4 alongshore averaging): 25
+  transects, 1279 windows at sea, 1011 identifiable. Band-averaged spectra: λ
+  92→110→128→129→127→142→147 m from 0–500 to 3000–3500 m offshore; argmax and
+  contour agree within a few %. Paper-literal N=0 is speckle-dominated.
+- `duck_frf_compare.py` (18 overlapping windows with Oct-24 survey, xFRF 500–865):
+  WR17 T=11.765 s, U=0 → median implied event water level +0.41 m NAVD88,
+  RMSE vs −z 1.72 m, r=0.57; AWAC T=10.81 s → implied η +2.3 m (implausible).
+  Not a validation: η unverified, small correlated sample, period band gives
+  h ≈ 5.5–10.5 m.
+- Tests: 20 new pass (Linux VM env); full suite in VM 370 passed, 20 failed, all
+  failures in files not touched here (FRF/credential/Block7 env-dependent). Run the
+  authoritative suite in `.venv-umbra-thesis`. No commit/push.
+
+### 2026-09-21 — Block38b GRD baseline (paper reproduction at Duck)
+
+- Downloaded only the needed SAFE members of the same-datatake GRDH
+  (`S1A_IW_GRDH_1SDV_20211028T230637_..._04C765_8C9F`, UUID 45382fde-…): manifest,
+  VV annotation/calibration/noise and VV measurement (864,714,122 B), each MD5-verified
+  against manifest.safe (`code/download_s1_safe_members.py`; the whole-product endpoint
+  returns 501 on Range, the Nodes endpoint supports it). Stored in Git-ignored `data_s1/`.
+- `s1_transect_bathy.py` now reads GRD too (`GrdGeometry`, zero-filled borders invalid).
+- Geolocation: GRD vs SLC σ0 maps cross-correlate at 0.94 with GRD displaced ~75 m E,
+  ~37 m S (≈ range direction); GRD vs survey z≈0 edge −5.8 px (58 m) in range. SLC
+  matched the same survey test within 0.8 samples. Both grids use h≈0 m ellipsoidal
+  at Duck while the sea surface is ~−37 m (geoid): absolute range geolocation remains
+  uncertain at the ~40 m level; not corrected.
+- Comparison table: `duck_frf/Block38_s1_transects_duck/config_comparison.txt`.
+  Band-ensemble λ SLC vs GRD agree within 1–4 % to 2 km (92/93, 110/111, 128/130,
+  130/135 m): independent check of the native-SLC spectral chain. Paper-literal GRD
+  1280 m windows: stable (p90 jump 13 %) but no cross-shore trend (ρ≈0) and no window
+  inside the survey footprint. GRD 512 m N=0 far less speckle-dominated than SLC N=0
+  (λ p10 ≈ 80 m vs ≈ 30 m). Survey comparisons (18–23 correlated windows, depths
+  6–8 m) cannot discriminate methods.
+
+### 2026-09-21 — Ground-truth retrieval unified (`frf_ground_truth.py`)
+
+- New linked modules: `frf_client/dem.py` (FRF surveyDEM nearest in time via the
+  budgeted Transport/THREDDS walker), `coastal_dem.py` (NOAA NCEI CUDEM 1/9″ tiles
+  chosen from the official url list, bbox window by HTTP range), CLI
+  `frf_ground_truth.py` (FRF client observations + DEMs + merge + GROUND_TRUTH.json).
+  Tests `tests/test_ground_truth.py` (3 pass). README `code/README_FRF_GROUND_TRUTH.md`.
+- Duck 2021-10-28 23:06:39Z (tranche `gt_s1a_20211028_b`, first attempt
+  `gt_s1a_20211028` exhausted its 50-request template budget before water level):
+  water level +0.235 m NAVD88 at 23:06 (predicted −0.346, residual/surge +0.581;
+  NOAA preliminary); AWAC 11 m current E +0.01, N −0.30 m/s (23:45, +38 min);
+  wind 9.0 m/s from 56°; spectra WR17 Tp,disc 11.76 s, AWAC 10.81 s, 8 m array
+  12.90 s, WR26 10.81 s (Hm0 1.56–1.78 m).
+- Bathymetry: FRF surveyDEM 2021-10-21 (−8 d, x 50–950, down to −9.2 m) + CUDEM
+  (NC tiles n36x25 w075x75/w076x00 2019v2, down to −20.5 m in bbox). Overlap
+  FRF−CUDEM underwater: median +0.09 m, p10/p90 ±0.84 m.
+
+### 2026-09-21 — BlueTopo in ground truth; forward λ check on certified bathymetry
+
+- `coastal_dem.read_bluetopo`: NOAA OCS BlueTopo (4 m, NAVD88) with per-cell vertical
+  uncertainty and contributor table (survey id, institution, dates). Duck bbox: 4–12 m
+  from USACE/JALBTCX topobathy lidar Jun 2019 (unc ≈0.8–0.9 m); >12 m mostly NOS
+  H00965 (1868) interpolated (unc ≈2.6–2.8 m). FRF 2021 − BlueTopo at 8–10 m −0.11 m
+  (CUDEM −0.75 m); AWAC bed ≈ −11.6 vs BlueTopo −11.49 (CUDEM −10.28).
+- `frf_ground_truth.py` priority FRF survey > BlueTopo > CUDEM; 7-band GeoTIFF (bed,
+  source, event depth, uncertainty, contributor, source year, interpolated flag);
+  `wave_spectra.json` with full gauge E(f).
+- `s1_transect_bathy.py --save-spectra` (window spectra + footprint corners).
+- `forward_lambda_check.py`: certified windows only (footprint uncertainty ≤ 1 m, not
+  interpolated, source ≥ 2016, depth ≤ 12 m) → 128 SLC / 157 GRD windows, depths
+  7.4–10.7 m (512 m windows near shore touch uncertain cells). Gauge E(f) mapped to
+  E(k) at footprint depths (U=0). SAR paper-peak λ vs predicted E(k) centroid:
+  SLC +7.6 % median (p10/p90 −8/+20 %) with 8 m array; +10.6 % with WR17; +12.3 % with
+  AWAC. GRD +5.0 % (−8/+15 %). SAR λ follows λ(h) at the 8 m-array peak (12.9 s).
+  k²-weighted prediction dominated by spectral tail (no cut-off/noise model): not used.
+- H12859 (NOAA multibeam 2016) proposed by user: BAG extent lon ≥ −75.648, lat ≥ 36.19,
+  i.e. ≥ ~9 km offshore of Duck; no overlap with current windows (≤ 3 km offshore).
+
+### 2026-09-22 — Offshore gap 3–9 km: legacy grids ranked by measured accuracy
+
+- Sources found for the gap: USGS OFR 2011-1015 `nhatt` (SwathPlus 2001–02 + singlebeam
+  1999, 40 m, MSL) covers 94 % of the 3–9 km band; USGS/VIMS LARC swath 2002 (MLW,
+  nearshore only); lidar USACE 2016 Duck reaches 23 m / 6.5 km (7 % of band); NOAA
+  W00331 lidar 2014 only to −5.6 m; H12859 MBES from ~10 km. NOAA NCEI hydro index has
+  nothing modern in between.
+- Datums from NOAA CO-OPS 8651370 (epoch 1983–2001): MSL −0.128, MLW −0.623,
+  MLLW −0.667 m NAVD88.
+- `frf_ground_truth.merged_bathymetry` rewritten: sources ranked by measured accuracy
+  (FRF survey > BlueTopo modern > legacy grids bias-corrected against modern data deeper
+  than 9 m > BlueTopo interpolated > CUDEM); new band 8 = empirical uncertainty (NMAD vs
+  higher-ranked data). `--legacy-grid PATH|URL.zip,OFFSET,LABEL,YEAR`
+  (`coastal_dem.legacy_spec`).
+- Duck extended bbox (−75.79 36.15 −75.62 36.22), `outputs/ground_truth_s1a_20211028_ext`:
+  nhatt bias vs modern +0.70 m (by depth 9–12 +0.87, 12–15 +0.68, 15–18 +0.66, 18–22
+  +0.57, 22–30 +1.05), residual NMAD 0.26 m → corrected −0.70 m. VIMS 2002 bias −0.05,
+  NMAD 0.32. Empirical accuracy: lidar USACE 2019 vs FRF 2021 +0.20 / NMAD 0.15; NOAA NGS
+  2019-20 lidar vs FRF +0.42 / NMAD 0.72 (nearshore, excluded at 0.5 m); lidar 2016 Duck vs
+  corrected nhatt NMAD 0.17 (upper bound). 3–9 km band: 85–99 % corrected nhatt,
+  median empirical uncertainty 0.26 m, ≥ 98 % of cells ≤ 0.5 m.
+- `forward_lambda_check.py` now certifies on EMPIRICAL uncertainty ≤ 0.5 m (default),
+  not interpolated, no age criterion by default; max depth 30 m. Existing SLC N=4 run
+  (≤ 3 km offshore) on the extended ground truth: 1116 certified windows, depth 7.3–17.5 m;
+  SAR paper λ vs predicted (8 m array E(k) centroid) median −2.9 % (p10/p90 −37/+10 %);
+  by depth bin within ±8 % except 15–16 m (−15 %).
+- SAR rerun out to ~10 km pending: the Windows folder did not mount in the device shell.
+  Code was edited via staging and committed back; test `test_ground_truth.py` 4 pass.
+
+### 2026-09-22 — Whole-scene forward check to ~27 m depth
+
+- `s1_transect_bathy.py --chunk I N / --finalize N` (partial runs for the 180 s device
+  shell; alongshore averaging done after merging). `forward_lambda_check.py`: npz power
+  decompressed once, dispersion vectorised over depths, prediction on a fine k grid
+  (the SAR bin width 2π/L had quantised the prediction by ~10 %), windowed footprint
+  rasterisation. New `forward_lambda_combine.py` (per-window prediction from the gauge
+  nearest in depth).
+- Ground truth `outputs/ground_truth_s1a_20211028_ext20` (bbox −75.79 36.15 −75.56 36.26):
+  nhatt bias +0.70 m, residual NMAD 0.30 m; by depth 9–12 +0.79, 12–15 +0.73,
+  15–18 +0.66, 18–22 +0.57, 22–30 +1.05 (single constant ⇒ ~0.35 m error at 22–30 m).
+- SAR runs (SLC IW3 VV, N=4): `ext_near` 512 m windows 0.25–6 km, 53 transects, 5200
+  windows ok; `ext_far` 1024 m windows, kmax 0.15, 100 m step, 500 m spacing, 5–20 km,
+  2213 ok. Certified windows (empirical unc ≤ 0.5 m): 4726 + 1227.
+- Combined (`forward_combined/`, 4465 windows, depth 7.2–27.5 m): SAR radial-centroid λ vs
+  λ predicted from nearest-depth gauge: median +3.6 %, NMAD 20 % per window; per 1 m depth
+  bin within ±5 % except AWAC-referenced bins 10–15 m (+8…+17 %: AWAC E(f) peaks at 10.8 s;
+  with WR17 the same bins are within ±8 %) and 22.5–23 m (+13 %) / 27–28 m (−20 %, n=86).
+  Using the 8 m-array spectrum offshore under-predicts (−10…−25 % beyond 12 m): reference
+  spectrum must be local. Gauge choice (±10 %) dominates over bathymetry (≤ 1 %).

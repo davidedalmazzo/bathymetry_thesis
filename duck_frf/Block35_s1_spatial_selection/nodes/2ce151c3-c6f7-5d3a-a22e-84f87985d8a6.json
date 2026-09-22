@@ -1,0 +1,13 @@
+{
+  "result": [
+    {
+      "Id": "S1A_IW_SLC__1SDV_20211023T225806_20211023T225836_040253_04C4E1_1776.SAFE",
+      "Name": "S1A_IW_SLC__1SDV_20211023T225806_20211023T225836_040253_04C4E1_1776.SAFE",
+      "Nodes": {
+        "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(2ce151c3-c6f7-5d3a-a22e-84f87985d8a6)/Nodes(S1A_IW_SLC__1SDV_20211023T225806_20211023T225836_040253_04C4E1_1776.SAFE)/Nodes"
+      },
+      "ContentLength": 0,
+      "ChildrenNumber": 6
+    }
+  ]
+}

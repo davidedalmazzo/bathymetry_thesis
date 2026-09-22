@@ -1,0 +1,82 @@
+[
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+    "sample_index": 190,
+    "products": [
+      "b1d1d660-87fc-5790-9275-8df4034e8d82"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+    "sample_index": 93,
+    "products": [
+      "b1d1d660-87fc-5790-9275-8df4034e8d82"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+    "sample_index": 522,
+    "products": [
+      "d982f98d-9739-5a03-aa42-27407da87d7e"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+    "sample_index": 259,
+    "products": [
+      "d982f98d-9739-5a03-aa42-27407da87d7e"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+    "sample_index": 757,
+    "products": [
+      "8c0eeb27-1c9a-53e8-9bd2-846811270477"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+    "sample_index": 379,
+    "products": [
+      "8c0eeb27-1c9a-53e8-9bd2-846811270477"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+    "sample_index": 1090,
+    "products": [
+      "2ce151c3-c6f7-5d3a-a22e-84f87985d8a6"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+    "sample_index": 547,
+    "products": [
+      "2ce151c3-c6f7-5d3a-a22e-84f87985d8a6"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+    "sample_index": 1326,
+    "products": [
+      "c49a9c1f-9b00-5676-ab05-683975d898a2"
+    ],
+    "independent_records": 1
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+    "sample_index": 667,
+    "products": [
+      "c49a9c1f-9b00-5676-ab05-683975d898a2"
+    ],
+    "independent_records": 1
+  }
+]

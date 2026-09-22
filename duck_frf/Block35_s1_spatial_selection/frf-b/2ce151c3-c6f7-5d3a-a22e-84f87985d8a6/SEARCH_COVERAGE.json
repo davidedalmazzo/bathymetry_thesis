@@ -1,0 +1,56 @@
+[
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "required_months": [
+      "202110"
+    ],
+    "missing_or_unverified_months": [
+      "202110"
+    ],
+    "status": "incomplete_search",
+    "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "required_months": [
+      "202110"
+    ],
+    "missing_or_unverified_months": [],
+    "status": "verified_configured_context",
+    "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+  },
+  {
+    "family": "currents",
+    "instrument_id": "FRF:awac-11m",
+    "required_months": [
+      "202110"
+    ],
+    "missing_or_unverified_months": [
+      "202110"
+    ],
+    "status": "incomplete_search",
+    "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+  },
+  {
+    "family": "wind",
+    "instrument_id": "FRF:derived",
+    "required_months": [
+      "202110"
+    ],
+    "missing_or_unverified_months": [],
+    "status": "verified_configured_context",
+    "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+  },
+  {
+    "family": "water_level",
+    "instrument_id": "FRF:eopNoaaTide",
+    "required_months": [
+      "202110"
+    ],
+    "missing_or_unverified_months": [],
+    "status": "verified_configured_context",
+    "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+  }
+]

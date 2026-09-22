@@ -1,0 +1,58 @@
+{
+  "result": [
+    {
+      "Id": "S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE-report-20211012T030402.pdf",
+      "Name": "S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE-report-20211012T030402.pdf",
+      "Nodes": {
+        "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE-report-20211012T030402.pdf)/Nodes"
+      },
+      "ContentLength": 15762,
+      "ChildrenNumber": 0
+    },
+    {
+      "Id": "annotation",
+      "Name": "annotation",
+      "Nodes": {
+        "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(annotation)/Nodes"
+      },
+      "ContentLength": 0,
+      "ChildrenNumber": 7
+    },
+    {
+      "Id": "manifest.safe",
+      "Name": "manifest.safe",
+      "Nodes": {
+        "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(manifest.safe)/Nodes"
+      },
+      "ContentLength": 36436,
+      "ChildrenNumber": 0
+    },
+    {
+      "Id": "measurement",
+      "Name": "measurement",
+      "Nodes": {
+        "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(measurement)/Nodes"
+      },
+      "ContentLength": 0,
+      "ChildrenNumber": 6
+    },
+    {
+      "Id": "preview",
+      "Name": "preview",
+      "Nodes": {
+        "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(preview)/Nodes"
+      },
+      "ContentLength": 0,
+      "ChildrenNumber": 5
+    },
+    {
+      "Id": "support",
+      "Name": "support",
+      "Nodes": {
+        "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes(support)/Nodes"
+      },
+      "ContentLength": 0,
+      "ChildrenNumber": 8
+    }
+  ]
+}

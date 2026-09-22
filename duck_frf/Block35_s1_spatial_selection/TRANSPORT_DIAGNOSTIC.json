@@ -1,0 +1,7 @@
+{
+  "previous_status": "transport_error",
+  "cause": "sandbox process proxy points to loopback port 9; approved direct public route requested",
+  "tls_verification": true,
+  "no_access_control_bypass": true,
+  "historical_failure_in_ledger": true
+}

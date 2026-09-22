@@ -1,0 +1,1029 @@
+[
+  {
+    "family": "waves",
+    "instrument": "waverider-17m",
+    "month": "202110",
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc"
+    },
+    "discovery": "verified_Block30_response_provenance",
+    "metadata": {
+      "attributes": {
+        "time": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "standard_name": "time",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "time",
+          "_ChunkSizes": 1000.0
+        },
+        "station_name": {
+          "units": "",
+          "long_name": "station name",
+          "cf_role": "timeseries_id",
+          "short_name": "station_name",
+          "_ChunkSizes": 31.0,
+          "strlen": 31.0,
+          "dimName": "station_name_length"
+        },
+        "latitude": {
+          "_FillValue": -999.0,
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "Latitude",
+          "short_name": "lat"
+        },
+        "longitude": {
+          "_FillValue": -999.0,
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "Longitude",
+          "short_name": "lon"
+        },
+        "nominalDepth": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "description": "Nominal bottom vertical location from NAVD88",
+          "long_name": "Bottom Elevation (NAVD88)",
+          "short_name": "Bottom Elevation"
+        },
+        "gaugeDepth": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Sensor Depth Using Pressure, relative to mean water level",
+          "short_name": "Gauge Depth",
+          "_ChunkSizes": 10.0
+        },
+        "waveHs": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "sea_surface_wave_significant_height",
+          "long_name": "Significant Wave Height",
+          "description": "Significant wave height computed for spectral frquencies between 0.04 and 0.5 Hz",
+          "short_name": "Hs",
+          "coordinates": "lat lon",
+          "_ChunkSizes": 10.0
+        },
+        "waveTp": {
+          "_FillValue": -999.0,
+          "units": "s",
+          "standard_name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
+          "description": "Period of a parobolic fit to the peak of the energy density spectrum using the peak and two surrounding points.  Computed for wave periods between 2 and 25 seconds",
+          "long_name": "Peak Spectral Period Between 2 and 25 Seconds",
+          "coordinates": "lat lon",
+          "short_name": "Tp",
+          "_ChunkSizes": 10.0
+        },
+        "waveTpfb": {
+          "_FillValue": -999.0,
+          "units": "s",
+          "long_name": "Peak Wave Period Over Full Spectrum",
+          "description": "Period of a parobolic fit to the peak of the energy density spectrum using the peak and two surrounding points. Computed over entire spectrum",
+          "coordinates": "lat lon",
+          "short_name": "Tp-FullBand",
+          "_ChunkSizes": 10.0
+        },
+        "waveTm": {
+          "_FillValue": -999.99,
+          "units": "s",
+          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+          "description": "Period for the mean of the energy density spectrum",
+          "long_name": "Mean Spectral Period",
+          "coordinates": "lat lon",
+          "short_name": "Tm",
+          "_ChunkSizes": 10.0
+        },
+        "waveTm1": {
+          "_FillValue": -999.99,
+          "units": "s",
+          "standard_name": "sea_surface_wave_mean_period_from variance_spectral_density_first_frequency_moment",
+          "description": "Period for the 1st moment mean of the energy density spectrum",
+          "long_name": " 1st Moment Mean Spectral Period",
+          "coordinates": "lat lon",
+          "short_name": "Tm1",
+          "_ChunkSizes": 10.0
+        },
+        "waveTm2": {
+          "_FillValue": -999.99,
+          "units": "s",
+          "standard_name": "sea_surface_wave_mean_period_from variance_spectral_density_second_frequency_moment",
+          "description": "Period for the 2nd moment mean of the energy density spectrum",
+          "long_name": " 2nd Moment Mean Spectral Period",
+          "coordinates": "lat lon",
+          "short_name": "Tm2",
+          "_ChunkSizes": 10.0
+        },
+        "wavePeakDirectionPeakFrequency": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "standard_name": "sea_surface_wave_from_direction",
+          "description": "Wave direction is from true north (MET convention)",
+          "long_name": "Wave Direction at the Peak of the Frequency-Direction Spectrum",
+          "coordinates": "lat lon",
+          "short_name": "thetaP",
+          "_ChunkSizes": 10.0
+        },
+        "waveMeanDirection": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "description": "Wave direction is from true north (MET convention), energy weighted over and computed from a1 & b1",
+          "long_name": "Mean Wave Direction of 2D Spectrum",
+          "coordinates": "lat lon",
+          "short_name": "thetaM",
+          "_ChunkSizes": 10.0
+        },
+        "waveMeanDirectionPeakFrequency": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "description": "Wave direction is from true north (MET convention), energy weighted at peak frequency",
+          "long_name": "Wave Wean Direction at the Peak Frequency",
+          "coordinates": "lat lon",
+          "short_name": "thetaMp",
+          "_ChunkSizes": 10.0
+        },
+        "wavePrincipleDirection": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "description": "Wave direction is from true north (MET convention), energy weighted over and computed from a2 & b2",
+          "long_name": "Wave Primciple Direction of 2D Spectrum",
+          "coordinates": "lat lon",
+          "short_name": "thetaM2",
+          "_ChunkSizes": 10.0
+        },
+        "waveFrequency": {
+          "_FillValue": -999.0,
+          "units": "s-1",
+          "standard_name": "wave_frequency",
+          "long_name": "Spectral Band Center Frequency",
+          "short_name": "Frequency",
+          "_ChunkSizes": 62.0
+        },
+        "waveDirectionBins": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "long_name": "Band Center in Degrees",
+          "short_name": "Direction",
+          "_ChunkSizes": 72.0
+        },
+        "waveEnergyDensity": {
+          "_FillValue": -999.0,
+          "units": "m2 s",
+          "standard_name": "sea_surface_wave_variance_spectral_density",
+          "long_name": "Energy Density",
+          "short_name": "1D Wave Energy",
+          "_ChunkSizes": [
+            10.0,
+            62.0
+          ]
+        },
+        "directionalWaveEnergyDensity": {
+          "_FillValue": "nan",
+          "units": "m2 s deg-1",
+          "standard_name": "sea_surface_wave_directional_variance_spectral_density",
+          "long_name": "2D Wave Energy Density Spectrum",
+          "short_name": "Energy Density",
+          "_ChunkSizes": [
+            1.0,
+            62.0,
+            72.0
+          ]
+        },
+        "qcFlagE": {
+          "_Unsigned": "false",
+          "_FillValue": -99.0,
+          "units": "",
+          "description": "Realtime QC flags for spectral estimates",
+          "long_name": "Quality Control Flag Value for Energy Estimates",
+          "flag_meanings": "1=passed, 2=not set, 3=questionable, 4=failed",
+          "coordinates": "lat lon",
+          "short_name": "QC_flag_E",
+          "_ChunkSizes": 10.0
+        },
+        "qcFlagD": {
+          "_Unsigned": "false",
+          "_FillValue": -99.0,
+          "units": "",
+          "description": "Realtime QC flags for spectral direction estimates",
+          "long_name": "Quality Control Flag Value for Directional Spectra Estimates",
+          "flag_meanings": "1=passed, 2=not set, 3=questionable, 4=failed",
+          "coordinates": "lat lon",
+          "short_name": "QC_flag_D",
+          "_ChunkSizes": 10.0
+        },
+        "directionalPeakSpread": {
+          "_FillValue": -999.0,
+          "units": "deg",
+          "description": "Directional spread at peak frequency with cos(2*theta) circular moments",
+          "long_name": "Directional Spectra Spread at Peak Frequency",
+          "coordinates": "lat lon",
+          "short_name": "spreadP",
+          "_ChunkSizes": 10.0
+        },
+        "spectralWidthParameter": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "Spectral width of 1D spectra, (m0*m4 - m2^2)/(m0*m4)  (Cartwright & Longuet-Higgins, 1956)",
+          "long_name": "Spectral Width Parameter",
+          "valid_min": "0",
+          "valid_max": "1",
+          "coordinates": "lat lon",
+          "short_name": "spreadP",
+          "_ChunkSizes": 10.0
+        },
+        "waveDirectionEstimator": {
+          "_Unsigned": "false",
+          "_FillValue": 0.0,
+          "units": "",
+          "description": "Estimator for directional spectra - 1,4,6 = IMLE, 5,7=Longuet-Higgins cos(2*theta)",
+          "long_name": "Directional Spectra Estimator",
+          "coordinates": "lat lon",
+          "short_name": "Wave Direction",
+          "_ChunkSizes": 10.0
+        },
+        "waveA1Value": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "a1 Fourier coefficient",
+          "long_name": "a1 Directional Fourier Coefficient",
+          "coordinates": "lat lon",
+          "short_name": "a1",
+          "_ChunkSizes": [
+            10.0,
+            62.0
+          ]
+        },
+        "waveB1Value": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "b1 Fourier coefficient",
+          "long_name": "b1 Directional Fourier Coefficient",
+          "coordinates": "lat lon",
+          "short_name": "b1",
+          "_ChunkSizes": [
+            10.0,
+            62.0
+          ]
+        },
+        "waveA2Value": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "a2 Fourier coefficient",
+          "long_name": "a2 Directional Fourier Coefficient",
+          "coordinates": "lat lon",
+          "short_name": "a2",
+          "_ChunkSizes": [
+            10.0,
+            62.0
+          ]
+        },
+        "waveB2Value": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "b2 Fourier coefficient",
+          "long_name": "b2 Directional Fourier Coefficient",
+          "coordinates": "lat lon",
+          "short_name": "b2",
+          "_ChunkSizes": [
+            10.0,
+            62.0
+          ]
+        },
+        "NC_GLOBAL": {
+          "featureType": "timeSeries",
+          "title": "FRF 17m Datawell Waverider Buoy",
+          "summary": "USACE/COAB data collected by a Datawell Directional Waverider (Mk III) approximately 2 miles (3.2 km) \n offshore of Duck (FRF), NC.  The nominal depth for each deployment was approximately 17m NAVD88. \n The original data processing was from timeseries the buoy transmitted via HF radio.  Heave-North-West\n buoy displacements were transmitted at 1.28 Hz.  Spectra and cross-spectra were computed and directional\n Fourier coefficients were computed (e.g., M.D. Earle, K.E. Steele, and D.W.C. Wang - Use of advanced \n directional wave spectra analysis methods, Ocean Engineering 26 (1999) 1421\u20131434).  That analysis was \n done with data from Feb 1997 to May 2005. Between May 2005 and May 2013 directional Fourier coefficients (AB)\n were extracted from the HF data that the buoy computes onboard.  Directional spectra were computed from the \n Fourier coefficients computed onboard the buoy.  Since May 2013 buoy was provided through the Coastal \n Data Information Program (CDIP), UCSD San Diego, CA.  Data are transmitted via an Iridium satellite link \n at half-hour intervals, with raw data record lengths of 30 minutes.  These data also provide the buoy computed\n Fourier coefficients but have been rotated from magnetic north to clockwise from true north.  \n Two dimensional (2D) frequency-direction spectra are computed using an Iterative Maximum Likelihood Estimator\n (IMLE) method.  See - Oltman-Shay, J., Guza, R.T., 1984. A data-adaptive ocean wave directional-spectrum \n estimator for pitch and roll type measurements. Journal of Physical Oceanography 14, 1800\u20131810.\n\n This buoy has other identifiers; 433 (CDIP), 630 (FRF), and 44056 (NDBC).\n \nDeployment start and stop dates and buoy location;\n Hull ID    Lat       Lon    Depth    Start       Stop       Buoy Type/Telemetry  \n  30109, 36.16853, -75.70070, 17.0, 1996-10-16, 1997-02-10,  Directional waverider, HF timeseries \n  30109, 36.16853, -75.70070, 17.0, 1997-03-11, 1998-01-26,  Directional waverider, HF timeseries\n  30154, 36.16667, -75.70000, 17.0, 1998-01-26, 1998-07-28,  Directional waverider MKII, HF timeseries\n  30154, 36.16828, -75.70080, 16.5, 1998-07-31, 1998-12-03,  Directional waverider MKII, HF timeseries\n  30154, 36.16867, -75.70072, 16.5, 1998-12-17, 2000-01-31,  Directional waverider MKII, HF timeseries\n  30154, 36.16867, -75.70072, 16.5, 2000-02-02, 2000-02-12,  Directional waverider MKII, HF timeseries\n  30154, 36.16832, -75.70063, 16.7, 2000-02-24, 2000-11-30,  Directional waverider MKII, HF timeseries\n  30154, 36.16836, -75.70022, 16.7, 2000-12-18, 2002-01-07,  Directional waverider MKII, HF timeseries\n  30154, 36.16836, -75.70022, 16.7, 2002-01-08, 2003-02-14,  Directional waverider MKII, HF timeseries\n  30154, 36.16836, -75.70022, 16.7, 2003-02-14, 2004-02-02,  Directional waverider MKII, HF timeseries\n  30154, 36.16710, -75.70058, 16.7, 2004-02-20, 2004-03-25,  Directional waverider MKII, HF timeseries\n  30154, 36.16710, -75.70058, 16.7, 2004-03-25, 2005-05-17,  Directional waverider MKII, HF timeseries\n  30154, 36.16710, -75.70058, 16.7, 2005-05-19, 2006-08-01,  Directional waverider MKII, HF timeseries-AB\n  30004, 36.19957, -75.71600, 16.9, 2006-08-02, 2006-09-06,  Directional waverider MKII, HF AB\n  30004, 36.19957, -75.71600, 17.1, 2006-09-07, 2006-11-28,  Directional waverider MKII, HF AB\n  30154, 36.19957, -75.71600, 16.9, 2006-11-28, 2008-01-24,  Directional waverider MKII, HF AB\n  30154, 36.19957, -75.71600, 16.9, 2008-02-05, 2008-11-18,  Directional waverider MKII, HF AB\n  30154, 36.19988, -75.71405, 16.9, 2008-11-26, 2009-03-13,  Directional waverider MKII, HF AB\n  30154, 36.19988, -75.71405, 16.9, 2009-04-10, 2010-12-06,  Directional waverider MKII, HF AB\n  30154, 36.19988, -75.71405, 16.9, 2010-12-10, 2011-01-04,  Directional waverider MKII, HF AB\n  30154, 36.19988, -75.71405, 16.9, 2011-01-04, 2013-05-15,  Directional waverider MKII, HF AB\n  30154, 36.19988, -75.71405, 16.9, 2013-05-15, 2014-11-04,  Directional waverider MKIII, CDIP AB\n  30634, 36.20002, -75.71517, 16.9, 2014-11-04, 2222-02-22,  Directional waverider MKIII, CDIP AB\n",
+          "history": "1996-11-07:dataset created",
+          "source": "In situ observations from FRF-ocean_waves_waverider-17m_YYYMM.mat",
+          "sourceUrl": "(local files)",
+          "standard_name_vocabulary": "CFv25",
+          "Metadata_Conventions": "Unidata Dataset Discovery v1.0, CF-1.6;",
+          "metadata_link": "N/A",
+          "Conventions": "CF-1.6",
+          "creator_name": "USACE/CHL/COAB",
+          "creator_url": "http://frf.usace.army.mil",
+          "creator_email": "frfwebmaster@usace.army.mil",
+          "license": "These data may be redistributed and used without restriction. Data are intended for scholarly use by the research community, with the express agreement that users will properly acknowledge the USACE Field Research Facility and the supporting investigator(s). Use or reproduction of these data for commercial purposes is prohibited without prior written permission.",
+          "keywords_vocabulary": "Global Change Master Directory (GCMD) Earth Science Keywords; CF Standard Name Table (v23, 23 March 2013);",
+          "keywords": "Oceans > Ocean Waves > Wave Frequency, Oceans > Ocean Waves > Wave Height, Oceans > Ocean Waves > Wave Period, Oceans > Ocean Waves > Wave Spectra, Oceans > Ocean Waves > Wave Direction, DOD > DOD/USARMY/USACE/CHL/FRF > Field Research Facility, Coastal And Hydraulics Laboratory,U. S. Army Corps Of Engineers, U.S. Army, U. S. Department Of Defense, sea_surface_wave_variance_spectral_density, sea_surface_wave_significant_height, sea_surface_wave_from_direction,  sea_surface_wave_directional_variance_spectral_density;",
+          "processing": "realtime",
+          "organization": "USACE/CHL/COAB",
+          "publisher_url": "http://frf.usace.army.mil",
+          "infoUrl": "http://frf.usace.army.mil",
+          "publisher_email": "frfwebmaster@usace.army.mil",
+          "publisher_name": "USACE/CHL/COAB",
+          "format_version": "v1.0",
+          "institution": "USACE/CHL/COAB",
+          "contact": "USACE/CHL/COAB",
+          "contact_info": "USACE/CHL/COAB",
+          "contact_role": "Owner",
+          "contributor_name": "USACE/CHL/COAB",
+          "contributor_role": "USACE/CHL/COAB",
+          "naming_authority": "FRF",
+          "origin": "USACE/CHL/COAB",
+          "acknowledgement": "Data are provided by the Field Research Facility; Coastal Observations & Analysis Branch; US Army Corps of Engineers, Duck, North Carolina.",
+          "project": "USACE/FRF observations",
+          "id": "FRF-ocean_waves_waverider-17m",
+          "processing_level": "L1",
+          "geospatial_vertical_units": "m",
+          "geospatial_vertical_resolution": 0.0,
+          "geospatial_vertical_min": 0.0,
+          "geospatial_vertical_max": 0.0,
+          "geospatial_vertical_origin": "sea surface",
+          "geospatial_lat_min": 36.19988333,
+          "geospatial_lat_max": 36.19988333,
+          "geospatial_lat_units": "degrees_north",
+          "geospatial_lon_min": -75.71405,
+          "geospatial_lon_max": -75.71405,
+          "geospatial_lon_units": "degrees_east",
+          "geospatial_vertical_positive": "up",
+          "time_coverage_start": "2021-10-01T00:00:00",
+          "deployment_start": "2008-05-22T18:24:00Z",
+          "platform": "Datawell Waverider buoy",
+          "instrument": "Datawell Waverider buoy (Mk III)",
+          "cross_shore_angle_units": "degrees",
+          "cross_shore_angle_description": "cross shore angle at the USACE FRF site in DUCK, NC, clockwise from true north",
+          "cross_shore_angle": 71.8,
+          "date_created": "2021-10-31",
+          "date_issued": "2021-10-31",
+          "time_coverage_end": "2021-10-31T23:30:00"
+        },
+        "DODS_EXTRA": {
+          "Unlimited_Dimension": "time"
+        }
+      },
+      "shapes": {
+        "time": [
+          1472
+        ],
+        "latitude": [],
+        "longitude": [],
+        "nominalDepth": [],
+        "gaugeDepth": [
+          1472
+        ],
+        "waveHs": [
+          1472
+        ],
+        "waveTp": [
+          1472
+        ],
+        "waveTpfb": [
+          1472
+        ],
+        "waveTm": [
+          1472
+        ],
+        "waveTm1": [
+          1472
+        ],
+        "waveTm2": [
+          1472
+        ],
+        "wavePeakDirectionPeakFrequency": [
+          1472
+        ],
+        "waveMeanDirection": [
+          1472
+        ],
+        "waveMeanDirectionPeakFrequency": [
+          1472
+        ],
+        "wavePrincipleDirection": [
+          1472
+        ],
+        "waveFrequency": [
+          62
+        ],
+        "waveDirectionBins": [
+          72
+        ],
+        "waveEnergyDensity": [
+          1472,
+          62
+        ],
+        "directionalWaveEnergyDensity": [
+          1472,
+          62,
+          72
+        ],
+        "qcFlagE": [
+          1472
+        ],
+        "qcFlagD": [
+          1472
+        ],
+        "directionalPeakSpread": [
+          1472
+        ],
+        "spectralWidthParameter": [
+          1472
+        ],
+        "waveDirectionEstimator": [
+          1472
+        ],
+        "waveA1Value": [
+          1472,
+          62
+        ],
+        "waveB1Value": [
+          1472,
+          62
+        ],
+        "waveA2Value": [
+          1472,
+          62
+        ],
+        "waveB2Value": [
+          1472,
+          62
+        ]
+      },
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+      "available_services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc"
+      },
+      "event_subset_source": [
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time[189:1:192],latitude,longitude,waveHs[189:1:192],waveTp[189:1:192],waveTm[189:1:192],waveMeanDirection[189:1:192],wavePeakDirectionPeakFrequency[189:1:192],directionalPeakSpread[189:1:192],waveTm1[189:1:192],waveTm2[189:1:192],waveMeanDirectionPeakFrequency[189:1:192],waveFrequency,waveDirectionBins,waveEnergyDensity[189:1:192][0:1:61],directionalWaveEnergyDensity[189:1:192][0:1:61][0:1:71],waveA1Value[189:1:192][0:1:61],waveB1Value[189:1:192][0:1:61],waveA2Value[189:1:192][0:1:61],waveB2Value[189:1:192][0:1:61],qcFlagE[189:1:192],qcFlagD[189:1:192],waveDirectionEstimator[189:1:192],nominalDepth,gaugeDepth[189:1:192]",
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time[520:1:523],latitude,longitude,waveHs[520:1:523],waveTp[520:1:523],waveTm[520:1:523],waveMeanDirection[520:1:523],wavePeakDirectionPeakFrequency[520:1:523],directionalPeakSpread[520:1:523],waveTm1[520:1:523],waveTm2[520:1:523],waveMeanDirectionPeakFrequency[520:1:523],waveFrequency,waveDirectionBins,waveEnergyDensity[520:1:523][0:1:61],directionalWaveEnergyDensity[520:1:523][0:1:61][0:1:71],waveA1Value[520:1:523][0:1:61],waveB1Value[520:1:523][0:1:61],waveA2Value[520:1:523][0:1:61],waveB2Value[520:1:523][0:1:61],qcFlagE[520:1:523],qcFlagD[520:1:523],waveDirectionEstimator[520:1:523],nominalDepth,gaugeDepth[520:1:523]",
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time[756:1:759],latitude,longitude,waveHs[756:1:759],waveTp[756:1:759],waveTm[756:1:759],waveMeanDirection[756:1:759],wavePeakDirectionPeakFrequency[756:1:759],directionalPeakSpread[756:1:759],waveTm1[756:1:759],waveTm2[756:1:759],waveMeanDirectionPeakFrequency[756:1:759],waveFrequency,waveDirectionBins,waveEnergyDensity[756:1:759][0:1:61],directionalWaveEnergyDensity[756:1:759][0:1:61][0:1:71],waveA1Value[756:1:759][0:1:61],waveB1Value[756:1:759][0:1:61],waveA2Value[756:1:759][0:1:61],waveB2Value[756:1:759][0:1:61],qcFlagE[756:1:759],qcFlagD[756:1:759],waveDirectionEstimator[756:1:759],nominalDepth,gaugeDepth[756:1:759]",
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time[1088:1:1091],latitude,longitude,waveHs[1088:1:1091],waveTp[1088:1:1091],waveTm[1088:1:1091],waveMeanDirection[1088:1:1091],wavePeakDirectionPeakFrequency[1088:1:1091],directionalPeakSpread[1088:1:1091],waveTm1[1088:1:1091],waveTm2[1088:1:1091],waveMeanDirectionPeakFrequency[1088:1:1091],waveFrequency,waveDirectionBins,waveEnergyDensity[1088:1:1091][0:1:61],directionalWaveEnergyDensity[1088:1:1091][0:1:61][0:1:71],waveA1Value[1088:1:1091][0:1:61],waveB1Value[1088:1:1091][0:1:61],waveA2Value[1088:1:1091][0:1:61],waveB2Value[1088:1:1091][0:1:61],qcFlagE[1088:1:1091],qcFlagD[1088:1:1091],waveDirectionEstimator[1088:1:1091],nominalDepth,gaugeDepth[1088:1:1091]",
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc.ascii?time[1325:1:1328],latitude,longitude,waveHs[1325:1:1328],waveTp[1325:1:1328],waveTm[1325:1:1328],waveMeanDirection[1325:1:1328],wavePeakDirectionPeakFrequency[1325:1:1328],directionalPeakSpread[1325:1:1328],waveTm1[1325:1:1328],waveTm2[1325:1:1328],waveMeanDirectionPeakFrequency[1325:1:1328],waveFrequency,waveEnergyDensity[1325:1:1328][0:1:61],waveA1Value[1325:1:1328][0:1:61],waveB1Value[1325:1:1328][0:1:61],waveA2Value[1325:1:1328][0:1:61],waveB2Value[1325:1:1328][0:1:61],qcFlagE[1325:1:1328],qcFlagD[1325:1:1328],waveDirectionEstimator[1325:1:1328],nominalDepth,gaugeDepth[1325:1:1328]"
+      ]
+    },
+    "coverage": {
+      "actual_time_min": 1633046400.0,
+      "actual_time_max": 1635722999.9999967,
+      "search_windows_utc_seconds": [
+        [
+          1633385196.304,
+          1633392396.304
+        ],
+        [
+          1633989486.126,
+          1633996686.126
+        ],
+        [
+          1634421996.442,
+          1634429196.442
+        ],
+        [
+          1635026286.218,
+          1635033486.218
+        ],
+        [
+          1635458796.323,
+          1635465996.323
+        ]
+      ],
+      "monthly_time_vector_verified": true,
+      "observations_in_context_retrieved": true,
+      "scope": "verified monthly time vector; gaps not filled; QC search limited to fetched event context"
+    },
+    "status": "retrieved"
+  },
+  {
+    "family": "waves",
+    "instrument": "awac-11m",
+    "month": "202110",
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+    "services": {
+      "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc"
+    },
+    "discovery": "verified_Block30_response_provenance",
+    "metadata": {
+      "attributes": {
+        "time": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "standard_name": "time",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "time",
+          "_ChunkSizes": 1000.0
+        },
+        "station_name": {
+          "units": "",
+          "long_name": "station name",
+          "cf_role": "timeseries_id",
+          "short_name": "station_name",
+          "_ChunkSizes": 18.0,
+          "strlen": 18.0,
+          "dimName": "station_name_length"
+        },
+        "latitude": {
+          "_FillValue": -999.0,
+          "units": "degrees_north",
+          "standard_name": "latitude",
+          "long_name": "Latitude",
+          "short_name": "lat"
+        },
+        "longitude": {
+          "_FillValue": -999.0,
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "Longitude",
+          "short_name": "lon"
+        },
+        "nominalDepth": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "description": "Nominal bottom vertical location from NAVD88",
+          "long_name": "Bottom Elevation (NAVD88)",
+          "short_name": "Bottom Elevation"
+        },
+        "gaugeElevation": {
+          "description": "Gauge Vertical Position from NAVD88",
+          "long_name": "Gauge Elevation",
+          "short_name": "Gauge Elevation",
+          "_FillValue": -999.0,
+          "units": "m"
+        },
+        "depth": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Water Depth",
+          "standard_name": "sea_floor_depth_below_sea_surface",
+          "short_name": "Depth",
+          "_ChunkSizes": 741.0
+        },
+        "waveHs": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "sea_surface_wave_significant_height",
+          "long_name": "Significant Wave Height",
+          "description": "Significant wave height computed for spectral frquencies between 0.04 and 0.5 Hz",
+          "short_name": "Hs",
+          "coordinates": "lat lon",
+          "_ChunkSizes": 741.0
+        },
+        "waveTp": {
+          "_FillValue": -999.0,
+          "units": "s",
+          "standard_name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
+          "description": "Period of a parobolic fit to the peak of the energy density spectrum using the peak and two surrounding points.  Computed for wave periods between 2 and 25 seconds",
+          "long_name": "Peak Spectral Period Between 2 and 25 Seconds",
+          "coordinates": "lat lon",
+          "short_name": "Tp",
+          "_ChunkSizes": 741.0
+        },
+        "waveTpfb": {
+          "_FillValue": -999.0,
+          "units": "s",
+          "long_name": "Peak Wave Period Over Full Spectrum",
+          "description": "Period of a parobolic fit to the peak of the energy density spectrum using the peak and two surrounding points. Computed over entire spectrum",
+          "coordinates": "lat lon",
+          "short_name": "Tp-FullBand",
+          "_ChunkSizes": 741.0
+        },
+        "waveTm": {
+          "_FillValue": -999.99,
+          "units": "s",
+          "standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_inverse_frequency_moment",
+          "description": "Period for the mean of the energy density spectrum",
+          "long_name": "Mean Spectral Period",
+          "coordinates": "lat lon",
+          "short_name": "Tm",
+          "_ChunkSizes": 741.0
+        },
+        "waveTm1": {
+          "_FillValue": -999.99,
+          "units": "s",
+          "standard_name": "sea_surface_wave_mean_period_from variance_spectral_density_first_frequency_moment",
+          "description": "Period for the 1st moment mean of the energy density spectrum",
+          "long_name": " 1st Moment Mean Spectral Period",
+          "coordinates": "lat lon",
+          "short_name": "Tm1",
+          "_ChunkSizes": 741.0
+        },
+        "waveTm2": {
+          "_FillValue": -999.99,
+          "units": "s",
+          "standard_name": "sea_surface_wave_mean_period_from variance_spectral_density_second_frequency_moment",
+          "description": "Period for the 2nd moment mean of the energy density spectrum",
+          "long_name": " 2nd Moment Mean Spectral Period",
+          "coordinates": "lat lon",
+          "short_name": "Tm2",
+          "_ChunkSizes": 741.0
+        },
+        "wavePeakDirectionPeakFrequency": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "standard_name": "sea_surface_wave_from_direction",
+          "description": "Wave direction is from true north (MET convention)",
+          "long_name": "Wave Direction at the Peak of the Frequency-Direction Spectrum",
+          "coordinates": "lat lon",
+          "short_name": "thetaP",
+          "_ChunkSizes": 741.0
+        },
+        "waveMeanDirection": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "description": "Wave direction is from true north (MET convention), energy weighted over and computed from a1 & b1",
+          "long_name": "Mean Wave Direction of 2D Spectrum",
+          "coordinates": "lat lon",
+          "short_name": "thetaM",
+          "_ChunkSizes": 741.0
+        },
+        "waveMeanDirectionPeakFrequency": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "description": "Wave direction is from true north (MET convention), energy weighted at peak frequency",
+          "long_name": "Wave Wean Direction at the Peak Frequency",
+          "coordinates": "lat lon",
+          "short_name": "thetaMp",
+          "_ChunkSizes": 741.0
+        },
+        "wavePrincipleDirection": {
+          "_FillValue": -999.0,
+          "units": "degree",
+          "description": "Wave direction is from true north (MET convention), energy weighted over and computed from a2 & b2",
+          "long_name": "Wave Primciple Direction of 2D Spectrum",
+          "coordinates": "lat lon",
+          "short_name": "thetaM2",
+          "_ChunkSizes": 741.0
+        },
+        "waveFrequency": {
+          "_FillValue": -999.0,
+          "units": "s-1",
+          "standard_name": "wave_frequency",
+          "long_name": "Spectral Band Center Frequency",
+          "short_name": "Frequency",
+          "_ChunkSizes": 62.0
+        },
+        "waveDirectionBins": {
+          "_FillValue": -999.0,
+          "long_name": "Band Center in Degrees",
+          "short_name": "Direction",
+          "units": "degree",
+          "_ChunkSizes": 72.0
+        },
+        "waveEnergyDensity": {
+          "_FillValue": -999.0,
+          "units": "m2 s",
+          "standard_name": "sea_surface_wave_variance_spectral_density",
+          "long_name": "Energy Density",
+          "short_name": "1D Wave Energy",
+          "_ChunkSizes": [
+            741.0,
+            62.0
+          ]
+        },
+        "directionalWaveEnergyDensity": {
+          "_FillValue": "nan",
+          "units": "m2 s deg-1",
+          "standard_name": "sea_surface_wave_directional_variance_spectral_density",
+          "long_name": "2D Wave Energy Density Spectrum",
+          "short_name": "Energy Density",
+          "_ChunkSizes": [
+            1.0,
+            62.0,
+            72.0
+          ]
+        },
+        "depthElevation": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "description": "Bottom vertical location from NAVD88 computed from the surveyed gauge depth and gauge height off the bottom based on altimeter or survey data, or nominal data.  See depthSource.",
+          "long_name": "Bottom Elevation (NAVD88)",
+          "short_name": "Bottom Elevation",
+          "_ChunkSizes": 741.0
+        },
+        "depthSource": {
+          "_Unsigned": "false",
+          "_FillValue": -99.0,
+          "units": "",
+          "long_name": "Flag of how bottom location was determined (0=nominal depth, 1=altimeter, 2=bathymetric survey)",
+          "short_name": "BottomZ",
+          "coordinates": "lat lon",
+          "_ChunkSizes": 741.0
+        },
+        "qcFlagE": {
+          "_Unsigned": "false",
+          "_FillValue": -99.0,
+          "units": "",
+          "description": "Realtime QC flags for spectral estimates",
+          "long_name": "Quality Control Flag Value for Energy Estimates",
+          "flag_meanings": "1=passed, 2=not set, 3=questionable, 4=failed",
+          "coordinates": "lat lon",
+          "short_name": "QC_flag_E",
+          "_ChunkSizes": 741.0
+        },
+        "qcFlagD": {
+          "_Unsigned": "false",
+          "_FillValue": -99.0,
+          "units": "",
+          "description": "Realtime QC flags for spectral direction estimates",
+          "long_name": "Quality Control Flag Value for Directional Spectra Estimates",
+          "flag_meanings": "1=passed, 2=not set, 3=questionable, 4=failed",
+          "coordinates": "lat lon",
+          "short_name": "QC_flag_D",
+          "_ChunkSizes": 741.0
+        },
+        "directionalPeakSpread": {
+          "_FillValue": -999.0,
+          "units": "deg",
+          "description": "Directional spread at peak frequency with cos(2*theta) circular moments",
+          "long_name": "Directional Spectra Spread at Peak Frequency",
+          "coordinates": "lat lon",
+          "short_name": "spreadP",
+          "_ChunkSizes": 741.0
+        },
+        "spectralWidthParameter": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "Spectral width of 1D spectra, (m0*m4 - m2^2)/(m0*m4)  (Cartwright & Longuet-Higgins, 1956)",
+          "long_name": "Spectral Width Parameter",
+          "valid_min": "0",
+          "valid_max": "1",
+          "coordinates": "lat lon",
+          "short_name": "spreadP",
+          "_ChunkSizes": 741.0
+        },
+        "waveDirectionEstimator": {
+          "_Unsigned": "false",
+          "_FillValue": 0.0,
+          "units": "",
+          "description": "Estimator for directional spectra - 1,4,6 = IMLE, 5,7=Longuet-Higgins cos(2*theta)",
+          "long_name": "Directional Spectra Estimator",
+          "coordinates": "lat lon",
+          "short_name": "Wave Direction",
+          "_ChunkSizes": 741.0
+        },
+        "waveA1Value": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "a1 Fourier coefficient",
+          "long_name": "a1 Directional Fourier Coefficient",
+          "coordinates": "lat lon",
+          "short_name": "a1",
+          "_ChunkSizes": [
+            741.0,
+            62.0
+          ]
+        },
+        "waveB1Value": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "b1 Fourier coefficient",
+          "long_name": "b1 Directional Fourier Coefficient",
+          "coordinates": "lat lon",
+          "short_name": "b1",
+          "_ChunkSizes": [
+            741.0,
+            62.0
+          ]
+        },
+        "waveA2Value": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "a2 Fourier coefficient",
+          "long_name": "a2 Directional Fourier Coefficient",
+          "coordinates": "lat lon",
+          "short_name": "a2",
+          "_ChunkSizes": [
+            741.0,
+            62.0
+          ]
+        },
+        "waveB2Value": {
+          "_FillValue": -999.0,
+          "units": "",
+          "description": "b2 Fourier coefficient",
+          "long_name": "b2 Directional Fourier Coefficient",
+          "coordinates": "lat lon",
+          "short_name": "b2",
+          "_ChunkSizes": [
+            741.0,
+            62.0
+          ]
+        },
+        "waterLevel": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "water_surface_height_above_reference_datum",
+          "long_name": "Water Level Height",
+          "description": "Water level based on sensor mean pressure and surveyed location of sensor (NAVD88), barometrically corrected, see mbar value",
+          "short_name": "Water Level",
+          "coordinates": "time lat lon",
+          "_ChunkSizes": 741.0
+        },
+        "airPressure": {
+          "_FillValue": -999.0,
+          "units": "mbar",
+          "standard_name": "air_pressure",
+          "long_name": "Barometric Pressure",
+          "description": "Atmospheric pressure at sea level measured with a shore based sensor, averaged over wave record",
+          "short_name": "Barom Pressure",
+          "coordinates": "time lat lon",
+          "_ChunkSizes": 741.0
+        },
+        "NC_GLOBAL": {
+          "featureType": "timeSeries",
+          "title": "FRF 11m AWAC Waves",
+          "station_name": "11m-AWAC",
+          "summary": "USACE/COAB data collected by a bottom mounted (looking up) Nortek AWAC, approximately 1150m offshore  of Duck (FRF), NC at a nominal depth of 11m NAVD88.  Directional spectra are computed using a custom  COAB analysis of merging low frequency AST-UV (or PUV) spectra with high-end beam-array spectra  (see http link frf.usace.army.mil/realtime/awac/COAB_awacSpectralAnalysis.pdf).  Data collection is  hard-wired and analyzed hourly with 34 minute timeseries records.  Two dimensional frequency-direction  spectra are computed using a Maximum Likelihood Estimator (MLE) method.  The Fourier coefficients  were estimated from the 2D spectra.  A description of computing these coefficients is provided in Use of advanced directional wave spectra analysis methods, M. D. Earle, K. E. Steele, and D. W. C. Wang,  Ocean Engineering, Volume 26, Issue 12, December 1999, Pages 1421-1434. Or Kuik et. al, JPO, 18,  pp. 1020-1034, 1988.\n",
+          "history": "2015-09-19:data set created",
+          "source": "In situ observations from FRF-ocean_waves_awac-11m_YYYYMM.mat",
+          "sourceUrl": "(local files)",
+          "standard_name_vocabulary": "CFv25",
+          "Metadata_Conventions": "Unidata Dataset Discovery v1.0, CF-1.6",
+          "metadata_link": "N/A",
+          "Conventions": "CF-1.6",
+          "creator_name": "USACE/CHL/COAB",
+          "creator_url": "http://frf.usace.army.mil",
+          "creator_email": "frfwebmaster@usace.army.mil",
+          "license": "These data may be redistributed and used without restriction. Data are intended for scholarly use by the research community, with the express agreement that users will properly acknowledge the USACE Field Research Facility and the supporting investigator(s). Use or reproduction of these data for commercial purposes is prohibited without prior written permission.",
+          "keywords_vocabulary": "FGlobal Change Master Directory (GCMD) Earth Science Keywords; CF Standard Name Table (v23, 23 March 2013)",
+          "keywords": "Oceans > Ocean Waves > Wave Frequency, Oceans > Ocean Waves > Wave Height, Oceans > Ocean Waves > Wave Period, Oceans > Ocean Waves > Wave Spectra, Oceans > Ocean Waves > Wave Direction, DOD > DOD/USARMY/USACE/CHL/FRF > Field Research Facility, Coastal And Hydraulics Laboratory,U. S. Army Corps Of Engineers, U.S. Army, U. S. Department Of Defense, sea_surface_wave_variance_spectral_density, sea_surface_wave_significant_height, sea_surface_wave_from_direction,  sea_surface_wave_directional_variance_spectral_density",
+          "processing": "realtime",
+          "organization": "USACE/CHL/COAB",
+          "publisher_url": "http://frf.usace.army.mil",
+          "infoUrl": "http://frf.usace.army.mil",
+          "publisher_email": "frfwebmaster@usace.army.mil",
+          "publisher_name": "USACE/CHL/COAB",
+          "format_version": "v1.0",
+          "institution": "USACE/CHL/COAB",
+          "contact": "USACE/CHL/COAB",
+          "contact_info": "USACE/CHL/COAB",
+          "contact_role": "Owner",
+          "contributor_name": "USACE/CHL/COAB",
+          "contributor_role": "USACE/CHL/COAB",
+          "naming_authority": "FRF",
+          "origin": "USACE/CHL/COAB",
+          "date_created": "2021-10-31",
+          "date_issued": "2021-10-31",
+          "acknowledgement": "Data are provided by the Field Research Facility; Coastal Observations &amp; Analysis Branch; US Army Corps of Engineers, Duck, North Carolina.",
+          "project": "USACE/COAB observations",
+          "id": "FRF-ocean_waves_awac-11m",
+          "processing_level": "L1",
+          "geospatial_vertical_units": "m",
+          "geospatial_vertical_resolution": 0.0,
+          "geospatial_vertical_min": 0.0,
+          "geospatial_vertical_max": 0.0,
+          "geospatial_vertical_origin": "NAVD88",
+          "geospatial_lat_min": 36.1896111,
+          "geospatial_lat_max": 36.1896111,
+          "geospatial_lat_units": "degrees_north",
+          "geospatial_lon_min": -75.7393953,
+          "geospatial_lon_max": -75.7393953,
+          "geospatial_lon_units": "degrees_east",
+          "geospatial_vertical_positive": "up",
+          "time_coverage_start": "2021-10-01T00:00:02",
+          "time_coverage_end": "2021-11-01T00:00:02",
+          "deployment_start": "2015-09-18T22:00:00Z",
+          "platform": "Nortek AWAC",
+          "instrument": "Nortek AWAC",
+          "cross_shore_angle_units": "degrees",
+          "cross_shore_angle_description": "cross shore angle at the USACE FRF site in DUCK, NC, clockwise from true north",
+          "cross_shore_angle": 71.8
+        },
+        "DODS_EXTRA": {
+          "Unlimited_Dimension": "time"
+        }
+      },
+      "shapes": {
+        "time": [
+          741
+        ],
+        "latitude": [],
+        "longitude": [],
+        "nominalDepth": [],
+        "gaugeElevation": [],
+        "depth": [
+          741
+        ],
+        "waveHs": [
+          741
+        ],
+        "waveTp": [
+          741
+        ],
+        "waveTpfb": [
+          741
+        ],
+        "waveTm": [
+          741
+        ],
+        "waveTm1": [
+          741
+        ],
+        "waveTm2": [
+          741
+        ],
+        "wavePeakDirectionPeakFrequency": [
+          741
+        ],
+        "waveMeanDirection": [
+          741
+        ],
+        "waveMeanDirectionPeakFrequency": [
+          741
+        ],
+        "wavePrincipleDirection": [
+          741
+        ],
+        "waveFrequency": [
+          62
+        ],
+        "waveDirectionBins": [
+          72
+        ],
+        "waveEnergyDensity": [
+          741,
+          62
+        ],
+        "directionalWaveEnergyDensity": [
+          741,
+          62,
+          72
+        ],
+        "depthElevation": [
+          741
+        ],
+        "depthSource": [
+          741
+        ],
+        "qcFlagE": [
+          741
+        ],
+        "qcFlagD": [
+          741
+        ],
+        "directionalPeakSpread": [
+          741
+        ],
+        "spectralWidthParameter": [
+          741
+        ],
+        "waveDirectionEstimator": [
+          741
+        ],
+        "waveA1Value": [
+          741,
+          62
+        ],
+        "waveB1Value": [
+          741,
+          62
+        ],
+        "waveA2Value": [
+          741,
+          62
+        ],
+        "waveB2Value": [
+          741,
+          62
+        ],
+        "waterLevel": [
+          741
+        ],
+        "airPressure": [
+          741
+        ]
+      },
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+      "available_services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc"
+      },
+      "event_subset_source": [
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time[93:1:94],latitude,longitude,waveHs[93:1:94],waveTp[93:1:94],waveTm[93:1:94],waveMeanDirection[93:1:94],wavePeakDirectionPeakFrequency[93:1:94],directionalPeakSpread[93:1:94],waveTm1[93:1:94],waveTm2[93:1:94],waveMeanDirectionPeakFrequency[93:1:94],waveFrequency,waveDirectionBins,waveEnergyDensity[93:1:94][0:1:61],directionalWaveEnergyDensity[93:1:94][0:1:61][0:1:71],waveA1Value[93:1:94][0:1:61],waveB1Value[93:1:94][0:1:61],waveA2Value[93:1:94][0:1:61],waveB2Value[93:1:94][0:1:61],qcFlagE[93:1:94],qcFlagD[93:1:94],waveDirectionEstimator[93:1:94],nominalDepth",
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time[258:1:259],latitude,longitude,waveHs[258:1:259],waveTp[258:1:259],waveTm[258:1:259],waveMeanDirection[258:1:259],wavePeakDirectionPeakFrequency[258:1:259],directionalPeakSpread[258:1:259],waveTm1[258:1:259],waveTm2[258:1:259],waveMeanDirectionPeakFrequency[258:1:259],waveFrequency,waveDirectionBins,waveEnergyDensity[258:1:259][0:1:61],directionalWaveEnergyDensity[258:1:259][0:1:61][0:1:71],waveA1Value[258:1:259][0:1:61],waveB1Value[258:1:259][0:1:61],waveA2Value[258:1:259][0:1:61],waveB2Value[258:1:259][0:1:61],qcFlagE[258:1:259],qcFlagD[258:1:259],waveDirectionEstimator[258:1:259],nominalDepth",
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time[379:1:380],latitude,longitude,waveHs[379:1:380],waveTp[379:1:380],waveTm[379:1:380],waveMeanDirection[379:1:380],wavePeakDirectionPeakFrequency[379:1:380],directionalPeakSpread[379:1:380],waveTm1[379:1:380],waveTm2[379:1:380],waveMeanDirectionPeakFrequency[379:1:380],waveFrequency,waveDirectionBins,waveEnergyDensity[379:1:380][0:1:61],directionalWaveEnergyDensity[379:1:380][0:1:61][0:1:71],waveA1Value[379:1:380][0:1:61],waveB1Value[379:1:380][0:1:61],waveA2Value[379:1:380][0:1:61],waveB2Value[379:1:380][0:1:61],qcFlagE[379:1:380],qcFlagD[379:1:380],waveDirectionEstimator[379:1:380],nominalDepth",
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time[546:1:547],latitude,longitude,waveHs[546:1:547],waveTp[546:1:547],waveTm[546:1:547],waveMeanDirection[546:1:547],wavePeakDirectionPeakFrequency[546:1:547],directionalPeakSpread[546:1:547],waveTm1[546:1:547],waveTm2[546:1:547],waveMeanDirectionPeakFrequency[546:1:547],waveFrequency,waveDirectionBins,waveEnergyDensity[546:1:547][0:1:61],directionalWaveEnergyDensity[546:1:547][0:1:61][0:1:71],waveA1Value[546:1:547][0:1:61],waveB1Value[546:1:547][0:1:61],waveA2Value[546:1:547][0:1:61],waveB2Value[546:1:547][0:1:61],qcFlagE[546:1:547],qcFlagD[546:1:547],waveDirectionEstimator[546:1:547],nominalDepth",
+        "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc.ascii?time[667:1:668],latitude,longitude,waveHs[667:1:668],waveTp[667:1:668],waveTm[667:1:668],waveMeanDirection[667:1:668],wavePeakDirectionPeakFrequency[667:1:668],directionalPeakSpread[667:1:668],waveTm1[667:1:668],waveTm2[667:1:668],waveMeanDirectionPeakFrequency[667:1:668],waveFrequency,waveDirectionBins,waveEnergyDensity[667:1:668][0:1:61],directionalWaveEnergyDensity[667:1:668][0:1:61][0:1:71],waveA1Value[667:1:668][0:1:61],waveB1Value[667:1:668][0:1:61],waveA2Value[667:1:668][0:1:61],waveB2Value[667:1:668][0:1:61],qcFlagE[667:1:668],qcFlagD[667:1:668],waveDirectionEstimator[667:1:668],nominalDepth"
+      ]
+    },
+    "coverage": {
+      "actual_time_min": 1633046401.9999993,
+      "actual_time_max": 1635724801.9999993,
+      "search_windows_utc_seconds": [
+        [
+          1633385196.304,
+          1633392396.304
+        ],
+        [
+          1633989486.126,
+          1633996686.126
+        ],
+        [
+          1634421996.442,
+          1634429196.442
+        ],
+        [
+          1635026286.218,
+          1635033486.218
+        ],
+        [
+          1635458796.323,
+          1635465996.323
+        ]
+      ],
+      "monthly_time_vector_verified": true,
+      "observations_in_context_retrieved": true,
+      "scope": "verified monthly time vector; gaps not filled; QC search limited to fetched event context"
+    },
+    "status": "retrieved"
+  }
+]

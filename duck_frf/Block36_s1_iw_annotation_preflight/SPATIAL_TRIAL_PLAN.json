@@ -1,0 +1,77 @@
+{
+  "status": "executable_after_gate",
+  "input": "selected VV measurement only after verified subswath/burst support",
+  "invalid_samples": "mask/exclude before statistics; never zero-filled as sea",
+  "intensity": "abs(SLC)**2; complex pixels remain source input",
+  "calibration": "matching annotation LUT, definition/domain verified; preserve uncalibrated diagnostic",
+  "noise": "matching noise XML only; documented domain; flag rather than hide negative/clipped results",
+  "metric_geometry": "annotation geolocation/Jacobian with ROI variation; slant spacing, ground spacing and effective resolution separate",
+  "windows_m": [
+    [
+      300,
+      300
+    ],
+    [
+      400,
+      300
+    ],
+    [
+      500,
+      300
+    ]
+  ],
+  "detrending": [
+    "plane",
+    "quadratic_diagnostic"
+  ],
+  "spatial_windows": [
+    "hann",
+    "tukey_alpha_0.25"
+  ],
+  "spectrum": "real intensity 2D FFT; numpy negative exponent; fftshift(fftfreq); q_sample,q_line rad/pixel",
+  "zero_padding_factor": 2,
+  "zero_padding_scope": "interpolation only, not physical resolution",
+  "peaks": "retain conjugate pair; discrete bin, interpolated/fitted estimator and physical lobe width reported separately",
+  "stability": "all geometrically available predeclared variants; unavailable windows stay unavailable",
+  "forbidden": [
+    "expected-wave band forcing",
+    "bathymetry-selected peak",
+    "L/W universal error floor",
+    "minimum phase/dwell/cycles",
+    "automatic burst-overlap duplication"
+  ],
+  "frf_reference": {
+    "Tp_published_s": {
+      "waverider-17m": 11.396011,
+      "awac-11m": 10.869565
+    },
+    "discrete_peak_hz": {
+      "waverider-17m": 0.085,
+      "awac-11m": 0.0925
+    },
+    "band_halfmax_hz": {
+      "waverider-17m": 0.03,
+      "awac-11m": 0.022500000000000006
+    },
+    "direction_from_deg": {
+      "waverider-17m": 66.34158,
+      "awac-11m": 66.40836
+    },
+    "direction_toward_deg": {
+      "waverider-17m": 246.34158,
+      "awac-11m": 246.40836000000002
+    },
+    "offset_seconds": {
+      "waverider-17m": -396.3229966163635,
+      "awac-11m": -395.8229992389679
+    },
+    "distances_and_qc": "preserved in Block35; not automatically local truth"
+  },
+  "allowed_null_result": "association between SAR structure and FRF band not identifiable",
+  "separate_later_stages": [
+    "spatial-measurement stability",
+    "inversion conditional on external omega/current uncertainty",
+    "independent survey comparison"
+  ],
+  "no_real_inversion": true
+}

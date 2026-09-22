@@ -1,0 +1,33 @@
+{
+  "root": "XFDU",
+  "referenced_files": [
+    "annotation/calibration/calibration-s1a-iw1-slc-vh-20211028t230638-20211028t230703-040326-04c765-001.xml",
+    "annotation/calibration/calibration-s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml",
+    "annotation/calibration/calibration-s1a-iw2-slc-vh-20211028t230636-20211028t230701-040326-04c765-002.xml",
+    "annotation/calibration/calibration-s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml",
+    "annotation/calibration/calibration-s1a-iw3-slc-vh-20211028t230637-20211028t230702-040326-04c765-003.xml",
+    "annotation/calibration/calibration-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+    "annotation/calibration/noise-s1a-iw1-slc-vh-20211028t230638-20211028t230703-040326-04c765-001.xml",
+    "annotation/calibration/noise-s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml",
+    "annotation/calibration/noise-s1a-iw2-slc-vh-20211028t230636-20211028t230701-040326-04c765-002.xml",
+    "annotation/calibration/noise-s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml",
+    "annotation/calibration/noise-s1a-iw3-slc-vh-20211028t230637-20211028t230702-040326-04c765-003.xml",
+    "annotation/calibration/noise-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+    "annotation/s1a-iw1-slc-vh-20211028t230638-20211028t230703-040326-04c765-001.xml",
+    "annotation/s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml",
+    "annotation/s1a-iw2-slc-vh-20211028t230636-20211028t230701-040326-04c765-002.xml",
+    "annotation/s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml",
+    "annotation/s1a-iw3-slc-vh-20211028t230637-20211028t230702-040326-04c765-003.xml",
+    "annotation/s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+    "measurement/s1a-iw1-slc-vh-20211028t230638-20211028t230703-040326-04c765-001.tiff",
+    "measurement/s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.tiff",
+    "measurement/s1a-iw2-slc-vh-20211028t230636-20211028t230701-040326-04c765-002.tiff",
+    "measurement/s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.tiff",
+    "measurement/s1a-iw3-slc-vh-20211028t230637-20211028t230702-040326-04c765-003.tiff",
+    "measurement/s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.tiff",
+    "preview/map-overlay.kml",
+    "preview/product-preview.html",
+    "preview/quick-look.png"
+  ],
+  "expected_annotations_present": true
+}

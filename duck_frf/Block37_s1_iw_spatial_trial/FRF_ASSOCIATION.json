@@ -1,0 +1,195 @@
+{
+  "classification": "identifiable",
+  "sar_stable_unique_lobe": true,
+  "sar_primary_results": [
+    {
+      "window_width_m": 300.0,
+      "window_height_m": 300.0,
+      "variant": "primary",
+      "radiometry": "sigma0_lut",
+      "interpolation": "bilinear",
+      "negative_after_noise_fraction": 0.0,
+      "processing_status": "complete",
+      "selected_index": [
+        23,
+        83
+      ],
+      "discrete_k_frf_rad_m": [
+        0.08377580409572782,
+        -0.020943951023931956
+      ],
+      "interpolated_k_frf_rad_m": [
+        0.07946523989738769,
+        -0.019830607569900828
+      ],
+      "k_east_rad_m": 0.08178542365981918,
+      "k_north_rad_m": 0.005888646616832974,
+      "k_magnitude_rad_m": 0.08199714435389839,
+      "wavelength_m": 76.62687959060449,
+      "bearing_toward_deg": 85.88174330990601,
+      "axial_bearing_deg": 85.88174330990601,
+      "peak_power": 3.7841000223376375,
+      "lobe_to_annular_median": 54.82640129698393,
+      "half_power_radial_width_rad_m": 0.015451784307557545,
+      "conjugate_closure_relative": 0.0,
+      "zero_padding_factor": 2,
+      "padding_role": "interpolation only",
+      "bin_step_unpadded_rad_m": [
+        0.020943951023931952,
+        0.020943951023931952
+      ],
+      "bin_step_padded_rad_m": [
+        0.010471975511965992,
+        0.010471975511965992
+      ],
+      "physical_window_m": [
+        300.0,
+        300.0
+      ],
+      "detrend": "plane",
+      "taper": "hann"
+    },
+    {
+      "window_width_m": 400.0,
+      "window_height_m": 300.0,
+      "variant": "primary",
+      "radiometry": "sigma0_lut",
+      "interpolation": "bilinear",
+      "negative_after_noise_fraction": 0.0,
+      "processing_status": "complete",
+      "selected_index": [
+        23,
+        110
+      ],
+      "discrete_k_frf_rad_m": [
+        0.07853981633974483,
+        -0.020943951023931956
+      ],
+      "interpolated_k_frf_rad_m": [
+        0.0795358189862415,
+        -0.019070116930294326
+      ],
+      "k_east_rad_m": 0.08161541935380358,
+      "k_north_rad_m": 0.006630903896730749,
+      "k_magnitude_rad_m": 0.08188434259847785,
+      "wavelength_m": 76.73243880077733,
+      "bearing_toward_deg": 85.35516492111364,
+      "axial_bearing_deg": 85.35516492111364,
+      "peak_power": 7.625401228701743,
+      "lobe_to_annular_median": 70.40839294672257,
+      "half_power_radial_width_rad_m": 0.020503765084967707,
+      "conjugate_closure_relative": 0.0,
+      "zero_padding_factor": 2,
+      "padding_role": "interpolation only",
+      "bin_step_unpadded_rad_m": [
+        0.015707963267948967,
+        0.020943951023931952
+      ],
+      "bin_step_padded_rad_m": [
+        0.007853981633974438,
+        0.010471975511965992
+      ],
+      "physical_window_m": [
+        400.0,
+        300.0
+      ],
+      "detrend": "plane",
+      "taper": "hann"
+    },
+    {
+      "window_width_m": 500.0,
+      "window_height_m": 300.0,
+      "variant": "primary",
+      "radiometry": "sigma0_lut",
+      "interpolation": "bilinear",
+      "negative_after_noise_fraction": 0.0,
+      "processing_status": "complete",
+      "selected_index": [
+        23,
+        138
+      ],
+      "discrete_k_frf_rad_m": [
+        0.08168140899333463,
+        -0.020943951023931956
+      ],
+      "interpolated_k_frf_rad_m": [
+        0.0791140507119988,
+        -0.018993240775620448
+      ],
+      "k_east_rad_m": 0.08119018542675983,
+      "k_north_rad_m": 0.006572771010427034,
+      "k_magnitude_rad_m": 0.08145580107265016,
+      "wavelength_m": 77.13613056945611,
+      "bearing_toward_deg": 85.37169967289537,
+      "axial_bearing_deg": 85.37169967289537,
+      "peak_power": 11.955560479840283,
+      "lobe_to_annular_median": 93.63413526023344,
+      "half_power_radial_width_rad_m": 0.0143262476845544,
+      "conjugate_closure_relative": 0.0,
+      "zero_padding_factor": 2,
+      "padding_role": "interpolation only",
+      "bin_step_unpadded_rad_m": [
+        0.012566370614359173,
+        0.020943951023931952
+      ],
+      "bin_step_padded_rad_m": [
+        0.0062831853071796395,
+        0.010471975511965992
+      ],
+      "physical_window_m": [
+        500.0,
+        300.0
+      ],
+      "detrend": "plane",
+      "taper": "hann"
+    }
+  ],
+  "frf_references": [
+    {
+      "instrument_id": "FRF:waverider-17m",
+      "offset_seconds": -396.3229966163635,
+      "Hm0_m": 1.7103800078812894,
+      "published_Tp_s": 11.396011,
+      "discrete_peak_period_s": 11.76470588235294,
+      "discrete_peak_frequency_hz": 0.085,
+      "half_power_frequency_hz": [
+        0.0775,
+        0.1
+      ],
+      "mean_direction_from_deg": 66.34158,
+      "peak_direction_from_deg": 70.0,
+      "propagation_toward_deg": 246.34158,
+      "directional_spread_deg": 23.245344,
+      "valid_bin_fraction": 1.0,
+      "spectral_status": "complete_spectrum",
+      "qc_note": "nearest verified complete spectrum; published mean/mode directions retained separately"
+    },
+    {
+      "instrument_id": "FRF:awac-11m",
+      "offset_seconds": -395.8229992389679,
+      "Hm0_m": 1.7174570466943269,
+      "published_Tp_s": 10.869565,
+      "discrete_peak_period_s": 10.81081081081081,
+      "discrete_peak_frequency_hz": 0.0925,
+      "half_power_frequency_hz": [
+        0.085,
+        0.1
+      ],
+      "mean_direction_from_deg": 66.40836,
+      "peak_direction_from_deg": 70.0,
+      "propagation_toward_deg": 246.40836000000002,
+      "directional_spread_deg": 24.212297,
+      "valid_bin_fraction": 1.0,
+      "spectral_status": "complete_spectrum",
+      "qc_note": "nearest verified complete spectrum; published mean/mode directions retained separately"
+    }
+  ],
+  "sar_frf_axial_differences_deg": [
+    19.540163309906006,
+    19.013584921113647,
+    19.03011967289538
+  ],
+  "tolerance_deg": 25.0,
+  "selection_order": "SAR-only result saved before external comparison; no expected-band or depth filter",
+  "reason": "stable SAR family and direction-compatible complete FRF systems"
+}

@@ -1,0 +1,164 @@
+{
+  "@odata.context": "$metadata#Products(Attributes())",
+  "@odata.count": 8,
+  "value": [
+    {
+      "@odata.mediaContentType": "application/octet-stream",
+      "Id": "8f977b0b-e9d0-5be4-8838-bd7b68abe0a4",
+      "Name": "S1A_IW_SLC__1SDV_20211004T230610_20211004T230638_039976_04BB45_8966.SAFE",
+      "ContentType": "application/octet-stream",
+      "ContentLength": 8058096575,
+      "OriginDate": "2021-10-05T13:02:02.201000Z",
+      "PublicationDate": "2021-10-05T13:20:38.123507Z",
+      "ModificationDate": "2025-11-25T12:18:44.471076Z",
+      "Online": true,
+      "EvictionDate": "9999-12-31T23:59:59.999999Z",
+      "S3Path": "/eodata/Sentinel-1/SAR/SLC/2021/10/04/S1A_IW_SLC__1SDV_20211004T230610_20211004T230638_039976_04BB45_8966.SAFE",
+      "Checksum": [
+        {
+          "Value": "ce2c18e4b2dab5761825309457962141",
+          "Algorithm": "MD5",
+          "ChecksumDate": "2025-11-25T12:18:28.455453Z"
+        },
+        {
+          "Value": "127c928701619e719ccdba901a3749f40d782bd99352d34c49d35bf09141e2ab",
+          "Algorithm": "BLAKE3",
+          "ChecksumDate": "2025-11-25T12:18:44.019639Z"
+        }
+      ],
+      "ContentDate": {
+        "Start": "2021-10-04T23:06:10.527000Z",
+        "End": "2021-10-04T23:06:38.425000Z"
+      },
+      "Footprint": "geography'SRID=4326;MULTIPOLYGON (((-77.766319 34.117935, -75.026413 34.52248, -75.363701 36.19965, -78.163124 35.796947, -77.766319 34.117935)))'",
+      "GeoFootprint": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -77.766319,
+                34.117935
+              ],
+              [
+                -75.026413,
+                34.52248
+              ],
+              [
+                -75.363701,
+                36.19965
+              ],
+              [
+                -78.163124,
+                35.796947
+              ],
+              [
+                -77.766319,
+                34.117935
+              ]
+            ]
+          ]
+        ]
+      },
+      "Attributes": [
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "timeliness",
+          "Value": "Fast-24h",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.IntegerAttribute",
+          "Name": "orbitNumber",
+          "Value": 39976,
+          "ValueType": "Integer"
+        },
+        {
+          "@odata.type": "#OData.CSC.IntegerAttribute",
+          "Name": "sliceNumber",
+          "Value": 18,
+          "ValueType": "Integer"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "productClass",
+          "Value": "S",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "orbitDirection",
+          "Value": "ASCENDING",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "operationalMode",
+          "Value": "IW",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "processingLevel",
+          "Value": "LEVEL1",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "swathIdentifier",
+          "Value": "IW1 IW2 IW3",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "platformShortName",
+          "Value": "SENTINEL-1",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "instrumentShortName",
+          "Value": "SAR",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.IntegerAttribute",
+          "Name": "relativeOrbitNumber",
+          "Value": 4,
+          "ValueType": "Integer"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "polarisationChannels",
+          "Value": "VV&VH",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "platformSerialIdentifier",
+          "Value": "A",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.StringAttribute",
+          "Name": "productType",
+          "Value": "IW_SLC__1S",
+          "ValueType": "String"
+        },
+        {
+          "@odata.type": "#OData.CSC.DateTimeOffsetAttribute",
+          "Name": "beginningDateTime",
+          "Value": "2021-10-04T23:06:10.527000Z",
+          "ValueType": "DateTimeOffset"
+        },
+        {
+          "@odata.type": "#OData.CSC.DateTimeOffsetAttribute",
+          "Name": "endingDateTime",
+          "Value": "2021-10-04T23:06:38.425000Z",
+          "ValueType": "DateTimeOffset"
+        }
+      ]
+    }
+  ],
+  "@odata.nextLink": "https://catalogue.dataspace.copernicus.eu/odata/v1/Products?%24filter=Collection%2FName+eq+%27SENTINEL-1%27+and+contains%28Name%2C%27_IW_SLC_%27%29+and+ContentDate%2FStart+ge+2021-10-01T00%3A00%3A00Z+and+ContentDate%2FStart+lt+2021-11-01T00%3A00%3A00Z+and+OData.CSC.Intersects%28area%3Dgeography%27SRID%3D4326%3BPOLYGON+%28%28-75.751+36.165%2C+-75.585+36.165%2C+-75.585+36.265%2C+-75.751+36.265%2C+-75.751+36.165%29%29%27%29&%24expand=Attributes&%24top=1&%24orderby=ContentDate%2FStart+asc&%24count=true&%24skip=1"
+}

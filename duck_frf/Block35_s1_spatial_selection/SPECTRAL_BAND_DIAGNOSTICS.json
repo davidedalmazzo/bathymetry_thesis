@@ -1,0 +1,902 @@
+{
+  "c49a9c1f-9b00-5676-ab05-683975d898a2": [
+    {
+      "instrument_id": "FRF:waverider-17m",
+      "time_utc": "2021-10-28T23:00:00.000003+00:00",
+      "offset_seconds": -396.3229966163635,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+      "original_sample_index": 1326,
+      "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/17",
+      "f_peak_bin_hz": 0.085,
+      "T_peak_bin_s": 11.76470588235294,
+      "m0_m2": 0.18283748571,
+      "Hm0_m": 1.7103800078812894,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.07375000000000001,
+        0.10375000000000001
+      ],
+      "half_max_width_hz": 0.03,
+      "half_max_energy_fraction": 0.3837608750061826,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.085,
+          "E_m2_Hz": 2.940694,
+          "prominence_m2_Hz": 2.914130113
+        },
+        {
+          "f_hz": 0.145,
+          "E_m2_Hz": 0.6888337,
+          "prominence_m2_Hz": 0.17980026000000005
+        },
+        {
+          "f_hz": 0.2125,
+          "E_m2_Hz": 0.52986294,
+          "prominence_m2_Hz": 0.17957889999999999
+        },
+        {
+          "f_hz": 0.2575,
+          "E_m2_Hz": 0.2647068,
+          "prominence_m2_Hz": 0.09225060000000002
+        },
+        {
+          "f_hz": 0.3025,
+          "E_m2_Hz": 0.15856263,
+          "prominence_m2_Hz": 0.009773520000000008
+        },
+        {
+          "f_hz": 0.3175,
+          "E_m2_Hz": 0.13362768,
+          "prominence_m2_Hz": 0.019156735999999994
+        },
+        {
+          "f_hz": 0.34,
+          "E_m2_Hz": 0.12480341,
+          "prominence_m2_Hz": 0.019465789999999997
+        },
+        {
+          "f_hz": 0.37,
+          "E_m2_Hz": 0.09965494,
+          "prominence_m2_Hz": 0.010919576
+        },
+        {
+          "f_hz": 0.43,
+          "E_m2_Hz": 0.047485165,
+          "prominence_m2_Hz": 0.007317081000000003
+        },
+        {
+          "f_hz": 0.4525,
+          "E_m2_Hz": 0.038421974,
+          "prominence_m2_Hz": 0.0012440139999999947
+        },
+        {
+          "f_hz": 0.49,
+          "E_m2_Hz": 0.031495534,
+          "prominence_m2_Hz": 0.003802563999999998
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 11.396011,
+        "waveMeanDirectionPeakFrequency": 66.34158,
+        "wavePeakDirectionPeakFrequency": 70.0,
+        "directionalPeakSpread": 23.245344
+      }
+    },
+    {
+      "instrument_id": "FRF:awac-11m",
+      "time_utc": "2021-10-28T23:00:00.500001+00:00",
+      "offset_seconds": -395.8229992389679,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+      "original_sample_index": 667,
+      "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/8",
+      "f_peak_bin_hz": 0.0925,
+      "T_peak_bin_s": 10.81081081081081,
+      "m0_m2": 0.18435366920249996,
+      "Hm0_m": 1.7174570466943269,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.08125,
+        0.10375000000000001
+      ],
+      "half_max_width_hz": 0.022500000000000006,
+      "half_max_energy_fraction": 0.36242754233770336,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.0925,
+          "E_m2_Hz": 3.3919203,
+          "prominence_m2_Hz": 3.364070201
+        },
+        {
+          "f_hz": 0.1525,
+          "E_m2_Hz": 0.5281248,
+          "prominence_m2_Hz": 0.16637595999999993
+        },
+        {
+          "f_hz": 0.1825,
+          "E_m2_Hz": 0.40772438,
+          "prominence_m2_Hz": 0.15471955999999998
+        },
+        {
+          "f_hz": 0.2425,
+          "E_m2_Hz": 0.30620852,
+          "prominence_m2_Hz": 0.07589902999999998
+        },
+        {
+          "f_hz": 0.28,
+          "E_m2_Hz": 0.28903115,
+          "prominence_m2_Hz": 0.02602038000000001
+        },
+        {
+          "f_hz": 0.3325,
+          "E_m2_Hz": 0.11913203,
+          "prominence_m2_Hz": 0.024917499999999995
+        },
+        {
+          "f_hz": 0.3475,
+          "E_m2_Hz": 0.0841049,
+          "prominence_m2_Hz": 0.003562744999999992
+        },
+        {
+          "f_hz": 0.3775,
+          "E_m2_Hz": 0.12019458,
+          "prominence_m2_Hz": 0.04424976
+        },
+        {
+          "f_hz": 0.4,
+          "E_m2_Hz": 0.054964293,
+          "prominence_m2_Hz": 0.0011736379999999977
+        },
+        {
+          "f_hz": 0.415,
+          "E_m2_Hz": 0.05679211,
+          "prominence_m2_Hz": 0.005311272999999998
+        },
+        {
+          "f_hz": 0.4375,
+          "E_m2_Hz": 0.055778507,
+          "prominence_m2_Hz": 0.032370983
+        },
+        {
+          "f_hz": 0.4825,
+          "E_m2_Hz": 0.028365424,
+          "prominence_m2_Hz": 0.0010628999999999986
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 10.869565,
+        "waveMeanDirectionPeakFrequency": 66.40836,
+        "wavePeakDirectionPeakFrequency": 70.0,
+        "directionalPeakSpread": 24.212297
+      }
+    }
+  ],
+  "d982f98d-9739-5a03-aa42-27407da87d7e": [
+    {
+      "instrument_id": "FRF:waverider-17m",
+      "time_utc": "2021-10-11T23:00:00.000003+00:00",
+      "offset_seconds": 113.87400341033936,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+      "original_sample_index": 522,
+      "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/6",
+      "f_peak_bin_hz": 0.115,
+      "T_peak_bin_s": 8.695652173913043,
+      "m0_m2": 0.27843113079,
+      "Hm0_m": 2.1106629509800943,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.09625,
+        0.19375
+      ],
+      "half_max_width_hz": 0.0975,
+      "half_max_energy_fraction": 0.6424932477644664,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.07,
+          "E_m2_Hz": 0.65490043,
+          "prominence_m2_Hz": 0.31772943
+        },
+        {
+          "f_hz": 0.115,
+          "E_m2_Hz": 2.6614175,
+          "prominence_m2_Hz": 2.619173196
+        },
+        {
+          "f_hz": 0.145,
+          "E_m2_Hz": 2.1187418,
+          "prominence_m2_Hz": 0.6743953
+        },
+        {
+          "f_hz": 0.1675,
+          "E_m2_Hz": 1.5675156,
+          "prominence_m2_Hz": 0.1168486999999998
+        },
+        {
+          "f_hz": 0.19,
+          "E_m2_Hz": 1.6180583,
+          "prominence_m2_Hz": 0.1967162
+        },
+        {
+          "f_hz": 0.22,
+          "E_m2_Hz": 0.52476025,
+          "prominence_m2_Hz": 0.014583950000000012
+        },
+        {
+          "f_hz": 0.25,
+          "E_m2_Hz": 0.45190203,
+          "prominence_m2_Hz": 0.013426300000000002
+        },
+        {
+          "f_hz": 0.28,
+          "E_m2_Hz": 0.5139712,
+          "prominence_m2_Hz": 0.09406769999999998
+        },
+        {
+          "f_hz": 0.34,
+          "E_m2_Hz": 0.19043413,
+          "prominence_m2_Hz": 0.05713213
+        },
+        {
+          "f_hz": 0.385,
+          "E_m2_Hz": 0.11581473,
+          "prominence_m2_Hz": 0.002167490000000008
+        },
+        {
+          "f_hz": 0.43,
+          "E_m2_Hz": 0.07547403,
+          "prominence_m2_Hz": 0.018616805
+        },
+        {
+          "f_hz": 0.4825,
+          "E_m2_Hz": 0.06332316,
+          "prominence_m2_Hz": 0.018842277000000004
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 8.826125,
+        "waveMeanDirectionPeakFrequency": 71.96895,
+        "wavePeakDirectionPeakFrequency": 65.0,
+        "directionalPeakSpread": 26.64921
+      }
+    },
+    {
+      "instrument_id": "FRF:awac-11m",
+      "time_utc": "2021-10-11T23:00:00.500001+00:00",
+      "offset_seconds": 114.37400078773499,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+      "original_sample_index": 259,
+      "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/3",
+      "f_peak_bin_hz": 0.1075,
+      "T_peak_bin_s": 9.30232558139535,
+      "m0_m2": 0.21595978299750002,
+      "Hm0_m": 1.8588589316997672,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.10375000000000001,
+        0.17875
+      ],
+      "half_max_width_hz": 0.07499999999999998,
+      "half_max_energy_fraction": 0.5187540415860523,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.07,
+          "E_m2_Hz": 0.35599005,
+          "prominence_m2_Hz": 0.07929785
+        },
+        {
+          "f_hz": 0.1075,
+          "E_m2_Hz": 1.8911735,
+          "prominence_m2_Hz": 1.8486864
+        },
+        {
+          "f_hz": 0.1675,
+          "E_m2_Hz": 1.7945193,
+          "prominence_m2_Hz": 0.6247938
+        },
+        {
+          "f_hz": 0.19,
+          "E_m2_Hz": 1.1211809,
+          "prominence_m2_Hz": 0.24112849999999997
+        },
+        {
+          "f_hz": 0.22,
+          "E_m2_Hz": 0.8873217,
+          "prominence_m2_Hz": 0.20175319999999997
+        },
+        {
+          "f_hz": 0.2875,
+          "E_m2_Hz": 0.23907983,
+          "prominence_m2_Hz": 0.043837899999999985
+        },
+        {
+          "f_hz": 0.31,
+          "E_m2_Hz": 0.29119065,
+          "prominence_m2_Hz": 0.09788525000000001
+        },
+        {
+          "f_hz": 0.3625,
+          "E_m2_Hz": 0.14420173,
+          "prominence_m2_Hz": 0.05221716999999999
+        },
+        {
+          "f_hz": 0.4,
+          "E_m2_Hz": 0.07162623,
+          "prominence_m2_Hz": 0.004947214000000005
+        },
+        {
+          "f_hz": 0.43,
+          "E_m2_Hz": 0.08231362,
+          "prominence_m2_Hz": 0.025330740000000004
+        },
+        {
+          "f_hz": 0.4525,
+          "E_m2_Hz": 0.055115625,
+          "prominence_m2_Hz": 0.0067135089999999994
+        },
+        {
+          "f_hz": 0.4825,
+          "E_m2_Hz": 0.051349387,
+          "prominence_m2_Hz": 0.011332855000000003
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 8.96861,
+        "waveMeanDirectionPeakFrequency": 78.81856,
+        "wavePeakDirectionPeakFrequency": 80.0,
+        "directionalPeakSpread": 24.352789
+      }
+    }
+  ],
+  "b1d1d660-87fc-5790-9275-8df4034e8d82": [
+    {
+      "instrument_id": "FRF:waverider-17m",
+      "time_utc": "2021-10-04T23:00:00.000003+00:00",
+      "offset_seconds": -396.30399656295776,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+      "original_sample_index": 190,
+      "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/1",
+      "f_peak_bin_hz": 0.0925,
+      "T_peak_bin_s": 10.81081081081081,
+      "m0_m2": 0.022660377285749995,
+      "Hm0_m": 0.6021345668303721,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.08875,
+        0.11125
+      ],
+      "half_max_width_hz": 0.022500000000000006,
+      "half_max_energy_fraction": 0.30176098741745566,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.0775,
+          "E_m2_Hz": 0.18778764,
+          "prominence_m2_Hz": 0.001689380000000018
+        },
+        {
+          "f_hz": 0.0925,
+          "E_m2_Hz": 0.38381544,
+          "prominence_m2_Hz": 0.375356218
+        },
+        {
+          "f_hz": 0.16,
+          "E_m2_Hz": 0.02608214,
+          "prominence_m2_Hz": 0.0006833359999999997
+        },
+        {
+          "f_hz": 0.19,
+          "E_m2_Hz": 0.010841531,
+          "prominence_m2_Hz": 0.0011323870000000003
+        },
+        {
+          "f_hz": 0.235,
+          "E_m2_Hz": 0.009046104,
+          "prominence_m2_Hz": 0.0004901869999999996
+        },
+        {
+          "f_hz": 0.2875,
+          "E_m2_Hz": 0.021462606,
+          "prominence_m2_Hz": 0.0011450349999999991
+        },
+        {
+          "f_hz": 0.31,
+          "E_m2_Hz": 0.039357234,
+          "prominence_m2_Hz": 0.0036782339999999955
+        },
+        {
+          "f_hz": 0.3325,
+          "E_m2_Hz": 0.053050198,
+          "prominence_m2_Hz": 0.033793735
+        },
+        {
+          "f_hz": 0.3775,
+          "E_m2_Hz": 0.03641624,
+          "prominence_m2_Hz": 0.007938895000000001
+        },
+        {
+          "f_hz": 0.4225,
+          "E_m2_Hz": 0.031022895,
+          "prominence_m2_Hz": 0.008696543000000001
+        },
+        {
+          "f_hz": 0.46,
+          "E_m2_Hz": 0.035678897,
+          "prominence_m2_Hz": 0.015324555
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 10.471204,
+        "waveMeanDirectionPeakFrequency": 86.02917,
+        "wavePeakDirectionPeakFrequency": 90.0,
+        "directionalPeakSpread": 27.809208
+      }
+    },
+    {
+      "instrument_id": "FRF:awac-11m",
+      "time_utc": "2021-10-04T23:00:00.500001+00:00",
+      "offset_seconds": -395.80399918556213,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+      "original_sample_index": 93,
+      "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/0",
+      "f_peak_bin_hz": 0.0925,
+      "T_peak_bin_s": 10.81081081081081,
+      "m0_m2": 0.022003175536499997,
+      "Hm0_m": 0.593338696348047,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.08125,
+        0.10375000000000001
+      ],
+      "half_max_width_hz": 0.022500000000000006,
+      "half_max_energy_fraction": 0.44544657468833104,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.0925,
+          "E_m2_Hz": 0.585368,
+          "prominence_m2_Hz": 0.5783530134
+        },
+        {
+          "f_hz": 0.1675,
+          "E_m2_Hz": 0.018920697,
+          "prominence_m2_Hz": 0.0008090670000000001
+        },
+        {
+          "f_hz": 0.1975,
+          "E_m2_Hz": 0.010808151,
+          "prominence_m2_Hz": 0.0009807879999999998
+        },
+        {
+          "f_hz": 0.25,
+          "E_m2_Hz": 0.017187351,
+          "prominence_m2_Hz": 0.004329253
+        },
+        {
+          "f_hz": 0.2875,
+          "E_m2_Hz": 0.029906021,
+          "prominence_m2_Hz": 0.0021476030000000014
+        },
+        {
+          "f_hz": 0.31,
+          "E_m2_Hz": 0.04907244,
+          "prominence_m2_Hz": 0.038817847
+        },
+        {
+          "f_hz": 0.34,
+          "E_m2_Hz": 0.04178174,
+          "prominence_m2_Hz": 0.009611749999999995
+        },
+        {
+          "f_hz": 0.37,
+          "E_m2_Hz": 0.0250333,
+          "prominence_m2_Hz": 0.008293442000000002
+        },
+        {
+          "f_hz": 0.3925,
+          "E_m2_Hz": 0.023273423,
+          "prominence_m2_Hz": 0.0014727490000000024
+        },
+        {
+          "f_hz": 0.4225,
+          "E_m2_Hz": 0.019224925,
+          "prominence_m2_Hz": 0.004208329
+        },
+        {
+          "f_hz": 0.445,
+          "E_m2_Hz": 0.016342262,
+          "prominence_m2_Hz": 0.0016073819999999992
+        },
+        {
+          "f_hz": 0.49,
+          "E_m2_Hz": 0.014215629,
+          "prominence_m2_Hz": 0.0021247520000000006
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 10.958904,
+        "waveMeanDirectionPeakFrequency": 93.16989,
+        "wavePeakDirectionPeakFrequency": 95.0,
+        "directionalPeakSpread": 23.839045
+      }
+    }
+  ],
+  "8c0eeb27-1c9a-53e8-9bd2-846811270477": [
+    {
+      "instrument_id": "FRF:waverider-17m",
+      "time_utc": "2021-10-16T23:00:00.000003+00:00",
+      "offset_seconds": -396.44199657440186,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+      "original_sample_index": 757,
+      "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/9",
+      "f_peak_bin_hz": 0.1,
+      "T_peak_bin_s": 10.0,
+      "m0_m2": 0.0256644475605,
+      "Hm0_m": 0.6408050881258669,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.08875,
+        0.11125
+      ],
+      "half_max_width_hz": 0.022500000000000006,
+      "half_max_energy_fraction": 0.21976472459437266,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.07,
+          "E_m2_Hz": 0.04017389,
+          "prominence_m2_Hz": 0.015102881999999998
+        },
+        {
+          "f_hz": 0.1,
+          "E_m2_Hz": 0.31589743,
+          "prominence_m2_Hz": 0.30191216499999995
+        },
+        {
+          "f_hz": 0.13,
+          "E_m2_Hz": 0.13998239,
+          "prominence_m2_Hz": 0.009571450000000009
+        },
+        {
+          "f_hz": 0.1675,
+          "E_m2_Hz": 0.07607328,
+          "prominence_m2_Hz": 0.015044909999999995
+        },
+        {
+          "f_hz": 0.1975,
+          "E_m2_Hz": 0.043293975,
+          "prominence_m2_Hz": 0.003849972
+        },
+        {
+          "f_hz": 0.25,
+          "E_m2_Hz": 0.065604016,
+          "prominence_m2_Hz": 0.011664692000000004
+        },
+        {
+          "f_hz": 0.2725,
+          "E_m2_Hz": 0.08331592,
+          "prominence_m2_Hz": 0.046815965
+        },
+        {
+          "f_hz": 0.31,
+          "E_m2_Hz": 0.0471547,
+          "prominence_m2_Hz": 0.004945548000000001
+        },
+        {
+          "f_hz": 0.3325,
+          "E_m2_Hz": 0.046401307,
+          "prominence_m2_Hz": 0.018958842000000004
+        },
+        {
+          "f_hz": 0.3475,
+          "E_m2_Hz": 0.037564244,
+          "prominence_m2_Hz": 0.009892582999999996
+        },
+        {
+          "f_hz": 0.37,
+          "E_m2_Hz": 0.028076248,
+          "prominence_m2_Hz": 0.003679065000000002
+        },
+        {
+          "f_hz": 0.4,
+          "E_m2_Hz": 0.025777202,
+          "prominence_m2_Hz": 0.003451196
+        },
+        {
+          "f_hz": 0.4525,
+          "E_m2_Hz": 0.03380798,
+          "prominence_m2_Hz": 0.014248485000000002
+        },
+        {
+          "f_hz": 0.49,
+          "E_m2_Hz": 0.03827257,
+          "prominence_m2_Hz": 0.010192633999999999
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 9.756098,
+        "waveMeanDirectionPeakFrequency": 95.87495,
+        "wavePeakDirectionPeakFrequency": 105.0,
+        "directionalPeakSpread": 30.41737
+      }
+    },
+    {
+      "instrument_id": "FRF:awac-11m",
+      "time_utc": "2021-10-16T23:00:00.500001+00:00",
+      "offset_seconds": -395.9419991970062,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+      "original_sample_index": 379,
+      "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/4",
+      "f_peak_bin_hz": 0.0925,
+      "T_peak_bin_s": 10.81081081081081,
+      "m0_m2": 0.016910594697149995,
+      "Hm0_m": 0.5201629698031185,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.08125,
+        0.10375000000000001
+      ],
+      "half_max_width_hz": 0.022500000000000006,
+      "half_max_energy_fraction": 0.28125653237976217,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.0925,
+          "E_m2_Hz": 0.2792492,
+          "prominence_m2_Hz": 0.27615816499999996
+        },
+        {
+          "f_hz": 0.1225,
+          "E_m2_Hz": 0.117050365,
+          "prominence_m2_Hz": 0.010229495000000005
+        },
+        {
+          "f_hz": 0.1525,
+          "E_m2_Hz": 0.10141401,
+          "prominence_m2_Hz": 0.011412740000000005
+        },
+        {
+          "f_hz": 0.175,
+          "E_m2_Hz": 0.05180932,
+          "prominence_m2_Hz": 0.00042536599999999647
+        },
+        {
+          "f_hz": 0.2275,
+          "E_m2_Hz": 0.0883984,
+          "prominence_m2_Hz": 0.060090204
+        },
+        {
+          "f_hz": 0.25,
+          "E_m2_Hz": 0.064708054,
+          "prominence_m2_Hz": 0.014391097999999998
+        },
+        {
+          "f_hz": 0.2725,
+          "E_m2_Hz": 0.031322435,
+          "prominence_m2_Hz": 0.0009162600000000021
+        },
+        {
+          "f_hz": 0.34,
+          "E_m2_Hz": 0.0015594597,
+          "prominence_m2_Hz": 0.00021696360000000013
+        },
+        {
+          "f_hz": 0.3775,
+          "E_m2_Hz": 0.0003913701,
+          "prominence_m2_Hz": 0.00019965896000000003
+        },
+        {
+          "f_hz": 0.4225,
+          "E_m2_Hz": 0.0003267334,
+          "prominence_m2_Hz": 0.00016596131
+        },
+        {
+          "f_hz": 0.4525,
+          "E_m2_Hz": 0.00023557799,
+          "prominence_m2_Hz": 2.1069619999999987e-05
+        },
+        {
+          "f_hz": 0.49,
+          "E_m2_Hz": 0.0002819049,
+          "prominence_m2_Hz": 0.00012177100000000001
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 10.869565,
+        "waveMeanDirectionPeakFrequency": 94.42913,
+        "wavePeakDirectionPeakFrequency": 85.0,
+        "directionalPeakSpread": 32.20159
+      }
+    }
+  ],
+  "2ce151c3-c6f7-5d3a-a22e-84f87985d8a6": [
+    {
+      "instrument_id": "FRF:waverider-17m",
+      "time_utc": "2021-10-23T23:00:00.000003+00:00",
+      "offset_seconds": 113.78200340270996,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+      "original_sample_index": 1090,
+      "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/14",
+      "f_peak_bin_hz": 0.07,
+      "T_peak_bin_s": 14.285714285714285,
+      "m0_m2": 0.016552364275499998,
+      "Hm0_m": 0.5146239679688461,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.05875,
+        0.08125
+      ],
+      "half_max_width_hz": 0.022500000000000006,
+      "half_max_energy_fraction": 0.24699304926797266,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.07,
+          "E_m2_Hz": 0.22829652,
+          "prominence_m2_Hz": 0.2254061967
+        },
+        {
+          "f_hz": 0.13,
+          "E_m2_Hz": 0.028317023,
+          "prominence_m2_Hz": 0.001929634999999999
+        },
+        {
+          "f_hz": 0.1525,
+          "E_m2_Hz": 0.029203119,
+          "prominence_m2_Hz": 0.004502009000000001
+        },
+        {
+          "f_hz": 0.19,
+          "E_m2_Hz": 0.059503652,
+          "prominence_m2_Hz": 0.03387918299999999
+        },
+        {
+          "f_hz": 0.2875,
+          "E_m2_Hz": 0.06556818,
+          "prominence_m2_Hz": 0.017300660000000002
+        },
+        {
+          "f_hz": 0.31,
+          "E_m2_Hz": 0.06918011,
+          "prominence_m2_Hz": 0.048471344
+        },
+        {
+          "f_hz": 0.3325,
+          "E_m2_Hz": 0.03452978,
+          "prominence_m2_Hz": 0.0010475860000000031
+        },
+        {
+          "f_hz": 0.3775,
+          "E_m2_Hz": 0.014312047,
+          "prominence_m2_Hz": 0.0038998030000000003
+        },
+        {
+          "f_hz": 0.4525,
+          "E_m2_Hz": 0.0058125085,
+          "prominence_m2_Hz": 0.00045049550000000015
+        },
+        {
+          "f_hz": 0.4675,
+          "E_m2_Hz": 0.0047251354,
+          "prominence_m2_Hz": 0.0010050333000000003
+        },
+        {
+          "f_hz": 0.49,
+          "E_m2_Hz": 0.0031032134,
+          "prominence_m2_Hz": 1.9165700000000046e-05
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 14.38849,
+        "waveMeanDirectionPeakFrequency": 73.372284,
+        "wavePeakDirectionPeakFrequency": 75.0,
+        "directionalPeakSpread": 31.137657
+      }
+    },
+    {
+      "instrument_id": "FRF:awac-11m",
+      "time_utc": "2021-10-23T23:00:00.500001+00:00",
+      "offset_seconds": 114.28200078010559,
+      "qc_flag": "1.0",
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+      "original_sample_index": 547,
+      "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/7",
+      "f_peak_bin_hz": 0.07,
+      "T_peak_bin_s": 14.285714285714285,
+      "m0_m2": 0.014699629080750001,
+      "Hm0_m": 0.4849681074998644,
+      "valid_bin_fraction": 1.0,
+      "half_max_interval_hz": [
+        0.06625,
+        0.08875
+      ],
+      "half_max_width_hz": 0.022499999999999992,
+      "half_max_energy_fraction": 0.4681124188372319,
+      "all_numeric_local_maxima": [
+        {
+          "f_hz": 0.07,
+          "E_m2_Hz": 0.3538214,
+          "prominence_m2_Hz": 0.3500517815
+        },
+        {
+          "f_hz": 0.115,
+          "E_m2_Hz": 0.028919864,
+          "prominence_m2_Hz": 0.0008172310000000016
+        },
+        {
+          "f_hz": 0.1375,
+          "E_m2_Hz": 0.027162747,
+          "prominence_m2_Hz": 0.006331183000000001
+        },
+        {
+          "f_hz": 0.16,
+          "E_m2_Hz": 0.023389846,
+          "prominence_m2_Hz": 0.002515866999999998
+        },
+        {
+          "f_hz": 0.19,
+          "E_m2_Hz": 0.06983793,
+          "prominence_m2_Hz": 0.05222125600000001
+        },
+        {
+          "f_hz": 0.2125,
+          "E_m2_Hz": 0.02752821,
+          "prominence_m2_Hz": 0.0003930840000000019
+        },
+        {
+          "f_hz": 0.235,
+          "E_m2_Hz": 0.033239976,
+          "prominence_m2_Hz": 0.011506595999999997
+        },
+        {
+          "f_hz": 0.2575,
+          "E_m2_Hz": 0.02852027,
+          "prominence_m2_Hz": 0.005735184000000001
+        },
+        {
+          "f_hz": 0.3625,
+          "E_m2_Hz": 0.00055164646,
+          "prominence_m2_Hz": 5.392486000000004e-05
+        },
+        {
+          "f_hz": 0.3925,
+          "E_m2_Hz": 0.00065716944,
+          "prominence_m2_Hz": 0.00016779543999999997
+        },
+        {
+          "f_hz": 0.4225,
+          "E_m2_Hz": 0.00068148994,
+          "prominence_m2_Hz": 0.0002895954
+        },
+        {
+          "f_hz": 0.46,
+          "E_m2_Hz": 0.00055521185,
+          "prominence_m2_Hz": 0.00015832004999999995
+        },
+        {
+          "f_hz": 0.49,
+          "E_m2_Hz": 0.00058298546,
+          "prominence_m2_Hz": 0.00015239780999999993
+        }
+      ],
+      "classification": "numeric peak/half-maximum description only, not independent physical wave systems",
+      "published_at_same_spectral_sample": {
+        "waveTp": 13.42282,
+        "waveMeanDirectionPeakFrequency": 77.13452,
+        "wavePeakDirectionPeakFrequency": 75.0,
+        "directionalPeakSpread": 29.68084
+      }
+    }
+  ]
+}

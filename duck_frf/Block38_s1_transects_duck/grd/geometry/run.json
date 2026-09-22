@@ -1,0 +1,93 @@
+{
+  "args": {
+    "safe": "data_s1/S1A_IW_GRDH_1SDV_20211028T230637_20211028T230702_040326_04C765_8C9F.SAFE",
+    "bbox": [
+      -75.79,
+      36.15,
+      -75.7,
+      36.22
+    ],
+    "out": "duck_frf/Block38_s1_transects_duck/grd/geometry",
+    "pol": "VV",
+    "coast": null,
+    "sea_side": "E",
+    "mask_res": 50.0,
+    "smooth": 1000.0,
+    "transect_spacing": 250.0,
+    "step": 50.0,
+    "offshore": [
+      250.0,
+      3000.0
+    ],
+    "window": 512.0,
+    "padding": 1,
+    "kmax": 0.3,
+    "levels": 20,
+    "scale": "log10",
+    "blob": "contour",
+    "lobe_min": 3.0,
+    "moving_mean": 5,
+    "max_bright_fraction": 0.002,
+    "affine_tolerance": 1.0,
+    "period": [],
+    "current": [
+      -0.5,
+      0.5
+    ],
+    "alongshore_average": 0,
+    "band": 500.0,
+    "no_figures": false,
+    "geometry_only": true
+  },
+  "utm_epsg": 32618,
+  "sea_mask": {
+    "otsu_threshold_db": -13.544072708368017,
+    "sea_class": "dark",
+    "rule": "class component with the longest contact with bbox side E",
+    "sea_cells": 23449,
+    "small_holes_filled": 0,
+    "largest_components": [
+      {
+        "class": "dark",
+        "cells": 23449,
+        "edge_cells": {
+          "S": 164,
+          "N": 164,
+          "W": 157,
+          "E": 157
+        }
+      },
+      {
+        "class": "bright",
+        "cells": 3801,
+        "edge_cells": {
+          "S": 164,
+          "N": 164,
+          "W": 157,
+          "E": 157
+        }
+      }
+    ]
+  },
+  "reads": [
+    {
+      "swath": "IW",
+      "s0_l0_s1_l1": [
+        21582,
+        709,
+        22873,
+        1944
+      ]
+    }
+  ],
+  "n_transects": 31,
+  "window_status": {},
+  "identifiable_windows": 0,
+  "summary": {},
+  "runtime_s": 2.350139856338501,
+  "notes": [
+    "overlapping windows are not independent samples",
+    "wavelength is SAR-only; depth requires an externally measured period",
+    "geolocation uses burst azimuth time (s1_iw_geometry)"
+  ]
+}

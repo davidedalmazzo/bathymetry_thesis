@@ -1,0 +1,1 @@
+{"max_requests":300,"max_bytes":209715200,"max_response":10485760,"note":"Ground-truth retrieval budget (waves, currents, wind, water level, bathymetry inventory) for one acquisition; each run still needs a named tranche."}

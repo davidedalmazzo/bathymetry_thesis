@@ -1,0 +1,172 @@
+[
+  {
+    "acquisition_id": "c49a9c1f-9b00-5676-ab05-683975d898a2",
+    "timestamp_utc": "2021-10-28T23:06:36.323000Z",
+    "footprint": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.134468,
+              35.669724
+            ],
+            [
+              -75.339592,
+              36.072639
+            ],
+            [
+              -75.668571,
+              37.691841
+            ],
+            [
+              -78.52536,
+              37.290447
+            ],
+            [
+              -78.134468,
+              35.669724
+            ]
+          ]
+        ]
+      ]
+    },
+    "timestamp_semantics": "catalogue ContentDate start/end; not local ROI sensing time"
+  },
+  {
+    "acquisition_id": "d982f98d-9739-5a03-aa42-27407da87d7e",
+    "timestamp_utc": "2021-10-11T22:58:06.126000Z",
+    "footprint": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -75.811821,
+              34.68166
+            ],
+            [
+              -73.081009,
+              35.0811
+            ],
+            [
+              -73.44294,
+              36.873524
+            ],
+            [
+              -76.238625,
+              36.475948
+            ],
+            [
+              -75.811821,
+              34.68166
+            ]
+          ]
+        ]
+      ]
+    },
+    "timestamp_semantics": "catalogue ContentDate start/end; not local ROI sensing time"
+  },
+  {
+    "acquisition_id": "b1d1d660-87fc-5790-9275-8df4034e8d82",
+    "timestamp_utc": "2021-10-04T23:06:36.304000Z",
+    "footprint": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.132622,
+              35.669315
+            ],
+            [
+              -75.337845,
+              36.072155
+            ],
+            [
+              -75.666817,
+              37.69162
+            ],
+            [
+              -78.523506,
+              37.290306
+            ],
+            [
+              -78.132622,
+              35.669315
+            ]
+          ]
+        ]
+      ]
+    },
+    "timestamp_semantics": "catalogue ContentDate start/end; not local ROI sensing time"
+  },
+  {
+    "acquisition_id": "8c0eeb27-1c9a-53e8-9bd2-846811270477",
+    "timestamp_utc": "2021-10-16T23:06:36.442000Z",
+    "footprint": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -78.133514,
+              35.668968
+            ],
+            [
+              -75.338661,
+              36.071857
+            ],
+            [
+              -75.667664,
+              37.691311
+            ],
+            [
+              -78.524429,
+              37.289948
+            ],
+            [
+              -78.133514,
+              35.668968
+            ]
+          ]
+        ]
+      ]
+    },
+    "timestamp_semantics": "catalogue ContentDate start/end; not local ROI sensing time"
+  },
+  {
+    "acquisition_id": "2ce151c3-c6f7-5d3a-a22e-84f87985d8a6",
+    "timestamp_utc": "2021-10-23T22:58:06.218000Z",
+    "footprint": {
+      "type": "MultiPolygon",
+      "coordinates": [
+        [
+          [
+            [
+              -75.811157,
+              34.68018
+            ],
+            [
+              -73.080376,
+              35.079578
+            ],
+            [
+              -73.442329,
+              36.872372
+            ],
+            [
+              -76.238007,
+              36.474838
+            ],
+            [
+              -75.811157,
+              34.68018
+            ]
+          ]
+        ]
+      ]
+    },
+    "timestamp_semantics": "catalogue ContentDate start/end; not local ROI sensing time"
+  }
+]

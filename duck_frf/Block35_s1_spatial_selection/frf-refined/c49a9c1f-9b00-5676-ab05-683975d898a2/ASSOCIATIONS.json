@@ -1,0 +1,1707 @@
+[
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveHs",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveHs/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveHs/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveHs/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveHs/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveTp",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTp/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTp/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTp/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTp/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveTm",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveMeanDirection",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveMeanDirection/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveMeanDirection/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveMeanDirection/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveMeanDirection/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "wavePeakDirectionPeakFrequency",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/wavePeakDirectionPeakFrequency/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/wavePeakDirectionPeakFrequency/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/wavePeakDirectionPeakFrequency/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/wavePeakDirectionPeakFrequency/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "directionalPeakSpread",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/directionalPeakSpread/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/directionalPeakSpread/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/directionalPeakSpread/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/directionalPeakSpread/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveTm1",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm1/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm1/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm1/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm1/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveTm2",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm2/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm2/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm2/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveTm2/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveMeanDirectionPeakFrequency",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveMeanDirectionPeakFrequency/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveMeanDirectionPeakFrequency/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveMeanDirectionPeakFrequency/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveMeanDirectionPeakFrequency/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveEnergyDensity",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveEnergyDensity/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveA1Value",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveA1Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveA1Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveA1Value/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveA1Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveB1Value",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveB1Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveB1Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveB1Value/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveB1Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveA2Value",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveA2Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveA2Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveA2Value/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveA2Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveB2Value",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveB2Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveB2Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveB2Value/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveB2Value/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "waveDirectionEstimator",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveDirectionEstimator/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveDirectionEstimator/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1327,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveDirectionEstimator/18",
+        "position_id": "position_ce170ab836dca6f9e65e7c6a",
+        "sensor_time_utc": "2021-10-28T23:29:59.999997+00:00",
+        "offset_seconds": 1403.6769967079163,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/waveDirectionEstimator/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "variable": "gaugeDepth",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/gaugeDepth/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/gaugeDepth/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1328,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/gaugeDepth/19",
+        "position_id": "position_f243dcb653ff77a9286d02d2",
+        "sensor_time_utc": "2021-10-29T00:00:00+00:00",
+        "offset_seconds": 3203.6770000457764,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+        "original_sample_index": 1326,
+        "tensor_pointer": "waves__waverider-17m__4e2d54ee6b11/variables/gaugeDepth/17",
+        "position_id": "position_41d4e27f87847229c9e8a045",
+        "sensor_time_utc": "2021-10-28T23:00:00.000003+00:00",
+        "offset_seconds": -396.3229966163635,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:waverider-17m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveHs",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveHs/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveHs/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveHs/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveHs/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveTp",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTp/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTp/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTp/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTp/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveTm",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveMeanDirection",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveMeanDirection/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveMeanDirection/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveMeanDirection/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveMeanDirection/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "wavePeakDirectionPeakFrequency",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/wavePeakDirectionPeakFrequency/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/wavePeakDirectionPeakFrequency/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/wavePeakDirectionPeakFrequency/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/wavePeakDirectionPeakFrequency/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "directionalPeakSpread",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/directionalPeakSpread/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/directionalPeakSpread/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/directionalPeakSpread/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/directionalPeakSpread/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveTm1",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm1/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm1/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm1/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm1/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveTm2",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm2/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm2/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm2/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveTm2/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveMeanDirectionPeakFrequency",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveMeanDirectionPeakFrequency/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveMeanDirectionPeakFrequency/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveMeanDirectionPeakFrequency/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveMeanDirectionPeakFrequency/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveEnergyDensity",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveEnergyDensity/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveA1Value",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveA1Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveA1Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveA1Value/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveA1Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveB1Value",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveB1Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveB1Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveB1Value/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveB1Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveA2Value",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveA2Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveA2Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveA2Value/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveA2Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveB2Value",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveB2Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveB2Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveB2Value/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveB2Value/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "variable": "waveDirectionEstimator",
+    "selection": {
+      "nearest_context": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveDirectionEstimator/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "previous_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveDirectionEstimator/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      },
+      "next_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 668,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveDirectionEstimator/9",
+        "position_id": "position_252d59cbf85252c0baa70726",
+        "sensor_time_utc": "2021-10-29T00:00:01.999999+00:00",
+        "offset_seconds": 3205.6769993305206,
+        "duplicate_status": "unique"
+      },
+      "nearest_qc": {
+        "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc",
+        "original_sample_index": 667,
+        "tensor_pointer": "waves__awac-11m__ac63f1b339a0/variables/waveDirectionEstimator/8",
+        "position_id": "position_509595b3d1b0b81fa35a7e06",
+        "sensor_time_utc": "2021-10-28T23:00:00.500001+00:00",
+        "offset_seconds": -395.8229992389679,
+        "duplicate_status": "unique"
+      }
+    },
+    "search_coverage": {
+      "family": "waves",
+      "instrument_id": "FRF:awac-11m",
+      "required_months": [
+        "202110"
+      ],
+      "missing_or_unverified_months": [],
+      "status": "verified_configured_context",
+      "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+    },
+    "interpolation": "none",
+    "nearest_claim": "nearest within retrieved search segments, not absolute"
+  }
+]

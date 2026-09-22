@@ -21,6 +21,13 @@ COSMO-SkyMed and Sentinel-1 over the USACE Field Research Facility at Duck, NC.
 
 ## Repository scope
 
+The Duck spatial-validation screening is now in
+[Block35](duck_frf/Block35_s1_spatial_selection/REPORT.md): a real public CDSE
+October 2021 search and FRF spectral/survey comparison, with a **conditional**
+first IW SLC choice. It does not select/exclude the temporal routes above or
+validate phase retrieval. No SAR download/inversion was performed. Stable
+commands and limitations are in [README_S1_SPATIAL](code/README_S1_SPATIAL.md).
+
 This repository contains source code, tests, metadata summaries, lightweight numerical results, plots and checkpoints. It intentionally does **not** contain the original CPHD/SICD/GEC products, large complex arrays, bathymetric rasters, NetCDF files, virtual environments or credentials.
 
 The local raw products remain read-only and must never be committed:
@@ -69,7 +76,15 @@ using `repository_paths.json`, not edited in old manifests.
 - The umbra/Vandenberg SAR-only value `T_SAR = 17.902230457 s` is frozen and must not be tuned to external buoy data.
 - Raw radar files are read-only; do not run large downloads or dwell sweeps without an explicit task.
 
+Sentinel-1 Duck pipeline (Blocks 35–38), scripts and results: [docs/S1_DUCK_PIPELINE.md](docs/S1_DUCK_PIPELINE.md). Note: the Block37 spatial result is superseded by a geolocation fix ([docs/NOTE_S1_GEOLOCATION_BURST_TIME.md](docs/NOTE_S1_GEOLOCATION_BURST_TIME.md)).
+
 Start with [AGENTS.md](AGENTS.md), [TASK_SPEC.md](TASK_SPEC.md) and the checkpoints in numerical order. The implemented client and checkpoints extend through Block34; migration verification is recorded separately under `docs/reorganization/`.
+The Duck Sentinel-1 work now extends through the first real spatial trial in
+[Block37](docs/checkpoints/CHECKPOINT_37.md). The selected full SLC was
+integrity-verified and bounded IW3/VV reads found a stable primary intensity
+lobe, with explicit interpolation sensitivity and only a conditional
+dispersion comparison. This does not select the sub-aperture or TOPS temporal
+route and is not bathymetric validation.
 
 ## Operational FRF observational client (Blocks32–34)
 

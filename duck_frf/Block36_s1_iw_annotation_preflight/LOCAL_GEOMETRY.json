@@ -1,0 +1,61 @@
+{
+  "status": "verified_from_annotations",
+  "subswaths": [
+    {
+      "evaluation_lon_lat": [
+        -75.7465551519618,
+        36.186490674226384
+      ],
+      "evaluation_sample_line": [
+        14357.658111660776,
+        961.763042072919
+      ],
+      "axis_order": [
+        "slant_range_sample",
+        "azimuth_line"
+      ],
+      "jacobian_EN_m_per_pixel": [
+        [
+          3.300694365505305,
+          -2.05085057473887
+        ],
+        [
+          0.5481286159609702,
+          12.194777017426023
+        ]
+      ],
+      "determinant_m2_per_pixel2": 41.37536167708604,
+      "ground_spacing_sample_line_m": [
+        3.345897230058592,
+        12.366025011484034
+      ],
+      "range_sample_bearing_deg": 80.57124248749732,
+      "azimuth_line_bearing_deg": 350.453640630507,
+      "incidence_center_deg": 44.16376346568133,
+      "incidence_boundary_min_max_deg": [
+        44.14816175437814,
+        44.179403664862186
+      ],
+      "slant_range_pixel_spacing_m": 2.329562,
+      "azimuth_pixel_spacing_m": 13.90543,
+      "effective_resolution": "not equated to pixel spacing; requires verified processing resolution metadata/response",
+      "wavenumber_transform": "[k_east,k_north] = inverse(J).T @ [q_sample,q_line], q in rad/pixel",
+      "fft_convention": "numpy fft2 forward negative exponent; fftshift(fftfreq); cycles/pixel times 2*pi",
+      "direction_convention": "bearing clockwise from true north; axial comparisons modulo 180",
+      "subswath": "IW3",
+      "frf_peak_from_deg": {
+        "waverider-17m": 66.34158,
+        "awac-11m": 66.40836
+      },
+      "frf_peak_toward_deg": {
+        "waverider-17m": 246.34158,
+        "awac-11m": 246.40836000000002
+      },
+      "axial_delta_range_deg": {
+        "waverider-17m": 14.229662487497308,
+        "awac-11m": 14.162882487497313
+      },
+      "frf_direction_role": "external measured comparison only; no correction/rotation imposed on SAR k"
+    }
+  ]
+}

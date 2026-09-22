@@ -1,0 +1,30 @@
+
+## SLC 512 m, N=0 (paper-literal on SLC)
+ windows ok 1279, identifiable 977; median Spearman rho(distance, lambda) 0.10; 50 m-step relative jump p50/p90 0.07/0.90
+  lambda p10/p50/p90 by distance: {'250-750': [37.0, 87.0, 117.0], '750-1500': [32.0, 98.0, 139.0], '1500-2250': [29.0, 84.0, 142.0], '2250-3500': [32.0, 93.0, 153.0]}
+  band-ensemble lambda: [(0, 92, 73), (500, 110, 80), (1000, 128, 90), (1500, 130, 72), (2000, 127, 60), (2500, 142, 56), (3000, 147, 60)]
+  survey (WR17 T, U=0): n=18 implied eta median -2.78 m, RMSE 5.23 m, r 0.2
+
+## SLC 512 m, N=4
+ windows ok 1279, identifiable 1011; median Spearman rho(distance, lambda) 0.34; 50 m-step relative jump p50/p90 0.03/0.19
+  lambda p10/p50/p90 by distance: {'250-750': [87.0, 100.0, 113.0], '750-1500': [104.0, 118.0, 128.0], '1500-2250': [64.0, 127.0, 135.0], '2250-3500': [61.0, 120.0, 147.0]}
+  band-ensemble lambda: [(0, 92, 73), (500, 110, 80), (1000, 128, 90), (1500, 130, 72), (2000, 127, 60), (2500, 142, 56), (3000, 147, 60)]
+  survey (WR17 T, U=0): n=18 implied eta median 0.41 m, RMSE 1.72 m, r 0.57
+
+## GRD 512 m, N=0
+ windows ok 1882, identifiable 1596; median Spearman rho(distance, lambda) 0.13; 50 m-step relative jump p50/p90 0.07/0.49
+  lambda p10/p50/p90 by distance: {'250-750': [83.0, 100.0, 152.0], '750-1500': [81.0, 116.0, 168.0], '1500-2250': [81.0, 123.0, 168.0], '2250-3500': [79.0, 118.0, 171.0]}
+  band-ensemble lambda: [(0, 93, 77), (500, 111, 77), (1000, 130, 83), (1500, 135, 72), (2000, 134, 67), (2500, 127, 60), (3000, 129, 77), (3500, 135, 75)]
+  survey (WR17 T, U=0): n=18 implied eta median 11.90 m, RMSE 25.96 m, r 0.43
+
+## GRD 512 m, N=4
+ windows ok 1882, identifiable 1348; median Spearman rho(distance, lambda) 0.32; 50 m-step relative jump p50/p90 0.05/0.17
+  lambda p10/p50/p90 by distance: {'250-750': [90.0, 100.0, 114.0], '750-1500': [105.0, 120.0, 141.0], '1500-2250': [114.0, 127.0, 142.0], '2250-3500': [101.0, 126.0, 153.0]}
+  band-ensemble lambda: [(0, 93, 77), (500, 111, 77), (1000, 130, 83), (1500, 135, 72), (2000, 134, 67), (2500, 127, 60), (3000, 129, 77), (3500, 135, 75)]
+  survey (WR17 T, U=0): n=23 implied eta median -0.51 m, RMSE 0.88 m, r -0.19
+
+## GRD 1280 m, N=0 (paper-literal)
+ windows ok 323, identifiable 278; median Spearman rho(distance, lambda) -0.00; 50 m-step relative jump p50/p90 0.01/0.13
+  lambda p10/p50/p90 by distance: {'750-1500': [104.0, 127.0, 156.0], '1500-2250': [100.0, 126.0, 157.0], '2250-3500': [96.0, 125.0, 154.0]}
+  band-ensemble lambda: [(500, 124, 88), (1000, 127, 63), (1500, 130, 66), (2000, 154, 57), (2500, 141, 59), (3000, 133, 59), (3500, 130, 60)]
+  survey (WR17 T, U=0): n=0 implied eta median nan m, RMSE nan m, r None

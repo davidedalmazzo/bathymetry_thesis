@@ -1,0 +1,68 @@
+{
+  "@odata.context": "$metadata#Products(Assets())/$entity",
+  "@odata.mediaContentType": "application/octet-stream",
+  "Id": "b1d1d660-87fc-5790-9275-8df4034e8d82",
+  "Name": "S1A_IW_SLC__1SDV_20211004T230636_20211004T230703_039976_04BB45_074A.SAFE",
+  "ContentType": "application/octet-stream",
+  "ContentLength": 7799658854,
+  "OriginDate": "2021-10-05T13:59:00.810000Z",
+  "PublicationDate": "2021-10-05T14:17:37.713956Z",
+  "ModificationDate": "2025-11-25T12:04:06.018296Z",
+  "Online": true,
+  "EvictionDate": "9999-12-31T23:59:59.999999Z",
+  "S3Path": "/eodata/Sentinel-1/SAR/SLC/2021/10/04/S1A_IW_SLC__1SDV_20211004T230636_20211004T230703_039976_04BB45_074A.SAFE",
+  "Checksum": [
+    {
+      "Value": "c278db87a1761af148ea178712877d25",
+      "Algorithm": "MD5",
+      "ChecksumDate": "2025-11-25T12:03:53.852413Z"
+    },
+    {
+      "Value": "522930d0191e64729103196635880600e44ed6d66a5b1f4814f21642163d7e03",
+      "Algorithm": "BLAKE3",
+      "ChecksumDate": "2025-11-25T12:04:05.509152Z"
+    }
+  ],
+  "ContentDate": {
+    "Start": "2021-10-04T23:06:36.304000Z",
+    "End": "2021-10-04T23:07:03.252000Z"
+  },
+  "Footprint": "geography'SRID=4326;MULTIPOLYGON (((-78.132622 35.669315, -75.337845 36.072155, -75.666817 37.69162, -78.523506 37.290306, -78.132622 35.669315)))'",
+  "GeoFootprint": {
+    "type": "MultiPolygon",
+    "coordinates": [
+      [
+        [
+          [
+            -78.132622,
+            35.669315
+          ],
+          [
+            -75.337845,
+            36.072155
+          ],
+          [
+            -75.666817,
+            37.69162
+          ],
+          [
+            -78.523506,
+            37.290306
+          ],
+          [
+            -78.132622,
+            35.669315
+          ]
+        ]
+      ]
+    ]
+  },
+  "Assets": [
+    {
+      "Type": "QUICKLOOK",
+      "Id": "68c17489-6785-434b-9481-79ed492b242a",
+      "DownloadLink": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(68c17489-6785-434b-9481-79ed492b242a)/$value",
+      "S3Path": "/eodata/Sentinel-1/SAR/SLC/2021/10/04/S1A_IW_SLC__1SDV_20211004T230636_20211004T230703_039976_04BB45_074A.SAFE"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "survey_date": "2021-10-24",
+  "vertical_datum": "NAVD88",
+  "instantaneous_depth_status": "not derivable: verified event water level absent",
+  "comparison_role": "post-inversion context only; survey did not select k, omega, sign, or current",
+  "windows": [
+    {
+      "window_m": [
+        300.0,
+        300.0
+      ],
+      "point_count": 713,
+      "bed_elevation_NAVD88_percentiles_m": [
+        -7.6082,
+        -6.481,
+        -4.985200000000001
+      ]
+    },
+    {
+      "window_m": [
+        400.0,
+        300.0
+      ],
+      "point_count": 949,
+      "bed_elevation_NAVD88_percentiles_m": [
+        -7.9442,
+        -6.458,
+        -4.4388000000000005
+      ]
+    },
+    {
+      "window_m": [
+        500.0,
+        300.0
+      ],
+      "point_count": 1136,
+      "bed_elevation_NAVD88_percentiles_m": [
+        -8.1285,
+        -6.342,
+        -3.9707500000000002
+      ]
+    }
+  ]
+}

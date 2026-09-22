@@ -1,0 +1,247 @@
+{
+  "reference_gauge": "FRF:waverider-17m",
+  "reference_peak_period_s": 11.76470588235294,
+  "periods_by_gauge_s": {
+    "FRF:waverider-17m": 11.76470588235294,
+    "FRF:awac-11m": 10.81081081081081,
+    "FRF:8m-array": 12.903225806451614,
+    "FRF:waverider-26m": 10.81081081081081
+  },
+  "criteria": {
+    "max_depth_m": 30.0,
+    "max_uncertainty_m": 0.5,
+    "min_year": 0,
+    "not_interpolated": true
+  },
+  "windows_total": 5200,
+  "windows_certified": 4726,
+  "note": "overlapping windows (50 m step, 512 m windows, alongshore averaging) are strongly correlated; effective sample is far smaller",
+  "Ek_peak": {
+    "n": 4726,
+    "median_lambdaSAR_over_lambdaPred_minus_1": 0.0531880702956955,
+    "p10_p90": [
+      -0.2004510786594273,
+      0.6570339017888552
+    ],
+    "rms": 0.5179910806897494
+  },
+  "Ek_centroid": {
+    "n": 4726,
+    "median_lambdaSAR_over_lambdaPred_minus_1": 0.005312511394995445,
+    "p10_p90": [
+      -0.2596284495874959,
+      0.37767112169200623
+    ],
+    "rms": 0.33361633234263893
+  },
+  "k2Ek_peak": {
+    "n": 4726,
+    "median_lambdaSAR_over_lambdaPred_minus_1": 5.5407778846484215,
+    "p10_p90": [
+      3.8263697602520677,
+      9.052256454307454
+    ],
+    "rms": 6.917621549826909
+  },
+  "k2Ek_centroid": {
+    "n": 4726,
+    "median_lambdaSAR_over_lambdaPred_minus_1": 5.1129815612986675,
+    "p10_p90": [
+      3.5802057757329755,
+      7.502537025404335
+    ],
+    "rms": 5.797951649506922
+  },
+  "paper_peak_vs_Ek_centroid": {
+    "n": 3238,
+    "median_lambdaSAR_over_lambdaPred_minus_1": -0.063646534421963,
+    "p10_p90": [
+      -0.6676842309897498,
+      0.1661188817608784
+    ],
+    "rms": 0.35589272528494204
+  },
+  "k2_weighting_note": "k^2 weighting of the full gauge spectrum is dominated by the high-frequency tail (no azimuth cut-off / system MTF / noise model); reported for completeness, not interpretable",
+  "depth_range_certified_m": [
+    7.174581050872803,
+    22.774580001831055
+  ],
+  "by_depth_bin": [
+    {
+      "depth_bin_m": [
+        7.0,
+        8.0
+      ],
+      "n": 35,
+      "lambda_sar_centroid_median_m": 109.60923257300074,
+      "lambda_pred_k2Ek_centroid_median_m": 17.847494553376887,
+      "lambda_pred_Ek_centroid_median_m": 96.1302798484766,
+      "lambda_sar_paper_median_m": 95.07601314665045
+    },
+    {
+      "depth_bin_m": [
+        8.0,
+        9.0
+      ],
+      "n": 107,
+      "lambda_sar_centroid_median_m": 111.9955002409505,
+      "lambda_pred_k2Ek_centroid_median_m": 17.847494553376887,
+      "lambda_pred_Ek_centroid_median_m": 98.83759587444617,
+      "lambda_sar_paper_median_m": 112.92896595360881
+    },
+    {
+      "depth_bin_m": [
+        9.0,
+        10.0
+      ],
+      "n": 130,
+      "lambda_sar_centroid_median_m": 118.1140597109999,
+      "lambda_pred_k2Ek_centroid_median_m": 18.83218390804596,
+      "lambda_pred_Ek_centroid_median_m": 103.5966569644568,
+      "lambda_sar_paper_median_m": 115.95844474871251
+    },
+    {
+      "depth_bin_m": [
+        10.0,
+        11.0
+      ],
+      "n": 123,
+      "lambda_sar_centroid_median_m": 118.46828881366048,
+      "lambda_pred_k2Ek_centroid_median_m": 17.925601750547028,
+      "lambda_pred_Ek_centroid_median_m": 108.32806973964126,
+      "lambda_sar_paper_median_m": 124.17824001860234
+    },
+    {
+      "depth_bin_m": [
+        11.0,
+        12.0
+      ],
+      "n": 140,
+      "lambda_sar_centroid_median_m": 118.6136628360702,
+      "lambda_pred_k2Ek_centroid_median_m": 17.925601750547028,
+      "lambda_pred_Ek_centroid_median_m": 114.94727453661937,
+      "lambda_sar_paper_median_m": 117.80582228695603
+    },
+    {
+      "depth_bin_m": [
+        12.0,
+        13.0
+      ],
+      "n": 156,
+      "lambda_sar_centroid_median_m": 119.24123946517412,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 120.67155594089462,
+      "lambda_sar_paper_median_m": 124.17824001860234
+    },
+    {
+      "depth_bin_m": [
+        13.0,
+        14.0
+      ],
+      "n": 251,
+      "lambda_sar_centroid_median_m": 127.56159597666814,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 124.46759689922466,
+      "lambda_sar_paper_median_m": 124.17824001860234
+    },
+    {
+      "depth_bin_m": [
+        14.0,
+        15.0
+      ],
+      "n": 387,
+      "lambda_sar_centroid_median_m": 130.0570578047996,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 130.03174603174588,
+      "lambda_sar_paper_median_m": 119.85013472883753
+    },
+    {
+      "depth_bin_m": [
+        15.0,
+        16.0
+      ],
+      "n": 587,
+      "lambda_sar_centroid_median_m": 127.1166878032959,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 134.29508196721298,
+      "lambda_sar_paper_median_m": 114.4866804479891
+    },
+    {
+      "depth_bin_m": [
+        16.0,
+        17.0
+      ],
+      "n": 429,
+      "lambda_sar_centroid_median_m": 142.30890599121196,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 138.84745762711847,
+      "lambda_sar_paper_median_m": 127.01156821934933
+    },
+    {
+      "depth_bin_m": [
+        17.0,
+        18.0
+      ],
+      "n": 417,
+      "lambda_sar_centroid_median_m": 131.92719620709698,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 138.84745762711847,
+      "lambda_sar_paper_median_m": 127.01156821934926
+    },
+    {
+      "depth_bin_m": [
+        18.0,
+        19.0
+      ],
+      "n": 476,
+      "lambda_sar_centroid_median_m": 136.4218053708455,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 143.71929824561386,
+      "lambda_sar_paper_median_m": 127.01156821934926
+    },
+    {
+      "depth_bin_m": [
+        19.0,
+        20.0
+      ],
+      "n": 607,
+      "lambda_sar_centroid_median_m": 148.7699755686543,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 148.94545454545437,
+      "lambda_sar_paper_median_m": 144.8154687870047
+    },
+    {
+      "depth_bin_m": [
+        20.0,
+        21.0
+      ],
+      "n": 577,
+      "lambda_sar_centroid_median_m": 146.2857142857141,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 148.94545454545437,
+      "lambda_sar_paper_median_m": 142.0032502336585
+    },
+    {
+      "depth_bin_m": [
+        21.0,
+        22.0
+      ],
+      "n": 228,
+      "lambda_sar_centroid_median_m": 132.22148258341508,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 154.56603773584888,
+      "lambda_sar_paper_median_m": 127.01156821934926
+    },
+    {
+      "depth_bin_m": [
+        22.0,
+        23.0
+      ],
+      "n": 76,
+      "lambda_sar_centroid_median_m": 137.27422707324575,
+      "lambda_pred_k2Ek_centroid_median_m": 22.200542005420026,
+      "lambda_pred_Ek_centroid_median_m": 154.56603773584888,
+      "lambda_sar_paper_median_m": 129.55488252564263
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+    "file": "FRF_geomorphology_elevationTransects_survey_20211027.nc.json",
+    "all_indices_traversed": true,
+    "inside_points": 7342,
+    "source_points": 7342,
+    "datum": "NAVD88"
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+    "error": "timeout"
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+    "file": "FRF_geomorphology_elevationTransects_survey_20211004.nc.json",
+    "all_indices_traversed": true,
+    "inside_points": 7427,
+    "source_points": 10585,
+    "datum": "NAVD88"
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+    "file": "FRF_geomorphology_elevationTransects_survey_20211016.nc.json",
+    "all_indices_traversed": true,
+    "inside_points": 13379,
+    "source_points": 14806,
+    "datum": "NAVD88"
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+    "file": "FRF_geomorphology_elevationTransects_survey_20211024.nc.json",
+    "all_indices_traversed": true,
+    "inside_points": 4787,
+    "source_points": 5800,
+    "datum": "NAVD88"
+  }
+]

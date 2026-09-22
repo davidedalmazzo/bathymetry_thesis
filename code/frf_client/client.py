@@ -103,6 +103,9 @@ class Client:
             raise ValueError("Interpolation adapter not enabled; no silent interpolation")
         self.inventory, self.errors, self.loaded = [], [], {}
         self.pending_surveys=[]
+        for family, names in config.get('observation_variables', {}).items():
+            if family not in VARIABLES or not names or any(n not in VARIABLES[family] for n in names):
+                raise ValueError('Observation projection must use existing family variables')
 
     def _legacy_products(self):
         found = []
@@ -234,6 +237,14 @@ class Client:
                 raise FetchError("unsupported_time_dimensions")
             windows=event_windows(acquisitions,self.config,family)
             valid_times = mask_values(original["time"], meta["attributes"]["time"])
+            projection = self.config.get('observation_variables', {}).get(family, VARIABLES[family])
+            if self.config.get('monthly_scalar_subset'):
+                if family != 'waves' or family not in self.config.get('observation_variables', {}):
+                    raise ValueError('Monthly subsets require an explicit scalar wave projection')
+                if any(shapes[n] not in ([], [len(times)]) for n in projection if n in shapes):
+                    raise ValueError('Monthly spectral or non-time-vector projections forbidden')
+                if np.any(valid_times):
+                    windows = [(float(times[valid_times].min()), float(times[valid_times].max()))]
             pieces, kept, data_urls = [], [], []
             for window_lo,window_hi in windows:
                 indices=np.flatnonzero(valid_times & (times>=window_lo) & (times<=window_hi))
@@ -243,7 +254,7 @@ class Client:
                     raise FetchError("single_event_window_too_broad")
                 selections = []
                 bounds_name=meta["attributes"].get("time",{}).get("bounds")
-                requested=["time","latitude","longitude"]+VARIABLES[family]+([bounds_name] if bounds_name else [])
+                requested=["time","latitude","longitude"]+projection+([bounds_name] if bounds_name else [])
                 for name in requested:
                     if name not in shapes:
                         continue
@@ -278,6 +289,7 @@ class Client:
         result = {"metadata":meta,"arrays":original,"masks":masks,"times":times,"intervals":intervals,
                   "initial_times":initial_times,"initial_arrays":initial_original,"original_indices":original_indices,
                   "coverage":{"actual_time_min":float(initial_times.min()),"actual_time_max":float(initial_times.max()),
+                              "subset_scope":"monthly scalar/QC vectors only" if self.config.get('monthly_scalar_subset') else "configured event windows",
                               "search_windows_utc_seconds":event_windows(acquisitions,self.config,family),
                               "monthly_time_vector_verified":True,"observations_in_context_retrieved":bool(extended and meta.get("event_subset_source")),
                               "scope":"verified monthly time vector; gaps not filled; QC search limited to fetched event context"}}
@@ -343,6 +355,7 @@ class Client:
                     self.inventory.append({**product,"metadata":meta,"status":"metadata_verified_not_observations_fetched"})
                     continue
                 extended = not product.get("discovery") or product["family"] != "waves" or product["instrument"] in self.config.get("spectral_instruments",["waverider-17m","awac-11m"])
+                extended = extended or product['family'] in self.config.get('observation_variables', {})
                 loaded = self.load(product,acquisitions,extended=extended)
                 product["loaded"] = loaded
                 self.inventory.append({k:v for k,v in product.items() if k != "loaded"} | {"metadata":loaded["metadata"],"coverage":loaded["coverage"],"status":"retrieved"})
@@ -383,6 +396,14 @@ class Client:
             for acquisition in acquisitions:
                 try:
                     surveys=survey_inventory(self.transport,url,acquisition['timestamp_utc'])
+                    if self.config.get('compact_survey_inventory'):
+                        total=len(surveys['products'])
+                        target_seconds=utc(acquisition['timestamp_utc']).timestamp()
+                        tolerance=self.config['time_tolerance_seconds'].get('bathymetry',2592000)
+                        surveys={**surveys,'catalogue_product_count_full':total,
+                            'products':[p for p in surveys['products'] if p.get('candidate_date_from_filename') and
+                                abs(utc(p['candidate_date_from_filename']+'T00:00:00Z').timestamp()-target_seconds)<=tolerance],
+                            'inventory_scope':'all catalogued filename dates within configured survey context; full verified raw catalogue retained in cache'}
                     self.inventory.append({'family':'bathymetry','acquisition_id':acquisition['acquisition_id'],**surveys})
                     target=utc(acquisition['timestamp_utc']).timestamp()
                     candidates=[]

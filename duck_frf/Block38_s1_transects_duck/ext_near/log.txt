@@ -1,0 +1,1 @@
+53 transects; sea mask: class component with the longest contact with bbox side E

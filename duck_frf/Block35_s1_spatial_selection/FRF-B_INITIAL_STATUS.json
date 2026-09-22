@@ -1,0 +1,33 @@
+{
+  "errors": [
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+      "family": "waves",
+      "instrument": "waverider-17m",
+      "month": "202110",
+      "status": "timeout",
+      "detail": "FetchError"
+    },
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202110.nc",
+      "family": "currents",
+      "instrument": "awac-11m",
+      "month": "202110",
+      "status": "timeout",
+      "detail": "FetchError"
+    }
+  ],
+  "network": {
+    "transactions": 35,
+    "bytes": 2633273,
+    "max_transactions": 80,
+    "max_bytes": 157286400,
+    "created_utc": "2026-09-18T14:42:38.120874+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed",
+    "tranche_name": "s1_duck_spatial_202110",
+    "max_response": 15728640
+  },
+  "no_radar_access": true,
+  "mode": "fetch",
+  "event_representative_state": "not mixed across instruments"
+}

@@ -1,0 +1,15 @@
+{
+  "start_utc": "2021-10-01T00:00:00Z",
+  "end_exclusive_utc": "2021-11-01T00:00:00Z",
+  "aoi": {"type":"Polygon","coordinates":[[[-75.751,36.165],[-75.585,36.165],[-75.585,36.265],[-75.751,36.265],[-75.751,36.165]]]},
+  "marine_screening_area": {"type":"Polygon","coordinates":[[[-75.740,36.175],[-75.700,36.175],[-75.700,36.200],[-75.740,36.200],[-75.740,36.175]]]},
+  "max_finalists":5,
+  "page_size":100,
+  "max_requests":80,
+  "max_bytes":157286400,
+  "max_response":15728640,
+  "timeout_seconds":30,
+  "retries":0,
+  "tranche":"s1_duck_spatial_202110",
+  "ranking":"evidence_levels_then_peak_band_spread_then_Hs_descriptive_then_UTC; no weighted score"
+}

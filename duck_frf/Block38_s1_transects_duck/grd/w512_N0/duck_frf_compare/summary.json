@@ -1,0 +1,43 @@
+{
+  "frf_affine_fit": {
+    "n_points": 32935,
+    "residual_p50_m": 0.003520089924645695,
+    "residual_p95_m": 0.012823793422946515,
+    "residual_max_m": 0.02177680419723457
+  },
+  "survey": "20211024",
+  "n_windows_with_survey": 18,
+  "note": "overlapping windows are not independent; eta (event water level, NAVD88) unknown; bed elevation != depth",
+  "frf_axial_propagation_deg": [
+    66.34158,
+    66.40836000000002
+  ],
+  "wr17": {
+    "implied_eta_median_m": 11.897135122510274,
+    "implied_eta_p10_p90_m": [
+      1.2665027671383828,
+      32.62108731694882
+    ],
+    "rmse_h_vs_minus_z_m": 25.96406066489548,
+    "shape_rmse_after_median_offset_m": 20.177965156940456,
+    "r_h_vs_depth": 0.4252202357074983,
+    "depth_range_m": [
+      6.27,
+      8.276499999999999
+    ]
+  },
+  "awac": {
+    "implied_eta_median_m": 13.935477716462358,
+    "implied_eta_p10_p90_m": [
+      3.3589863174929797,
+      28.951652860518212
+    ],
+    "rmse_h_vs_minus_z_m": 19.564118890269167,
+    "shape_rmse_after_median_offset_m": 11.186068749230413,
+    "r_h_vs_depth": 0.3487248159490638,
+    "depth_range_m": [
+      6.27,
+      8.276499999999999
+    ]
+  }
+}

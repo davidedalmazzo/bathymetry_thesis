@@ -1,0 +1,2967 @@
+# FRF observational dossier: c49a9c1f-9b00-5676-ab05-683975d898a2
+
+Timestamp: 2021-10-28T23:06:36.323000Z; semantics: catalogue ContentDate start/end; not local ROI sensing time
+
+Catalogue footprint only; valid SAR support NOT VERIFIED. No SAR data read.
+
+## A. Original measurements (independent per product/instrument)
+
+| instrument | variable | value | units | offset s | status |
+|---|---|---:|---|---:|---|
+|FRF:waverider-17m|waveHs|1.7103801|m|-396.323|qc_unknown|
+|FRF:waverider-17m|waveTp|11.396011|s|-396.323|qc_unknown|
+|FRF:waverider-17m|waveMeanDirection|61.399113|degree|-396.323|qc_unknown|
+|FRF:awac-11m|waveHs|1.717457|m|-395.823|retrieved|
+|FRF:awac-11m|waveTp|10.869565|s|-395.823|retrieved|
+|FRF:awac-11m|waveMeanDirection|69.948616|degree|-395.823|retrieved|
+|FRF:derived|windSpeed|8.969828|m s-1|203.677|retrieved|
+|FRF:eopNoaaTide|waterLevel|0.235|m|-36.323|qc_unknown|
+
+Only rows with representative_eligible=True pass the configured QC and time policy; context never fills another instrument.
+
+## B. Calculated quantities
+
+WGS84 distances in DISTANCES.csv, signed offsets and previous/next/nearest QC association in ASSOCIATIONS.json. Spectral integrals are diagnostic, with missing-bin coverage and published-Hs difference. No directional reconstruction or SAR inversion.
+
+## C. Assumptions
+
+Configured temporal tolerances are operational, not universal physical limits. Historical nominal coordinates are conditioned on the dated source; conflicting deployment text remains in metadata. No interpolation, wave refraction or wind-height conversion. Depth datum is preserved, not assumed instantaneous water depth.
+
+## D. Missing/conditional information
+
+No joint state of the tile is asserted. Position is not automatically a measured GPS location. Unverified burst anchoring leaves interval bounds/distance unknown. Unflagged products are QC-unknown under the default strict policy. Survey point/line coverage is not inferred from a bounding box. Unsupported/unfetched families and network limits are listed below:
+
+```json
+[
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/waverider-17m/2021/FRF-ocean_waves_waverider-17m_202110.nc",
+    "family": "waves",
+    "instrument": "waverider-17m",
+    "month": "202110",
+    "status": "timeout",
+    "detail": "FetchError"
+  },
+  {
+    "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/currents/awac-11m/2021/FRF-ocean_currents_awac-11m_202110.nc",
+    "family": "currents",
+    "instrument": "awac-11m",
+    "month": "202110",
+    "status": "timeout",
+    "detail": "FetchError"
+  }
+]
+```
+
+Source metadata warnings: []
+
+Search coverage: [{"family": "waves", "instrument_id": "FRF:waverider-17m", "required_months": ["202110"], "missing_or_unverified_months": ["202110"], "status": "incomplete_search", "nearest_claim": "nearest within available segments, not absolute deployment nearest"}, {"family": "waves", "instrument_id": "FRF:awac-11m", "required_months": ["202110"], "missing_or_unverified_months": [], "status": "verified_configured_context", "nearest_claim": "nearest within available segments, not absolute deployment nearest"}, {"family": "currents", "instrument_id": "FRF:awac-11m", "required_months": ["202110"], "missing_or_unverified_months": ["202110"], "status": "incomplete_search", "nearest_claim": "nearest within available segments, not absolute deployment nearest"}, {"family": "wind", "instrument_id": "FRF:derived", "required_months": ["202110"], "missing_or_unverified_months": [], "status": "verified_configured_context", "nearest_claim": "nearest within available segments, not absolute deployment nearest"}, {"family": "water_level", "instrument_id": "FRF:eopNoaaTide", "required_months": ["202110"], "missing_or_unverified_months": [], "status": "verified_configured_context", "nearest_claim": "nearest within available segments, not absolute deployment nearest"}]
+
+Spectral states (missing is not calm): [{"instrument_id": "FRF:awac-11m", "product": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/oceanography/waves/awac-11m/2021/FRF-ocean_waves_awac-11m_202110.nc", "status": "complete_spectrum", "Hm0_m": 1.7174570466943269, "valid_bin_fraction": 1.0}]
+
+Duplicate timestamp diagnostics: []
+
+Profiles/2D spectra, when present, are preserved in TENSORS.json with source definitions and masks. Ancillary meteorology/temperature only from selected products. NDBC/CDIP alias republication is not counted independently.
+
+## Operational reading guide
+
+`representative_eligible` is ONLY implemented availability/QC/time eligibility, NOT proof of physical representativity of footprint or ROI.
+
+### Original measurements and per-sample distances
+
+| instrument | parameter | original value/profile | units | UTC | offset s | QC/status | footprint min m | ROI min m |
+|---|---|---|---|---|---:|---|---:|---:|
+|FRF:waverider-17m|waveHs|1.7103801|m|2021-10-28T23:00:00.000003+00:00|-396.323|None: qc_unknown|0.0|None|
+|FRF:waverider-17m|waveTp|11.396011|s|2021-10-28T23:00:00.000003+00:00|-396.323|None: qc_unknown|0.0|None|
+|FRF:waverider-17m|waveTm|8.398706|s|2021-10-28T23:00:00.000003+00:00|-396.323|None: qc_unknown|0.0|None|
+|FRF:waverider-17m|wavePeakDirectionPeakFrequency|70.0|degree|2021-10-28T23:00:00.000003+00:00|-396.323|None: qc_unknown|0.0|None|
+|FRF:waverider-17m|waveMeanDirection|61.399113|degree|2021-10-28T23:00:00.000003+00:00|-396.323|None: qc_unknown|0.0|None|
+|FRF:waverider-17m|directionalPeakSpread|23.245344|deg|2021-10-28T23:00:00.000003+00:00|-396.323|None: qc_unknown|0.0|None|
+|FRF:awac-11m|waveHs|1.717457|m|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:awac-11m|waveTp|10.869565|s|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:awac-11m|waveTm|8.675288|s|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:awac-11m|waveTm1|6.816343|s|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:awac-11m|waveTm2|5.8528523|s|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:awac-11m|wavePeakDirectionPeakFrequency|70.0|degree|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:awac-11m|waveMeanDirection|69.948616|degree|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:awac-11m|waveMeanDirectionPeakFrequency|66.40836|degree|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:awac-11m|directionalPeakSpread|24.212297|deg|2021-10-28T23:00:00.500001+00:00|-395.823|1.0: retrieved|0.0|None|
+|FRF:derived|windSpeed|8.969828|m s-1|2021-10-28T23:10:00.000008+00:00|203.677|1.0: retrieved|0.0|None|
+|FRF:derived|windGust|10.335626|m s-1|2021-10-28T23:10:00.000008+00:00|203.677|1.0: retrieved|0.0|None|
+|FRF:derived|windDirection|56.011242|degree|2021-10-28T23:10:00.000008+00:00|203.677|1.0: retrieved|0.0|None|
+|FRF:eopNoaaTide|residualWaterLevel|0.581|m|2021-10-28T23:06:00.000002+00:00|-36.323|None: qc_unknown|0.0|None|
+|FRF:eopNoaaTide|predictedWaterLevel|-0.346|m|2021-10-28T23:06:00.000002+00:00|-36.323|None: qc_unknown|0.0|None|
+|FRF:eopNoaaTide|waterLevel|0.235|m|2021-10-28T23:06:00.000002+00:00|-36.323|None: qc_unknown|0.0|None|
+|FRF:eopNoaaTide|gapGauge|2.0||2021-10-28T23:06:00.000002+00:00|-36.323|None: qc_unknown|0.0|None|
+
+Nearest QC-eligible can be a different sample/gauge: OBSERVATIONS.csv references its own position_id in DISTANCES.csv. Previous/next/nearest selection remains in ASSOCIATIONS.json.
+
+### Original height/depth/interval definitions
+
+- FRF:waverider-17m / waves: original vertical context {}; duration hint 1800 s; anchored interval None to None.
+- FRF:awac-11m / waves: original vertical context {"nominalDepth": {"value": 11.3, "attributes": {"_FillValue": -999.0, "units": "m", "description": "Nominal bottom vertical location from NAVD88", "long_name": "Bottom Elevation (NAVD88)", "short_name": "Bottom Elevation"}}}; duration hint None s; anchored interval None to None.
+- FRF:derived / wind: original vertical context {"gaugeElevation": {"value": 19.64, "attributes": {"_FillValue": -999.99, "units": "m", "long_name": "Anemometer_elevation", "description": "Anemometer elevation above NAVD88", "short_name": "gaugeElevation", "_ChunkSizes": 4462.0}}}; duration hint 600 s; anchored interval None to None.
+- FRF:eopNoaaTide / water_level: original vertical context {}; duration hint None s; anchored interval None to None.
+
+Sensor elevation is not automatically wind height above instantaneous water. Profile depth/elevation and depth-integrated currents are distinct; no surface/effective-wave-current substitution.
+
+### Derived diagnostic spectral quantities
+
+- FRF:awac-11m: complete_spectrum; Hm0=1.7174570466943269 m; Tp discrete-bin=10.81081081081081 s; Tm01=6.853126496447523 s; Tm02=5.8863129382615 s; bin widths=reconstructed_midpoint_edges; these do not replace published parameters.
+
+### Bathymetric references
+
+[
+  {
+    "family": "bathymetry",
+    "discovered_instruments": [
+      {
+        "name": "duneLidarTransect",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/duneLidarTransect/catalog.xml"
+      },
+      {
+        "name": "survey",
+        "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/catalog.xml"
+      }
+    ],
+    "source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/catalog.xml",
+    "status": "catalog_verified",
+    "independence": "aliases are not independent observations"
+  },
+  {
+    "family": "bathymetry",
+    "instrument": "survey",
+    "catalog": {
+      "references": [
+        {
+          "name": "data",
+          "url": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml"
+        }
+      ],
+      "products": [
+        {
+          "name": "surveyTransects.ncml",
+          "url_path": "frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+          "services": {
+            "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+            "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+            "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+            "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+            "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+            "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml",
+            "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/surveyTransects.ncml"
+          },
+          "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/catalog.xml"
+        }
+      ],
+      "services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/"
+      }
+    },
+    "status": "inventory_only_no_survey_points_downloaded",
+    "coverage": "not verified; catalog/bounding box is NOT surveyed seabed"
+  },
+  {
+    "family": "bathymetry",
+    "acquisition_id": "c49a9c1f-9b00-5676-ab05-683975d898a2",
+    "status": "catalog_inventory_only",
+    "products": [
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-04",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-06",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-08",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-13",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-16",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-19",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-21",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-24",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-27",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211112.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-11-12",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211117.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-11-17",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      }
+    ],
+    "survey_coverage": "no line/point coverage asserted; no bounding-box substitution",
+    "catalogue_product_count_full": 1201,
+    "inventory_scope": "all catalogued filename dates within configured survey context; full verified raw catalogue retained in cache"
+  },
+  {
+    "family": "bathymetry",
+    "survey_reference": {
+      "name": "FRF_geomorphology_elevationTransects_survey_20211027.nc",
+      "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+      "services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc"
+      },
+      "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+      "candidate_date_from_filename": "2021-10-27",
+      "date_status": "not verified against survey metadata",
+      "measured_coverage": null,
+      "survey_method": null,
+      "resolution": null,
+      "uncertainty": null,
+      "horizontal_datum": null,
+      "vertical_datum": null
+    },
+    "metadata": {
+      "attributes": {
+        "time": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "standard_name": "time",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "time"
+        },
+        "date": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "date"
+        },
+        "lat": {
+          "_FillValue": -999.0,
+          "units": "degrees_north",
+          "standard_name": "latitude in decimal degrees north",
+          "long_name": "Latitude",
+          "short_name": "lat"
+        },
+        "lon": {
+          "_FillValue": -999.0,
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "Longitude in decimal degrees east",
+          "short_name": "lon"
+        },
+        "northing": {
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Northing",
+          "_FillValue": -999.0,
+          "units": "m"
+        },
+        "easting": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Easting"
+        },
+        "xFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Cross-Shore Coordinate",
+          "short_name": "x"
+        },
+        "yFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Along-Shore coordinate",
+          "short_name": "y"
+        },
+        "elevation": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "",
+          "long_name": "bottom elevation",
+          "description": "Elevation is in NAVD88 via geoid 2003",
+          "short_name": "z"
+        },
+        "profileNumber": {
+          "_FillValue": -999.0,
+          "units": "none",
+          "standard_name": "",
+          "long_name": "profile number",
+          "description": " Profile number based on FRF_Yshore coordinates",
+          "short_name": "profile number"
+        },
+        "surveyNumber": {
+          "_FillValue": -999.0,
+          "units": "None",
+          "standard_name": "",
+          "long_name": "survey number",
+          "description": "incremental value beginning with first survey",
+          "short_name": "sruvery number"
+        },
+        "Ellipsoid": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "height_above_reference_ellipsoid",
+          "long_name": "ellipsoid",
+          "description": "GRS 80 ellipsoid",
+          "short_name": "ellipsoid"
+        },
+        "NC_GLOBAL": {
+          "featureType": "timeSeries",
+          "title": "Beach and Nearshore Surveys at the USACE, Field Research Facility (FRF) in Duck",
+          "summary": "A unique series of repetitive surveys (1979-now) of shore-perpendicular profile lines surrounding the US Army Corps of Engineers (USACE) Field Research Facility (FRF) in Duck, NC.  The surveys typically include 28 lines which extend from 600 m south of the FRF research pier to 600 m north. Special surveys may extend the coverage further. Surveys are typically monthly and after major storms but may be done as frequently as daily during special experiments (DUCK82, DUCK85, SuperDuck '86, DELILAH '90, DUCK94, SandyDuck 1997, DUCK98 and MORPHOS 2008, etc.). Profile lines are spaced ~45 m apart and extend from the primary dune line to approximately 2 km offshore (-15 m isobath NAVD88). Profile lines are numbered according to their FRF coordinate longshore distance in m. 4 lines (1097, 1006, 1 and -91) were surveyed biweekly until ~2007. During the experiments, surveys were conducted more frequently of an area located north of the pier and known as the \"minigrid\" where profile line spacing was ~25 m. Over time the survey techniques evolved; accuracy and data point coverage improved. The platforms used include: (1) a Sea Sled with a graduated mast which was pulled offshore by a boat and winched back to shore by means of a cable; (2) The Coastal Research Amphibious Buggy or CRAB, a 10-m tall motorized tripod which an operator drives from the beach through the surf zone to a depth of ~-9 m at ~1000m offshore.  (3) a Lighter Amphibious Resupply Cargo V (LARC-V) vessel which is a 10-m long amphibious vessel capable of continuous data collection from the beach, through the surf zone and offshore. LARC-V surveys extend to a depth of ~-15 m at ~2000 m offshore. Survey instruments included a Motorola Miniranger, Automatic Survey Level, Zeiss Elta 2s Electronic Total Station, Geotronics Geodimeter 140T auto-tracking total station and most recently a Real-Time Kinematic Global Positioning System (RTK-GPS). Speed, accuracy and error sources depend on the survey system used. There are several aspects of these data that users should be aware of, particularly when looking at long-term temporal and longshore changes.  Most importantly the 560-m long research pier located in the center of the survey region causes a permanent scour hole. Lead-line soundings from the pier (lines 514 and 520, 1980-2006) or close-spaced profile lines (509, 524) are used to resolve this feature.  The area influenced by the pier varies, particularly during storms, but it usually occurs within the central third of the survey region.  For this reason, temporal studies using these data should focus on profiles lines at the outer edges of the region (typically lines 1097, 1006, 1, -91) and should compare the north and south lines and adjacent lines for similar long-term trends. There are some surveys where these lines were not surveyed which can be problematic with contour plots and gridding as the scour hole will incorrectly appear to be missing.  An examination of the effect of the research pier on the bathymetry was published in: Miller, H.C., W.A. Birkemeier, and A.E. DeWall, 1983, \"Effects of CERC Research Pier on Nearshore Processes,\" Proceedings of Coastal Structures '83, American Society of Civil Engineers, pp. 769-784. &#10; Because of short lines, gaps in the data and variable line spacing, care must be taken in creating spatial grids using these data points.  Suggested grids and search patterns should be long in the longshore and short in the cross-shore direction.  Small vertical errors exist in the data, detectable offshore (deeper than ~7m) as shifts along the entire profile for one survey relative to the previous and following surveys.  These shifts are known to result from systematic station or antenna height errors, instrument changes or vessel changes (the CRAB to the LARC). They typically are less than 10 cm but since they are systematic along the entire profile they can affect computations if not accounted for\n",
+          "history": "These data are part of a series of surveys since October 1979 which document the evolving beach topography and bathymetry surrounding the USACE Field Research Facility (FRF) and which provide a measure of the beach's response to coastal processes, including storms.  Survey data are complemented by a suite of continuous observations of local waves, winds, tides and currents.  These data are unique in their temporal coverage and vertical accuracy and have been the subject of multiple technical papers.\n",
+          "source": "Department of Army (DOA), U.S. Army Corps of Engineers (USACE), Engineer Research and Development Center (ERDC), Coastal and Hydraulics Laboratory (CHL) - Field Research Facility (FRF)",
+          "sourceUrl": "(local files)",
+          "standard_name_vocabulary": "CFv25",
+          "Metadata_Conventions": "Unidata Dataset Discovery v1.0, CF-1.6",
+          "metadata_link": "N/A",
+          "Conventions": "CF-1.6",
+          "creator_name": "USACE/CHL/COAB",
+          "creator_url": "http://frf.usace.army.mil",
+          "creator_email": "frfwebmaster@usace.army.mil",
+          "license": "These data may be redistributed and used without restriction.  Data are intended for scholarly use by the research community, with the express agreement that users will properly acknowledge the USACE Field Research Facility and the supporting investigator(s). Use or reproduction of these data for commercial purposes is prohibited without prior written permission.\n",
+          "keywords_vocabulary": "FGlobal Change Master Directory (GCMD) Earth Science Keywords; CF Standard Name Table (v23, 23 March 2013)",
+          "keywords": "Earth Science > Oceans > Coastal Processes > Shoreline Earth Science > Oceans > Coastal Processes > Beaches Earth Science > Oceans > Coastal Processes > elevation Earth Science > Oceans > Coastal Processes > Barrier islands Earth Science > Oceans > Coastal Processes > sediment transport",
+          "processing": "The software required to process the survey data evolved along with the survey technology. For all systems, survey coordinates had to be computed from the raw observations.  Distance, zenith angle and azimuth angle for the Zeiss and Geodimeter Total Stations; Latitude, Longitude and antenna height for GPS; Sounding depth, vessel motion, sound speed and CRAB tilt all require processing.  Custom FORTRAN programs were written to guide the CRAB during a survey and to process the raw data.  Starting in June 1994, Hypack, Inc.'s Hypack software was used to guide the CRAB, LARC-V and backpack-mounted TOPO surveyor along the profile lines and to log the Geodimeter and later the RTK-GPS data (1 Hz), the echosounder depth (9 Hz) and the motion data (9 Hz). Processing was done with Fathomax, a custom FORTRAN program that dynamically synchronizes the GPS, echosounder, and motion sensor data to remove the motion of the vessel due to waves.  This is accomplished by adjusting the latency between the GPS elevation and the echosounder data until the influence of the wave motion is minimized. The survey software also adjusts depths for the speed of sound and converts geographic coordinates into the local FRF coordinate system.  Data collection and processing is done using Microsoft Windows-based computers. \nSurvey data file sizes varies from 4-5,000 kb depending on the number or profile lines included in the survey and the method used.  Total file size for all collected surveys totals about 600 mb of data. The 28 shore-perpendicular profile lines which are routinely surveyed cover a distance of ~1200 m alongshore and extend from behind the primary dune line to approximately 1 to 2 km offshore (-9 to -14 m isobath). Profile Lines include: -91,-46,1,46,91,137,183,229,274,320,366,411,457,509,524,558,594,640,686,731,777,823,869,960,1006,1052,1097. Some surveys extend the coverage. The FRF research pier is centrally located within the survey region. The profile lines are nominally spaced 45m apart. The multibeam survey conducted in 1994 extended alongshore from -1.5 km (south) to +5.9 km (north) and offshore to 10.7 km. The MORPHOS experiment surveys in 2008-2009 extended the coverage to 3.5 km north.  15 lines were added in 2017 to monitor a beach nourishment project nort of the Research Pier.  The added lines include: 927,1157,1217,1277,1337,1511,1803,2103,2397,2693,3003,3241,3550,3858,4156. The surveyed area is located in Duck, NC, USA, 27949\nFrom 1981-1996, the Zeiss Elta-2s and the Geotronics Geodimeter 140T total stations were always stationed over a point of known vertical position. That position was established relative to National Geodetic Survey (NGS) monuments of known coordinates that have been cross-checked with existing vertically-controlled first order benchmarks. The NGS monuments are located on the FRF property and were originally installed to provide vertical control to the NOAA tide gauge on the FRF pier. A permanently mounted reflecting prism located about 500 m away was used to confirm elevation and position accuracy each time the total station was used. Beginning with the RTK-GPS surveys in 1996, a local GPS Base station was established at the FRF and its vertical position was determined using NGS online positioning service (OPUS) or published NGS coordinates. This was tested by determining the vertical difference in an RTK-GPS baseline solution to a known geodetic benchmark. Since 2004 the GPS base station has been operated by the NGS as Station NCDK under the Continuously Operating Reference Station (CORS) program.  Station NCDK was replaced by station NCDU in 2007 https://www.ngs.noaa.gov/cgi-cors/corsage_2.prl?site=NCDU.\nCoordinate Systems. From 1979-1996 survey data were collected relative to a local longshore/cross-shore cartesian coordinate system established in the 1970\u2019s. The origin of the \"FRF Coordinate System\" is located behind the dune line near the southern boundary of the FRF property at Latitude = 36.1775975 deg, Longitude = -75.7496860 deg; in NC State Plane coordinates at Northing (m) = 274,093.156, Easting (m) = 901,951.680. The baseline of the system (cross-shore distance = 0) is perpendicular to the FRF pier and is aligned 18.1465 degrees West of True North. Distance to the north along the baseline and distance directed offshore are positive. Beginning in 1996 with the use of RTK-GPS, Geodetic Coordinates were collected and converted to North Carolina State Plane coordinates by the Hypack collection program. A custom program was then used to convert these coordinates to FRF coordinates.  Additionally, a custom program was used to convert data originally collected in FRF coordinates to Geographic and NC State Plane. The data files include all three coordinates for each data point. Coordinate data are in meters or decimal degrees. CSV ASCII data files are not compressed. Filename includes 7 fields with details about the contents of the file, separated with underscores. They are: Surveyor (always FRF), Survey Date (YYYYMMDD), Survey Number (XXXX), Survey Job (FRF or experiment name), Vertical Datum (NAVD88), Vessel used (CRAB, Boat, LARC, SeaSled, Topo),Survey Instrument (Zeiss, Geodimeter, GPS, Level, Miniranger), Time Base (UTC), Version Date (vYYYYMMDD) representing the date that the data in the file were last updated. \nData Quality varies with the platform (CRAB or LARC-V) and the survey system used. In this section, we address platform and instrument accuracy and errors. Other details related to each method can be found under the Data Collection Process Steps. The 10-m-tall Coastal Research Amphibious Buggy (CRAB) provides a stable measurement platform which allows a traditional high-accuracy topographic survey to continue offshore. Because the measurement point is directly above and centered over the back two wheels, it averages the elevation under the rear wheels, which are 7.3 m apart. Unquantified, but believed to be small errors are the CRAB sinking into the sea-bed due to its weight and expansion/contraction of the aluminum frame of the CRAB due to seasonal changes in water and air temperature. Changes through time of the height of the measurement point on the CRAB (prism, GPS antenna) also influences long-term vertical accuracy. Because the LARC-V is a floating platform, its position is more complicated than with the CRAB. Erroneous or missing points tend to be caused by breaking waves and bubbles over nearshore sandbars. Bubble problems are more likely to occur on offshore-directed surveys (into the waves). Because of the size of both the CRAB and LARC-V, there are a few meters in front of the dune toe that they are unable to survey. Errors may also exist where the dune points, which if added may be many months old, intersect with the beach/offshore points. Because the CRAB is unaffected by waves, it provides a more accurate survey of the bottom under breaking waves than can be obtained with the LARC-V. \nVertical accuracy and position errors depend on the instrument being used.\n1981 CRAB-Level - Error sources included out-of-level instruments, stadia reading errors, field book and transcription errors, and instrument stationing errors.  Estimated accuracy in distance was from \u00b10.3 to \u00b16 m.  Vertical accuracy was estimated from \u00b10.03 to \u00b10.6 m, depending on distance offshore with errors increasing with distance. As a result, data collected prior to June 1981 extend only to ~600 m offshore.  Although these data are less accurate than later surveys, they are retained because the configuration of the inshore profile shape is accurately represented.  These data are best used in studies where the relative shape and location of the sandbars is important.  There are less useful where high vertical and position accuracy is required (ex. volumetric computations). \n1981-1990 CRAB-Zeiss - Accuracy approaches that of the Zeiss Elta-2s system itself; the distance accuracy of \u00b12 cm; angle accuracy of 0.6\" giving a vertical accuracy of \u00b11.5 cm at 1000 m.  Repetitive surveys under ideal conditions indicated a vertical accuracy of \u00b12.11 cm. Operator errors can result from improper instrument leveling and stationing, movement of the tripod during the survey, and miss-aiming the instrument at the proper location on the prism cluster while taking the measurement. Survey points could also be simply missed offshore by the CRAB not stopping at a critical change in curvature. If shape is important, then data users are best directed to later surveys using the CRAB and a continuous system.\n1990-1996 CRAB-Geodimeter - The accuracy of the Geodimeter 140T in tracking mode is \u00b110 mm and \u00b13\u201d in angle.  Repetitive surveys indicated a vertical accuracy of \u00b12.7 cm.  However, the Geodimeter 140T had some error-causing idiosyncrasies including a drift in elevation due to differential heating of the instrument, vertical oscillations due to an improperly adjusted tracker signal, and the ability to occasionally not lock onto the prism but to a slightly offset location.  Once these errors were understood, checks were made to measure and remove the drift, and the instrument operator was also careful to visually monitor the centering of the instrument on the ring of prisms to insure proper lock of the tracker unit. Tracker oscillation causes a jagged bottom of a few centimeters with no smooth sections; offsets appear as sharp vertical steps in the data. While the Geodimeter errors are unfortunate, their actual impact on survey data is seldom greater than \u00b115 cm in the vertical and is typically less than \u00b110 cm. \n1996-now CRAB-GPS - Absolute horizontal and vertical accuracies for RTK-GPS surveys are \u00b12 cm. In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions. Accuracy errors which can affect the system include dropped GPS points, loss of RTK, high PDOP, and antenna height errors. Station antenna height is permanently established, so typically not a source of error.  The antenna on the CRAB is removed and installed for each survey, but the mount is of fixed height and permanently installed.\n1999-now LARC-GPS - In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions and \u00b110 cm under less than ideal wave conditions. The system has been shown to compare similarly to accuracies obtainable with the CRAB.  Survey system errors, which may significantly affect the data include missed echosounder points, loss of RTK, high PDOP and speed of sound errors.\n1979-1980, Sea Sled/Boat-Miniranger Data Collection - The two earliest surveys in October 1979 and in October 1980, in advance of the Atlantic Remote Sensing Land-Ocean Experiment (ARSLOE). For this survey, the profile lines were located up to 3 km north and south of the pier. The surveys were done under contract to Langley and McDonald of Virginia Beach, VA and each profile line was surveyed in three parts: beach, nearshore and offshore.  The beach portion was surveyed to wading depth (-0.5 m) using conventional level and tape techniques.  The nearshore was surveyed out to 600 m using a sea sled and a surveying level. Deeper depths were surveyed using an analog fathometer mounted on a boat.  A Motorola Miniranger system provided horizontal position information for the sled and boat. The fathometer was calibrated on each range line by overlapping the sea sled data.  The surveys extended from the primary dune line to approximately 3 km offshore (-17 m isobath NAVD88).  Because wave motion was not completely removed from the offshore portion of the survey, it is less accurate vertically than the beach and sled portions.\n1981, CRAB-Level Data Collection - Survey points were obtained using a Dietzgen automatic self-leveling level to measure the position and elevation of the CRAB (Coastal Research Amphibious Buggy). The CRAB operator drives offshore (or onshore) stopping periodically to allow the surveyor to read a large, 12.3-m-tall stadia board mounted on the CRAB, reading the top, middle, and bottom crosshairs of the level.  From these readings, the elevation and offshore distance are computed. Survey point frequency is based on drive time between points and adjusted to collect more points near shore and fewer offshore. The CRAB operator navigated the cross-section by visually aligning two range poles on land. The exact distance offline is not known. If the stadia board moved above or below the instrument's field of view, the instrument was moved to a new location and the survey continued. Topographic (Topo) survey points of the beach and dune were collected using the level and a level rod and used either stadia readings a measuring tape for distance. This technique was used for 24 surveys from January to May 1981.\n1981-1990, CRAB-Zeiss Data Collection - Survey points were obtained using a Zeiss Elta-2s Electronic Total Station mounted on a wooden tripod located on the pier, or after July 1985, on a permanent steel pipe located on the roof of the FRF building. Both locations were of known horizontal and vertical position. Typically, the CRAB was driven over a point in the FRF parking lot of known location and elevation to confirm the Zeiss Elta-2s setup. Then all the lines were driven from the base of the dune seaward and back, stopping at each survey point for ~10 sec. At each stop, the CRAB operator would observe the tilt of the CRAB using orthogonal tilt gauges and if it was greater than 4 degrees, radio the tilt reading to the Zeiss operator who then entered the values into the Zeiss Elta-2s keypad for later adjustment. The CRAB operator would count time between stops increasing the interval as the CRAB moved offshore. A 900-m-long transect would take ~45 minutes and included ~40 data points. The CRAB maintained position on the survey line using two alignment poles located on land and steering instructions from the instrument operator as the Zeiss displayed FRF coordinates. This guidance allowed the CRAB to stay within ~3 m of the survey line.  To improve survey efficiency, line lengths were varied to provide more coverage inshore where the bathymetry is complex and 3D and less coverage deeper than ~5 m where the bathymetry is less complex and more shore parallel. A full survey of all lines took 2 days.  As with all surveys with the CRAB, wave conditions were typically less than ~1.5-m wave height.  Depending on wave and tide height, survey coverage extended ~900 m offshore and to a depth of ~9 m.  Topo points were collected using a single reflective prism mounted on a pole of known height. A large round plate mounted on the bottom of this pole prevented it from sinking into the sand. Periodic shots with the Zeiss to a prism permanently located near the end of the FRF pier provided checks on the instrument stationing.  An umbrella shielded the instrument from differential heating. This survey technique was used from June 1981-April 1990. Included in this period were the DUCK82, DUCK85 and SuperDuck '86 experiments when a subset of the survey area known as the \"minigrid\" located north of the FRF research pier was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1990-1996, CRAB-Geodimeter Data Collection - Survey points were obtained using a Geotronics Geodimeter 140T total station to continuously track the movement of the CRAB.  The Geodimeter was mounted on a permanent steel pipe of known horizontal and vertical position and initially aimed at a ring of reflective prisms mounted on the CRAB, at a known height.  The tracking system then locks onto the prism ring and follows the CRAB as it moves.  The coordinates of the CRAB are measured and automatically recorded.  Because of the speed of the CRAB, data points were collected every 1 to 2 m. Both program RG7, a FORTRAN program developed by Mike Leffler, and later Hypack Inc. Hypack program provided navigation guidance to the Geodimeter operator which was radioed to the CRAB. Because the Geodimeter was found to drift vertically, observations of the prism mounted at the end of the FRF pier were taken before and after each line was surveyed to measure and remove the drift. An umbrella shielded the instrument from differential heating. Unlike with the Zeiss, the tilt of the CRAB was not measured and was instead estimated later, Topo points during this time were often collected using the Zeiss. The combination of Hypack and the Geodimeter was used for 40 surveys from June 1994 to July 1996. Included in this period were the DELILAH '90 and DUCK94 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1994, Boat with Swath Survey System Data Collection - In August 1994 the Naval Research Laboratory (NRL) sponsored an offshore multibeam swath survey to support wave transformation studies under the Coastal Ocean Processes Experiment (CoOP) which coincided with the DUCK94 experiment. The survey was conducted by CC Technologies using a ~10-m long boat equipped with Real-Time Kinematic (RTK) GPS for horizontal position and a multi-beam depth sounder. 100% coverage was obtained of an area 7 km alongshore by 10 km offshore. A separate multibeam survey of about 70,000 points was also collected around the FRF research pier extending to ~800 m offshore. FRF cross-sections were extracted from the multibeam data and included as part of the FRF DUCK94 minigrid survey of 14 August 1994. Since these profiles are widely spaced, they do not accurately capture the deep, complex offshore bathymetry that the full coverage reveals (The full swath data are also available). No other details exist about the data collection and processing.\n1996-now, CRAB-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system with the CRAB. Data points are collected every ~80 cm. The use of GPS moved the data collection computer to the CRAB allowing a single person to conduct the survey.  A system check is made by driving the CRAB over the known parking lot point before each survey. Hypack, Inc.\u2019s Hypack Survey software logs the data and provides navigation guidance allowing the CRAB to stay within ~2 m of the survey line.  As with the Zeiss and Geodimeter, line lengths are varied alongshore to provide more coverage inshore. CRAB tilt is estimated during processing.  Topo points are collected with a backpack mounted GPS and a handheld data collector or computer running Hypack. This survey technique was used for 134 surveys from August 1996 to August 1999 and is still in use whenever survey data are collected using the CRAB.  Included in this period was the SandyDuck '97 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1999-now, LARC-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system combined with a Knudsen survey-grade echosounder and optionally, a TSS DMS 3-25 motion sensor mounted on the LARC-V. Conductivity, temperature, and depth (CTD) are measured at the end of the FRF pier to a depth of -7 m during the survey and additionally by an odom digibar at the offshore extent of the survey (typically -15m) to determine the speed of sound in the water column. Data points are collected on average every 2.5 m. Vessel motion. waves, bubbles and water characteristics complicate depth and position computation. A LARC-V survey is similar to a topo/CRAB survey when on its wheels and like a hydrographic survey when it's floating. The survey begins by first driving the LARC-V over a point of known position to confirm the RTK-GPS setup.  Then all the lines are driven from the base of the dune seaward and back. Hypack, Inc.'s Hypack Survey software logs all the data streams and provides navigation guidance which allows the LARC-V to stay within ~5 m of the desired survey line. Data streams include GPS (xyz), echosounder depth, heave, pitch, roll. Survey conditions are typically less than 1-m wave height.  A full survey of all lines can be done in 6-8 hours, less than half the time required by the CRAB. Profile Lines extend to 1 km offshore with a few selected lines extending 2 km. The survey crew includes the LARC-V captain and a surveyor. Use of the LARC-V with RTK-GPS began in September 1999 and continues as the preferred survey method because of it's speed. Included in this period was the 2008-2009 MORPHOS experiment when the surveyed profiles were extended ~3 km to the north. They are identified by the experiment name in the data filename.\n",
+          "dataProcessing": "1981-now, Pier Bathymetry Data Collection - At the same time or within a few days of each full survey, the bottom directly under the FRF pier is surveyed using a lead-line to measure the distance between the bottom and the pier deck.  Profile line 514 is the south edge of the pier; line 520 is the north edge.  Lead-line measurements are made between the pier pilings (mid-bent) to avoid measuring the scour hole surrounding each pier piling.  Starting in 2006, the lead line surveys were replaced by additional survey lines very close to the pier (within ~25 m) which are surveyed using the LARC-V.  These lines were not always done, but are important since they define the scour influence under the pier.\n1981 CRAB-Level, Data Processing - ISRP (Interactive Survey Reduction Program), a custom FORTRAN program, was used to manually enter the points from the handwritten field notes. ISRP produces a *.3d data file with all the profile lines; one data point (local FRF coordinates) per line. Collected elevation data were relative to NGVD29 and local standard time. As with all data files collected using the FRF coordinate system, a program converted the FRF coordinates into both NC State Plane (NAD83) and Geographic coordinates and adjusted the vertical data to NAVD88 and time to UTC.\n1981-1990, CRAB-Zeiss Data Processing - The FRF coordinate file from the Zeiss ( *.zss file) was processed using ISRP which combined the CRAB and Topo points and corrected the elevation for the CRAB tilt (if greater than 2 degrees and less than 10). A less than 2 degree tilt was considered insignificant and more than 10 degrees was likely an error.\n1990-1996, CRAB-Geodimeter Data Processing - The FRF coordinate file was produced by program RG7 (*.rg7) and later by the Hypack program was processed using ISRP, which was modified to estimate the tilt of the CRAB based on the elevation data and to compute and remove the drift of the instrument based on observations of known points collected before and after each profile line surveyed.\n1996-now, CRAB-GPS Data Processing - Hypack Inc.'s Hypack program generates multiple files: 1) a *.raw file for every profile line, 2) a *.log file which lists the *.raw filenames, 3) field notes in a spreadsheet format or handwritten and scanned.  Programs GPSFRF, GPSMAX, and later Fathomax batch process these files to create a single *.csv file which contains one row for each data point. Like ISRP, these programs use an iterative technique to estimate and remove the CRAB tilt. They also combine the CRAB points with the Topo points.\n1999-now, LARC-GPS Data Processing - Processing the LARC-GPS data is similar to the CRAB-GPS data with the additional computations required to determine the depth at each point using the GPS elevation, echosounder depth, heave, pitch, roll and the speed of sound profile through the water column. Processing is done using Fathomax which batch processes the raw data files and creates a single *.csv file containing one row for each survey point.  Fathomax also combines the LARC points with the Topo points and generates a series of postscript cross-section plot files, a text file of processing actions taken for each line, and a summary file for the survey which lists summary file for the survey which lists useful computations for all lines (seaward distance extent, number of survey points, average point spacing, etc.)\n",
+          "dataEditing": "1981-1996, Data Editing Step - ISRP allows interactive editing of data, showing graphic comparisons, and includes routines designed to address the unique errors of the Survey Level, Zeiss Elta-2S and Geodimeter 140T instruments. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points were deleted. Less obvious ones were left in. Systematic errors such as vertical offsets that are either constant or which increase with distance were identified and removed. This is a subjective process but was done by the people who collected the data and who were familiar with the errors which occur.\n1996-now, GPS Surveys Data Editing Step - The *.CSV files created by Fathomax are edited using ISRP3, a Visual Basic program developed by Terry Lease. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points are deleted. RTK-GPS data tend to require less hand editing than do the other survey methods.  LARC-V survey data typically requires more editing than do data collected with the CRAB. An example might be points collected when the LARC breached on a breaking wave and the fathometer lost lock with the bottom but still collected depths. Bubbles in the water column may also make it hard to identify the bottom in the echosounder trace, particularly over the shallow crest of the sandbar on outgoing surveys. When this occurs the Hypack program is used to edit the echosounder data prior to reprocessing with Fathomax and editing with ISRP3. Data gaps and odd-looking sandbar shapes, relative to the CRAB surveys, occur occassionally in the LARC-V surveys.\n",
+          "organization": "USACE/CHL/COAB",
+          "publisher_url": "http://frf.usace.army.mil",
+          "infoUrl": "http://frf.usace.army.mil",
+          "publisher_email": "frfwebmaster@usace.army.mil",
+          "publisher_name": "USACE/CHL/COAB",
+          "format_version": "v1.0",
+          "institution": "USACE/CHL/COAB",
+          "contact": "USACE/CHL/COAB",
+          "contact_info": "USACE/CHL/COAB",
+          "contact_role": "Owner",
+          "contributor_name": "USACE/CHL/COAB",
+          "contributor_role": "USACE/CHL/COAB",
+          "naming_authority": "FRF",
+          "origin": "USACE/CHL/COAB",
+          "date_created": "2025-06-13",
+          "date_issued": "2025-06-13",
+          "acknowledgement": "Data are provided by the U.S Army Engineer and Research Center, Coastal & Hydraulics Laboratory, Field Research Facility, Duck, North Carolina. Contributors:(Alphabetical order) Jesse Baldwin, Robert Battalio, Chris Berg, Gene Bichner, Bill Birkemeier, Dave Bradley, Matthew Cahur, Doug Call, Mike Carpenter, Mason Cox, Peter Dickson, Michael Dominguez, Doug Dorman, Marty Durkin, Michael Forte, Daniel Freer, Christopher Goshow, Bill Grogg, Deborah Heibel, Daniel Hogan, Stuart Holme, Peter Howd, Charles Judge, David Klebitz, Kevin Kremkau, Robert Lai, Mark Lampe, Terry Lease, Guan-hong Lee, Stephanie Lee, Michael Leffler, Curtis Mason, Mark McConathy, H. Carl Miller, Rob Mitchell, Jason Pipes,Mel Pollock, Mark Preisser, Judy Roughton, Francis Sargent, Matthew Savacool, Rebecca Savage, Brian Scarborough, Charles Smith, Robert Stewart, John Strider, David Thompson, Raymond Townsend,Steve Underwood, James Watts, Rob Web, Ray Wirt, Stanley Wilhelm and many others\n",
+          "project": "USACE/COAB observations",
+          "id": "FRF-BeachProfile-Survey",
+          "processing_level": "L1",
+          "geospatial_vertical_units": "m",
+          "geospatial_vertical_resolution": 0.0,
+          "geospatial_vertical_min": 0.0,
+          "geospatial_vertical_max": 0.0,
+          "geospatial_vertical_origin": "NAVD88",
+          "geospatial_lat_min": 36.25,
+          "geospatial_lat_max": 36.45,
+          "geospatial_lat_units": "degrees_north",
+          "geospatial_lon_min": 75.58,
+          "geospatial_lon_max": 75.96,
+          "geospatial_lon_units": "degrees_west",
+          "geospatial_vertical_positive": "up",
+          "time_coverage_start": "1980",
+          "time_coverage_end": "current",
+          "deployment_start": "1980",
+          "platform": "LARC, CRAB, Sled, Rod-Level",
+          "instrument": "Beach Profile Measuring Systems",
+          "cross_shore_angle_units": "degrees_north",
+          "cross_shore_angle_description": "cross shore angle at the USACE FRF site in DUCK, NC, clockwise from true north",
+          "cross_shore_angle": 71.8
+        }
+      },
+      "shapes": {
+        "time": [
+          7342
+        ],
+        "date": [
+          7342
+        ],
+        "lat": [
+          7342
+        ],
+        "lon": [
+          7342
+        ],
+        "northing": [
+          7342
+        ],
+        "easting": [
+          7342
+        ],
+        "xFRF": [
+          7342
+        ],
+        "yFRF": [
+          7342
+        ],
+        "elevation": [
+          7342
+        ],
+        "profileNumber": [
+          7342
+        ],
+        "surveyNumber": [
+          7342
+        ],
+        "Ellipsoid": [
+          7342
+        ]
+      },
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+      "available_services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc"
+      },
+      "auth": "anonymous",
+      "tls": "verified"
+    },
+    "status": "nearby_candidate_metadata_verified",
+    "measured_coverage": "not verified by bounding box",
+    "filename_date_not_verified": true
+  },
+  {
+    "family": "bathymetry",
+    "acquisition_id": "d982f98d-9739-5a03-aa42-27407da87d7e",
+    "status": "catalog_inventory_only",
+    "products": [
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210913.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-13",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210915.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-15",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210919.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-19",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210921.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-21",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210922.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-22",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210926.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-26",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210928.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-28",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-04",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-06",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-08",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-13",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-16",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-19",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-21",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-24",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-27",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      }
+    ],
+    "survey_coverage": "no line/point coverage asserted; no bounding-box substitution",
+    "catalogue_product_count_full": 1201,
+    "inventory_scope": "all catalogued filename dates within configured survey context; full verified raw catalogue retained in cache"
+  },
+  {
+    "family": "bathymetry",
+    "survey_reference": {
+      "name": "FRF_geomorphology_elevationTransects_survey_20211013.nc",
+      "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+      "services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc"
+      },
+      "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+      "candidate_date_from_filename": "2021-10-13",
+      "date_status": "not verified against survey metadata",
+      "measured_coverage": null,
+      "survey_method": null,
+      "resolution": null,
+      "uncertainty": null,
+      "horizontal_datum": null,
+      "vertical_datum": null
+    },
+    "metadata": {
+      "attributes": {
+        "time": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "standard_name": "time",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "time"
+        },
+        "date": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "date"
+        },
+        "lat": {
+          "_FillValue": -999.0,
+          "units": "degrees_north",
+          "standard_name": "latitude in decimal degrees north",
+          "long_name": "Latitude",
+          "short_name": "lat"
+        },
+        "lon": {
+          "_FillValue": -999.0,
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "Longitude in decimal degrees east",
+          "short_name": "lon"
+        },
+        "northing": {
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Northing",
+          "_FillValue": -999.0,
+          "units": "m"
+        },
+        "easting": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Easting"
+        },
+        "xFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Cross-Shore Coordinate",
+          "short_name": "x"
+        },
+        "yFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Along-Shore coordinate",
+          "short_name": "y"
+        },
+        "elevation": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "",
+          "long_name": "bottom elevation",
+          "description": "Elevation is in NAVD88 via geoid 2003",
+          "short_name": "z"
+        },
+        "profileNumber": {
+          "_FillValue": -999.0,
+          "units": "none",
+          "standard_name": "",
+          "long_name": "profile number",
+          "description": " Profile number based on FRF_Yshore coordinates",
+          "short_name": "profile number"
+        },
+        "surveyNumber": {
+          "_FillValue": -999.0,
+          "units": "None",
+          "standard_name": "",
+          "long_name": "survey number",
+          "description": "incremental value beginning with first survey",
+          "short_name": "sruvery number"
+        },
+        "Ellipsoid": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "height_above_reference_ellipsoid",
+          "long_name": "ellipsoid",
+          "description": "GRS 80 ellipsoid",
+          "short_name": "ellipsoid"
+        },
+        "NC_GLOBAL": {
+          "featureType": "timeSeries",
+          "title": "Beach and Nearshore Surveys at the USACE, Field Research Facility (FRF) in Duck",
+          "summary": "A unique series of repetitive surveys (1979-now) of shore-perpendicular profile lines surrounding the US Army Corps of Engineers (USACE) Field Research Facility (FRF) in Duck, NC.  The surveys typically include 28 lines which extend from 600 m south of the FRF research pier to 600 m north. Special surveys may extend the coverage further. Surveys are typically monthly and after major storms but may be done as frequently as daily during special experiments (DUCK82, DUCK85, SuperDuck '86, DELILAH '90, DUCK94, SandyDuck 1997, DUCK98 and MORPHOS 2008, etc.). Profile lines are spaced ~45 m apart and extend from the primary dune line to approximately 2 km offshore (-15 m isobath NAVD88). Profile lines are numbered according to their FRF coordinate longshore distance in m. 4 lines (1097, 1006, 1 and -91) were surveyed biweekly until ~2007. During the experiments, surveys were conducted more frequently of an area located north of the pier and known as the \"minigrid\" where profile line spacing was ~25 m. Over time the survey techniques evolved; accuracy and data point coverage improved. The platforms used include: (1) a Sea Sled with a graduated mast which was pulled offshore by a boat and winched back to shore by means of a cable; (2) The Coastal Research Amphibious Buggy or CRAB, a 10-m tall motorized tripod which an operator drives from the beach through the surf zone to a depth of ~-9 m at ~1000m offshore.  (3) a Lighter Amphibious Resupply Cargo V (LARC-V) vessel which is a 10-m long amphibious vessel capable of continuous data collection from the beach, through the surf zone and offshore. LARC-V surveys extend to a depth of ~-15 m at ~2000 m offshore. Survey instruments included a Motorola Miniranger, Automatic Survey Level, Zeiss Elta 2s Electronic Total Station, Geotronics Geodimeter 140T auto-tracking total station and most recently a Real-Time Kinematic Global Positioning System (RTK-GPS). Speed, accuracy and error sources depend on the survey system used. There are several aspects of these data that users should be aware of, particularly when looking at long-term temporal and longshore changes.  Most importantly the 560-m long research pier located in the center of the survey region causes a permanent scour hole. Lead-line soundings from the pier (lines 514 and 520, 1980-2006) or close-spaced profile lines (509, 524) are used to resolve this feature.  The area influenced by the pier varies, particularly during storms, but it usually occurs within the central third of the survey region.  For this reason, temporal studies using these data should focus on profiles lines at the outer edges of the region (typically lines 1097, 1006, 1, -91) and should compare the north and south lines and adjacent lines for similar long-term trends. There are some surveys where these lines were not surveyed which can be problematic with contour plots and gridding as the scour hole will incorrectly appear to be missing.  An examination of the effect of the research pier on the bathymetry was published in: Miller, H.C., W.A. Birkemeier, and A.E. DeWall, 1983, \"Effects of CERC Research Pier on Nearshore Processes,\" Proceedings of Coastal Structures '83, American Society of Civil Engineers, pp. 769-784. &#10; Because of short lines, gaps in the data and variable line spacing, care must be taken in creating spatial grids using these data points.  Suggested grids and search patterns should be long in the longshore and short in the cross-shore direction.  Small vertical errors exist in the data, detectable offshore (deeper than ~7m) as shifts along the entire profile for one survey relative to the previous and following surveys.  These shifts are known to result from systematic station or antenna height errors, instrument changes or vessel changes (the CRAB to the LARC). They typically are less than 10 cm but since they are systematic along the entire profile they can affect computations if not accounted for\n",
+          "history": "These data are part of a series of surveys since October 1979 which document the evolving beach topography and bathymetry surrounding the USACE Field Research Facility (FRF) and which provide a measure of the beach's response to coastal processes, including storms.  Survey data are complemented by a suite of continuous observations of local waves, winds, tides and currents.  These data are unique in their temporal coverage and vertical accuracy and have been the subject of multiple technical papers.\n",
+          "source": "Department of Army (DOA), U.S. Army Corps of Engineers (USACE), Engineer Research and Development Center (ERDC), Coastal and Hydraulics Laboratory (CHL) - Field Research Facility (FRF)",
+          "sourceUrl": "(local files)",
+          "standard_name_vocabulary": "CFv25",
+          "Metadata_Conventions": "Unidata Dataset Discovery v1.0, CF-1.6",
+          "metadata_link": "N/A",
+          "Conventions": "CF-1.6",
+          "creator_name": "USACE/CHL/COAB",
+          "creator_url": "http://frf.usace.army.mil",
+          "creator_email": "frfwebmaster@usace.army.mil",
+          "license": "These data may be redistributed and used without restriction.  Data are intended for scholarly use by the research community, with the express agreement that users will properly acknowledge the USACE Field Research Facility and the supporting investigator(s). Use or reproduction of these data for commercial purposes is prohibited without prior written permission.\n",
+          "keywords_vocabulary": "FGlobal Change Master Directory (GCMD) Earth Science Keywords; CF Standard Name Table (v23, 23 March 2013)",
+          "keywords": "Earth Science > Oceans > Coastal Processes > Shoreline Earth Science > Oceans > Coastal Processes > Beaches Earth Science > Oceans > Coastal Processes > elevation Earth Science > Oceans > Coastal Processes > Barrier islands Earth Science > Oceans > Coastal Processes > sediment transport",
+          "processing": "The software required to process the survey data evolved along with the survey technology. For all systems, survey coordinates had to be computed from the raw observations.  Distance, zenith angle and azimuth angle for the Zeiss and Geodimeter Total Stations; Latitude, Longitude and antenna height for GPS; Sounding depth, vessel motion, sound speed and CRAB tilt all require processing.  Custom FORTRAN programs were written to guide the CRAB during a survey and to process the raw data.  Starting in June 1994, Hypack, Inc.'s Hypack software was used to guide the CRAB, LARC-V and backpack-mounted TOPO surveyor along the profile lines and to log the Geodimeter and later the RTK-GPS data (1 Hz), the echosounder depth (9 Hz) and the motion data (9 Hz). Processing was done with Fathomax, a custom FORTRAN program that dynamically synchronizes the GPS, echosounder, and motion sensor data to remove the motion of the vessel due to waves.  This is accomplished by adjusting the latency between the GPS elevation and the echosounder data until the influence of the wave motion is minimized. The survey software also adjusts depths for the speed of sound and converts geographic coordinates into the local FRF coordinate system.  Data collection and processing is done using Microsoft Windows-based computers. \nSurvey data file sizes varies from 4-5,000 kb depending on the number or profile lines included in the survey and the method used.  Total file size for all collected surveys totals about 600 mb of data. The 28 shore-perpendicular profile lines which are routinely surveyed cover a distance of ~1200 m alongshore and extend from behind the primary dune line to approximately 1 to 2 km offshore (-9 to -14 m isobath). Profile Lines include: -91,-46,1,46,91,137,183,229,274,320,366,411,457,509,524,558,594,640,686,731,777,823,869,960,1006,1052,1097. Some surveys extend the coverage. The FRF research pier is centrally located within the survey region. The profile lines are nominally spaced 45m apart. The multibeam survey conducted in 1994 extended alongshore from -1.5 km (south) to +5.9 km (north) and offshore to 10.7 km. The MORPHOS experiment surveys in 2008-2009 extended the coverage to 3.5 km north.  15 lines were added in 2017 to monitor a beach nourishment project nort of the Research Pier.  The added lines include: 927,1157,1217,1277,1337,1511,1803,2103,2397,2693,3003,3241,3550,3858,4156. The surveyed area is located in Duck, NC, USA, 27949\nFrom 1981-1996, the Zeiss Elta-2s and the Geotronics Geodimeter 140T total stations were always stationed over a point of known vertical position. That position was established relative to National Geodetic Survey (NGS) monuments of known coordinates that have been cross-checked with existing vertically-controlled first order benchmarks. The NGS monuments are located on the FRF property and were originally installed to provide vertical control to the NOAA tide gauge on the FRF pier. A permanently mounted reflecting prism located about 500 m away was used to confirm elevation and position accuracy each time the total station was used. Beginning with the RTK-GPS surveys in 1996, a local GPS Base station was established at the FRF and its vertical position was determined using NGS online positioning service (OPUS) or published NGS coordinates. This was tested by determining the vertical difference in an RTK-GPS baseline solution to a known geodetic benchmark. Since 2004 the GPS base station has been operated by the NGS as Station NCDK under the Continuously Operating Reference Station (CORS) program.  Station NCDK was replaced by station NCDU in 2007 https://www.ngs.noaa.gov/cgi-cors/corsage_2.prl?site=NCDU.\nCoordinate Systems. From 1979-1996 survey data were collected relative to a local longshore/cross-shore cartesian coordinate system established in the 1970\u2019s. The origin of the \"FRF Coordinate System\" is located behind the dune line near the southern boundary of the FRF property at Latitude = 36.1775975 deg, Longitude = -75.7496860 deg; in NC State Plane coordinates at Northing (m) = 274,093.156, Easting (m) = 901,951.680. The baseline of the system (cross-shore distance = 0) is perpendicular to the FRF pier and is aligned 18.1465 degrees West of True North. Distance to the north along the baseline and distance directed offshore are positive. Beginning in 1996 with the use of RTK-GPS, Geodetic Coordinates were collected and converted to North Carolina State Plane coordinates by the Hypack collection program. A custom program was then used to convert these coordinates to FRF coordinates.  Additionally, a custom program was used to convert data originally collected in FRF coordinates to Geographic and NC State Plane. The data files include all three coordinates for each data point. Coordinate data are in meters or decimal degrees. CSV ASCII data files are not compressed. Filename includes 7 fields with details about the contents of the file, separated with underscores. They are: Surveyor (always FRF), Survey Date (YYYYMMDD), Survey Number (XXXX), Survey Job (FRF or experiment name), Vertical Datum (NAVD88), Vessel used (CRAB, Boat, LARC, SeaSled, Topo),Survey Instrument (Zeiss, Geodimeter, GPS, Level, Miniranger), Time Base (UTC), Version Date (vYYYYMMDD) representing the date that the data in the file were last updated. \nData Quality varies with the platform (CRAB or LARC-V) and the survey system used. In this section, we address platform and instrument accuracy and errors. Other details related to each method can be found under the Data Collection Process Steps. The 10-m-tall Coastal Research Amphibious Buggy (CRAB) provides a stable measurement platform which allows a traditional high-accuracy topographic survey to continue offshore. Because the measurement point is directly above and centered over the back two wheels, it averages the elevation under the rear wheels, which are 7.3 m apart. Unquantified, but believed to be small errors are the CRAB sinking into the sea-bed due to its weight and expansion/contraction of the aluminum frame of the CRAB due to seasonal changes in water and air temperature. Changes through time of the height of the measurement point on the CRAB (prism, GPS antenna) also influences long-term vertical accuracy. Because the LARC-V is a floating platform, its position is more complicated than with the CRAB. Erroneous or missing points tend to be caused by breaking waves and bubbles over nearshore sandbars. Bubble problems are more likely to occur on offshore-directed surveys (into the waves). Because of the size of both the CRAB and LARC-V, there are a few meters in front of the dune toe that they are unable to survey. Errors may also exist where the dune points, which if added may be many months old, intersect with the beach/offshore points. Because the CRAB is unaffected by waves, it provides a more accurate survey of the bottom under breaking waves than can be obtained with the LARC-V. \nVertical accuracy and position errors depend on the instrument being used.\n1981 CRAB-Level - Error sources included out-of-level instruments, stadia reading errors, field book and transcription errors, and instrument stationing errors.  Estimated accuracy in distance was from \u00b10.3 to \u00b16 m.  Vertical accuracy was estimated from \u00b10.03 to \u00b10.6 m, depending on distance offshore with errors increasing with distance. As a result, data collected prior to June 1981 extend only to ~600 m offshore.  Although these data are less accurate than later surveys, they are retained because the configuration of the inshore profile shape is accurately represented.  These data are best used in studies where the relative shape and location of the sandbars is important.  There are less useful where high vertical and position accuracy is required (ex. volumetric computations). \n1981-1990 CRAB-Zeiss - Accuracy approaches that of the Zeiss Elta-2s system itself; the distance accuracy of \u00b12 cm; angle accuracy of 0.6\" giving a vertical accuracy of \u00b11.5 cm at 1000 m.  Repetitive surveys under ideal conditions indicated a vertical accuracy of \u00b12.11 cm. Operator errors can result from improper instrument leveling and stationing, movement of the tripod during the survey, and miss-aiming the instrument at the proper location on the prism cluster while taking the measurement. Survey points could also be simply missed offshore by the CRAB not stopping at a critical change in curvature. If shape is important, then data users are best directed to later surveys using the CRAB and a continuous system.\n1990-1996 CRAB-Geodimeter - The accuracy of the Geodimeter 140T in tracking mode is \u00b110 mm and \u00b13\u201d in angle.  Repetitive surveys indicated a vertical accuracy of \u00b12.7 cm.  However, the Geodimeter 140T had some error-causing idiosyncrasies including a drift in elevation due to differential heating of the instrument, vertical oscillations due to an improperly adjusted tracker signal, and the ability to occasionally not lock onto the prism but to a slightly offset location.  Once these errors were understood, checks were made to measure and remove the drift, and the instrument operator was also careful to visually monitor the centering of the instrument on the ring of prisms to insure proper lock of the tracker unit. Tracker oscillation causes a jagged bottom of a few centimeters with no smooth sections; offsets appear as sharp vertical steps in the data. While the Geodimeter errors are unfortunate, their actual impact on survey data is seldom greater than \u00b115 cm in the vertical and is typically less than \u00b110 cm. \n1996-now CRAB-GPS - Absolute horizontal and vertical accuracies for RTK-GPS surveys are \u00b12 cm. In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions. Accuracy errors which can affect the system include dropped GPS points, loss of RTK, high PDOP, and antenna height errors. Station antenna height is permanently established, so typically not a source of error.  The antenna on the CRAB is removed and installed for each survey, but the mount is of fixed height and permanently installed.\n1999-now LARC-GPS - In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions and \u00b110 cm under less than ideal wave conditions. The system has been shown to compare similarly to accuracies obtainable with the CRAB.  Survey system errors, which may significantly affect the data include missed echosounder points, loss of RTK, high PDOP and speed of sound errors.\n1979-1980, Sea Sled/Boat-Miniranger Data Collection - The two earliest surveys in October 1979 and in October 1980, in advance of the Atlantic Remote Sensing Land-Ocean Experiment (ARSLOE). For this survey, the profile lines were located up to 3 km north and south of the pier. The surveys were done under contract to Langley and McDonald of Virginia Beach, VA and each profile line was surveyed in three parts: beach, nearshore and offshore.  The beach portion was surveyed to wading depth (-0.5 m) using conventional level and tape techniques.  The nearshore was surveyed out to 600 m using a sea sled and a surveying level. Deeper depths were surveyed using an analog fathometer mounted on a boat.  A Motorola Miniranger system provided horizontal position information for the sled and boat. The fathometer was calibrated on each range line by overlapping the sea sled data.  The surveys extended from the primary dune line to approximately 3 km offshore (-17 m isobath NAVD88).  Because wave motion was not completely removed from the offshore portion of the survey, it is less accurate vertically than the beach and sled portions.\n1981, CRAB-Level Data Collection - Survey points were obtained using a Dietzgen automatic self-leveling level to measure the position and elevation of the CRAB (Coastal Research Amphibious Buggy). The CRAB operator drives offshore (or onshore) stopping periodically to allow the surveyor to read a large, 12.3-m-tall stadia board mounted on the CRAB, reading the top, middle, and bottom crosshairs of the level.  From these readings, the elevation and offshore distance are computed. Survey point frequency is based on drive time between points and adjusted to collect more points near shore and fewer offshore. The CRAB operator navigated the cross-section by visually aligning two range poles on land. The exact distance offline is not known. If the stadia board moved above or below the instrument's field of view, the instrument was moved to a new location and the survey continued. Topographic (Topo) survey points of the beach and dune were collected using the level and a level rod and used either stadia readings a measuring tape for distance. This technique was used for 24 surveys from January to May 1981.\n1981-1990, CRAB-Zeiss Data Collection - Survey points were obtained using a Zeiss Elta-2s Electronic Total Station mounted on a wooden tripod located on the pier, or after July 1985, on a permanent steel pipe located on the roof of the FRF building. Both locations were of known horizontal and vertical position. Typically, the CRAB was driven over a point in the FRF parking lot of known location and elevation to confirm the Zeiss Elta-2s setup. Then all the lines were driven from the base of the dune seaward and back, stopping at each survey point for ~10 sec. At each stop, the CRAB operator would observe the tilt of the CRAB using orthogonal tilt gauges and if it was greater than 4 degrees, radio the tilt reading to the Zeiss operator who then entered the values into the Zeiss Elta-2s keypad for later adjustment. The CRAB operator would count time between stops increasing the interval as the CRAB moved offshore. A 900-m-long transect would take ~45 minutes and included ~40 data points. The CRAB maintained position on the survey line using two alignment poles located on land and steering instructions from the instrument operator as the Zeiss displayed FRF coordinates. This guidance allowed the CRAB to stay within ~3 m of the survey line.  To improve survey efficiency, line lengths were varied to provide more coverage inshore where the bathymetry is complex and 3D and less coverage deeper than ~5 m where the bathymetry is less complex and more shore parallel. A full survey of all lines took 2 days.  As with all surveys with the CRAB, wave conditions were typically less than ~1.5-m wave height.  Depending on wave and tide height, survey coverage extended ~900 m offshore and to a depth of ~9 m.  Topo points were collected using a single reflective prism mounted on a pole of known height. A large round plate mounted on the bottom of this pole prevented it from sinking into the sand. Periodic shots with the Zeiss to a prism permanently located near the end of the FRF pier provided checks on the instrument stationing.  An umbrella shielded the instrument from differential heating. This survey technique was used from June 1981-April 1990. Included in this period were the DUCK82, DUCK85 and SuperDuck '86 experiments when a subset of the survey area known as the \"minigrid\" located north of the FRF research pier was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1990-1996, CRAB-Geodimeter Data Collection - Survey points were obtained using a Geotronics Geodimeter 140T total station to continuously track the movement of the CRAB.  The Geodimeter was mounted on a permanent steel pipe of known horizontal and vertical position and initially aimed at a ring of reflective prisms mounted on the CRAB, at a known height.  The tracking system then locks onto the prism ring and follows the CRAB as it moves.  The coordinates of the CRAB are measured and automatically recorded.  Because of the speed of the CRAB, data points were collected every 1 to 2 m. Both program RG7, a FORTRAN program developed by Mike Leffler, and later Hypack Inc. Hypack program provided navigation guidance to the Geodimeter operator which was radioed to the CRAB. Because the Geodimeter was found to drift vertically, observations of the prism mounted at the end of the FRF pier were taken before and after each line was surveyed to measure and remove the drift. An umbrella shielded the instrument from differential heating. Unlike with the Zeiss, the tilt of the CRAB was not measured and was instead estimated later, Topo points during this time were often collected using the Zeiss. The combination of Hypack and the Geodimeter was used for 40 surveys from June 1994 to July 1996. Included in this period were the DELILAH '90 and DUCK94 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1994, Boat with Swath Survey System Data Collection - In August 1994 the Naval Research Laboratory (NRL) sponsored an offshore multibeam swath survey to support wave transformation studies under the Coastal Ocean Processes Experiment (CoOP) which coincided with the DUCK94 experiment. The survey was conducted by CC Technologies using a ~10-m long boat equipped with Real-Time Kinematic (RTK) GPS for horizontal position and a multi-beam depth sounder. 100% coverage was obtained of an area 7 km alongshore by 10 km offshore. A separate multibeam survey of about 70,000 points was also collected around the FRF research pier extending to ~800 m offshore. FRF cross-sections were extracted from the multibeam data and included as part of the FRF DUCK94 minigrid survey of 14 August 1994. Since these profiles are widely spaced, they do not accurately capture the deep, complex offshore bathymetry that the full coverage reveals (The full swath data are also available). No other details exist about the data collection and processing.\n1996-now, CRAB-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system with the CRAB. Data points are collected every ~80 cm. The use of GPS moved the data collection computer to the CRAB allowing a single person to conduct the survey.  A system check is made by driving the CRAB over the known parking lot point before each survey. Hypack, Inc.\u2019s Hypack Survey software logs the data and provides navigation guidance allowing the CRAB to stay within ~2 m of the survey line.  As with the Zeiss and Geodimeter, line lengths are varied alongshore to provide more coverage inshore. CRAB tilt is estimated during processing.  Topo points are collected with a backpack mounted GPS and a handheld data collector or computer running Hypack. This survey technique was used for 134 surveys from August 1996 to August 1999 and is still in use whenever survey data are collected using the CRAB.  Included in this period was the SandyDuck '97 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1999-now, LARC-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system combined with a Knudsen survey-grade echosounder and optionally, a TSS DMS 3-25 motion sensor mounted on the LARC-V. Conductivity, temperature, and depth (CTD) are measured at the end of the FRF pier to a depth of -7 m during the survey and additionally by an odom digibar at the offshore extent of the survey (typically -15m) to determine the speed of sound in the water column. Data points are collected on average every 2.5 m. Vessel motion. waves, bubbles and water characteristics complicate depth and position computation. A LARC-V survey is similar to a topo/CRAB survey when on its wheels and like a hydrographic survey when it's floating. The survey begins by first driving the LARC-V over a point of known position to confirm the RTK-GPS setup.  Then all the lines are driven from the base of the dune seaward and back. Hypack, Inc.'s Hypack Survey software logs all the data streams and provides navigation guidance which allows the LARC-V to stay within ~5 m of the desired survey line. Data streams include GPS (xyz), echosounder depth, heave, pitch, roll. Survey conditions are typically less than 1-m wave height.  A full survey of all lines can be done in 6-8 hours, less than half the time required by the CRAB. Profile Lines extend to 1 km offshore with a few selected lines extending 2 km. The survey crew includes the LARC-V captain and a surveyor. Use of the LARC-V with RTK-GPS began in September 1999 and continues as the preferred survey method because of it's speed. Included in this period was the 2008-2009 MORPHOS experiment when the surveyed profiles were extended ~3 km to the north. They are identified by the experiment name in the data filename.\n",
+          "dataProcessing": "1981-now, Pier Bathymetry Data Collection - At the same time or within a few days of each full survey, the bottom directly under the FRF pier is surveyed using a lead-line to measure the distance between the bottom and the pier deck.  Profile line 514 is the south edge of the pier; line 520 is the north edge.  Lead-line measurements are made between the pier pilings (mid-bent) to avoid measuring the scour hole surrounding each pier piling.  Starting in 2006, the lead line surveys were replaced by additional survey lines very close to the pier (within ~25 m) which are surveyed using the LARC-V.  These lines were not always done, but are important since they define the scour influence under the pier.\n1981 CRAB-Level, Data Processing - ISRP (Interactive Survey Reduction Program), a custom FORTRAN program, was used to manually enter the points from the handwritten field notes. ISRP produces a *.3d data file with all the profile lines; one data point (local FRF coordinates) per line. Collected elevation data were relative to NGVD29 and local standard time. As with all data files collected using the FRF coordinate system, a program converted the FRF coordinates into both NC State Plane (NAD83) and Geographic coordinates and adjusted the vertical data to NAVD88 and time to UTC.\n1981-1990, CRAB-Zeiss Data Processing - The FRF coordinate file from the Zeiss ( *.zss file) was processed using ISRP which combined the CRAB and Topo points and corrected the elevation for the CRAB tilt (if greater than 2 degrees and less than 10). A less than 2 degree tilt was considered insignificant and more than 10 degrees was likely an error.\n1990-1996, CRAB-Geodimeter Data Processing - The FRF coordinate file was produced by program RG7 (*.rg7) and later by the Hypack program was processed using ISRP, which was modified to estimate the tilt of the CRAB based on the elevation data and to compute and remove the drift of the instrument based on observations of known points collected before and after each profile line surveyed.\n1996-now, CRAB-GPS Data Processing - Hypack Inc.'s Hypack program generates multiple files: 1) a *.raw file for every profile line, 2) a *.log file which lists the *.raw filenames, 3) field notes in a spreadsheet format or handwritten and scanned.  Programs GPSFRF, GPSMAX, and later Fathomax batch process these files to create a single *.csv file which contains one row for each data point. Like ISRP, these programs use an iterative technique to estimate and remove the CRAB tilt. They also combine the CRAB points with the Topo points.\n1999-now, LARC-GPS Data Processing - Processing the LARC-GPS data is similar to the CRAB-GPS data with the additional computations required to determine the depth at each point using the GPS elevation, echosounder depth, heave, pitch, roll and the speed of sound profile through the water column. Processing is done using Fathomax which batch processes the raw data files and creates a single *.csv file containing one row for each survey point.  Fathomax also combines the LARC points with the Topo points and generates a series of postscript cross-section plot files, a text file of processing actions taken for each line, and a summary file for the survey which lists summary file for the survey which lists useful computations for all lines (seaward distance extent, number of survey points, average point spacing, etc.)\n",
+          "dataEditing": "1981-1996, Data Editing Step - ISRP allows interactive editing of data, showing graphic comparisons, and includes routines designed to address the unique errors of the Survey Level, Zeiss Elta-2S and Geodimeter 140T instruments. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points were deleted. Less obvious ones were left in. Systematic errors such as vertical offsets that are either constant or which increase with distance were identified and removed. This is a subjective process but was done by the people who collected the data and who were familiar with the errors which occur.\n1996-now, GPS Surveys Data Editing Step - The *.CSV files created by Fathomax are edited using ISRP3, a Visual Basic program developed by Terry Lease. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points are deleted. RTK-GPS data tend to require less hand editing than do the other survey methods.  LARC-V survey data typically requires more editing than do data collected with the CRAB. An example might be points collected when the LARC breached on a breaking wave and the fathometer lost lock with the bottom but still collected depths. Bubbles in the water column may also make it hard to identify the bottom in the echosounder trace, particularly over the shallow crest of the sandbar on outgoing surveys. When this occurs the Hypack program is used to edit the echosounder data prior to reprocessing with Fathomax and editing with ISRP3. Data gaps and odd-looking sandbar shapes, relative to the CRAB surveys, occur occassionally in the LARC-V surveys.\n",
+          "organization": "USACE/CHL/COAB",
+          "publisher_url": "http://frf.usace.army.mil",
+          "infoUrl": "http://frf.usace.army.mil",
+          "publisher_email": "frfwebmaster@usace.army.mil",
+          "publisher_name": "USACE/CHL/COAB",
+          "format_version": "v1.0",
+          "institution": "USACE/CHL/COAB",
+          "contact": "USACE/CHL/COAB",
+          "contact_info": "USACE/CHL/COAB",
+          "contact_role": "Owner",
+          "contributor_name": "USACE/CHL/COAB",
+          "contributor_role": "USACE/CHL/COAB",
+          "naming_authority": "FRF",
+          "origin": "USACE/CHL/COAB",
+          "date_created": "2025-06-13",
+          "date_issued": "2025-06-13",
+          "acknowledgement": "Data are provided by the U.S Army Engineer and Research Center, Coastal & Hydraulics Laboratory, Field Research Facility, Duck, North Carolina. Contributors:(Alphabetical order) Jesse Baldwin, Robert Battalio, Chris Berg, Gene Bichner, Bill Birkemeier, Dave Bradley, Matthew Cahur, Doug Call, Mike Carpenter, Mason Cox, Peter Dickson, Michael Dominguez, Doug Dorman, Marty Durkin, Michael Forte, Daniel Freer, Christopher Goshow, Bill Grogg, Deborah Heibel, Daniel Hogan, Stuart Holme, Peter Howd, Charles Judge, David Klebitz, Kevin Kremkau, Robert Lai, Mark Lampe, Terry Lease, Guan-hong Lee, Stephanie Lee, Michael Leffler, Curtis Mason, Mark McConathy, H. Carl Miller, Rob Mitchell, Jason Pipes,Mel Pollock, Mark Preisser, Judy Roughton, Francis Sargent, Matthew Savacool, Rebecca Savage, Brian Scarborough, Charles Smith, Robert Stewart, John Strider, David Thompson, Raymond Townsend,Steve Underwood, James Watts, Rob Web, Ray Wirt, Stanley Wilhelm and many others\n",
+          "project": "USACE/COAB observations",
+          "id": "FRF-BeachProfile-Survey",
+          "processing_level": "L1",
+          "geospatial_vertical_units": "m",
+          "geospatial_vertical_resolution": 0.0,
+          "geospatial_vertical_min": 0.0,
+          "geospatial_vertical_max": 0.0,
+          "geospatial_vertical_origin": "NAVD88",
+          "geospatial_lat_min": 36.25,
+          "geospatial_lat_max": 36.45,
+          "geospatial_lat_units": "degrees_north",
+          "geospatial_lon_min": 75.58,
+          "geospatial_lon_max": 75.96,
+          "geospatial_lon_units": "degrees_west",
+          "geospatial_vertical_positive": "up",
+          "time_coverage_start": "1980",
+          "time_coverage_end": "current",
+          "deployment_start": "1980",
+          "platform": "LARC, CRAB, Sled, Rod-Level",
+          "instrument": "Beach Profile Measuring Systems",
+          "cross_shore_angle_units": "degrees_north",
+          "cross_shore_angle_description": "cross shore angle at the USACE FRF site in DUCK, NC, clockwise from true north",
+          "cross_shore_angle": 71.8
+        }
+      },
+      "shapes": {
+        "time": [
+          11433
+        ],
+        "date": [
+          11433
+        ],
+        "lat": [
+          11433
+        ],
+        "lon": [
+          11433
+        ],
+        "northing": [
+          11433
+        ],
+        "easting": [
+          11433
+        ],
+        "xFRF": [
+          11433
+        ],
+        "yFRF": [
+          11433
+        ],
+        "elevation": [
+          11433
+        ],
+        "profileNumber": [
+          11433
+        ],
+        "surveyNumber": [
+          11433
+        ],
+        "Ellipsoid": [
+          11433
+        ]
+      },
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+      "available_services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc"
+      },
+      "auth": "anonymous",
+      "tls": "verified"
+    },
+    "status": "nearby_candidate_metadata_verified",
+    "measured_coverage": "not verified by bounding box",
+    "filename_date_not_verified": true
+  },
+  {
+    "family": "bathymetry",
+    "acquisition_id": "b1d1d660-87fc-5790-9275-8df4034e8d82",
+    "status": "catalog_inventory_only",
+    "products": [
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210907.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210907.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210907.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210907.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210907.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210907.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210907.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210907.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210907.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-07",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210911.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210911.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210911.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210911.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210911.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210911.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210911.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210911.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210911.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-11",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210913.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210913.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-13",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210915.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210915.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-15",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210919.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-19",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210921.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-21",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210922.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-22",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210926.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-26",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210928.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-28",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-04",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-06",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-08",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-13",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-16",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-19",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-21",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-24",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-27",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      }
+    ],
+    "survey_coverage": "no line/point coverage asserted; no bounding-box substitution",
+    "catalogue_product_count_full": 1201,
+    "inventory_scope": "all catalogued filename dates within configured survey context; full verified raw catalogue retained in cache"
+  },
+  {
+    "family": "bathymetry",
+    "survey_reference": {
+      "name": "FRF_geomorphology_elevationTransects_survey_20211004.nc",
+      "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+      "services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc"
+      },
+      "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+      "candidate_date_from_filename": "2021-10-04",
+      "date_status": "not verified against survey metadata",
+      "measured_coverage": null,
+      "survey_method": null,
+      "resolution": null,
+      "uncertainty": null,
+      "horizontal_datum": null,
+      "vertical_datum": null
+    },
+    "metadata": {
+      "attributes": {
+        "time": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "standard_name": "time",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "time"
+        },
+        "date": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "date"
+        },
+        "lat": {
+          "_FillValue": -999.0,
+          "units": "degrees_north",
+          "standard_name": "latitude in decimal degrees north",
+          "long_name": "Latitude",
+          "short_name": "lat"
+        },
+        "lon": {
+          "_FillValue": -999.0,
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "Longitude in decimal degrees east",
+          "short_name": "lon"
+        },
+        "northing": {
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Northing",
+          "_FillValue": -999.0,
+          "units": "m"
+        },
+        "easting": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Easting"
+        },
+        "xFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Cross-Shore Coordinate",
+          "short_name": "x"
+        },
+        "yFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Along-Shore coordinate",
+          "short_name": "y"
+        },
+        "elevation": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "",
+          "long_name": "bottom elevation",
+          "description": "Elevation is in NAVD88 via geoid 2003",
+          "short_name": "z"
+        },
+        "profileNumber": {
+          "_FillValue": -999.0,
+          "units": "none",
+          "standard_name": "",
+          "long_name": "profile number",
+          "description": " Profile number based on FRF_Yshore coordinates",
+          "short_name": "profile number"
+        },
+        "surveyNumber": {
+          "_FillValue": -999.0,
+          "units": "None",
+          "standard_name": "",
+          "long_name": "survey number",
+          "description": "incremental value beginning with first survey",
+          "short_name": "sruvery number"
+        },
+        "Ellipsoid": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "height_above_reference_ellipsoid",
+          "long_name": "ellipsoid",
+          "description": "GRS 80 ellipsoid",
+          "short_name": "ellipsoid"
+        },
+        "NC_GLOBAL": {
+          "featureType": "timeSeries",
+          "title": "Beach and Nearshore Surveys at the USACE, Field Research Facility (FRF) in Duck",
+          "summary": "A unique series of repetitive surveys (1979-now) of shore-perpendicular profile lines surrounding the US Army Corps of Engineers (USACE) Field Research Facility (FRF) in Duck, NC.  The surveys typically include 28 lines which extend from 600 m south of the FRF research pier to 600 m north. Special surveys may extend the coverage further. Surveys are typically monthly and after major storms but may be done as frequently as daily during special experiments (DUCK82, DUCK85, SuperDuck '86, DELILAH '90, DUCK94, SandyDuck 1997, DUCK98 and MORPHOS 2008, etc.). Profile lines are spaced ~45 m apart and extend from the primary dune line to approximately 2 km offshore (-15 m isobath NAVD88). Profile lines are numbered according to their FRF coordinate longshore distance in m. 4 lines (1097, 1006, 1 and -91) were surveyed biweekly until ~2007. During the experiments, surveys were conducted more frequently of an area located north of the pier and known as the \"minigrid\" where profile line spacing was ~25 m. Over time the survey techniques evolved; accuracy and data point coverage improved. The platforms used include: (1) a Sea Sled with a graduated mast which was pulled offshore by a boat and winched back to shore by means of a cable; (2) The Coastal Research Amphibious Buggy or CRAB, a 10-m tall motorized tripod which an operator drives from the beach through the surf zone to a depth of ~-9 m at ~1000m offshore.  (3) a Lighter Amphibious Resupply Cargo V (LARC-V) vessel which is a 10-m long amphibious vessel capable of continuous data collection from the beach, through the surf zone and offshore. LARC-V surveys extend to a depth of ~-15 m at ~2000 m offshore. Survey instruments included a Motorola Miniranger, Automatic Survey Level, Zeiss Elta 2s Electronic Total Station, Geotronics Geodimeter 140T auto-tracking total station and most recently a Real-Time Kinematic Global Positioning System (RTK-GPS). Speed, accuracy and error sources depend on the survey system used. There are several aspects of these data that users should be aware of, particularly when looking at long-term temporal and longshore changes.  Most importantly the 560-m long research pier located in the center of the survey region causes a permanent scour hole. Lead-line soundings from the pier (lines 514 and 520, 1980-2006) or close-spaced profile lines (509, 524) are used to resolve this feature.  The area influenced by the pier varies, particularly during storms, but it usually occurs within the central third of the survey region.  For this reason, temporal studies using these data should focus on profiles lines at the outer edges of the region (typically lines 1097, 1006, 1, -91) and should compare the north and south lines and adjacent lines for similar long-term trends. There are some surveys where these lines were not surveyed which can be problematic with contour plots and gridding as the scour hole will incorrectly appear to be missing.  An examination of the effect of the research pier on the bathymetry was published in: Miller, H.C., W.A. Birkemeier, and A.E. DeWall, 1983, \"Effects of CERC Research Pier on Nearshore Processes,\" Proceedings of Coastal Structures '83, American Society of Civil Engineers, pp. 769-784. &#10; Because of short lines, gaps in the data and variable line spacing, care must be taken in creating spatial grids using these data points.  Suggested grids and search patterns should be long in the longshore and short in the cross-shore direction.  Small vertical errors exist in the data, detectable offshore (deeper than ~7m) as shifts along the entire profile for one survey relative to the previous and following surveys.  These shifts are known to result from systematic station or antenna height errors, instrument changes or vessel changes (the CRAB to the LARC). They typically are less than 10 cm but since they are systematic along the entire profile they can affect computations if not accounted for\n",
+          "history": "These data are part of a series of surveys since October 1979 which document the evolving beach topography and bathymetry surrounding the USACE Field Research Facility (FRF) and which provide a measure of the beach's response to coastal processes, including storms.  Survey data are complemented by a suite of continuous observations of local waves, winds, tides and currents.  These data are unique in their temporal coverage and vertical accuracy and have been the subject of multiple technical papers.\n",
+          "source": "Department of Army (DOA), U.S. Army Corps of Engineers (USACE), Engineer Research and Development Center (ERDC), Coastal and Hydraulics Laboratory (CHL) - Field Research Facility (FRF)",
+          "sourceUrl": "(local files)",
+          "standard_name_vocabulary": "CFv25",
+          "Metadata_Conventions": "Unidata Dataset Discovery v1.0, CF-1.6",
+          "metadata_link": "N/A",
+          "Conventions": "CF-1.6",
+          "creator_name": "USACE/CHL/COAB",
+          "creator_url": "http://frf.usace.army.mil",
+          "creator_email": "frfwebmaster@usace.army.mil",
+          "license": "These data may be redistributed and used without restriction.  Data are intended for scholarly use by the research community, with the express agreement that users will properly acknowledge the USACE Field Research Facility and the supporting investigator(s). Use or reproduction of these data for commercial purposes is prohibited without prior written permission.\n",
+          "keywords_vocabulary": "FGlobal Change Master Directory (GCMD) Earth Science Keywords; CF Standard Name Table (v23, 23 March 2013)",
+          "keywords": "Earth Science > Oceans > Coastal Processes > Shoreline Earth Science > Oceans > Coastal Processes > Beaches Earth Science > Oceans > Coastal Processes > elevation Earth Science > Oceans > Coastal Processes > Barrier islands Earth Science > Oceans > Coastal Processes > sediment transport",
+          "processing": "The software required to process the survey data evolved along with the survey technology. For all systems, survey coordinates had to be computed from the raw observations.  Distance, zenith angle and azimuth angle for the Zeiss and Geodimeter Total Stations; Latitude, Longitude and antenna height for GPS; Sounding depth, vessel motion, sound speed and CRAB tilt all require processing.  Custom FORTRAN programs were written to guide the CRAB during a survey and to process the raw data.  Starting in June 1994, Hypack, Inc.'s Hypack software was used to guide the CRAB, LARC-V and backpack-mounted TOPO surveyor along the profile lines and to log the Geodimeter and later the RTK-GPS data (1 Hz), the echosounder depth (9 Hz) and the motion data (9 Hz). Processing was done with Fathomax, a custom FORTRAN program that dynamically synchronizes the GPS, echosounder, and motion sensor data to remove the motion of the vessel due to waves.  This is accomplished by adjusting the latency between the GPS elevation and the echosounder data until the influence of the wave motion is minimized. The survey software also adjusts depths for the speed of sound and converts geographic coordinates into the local FRF coordinate system.  Data collection and processing is done using Microsoft Windows-based computers. \nSurvey data file sizes varies from 4-5,000 kb depending on the number or profile lines included in the survey and the method used.  Total file size for all collected surveys totals about 600 mb of data. The 28 shore-perpendicular profile lines which are routinely surveyed cover a distance of ~1200 m alongshore and extend from behind the primary dune line to approximately 1 to 2 km offshore (-9 to -14 m isobath). Profile Lines include: -91,-46,1,46,91,137,183,229,274,320,366,411,457,509,524,558,594,640,686,731,777,823,869,960,1006,1052,1097. Some surveys extend the coverage. The FRF research pier is centrally located within the survey region. The profile lines are nominally spaced 45m apart. The multibeam survey conducted in 1994 extended alongshore from -1.5 km (south) to +5.9 km (north) and offshore to 10.7 km. The MORPHOS experiment surveys in 2008-2009 extended the coverage to 3.5 km north.  15 lines were added in 2017 to monitor a beach nourishment project nort of the Research Pier.  The added lines include: 927,1157,1217,1277,1337,1511,1803,2103,2397,2693,3003,3241,3550,3858,4156. The surveyed area is located in Duck, NC, USA, 27949\nFrom 1981-1996, the Zeiss Elta-2s and the Geotronics Geodimeter 140T total stations were always stationed over a point of known vertical position. That position was established relative to National Geodetic Survey (NGS) monuments of known coordinates that have been cross-checked with existing vertically-controlled first order benchmarks. The NGS monuments are located on the FRF property and were originally installed to provide vertical control to the NOAA tide gauge on the FRF pier. A permanently mounted reflecting prism located about 500 m away was used to confirm elevation and position accuracy each time the total station was used. Beginning with the RTK-GPS surveys in 1996, a local GPS Base station was established at the FRF and its vertical position was determined using NGS online positioning service (OPUS) or published NGS coordinates. This was tested by determining the vertical difference in an RTK-GPS baseline solution to a known geodetic benchmark. Since 2004 the GPS base station has been operated by the NGS as Station NCDK under the Continuously Operating Reference Station (CORS) program.  Station NCDK was replaced by station NCDU in 2007 https://www.ngs.noaa.gov/cgi-cors/corsage_2.prl?site=NCDU.\nCoordinate Systems. From 1979-1996 survey data were collected relative to a local longshore/cross-shore cartesian coordinate system established in the 1970\u2019s. The origin of the \"FRF Coordinate System\" is located behind the dune line near the southern boundary of the FRF property at Latitude = 36.1775975 deg, Longitude = -75.7496860 deg; in NC State Plane coordinates at Northing (m) = 274,093.156, Easting (m) = 901,951.680. The baseline of the system (cross-shore distance = 0) is perpendicular to the FRF pier and is aligned 18.1465 degrees West of True North. Distance to the north along the baseline and distance directed offshore are positive. Beginning in 1996 with the use of RTK-GPS, Geodetic Coordinates were collected and converted to North Carolina State Plane coordinates by the Hypack collection program. A custom program was then used to convert these coordinates to FRF coordinates.  Additionally, a custom program was used to convert data originally collected in FRF coordinates to Geographic and NC State Plane. The data files include all three coordinates for each data point. Coordinate data are in meters or decimal degrees. CSV ASCII data files are not compressed. Filename includes 7 fields with details about the contents of the file, separated with underscores. They are: Surveyor (always FRF), Survey Date (YYYYMMDD), Survey Number (XXXX), Survey Job (FRF or experiment name), Vertical Datum (NAVD88), Vessel used (CRAB, Boat, LARC, SeaSled, Topo),Survey Instrument (Zeiss, Geodimeter, GPS, Level, Miniranger), Time Base (UTC), Version Date (vYYYYMMDD) representing the date that the data in the file were last updated. \nData Quality varies with the platform (CRAB or LARC-V) and the survey system used. In this section, we address platform and instrument accuracy and errors. Other details related to each method can be found under the Data Collection Process Steps. The 10-m-tall Coastal Research Amphibious Buggy (CRAB) provides a stable measurement platform which allows a traditional high-accuracy topographic survey to continue offshore. Because the measurement point is directly above and centered over the back two wheels, it averages the elevation under the rear wheels, which are 7.3 m apart. Unquantified, but believed to be small errors are the CRAB sinking into the sea-bed due to its weight and expansion/contraction of the aluminum frame of the CRAB due to seasonal changes in water and air temperature. Changes through time of the height of the measurement point on the CRAB (prism, GPS antenna) also influences long-term vertical accuracy. Because the LARC-V is a floating platform, its position is more complicated than with the CRAB. Erroneous or missing points tend to be caused by breaking waves and bubbles over nearshore sandbars. Bubble problems are more likely to occur on offshore-directed surveys (into the waves). Because of the size of both the CRAB and LARC-V, there are a few meters in front of the dune toe that they are unable to survey. Errors may also exist where the dune points, which if added may be many months old, intersect with the beach/offshore points. Because the CRAB is unaffected by waves, it provides a more accurate survey of the bottom under breaking waves than can be obtained with the LARC-V. \nVertical accuracy and position errors depend on the instrument being used.\n1981 CRAB-Level - Error sources included out-of-level instruments, stadia reading errors, field book and transcription errors, and instrument stationing errors.  Estimated accuracy in distance was from \u00b10.3 to \u00b16 m.  Vertical accuracy was estimated from \u00b10.03 to \u00b10.6 m, depending on distance offshore with errors increasing with distance. As a result, data collected prior to June 1981 extend only to ~600 m offshore.  Although these data are less accurate than later surveys, they are retained because the configuration of the inshore profile shape is accurately represented.  These data are best used in studies where the relative shape and location of the sandbars is important.  There are less useful where high vertical and position accuracy is required (ex. volumetric computations). \n1981-1990 CRAB-Zeiss - Accuracy approaches that of the Zeiss Elta-2s system itself; the distance accuracy of \u00b12 cm; angle accuracy of 0.6\" giving a vertical accuracy of \u00b11.5 cm at 1000 m.  Repetitive surveys under ideal conditions indicated a vertical accuracy of \u00b12.11 cm. Operator errors can result from improper instrument leveling and stationing, movement of the tripod during the survey, and miss-aiming the instrument at the proper location on the prism cluster while taking the measurement. Survey points could also be simply missed offshore by the CRAB not stopping at a critical change in curvature. If shape is important, then data users are best directed to later surveys using the CRAB and a continuous system.\n1990-1996 CRAB-Geodimeter - The accuracy of the Geodimeter 140T in tracking mode is \u00b110 mm and \u00b13\u201d in angle.  Repetitive surveys indicated a vertical accuracy of \u00b12.7 cm.  However, the Geodimeter 140T had some error-causing idiosyncrasies including a drift in elevation due to differential heating of the instrument, vertical oscillations due to an improperly adjusted tracker signal, and the ability to occasionally not lock onto the prism but to a slightly offset location.  Once these errors were understood, checks were made to measure and remove the drift, and the instrument operator was also careful to visually monitor the centering of the instrument on the ring of prisms to insure proper lock of the tracker unit. Tracker oscillation causes a jagged bottom of a few centimeters with no smooth sections; offsets appear as sharp vertical steps in the data. While the Geodimeter errors are unfortunate, their actual impact on survey data is seldom greater than \u00b115 cm in the vertical and is typically less than \u00b110 cm. \n1996-now CRAB-GPS - Absolute horizontal and vertical accuracies for RTK-GPS surveys are \u00b12 cm. In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions. Accuracy errors which can affect the system include dropped GPS points, loss of RTK, high PDOP, and antenna height errors. Station antenna height is permanently established, so typically not a source of error.  The antenna on the CRAB is removed and installed for each survey, but the mount is of fixed height and permanently installed.\n1999-now LARC-GPS - In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions and \u00b110 cm under less than ideal wave conditions. The system has been shown to compare similarly to accuracies obtainable with the CRAB.  Survey system errors, which may significantly affect the data include missed echosounder points, loss of RTK, high PDOP and speed of sound errors.\n1979-1980, Sea Sled/Boat-Miniranger Data Collection - The two earliest surveys in October 1979 and in October 1980, in advance of the Atlantic Remote Sensing Land-Ocean Experiment (ARSLOE). For this survey, the profile lines were located up to 3 km north and south of the pier. The surveys were done under contract to Langley and McDonald of Virginia Beach, VA and each profile line was surveyed in three parts: beach, nearshore and offshore.  The beach portion was surveyed to wading depth (-0.5 m) using conventional level and tape techniques.  The nearshore was surveyed out to 600 m using a sea sled and a surveying level. Deeper depths were surveyed using an analog fathometer mounted on a boat.  A Motorola Miniranger system provided horizontal position information for the sled and boat. The fathometer was calibrated on each range line by overlapping the sea sled data.  The surveys extended from the primary dune line to approximately 3 km offshore (-17 m isobath NAVD88).  Because wave motion was not completely removed from the offshore portion of the survey, it is less accurate vertically than the beach and sled portions.\n1981, CRAB-Level Data Collection - Survey points were obtained using a Dietzgen automatic self-leveling level to measure the position and elevation of the CRAB (Coastal Research Amphibious Buggy). The CRAB operator drives offshore (or onshore) stopping periodically to allow the surveyor to read a large, 12.3-m-tall stadia board mounted on the CRAB, reading the top, middle, and bottom crosshairs of the level.  From these readings, the elevation and offshore distance are computed. Survey point frequency is based on drive time between points and adjusted to collect more points near shore and fewer offshore. The CRAB operator navigated the cross-section by visually aligning two range poles on land. The exact distance offline is not known. If the stadia board moved above or below the instrument's field of view, the instrument was moved to a new location and the survey continued. Topographic (Topo) survey points of the beach and dune were collected using the level and a level rod and used either stadia readings a measuring tape for distance. This technique was used for 24 surveys from January to May 1981.\n1981-1990, CRAB-Zeiss Data Collection - Survey points were obtained using a Zeiss Elta-2s Electronic Total Station mounted on a wooden tripod located on the pier, or after July 1985, on a permanent steel pipe located on the roof of the FRF building. Both locations were of known horizontal and vertical position. Typically, the CRAB was driven over a point in the FRF parking lot of known location and elevation to confirm the Zeiss Elta-2s setup. Then all the lines were driven from the base of the dune seaward and back, stopping at each survey point for ~10 sec. At each stop, the CRAB operator would observe the tilt of the CRAB using orthogonal tilt gauges and if it was greater than 4 degrees, radio the tilt reading to the Zeiss operator who then entered the values into the Zeiss Elta-2s keypad for later adjustment. The CRAB operator would count time between stops increasing the interval as the CRAB moved offshore. A 900-m-long transect would take ~45 minutes and included ~40 data points. The CRAB maintained position on the survey line using two alignment poles located on land and steering instructions from the instrument operator as the Zeiss displayed FRF coordinates. This guidance allowed the CRAB to stay within ~3 m of the survey line.  To improve survey efficiency, line lengths were varied to provide more coverage inshore where the bathymetry is complex and 3D and less coverage deeper than ~5 m where the bathymetry is less complex and more shore parallel. A full survey of all lines took 2 days.  As with all surveys with the CRAB, wave conditions were typically less than ~1.5-m wave height.  Depending on wave and tide height, survey coverage extended ~900 m offshore and to a depth of ~9 m.  Topo points were collected using a single reflective prism mounted on a pole of known height. A large round plate mounted on the bottom of this pole prevented it from sinking into the sand. Periodic shots with the Zeiss to a prism permanently located near the end of the FRF pier provided checks on the instrument stationing.  An umbrella shielded the instrument from differential heating. This survey technique was used from June 1981-April 1990. Included in this period were the DUCK82, DUCK85 and SuperDuck '86 experiments when a subset of the survey area known as the \"minigrid\" located north of the FRF research pier was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1990-1996, CRAB-Geodimeter Data Collection - Survey points were obtained using a Geotronics Geodimeter 140T total station to continuously track the movement of the CRAB.  The Geodimeter was mounted on a permanent steel pipe of known horizontal and vertical position and initially aimed at a ring of reflective prisms mounted on the CRAB, at a known height.  The tracking system then locks onto the prism ring and follows the CRAB as it moves.  The coordinates of the CRAB are measured and automatically recorded.  Because of the speed of the CRAB, data points were collected every 1 to 2 m. Both program RG7, a FORTRAN program developed by Mike Leffler, and later Hypack Inc. Hypack program provided navigation guidance to the Geodimeter operator which was radioed to the CRAB. Because the Geodimeter was found to drift vertically, observations of the prism mounted at the end of the FRF pier were taken before and after each line was surveyed to measure and remove the drift. An umbrella shielded the instrument from differential heating. Unlike with the Zeiss, the tilt of the CRAB was not measured and was instead estimated later, Topo points during this time were often collected using the Zeiss. The combination of Hypack and the Geodimeter was used for 40 surveys from June 1994 to July 1996. Included in this period were the DELILAH '90 and DUCK94 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1994, Boat with Swath Survey System Data Collection - In August 1994 the Naval Research Laboratory (NRL) sponsored an offshore multibeam swath survey to support wave transformation studies under the Coastal Ocean Processes Experiment (CoOP) which coincided with the DUCK94 experiment. The survey was conducted by CC Technologies using a ~10-m long boat equipped with Real-Time Kinematic (RTK) GPS for horizontal position and a multi-beam depth sounder. 100% coverage was obtained of an area 7 km alongshore by 10 km offshore. A separate multibeam survey of about 70,000 points was also collected around the FRF research pier extending to ~800 m offshore. FRF cross-sections were extracted from the multibeam data and included as part of the FRF DUCK94 minigrid survey of 14 August 1994. Since these profiles are widely spaced, they do not accurately capture the deep, complex offshore bathymetry that the full coverage reveals (The full swath data are also available). No other details exist about the data collection and processing.\n1996-now, CRAB-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system with the CRAB. Data points are collected every ~80 cm. The use of GPS moved the data collection computer to the CRAB allowing a single person to conduct the survey.  A system check is made by driving the CRAB over the known parking lot point before each survey. Hypack, Inc.\u2019s Hypack Survey software logs the data and provides navigation guidance allowing the CRAB to stay within ~2 m of the survey line.  As with the Zeiss and Geodimeter, line lengths are varied alongshore to provide more coverage inshore. CRAB tilt is estimated during processing.  Topo points are collected with a backpack mounted GPS and a handheld data collector or computer running Hypack. This survey technique was used for 134 surveys from August 1996 to August 1999 and is still in use whenever survey data are collected using the CRAB.  Included in this period was the SandyDuck '97 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1999-now, LARC-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system combined with a Knudsen survey-grade echosounder and optionally, a TSS DMS 3-25 motion sensor mounted on the LARC-V. Conductivity, temperature, and depth (CTD) are measured at the end of the FRF pier to a depth of -7 m during the survey and additionally by an odom digibar at the offshore extent of the survey (typically -15m) to determine the speed of sound in the water column. Data points are collected on average every 2.5 m. Vessel motion. waves, bubbles and water characteristics complicate depth and position computation. A LARC-V survey is similar to a topo/CRAB survey when on its wheels and like a hydrographic survey when it's floating. The survey begins by first driving the LARC-V over a point of known position to confirm the RTK-GPS setup.  Then all the lines are driven from the base of the dune seaward and back. Hypack, Inc.'s Hypack Survey software logs all the data streams and provides navigation guidance which allows the LARC-V to stay within ~5 m of the desired survey line. Data streams include GPS (xyz), echosounder depth, heave, pitch, roll. Survey conditions are typically less than 1-m wave height.  A full survey of all lines can be done in 6-8 hours, less than half the time required by the CRAB. Profile Lines extend to 1 km offshore with a few selected lines extending 2 km. The survey crew includes the LARC-V captain and a surveyor. Use of the LARC-V with RTK-GPS began in September 1999 and continues as the preferred survey method because of it's speed. Included in this period was the 2008-2009 MORPHOS experiment when the surveyed profiles were extended ~3 km to the north. They are identified by the experiment name in the data filename.\n",
+          "dataProcessing": "1981-now, Pier Bathymetry Data Collection - At the same time or within a few days of each full survey, the bottom directly under the FRF pier is surveyed using a lead-line to measure the distance between the bottom and the pier deck.  Profile line 514 is the south edge of the pier; line 520 is the north edge.  Lead-line measurements are made between the pier pilings (mid-bent) to avoid measuring the scour hole surrounding each pier piling.  Starting in 2006, the lead line surveys were replaced by additional survey lines very close to the pier (within ~25 m) which are surveyed using the LARC-V.  These lines were not always done, but are important since they define the scour influence under the pier.\n1981 CRAB-Level, Data Processing - ISRP (Interactive Survey Reduction Program), a custom FORTRAN program, was used to manually enter the points from the handwritten field notes. ISRP produces a *.3d data file with all the profile lines; one data point (local FRF coordinates) per line. Collected elevation data were relative to NGVD29 and local standard time. As with all data files collected using the FRF coordinate system, a program converted the FRF coordinates into both NC State Plane (NAD83) and Geographic coordinates and adjusted the vertical data to NAVD88 and time to UTC.\n1981-1990, CRAB-Zeiss Data Processing - The FRF coordinate file from the Zeiss ( *.zss file) was processed using ISRP which combined the CRAB and Topo points and corrected the elevation for the CRAB tilt (if greater than 2 degrees and less than 10). A less than 2 degree tilt was considered insignificant and more than 10 degrees was likely an error.\n1990-1996, CRAB-Geodimeter Data Processing - The FRF coordinate file was produced by program RG7 (*.rg7) and later by the Hypack program was processed using ISRP, which was modified to estimate the tilt of the CRAB based on the elevation data and to compute and remove the drift of the instrument based on observations of known points collected before and after each profile line surveyed.\n1996-now, CRAB-GPS Data Processing - Hypack Inc.'s Hypack program generates multiple files: 1) a *.raw file for every profile line, 2) a *.log file which lists the *.raw filenames, 3) field notes in a spreadsheet format or handwritten and scanned.  Programs GPSFRF, GPSMAX, and later Fathomax batch process these files to create a single *.csv file which contains one row for each data point. Like ISRP, these programs use an iterative technique to estimate and remove the CRAB tilt. They also combine the CRAB points with the Topo points.\n1999-now, LARC-GPS Data Processing - Processing the LARC-GPS data is similar to the CRAB-GPS data with the additional computations required to determine the depth at each point using the GPS elevation, echosounder depth, heave, pitch, roll and the speed of sound profile through the water column. Processing is done using Fathomax which batch processes the raw data files and creates a single *.csv file containing one row for each survey point.  Fathomax also combines the LARC points with the Topo points and generates a series of postscript cross-section plot files, a text file of processing actions taken for each line, and a summary file for the survey which lists summary file for the survey which lists useful computations for all lines (seaward distance extent, number of survey points, average point spacing, etc.)\n",
+          "dataEditing": "1981-1996, Data Editing Step - ISRP allows interactive editing of data, showing graphic comparisons, and includes routines designed to address the unique errors of the Survey Level, Zeiss Elta-2S and Geodimeter 140T instruments. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points were deleted. Less obvious ones were left in. Systematic errors such as vertical offsets that are either constant or which increase with distance were identified and removed. This is a subjective process but was done by the people who collected the data and who were familiar with the errors which occur.\n1996-now, GPS Surveys Data Editing Step - The *.CSV files created by Fathomax are edited using ISRP3, a Visual Basic program developed by Terry Lease. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points are deleted. RTK-GPS data tend to require less hand editing than do the other survey methods.  LARC-V survey data typically requires more editing than do data collected with the CRAB. An example might be points collected when the LARC breached on a breaking wave and the fathometer lost lock with the bottom but still collected depths. Bubbles in the water column may also make it hard to identify the bottom in the echosounder trace, particularly over the shallow crest of the sandbar on outgoing surveys. When this occurs the Hypack program is used to edit the echosounder data prior to reprocessing with Fathomax and editing with ISRP3. Data gaps and odd-looking sandbar shapes, relative to the CRAB surveys, occur occassionally in the LARC-V surveys.\n",
+          "organization": "USACE/CHL/COAB",
+          "publisher_url": "http://frf.usace.army.mil",
+          "infoUrl": "http://frf.usace.army.mil",
+          "publisher_email": "frfwebmaster@usace.army.mil",
+          "publisher_name": "USACE/CHL/COAB",
+          "format_version": "v1.0",
+          "institution": "USACE/CHL/COAB",
+          "contact": "USACE/CHL/COAB",
+          "contact_info": "USACE/CHL/COAB",
+          "contact_role": "Owner",
+          "contributor_name": "USACE/CHL/COAB",
+          "contributor_role": "USACE/CHL/COAB",
+          "naming_authority": "FRF",
+          "origin": "USACE/CHL/COAB",
+          "date_created": "2025-06-13",
+          "date_issued": "2025-06-13",
+          "acknowledgement": "Data are provided by the U.S Army Engineer and Research Center, Coastal & Hydraulics Laboratory, Field Research Facility, Duck, North Carolina. Contributors:(Alphabetical order) Jesse Baldwin, Robert Battalio, Chris Berg, Gene Bichner, Bill Birkemeier, Dave Bradley, Matthew Cahur, Doug Call, Mike Carpenter, Mason Cox, Peter Dickson, Michael Dominguez, Doug Dorman, Marty Durkin, Michael Forte, Daniel Freer, Christopher Goshow, Bill Grogg, Deborah Heibel, Daniel Hogan, Stuart Holme, Peter Howd, Charles Judge, David Klebitz, Kevin Kremkau, Robert Lai, Mark Lampe, Terry Lease, Guan-hong Lee, Stephanie Lee, Michael Leffler, Curtis Mason, Mark McConathy, H. Carl Miller, Rob Mitchell, Jason Pipes,Mel Pollock, Mark Preisser, Judy Roughton, Francis Sargent, Matthew Savacool, Rebecca Savage, Brian Scarborough, Charles Smith, Robert Stewart, John Strider, David Thompson, Raymond Townsend,Steve Underwood, James Watts, Rob Web, Ray Wirt, Stanley Wilhelm and many others\n",
+          "project": "USACE/COAB observations",
+          "id": "FRF-BeachProfile-Survey",
+          "processing_level": "L1",
+          "geospatial_vertical_units": "m",
+          "geospatial_vertical_resolution": 0.0,
+          "geospatial_vertical_min": 0.0,
+          "geospatial_vertical_max": 0.0,
+          "geospatial_vertical_origin": "NAVD88",
+          "geospatial_lat_min": 36.25,
+          "geospatial_lat_max": 36.45,
+          "geospatial_lat_units": "degrees_north",
+          "geospatial_lon_min": 75.58,
+          "geospatial_lon_max": 75.96,
+          "geospatial_lon_units": "degrees_west",
+          "geospatial_vertical_positive": "up",
+          "time_coverage_start": "1980",
+          "time_coverage_end": "current",
+          "deployment_start": "1980",
+          "platform": "LARC, CRAB, Sled, Rod-Level",
+          "instrument": "Beach Profile Measuring Systems",
+          "cross_shore_angle_units": "degrees_north",
+          "cross_shore_angle_description": "cross shore angle at the USACE FRF site in DUCK, NC, clockwise from true north",
+          "cross_shore_angle": 71.8
+        }
+      },
+      "shapes": {
+        "time": [
+          10585
+        ],
+        "date": [
+          10585
+        ],
+        "lat": [
+          10585
+        ],
+        "lon": [
+          10585
+        ],
+        "northing": [
+          10585
+        ],
+        "easting": [
+          10585
+        ],
+        "xFRF": [
+          10585
+        ],
+        "yFRF": [
+          10585
+        ],
+        "elevation": [
+          10585
+        ],
+        "profileNumber": [
+          10585
+        ],
+        "surveyNumber": [
+          10585
+        ],
+        "Ellipsoid": [
+          10585
+        ]
+      },
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+      "available_services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc"
+      },
+      "auth": "anonymous",
+      "tls": "verified"
+    },
+    "status": "nearby_candidate_metadata_verified",
+    "measured_coverage": "not verified by bounding box",
+    "filename_date_not_verified": true
+  },
+  {
+    "family": "bathymetry",
+    "acquisition_id": "8c0eeb27-1c9a-53e8-9bd2-846811270477",
+    "status": "catalog_inventory_only",
+    "products": [
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210919.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210919.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-19",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210921.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210921.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-21",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210922.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210922.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-22",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210926.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-26",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210928.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-28",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-04",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-06",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-08",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-13",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-16",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-19",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-21",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-24",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-27",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211112.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-11-12",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      }
+    ],
+    "survey_coverage": "no line/point coverage asserted; no bounding-box substitution",
+    "catalogue_product_count_full": 1201,
+    "inventory_scope": "all catalogued filename dates within configured survey context; full verified raw catalogue retained in cache"
+  },
+  {
+    "family": "bathymetry",
+    "survey_reference": {
+      "name": "FRF_geomorphology_elevationTransects_survey_20211016.nc",
+      "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+      "services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc"
+      },
+      "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+      "candidate_date_from_filename": "2021-10-16",
+      "date_status": "not verified against survey metadata",
+      "measured_coverage": null,
+      "survey_method": null,
+      "resolution": null,
+      "uncertainty": null,
+      "horizontal_datum": null,
+      "vertical_datum": null
+    },
+    "metadata": {
+      "attributes": {
+        "time": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "standard_name": "time",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "time"
+        },
+        "date": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "date"
+        },
+        "lat": {
+          "_FillValue": -999.0,
+          "units": "degrees_north",
+          "standard_name": "latitude in decimal degrees north",
+          "long_name": "Latitude",
+          "short_name": "lat"
+        },
+        "lon": {
+          "_FillValue": -999.0,
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "Longitude in decimal degrees east",
+          "short_name": "lon"
+        },
+        "northing": {
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Northing",
+          "_FillValue": -999.0,
+          "units": "m"
+        },
+        "easting": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Easting"
+        },
+        "xFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Cross-Shore Coordinate",
+          "short_name": "x"
+        },
+        "yFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Along-Shore coordinate",
+          "short_name": "y"
+        },
+        "elevation": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "",
+          "long_name": "bottom elevation",
+          "description": "Elevation is in NAVD88 via geoid 2003",
+          "short_name": "z"
+        },
+        "profileNumber": {
+          "_FillValue": -999.0,
+          "units": "none",
+          "standard_name": "",
+          "long_name": "profile number",
+          "description": " Profile number based on FRF_Yshore coordinates",
+          "short_name": "profile number"
+        },
+        "surveyNumber": {
+          "_FillValue": -999.0,
+          "units": "None",
+          "standard_name": "",
+          "long_name": "survey number",
+          "description": "incremental value beginning with first survey",
+          "short_name": "sruvery number"
+        },
+        "Ellipsoid": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "height_above_reference_ellipsoid",
+          "long_name": "ellipsoid",
+          "description": "GRS 80 ellipsoid",
+          "short_name": "ellipsoid"
+        },
+        "NC_GLOBAL": {
+          "featureType": "timeSeries",
+          "title": "Beach and Nearshore Surveys at the USACE, Field Research Facility (FRF) in Duck",
+          "summary": "A unique series of repetitive surveys (1979-now) of shore-perpendicular profile lines surrounding the US Army Corps of Engineers (USACE) Field Research Facility (FRF) in Duck, NC.  The surveys typically include 28 lines which extend from 600 m south of the FRF research pier to 600 m north. Special surveys may extend the coverage further. Surveys are typically monthly and after major storms but may be done as frequently as daily during special experiments (DUCK82, DUCK85, SuperDuck '86, DELILAH '90, DUCK94, SandyDuck 1997, DUCK98 and MORPHOS 2008, etc.). Profile lines are spaced ~45 m apart and extend from the primary dune line to approximately 2 km offshore (-15 m isobath NAVD88). Profile lines are numbered according to their FRF coordinate longshore distance in m. 4 lines (1097, 1006, 1 and -91) were surveyed biweekly until ~2007. During the experiments, surveys were conducted more frequently of an area located north of the pier and known as the \"minigrid\" where profile line spacing was ~25 m. Over time the survey techniques evolved; accuracy and data point coverage improved. The platforms used include: (1) a Sea Sled with a graduated mast which was pulled offshore by a boat and winched back to shore by means of a cable; (2) The Coastal Research Amphibious Buggy or CRAB, a 10-m tall motorized tripod which an operator drives from the beach through the surf zone to a depth of ~-9 m at ~1000m offshore.  (3) a Lighter Amphibious Resupply Cargo V (LARC-V) vessel which is a 10-m long amphibious vessel capable of continuous data collection from the beach, through the surf zone and offshore. LARC-V surveys extend to a depth of ~-15 m at ~2000 m offshore. Survey instruments included a Motorola Miniranger, Automatic Survey Level, Zeiss Elta 2s Electronic Total Station, Geotronics Geodimeter 140T auto-tracking total station and most recently a Real-Time Kinematic Global Positioning System (RTK-GPS). Speed, accuracy and error sources depend on the survey system used. There are several aspects of these data that users should be aware of, particularly when looking at long-term temporal and longshore changes.  Most importantly the 560-m long research pier located in the center of the survey region causes a permanent scour hole. Lead-line soundings from the pier (lines 514 and 520, 1980-2006) or close-spaced profile lines (509, 524) are used to resolve this feature.  The area influenced by the pier varies, particularly during storms, but it usually occurs within the central third of the survey region.  For this reason, temporal studies using these data should focus on profiles lines at the outer edges of the region (typically lines 1097, 1006, 1, -91) and should compare the north and south lines and adjacent lines for similar long-term trends. There are some surveys where these lines were not surveyed which can be problematic with contour plots and gridding as the scour hole will incorrectly appear to be missing.  An examination of the effect of the research pier on the bathymetry was published in: Miller, H.C., W.A. Birkemeier, and A.E. DeWall, 1983, \"Effects of CERC Research Pier on Nearshore Processes,\" Proceedings of Coastal Structures '83, American Society of Civil Engineers, pp. 769-784. &#10; Because of short lines, gaps in the data and variable line spacing, care must be taken in creating spatial grids using these data points.  Suggested grids and search patterns should be long in the longshore and short in the cross-shore direction.  Small vertical errors exist in the data, detectable offshore (deeper than ~7m) as shifts along the entire profile for one survey relative to the previous and following surveys.  These shifts are known to result from systematic station or antenna height errors, instrument changes or vessel changes (the CRAB to the LARC). They typically are less than 10 cm but since they are systematic along the entire profile they can affect computations if not accounted for\n",
+          "history": "These data are part of a series of surveys since October 1979 which document the evolving beach topography and bathymetry surrounding the USACE Field Research Facility (FRF) and which provide a measure of the beach's response to coastal processes, including storms.  Survey data are complemented by a suite of continuous observations of local waves, winds, tides and currents.  These data are unique in their temporal coverage and vertical accuracy and have been the subject of multiple technical papers.\n",
+          "source": "Department of Army (DOA), U.S. Army Corps of Engineers (USACE), Engineer Research and Development Center (ERDC), Coastal and Hydraulics Laboratory (CHL) - Field Research Facility (FRF)",
+          "sourceUrl": "(local files)",
+          "standard_name_vocabulary": "CFv25",
+          "Metadata_Conventions": "Unidata Dataset Discovery v1.0, CF-1.6",
+          "metadata_link": "N/A",
+          "Conventions": "CF-1.6",
+          "creator_name": "USACE/CHL/COAB",
+          "creator_url": "http://frf.usace.army.mil",
+          "creator_email": "frfwebmaster@usace.army.mil",
+          "license": "These data may be redistributed and used without restriction.  Data are intended for scholarly use by the research community, with the express agreement that users will properly acknowledge the USACE Field Research Facility and the supporting investigator(s). Use or reproduction of these data for commercial purposes is prohibited without prior written permission.\n",
+          "keywords_vocabulary": "FGlobal Change Master Directory (GCMD) Earth Science Keywords; CF Standard Name Table (v23, 23 March 2013)",
+          "keywords": "Earth Science > Oceans > Coastal Processes > Shoreline Earth Science > Oceans > Coastal Processes > Beaches Earth Science > Oceans > Coastal Processes > elevation Earth Science > Oceans > Coastal Processes > Barrier islands Earth Science > Oceans > Coastal Processes > sediment transport",
+          "processing": "The software required to process the survey data evolved along with the survey technology. For all systems, survey coordinates had to be computed from the raw observations.  Distance, zenith angle and azimuth angle for the Zeiss and Geodimeter Total Stations; Latitude, Longitude and antenna height for GPS; Sounding depth, vessel motion, sound speed and CRAB tilt all require processing.  Custom FORTRAN programs were written to guide the CRAB during a survey and to process the raw data.  Starting in June 1994, Hypack, Inc.'s Hypack software was used to guide the CRAB, LARC-V and backpack-mounted TOPO surveyor along the profile lines and to log the Geodimeter and later the RTK-GPS data (1 Hz), the echosounder depth (9 Hz) and the motion data (9 Hz). Processing was done with Fathomax, a custom FORTRAN program that dynamically synchronizes the GPS, echosounder, and motion sensor data to remove the motion of the vessel due to waves.  This is accomplished by adjusting the latency between the GPS elevation and the echosounder data until the influence of the wave motion is minimized. The survey software also adjusts depths for the speed of sound and converts geographic coordinates into the local FRF coordinate system.  Data collection and processing is done using Microsoft Windows-based computers. \nSurvey data file sizes varies from 4-5,000 kb depending on the number or profile lines included in the survey and the method used.  Total file size for all collected surveys totals about 600 mb of data. The 28 shore-perpendicular profile lines which are routinely surveyed cover a distance of ~1200 m alongshore and extend from behind the primary dune line to approximately 1 to 2 km offshore (-9 to -14 m isobath). Profile Lines include: -91,-46,1,46,91,137,183,229,274,320,366,411,457,509,524,558,594,640,686,731,777,823,869,960,1006,1052,1097. Some surveys extend the coverage. The FRF research pier is centrally located within the survey region. The profile lines are nominally spaced 45m apart. The multibeam survey conducted in 1994 extended alongshore from -1.5 km (south) to +5.9 km (north) and offshore to 10.7 km. The MORPHOS experiment surveys in 2008-2009 extended the coverage to 3.5 km north.  15 lines were added in 2017 to monitor a beach nourishment project nort of the Research Pier.  The added lines include: 927,1157,1217,1277,1337,1511,1803,2103,2397,2693,3003,3241,3550,3858,4156. The surveyed area is located in Duck, NC, USA, 27949\nFrom 1981-1996, the Zeiss Elta-2s and the Geotronics Geodimeter 140T total stations were always stationed over a point of known vertical position. That position was established relative to National Geodetic Survey (NGS) monuments of known coordinates that have been cross-checked with existing vertically-controlled first order benchmarks. The NGS monuments are located on the FRF property and were originally installed to provide vertical control to the NOAA tide gauge on the FRF pier. A permanently mounted reflecting prism located about 500 m away was used to confirm elevation and position accuracy each time the total station was used. Beginning with the RTK-GPS surveys in 1996, a local GPS Base station was established at the FRF and its vertical position was determined using NGS online positioning service (OPUS) or published NGS coordinates. This was tested by determining the vertical difference in an RTK-GPS baseline solution to a known geodetic benchmark. Since 2004 the GPS base station has been operated by the NGS as Station NCDK under the Continuously Operating Reference Station (CORS) program.  Station NCDK was replaced by station NCDU in 2007 https://www.ngs.noaa.gov/cgi-cors/corsage_2.prl?site=NCDU.\nCoordinate Systems. From 1979-1996 survey data were collected relative to a local longshore/cross-shore cartesian coordinate system established in the 1970\u2019s. The origin of the \"FRF Coordinate System\" is located behind the dune line near the southern boundary of the FRF property at Latitude = 36.1775975 deg, Longitude = -75.7496860 deg; in NC State Plane coordinates at Northing (m) = 274,093.156, Easting (m) = 901,951.680. The baseline of the system (cross-shore distance = 0) is perpendicular to the FRF pier and is aligned 18.1465 degrees West of True North. Distance to the north along the baseline and distance directed offshore are positive. Beginning in 1996 with the use of RTK-GPS, Geodetic Coordinates were collected and converted to North Carolina State Plane coordinates by the Hypack collection program. A custom program was then used to convert these coordinates to FRF coordinates.  Additionally, a custom program was used to convert data originally collected in FRF coordinates to Geographic and NC State Plane. The data files include all three coordinates for each data point. Coordinate data are in meters or decimal degrees. CSV ASCII data files are not compressed. Filename includes 7 fields with details about the contents of the file, separated with underscores. They are: Surveyor (always FRF), Survey Date (YYYYMMDD), Survey Number (XXXX), Survey Job (FRF or experiment name), Vertical Datum (NAVD88), Vessel used (CRAB, Boat, LARC, SeaSled, Topo),Survey Instrument (Zeiss, Geodimeter, GPS, Level, Miniranger), Time Base (UTC), Version Date (vYYYYMMDD) representing the date that the data in the file were last updated. \nData Quality varies with the platform (CRAB or LARC-V) and the survey system used. In this section, we address platform and instrument accuracy and errors. Other details related to each method can be found under the Data Collection Process Steps. The 10-m-tall Coastal Research Amphibious Buggy (CRAB) provides a stable measurement platform which allows a traditional high-accuracy topographic survey to continue offshore. Because the measurement point is directly above and centered over the back two wheels, it averages the elevation under the rear wheels, which are 7.3 m apart. Unquantified, but believed to be small errors are the CRAB sinking into the sea-bed due to its weight and expansion/contraction of the aluminum frame of the CRAB due to seasonal changes in water and air temperature. Changes through time of the height of the measurement point on the CRAB (prism, GPS antenna) also influences long-term vertical accuracy. Because the LARC-V is a floating platform, its position is more complicated than with the CRAB. Erroneous or missing points tend to be caused by breaking waves and bubbles over nearshore sandbars. Bubble problems are more likely to occur on offshore-directed surveys (into the waves). Because of the size of both the CRAB and LARC-V, there are a few meters in front of the dune toe that they are unable to survey. Errors may also exist where the dune points, which if added may be many months old, intersect with the beach/offshore points. Because the CRAB is unaffected by waves, it provides a more accurate survey of the bottom under breaking waves than can be obtained with the LARC-V. \nVertical accuracy and position errors depend on the instrument being used.\n1981 CRAB-Level - Error sources included out-of-level instruments, stadia reading errors, field book and transcription errors, and instrument stationing errors.  Estimated accuracy in distance was from \u00b10.3 to \u00b16 m.  Vertical accuracy was estimated from \u00b10.03 to \u00b10.6 m, depending on distance offshore with errors increasing with distance. As a result, data collected prior to June 1981 extend only to ~600 m offshore.  Although these data are less accurate than later surveys, they are retained because the configuration of the inshore profile shape is accurately represented.  These data are best used in studies where the relative shape and location of the sandbars is important.  There are less useful where high vertical and position accuracy is required (ex. volumetric computations). \n1981-1990 CRAB-Zeiss - Accuracy approaches that of the Zeiss Elta-2s system itself; the distance accuracy of \u00b12 cm; angle accuracy of 0.6\" giving a vertical accuracy of \u00b11.5 cm at 1000 m.  Repetitive surveys under ideal conditions indicated a vertical accuracy of \u00b12.11 cm. Operator errors can result from improper instrument leveling and stationing, movement of the tripod during the survey, and miss-aiming the instrument at the proper location on the prism cluster while taking the measurement. Survey points could also be simply missed offshore by the CRAB not stopping at a critical change in curvature. If shape is important, then data users are best directed to later surveys using the CRAB and a continuous system.\n1990-1996 CRAB-Geodimeter - The accuracy of the Geodimeter 140T in tracking mode is \u00b110 mm and \u00b13\u201d in angle.  Repetitive surveys indicated a vertical accuracy of \u00b12.7 cm.  However, the Geodimeter 140T had some error-causing idiosyncrasies including a drift in elevation due to differential heating of the instrument, vertical oscillations due to an improperly adjusted tracker signal, and the ability to occasionally not lock onto the prism but to a slightly offset location.  Once these errors were understood, checks were made to measure and remove the drift, and the instrument operator was also careful to visually monitor the centering of the instrument on the ring of prisms to insure proper lock of the tracker unit. Tracker oscillation causes a jagged bottom of a few centimeters with no smooth sections; offsets appear as sharp vertical steps in the data. While the Geodimeter errors are unfortunate, their actual impact on survey data is seldom greater than \u00b115 cm in the vertical and is typically less than \u00b110 cm. \n1996-now CRAB-GPS - Absolute horizontal and vertical accuracies for RTK-GPS surveys are \u00b12 cm. In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions. Accuracy errors which can affect the system include dropped GPS points, loss of RTK, high PDOP, and antenna height errors. Station antenna height is permanently established, so typically not a source of error.  The antenna on the CRAB is removed and installed for each survey, but the mount is of fixed height and permanently installed.\n1999-now LARC-GPS - In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions and \u00b110 cm under less than ideal wave conditions. The system has been shown to compare similarly to accuracies obtainable with the CRAB.  Survey system errors, which may significantly affect the data include missed echosounder points, loss of RTK, high PDOP and speed of sound errors.\n1979-1980, Sea Sled/Boat-Miniranger Data Collection - The two earliest surveys in October 1979 and in October 1980, in advance of the Atlantic Remote Sensing Land-Ocean Experiment (ARSLOE). For this survey, the profile lines were located up to 3 km north and south of the pier. The surveys were done under contract to Langley and McDonald of Virginia Beach, VA and each profile line was surveyed in three parts: beach, nearshore and offshore.  The beach portion was surveyed to wading depth (-0.5 m) using conventional level and tape techniques.  The nearshore was surveyed out to 600 m using a sea sled and a surveying level. Deeper depths were surveyed using an analog fathometer mounted on a boat.  A Motorola Miniranger system provided horizontal position information for the sled and boat. The fathometer was calibrated on each range line by overlapping the sea sled data.  The surveys extended from the primary dune line to approximately 3 km offshore (-17 m isobath NAVD88).  Because wave motion was not completely removed from the offshore portion of the survey, it is less accurate vertically than the beach and sled portions.\n1981, CRAB-Level Data Collection - Survey points were obtained using a Dietzgen automatic self-leveling level to measure the position and elevation of the CRAB (Coastal Research Amphibious Buggy). The CRAB operator drives offshore (or onshore) stopping periodically to allow the surveyor to read a large, 12.3-m-tall stadia board mounted on the CRAB, reading the top, middle, and bottom crosshairs of the level.  From these readings, the elevation and offshore distance are computed. Survey point frequency is based on drive time between points and adjusted to collect more points near shore and fewer offshore. The CRAB operator navigated the cross-section by visually aligning two range poles on land. The exact distance offline is not known. If the stadia board moved above or below the instrument's field of view, the instrument was moved to a new location and the survey continued. Topographic (Topo) survey points of the beach and dune were collected using the level and a level rod and used either stadia readings a measuring tape for distance. This technique was used for 24 surveys from January to May 1981.\n1981-1990, CRAB-Zeiss Data Collection - Survey points were obtained using a Zeiss Elta-2s Electronic Total Station mounted on a wooden tripod located on the pier, or after July 1985, on a permanent steel pipe located on the roof of the FRF building. Both locations were of known horizontal and vertical position. Typically, the CRAB was driven over a point in the FRF parking lot of known location and elevation to confirm the Zeiss Elta-2s setup. Then all the lines were driven from the base of the dune seaward and back, stopping at each survey point for ~10 sec. At each stop, the CRAB operator would observe the tilt of the CRAB using orthogonal tilt gauges and if it was greater than 4 degrees, radio the tilt reading to the Zeiss operator who then entered the values into the Zeiss Elta-2s keypad for later adjustment. The CRAB operator would count time between stops increasing the interval as the CRAB moved offshore. A 900-m-long transect would take ~45 minutes and included ~40 data points. The CRAB maintained position on the survey line using two alignment poles located on land and steering instructions from the instrument operator as the Zeiss displayed FRF coordinates. This guidance allowed the CRAB to stay within ~3 m of the survey line.  To improve survey efficiency, line lengths were varied to provide more coverage inshore where the bathymetry is complex and 3D and less coverage deeper than ~5 m where the bathymetry is less complex and more shore parallel. A full survey of all lines took 2 days.  As with all surveys with the CRAB, wave conditions were typically less than ~1.5-m wave height.  Depending on wave and tide height, survey coverage extended ~900 m offshore and to a depth of ~9 m.  Topo points were collected using a single reflective prism mounted on a pole of known height. A large round plate mounted on the bottom of this pole prevented it from sinking into the sand. Periodic shots with the Zeiss to a prism permanently located near the end of the FRF pier provided checks on the instrument stationing.  An umbrella shielded the instrument from differential heating. This survey technique was used from June 1981-April 1990. Included in this period were the DUCK82, DUCK85 and SuperDuck '86 experiments when a subset of the survey area known as the \"minigrid\" located north of the FRF research pier was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1990-1996, CRAB-Geodimeter Data Collection - Survey points were obtained using a Geotronics Geodimeter 140T total station to continuously track the movement of the CRAB.  The Geodimeter was mounted on a permanent steel pipe of known horizontal and vertical position and initially aimed at a ring of reflective prisms mounted on the CRAB, at a known height.  The tracking system then locks onto the prism ring and follows the CRAB as it moves.  The coordinates of the CRAB are measured and automatically recorded.  Because of the speed of the CRAB, data points were collected every 1 to 2 m. Both program RG7, a FORTRAN program developed by Mike Leffler, and later Hypack Inc. Hypack program provided navigation guidance to the Geodimeter operator which was radioed to the CRAB. Because the Geodimeter was found to drift vertically, observations of the prism mounted at the end of the FRF pier were taken before and after each line was surveyed to measure and remove the drift. An umbrella shielded the instrument from differential heating. Unlike with the Zeiss, the tilt of the CRAB was not measured and was instead estimated later, Topo points during this time were often collected using the Zeiss. The combination of Hypack and the Geodimeter was used for 40 surveys from June 1994 to July 1996. Included in this period were the DELILAH '90 and DUCK94 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1994, Boat with Swath Survey System Data Collection - In August 1994 the Naval Research Laboratory (NRL) sponsored an offshore multibeam swath survey to support wave transformation studies under the Coastal Ocean Processes Experiment (CoOP) which coincided with the DUCK94 experiment. The survey was conducted by CC Technologies using a ~10-m long boat equipped with Real-Time Kinematic (RTK) GPS for horizontal position and a multi-beam depth sounder. 100% coverage was obtained of an area 7 km alongshore by 10 km offshore. A separate multibeam survey of about 70,000 points was also collected around the FRF research pier extending to ~800 m offshore. FRF cross-sections were extracted from the multibeam data and included as part of the FRF DUCK94 minigrid survey of 14 August 1994. Since these profiles are widely spaced, they do not accurately capture the deep, complex offshore bathymetry that the full coverage reveals (The full swath data are also available). No other details exist about the data collection and processing.\n1996-now, CRAB-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system with the CRAB. Data points are collected every ~80 cm. The use of GPS moved the data collection computer to the CRAB allowing a single person to conduct the survey.  A system check is made by driving the CRAB over the known parking lot point before each survey. Hypack, Inc.\u2019s Hypack Survey software logs the data and provides navigation guidance allowing the CRAB to stay within ~2 m of the survey line.  As with the Zeiss and Geodimeter, line lengths are varied alongshore to provide more coverage inshore. CRAB tilt is estimated during processing.  Topo points are collected with a backpack mounted GPS and a handheld data collector or computer running Hypack. This survey technique was used for 134 surveys from August 1996 to August 1999 and is still in use whenever survey data are collected using the CRAB.  Included in this period was the SandyDuck '97 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1999-now, LARC-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system combined with a Knudsen survey-grade echosounder and optionally, a TSS DMS 3-25 motion sensor mounted on the LARC-V. Conductivity, temperature, and depth (CTD) are measured at the end of the FRF pier to a depth of -7 m during the survey and additionally by an odom digibar at the offshore extent of the survey (typically -15m) to determine the speed of sound in the water column. Data points are collected on average every 2.5 m. Vessel motion. waves, bubbles and water characteristics complicate depth and position computation. A LARC-V survey is similar to a topo/CRAB survey when on its wheels and like a hydrographic survey when it's floating. The survey begins by first driving the LARC-V over a point of known position to confirm the RTK-GPS setup.  Then all the lines are driven from the base of the dune seaward and back. Hypack, Inc.'s Hypack Survey software logs all the data streams and provides navigation guidance which allows the LARC-V to stay within ~5 m of the desired survey line. Data streams include GPS (xyz), echosounder depth, heave, pitch, roll. Survey conditions are typically less than 1-m wave height.  A full survey of all lines can be done in 6-8 hours, less than half the time required by the CRAB. Profile Lines extend to 1 km offshore with a few selected lines extending 2 km. The survey crew includes the LARC-V captain and a surveyor. Use of the LARC-V with RTK-GPS began in September 1999 and continues as the preferred survey method because of it's speed. Included in this period was the 2008-2009 MORPHOS experiment when the surveyed profiles were extended ~3 km to the north. They are identified by the experiment name in the data filename.\n",
+          "dataProcessing": "1981-now, Pier Bathymetry Data Collection - At the same time or within a few days of each full survey, the bottom directly under the FRF pier is surveyed using a lead-line to measure the distance between the bottom and the pier deck.  Profile line 514 is the south edge of the pier; line 520 is the north edge.  Lead-line measurements are made between the pier pilings (mid-bent) to avoid measuring the scour hole surrounding each pier piling.  Starting in 2006, the lead line surveys were replaced by additional survey lines very close to the pier (within ~25 m) which are surveyed using the LARC-V.  These lines were not always done, but are important since they define the scour influence under the pier.\n1981 CRAB-Level, Data Processing - ISRP (Interactive Survey Reduction Program), a custom FORTRAN program, was used to manually enter the points from the handwritten field notes. ISRP produces a *.3d data file with all the profile lines; one data point (local FRF coordinates) per line. Collected elevation data were relative to NGVD29 and local standard time. As with all data files collected using the FRF coordinate system, a program converted the FRF coordinates into both NC State Plane (NAD83) and Geographic coordinates and adjusted the vertical data to NAVD88 and time to UTC.\n1981-1990, CRAB-Zeiss Data Processing - The FRF coordinate file from the Zeiss ( *.zss file) was processed using ISRP which combined the CRAB and Topo points and corrected the elevation for the CRAB tilt (if greater than 2 degrees and less than 10). A less than 2 degree tilt was considered insignificant and more than 10 degrees was likely an error.\n1990-1996, CRAB-Geodimeter Data Processing - The FRF coordinate file was produced by program RG7 (*.rg7) and later by the Hypack program was processed using ISRP, which was modified to estimate the tilt of the CRAB based on the elevation data and to compute and remove the drift of the instrument based on observations of known points collected before and after each profile line surveyed.\n1996-now, CRAB-GPS Data Processing - Hypack Inc.'s Hypack program generates multiple files: 1) a *.raw file for every profile line, 2) a *.log file which lists the *.raw filenames, 3) field notes in a spreadsheet format or handwritten and scanned.  Programs GPSFRF, GPSMAX, and later Fathomax batch process these files to create a single *.csv file which contains one row for each data point. Like ISRP, these programs use an iterative technique to estimate and remove the CRAB tilt. They also combine the CRAB points with the Topo points.\n1999-now, LARC-GPS Data Processing - Processing the LARC-GPS data is similar to the CRAB-GPS data with the additional computations required to determine the depth at each point using the GPS elevation, echosounder depth, heave, pitch, roll and the speed of sound profile through the water column. Processing is done using Fathomax which batch processes the raw data files and creates a single *.csv file containing one row for each survey point.  Fathomax also combines the LARC points with the Topo points and generates a series of postscript cross-section plot files, a text file of processing actions taken for each line, and a summary file for the survey which lists summary file for the survey which lists useful computations for all lines (seaward distance extent, number of survey points, average point spacing, etc.)\n",
+          "dataEditing": "1981-1996, Data Editing Step - ISRP allows interactive editing of data, showing graphic comparisons, and includes routines designed to address the unique errors of the Survey Level, Zeiss Elta-2S and Geodimeter 140T instruments. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points were deleted. Less obvious ones were left in. Systematic errors such as vertical offsets that are either constant or which increase with distance were identified and removed. This is a subjective process but was done by the people who collected the data and who were familiar with the errors which occur.\n1996-now, GPS Surveys Data Editing Step - The *.CSV files created by Fathomax are edited using ISRP3, a Visual Basic program developed by Terry Lease. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points are deleted. RTK-GPS data tend to require less hand editing than do the other survey methods.  LARC-V survey data typically requires more editing than do data collected with the CRAB. An example might be points collected when the LARC breached on a breaking wave and the fathometer lost lock with the bottom but still collected depths. Bubbles in the water column may also make it hard to identify the bottom in the echosounder trace, particularly over the shallow crest of the sandbar on outgoing surveys. When this occurs the Hypack program is used to edit the echosounder data prior to reprocessing with Fathomax and editing with ISRP3. Data gaps and odd-looking sandbar shapes, relative to the CRAB surveys, occur occassionally in the LARC-V surveys.\n",
+          "organization": "USACE/CHL/COAB",
+          "publisher_url": "http://frf.usace.army.mil",
+          "infoUrl": "http://frf.usace.army.mil",
+          "publisher_email": "frfwebmaster@usace.army.mil",
+          "publisher_name": "USACE/CHL/COAB",
+          "format_version": "v1.0",
+          "institution": "USACE/CHL/COAB",
+          "contact": "USACE/CHL/COAB",
+          "contact_info": "USACE/CHL/COAB",
+          "contact_role": "Owner",
+          "contributor_name": "USACE/CHL/COAB",
+          "contributor_role": "USACE/CHL/COAB",
+          "naming_authority": "FRF",
+          "origin": "USACE/CHL/COAB",
+          "date_created": "2025-06-13",
+          "date_issued": "2025-06-13",
+          "acknowledgement": "Data are provided by the U.S Army Engineer and Research Center, Coastal & Hydraulics Laboratory, Field Research Facility, Duck, North Carolina. Contributors:(Alphabetical order) Jesse Baldwin, Robert Battalio, Chris Berg, Gene Bichner, Bill Birkemeier, Dave Bradley, Matthew Cahur, Doug Call, Mike Carpenter, Mason Cox, Peter Dickson, Michael Dominguez, Doug Dorman, Marty Durkin, Michael Forte, Daniel Freer, Christopher Goshow, Bill Grogg, Deborah Heibel, Daniel Hogan, Stuart Holme, Peter Howd, Charles Judge, David Klebitz, Kevin Kremkau, Robert Lai, Mark Lampe, Terry Lease, Guan-hong Lee, Stephanie Lee, Michael Leffler, Curtis Mason, Mark McConathy, H. Carl Miller, Rob Mitchell, Jason Pipes,Mel Pollock, Mark Preisser, Judy Roughton, Francis Sargent, Matthew Savacool, Rebecca Savage, Brian Scarborough, Charles Smith, Robert Stewart, John Strider, David Thompson, Raymond Townsend,Steve Underwood, James Watts, Rob Web, Ray Wirt, Stanley Wilhelm and many others\n",
+          "project": "USACE/COAB observations",
+          "id": "FRF-BeachProfile-Survey",
+          "processing_level": "L1",
+          "geospatial_vertical_units": "m",
+          "geospatial_vertical_resolution": 0.0,
+          "geospatial_vertical_min": 0.0,
+          "geospatial_vertical_max": 0.0,
+          "geospatial_vertical_origin": "NAVD88",
+          "geospatial_lat_min": 36.25,
+          "geospatial_lat_max": 36.45,
+          "geospatial_lat_units": "degrees_north",
+          "geospatial_lon_min": 75.58,
+          "geospatial_lon_max": 75.96,
+          "geospatial_lon_units": "degrees_west",
+          "geospatial_vertical_positive": "up",
+          "time_coverage_start": "1980",
+          "time_coverage_end": "current",
+          "deployment_start": "1980",
+          "platform": "LARC, CRAB, Sled, Rod-Level",
+          "instrument": "Beach Profile Measuring Systems",
+          "cross_shore_angle_units": "degrees_north",
+          "cross_shore_angle_description": "cross shore angle at the USACE FRF site in DUCK, NC, clockwise from true north",
+          "cross_shore_angle": 71.8
+        }
+      },
+      "shapes": {
+        "time": [
+          14806
+        ],
+        "date": [
+          14806
+        ],
+        "lat": [
+          14806
+        ],
+        "lon": [
+          14806
+        ],
+        "northing": [
+          14806
+        ],
+        "easting": [
+          14806
+        ],
+        "xFRF": [
+          14806
+        ],
+        "yFRF": [
+          14806
+        ],
+        "elevation": [
+          14806
+        ],
+        "profileNumber": [
+          14806
+        ],
+        "surveyNumber": [
+          14806
+        ],
+        "Ellipsoid": [
+          14806
+        ]
+      },
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+      "available_services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc"
+      },
+      "auth": "anonymous",
+      "tls": "verified"
+    },
+    "status": "nearby_candidate_metadata_verified",
+    "measured_coverage": "not verified by bounding box",
+    "filename_date_not_verified": true
+  },
+  {
+    "family": "bathymetry",
+    "acquisition_id": "2ce151c3-c6f7-5d3a-a22e-84f87985d8a6",
+    "status": "catalog_inventory_only",
+    "products": [
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210926.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210926.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-26",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20210928.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20210928.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-09-28",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-04",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211006.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-06",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211008.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-08",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211013.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-13",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-16",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211019.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-19",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211021.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-21",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-24",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-10-27",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211112.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211112.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-11-12",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      },
+      {
+        "name": "FRF_geomorphology_elevationTransects_survey_20211117.nc",
+        "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+        "services": {
+          "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc",
+          "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211117.nc"
+        },
+        "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+        "candidate_date_from_filename": "2021-11-17",
+        "date_status": "not verified against survey metadata",
+        "measured_coverage": null,
+        "survey_method": null,
+        "resolution": null,
+        "uncertainty": null,
+        "horizontal_datum": null,
+        "vertical_datum": null
+      }
+    ],
+    "survey_coverage": "no line/point coverage asserted; no bounding-box substitution",
+    "catalogue_product_count_full": 1201,
+    "inventory_scope": "all catalogued filename dates within configured survey context; full verified raw catalogue retained in cache"
+  },
+  {
+    "family": "bathymetry",
+    "survey_reference": {
+      "name": "FRF_geomorphology_elevationTransects_survey_20211024.nc",
+      "url_path": "frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+      "services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc"
+      },
+      "catalog_source": "https://chldata.erdc.dren.mil/thredds/catalog/frf/geomorphology/elevationTransects/survey/data/catalog.xml",
+      "candidate_date_from_filename": "2021-10-24",
+      "date_status": "not verified against survey metadata",
+      "measured_coverage": null,
+      "survey_method": null,
+      "resolution": null,
+      "uncertainty": null,
+      "horizontal_datum": null,
+      "vertical_datum": null
+    },
+    "metadata": {
+      "attributes": {
+        "time": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "standard_name": "time",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "time"
+        },
+        "date": {
+          "_FillValue": -999.0,
+          "units": "seconds since 1970-01-01 00:00:00",
+          "long_name": "UTC Sample Time",
+          "calendar": "gregorian",
+          "short_name": "date"
+        },
+        "lat": {
+          "_FillValue": -999.0,
+          "units": "degrees_north",
+          "standard_name": "latitude in decimal degrees north",
+          "long_name": "Latitude",
+          "short_name": "lat"
+        },
+        "lon": {
+          "_FillValue": -999.0,
+          "units": "degrees_east",
+          "standard_name": "longitude",
+          "long_name": "Longitude in decimal degrees east",
+          "short_name": "lon"
+        },
+        "northing": {
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Northing",
+          "_FillValue": -999.0,
+          "units": "m"
+        },
+        "easting": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Northing in NC Stateplane 3200",
+          "short_name": "Easting"
+        },
+        "xFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Cross-Shore Coordinate",
+          "short_name": "x"
+        },
+        "yFRF": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "long_name": "Local FRF Along-Shore coordinate",
+          "short_name": "y"
+        },
+        "elevation": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "",
+          "long_name": "bottom elevation",
+          "description": "Elevation is in NAVD88 via geoid 2003",
+          "short_name": "z"
+        },
+        "profileNumber": {
+          "_FillValue": -999.0,
+          "units": "none",
+          "standard_name": "",
+          "long_name": "profile number",
+          "description": " Profile number based on FRF_Yshore coordinates",
+          "short_name": "profile number"
+        },
+        "surveyNumber": {
+          "_FillValue": -999.0,
+          "units": "None",
+          "standard_name": "",
+          "long_name": "survey number",
+          "description": "incremental value beginning with first survey",
+          "short_name": "sruvery number"
+        },
+        "Ellipsoid": {
+          "_FillValue": -999.0,
+          "units": "m",
+          "standard_name": "height_above_reference_ellipsoid",
+          "long_name": "ellipsoid",
+          "description": "GRS 80 ellipsoid",
+          "short_name": "ellipsoid"
+        },
+        "NC_GLOBAL": {
+          "featureType": "timeSeries",
+          "title": "Beach and Nearshore Surveys at the USACE, Field Research Facility (FRF) in Duck",
+          "summary": "A unique series of repetitive surveys (1979-now) of shore-perpendicular profile lines surrounding the US Army Corps of Engineers (USACE) Field Research Facility (FRF) in Duck, NC.  The surveys typically include 28 lines which extend from 600 m south of the FRF research pier to 600 m north. Special surveys may extend the coverage further. Surveys are typically monthly and after major storms but may be done as frequently as daily during special experiments (DUCK82, DUCK85, SuperDuck '86, DELILAH '90, DUCK94, SandyDuck 1997, DUCK98 and MORPHOS 2008, etc.). Profile lines are spaced ~45 m apart and extend from the primary dune line to approximately 2 km offshore (-15 m isobath NAVD88). Profile lines are numbered according to their FRF coordinate longshore distance in m. 4 lines (1097, 1006, 1 and -91) were surveyed biweekly until ~2007. During the experiments, surveys were conducted more frequently of an area located north of the pier and known as the \"minigrid\" where profile line spacing was ~25 m. Over time the survey techniques evolved; accuracy and data point coverage improved. The platforms used include: (1) a Sea Sled with a graduated mast which was pulled offshore by a boat and winched back to shore by means of a cable; (2) The Coastal Research Amphibious Buggy or CRAB, a 10-m tall motorized tripod which an operator drives from the beach through the surf zone to a depth of ~-9 m at ~1000m offshore.  (3) a Lighter Amphibious Resupply Cargo V (LARC-V) vessel which is a 10-m long amphibious vessel capable of continuous data collection from the beach, through the surf zone and offshore. LARC-V surveys extend to a depth of ~-15 m at ~2000 m offshore. Survey instruments included a Motorola Miniranger, Automatic Survey Level, Zeiss Elta 2s Electronic Total Station, Geotronics Geodimeter 140T auto-tracking total station and most recently a Real-Time Kinematic Global Positioning System (RTK-GPS). Speed, accuracy and error sources depend on the survey system used. There are several aspects of these data that users should be aware of, particularly when looking at long-term temporal and longshore changes.  Most importantly the 560-m long research pier located in the center of the survey region causes a permanent scour hole. Lead-line soundings from the pier (lines 514 and 520, 1980-2006) or close-spaced profile lines (509, 524) are used to resolve this feature.  The area influenced by the pier varies, particularly during storms, but it usually occurs within the central third of the survey region.  For this reason, temporal studies using these data should focus on profiles lines at the outer edges of the region (typically lines 1097, 1006, 1, -91) and should compare the north and south lines and adjacent lines for similar long-term trends. There are some surveys where these lines were not surveyed which can be problematic with contour plots and gridding as the scour hole will incorrectly appear to be missing.  An examination of the effect of the research pier on the bathymetry was published in: Miller, H.C., W.A. Birkemeier, and A.E. DeWall, 1983, \"Effects of CERC Research Pier on Nearshore Processes,\" Proceedings of Coastal Structures '83, American Society of Civil Engineers, pp. 769-784. &#10; Because of short lines, gaps in the data and variable line spacing, care must be taken in creating spatial grids using these data points.  Suggested grids and search patterns should be long in the longshore and short in the cross-shore direction.  Small vertical errors exist in the data, detectable offshore (deeper than ~7m) as shifts along the entire profile for one survey relative to the previous and following surveys.  These shifts are known to result from systematic station or antenna height errors, instrument changes or vessel changes (the CRAB to the LARC). They typically are less than 10 cm but since they are systematic along the entire profile they can affect computations if not accounted for\n",
+          "history": "These data are part of a series of surveys since October 1979 which document the evolving beach topography and bathymetry surrounding the USACE Field Research Facility (FRF) and which provide a measure of the beach's response to coastal processes, including storms.  Survey data are complemented by a suite of continuous observations of local waves, winds, tides and currents.  These data are unique in their temporal coverage and vertical accuracy and have been the subject of multiple technical papers.\n",
+          "source": "Department of Army (DOA), U.S. Army Corps of Engineers (USACE), Engineer Research and Development Center (ERDC), Coastal and Hydraulics Laboratory (CHL) - Field Research Facility (FRF)",
+          "sourceUrl": "(local files)",
+          "standard_name_vocabulary": "CFv25",
+          "Metadata_Conventions": "Unidata Dataset Discovery v1.0, CF-1.6",
+          "metadata_link": "N/A",
+          "Conventions": "CF-1.6",
+          "creator_name": "USACE/CHL/COAB",
+          "creator_url": "http://frf.usace.army.mil",
+          "creator_email": "frfwebmaster@usace.army.mil",
+          "license": "These data may be redistributed and used without restriction.  Data are intended for scholarly use by the research community, with the express agreement that users will properly acknowledge the USACE Field Research Facility and the supporting investigator(s). Use or reproduction of these data for commercial purposes is prohibited without prior written permission.\n",
+          "keywords_vocabulary": "FGlobal Change Master Directory (GCMD) Earth Science Keywords; CF Standard Name Table (v23, 23 March 2013)",
+          "keywords": "Earth Science > Oceans > Coastal Processes > Shoreline Earth Science > Oceans > Coastal Processes > Beaches Earth Science > Oceans > Coastal Processes > elevation Earth Science > Oceans > Coastal Processes > Barrier islands Earth Science > Oceans > Coastal Processes > sediment transport",
+          "processing": "The software required to process the survey data evolved along with the survey technology. For all systems, survey coordinates had to be computed from the raw observations.  Distance, zenith angle and azimuth angle for the Zeiss and Geodimeter Total Stations; Latitude, Longitude and antenna height for GPS; Sounding depth, vessel motion, sound speed and CRAB tilt all require processing.  Custom FORTRAN programs were written to guide the CRAB during a survey and to process the raw data.  Starting in June 1994, Hypack, Inc.'s Hypack software was used to guide the CRAB, LARC-V and backpack-mounted TOPO surveyor along the profile lines and to log the Geodimeter and later the RTK-GPS data (1 Hz), the echosounder depth (9 Hz) and the motion data (9 Hz). Processing was done with Fathomax, a custom FORTRAN program that dynamically synchronizes the GPS, echosounder, and motion sensor data to remove the motion of the vessel due to waves.  This is accomplished by adjusting the latency between the GPS elevation and the echosounder data until the influence of the wave motion is minimized. The survey software also adjusts depths for the speed of sound and converts geographic coordinates into the local FRF coordinate system.  Data collection and processing is done using Microsoft Windows-based computers. \nSurvey data file sizes varies from 4-5,000 kb depending on the number or profile lines included in the survey and the method used.  Total file size for all collected surveys totals about 600 mb of data. The 28 shore-perpendicular profile lines which are routinely surveyed cover a distance of ~1200 m alongshore and extend from behind the primary dune line to approximately 1 to 2 km offshore (-9 to -14 m isobath). Profile Lines include: -91,-46,1,46,91,137,183,229,274,320,366,411,457,509,524,558,594,640,686,731,777,823,869,960,1006,1052,1097. Some surveys extend the coverage. The FRF research pier is centrally located within the survey region. The profile lines are nominally spaced 45m apart. The multibeam survey conducted in 1994 extended alongshore from -1.5 km (south) to +5.9 km (north) and offshore to 10.7 km. The MORPHOS experiment surveys in 2008-2009 extended the coverage to 3.5 km north.  15 lines were added in 2017 to monitor a beach nourishment project nort of the Research Pier.  The added lines include: 927,1157,1217,1277,1337,1511,1803,2103,2397,2693,3003,3241,3550,3858,4156. The surveyed area is located in Duck, NC, USA, 27949\nFrom 1981-1996, the Zeiss Elta-2s and the Geotronics Geodimeter 140T total stations were always stationed over a point of known vertical position. That position was established relative to National Geodetic Survey (NGS) monuments of known coordinates that have been cross-checked with existing vertically-controlled first order benchmarks. The NGS monuments are located on the FRF property and were originally installed to provide vertical control to the NOAA tide gauge on the FRF pier. A permanently mounted reflecting prism located about 500 m away was used to confirm elevation and position accuracy each time the total station was used. Beginning with the RTK-GPS surveys in 1996, a local GPS Base station was established at the FRF and its vertical position was determined using NGS online positioning service (OPUS) or published NGS coordinates. This was tested by determining the vertical difference in an RTK-GPS baseline solution to a known geodetic benchmark. Since 2004 the GPS base station has been operated by the NGS as Station NCDK under the Continuously Operating Reference Station (CORS) program.  Station NCDK was replaced by station NCDU in 2007 https://www.ngs.noaa.gov/cgi-cors/corsage_2.prl?site=NCDU.\nCoordinate Systems. From 1979-1996 survey data were collected relative to a local longshore/cross-shore cartesian coordinate system established in the 1970\u2019s. The origin of the \"FRF Coordinate System\" is located behind the dune line near the southern boundary of the FRF property at Latitude = 36.1775975 deg, Longitude = -75.7496860 deg; in NC State Plane coordinates at Northing (m) = 274,093.156, Easting (m) = 901,951.680. The baseline of the system (cross-shore distance = 0) is perpendicular to the FRF pier and is aligned 18.1465 degrees West of True North. Distance to the north along the baseline and distance directed offshore are positive. Beginning in 1996 with the use of RTK-GPS, Geodetic Coordinates were collected and converted to North Carolina State Plane coordinates by the Hypack collection program. A custom program was then used to convert these coordinates to FRF coordinates.  Additionally, a custom program was used to convert data originally collected in FRF coordinates to Geographic and NC State Plane. The data files include all three coordinates for each data point. Coordinate data are in meters or decimal degrees. CSV ASCII data files are not compressed. Filename includes 7 fields with details about the contents of the file, separated with underscores. They are: Surveyor (always FRF), Survey Date (YYYYMMDD), Survey Number (XXXX), Survey Job (FRF or experiment name), Vertical Datum (NAVD88), Vessel used (CRAB, Boat, LARC, SeaSled, Topo),Survey Instrument (Zeiss, Geodimeter, GPS, Level, Miniranger), Time Base (UTC), Version Date (vYYYYMMDD) representing the date that the data in the file were last updated. \nData Quality varies with the platform (CRAB or LARC-V) and the survey system used. In this section, we address platform and instrument accuracy and errors. Other details related to each method can be found under the Data Collection Process Steps. The 10-m-tall Coastal Research Amphibious Buggy (CRAB) provides a stable measurement platform which allows a traditional high-accuracy topographic survey to continue offshore. Because the measurement point is directly above and centered over the back two wheels, it averages the elevation under the rear wheels, which are 7.3 m apart. Unquantified, but believed to be small errors are the CRAB sinking into the sea-bed due to its weight and expansion/contraction of the aluminum frame of the CRAB due to seasonal changes in water and air temperature. Changes through time of the height of the measurement point on the CRAB (prism, GPS antenna) also influences long-term vertical accuracy. Because the LARC-V is a floating platform, its position is more complicated than with the CRAB. Erroneous or missing points tend to be caused by breaking waves and bubbles over nearshore sandbars. Bubble problems are more likely to occur on offshore-directed surveys (into the waves). Because of the size of both the CRAB and LARC-V, there are a few meters in front of the dune toe that they are unable to survey. Errors may also exist where the dune points, which if added may be many months old, intersect with the beach/offshore points. Because the CRAB is unaffected by waves, it provides a more accurate survey of the bottom under breaking waves than can be obtained with the LARC-V. \nVertical accuracy and position errors depend on the instrument being used.\n1981 CRAB-Level - Error sources included out-of-level instruments, stadia reading errors, field book and transcription errors, and instrument stationing errors.  Estimated accuracy in distance was from \u00b10.3 to \u00b16 m.  Vertical accuracy was estimated from \u00b10.03 to \u00b10.6 m, depending on distance offshore with errors increasing with distance. As a result, data collected prior to June 1981 extend only to ~600 m offshore.  Although these data are less accurate than later surveys, they are retained because the configuration of the inshore profile shape is accurately represented.  These data are best used in studies where the relative shape and location of the sandbars is important.  There are less useful where high vertical and position accuracy is required (ex. volumetric computations). \n1981-1990 CRAB-Zeiss - Accuracy approaches that of the Zeiss Elta-2s system itself; the distance accuracy of \u00b12 cm; angle accuracy of 0.6\" giving a vertical accuracy of \u00b11.5 cm at 1000 m.  Repetitive surveys under ideal conditions indicated a vertical accuracy of \u00b12.11 cm. Operator errors can result from improper instrument leveling and stationing, movement of the tripod during the survey, and miss-aiming the instrument at the proper location on the prism cluster while taking the measurement. Survey points could also be simply missed offshore by the CRAB not stopping at a critical change in curvature. If shape is important, then data users are best directed to later surveys using the CRAB and a continuous system.\n1990-1996 CRAB-Geodimeter - The accuracy of the Geodimeter 140T in tracking mode is \u00b110 mm and \u00b13\u201d in angle.  Repetitive surveys indicated a vertical accuracy of \u00b12.7 cm.  However, the Geodimeter 140T had some error-causing idiosyncrasies including a drift in elevation due to differential heating of the instrument, vertical oscillations due to an improperly adjusted tracker signal, and the ability to occasionally not lock onto the prism but to a slightly offset location.  Once these errors were understood, checks were made to measure and remove the drift, and the instrument operator was also careful to visually monitor the centering of the instrument on the ring of prisms to insure proper lock of the tracker unit. Tracker oscillation causes a jagged bottom of a few centimeters with no smooth sections; offsets appear as sharp vertical steps in the data. While the Geodimeter errors are unfortunate, their actual impact on survey data is seldom greater than \u00b115 cm in the vertical and is typically less than \u00b110 cm. \n1996-now CRAB-GPS - Absolute horizontal and vertical accuracies for RTK-GPS surveys are \u00b12 cm. In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions. Accuracy errors which can affect the system include dropped GPS points, loss of RTK, high PDOP, and antenna height errors. Station antenna height is permanently established, so typically not a source of error.  The antenna on the CRAB is removed and installed for each survey, but the mount is of fixed height and permanently installed.\n1999-now LARC-GPS - In actual field operations the accuracy of the system is probably \u00b13 cm under ideal conditions and \u00b110 cm under less than ideal wave conditions. The system has been shown to compare similarly to accuracies obtainable with the CRAB.  Survey system errors, which may significantly affect the data include missed echosounder points, loss of RTK, high PDOP and speed of sound errors.\n1979-1980, Sea Sled/Boat-Miniranger Data Collection - The two earliest surveys in October 1979 and in October 1980, in advance of the Atlantic Remote Sensing Land-Ocean Experiment (ARSLOE). For this survey, the profile lines were located up to 3 km north and south of the pier. The surveys were done under contract to Langley and McDonald of Virginia Beach, VA and each profile line was surveyed in three parts: beach, nearshore and offshore.  The beach portion was surveyed to wading depth (-0.5 m) using conventional level and tape techniques.  The nearshore was surveyed out to 600 m using a sea sled and a surveying level. Deeper depths were surveyed using an analog fathometer mounted on a boat.  A Motorola Miniranger system provided horizontal position information for the sled and boat. The fathometer was calibrated on each range line by overlapping the sea sled data.  The surveys extended from the primary dune line to approximately 3 km offshore (-17 m isobath NAVD88).  Because wave motion was not completely removed from the offshore portion of the survey, it is less accurate vertically than the beach and sled portions.\n1981, CRAB-Level Data Collection - Survey points were obtained using a Dietzgen automatic self-leveling level to measure the position and elevation of the CRAB (Coastal Research Amphibious Buggy). The CRAB operator drives offshore (or onshore) stopping periodically to allow the surveyor to read a large, 12.3-m-tall stadia board mounted on the CRAB, reading the top, middle, and bottom crosshairs of the level.  From these readings, the elevation and offshore distance are computed. Survey point frequency is based on drive time between points and adjusted to collect more points near shore and fewer offshore. The CRAB operator navigated the cross-section by visually aligning two range poles on land. The exact distance offline is not known. If the stadia board moved above or below the instrument's field of view, the instrument was moved to a new location and the survey continued. Topographic (Topo) survey points of the beach and dune were collected using the level and a level rod and used either stadia readings a measuring tape for distance. This technique was used for 24 surveys from January to May 1981.\n1981-1990, CRAB-Zeiss Data Collection - Survey points were obtained using a Zeiss Elta-2s Electronic Total Station mounted on a wooden tripod located on the pier, or after July 1985, on a permanent steel pipe located on the roof of the FRF building. Both locations were of known horizontal and vertical position. Typically, the CRAB was driven over a point in the FRF parking lot of known location and elevation to confirm the Zeiss Elta-2s setup. Then all the lines were driven from the base of the dune seaward and back, stopping at each survey point for ~10 sec. At each stop, the CRAB operator would observe the tilt of the CRAB using orthogonal tilt gauges and if it was greater than 4 degrees, radio the tilt reading to the Zeiss operator who then entered the values into the Zeiss Elta-2s keypad for later adjustment. The CRAB operator would count time between stops increasing the interval as the CRAB moved offshore. A 900-m-long transect would take ~45 minutes and included ~40 data points. The CRAB maintained position on the survey line using two alignment poles located on land and steering instructions from the instrument operator as the Zeiss displayed FRF coordinates. This guidance allowed the CRAB to stay within ~3 m of the survey line.  To improve survey efficiency, line lengths were varied to provide more coverage inshore where the bathymetry is complex and 3D and less coverage deeper than ~5 m where the bathymetry is less complex and more shore parallel. A full survey of all lines took 2 days.  As with all surveys with the CRAB, wave conditions were typically less than ~1.5-m wave height.  Depending on wave and tide height, survey coverage extended ~900 m offshore and to a depth of ~9 m.  Topo points were collected using a single reflective prism mounted on a pole of known height. A large round plate mounted on the bottom of this pole prevented it from sinking into the sand. Periodic shots with the Zeiss to a prism permanently located near the end of the FRF pier provided checks on the instrument stationing.  An umbrella shielded the instrument from differential heating. This survey technique was used from June 1981-April 1990. Included in this period were the DUCK82, DUCK85 and SuperDuck '86 experiments when a subset of the survey area known as the \"minigrid\" located north of the FRF research pier was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1990-1996, CRAB-Geodimeter Data Collection - Survey points were obtained using a Geotronics Geodimeter 140T total station to continuously track the movement of the CRAB.  The Geodimeter was mounted on a permanent steel pipe of known horizontal and vertical position and initially aimed at a ring of reflective prisms mounted on the CRAB, at a known height.  The tracking system then locks onto the prism ring and follows the CRAB as it moves.  The coordinates of the CRAB are measured and automatically recorded.  Because of the speed of the CRAB, data points were collected every 1 to 2 m. Both program RG7, a FORTRAN program developed by Mike Leffler, and later Hypack Inc. Hypack program provided navigation guidance to the Geodimeter operator which was radioed to the CRAB. Because the Geodimeter was found to drift vertically, observations of the prism mounted at the end of the FRF pier were taken before and after each line was surveyed to measure and remove the drift. An umbrella shielded the instrument from differential heating. Unlike with the Zeiss, the tilt of the CRAB was not measured and was instead estimated later, Topo points during this time were often collected using the Zeiss. The combination of Hypack and the Geodimeter was used for 40 surveys from June 1994 to July 1996. Included in this period were the DELILAH '90 and DUCK94 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1994, Boat with Swath Survey System Data Collection - In August 1994 the Naval Research Laboratory (NRL) sponsored an offshore multibeam swath survey to support wave transformation studies under the Coastal Ocean Processes Experiment (CoOP) which coincided with the DUCK94 experiment. The survey was conducted by CC Technologies using a ~10-m long boat equipped with Real-Time Kinematic (RTK) GPS for horizontal position and a multi-beam depth sounder. 100% coverage was obtained of an area 7 km alongshore by 10 km offshore. A separate multibeam survey of about 70,000 points was also collected around the FRF research pier extending to ~800 m offshore. FRF cross-sections were extracted from the multibeam data and included as part of the FRF DUCK94 minigrid survey of 14 August 1994. Since these profiles are widely spaced, they do not accurately capture the deep, complex offshore bathymetry that the full coverage reveals (The full swath data are also available). No other details exist about the data collection and processing.\n1996-now, CRAB-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system with the CRAB. Data points are collected every ~80 cm. The use of GPS moved the data collection computer to the CRAB allowing a single person to conduct the survey.  A system check is made by driving the CRAB over the known parking lot point before each survey. Hypack, Inc.\u2019s Hypack Survey software logs the data and provides navigation guidance allowing the CRAB to stay within ~2 m of the survey line.  As with the Zeiss and Geodimeter, line lengths are varied alongshore to provide more coverage inshore. CRAB tilt is estimated during processing.  Topo points are collected with a backpack mounted GPS and a handheld data collector or computer running Hypack. This survey technique was used for 134 surveys from August 1996 to August 1999 and is still in use whenever survey data are collected using the CRAB.  Included in this period was the SandyDuck '97 experiment when a subset of the survey area known as the \"minigrid\" and located north of the FRF research pier, was surveyed near daily at a ~22-m longshore spacing. These data provide nearshore morphologic coverage at a higher spatial and temporal resolution than the other surveys during the period. They are identified by the experiment name in the data filename.\n1999-now, LARC-GPS Data Collection - Survey points are obtained using a Trimble RTK-GPS system combined with a Knudsen survey-grade echosounder and optionally, a TSS DMS 3-25 motion sensor mounted on the LARC-V. Conductivity, temperature, and depth (CTD) are measured at the end of the FRF pier to a depth of -7 m during the survey and additionally by an odom digibar at the offshore extent of the survey (typically -15m) to determine the speed of sound in the water column. Data points are collected on average every 2.5 m. Vessel motion. waves, bubbles and water characteristics complicate depth and position computation. A LARC-V survey is similar to a topo/CRAB survey when on its wheels and like a hydrographic survey when it's floating. The survey begins by first driving the LARC-V over a point of known position to confirm the RTK-GPS setup.  Then all the lines are driven from the base of the dune seaward and back. Hypack, Inc.'s Hypack Survey software logs all the data streams and provides navigation guidance which allows the LARC-V to stay within ~5 m of the desired survey line. Data streams include GPS (xyz), echosounder depth, heave, pitch, roll. Survey conditions are typically less than 1-m wave height.  A full survey of all lines can be done in 6-8 hours, less than half the time required by the CRAB. Profile Lines extend to 1 km offshore with a few selected lines extending 2 km. The survey crew includes the LARC-V captain and a surveyor. Use of the LARC-V with RTK-GPS began in September 1999 and continues as the preferred survey method because of it's speed. Included in this period was the 2008-2009 MORPHOS experiment when the surveyed profiles were extended ~3 km to the north. They are identified by the experiment name in the data filename.\n",
+          "dataProcessing": "1981-now, Pier Bathymetry Data Collection - At the same time or within a few days of each full survey, the bottom directly under the FRF pier is surveyed using a lead-line to measure the distance between the bottom and the pier deck.  Profile line 514 is the south edge of the pier; line 520 is the north edge.  Lead-line measurements are made between the pier pilings (mid-bent) to avoid measuring the scour hole surrounding each pier piling.  Starting in 2006, the lead line surveys were replaced by additional survey lines very close to the pier (within ~25 m) which are surveyed using the LARC-V.  These lines were not always done, but are important since they define the scour influence under the pier.\n1981 CRAB-Level, Data Processing - ISRP (Interactive Survey Reduction Program), a custom FORTRAN program, was used to manually enter the points from the handwritten field notes. ISRP produces a *.3d data file with all the profile lines; one data point (local FRF coordinates) per line. Collected elevation data were relative to NGVD29 and local standard time. As with all data files collected using the FRF coordinate system, a program converted the FRF coordinates into both NC State Plane (NAD83) and Geographic coordinates and adjusted the vertical data to NAVD88 and time to UTC.\n1981-1990, CRAB-Zeiss Data Processing - The FRF coordinate file from the Zeiss ( *.zss file) was processed using ISRP which combined the CRAB and Topo points and corrected the elevation for the CRAB tilt (if greater than 2 degrees and less than 10). A less than 2 degree tilt was considered insignificant and more than 10 degrees was likely an error.\n1990-1996, CRAB-Geodimeter Data Processing - The FRF coordinate file was produced by program RG7 (*.rg7) and later by the Hypack program was processed using ISRP, which was modified to estimate the tilt of the CRAB based on the elevation data and to compute and remove the drift of the instrument based on observations of known points collected before and after each profile line surveyed.\n1996-now, CRAB-GPS Data Processing - Hypack Inc.'s Hypack program generates multiple files: 1) a *.raw file for every profile line, 2) a *.log file which lists the *.raw filenames, 3) field notes in a spreadsheet format or handwritten and scanned.  Programs GPSFRF, GPSMAX, and later Fathomax batch process these files to create a single *.csv file which contains one row for each data point. Like ISRP, these programs use an iterative technique to estimate and remove the CRAB tilt. They also combine the CRAB points with the Topo points.\n1999-now, LARC-GPS Data Processing - Processing the LARC-GPS data is similar to the CRAB-GPS data with the additional computations required to determine the depth at each point using the GPS elevation, echosounder depth, heave, pitch, roll and the speed of sound profile through the water column. Processing is done using Fathomax which batch processes the raw data files and creates a single *.csv file containing one row for each survey point.  Fathomax also combines the LARC points with the Topo points and generates a series of postscript cross-section plot files, a text file of processing actions taken for each line, and a summary file for the survey which lists summary file for the survey which lists useful computations for all lines (seaward distance extent, number of survey points, average point spacing, etc.)\n",
+          "dataEditing": "1981-1996, Data Editing Step - ISRP allows interactive editing of data, showing graphic comparisons, and includes routines designed to address the unique errors of the Survey Level, Zeiss Elta-2S and Geodimeter 140T instruments. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points were deleted. Less obvious ones were left in. Systematic errors such as vertical offsets that are either constant or which increase with distance were identified and removed. This is a subjective process but was done by the people who collected the data and who were familiar with the errors which occur.\n1996-now, GPS Surveys Data Editing Step - The *.CSV files created by Fathomax are edited using ISRP3, a Visual Basic program developed by Terry Lease. Cross-sections are compared graphically to adjacent lines and to earlier and sometimes later surveys. Obvious erroneous points are deleted. RTK-GPS data tend to require less hand editing than do the other survey methods.  LARC-V survey data typically requires more editing than do data collected with the CRAB. An example might be points collected when the LARC breached on a breaking wave and the fathometer lost lock with the bottom but still collected depths. Bubbles in the water column may also make it hard to identify the bottom in the echosounder trace, particularly over the shallow crest of the sandbar on outgoing surveys. When this occurs the Hypack program is used to edit the echosounder data prior to reprocessing with Fathomax and editing with ISRP3. Data gaps and odd-looking sandbar shapes, relative to the CRAB surveys, occur occassionally in the LARC-V surveys.\n",
+          "organization": "USACE/CHL/COAB",
+          "publisher_url": "http://frf.usace.army.mil",
+          "infoUrl": "http://frf.usace.army.mil",
+          "publisher_email": "frfwebmaster@usace.army.mil",
+          "publisher_name": "USACE/CHL/COAB",
+          "format_version": "v1.0",
+          "institution": "USACE/CHL/COAB",
+          "contact": "USACE/CHL/COAB",
+          "contact_info": "USACE/CHL/COAB",
+          "contact_role": "Owner",
+          "contributor_name": "USACE/CHL/COAB",
+          "contributor_role": "USACE/CHL/COAB",
+          "naming_authority": "FRF",
+          "origin": "USACE/CHL/COAB",
+          "date_created": "2025-06-13",
+          "date_issued": "2025-06-13",
+          "acknowledgement": "Data are provided by the U.S Army Engineer and Research Center, Coastal & Hydraulics Laboratory, Field Research Facility, Duck, North Carolina. Contributors:(Alphabetical order) Jesse Baldwin, Robert Battalio, Chris Berg, Gene Bichner, Bill Birkemeier, Dave Bradley, Matthew Cahur, Doug Call, Mike Carpenter, Mason Cox, Peter Dickson, Michael Dominguez, Doug Dorman, Marty Durkin, Michael Forte, Daniel Freer, Christopher Goshow, Bill Grogg, Deborah Heibel, Daniel Hogan, Stuart Holme, Peter Howd, Charles Judge, David Klebitz, Kevin Kremkau, Robert Lai, Mark Lampe, Terry Lease, Guan-hong Lee, Stephanie Lee, Michael Leffler, Curtis Mason, Mark McConathy, H. Carl Miller, Rob Mitchell, Jason Pipes,Mel Pollock, Mark Preisser, Judy Roughton, Francis Sargent, Matthew Savacool, Rebecca Savage, Brian Scarborough, Charles Smith, Robert Stewart, John Strider, David Thompson, Raymond Townsend,Steve Underwood, James Watts, Rob Web, Ray Wirt, Stanley Wilhelm and many others\n",
+          "project": "USACE/COAB observations",
+          "id": "FRF-BeachProfile-Survey",
+          "processing_level": "L1",
+          "geospatial_vertical_units": "m",
+          "geospatial_vertical_resolution": 0.0,
+          "geospatial_vertical_min": 0.0,
+          "geospatial_vertical_max": 0.0,
+          "geospatial_vertical_origin": "NAVD88",
+          "geospatial_lat_min": 36.25,
+          "geospatial_lat_max": 36.45,
+          "geospatial_lat_units": "degrees_north",
+          "geospatial_lon_min": 75.58,
+          "geospatial_lon_max": 75.96,
+          "geospatial_lon_units": "degrees_west",
+          "geospatial_vertical_positive": "up",
+          "time_coverage_start": "1980",
+          "time_coverage_end": "current",
+          "deployment_start": "1980",
+          "platform": "LARC, CRAB, Sled, Rod-Level",
+          "instrument": "Beach Profile Measuring Systems",
+          "cross_shore_angle_units": "degrees_north",
+          "cross_shore_angle_description": "cross shore angle at the USACE FRF site in DUCK, NC, clockwise from true north",
+          "cross_shore_angle": 71.8
+        }
+      },
+      "shapes": {
+        "time": [
+          5800
+        ],
+        "date": [
+          5800
+        ],
+        "lat": [
+          5800
+        ],
+        "lon": [
+          5800
+        ],
+        "northing": [
+          5800
+        ],
+        "easting": [
+          5800
+        ],
+        "xFRF": [
+          5800
+        ],
+        "yFRF": [
+          5800
+        ],
+        "elevation": [
+          5800
+        ],
+        "profileNumber": [
+          5800
+        ],
+        "surveyNumber": [
+          5800
+        ],
+        "Ellipsoid": [
+          5800
+        ]
+      },
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+      "available_services": {
+        "OpenDAP": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "HTTPServer": "https://chldata.erdc.dren.mil/thredds/fileServer/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "NCML": "https://chldata.erdc.dren.mil/thredds/ncml/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "UDDC": "https://chldata.erdc.dren.mil/thredds/uddc/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "ISO": "https://chldata.erdc.dren.mil/thredds/iso/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "NetcdfSubset": "https://chldata.erdc.dren.mil/thredds/ncss/point/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+        "CdmRemote": "https://chldata.erdc.dren.mil/thredds/cdmremote/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc"
+      },
+      "auth": "anonymous",
+      "tls": "verified"
+    },
+    "status": "nearby_candidate_metadata_verified",
+    "measured_coverage": "not verified by bounding box",
+    "filename_date_not_verified": true
+  }
+]
+
+Filename dates/nominal bounding boxes do not prove measured survey coverage. Datum/method/unsupported layouts remain explicit. No depth inversion.

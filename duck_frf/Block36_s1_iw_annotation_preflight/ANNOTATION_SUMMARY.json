@@ -1,0 +1,287 @@
+{
+  "timestamp_interpretation": "SAFE annotation UTC fields omit lexical Z; parsed as UTC by field semantics",
+  "subswaths": [
+    {
+      "subswath": "IW2",
+      "start_time": "2021-10-28T23:06:36.323186+00:00",
+      "stop_time": "2021-10-28T23:07:01.477028+00:00",
+      "number_of_lines": 13527,
+      "number_of_samples": 25582,
+      "lines_per_burst": 1503,
+      "samples_per_burst": 25582,
+      "range_pixel_spacing_m": 2.329562,
+      "azimuth_pixel_spacing_m": 13.9353,
+      "bursts": [
+        {
+          "index": 0,
+          "line_start": 0,
+          "line_stop_exclusive": 1503,
+          "azimuth_time": "2021-10-28T23:06:36.323187+00:00",
+          "sensing_time": "2021-10-28T23:06:37.323714+00:00",
+          "valid_line_count": 1454,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 1,
+          "line_start": 1503,
+          "line_stop_exclusive": 3006,
+          "azimuth_time": "2021-10-28T23:06:39.081743+00:00",
+          "sensing_time": "2021-10-28T23:06:40.081991+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 2,
+          "line_start": 3006,
+          "line_stop_exclusive": 4509,
+          "azimuth_time": "2021-10-28T23:06:41.840300+00:00",
+          "sensing_time": "2021-10-28T23:06:42.840268+00:00",
+          "valid_line_count": 1456,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 3,
+          "line_start": 4509,
+          "line_stop_exclusive": 6012,
+          "azimuth_time": "2021-10-28T23:06:44.598856+00:00",
+          "sensing_time": "2021-10-28T23:06:45.598545+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 4,
+          "line_start": 6012,
+          "line_stop_exclusive": 7515,
+          "azimuth_time": "2021-10-28T23:06:47.355357+00:00",
+          "sensing_time": "2021-10-28T23:06:48.356822+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 5,
+          "line_start": 7515,
+          "line_stop_exclusive": 9018,
+          "azimuth_time": "2021-10-28T23:06:50.111858+00:00",
+          "sensing_time": "2021-10-28T23:06:51.115099+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 6,
+          "line_start": 9018,
+          "line_stop_exclusive": 10521,
+          "azimuth_time": "2021-10-28T23:06:52.870415+00:00",
+          "sensing_time": "2021-10-28T23:06:53.873376+00:00",
+          "valid_line_count": 1456,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 7,
+          "line_start": 10521,
+          "line_stop_exclusive": 12024,
+          "azimuth_time": "2021-10-28T23:06:55.631027+00:00",
+          "sensing_time": "2021-10-28T23:06:56.631653+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 8,
+          "line_start": 12024,
+          "line_stop_exclusive": 13527,
+          "azimuth_time": "2021-10-28T23:06:58.389583+00:00",
+          "sensing_time": "2021-10-28T23:06:59.389930+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        }
+      ]
+    },
+    {
+      "subswath": "IW3",
+      "start_time": "2021-10-28T23:06:37.287242+00:00",
+      "stop_time": "2021-10-28T23:07:02.447251+00:00",
+      "number_of_lines": 13572,
+      "number_of_samples": 24714,
+      "lines_per_burst": 1508,
+      "samples_per_burst": 24714,
+      "range_pixel_spacing_m": 2.329562,
+      "azimuth_pixel_spacing_m": 13.90543,
+      "bursts": [
+        {
+          "index": 0,
+          "line_start": 0,
+          "line_stop_exclusive": 1508,
+          "azimuth_time": "2021-10-28T23:06:37.287243+00:00",
+          "sensing_time": "2021-10-28T23:06:38.401751+00:00",
+          "valid_line_count": 1453,
+          "intersects_primary_roi": true
+        },
+        {
+          "index": 1,
+          "line_start": 1508,
+          "line_stop_exclusive": 3016,
+          "azimuth_time": "2021-10-28T23:06:40.043744+00:00",
+          "sensing_time": "2021-10-28T23:06:41.160028+00:00",
+          "valid_line_count": 1453,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 2,
+          "line_start": 3016,
+          "line_stop_exclusive": 4524,
+          "azimuth_time": "2021-10-28T23:06:42.802300+00:00",
+          "sensing_time": "2021-10-28T23:06:43.918305+00:00",
+          "valid_line_count": 1454,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 3,
+          "line_start": 4524,
+          "line_stop_exclusive": 6032,
+          "azimuth_time": "2021-10-28T23:06:45.560857+00:00",
+          "sensing_time": "2021-10-28T23:06:46.676582+00:00",
+          "valid_line_count": 1454,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 4,
+          "line_start": 6032,
+          "line_stop_exclusive": 7540,
+          "azimuth_time": "2021-10-28T23:06:48.315302+00:00",
+          "sensing_time": "2021-10-28T23:06:49.434859+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 5,
+          "line_start": 7540,
+          "line_stop_exclusive": 9048,
+          "azimuth_time": "2021-10-28T23:06:51.073859+00:00",
+          "sensing_time": "2021-10-28T23:06:52.193136+00:00",
+          "valid_line_count": 1453,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 6,
+          "line_start": 9048,
+          "line_stop_exclusive": 10556,
+          "azimuth_time": "2021-10-28T23:06:53.832415+00:00",
+          "sensing_time": "2021-10-28T23:06:54.951413+00:00",
+          "valid_line_count": 1453,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 7,
+          "line_start": 10556,
+          "line_stop_exclusive": 12064,
+          "azimuth_time": "2021-10-28T23:06:56.590972+00:00",
+          "sensing_time": "2021-10-28T23:06:57.709690+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 8,
+          "line_start": 12064,
+          "line_stop_exclusive": 13572,
+          "azimuth_time": "2021-10-28T23:06:59.349528+00:00",
+          "sensing_time": "2021-10-28T23:07:00.467967+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        }
+      ]
+    },
+    {
+      "subswath": "IW1",
+      "start_time": "2021-10-28T23:06:38.138242+00:00",
+      "stop_time": "2021-10-28T23:07:03.267418+00:00",
+      "number_of_lines": 13428,
+      "number_of_samples": 21672,
+      "lines_per_burst": 1492,
+      "samples_per_burst": 21672,
+      "range_pixel_spacing_m": 2.329562,
+      "azimuth_pixel_spacing_m": 13.96397,
+      "bursts": [
+        {
+          "index": 0,
+          "line_start": 0,
+          "line_stop_exclusive": 1492,
+          "azimuth_time": "2021-10-28T23:06:38.138243+00:00",
+          "sensing_time": "2021-10-28T23:06:39.249788+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 1,
+          "line_start": 1492,
+          "line_stop_exclusive": 2984,
+          "azimuth_time": "2021-10-28T23:06:40.896799+00:00",
+          "sensing_time": "2021-10-28T23:06:42.008065+00:00",
+          "valid_line_count": 1456,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 2,
+          "line_start": 2984,
+          "line_stop_exclusive": 4476,
+          "azimuth_time": "2021-10-28T23:06:43.655356+00:00",
+          "sensing_time": "2021-10-28T23:06:44.766342+00:00",
+          "valid_line_count": 1456,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 3,
+          "line_start": 4476,
+          "line_stop_exclusive": 5968,
+          "azimuth_time": "2021-10-28T23:06:46.411857+00:00",
+          "sensing_time": "2021-10-28T23:06:47.524619+00:00",
+          "valid_line_count": 1456,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 4,
+          "line_start": 5968,
+          "line_stop_exclusive": 7460,
+          "azimuth_time": "2021-10-28T23:06:49.170413+00:00",
+          "sensing_time": "2021-10-28T23:06:50.282896+00:00",
+          "valid_line_count": 1454,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 5,
+          "line_start": 7460,
+          "line_stop_exclusive": 8952,
+          "azimuth_time": "2021-10-28T23:06:51.926914+00:00",
+          "sensing_time": "2021-10-28T23:06:53.041173+00:00",
+          "valid_line_count": 1455,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 6,
+          "line_start": 8952,
+          "line_stop_exclusive": 10444,
+          "azimuth_time": "2021-10-28T23:06:54.687526+00:00",
+          "sensing_time": "2021-10-28T23:06:55.799450+00:00",
+          "valid_line_count": 1456,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 7,
+          "line_start": 10444,
+          "line_stop_exclusive": 11936,
+          "azimuth_time": "2021-10-28T23:06:57.444027+00:00",
+          "sensing_time": "2021-10-28T23:06:58.557727+00:00",
+          "valid_line_count": 1457,
+          "intersects_primary_roi": false
+        },
+        {
+          "index": 8,
+          "line_start": 11936,
+          "line_stop_exclusive": 13428,
+          "azimuth_time": "2021-10-28T23:07:00.202584+00:00",
+          "sensing_time": "2021-10-28T23:07:01.316004+00:00",
+          "valid_line_count": 1456,
+          "intersects_primary_roi": false
+        }
+      ]
+    }
+  ]
+}

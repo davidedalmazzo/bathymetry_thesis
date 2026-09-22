@@ -1,0 +1,127 @@
+[
+  {
+    "uuid": "c49a9c1f-9b00-5676-ab05-683975d898a2",
+    "full_product_not_requested": true,
+    "assets": [
+      {
+        "Type": "QUICKLOOK",
+        "Id": "646964cc-c740-431b-978c-06461df1b5a5",
+        "DownloadLink": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(646964cc-c740-431b-978c-06461df1b5a5)/$value",
+        "S3Path": "/eodata/Sentinel-1/SAR/SLC/2021/10/28/S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE"
+      }
+    ],
+    "nodes": {
+      "result": [
+        {
+          "Id": "S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE",
+          "Name": "S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes"
+          },
+          "ContentLength": 0,
+          "ChildrenNumber": 6
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "d982f98d-9739-5a03-aa42-27407da87d7e",
+    "full_product_not_requested": true,
+    "assets": [
+      {
+        "Type": "QUICKLOOK",
+        "Id": "9b9e42a7-c083-438c-a640-3aba0bfe8f42",
+        "DownloadLink": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(9b9e42a7-c083-438c-a640-3aba0bfe8f42)/$value",
+        "S3Path": "/eodata/Sentinel-1/SAR/SLC/2021/10/11/S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE"
+      }
+    ],
+    "nodes": {
+      "result": [
+        {
+          "Id": "S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE",
+          "Name": "S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(d982f98d-9739-5a03-aa42-27407da87d7e)/Nodes(S1A_IW_SLC__1SDV_20211011T225806_20211011T225835_040078_04BEC7_8ADC.SAFE)/Nodes"
+          },
+          "ContentLength": 0,
+          "ChildrenNumber": 6
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "b1d1d660-87fc-5790-9275-8df4034e8d82",
+    "full_product_not_requested": true,
+    "assets": [
+      {
+        "Type": "QUICKLOOK",
+        "Id": "68c17489-6785-434b-9481-79ed492b242a",
+        "DownloadLink": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(68c17489-6785-434b-9481-79ed492b242a)/$value",
+        "S3Path": "/eodata/Sentinel-1/SAR/SLC/2021/10/04/S1A_IW_SLC__1SDV_20211004T230636_20211004T230703_039976_04BB45_074A.SAFE"
+      }
+    ],
+    "nodes": {
+      "result": [
+        {
+          "Id": "S1A_IW_SLC__1SDV_20211004T230636_20211004T230703_039976_04BB45_074A.SAFE",
+          "Name": "S1A_IW_SLC__1SDV_20211004T230636_20211004T230703_039976_04BB45_074A.SAFE",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(b1d1d660-87fc-5790-9275-8df4034e8d82)/Nodes(S1A_IW_SLC__1SDV_20211004T230636_20211004T230703_039976_04BB45_074A.SAFE)/Nodes"
+          },
+          "ContentLength": 0,
+          "ChildrenNumber": 6
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "8c0eeb27-1c9a-53e8-9bd2-846811270477",
+    "full_product_not_requested": true,
+    "assets": [
+      {
+        "Type": "QUICKLOOK",
+        "Id": "cdd74751-2424-420d-b2bb-c738b5f0d3ab",
+        "DownloadLink": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(cdd74751-2424-420d-b2bb-c738b5f0d3ab)/$value",
+        "S3Path": "/eodata/Sentinel-1/SAR/SLC/2021/10/16/S1A_IW_SLC__1SDV_20211016T230636_20211016T230703_040151_04C151_B6DA.SAFE"
+      }
+    ],
+    "nodes": {
+      "result": [
+        {
+          "Id": "S1A_IW_SLC__1SDV_20211016T230636_20211016T230703_040151_04C151_B6DA.SAFE",
+          "Name": "S1A_IW_SLC__1SDV_20211016T230636_20211016T230703_040151_04C151_B6DA.SAFE",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(8c0eeb27-1c9a-53e8-9bd2-846811270477)/Nodes(S1A_IW_SLC__1SDV_20211016T230636_20211016T230703_040151_04C151_B6DA.SAFE)/Nodes"
+          },
+          "ContentLength": 0,
+          "ChildrenNumber": 6
+        }
+      ]
+    }
+  },
+  {
+    "uuid": "2ce151c3-c6f7-5d3a-a22e-84f87985d8a6",
+    "full_product_not_requested": true,
+    "assets": [
+      {
+        "Type": "QUICKLOOK",
+        "Id": "8a5d8a54-eb46-46f0-bfb2-50e163d7e8c6",
+        "DownloadLink": "https://catalogue.dataspace.copernicus.eu/odata/v1/Assets(8a5d8a54-eb46-46f0-bfb2-50e163d7e8c6)/$value",
+        "S3Path": "/eodata/Sentinel-1/SAR/SLC/2021/10/23/S1A_IW_SLC__1SDV_20211023T225806_20211023T225836_040253_04C4E1_1776.SAFE"
+      }
+    ],
+    "nodes": {
+      "result": [
+        {
+          "Id": "S1A_IW_SLC__1SDV_20211023T225806_20211023T225836_040253_04C4E1_1776.SAFE",
+          "Name": "S1A_IW_SLC__1SDV_20211023T225806_20211023T225836_040253_04C4E1_1776.SAFE",
+          "Nodes": {
+            "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(2ce151c3-c6f7-5d3a-a22e-84f87985d8a6)/Nodes(S1A_IW_SLC__1SDV_20211023T225806_20211023T225836_040253_04C4E1_1776.SAFE)/Nodes"
+          },
+          "ContentLength": 0,
+          "ChildrenNumber": 6
+        }
+      ]
+    }
+  }
+]

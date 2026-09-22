@@ -1,0 +1,200 @@
+{
+  "block": 36,
+  "created_utc": "2026-09-20T09:10:16.512754+00:00",
+  "gate": "READY",
+  "artifacts": [
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/ANNOTATION_INVENTORY.json",
+      "bytes": 4829,
+      "sha256": "f2d221ab8463fe350e805e14ed98933ee58d9d72cbc7855e3c96c6bdf21fc54a"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/ANNOTATION_SUMMARY.json",
+      "bytes": 10067,
+      "sha256": "3b246e66a7abb6b5d113abb28dcd6a11178fecd59e2e47eb09b6ab433aa60d00"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/CACHE_IMPORT.json",
+      "bytes": 6198,
+      "sha256": "e01c0de255a4ee29034adebb5113b0737eaada9b96b43a81b3692dafd7cfa897"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/CALIBRATION_NODE_INVENTORY.json",
+      "bytes": 7407,
+      "sha256": "8726d362efa43c7b21278804006d775248cbd3901e17e7221f570cb6d392bb47"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/CONFIG.json",
+      "bytes": 1117,
+      "sha256": "f4f0806ed55ebed8efe8f3414104eb1ce1eb94ae16536f4dd0b3a65e682534f4"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/CREDENTIAL_STATUS.json",
+      "bytes": 154,
+      "sha256": "9b8bb482e9e3c5711ef767d6aee274d081b9ca1030c73a690277b79fe22dd613"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/DERIVATION_PROVENANCE.json",
+      "bytes": 3297,
+      "sha256": "64e6885348d08288d041e3b5ac07b17343d39fb05f915ef8880e2e335fbcd608"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/DOWNLOAD_NOT_EXECUTED.md",
+      "bytes": 1810,
+      "sha256": "6d9ff01becaaadd9c876db96a8072dc3ca8f767e0961ba6e64b955d57b8d628c"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/FROZEN_AUDIT.json",
+      "bytes": 159,
+      "sha256": "ad66baadaf5cb0be19b1467afd0d82ef93495cfd91ba044b168989e5dfe7e6c7"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/FULL_SUITE.json",
+      "bytes": 890,
+      "sha256": "097d33b4f523c70f76fc3d877000f646571f5599b34e83234646d7665fa0450c"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/GATE.json",
+      "bytes": 191,
+      "sha256": "654f50357ebc902dcb93d71bdc58fe2b73cd837539a35bb5f33a08551e56b54d"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/LOCAL_GEOMETRY.json",
+      "bytes": 2017,
+      "sha256": "cf6a12ddfbe9f8df5d6e1010de4faf5aaa8a55820c770ecec60a302fa38d6baf"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/MANIFEST_CONTENT_CHECK.json",
+      "bytes": 2569,
+      "sha256": "6163d55d853f9dc0d798f4612dab621ddb46308a420a7475ed40a35eae479a5e"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/metadata_original/calibration-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+      "bytes": 1042859,
+      "sha256": "21a20eebb43a2b78995a63638ae1152e0be856514cb35d2d75be2d44d833cc00"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/metadata_original/manifest.safe",
+      "bytes": 36434,
+      "sha256": "f3510f41f08c918903ebc291548974f34c9d655af2682a7713f521ecf41d0b82"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/metadata_original/noise-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+      "bytes": 142770,
+      "sha256": "eb04ed0b2a2fb42b3bc441d05aadf4d693565f00817a61f520827f994bd4cadf"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/metadata_original/s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml",
+      "bytes": 893398,
+      "sha256": "b212a59d4d5681c03636f68e195620bfdb40d4b1e93b8350e70433801780098f"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/metadata_original/s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml",
+      "bytes": 884745,
+      "sha256": "a3041f3a17220d2de3d4dabd155e6946a1ec06fa399aa210a04ceb24e85f2042"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/metadata_original/s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+      "bytes": 798263,
+      "sha256": "69ebcaeaa43988a062c0d63166e707fa80398ad438838a3ec25f4b8bafe31f91"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/NETWORK_AUDIT.json",
+      "bytes": 8790,
+      "sha256": "e9e26ff6059d5059da7ffe6a9cb12fbf700aa8ec026b7caba18953a4eff93ef2"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/PROTOCOL.md",
+      "bytes": 6267,
+      "sha256": "78fa66b4d590e60e34c6d282527eab21c47e4c93d0b2e36d80633ac7c6dc256f"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/REPORT.md",
+      "bytes": 5123,
+      "sha256": "bb257ac5d5f4e5814fd90cc3b8a5c29b600e259a9ef5bfe9cd768f732bfbcadd"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/ROI_BURST_SUPPORT.geojson",
+      "bytes": 297555,
+      "sha256": "149454c008c563cbd9e52b20b48f42275960a9f818e09ab9d4dfadf52a58cdb3"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/ROI_BURST_SURVEY_MAP.png",
+      "bytes": 159721,
+      "sha256": "6602fecb7f36c5abefcb87a3d65dd5526b44c4849505f78a560f6f4a184314d6"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/SPATIAL_TRIAL_PLAN.json",
+      "bytes": 2573,
+      "sha256": "752b1c7c3c61e78cd2ab6a1b5ea60153759f4045a41ebb6b901ed46753bf6651"
+    },
+    {
+      "path": "duck_frf/Block36_s1_iw_annotation_preflight/TEST_REPORT.md",
+      "bytes": 1299,
+      "sha256": "150baa5cc09877d8f9af193032ec3d1080a49637a43e3c73387cc35f414bbce5"
+    }
+  ],
+  "code_sources": [
+    {
+      "path": "code/cdse_credentials.py",
+      "bytes": 7081,
+      "sha256": "045c5f2f58ef2d53f266fc2598314888ce57d26a3bd7a04f9f4ea1f3bc64f899"
+    },
+    {
+      "path": "code/download_cdse_product.py",
+      "bytes": 3330,
+      "sha256": "38c0dff1c3a1a0946975de038bb98435131c7b2c0ba8906c5494409eebe41690"
+    },
+    {
+      "path": "code/run_block36_s1_iw_preflight.py",
+      "bytes": 20383,
+      "sha256": "7a2830c86d1ea6efd67cfed51a14ea293e4a1ec1852a9c4226bbead32d8fb355"
+    },
+    {
+      "path": "code/s1_iw_annotation.py",
+      "bytes": 14170,
+      "sha256": "bcbf08c74576f945ab961b86d7c513cb2028823109b2659505e93899d29906cd"
+    },
+    {
+      "path": "code/s1_iw_preflight_validate.py",
+      "bytes": 3782,
+      "sha256": "2365d9070f8bb4e9f64f89b087935ec6113afe2c086399b042c113e7157d579c"
+    },
+    {
+      "path": "code/frf_client/transport.py",
+      "bytes": 20490,
+      "sha256": "3b5cd953a4fda8dad4e607ad987ac5e74be5e0b1e45144e889eda93ae36789d4"
+    },
+    {
+      "path": "code/repository_paths.py",
+      "bytes": 1709,
+      "sha256": "628dcd8adc1c245596ed1c98d5a7b6a2bf0845633a84bf9708239975bbd6a856"
+    },
+    {
+      "path": "repository_paths.json",
+      "bytes": 2718,
+      "sha256": "38cee9f5c91445d89bd3d514b59770a3996c42f2e89727e1c5a03caf3508ab14"
+    },
+    {
+      "path": ".env.example",
+      "bytes": 104,
+      "sha256": "e4213b699fc143c6666688c3f69b4cad65bbdda8d7eb72bd68c2a2643ff2598d"
+    },
+    {
+      "path": "requirements-thesis.txt",
+      "bytes": 392,
+      "sha256": "715cae35aed31da317b03bf762863c272149d44b77a3ab9fdd892b23a9fda144"
+    },
+    {
+      "path": "tests/test_s1_iw_annotation.py",
+      "bytes": 11533,
+      "sha256": "a5e39e7958f810a7ded8a93221324a69abb95521405705e97add48d7d5c8aab1"
+    }
+  ],
+  "metadata_payloads_retrieved": 6,
+  "network_audit": "NETWORK_AUDIT.json",
+  "frozen_audit": "FROZEN_AUDIT.json",
+  "test_report": "FULL_SUITE.json",
+  "no_sar_pixels_or_full_product_download": true,
+  "no_commit_push": true
+}

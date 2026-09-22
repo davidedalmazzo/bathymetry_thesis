@@ -1,0 +1,8 @@
+{
+  "rule": "predeclared protocol; all technically covered acquisitions fit maximum five",
+  "all_products_retained": 8,
+  "finalists": 5,
+  "no_physical_cutoff": true,
+  "footprint_proxy_not_used_to_reject": true,
+  "no_date_extension_needed": true
+}

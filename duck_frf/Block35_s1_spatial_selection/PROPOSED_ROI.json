@@ -1,0 +1,164 @@
+{
+  "frf_bounds_m": [
+    300.0,
+    850.0,
+    700.0,
+    1000.0
+  ],
+  "geojson": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -75.7489408456981,
+          36.184434192155784
+        ],
+        [
+          -75.7431306445405,
+          36.18597804029508
+        ],
+        [
+          -75.7441694582255,
+          36.188547156296984
+        ],
+        [
+          -75.7499796593831,
+          36.187003308157685
+        ],
+        [
+          -75.7489408456981,
+          36.184434192155784
+        ]
+      ]
+    ]
+  },
+  "coordinate_mapping": "local affine approximation fitted to source xFRF/yFRF and geographic point pairs; not a SAR pixel geolocator",
+  "coordinate_mapping_residual_p95_m": 0.010221681115752423,
+  "coordinate_mapping_source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+  "selection_reason": "north of pier profiles 514/520, away from beach; actual survey point envelope, no predicted k/depth agreement criterion",
+  "marine_status": "preliminary offshore FRF location; negative measured bed elevations support water, exact shoreline/structures and SAR valid pixels still require confirmation",
+  "pier_alongshore_min_separation_m": 180.0,
+  "survey_checks": [
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211004.nc",
+      "points_in_roi": 1702,
+      "complete_source_indices": true,
+      "vertical_datum": "NAVD88",
+      "water_depth_status": "bed elevation NAVD88, NOT instantaneous water depth",
+      "elevation_percentiles_NAVD88_m": [
+        -5.08,
+        -4.202500000000001,
+        -3.622
+      ],
+      "survey_point_time_min_utc": "2021-10-04T16:02:32+00:00",
+      "survey_point_time_max_utc": "2021-10-04T17:37:01+00:00",
+      "profiles": [
+        731.0,
+        777.0,
+        823.0,
+        869.0,
+        914.0,
+        960.0
+      ],
+      "roi_grid_nearest_point_distance_p50_p95_max_m": [
+        113.78310364900408,
+        363.5967084331884,
+        391.93563756565953
+      ],
+      "all_measured_elevations_below_NAVD88_zero": true,
+      "gradient_status": "not a continuous surface; global planar gradient deliberately not asserted",
+      "adjacent_observed_segment_diagnostic": {
+        "scale_policy": "only consecutive source indices, same profile, spacing 1-20 m; not cross-profile surface gradient",
+        "count": 15,
+        "spacing_p50_m": 1.022158500429351,
+        "absolute_slope_p50_p95": [
+          0.010700384042348434,
+          0.02087465962939618
+        ]
+      }
+    },
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211016.nc",
+      "points_in_roi": 1823,
+      "complete_source_indices": true,
+      "vertical_datum": "NAVD88",
+      "water_depth_status": "bed elevation NAVD88, NOT instantaneous water depth",
+      "elevation_percentiles_NAVD88_m": [
+        -6.1738,
+        -4.341,
+        -3.6321000000000003
+      ],
+      "survey_point_time_min_utc": "2021-10-15T16:45:31+00:00",
+      "survey_point_time_max_utc": "2021-10-15T20:04:47+00:00",
+      "profiles": [
+        731.0,
+        777.0,
+        823.0,
+        869.0,
+        914.0,
+        960.0
+      ],
+      "roi_grid_nearest_point_distance_p50_p95_max_m": [
+        70.67600724432585,
+        251.4758223961633,
+        306.34338991726264
+      ],
+      "all_measured_elevations_below_NAVD88_zero": true,
+      "gradient_status": "not a continuous surface; global planar gradient deliberately not asserted",
+      "adjacent_observed_segment_diagnostic": {
+        "scale_policy": "only consecutive source indices, same profile, spacing 1-20 m; not cross-profile surface gradient",
+        "count": 22,
+        "spacing_p50_m": 1.0213057763810292,
+        "absolute_slope_p50_p95": [
+          0.007826861561778154,
+          0.011702526230545423
+        ]
+      }
+    },
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211024.nc",
+      "points_in_roi": 1199,
+      "complete_source_indices": true,
+      "vertical_datum": "NAVD88",
+      "water_depth_status": "bed elevation NAVD88, NOT instantaneous water depth",
+      "elevation_percentiles_NAVD88_m": [
+        -8.1142,
+        -6.194,
+        -3.7436000000000007
+      ],
+      "survey_point_time_min_utc": "2021-10-24T15:26:32+00:00",
+      "survey_point_time_max_utc": "2021-10-24T16:03:18+00:00",
+      "profiles": [
+        731.0,
+        777.0,
+        823.0,
+        869.0,
+        914.0,
+        960.0
+      ],
+      "roi_grid_nearest_point_distance_p50_p95_max_m": [
+        14.609534763297601,
+        40.06355938773728,
+        63.709663254485996
+      ],
+      "all_measured_elevations_below_NAVD88_zero": true,
+      "gradient_status": "not a continuous surface; global planar gradient deliberately not asserted",
+      "adjacent_observed_segment_diagnostic": {
+        "scale_policy": "only consecutive source indices, same profile, spacing 1-20 m; not cross-profile surface gradient",
+        "count": 1193,
+        "spacing_p50_m": 2.459469251688343,
+        "absolute_slope_p50_p95": [
+          0.009567347128138778,
+          0.015453629123572147
+        ]
+      }
+    },
+    {
+      "source": "https://chldata.erdc.dren.mil/thredds/dodsC/frf/geomorphology/elevationTransects/survey/data/FRF_geomorphology_elevationTransects_survey_20211027.nc",
+      "points_in_roi": 0,
+      "complete_source_indices": true,
+      "vertical_datum": "NAVD88",
+      "water_depth_status": "bed elevation NAVD88, NOT instantaneous water depth"
+    }
+  ]
+}

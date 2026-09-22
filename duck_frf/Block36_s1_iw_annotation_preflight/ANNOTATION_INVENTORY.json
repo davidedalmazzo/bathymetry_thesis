@@ -1,0 +1,84 @@
+{
+  "product_uuid": "c49a9c1f-9b00-5676-ab05-683975d898a2",
+  "product_name": "S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE",
+  "source": "verified Block35 public CDSE Nodes",
+  "alternative_scene_queried": false,
+  "measurement_content_forbidden": true,
+  "files": [
+    {
+      "role": "manifest",
+      "name": "manifest.safe",
+      "declared_bytes": 36434,
+      "content_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(manifest.safe)/$value",
+      "status": "retrieved_authenticated_sha256_verified",
+      "sha256": "f3510f41f08c918903ebc291548974f34c9d655af2682a7713f521ecf41d0b82",
+      "bytes": 36434
+    },
+    {
+      "role": "measurement_annotation",
+      "swath": "IW2",
+      "polarisation": "VV",
+      "name": "s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml",
+      "declared_bytes": 884745,
+      "content_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml)/$value",
+      "status": "retrieved_authenticated_sha256_verified",
+      "sha256": "a3041f3a17220d2de3d4dabd155e6946a1ec06fa399aa210a04ceb24e85f2042",
+      "bytes": 884745
+    },
+    {
+      "role": "measurement_annotation",
+      "swath": "IW3",
+      "polarisation": "VV",
+      "name": "s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+      "declared_bytes": 798263,
+      "content_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+      "status": "retrieved_authenticated_sha256_verified",
+      "sha256": "69ebcaeaa43988a062c0d63166e707fa80398ad438838a3ec25f4b8bafe31f91",
+      "bytes": 798263
+    },
+    {
+      "role": "measurement_annotation",
+      "swath": "IW1",
+      "polarisation": "VV",
+      "name": "s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml",
+      "declared_bytes": 893398,
+      "content_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml)/$value",
+      "status": "retrieved_authenticated_sha256_verified",
+      "sha256": "b212a59d4d5681c03636f68e195620bfdb40d4b1e93b8350e70433801780098f",
+      "bytes": 893398
+    }
+  ],
+  "calibration_noise": {
+    "status": "retrieved_for_pertinent_subswath",
+    "folder": {
+      "Id": "calibration",
+      "Name": "calibration",
+      "Nodes": {
+        "uri": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes"
+      },
+      "ContentLength": 0,
+      "ChildrenNumber": 12
+    },
+    "pertinent_subswath": "IW3",
+    "files": [
+      {
+        "role": "calibration",
+        "name": "calibration-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+        "declared_bytes": 1042859,
+        "content_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes(calibration-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+        "status": "retrieved_authenticated_sha256_verified",
+        "sha256": "21a20eebb43a2b78995a63638ae1152e0be856514cb35d2d75be2d44d833cc00",
+        "bytes": 1042859
+      },
+      {
+        "role": "noise",
+        "name": "noise-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml",
+        "declared_bytes": 142770,
+        "content_url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes(noise-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+        "status": "retrieved_authenticated_sha256_verified",
+        "sha256": "eb04ed0b2a2fb42b3bc441d05aadf4d693565f00817a61f520827f994bd4cadf",
+        "bytes": 142770
+      }
+    ]
+  }
+}

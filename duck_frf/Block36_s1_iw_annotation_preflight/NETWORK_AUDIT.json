@@ -1,0 +1,178 @@
+{
+  "state": {
+    "transactions": 12,
+    "bytes": 3819945,
+    "max_transactions": 40,
+    "max_bytes": 52428800,
+    "created_utc": "2026-09-19T19:33:55.919825+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed",
+    "tranche_name": "s1_iw_annotation_preflight_20211028",
+    "max_response": 10485760
+  },
+  "events": [
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_started",
+      "number": 1,
+      "utc": "2026-09-20T08:59:54.419431+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_response",
+      "code": 200,
+      "bytes": 3748,
+      "utc": "2026-09-20T08:59:55.048593+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(manifest.safe)/$value",
+      "status": "started",
+      "number": 2,
+      "utc": "2026-09-20T08:59:55.084805+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(manifest.safe)/$value",
+      "status": "response",
+      "code": 200,
+      "bytes": 36434,
+      "utc": "2026-09-20T08:59:55.510828+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml)/$value",
+      "status": "started",
+      "number": 3,
+      "utc": "2026-09-20T08:59:55.550269+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw2-slc-vv-20211028t230636-20211028t230701-040326-04c765-005.xml)/$value",
+      "status": "response",
+      "code": 200,
+      "bytes": 884745,
+      "utc": "2026-09-20T08:59:57.007719+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_started",
+      "number": 4,
+      "utc": "2026-09-20T09:01:13.781761+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_response",
+      "code": 200,
+      "bytes": 3748,
+      "utc": "2026-09-20T09:01:14.518255+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_started",
+      "number": 5,
+      "utc": "2026-09-20T09:02:50.761824+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "authentication_transport_error",
+      "utc": "2026-09-20T09:02:52.832867+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_started",
+      "number": 6,
+      "utc": "2026-09-20T09:03:14.015510+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_response",
+      "code": 200,
+      "bytes": 3748,
+      "utc": "2026-09-20T09:03:14.947691+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+      "status": "started",
+      "number": 7,
+      "utc": "2026-09-20T09:03:15.265733+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+      "status": "response",
+      "code": 200,
+      "bytes": 798263,
+      "utc": "2026-09-20T09:03:15.923399+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml)/$value",
+      "status": "started",
+      "number": 8,
+      "utc": "2026-09-20T09:03:16.186403+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(s1a-iw1-slc-vv-20211028t230638-20211028t230703-040326-04c765-004.xml)/$value",
+      "status": "response",
+      "code": 200,
+      "bytes": 893398,
+      "utc": "2026-09-20T09:03:16.700760+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes",
+      "status": "started",
+      "number": 9,
+      "utc": "2026-09-20T09:03:19.029419+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes",
+      "status": "response",
+      "code": 200,
+      "bytes": 6484,
+      "utc": "2026-09-20T09:03:19.207514+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes(calibration-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+      "status": "started",
+      "number": 10,
+      "utc": "2026-09-20T09:03:19.280719+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes(calibration-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+      "status": "response",
+      "code": 200,
+      "bytes": 1042859,
+      "utc": "2026-09-20T09:03:19.842089+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes(noise-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+      "status": "started",
+      "number": 11,
+      "utc": "2026-09-20T09:03:19.889051+00:00"
+    },
+    {
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/Nodes(S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE)/Nodes(annotation)/Nodes(calibration)/Nodes(noise-s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.xml)/$value",
+      "status": "response",
+      "code": 200,
+      "bytes": 142770,
+      "utc": "2026-09-20T09:03:20.279899+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_started",
+      "number": 12,
+      "utc": "2026-09-20T09:05:34.236399+00:00"
+    },
+    {
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "status": "secret_post_response",
+      "code": 200,
+      "bytes": 3748,
+      "utc": "2026-09-20T09:05:34.877537+00:00"
+    }
+  ],
+  "credentials": {
+    "configured": true,
+    "source": "username_password",
+    "error": null,
+    "mfa": "prompted_locally_only_if_server_rejects_initial_password_grant"
+  },
+  "secrets_logged": false,
+  "historical_tranches_unchanged": true,
+  "cache_reuse_not_charged": true,
+  "full_sar_download": false
+}

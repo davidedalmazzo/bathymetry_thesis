@@ -1,0 +1,22 @@
+[
+  {
+    "family": "waves",
+    "instrument_id": "FRF:waverider-17m",
+    "required_months": [
+      "202110"
+    ],
+    "missing_or_unverified_months": [],
+    "status": "verified_configured_context",
+    "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+  },
+  {
+    "family": "waves",
+    "instrument_id": "FRF:awac-11m",
+    "required_months": [
+      "202110"
+    ],
+    "missing_or_unverified_months": [],
+    "status": "verified_configured_context",
+    "nearest_claim": "nearest within available segments, not absolute deployment nearest"
+  }
+]

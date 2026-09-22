@@ -1,0 +1,16 @@
+{
+  "errors": [],
+  "network": {
+    "transactions": 6,
+    "bytes": 706769,
+    "max_transactions": 80,
+    "max_bytes": 157286400,
+    "created_utc": "2026-09-18T14:42:38.120874+00:00",
+    "historical_consumption": "not part of this tranche; not reconstructed",
+    "tranche_name": "s1_duck_spatial_202110",
+    "max_response": 15728640
+  },
+  "no_radar_access": true,
+  "mode": "fetch",
+  "event_representative_state": "not mixed across instruments"
+}

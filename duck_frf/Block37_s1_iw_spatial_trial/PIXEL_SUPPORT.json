@@ -1,0 +1,146 @@
+{
+  "measurement_relative_path": "measurement/s1a-iw3-slc-vv-20211028t230637-20211028t230702-040326-04c765-006.tiff",
+  "measurement_bytes": 1341901640,
+  "annotation_dimensions": [
+    13572,
+    24714
+  ],
+  "polarisation": "VV",
+  "subswath": "IW3",
+  "burst_index": 0,
+  "lines_per_burst": 1508,
+  "source_windows": [
+    {
+      "source_window_col_row_width_height": [
+        14306,
+        947,
+        104,
+        31
+      ],
+      "sample_min_max": [
+        14307.485872845913,
+        14407.849594511765
+      ],
+      "line_min_max": [
+        948.4385085155295,
+        975.0875756302455
+      ],
+      "all_contributing_samples_valid": true,
+      "burst_index": 0,
+      "interpolation_order": 1,
+      "tiff_profile": {
+        "driver": "GTiff",
+        "width": 24714,
+        "height": 13572,
+        "count": 1,
+        "dtype": "complex_int16",
+        "nodata": null,
+        "block_shape": [
+          1,
+          24714
+        ]
+      },
+      "real_std": 22.95332858478852,
+      "imag_std": 21.934889552215914
+    },
+    {
+      "source_window_col_row_width_height": [
+        14291,
+        946,
+        134,
+        32
+      ],
+      "sample_min_max": [
+        14292.710452265033,
+        14422.63373788857
+      ],
+      "line_min_max": [
+        947.8255631732386,
+        975.6986614088605
+      ],
+      "all_contributing_samples_valid": true,
+      "burst_index": 0,
+      "interpolation_order": 1,
+      "tiff_profile": {
+        "driver": "GTiff",
+        "width": 24714,
+        "height": 13572,
+        "count": 1,
+        "dtype": "complex_int16",
+        "nodata": null,
+        "block_shape": [
+          1,
+          24714
+        ]
+      },
+      "real_std": 22.805214062369505,
+      "imag_std": 22.0543622623286
+    },
+    {
+      "source_window_col_row_width_height": [
+        14276,
+        946,
+        164,
+        33
+      ],
+      "sample_min_max": [
+        14277.935031684192,
+        14437.417881265334
+      ],
+      "line_min_max": [
+        947.2126178310109,
+        976.3097135834878
+      ],
+      "all_contributing_samples_valid": true,
+      "burst_index": 0,
+      "interpolation_order": 1,
+      "tiff_profile": {
+        "driver": "GTiff",
+        "width": 24714,
+        "height": 13572,
+        "count": 1,
+        "dtype": "complex_int16",
+        "nodata": null,
+        "block_shape": [
+          1,
+          24714
+        ]
+      },
+      "real_std": 22.639271696678573,
+      "imag_std": 22.20431481599414
+    }
+  ],
+  "frf_affine_lon_lat_coefficients": [
+    [
+      -75.7496861477312,
+      36.17759748916627
+    ],
+    [
+      1.056400210475342e-05,
+      2.806996616905208e-06
+    ],
+    [
+      -3.4627122833372187e-06,
+      8.563720006342812e-06
+    ]
+  ],
+  "affine_corner_residual_max_deg": 7.105427357601002e-15,
+  "frf_basis_EN_m_per_m": [
+    [
+      0.9491323856010744,
+      -0.31111053728657156
+    ],
+    [
+      0.3124734343013736,
+      0.9533089506625123
+    ]
+  ],
+  "calibration_formula": "sigma0=|DN|^2/sigmaNought^2",
+  "noise_formula": "sigma0_noise_sub=(|DN|^2-noiseRangeLut*noiseAzimuthLut)/sigmaNought^2",
+  "nodata_handling": "no declared nodata; exact annotation validity required; no invalid-to-zero replacement",
+  "iq_check": {
+    "complex_type": true,
+    "real_nontrivial": true,
+    "imag_nontrivial": true
+  }
+}

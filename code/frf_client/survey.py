@@ -66,3 +66,45 @@ def fetch_points(transport, product, selection, region):
             "coverage":"measured points only; lines and continuous seabed coverage not inferred",
             "horizontal_datum":"source coordinate metadata, unconverted",
             "vertical_datum":meta["attributes"].get("NC_GLOBAL",{}).get("geospatial_vertical_origin")}
+
+
+def fetch_complete_points(transport, product, region, max_points=30000, chunk_size=5000):
+    """Small complete coordinate/profile vectors, not a raster/source-file download.
+
+    Traverse EVERY source point index before geographic filtering. Preserve gaps,
+    per-point time/profile IDs and source datum; do not invent continuous coverage.
+    """
+    geo=polygon(region)
+    if geo is None or not 1 <= chunk_size <= 5000:
+        raise ValueError('Region and bounded chunks required')
+    meta=metadata(transport,product)
+    attrs,shapes=meta['attributes'],meta['shapes']
+    aliases={role:next((n for n in choices if n in shapes),None) for role,choices in
+             {'latitude':('latitude','lat'),'longitude':('longitude','lon'),'elevation':('elevation','z','depth')}.items()}
+    required=tuple(aliases.values())
+    if any(n is None for n in required):raise FetchError('unsupported_survey_coordinates')
+    dimension=shapes[aliases['latitude']]
+    if len(dimension)!=1 or not 1<=dimension[0]<=max_points or any(shapes[n]!=dimension for n in required):
+        raise FetchError('survey_vector_size_or_layout_refused')
+    names=list(required)+[n for n in ('time','date','profileNumber','surveyNumber','xFRF','yFRF') if shapes.get(n)==dimension]
+    points=[];sources=[];valid_count=0
+    for lo in range(0,dimension[0],chunk_size):
+        hi=min(lo+chunk_size,dimension[0])-1
+        url=meta['source']+'.ascii?'+','.join(f'{n}[{lo}:1:{hi}]' for n in names)
+        arrays=ascii_arrays(transport.get(url).decode());sources.append(url)
+        if any(np.asarray(arrays[n]).shape!=(hi-lo+1,) for n in names):raise FetchError('survey_subset_shape_mismatch')
+        masks={n:mask_values(arrays[n],attrs.get(n,{})) for n in names}
+        valid=np.logical_and.reduce([masks[n] for n in required])
+        valid_count+=int(valid.sum())
+        for j in np.flatnonzero(valid):
+            lon,lat=float(arrays[aliases['longitude']][j]),float(arrays[aliases['latitude']][j])
+            if -180<=lon<=180 and -90<=lat<=90 and geo.covers(Point(lon,lat)):
+                point={'source_index':lo+int(j)}
+                point.update({n:float(arrays[n][j]) if masks[n][j] else None for n in names})
+                point.update({role:float(arrays[n][j]) for role,n in aliases.items()})
+                points.append(point)
+    return {'metadata':meta,'points':points,'source_urls':sources,'source_point_count':dimension[0],
+        'source_valid_point_count':valid_count,'all_indices_traversed':True,'actual_point_count_inside':len(points),
+        'coverage':'measured points only; profile IDs retained; no continuous surface or connecting gaps asserted',
+        'vertical_datum':attrs.get('NC_GLOBAL',{}).get('geospatial_vertical_origin'),
+        'horizontal_datum':'source geographic coordinate metadata; unconverted'}

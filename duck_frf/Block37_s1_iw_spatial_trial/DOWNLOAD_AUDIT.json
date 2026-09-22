@@ -1,0 +1,43 @@
+{
+  "created_utc": "2026-09-20T09:20:00.741393+00:00",
+  "http_transactions": 2,
+  "response_bytes": 7799372638,
+  "download_stream_bytes": 7799368890,
+  "events": [
+    {
+      "utc": "2026-09-20T09:20:00.761757+00:00",
+      "status": "started",
+      "role": "authentication",
+      "url": "https://identity.dataspace.copernicus.eu/auth/realms/CDSE/protocol/openid-connect/token",
+      "number": 1
+    },
+    {
+      "utc": "2026-09-20T09:20:01.380750+00:00",
+      "status": "authentication_response",
+      "code": 200,
+      "bytes": 3748
+    },
+    {
+      "utc": "2026-09-20T09:20:01.389379+00:00",
+      "status": "started",
+      "role": "archive_download",
+      "url": "https://download.dataspace.copernicus.eu/odata/v1/Products(c49a9c1f-9b00-5676-ab05-683975d898a2)/$value",
+      "number": 2
+    },
+    {
+      "utc": "2026-09-20T09:39:29.585581+00:00",
+      "status": "download_verified",
+      "bytes": 7799368890,
+      "md5": "d1886a92315be184489eea0e072c0578",
+      "sha256": "0b302e9ace9b3b1714a4beb40c57c30fb6a7cc3c00e1b9711f1dae6ef7275050"
+    }
+  ],
+  "secrets_logged": false,
+  "complete": true,
+  "partial_bytes": 7516192768,
+  "path": "duck_frf/Block37_s1_iw_spatial_trial/source_products/S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.zip",
+  "bytes": 7799368890,
+  "md5": "d1886a92315be184489eea0e072c0578",
+  "sha256": "0b302e9ace9b3b1714a4beb40c57c30fb6a7cc3c00e1b9711f1dae6ef7275050",
+  "completed_utc": "2026-09-20T09:39:29.585552+00:00"
+}

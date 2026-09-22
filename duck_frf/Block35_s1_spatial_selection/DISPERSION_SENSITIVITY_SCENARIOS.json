@@ -1,0 +1,29 @@
+[
+  {
+    "k_rad_m": 0.04,
+    "h_m": 5,
+    "omega_rad_s": 0.2782510150266162,
+    "group_velocity_m_s": 6.865227638970222,
+    "dh_dk_fixed_omega_m2": -253.36010181337983,
+    "dh_domega_fixed_k_m_s": 36.904836246825994,
+    "scope": "illustrative analytic sensitivity only; no actual-scene depth inversion"
+  },
+  {
+    "k_rad_m": 0.06,
+    "h_m": 12,
+    "omega_rad_s": 0.6024855325263522,
+    "group_velocity_m_s": 8.650355001466938,
+    "dh_dk_fixed_omega_m2": -476.65055960516884,
+    "dh_domega_fixed_k_m_s": 55.1018495222841,
+    "scope": "illustrative analytic sensitivity only; no actual-scene depth inversion"
+  },
+  {
+    "k_rad_m": 0.02,
+    "h_m": 25,
+    "omega_rad_s": 0.3010588387755415,
+    "group_velocity_m_s": 13.930881558908224,
+    "dh_dk_fixed_omega_m2": -2719.0014920547515,
+    "dh_domega_fixed_k_m_s": 195.17799218643577,
+    "scope": "illustrative analytic sensitivity only; no actual-scene depth inversion"
+  }
+]
