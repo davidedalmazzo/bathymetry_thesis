@@ -1,0 +1,296 @@
+{
+  "args": {
+    "safe": "duck_frf/Block37_s1_iw_spatial_trial/extracted_safe/S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE",
+    "bbox": [
+      -75.79,
+      36.15,
+      -75.56,
+      36.26
+    ],
+    "out": "duck_frf/Block39_s1_paper_confirm/slc/near_k2",
+    "pol": "VV",
+    "coast": null,
+    "sea_side": "E",
+    "mask_res": 50.0,
+    "smooth": 1000.0,
+    "transect_spacing": 250.0,
+    "step": 50.0,
+    "offshore": [
+      250.0,
+      6000.0
+    ],
+    "window": 512.0,
+    "padding": 1,
+    "kmax": 0.3,
+    "kmin_factor": 2.0,
+    "parts_from": "duck_frf/Block39_s1_paper_confirm/slc/near",
+    "levels": 20,
+    "scale": "log10",
+    "blob": "contour",
+    "lobe_min": 3.0,
+    "moving_mean": 5,
+    "max_bright_fraction": 0.002,
+    "affine_tolerance": 1.0,
+    "period": [],
+    "current": [
+      -0.5,
+      0.5
+    ],
+    "alongshore_average": 4,
+    "band": 500.0,
+    "save_spectra": true,
+    "no_figures": true,
+    "geometry_only": false,
+    "chunk": null,
+    "finalize": 12
+  },
+  "utm_epsg": 32618,
+  "sea_mask": {
+    "otsu_threshold_db": -13.894614904681294,
+    "sea_side_contact_fraction": 1.0,
+    "sea_class": "dark",
+    "rule": "class component with the longest contact with bbox side E",
+    "sea_cells": 89379,
+    "small_holes_filled": 1,
+    "largest_components": [
+      {
+        "class": "dark",
+        "cells": 89379,
+        "edge_cells": {
+          "S": 317,
+          "N": 403,
+          "W": 0,
+          "E": 248
+        }
+      },
+      {
+        "class": "dark",
+        "cells": 10481,
+        "edge_cells": {
+          "S": 76,
+          "N": 0,
+          "W": 237,
+          "E": 0
+        }
+      },
+      {
+        "class": "bright",
+        "cells": 3825,
+        "edge_cells": {
+          "S": 19,
+          "N": 15,
+          "W": 6,
+          "E": 0
+        }
+      },
+      {
+        "class": "bright",
+        "cells": 18,
+        "edge_cells": {
+          "S": 0,
+          "N": 0,
+          "W": 0,
+          "E": 0
+        }
+      }
+    ]
+  },
+  "reads": [
+    {
+      "swath": "IW3",
+      "s0_l0_s1_l1": [
+        12490,
+        246,
+        20282,
+        1773
+      ]
+    }
+  ],
+  "n_transects": 52,
+  "window_status": {
+    "touches_land_or_unmapped": 668,
+    "ok": 5364
+  },
+  "identifiable_windows": 3827,
+  "summary": {
+    "tmin_eq6_s": 14.735783663695331,
+    "lambda_max_smoothed_m": 338.9122613400602,
+    "ensemble_by_distance_band": [
+      {
+        "band_m": [
+          0.0,
+          500.0
+        ],
+        "n_windows": 81,
+        "status": "identified",
+        "wavelength_m": 89.81074117703967,
+        "axial_bearing_deg": 74.74488129694203,
+        "argmax_wavelength_m": 90.74176421275497,
+        "argmax_axial_bearing_deg": 74.47200784286947,
+        "peak_to_median": 7.58584440659222
+      },
+      {
+        "band_m": [
+          500.0,
+          1000.0
+        ],
+        "n_windows": 502,
+        "status": "identified",
+        "wavelength_m": 112.2297086671238,
+        "axial_bearing_deg": 80.53767779197409,
+        "argmax_wavelength_m": 109.06024436641614,
+        "argmax_axial_bearing_deg": 85.44602079217873,
+        "peak_to_median": 5.346259859012573
+      },
+      {
+        "band_m": [
+          1000.0,
+          1500.0
+        ],
+        "n_windows": 520,
+        "status": "identified",
+        "wavelength_m": 119.85013472883753,
+        "axial_bearing_deg": 69.44395478041629,
+        "argmax_wavelength_m": 113.02922212020358,
+        "argmax_axial_bearing_deg": 67.9752285742585,
+        "peak_to_median": 5.149070327027289
+      },
+      {
+        "band_m": [
+          1500.0,
+          2000.0
+        ],
+        "n_windows": 520,
+        "status": "identified",
+        "wavelength_m": 127.01156821934926,
+        "axial_bearing_deg": 60.255118703057654,
+        "argmax_wavelength_m": 123.14918949125939,
+        "argmax_axial_bearing_deg": 65.1619728121372,
+        "peak_to_median": 5.110409140119815
+      },
+      {
+        "band_m": [
+          2000.0,
+          2500.0
+        ],
+        "n_windows": 511,
+        "status": "identified",
+        "wavelength_m": 134.45778724835563,
+        "axial_bearing_deg": 66.80140948635159,
+        "argmax_wavelength_m": 132.23336783000303,
+        "argmax_axial_bearing_deg": 69.47626151802345,
+        "peak_to_median": 4.65083516424979
+      },
+      {
+        "band_m": [
+          2500.0,
+          3000.0
+        ],
+        "n_windows": 509,
+        "status": "identified",
+        "wavelength_m": 127.01156821934926,
+        "axial_bearing_deg": 60.255118703057654,
+        "argmax_wavelength_m": 134.0324142108947,
+        "argmax_axial_bearing_deg": 63.761705862656875,
+        "peak_to_median": 5.4339995577438165
+      },
+      {
+        "band_m": [
+          3000.0,
+          3500.0
+        ],
+        "n_windows": 500,
+        "status": "identified",
+        "wavelength_m": 131.75046027921016,
+        "axial_bearing_deg": 72.8972710309474,
+        "argmax_wavelength_m": 123.47317085679651,
+        "argmax_axial_bearing_deg": 68.64846103953799,
+        "peak_to_median": 3.9512621341854253
+      },
+      {
+        "band_m": [
+          3500.0,
+          4000.0
+        ],
+        "n_windows": 479,
+        "status": "identified",
+        "wavelength_m": 142.0032502336585,
+        "axial_bearing_deg": 56.309932474020094,
+        "argmax_wavelength_m": 139.62956263353186,
+        "argmax_axial_bearing_deg": 62.24289886163937,
+        "peak_to_median": 3.6169184139750024
+      },
+      {
+        "band_m": [
+          4000.0,
+          4500.0
+        ],
+        "n_windows": 440,
+        "status": "identified",
+        "wavelength_m": 147.03783088491267,
+        "axial_bearing_deg": 68.96248897457795,
+        "argmax_wavelength_m": 163.53820529566602,
+        "argmax_axial_bearing_deg": 75.50239170368073,
+        "peak_to_median": 5.138882897263689
+      },
+      {
+        "band_m": [
+          4500.0,
+          5000.0
+        ],
+        "n_windows": 420,
+        "status": "identified",
+        "wavelength_m": 147.03783088491267,
+        "axial_bearing_deg": 68.96248897457795,
+        "argmax_wavelength_m": 156.8487185279409,
+        "argmax_axial_bearing_deg": 86.64994968854889,
+        "peak_to_median": 4.526792256019106
+      },
+      {
+        "band_m": [
+          5000.0,
+          5500.0
+        ],
+        "n_windows": 420,
+        "status": "identified",
+        "wavelength_m": 152.64890726398542,
+        "axial_bearing_deg": 63.43494882292177,
+        "argmax_wavelength_m": 139.04829840215515,
+        "argmax_axial_bearing_deg": 63.01700524541053,
+        "peak_to_median": 5.514209007628615
+      },
+      {
+        "band_m": [
+          5500.0,
+          6000.0
+        ],
+        "n_windows": 420,
+        "status": "identified",
+        "wavelength_m": 161.90861620062083,
+        "axial_bearing_deg": 71.56505117707769,
+        "argmax_wavelength_m": 153.1012460775913,
+        "argmax_axial_bearing_deg": 70.39039527640946,
+        "peak_to_median": 3.5326772326765723
+      },
+      {
+        "band_m": [
+          6000.0,
+          6500.0
+        ],
+        "n_windows": 42,
+        "status": "identified",
+        "wavelength_m": 146.28571428571402,
+        "axial_bearing_deg": 89.99999999999956,
+        "argmax_wavelength_m": 147.42996298368772,
+        "argmax_axial_bearing_deg": 87.07023251290073,
+        "peak_to_median": 3.906005699415277
+      }
+    ]
+  },
+  "runtime_s": 24.142077445983887,
+  "notes": [
+    "overlapping windows are not independent samples",
+    "wavelength is SAR-only; depth requires an externally measured period",
+    "geolocation uses burst azimuth time (s1_iw_geometry)"
+  ]
+}

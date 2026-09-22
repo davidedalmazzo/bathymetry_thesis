@@ -119,7 +119,17 @@ def burst_support_geojson(annotation,index):
 
 
 class GeoGrid:
+    """DEPRECATED for IW SLC (kept only to reproduce frozen Blocks 36-37).
+
+    Interpolates the geolocation grid in *line number*; IW grid rows sit at burst
+    starts and bursts overlap in time, so azimuth time is compressed by ~12 % and
+    pixels are misplaced by up to ~1.5 km.  Use s1_iw_geometry.SwathGeometry.
+    See docs/NOTE_S1_GEOLOCATION_BURST_TIME.md."""
     def __init__(self,annotation):
+        import warnings
+        warnings.warn("s1_iw_annotation.GeoGrid interpolates IW geolocation in line number and is wrong for "
+                      "multi-burst SLC; use s1_iw_geometry.SwathGeometry (Block38 geolocation fix)",
+                      DeprecationWarning,stacklevel=2)
         p=annotation['geolocation_grid'];image=np.array([[x['pixel'],x['line']] for x in p],float)
         geo=np.array([[x['longitude'],x['latitude']] for x in p],float)
         self.forward_lon=LinearNDInterpolator(image,geo[:,0]);self.forward_lat=LinearNDInterpolator(image,geo[:,1])

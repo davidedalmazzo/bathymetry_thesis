@@ -15,7 +15,11 @@ by depth bin, figure lambda_SAR vs lambda_pred and relative error vs depth.
 from __future__ import annotations
 import argparse, csv, json, math
 from pathlib import Path
+import sys
 import numpy as np
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from forward_lambda_check import block_bootstrap
 
 
 def main(argv=None):
@@ -25,6 +29,15 @@ def main(argv=None):
     ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--prefer", default=None, help="run label preferred where runs overlap in depth (e.g. far for >19 m)")
     ap.add_argument("--prefer-min-depth", type=float, default=np.inf)
+    ap.add_argument("--primary-gauge", default=None,
+                    help="predeclared single reference gauge (e.g. waverider-17m): used for every window where it is "
+                         "available. Without it the gauge nearest in depth is used, which makes the reference spectrum "
+                         "depth-dependent and mixes gauges inside a depth bin (sensitivity, not primary result)")
+    ap.add_argument("--forward-template", default="forward_{gauge}",
+                    help="name of the per-gauge forward_lambda_check output folder inside each run dir")
+    ap.add_argument("--bootstrap", type=int, default=2000)
+    ap.add_argument("--block-transects", type=int, default=9)
+    ap.add_argument("--block-distance-m", type=float, default=1024.0)
     a = ap.parse_args(argv); a.out.mkdir(parents=True, exist_ok=True)
     gauges = {g.split("=")[0]: float(g.split("=")[1]) for g in a.gauge}
     rows = []
@@ -32,7 +45,7 @@ def main(argv=None):
         label, d = spec.split(":", 1); d = Path(d)
         per = {}
         for name in gauges:
-            f = d / f"forward_{name}" / "forward_windows.csv"
+            f = d / a.forward_template.format(gauge=name) / "forward_windows.csv"
             if not f.exists():
                 continue
             for r in csv.DictReader(open(f)):
@@ -41,7 +54,11 @@ def main(argv=None):
                 per.setdefault((r["transect"], r["distance_m"]), {})[name] = r
         for key, by in per.items():
             any_r = next(iter(by.values())); h = float(any_r["depth_mean_m"])
-            name = min((n for n in by), key=lambda n: abs(gauges[n] - h)); r = by[name]
+            if a.primary_gauge and a.primary_gauge in by:
+                name = a.primary_gauge
+            else:
+                name = min((n for n in by), key=lambda n: abs(gauges[n] - h))
+            r = by[name]
             lam_sar = 2 * math.pi / float(r["sar_centroid_k"]) if r["sar_centroid_k"] not in ("", "nan") else np.nan
             lam_pap = float(r["sar_paper_wavelength_m"]) if r["sar_paper_wavelength_m"] not in ("", "nan") else np.nan
             lam_pred = 2 * math.pi / float(r["pred_Ek_centroid_k"])
@@ -50,7 +67,9 @@ def main(argv=None):
                          "lambda_sar_radial_m": lam_sar, "lambda_sar_paper_m": lam_pap,
                          "sar_paper_identifiable": r["sar_identifiable"] == "True", "lambda_pred_m": lam_pred,
                          "rel_err_radial": lam_sar / lam_pred - 1, "rel_err_paper": lam_pap / lam_pred - 1,
-                         "uncertainty_max_m": float(r["uncertainty_max_m"]), "legacy_fraction": float(r.get("legacy_fraction") or 0)})
+                         "uncertainty_max_m": float(r["uncertainty_max_m"]), "legacy_fraction": float(r.get("legacy_fraction") or 0),
+                         "dominant_source_class": int(float(r.get("dominant_source_class") or 0)),
+                         "block": f"{int(key[0]) // a.block_transects}_{int(float(key[1]) // a.block_distance_m)}"})
     if a.prefer:
         rows = [r for r in rows if not (r["depth_mean_m"] >= a.prefer_min_depth and r["run"] != a.prefer)
                 and not (r["depth_mean_m"] < a.prefer_min_depth and r["run"] == a.prefer)]
@@ -58,7 +77,20 @@ def main(argv=None):
         w = csv.DictWriter(f, fieldnames=list(rows[0])); w.writeheader(); w.writerows(rows)
     d = np.array([r["depth_mean_m"] for r in rows]); er = np.array([r["rel_err_radial"] for r in rows])
     ep = np.array([r["rel_err_paper"] if r["sar_paper_identifiable"] else np.nan for r in rows])
-    summ = {"gauges_m": gauges, "n_windows": len(rows), "depth_range_m": [float(d.min()), float(d.max())],
+    rng = np.random.default_rng(0)
+    blocks = [r["block"] for r in rows]
+    names = {1: "frf_survey", 2: "cudem", 3: "bluetopo_modern", 4: "legacy_corrected", 5: "bluetopo_interpolated_or_old"}
+    summ = {"gauge_selection": ("primary gauge " + a.primary_gauge) if a.primary_gauge else "nearest in depth (sensitivity)",
+            "blocks": {"transects": a.block_transects, "distance_m": a.block_distance_m, "resamples": a.bootstrap},
+            "radial_centroid_block_bootstrap": block_bootstrap(er, blocks, a.bootstrap, rng),
+            "paper_peak_block_bootstrap": block_bootstrap(ep, blocks, a.bootstrap, rng),
+            "paper_peak_by_dominant_source": {nm: block_bootstrap([r["rel_err_paper"] if r["sar_paper_identifiable"] else np.nan
+                                                                  for r in rows if r["dominant_source_class"] == c],
+                                                                 [r["block"] for r in rows if r["dominant_source_class"] == c],
+                                                                 a.bootstrap, rng)
+                                              for c, nm in names.items()
+                                              if any(r["dominant_source_class"] == c for r in rows)},
+            "gauges_m": gauges, "n_windows": len(rows), "depth_range_m": [float(d.min()), float(d.max())],
             "radial_centroid": {"median": float(np.nanmedian(er)), "p10_p90": np.nanpercentile(er, [10, 90]).tolist(),
                                 "robust_scatter_nmad": float(1.4826 * np.nanmedian(np.abs(er - np.nanmedian(er))))},
             "paper_peak": {"n": int(np.isfinite(ep).sum()), "median": float(np.nanmedian(ep)), "p10_p90": np.nanpercentile(ep, [10, 90]).tolist(),

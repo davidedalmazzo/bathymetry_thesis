@@ -73,11 +73,17 @@ def peak_and_centroid(kc, S):
     return float(kp), float(np.sum(kc[lo:hi + 1] * w) / np.sum(w)), [float(kc[lo]), float(kc[hi])]
 
 
-def sar_radial(P, mask, k, sector_deg):
+def sar_radial(P, mask, k, sector_deg, th_fixed=None):
+    """Radial spectrum inside a directional sector.
+
+    th_fixed (axial bearing, deg from N) fixes the sector a priori (e.g. the gauge
+    mean wave direction): the sector then cannot follow a spurious speckle maximum.
+    With th_fixed None the sector is centred on the SAR maximum (data-driven, but
+    it selects its own noise peak when the swell lobe is weak)."""
     KE, KN = np.meshgrid(k, k); kr = np.hypot(KE, KN); th = np.degrees(np.arctan2(KE, KN)) % 180
     Pm = np.where(mask, P, np.nan)
     iy, ix = np.unravel_index(np.nanargmax(np.where(KE >= 0, Pm, np.nan)), P.shape)
-    th0 = th[iy, ix]
+    th0 = float(th_fixed % 180) if th_fixed is not None else th[iy, ix]
     dth = np.abs((th - th0 + 90) % 180 - 90)
     sect = mask & (dth <= sector_deg)
     floor = np.nanmedian(np.where(mask & ~sect, P, np.nan))      # speckle/background level
@@ -86,7 +92,30 @@ def sar_radial(P, mask, k, sector_deg):
     cnt = np.histogram(kr[sect], bins=kbins)[0]
     with np.errstate(invalid="ignore"):
         S = np.where(cnt > 0, num / cnt, 0.0)
-    return kbins, np.clip(S, 0, None), float(th0), float(floor)
+    return kbins, np.clip(S, 0, None), float(th0), float(floor), float(th[iy, ix])
+
+
+def block_bootstrap(values, blocks, n_resamples, rng):
+    """Median of `values` with a percentile CI resampling whole spatial blocks.
+
+    Windows overlap (50 m step, 512-1024 m windows, alongshore averaging over
+    2N+1 transects), so individual windows are not independent: a naive CI is
+    optimistic by roughly the square root of the number of windows per block."""
+    v = np.asarray(values, float); b = np.asarray(blocks)
+    ok = np.isfinite(v); v, b = v[ok], b[ok]
+    if v.size == 0:
+        return {"n": 0}
+    uniq = np.unique(b); groups = [v[b == u] for u in uniq]
+    out = {"n": int(v.size), "n_blocks": int(uniq.size), "median": float(np.median(v)),
+           "p10_p90": np.percentile(v, [10, 90]).tolist(), "rms": float(np.sqrt(np.mean(v ** 2)))}
+    if n_resamples and uniq.size > 1:
+        meds = np.empty(n_resamples)
+        for i in range(n_resamples):
+            pick = rng.integers(0, len(groups), len(groups))
+            meds[i] = np.median(np.concatenate([groups[j] for j in pick]))
+        out["median_ci95_block_bootstrap"] = np.percentile(meds, [2.5, 97.5]).tolist()
+        out["median_se_block_bootstrap"] = float(np.std(meds))
+    return out
 
 
 def main(argv=None):
@@ -95,14 +124,24 @@ def main(argv=None):
     ap.add_argument("--ground-truth", type=Path, required=True, help="frf_ground_truth output dir")
     ap.add_argument("--reference", default="FRF:8m-array", help="gauge whose E(f) is propagated")
     ap.add_argument("--max-depth", type=float, default=30.0)
+    ap.add_argument("--min-depth", type=float, default=0.0, help="certify only windows with mean depth >= this (split long runs by depth)")
     ap.add_argument("--max-uncertainty", type=float, default=0.5, help="max empirical vertical uncertainty (m) in footprint")
     ap.add_argument("--min-year", type=float, default=0, help="optional minimum source year (accuracy, not age, is the default criterion)")
     ap.add_argument("--sector", type=float, default=30.0, help="half-width (deg) of the SAR directional sector")
+    ap.add_argument("--sector-source", choices=("sar", "fixed"), default="sar",
+                    help="sar: sector centred on the SAR maximum (data-driven). fixed: sector centred on "
+                         "--sector-bearing, an a-priori axial direction (gauge mean wave direction)")
+    ap.add_argument("--sector-bearing", type=float, help="axial bearing (deg from N) for --sector-source fixed")
+    ap.add_argument("--bootstrap", type=int, default=2000, help="block-bootstrap resamples for the confidence interval (0 disables)")
+    ap.add_argument("--block-transects", type=int, default=9, help="transects per spatial block (>= 2*alongshore_average+1)")
+    ap.add_argument("--block-distance-m", type=float, default=1024.0, help="along-transect block length (>= window length)")
     ap.add_argument("--depth-samples", type=int, default=60)
     ap.add_argument("--out", type=Path)
     ap.add_argument("--chunk", nargs=2, type=int, metavar=("I", "N"), help="process the I-th of N window slices, save partial rows")
     ap.add_argument("--finalize", type=int, metavar="N", help="merge N partial row files and write summary/figure")
     a = ap.parse_args(argv)
+    if a.sector_source == "fixed" and a.sector_bearing is None:
+        raise SystemExit("--sector-source fixed requires --sector-bearing")
     out = a.out or a.run / "forward_check"; out.mkdir(parents=True, exist_ok=True)
     import rasterio
     from rasterio.features import geometry_mask
@@ -117,6 +156,19 @@ def main(argv=None):
     idx = {(int(t), float(d)): i for i, (t, d) in enumerate(zip(sp["transect"], sp["distance_m"]))}
     rows_in = [r for r in csv.DictReader(open(a.run / "windows.csv")) if r["status"] == "ok"]
     rng = np.random.default_rng(0); rows = []
+    import pickle
+    parts = out / "parts"
+    if a.finalize:
+        files = [parts / f"part_{i}_of_{a.finalize}.pkl" for i in range(a.finalize)]
+        missing = [f.name for f in files if not f.exists()]
+        if missing:
+            raise SystemExit(f"missing partial results: {missing}")
+        for f in files:
+            rows += pickle.loads(f.read_bytes())
+        rows.sort(key=lambda o: (o["transect"], o["distance_m"]))
+        rows_in = []
+    elif a.chunk:
+        rows_in = list(np.array_split(np.array(rows_in, dtype=object), a.chunk[1])[a.chunk[0]])
     for r in rows_in:
         key = (int(r["transect"]), float(r["distance_m"]))
         if key not in idx:
@@ -135,20 +187,25 @@ def main(argv=None):
         d = depth[inside]; u = unc[inside]
         cert = (np.all(np.isfinite(d)) and np.all(np.isfinite(u)) and np.nanmax(u) <= a.max_uncertainty
                 and np.all(interp[inside] == 0) and (a.min_year <= 0 or (np.all(np.isfinite(year[inside])) and np.nanmin(year[inside]) >= a.min_year))
-                and np.nanmax(d) <= a.max_depth and np.nanmin(d) > 0)
+                and np.nanmax(d) <= a.max_depth and np.nanmin(d) > 0 and np.nanmean(d) >= a.min_depth)
         o = {"transect": key[0], "distance_m": key[1], "E": float(r["E"]), "N": float(r["N"]), "certified": bool(cert),
              "depth_mean_m": float(np.nanmean(d)), "depth_p10_m": float(np.nanpercentile(d, 10)), "depth_p90_m": float(np.nanpercentile(d, 90)),
              "uncertainty_max_m": float(np.nanmax(u)) if np.any(np.isfinite(u)) else np.nan,
              "frf_survey_fraction": float(np.mean(src[inside] == 1)), "legacy_fraction": float(np.mean(src[inside] == 4)),
+             "bluetopo_modern_fraction": float(np.mean(src[inside] == 3)), "bluetopo_old_fraction": float(np.mean(src[inside] == 5)),
+             "cudem_fraction": float(np.mean(src[inside] == 2)),
+             "dominant_source_class": int(np.bincount(src[inside].astype(int), minlength=6).argmax()),
              "source_year_min": float(np.nanmin(year[inside])) if np.any(np.isfinite(year[inside])) else np.nan, "sar_paper_wavelength_m": float(r["wavelength_m"]) if r.get("wavelength_m") else np.nan,
              "sar_identifiable": r.get("identifiable") == "True"}
         if cert:
             P = power[idx[key]].astype(float)
-            kbins, S_sar, th0, floor = sar_radial(P, mask, k, a.sector)
+            thf = a.sector_bearing if a.sector_source == "fixed" else None
+            kbins, S_sar, th0, floor, th_max = sar_radial(P, mask, k, a.sector, thf)
             kc = 0.5 * (kbins[1:] + kbins[:-1])
             kp, kcen, band = peak_and_centroid(kc, S_sar)
             hs = rng.choice(d[np.isfinite(d)], size=min(a.depth_samples, np.isfinite(d).sum()), replace=False)
-            o.update(sar_axial_deg=th0, sar_peak_k=kp, sar_centroid_k=kcen, sar_band_k=band)
+            o.update(sar_axial_deg=th0, sar_sector_source=a.sector_source, sar_max_axial_deg=th_max,
+                     sar_peak_k=kp, sar_centroid_k=kcen, sar_band_k=band)
             for tag, w in (("Ek", False), ("k2Ek", True)):
                 # prediction on a fine k grid: the SAR bin width (2 pi / window) would quantise it by ~10 %
                 kf = np.linspace(0, kbins[-1], 8 * (len(kbins) - 1) + 1); kfc = 0.5 * (kf[1:] + kf[:-1])
@@ -158,13 +215,22 @@ def main(argv=None):
             for inst, T in periods.items():
                 o[f"lambda_Tpeak_{inst.split(':')[-1]}_m"] = float(np.mean(2 * np.pi / k_from_omega(2 * np.pi / T, hs)))
         rows.append(o)
+    if a.chunk:
+        parts.mkdir(parents=True, exist_ok=True)
+        (parts / f"part_{a.chunk[0]}_of_{a.chunk[1]}.pkl").write_bytes(pickle.dumps(rows))
+        print(f"saved part {a.chunk[0]}/{a.chunk[1]}: {len(rows)} windows", flush=True)
+        return
     keys = []
     for o in rows:
         keys += [k_ for k_ in o if k_ not in keys]
     with open(out / "forward_windows.csv", "w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=keys); w.writeheader(); w.writerows(rows)
     cert = [o for o in rows if o["certified"]]
+    for o in cert:                       # spatial blocks for the bootstrap (non-overlapping in both directions)
+        o["block"] = f"{int(o['transect']) // a.block_transects}_{int(o['distance_m'] // a.block_distance_m)}"
     summ = {"reference_gauge": a.reference, "reference_peak_period_s": periods.get(a.reference), "periods_by_gauge_s": periods,
+            "sector": {"source": a.sector_source, "half_width_deg": a.sector, "bearing_deg": a.sector_bearing},
+            "blocks": {"transects": a.block_transects, "distance_m": a.block_distance_m, "resamples": a.bootstrap},
             "criteria": {"max_depth_m": a.max_depth, "max_uncertainty_m": a.max_uncertainty, "min_year": a.min_year,
                          "not_interpolated": True}, "windows_total": len(rows), "windows_certified": len(cert),
             "note": "overlapping windows (50 m step, 512 m windows, alongshore averaging) are strongly correlated; effective sample is far smaller"}
@@ -174,13 +240,23 @@ def main(argv=None):
                 s_ = np.array([o[f"sar_{kind}_k"] for o in cert]); p_ = np.array([o[f"pred_{tag}_{kind}_k"] for o in cert])
                 ok = np.isfinite(s_) & np.isfinite(p_) & (p_ > 0)
                 rel = p_[ok] / s_[ok] - 1          # = lambda_SAR / lambda_pred - 1
-                summ[f"{tag}_{kind}"] = {"n": int(ok.sum()), "median_lambdaSAR_over_lambdaPred_minus_1": float(np.median(rel)),
-                                         "p10_p90": np.percentile(rel, [10, 90]).tolist(), "rms": float(np.sqrt(np.mean(rel ** 2)))}
+                blk = [o["block"] for o, m in zip(cert, ok) if m]
+                summ[f"{tag}_{kind}"] = block_bootstrap(rel, blk, a.bootstrap, rng)
         lp = np.array([o["sar_paper_wavelength_m"] for o in cert]); lpr = np.array([2 * np.pi / o["pred_Ek_centroid_k"] for o in cert])
         ok = np.isfinite(lp) & np.isfinite(lpr) & np.array([o["sar_identifiable"] for o in cert])
         rel = lp[ok] / lpr[ok] - 1
-        summ["paper_peak_vs_Ek_centroid"] = {"n": int(ok.sum()), "median_lambdaSAR_over_lambdaPred_minus_1": float(np.median(rel)),
-                                             "p10_p90": np.percentile(rel, [10, 90]).tolist(), "rms": float(np.sqrt(np.mean(rel ** 2)))}
+        blk = [o["block"] for o, m in zip(cert, ok) if m]
+        summ["paper_peak_vs_Ek_centroid"] = block_bootstrap(rel, blk, a.bootstrap, rng)
+        # same statistic split by the bathymetric source that dominates the footprint
+        names = {1: "frf_survey", 2: "cudem", 3: "bluetopo_modern", 4: "legacy_corrected", 5: "bluetopo_interpolated_or_old"}
+        by_src = {}
+        sel = [o for o, m in zip(cert, ok) if m]; relv = rel
+        for c, nm in names.items():
+            m_ = np.array([o["dominant_source_class"] == c for o in sel])
+            if m_.sum():
+                by_src[nm] = block_bootstrap(relv[m_], [o["block"] for o, q in zip(sel, m_) if q], a.bootstrap, rng)
+        summ["paper_peak_by_dominant_source"] = by_src
+        summ["statistic"] = "lambda_SAR / lambda_predicted - 1; CI from a bootstrap over spatial blocks"
         summ["k2_weighting_note"] = ("k^2 weighting of the full gauge spectrum is dominated by the high-frequency tail "
                                      "(no azimuth cut-off / system MTF / noise model); reported for completeness, not interpretable")
         d = np.array([o["depth_mean_m"] for o in cert])

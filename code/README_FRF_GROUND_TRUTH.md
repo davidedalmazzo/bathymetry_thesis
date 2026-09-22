@@ -40,3 +40,15 @@ cell; `forward_lambda_check.py` certifies on it. Duck example:
 --legacy-grid https://pubs.usgs.gov/of/2011/1015/data/bathymetry/innershelf/nhatt.zip,-0.128,nhatt,2001
 --legacy-grid https://pubs.usgs.gov/of/2011/1015/data/bathymetry/nearshore/vims_2002.zip,-0.623,vims_2002,2002
 ```
+
+## Water-level policy (2026-09-22)
+
+`--water-level-policy qc_only` (default) uses the measured water level for band 3 only
+if it passed QC *and* is `representative_eligible`; otherwise band 3 is the still-water
+depth on the NAVD88 datum (`-bed`) and `GROUND_TRUTH.json` / `MERGE_REPORT.json` record
+`event_water_level_status` with the value that was rejected. At Duck on 2021-10-28 the
+FRF `eopNoaaTide` reading (+0.235 m, 39 s from the acquisition) is NOAA *preliminary*
+data with `status = qc_unknown`, so it is not applied: +0.235 m (plus unmodelled wave
+setup) belongs in the error budget instead. `--water-level-policy preliminary` restores
+the old behaviour. `rebuild_merged_bathymetry.py` re-runs the merge of an existing
+output directory offline (no FRF budget spent) when this logic changes.

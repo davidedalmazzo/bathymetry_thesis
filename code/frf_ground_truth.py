@@ -92,6 +92,26 @@ def _nmad(d):
     return float(1.4826 * np.median(np.abs(d - np.median(d)))) if d.size else float("nan")
 
 
+def water_level(wl, policy, max_offset_s=1800.0):
+    """Event water level actually used for band 3, with the reason it was accepted or not.
+    The FRF eopNoaaTide feed is NOAA *preliminary* data: it carries no QC flag
+    (status 'qc_unknown', representative_eligible False), so under the default
+    policy it is reported but not applied."""
+    if not wl:
+        return None, {"used": False, "reason": "no water level observation", "policy": policy}
+    st = {"policy": policy, "instrument": wl["instrument"], "value_m": wl["value"], "offset_s": wl["offset_s"],
+          "qc_status": wl["status"], "qc_flag": wl["qc_flag"], "representative_eligible": wl["representative_eligible"]}
+    if abs(wl["offset_s"]) > max_offset_s:
+        return None, {**st, "used": False, "reason": f"nearest measurement is {wl['offset_s']:.0f} s from the acquisition"}
+    ok_qc = str(wl["status"]).lower() == "retrieved" and str(wl["representative_eligible"]).lower() == "true"
+    if policy == "qc_only" and not ok_qc:
+        return None, {**st, "used": False,
+                      "reason": "not QC'd / not representative_eligible; depth band = -bed (NAVD88), "
+                                "add this water level and the wave setup to the error budget "
+                                f"(offset would be {wl['value']:+.3f} m)"}
+    return wl["value"], {**st, "used": True, "reason": "QC passed" if ok_qc else "policy=preliminary"}
+
+
 def merged_bathymetry(bbox, survey, res, out_tif, eta, bluetopo_tif=None, bluetopo_prov=None, cudem_tif=None,
                       frf_uncertainty=0.15, frf_year=None, legacy=(), modern_min_year=2010,
                       legacy_min_depth=9.0, min_overlap_cells=200):
@@ -221,14 +241,16 @@ def merged_bathymetry(bbox, survey, res, out_tif, eta, bluetopo_tif=None, blueto
         put(bt_mod, bz, 3, bu, bemp, byr, bitp, bc)
     if survey is not None:
         m = np.isfinite(frf); put(m, frf, 1, frf_uncertainty, frf_uncertainty, frf_year or np.nan, 0.0)
-    depth = (eta - z) if eta is not None else nan()
+    # band 3 is the still-water depth: the event water level when it is accepted,
+    # otherwise the NAVD88 datum itself (depth = -bed), which must then be declared
+    depth = (eta - z) if eta is not None else -z
     with rasterio.open(out_tif, "w", driver="GTiff", height=nn, width=ne, count=8, dtype="float32",
                        crs=f"EPSG:{epsg}", transform=T, nodata=np.nan, compress="deflate") as ds:
         for i, a in enumerate((z, src, depth, unc, con, year, interp, emp), 1):
             ds.write(a.astype("float32"), i)
         ds.descriptions = ("bed elevation NAVD88 m",
                            "source 1 FRF survey / 3 BlueTopo modern / 4 legacy corrected / 5 BlueTopo interpolated-old / 2 CUDEM / 0 none",
-                           "event water depth m (water level - bed)", "declared vertical uncertainty m",
+                           "still-water depth m (event water level - bed, or -bed when no QC'd water level)", "declared vertical uncertainty m",
                            "BlueTopo contributor id", "source survey start year", "interpolated source flag",
                            "empirical vertical uncertainty m (NMAD vs higher-ranked data)")
     frac = {f"fraction_class_{c}": float((src == c).mean()) for c in (1, 2, 3, 4, 5)}
@@ -270,6 +292,10 @@ def main(argv=None):
     ap.add_argument("--dem-max-days", type=float, default=45.0)
     ap.add_argument("--grid-res", type=float, default=10.0)
     ap.add_argument("--skip-observations", action="store_true")
+    ap.add_argument("--water-level-policy", choices=("qc_only", "preliminary"), default="qc_only",
+                    help="qc_only (default): use the measured water level only if it passed QC and is flagged "
+                         "representative_eligible; otherwise band 3 is depth = -bed (still-water datum NAVD88). "
+                         "preliminary: accept the nearest measurement within 30 min whatever its QC status")
     ap.add_argument("--legacy-grid", action="append", default=[], metavar="PATH|URL.zip,OFFSET,LABEL,YEAR",
                     help="older gridded survey; OFFSET = its datum minus NAVD88 correction to add (m), e.g. MSL->NAVD88 at the "
                          "nearest tide station; a zip URL is downloaded to _cache/legacy and the first raster inside is used")
@@ -301,13 +327,15 @@ def main(argv=None):
     blu = coastal_dem.read_bluetopo(a.bbox, out / "bluetopo_bbox.tif", ROOT / "_cache/bluetopo")
     gt["bluetopo"] = blu or {"status": "no BlueTopo tile for bbox"}
     wl = gt.get("observations", {}).get("water_level_navd88")
-    eta = wl["value"] if wl and abs(wl["offset_s"]) <= 1800 else None
+    eta, eta_status = water_level(wl, a.water_level_policy)
+    gt["event_water_level"] = eta_status
     legacy = [coastal_dem.legacy_spec(x, ROOT / "_cache/legacy") for x in a.legacy_grid]
     gt["merged_bathymetry"] = merged_bathymetry(a.bbox, survey, a.grid_res, out / "bathymetry_merged_utm.tif", eta, legacy=legacy,
                                                 bluetopo_tif=out / "bluetopo_bbox.tif" if blu else None, bluetopo_prov=blu,
                                                 cudem_tif=out / "cudem_bbox_navd88.tif" if cud else None,
                                                 frf_year=float(survey["survey_time_utc"][:4]) if survey else None)
     gt["merged_bathymetry"]["event_water_level_used_m"] = eta
+    gt["merged_bathymetry"]["event_water_level_status"] = eta_status
     gt["notes"] = ["FRF eopNoaaTide water level is NOAA preliminary (not NOAA-QC'd); wave setup nearshore not included",
                    "CUDEM mixes survey years; FRF survey DEM interpolates between survey lines",
                    "AWAC currents are at 11 m depth; not the surface current seen by the SAR"]

@@ -1046,3 +1046,74 @@ modified.
   with WR17 the same bins are within ±8 %) and 22.5–23 m (+13 %) / 27–28 m (−20 %, n=86).
   Using the 8 m-array spectrum offshore under-predicts (−10…−25 % beyond 12 m): reference
   spectrum must be local. Gauge choice (±10 %) dominates over bathymetry (≤ 1 %).
+
+### 2026-09-22 — Whole-scene forward check on GRD (Level-1, ESA-focused)
+
+- Same pipeline on GRDH `..._8C9F` (VV): `grd/ext_near` 512 m 0.25–6 km (5670 windows ok,
+  3791 identifiable), `grd/ext_far` 1024 m 5–20 km (2157 ok, 1631 identifiable).
+  `forward_lambda_check.py --min-depth` added (depth-sliced runs per gauge).
+- Combined (`grd/forward_combined`, 4745 windows, 7.0–27.5 m):
+  paper contour peak λ vs nearest-depth-gauge prediction: median +0.4 %, NMAD 16 %,
+  p10/p90 −22/+21 % (SLC: −5.3 %, NMAD 21 %, p10 −59 %); radial centroid +8.8 %,
+  NMAD 19 %. Per bin: 7–9 m +2…+6 %, 15–22 m +4…+8 %, AWAC-referenced 9–15 m
+  +12…+25 %, 26–28 m ±15 %.
+- Multilooking (ENL≈4–5) removes most spurious short-λ peaks of the single-look SLC.
+
+### 2026-09-22 — Block39: audit fixes and confirmation run (SLC + GRD)
+
+Fixes to the issues raised in the external audit of dd2f21d, then the whole-scene
+forward check repeated from scratch on both products (`duck_frf/Block39_s1_paper_confirm`).
+
+Code
+- `s1_transect_bathy.py`: morphology on edge-replicated padding (the old
+  `border_value=1` made both classes touch every border, so `--sea-side` degenerated
+  to "largest component"); tie between candidate components now raises;
+  `sea_side_contact_fraction` recorded. Window footprints from the outer pixel edges
+  with the boundary densified every pixel (sea test applied to it too) instead of the
+  3× subsampled interior grid. Spectral mask excludes only DC; the low-k cut moved to
+  peak picking as `k >= --kmin-factor * pi / window` (default 4) with a
+  `peak_at_kmin_edge` flag; `--parts-from` finalises stored partial spectra with a
+  different factor.
+- `s1_iw_annotation.GeoGrid` now raises `DeprecationWarning` (line-number geolocation,
+  superseded by `s1_iw_geometry.SwathGeometry`).
+- `frf_ground_truth.water_level(...)` + `--water-level-policy qc_only|preliminary`:
+  the FRF `eopNoaaTide` reading at Duck is NOAA preliminary (`qc_unknown`,
+  `representative_eligible False`), so it is no longer applied; band 3 is the NAVD88
+  still-water depth and the rejected value (+0.235 m) goes into the error budget.
+  New `rebuild_merged_bathymetry.py` re-runs the merge offline (no FRF budget).
+- `forward_lambda_check.py`: `--sector-source sar|fixed --sector-bearing`, per-class
+  bathymetry fractions and `dominant_source_class` per window, `block_bootstrap`
+  (resamples whole spatial blocks: `--block-transects`, `--block-distance-m`),
+  working `--chunk/--finalize`. `forward_lambda_combine.py`: `--primary-gauge`
+  (predeclared gauge; nearest-in-depth kept as sensitivity), `--forward-template`,
+  block-bootstrap CIs and the statistic split by dominant bathymetric source.
+- New `coastline_check.py`: SAR waterline vs the DEM bed-elevation contour.
+
+Results (bbox −75.79 36.15 −75.56 36.26, N=4, ground truth `..._ext20` rebuilt)
+- Waterline: SAR vs DEM z = 0 contour, median +10 m seaward (NMAD 33 m, mask cell
+  50 m); at z = +0.235 m (the rejected tide) +13.5 m. No systematic shift of the
+  transect origin.
+- Window acceptance with exact footprints: SLC near 5364 ok (was 5200), GRD near 5853
+  (was 5670); far unchanged (2213 / 2218).
+- kmin sweep (factor 2/3/4, same partial spectra): median λ identical for 3 and 4,
+  factor 2 loses ~3 % of identifiable windows to low-k clutter; ≤ 1 % of identified
+  peaks lie within half a bin of the cut. The cut is not driving the result.
+- Primary result, gauge WR17 (FRF:waverider-17m) predeclared, paper contour peak,
+  4706 (SLC) / 5000 (GRD) windows, 7.0–27.3 m, CI from a bootstrap over 53–62 spatial
+  blocks: **GRD −0.8 % (CI −3.8…+2.3), SLC −4.8 % (CI −8.5…−1.2)**; p10/p90 −21/+20 %
+  (GRD) vs −54/+17 % (SLC, single-look spurious short-λ peaks). Radial centroid
+  +7.5 % (GRD) / +2.2 % (SLC).
+- Gauge choice at aggregate level is minor: nearest-in-depth instead of WR17 moves the
+  median by ≤ 0.6 % (it still matters inside AWAC-referenced depth bins).
+- Directional sector: fixing it at the gauge bearing (72°) instead of the SAR maximum
+  moves the radial centroid by ≤ 3 % and leaves the paper peak unchanged.
+- Split by dominant bathymetric source (GRD, WR17): BlueTopo modern +2.8 %,
+  nhatt-corrected legacy −2.3 % — a ~5 % source-dependent spread, larger than the
+  ≤ 1 % quoted from the bias/NMAD analysis alone.
+- Per 2 m depth bin (GRD): +8 % at 7–11 m, −5…+1 % at 11–23 m, −9 % at 25–29 m;
+  SLC follows it except 17–19 m (−20 %) and 27–29 m (−38 %).
+
+Tests: 359 pass. Pre-existing failures in this Linux device shell only
+(`test_frf_block33.py`, `test_frf_operational.py`, `test_s1_iw_annotation.py`
+credentials, `test_scene_selection.py`): temporary directories outside the repo and
+file deletion not permitted in the shell — unrelated to these changes.

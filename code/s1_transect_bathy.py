@@ -186,11 +186,10 @@ def otsu(values, bins=256):
 
 
 def sea_mask_from_sar(smap, sea_side="auto", min_hole_cells=20):
-    """Instantaneous water/land split (Otsu on median-filtered dB), then the open
-    sea is the water-class component touching the bbox side facing the sea.
-    With --sea-side auto the side is the one where either class forms the longest
-    uninterrupted edge run and the class is chosen by the larger edge-connected
-    component (reported; check overview.png or pass --sea-side)."""
+    """Instantaneous water/land split (Otsu on median-filtered dB) and morphology
+    on edge-replicated padding (the bbox border is not assigned to any class).
+    With --sea-side S the open sea is the component with the longest contact with
+    that bbox side (a tie raises); with 'auto' it is simply the largest component."""
     s = smap["sigma0"]; have = np.isfinite(s)
     db = np.where(have, 10 * np.log10(np.maximum(s, 1e-8)), np.nan)
     fill = np.where(have, db, np.nanmedian(db))
@@ -198,19 +197,26 @@ def sea_mask_from_sar(smap, sea_side="auto", min_hole_cells=20):
     thr = otsu(db[have]); info = {"otsu_threshold_db": thr}
     sides = {"S": (0, slice(None)), "N": (-1, slice(None)), "W": (slice(None), 0), "E": (slice(None), -1)}
     comps = []
+    pad = 3                                   # edge-replicated padding: no class is forced onto the border
     for cls, m in (("dark", have & (db < thr)), ("bright", have & (db >= thr))):
-        m = ndimage.binary_opening(ndimage.binary_closing(m, iterations=2, border_value=1), iterations=2, border_value=1) & have
+        mp = np.pad(m, pad, mode="edge")
+        mp = ndimage.binary_opening(ndimage.binary_closing(mp, iterations=2), iterations=2)
+        m = mp[pad:-pad, pad:-pad] & have
         lab, n = ndimage.label(m)
         for i in range(1, n + 1):
             c = lab == i
             edge = {k: int(c[v].sum()) for k, v in sides.items()}
             comps.append({"class": cls, "mask": c, "cells": int(c.sum()), "edge_cells": edge})
     if sea_side == "auto":
-        big = max(comps, key=lambda c: c["cells"])
-        sea = big; rule = "auto: largest single connected class component (verify overview.png, or pass --sea-side)"
+        sea = max(comps, key=lambda c: c["cells"])
+        rule = "auto: largest connected class component (no side information; verify overview.png or pass --sea-side)"
     else:
-        sea = max(comps, key=lambda c: (c["edge_cells"][sea_side], c["cells"]))
+        ranked = sorted(comps, key=lambda c: (c["edge_cells"][sea_side], c["cells"]), reverse=True)
+        sea = ranked[0]
         rule = f"class component with the longest contact with bbox side {sea_side}"
+        if len(ranked) > 1 and ranked[1]["edge_cells"][sea_side] == sea["edge_cells"][sea_side]:
+            raise SystemExit(f"land/sea split ambiguous: two components touch side {sea_side} equally; pass --coast")
+        info["sea_side_contact_fraction"] = sea["edge_cells"][sea_side] / max(1, int(have[sides[sea_side]].sum()))
     holes = ndimage.binary_fill_holes(sea["mask"]) & ~sea["mask"]
     lab, n = ndimage.label(holes)
     sizes = ndimage.sum(holes, lab, range(1, n + 1)) if n else []
@@ -326,7 +332,7 @@ def window_spectrum(sig, S, L, Es, Ns, args, lim, sw, to_utm, sub):
         lo, la = sw.geo.forward(S, L); E, N = (np.asarray(v) for v in to_utm(lo, la))
         z = pp.plane_detrend(sig, E, N) * pp.hann2(sig.shape)
         mag = pp.nudft_magnitude(z, E - E.mean(), N - N.mean(), k, k); method = "exact_nudft"
-    mask = pp.search_mask(k, k, 2 * 2 * np.pi / args.window, lim)
+    mask = pp.search_mask(k, k, 2 * np.pi / args.window, lim)   # only the DC bin; stricter low-k cut at peak picking
     return k, mag, mask, {"affine_residual_max_m": resid, "spectrum_method": method}
 
 
@@ -347,6 +353,9 @@ def main(argv=None):
     ap.add_argument("--window", type=float, default=512.0, help="square window side (m); paper 1280 m for 150-300 m swell")
     ap.add_argument("--padding", type=int, default=1)
     ap.add_argument("--kmax", type=float, default=0.30)
+    ap.add_argument("--kmin-factor", type=float, default=4.0,
+                    help="peak search excludes |k| < FACTOR*pi/window (4 -> lambda > window/2); applied at peak picking")
+    ap.add_argument("--parts-from", type=Path, help="with --finalize: read partial results from this run directory")
     ap.add_argument("--levels", type=int, default=20)
     ap.add_argument("--scale", default="log10", choices=["log10", "linear"])
     ap.add_argument("--blob", default="contour", choices=["contour", "fastpeakfind"])
@@ -391,7 +400,7 @@ def main(argv=None):
 
     rows = []; examples = []; bands = {}; spectra = {}
     import pickle
-    parts = args.out / "parts"
+    parts = (args.parts_from or args.out) / "parts"
     if args.finalize:
         files = [parts / f"part_{i}_of_{args.finalize}.pkl" for i in range(args.finalize)]
         missing = [f.name for f in files if not f.exists()]
@@ -433,9 +442,15 @@ def main(argv=None):
             lo, la = sw.geo.forward(S[sub], L[sub]); E, N = to_utm(lo, la); E = np.asarray(E); N = np.asarray(N)
             row.update(swath=sw.name, burst=cand["burst"], sample=cand["sample"], line=cand["line"],
                        n_samples=ns, n_lines=nl, ground_spacing_sample_m=gs, ground_spacing_line_m=gl)
-            for i, (a_, b_) in enumerate(((0, 0), (0, -1), (-1, -1), (-1, 0))):   # footprint corners (UTM)
-                row[f"fp_E{i}"] = float(E[a_, b_]); row[f"fp_N{i}"] = float(N[a_, b_])
-            if not np.all(sea_at(sea, smap, E, N)):
+            # exact native footprint: outer pixel edges, boundary densified every pixel
+            bs = np.r_[np.arange(ns + 1), np.full(nl + 1, ns), np.arange(ns, -1, -1), np.zeros(nl + 1)] + s0 - 0.5
+            bl = np.r_[np.zeros(ns + 1), np.arange(nl + 1), np.full(ns + 1, nl), np.arange(nl, -1, -1)] + l0 - 0.5
+            blo, bla = sw.geo.forward(bs, bl); BE, BN = (np.asarray(v) for v in to_utm(blo, bla))
+            ci = [0, ns + 1, ns + nl + 2, 2 * ns + nl + 3]
+            for i, j in enumerate(ci):
+                row[f"fp_E{i}"] = float(BE[j]); row[f"fp_N{i}"] = float(BN[j])
+            row["footprint"] = "native pixel-edge corners"
+            if not (np.all(sea_at(sea, smap, E, N)) and np.all(sea_at(sea, smap, BE, BN))):
                 rows.append({**row, "status": "touches_land_or_unmapped"}); continue
             sig = sblock[l0 - bl0:l0 - bl0 + nl, s0 - bs0:s0 - bs0 + ns]
             if not sw.valid_block[l0 - bl0:l0 - bl0 + nl, s0 - bs0:s0 - bs0 + ns].all():
@@ -462,12 +477,16 @@ def main(argv=None):
         key = (row["transect"], row["distance_m"])
         if key not in spectra:
             continue
-        k, P, mask = spectra[key]
+        k, P, mask0 = spectra[key]
+        kmin = args.kmin_factor * np.pi / args.window
+        KE_, KN_ = np.meshgrid(k, k)
+        mask = mask0 & (np.hypot(KE_, KN_) >= kmin)
         nb = [spectra[(t, key[1])] for t in range(key[0] - args.alongshore_average, key[0] + args.alongshore_average + 1)
               if (t, key[1]) in spectra and spectra[(t, key[1])][0].size == k.size]
         Pm = np.mean([x[1] for x in nb], axis=0); mag = np.sqrt(Pm)
         if args.save_spectra:
             saved.append((row["transect"], row["distance_m"], Pm.astype("float32"), mask, k))
+        row["kmin_factor"] = args.kmin_factor
         res = pp.paper_peak(mag, k, k, mask, n_levels=args.levels, scale=args.scale, blob_method=args.blob)
         am = pp.argmax_peak(mag, k, k, mask)
         row.update(n_spectra_averaged=len(nb), peak_status=res["status"], n_blobs=len(res["blobs_canonical"]),
@@ -475,6 +494,9 @@ def main(argv=None):
                    argmax_axial_bearing_deg=math.degrees(math.atan2(am["kx"], am["ky"])) % 180)
         if "wavelength_m" in res:
             lobe = pp.lobe_to_annulus(mag, k, k, mask, res["kx"], res["ky"], 2 * np.pi / args.window)
+            # flagged only if the peak sits in the first half-bin above the cut: at large lambda one
+            # spectral bin is many tens of metres, so a wider band would flag ordinary long waves
+            row["peak_at_kmin_edge"] = bool(res["k_rad_m"] < kmin + 0.5 * (k[1] - k[0]))
             row.update(wavelength_m=res["wavelength_m"], k_rad_m=res["k_rad_m"],
                        axial_bearing_deg=math.degrees(math.atan2(res["kx"], res["ky"])) % 180,
                        blob_area_px=res["selected"]["area_px"], lobe_to_annulus=lobe,

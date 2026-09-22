@@ -76,3 +76,18 @@ def test_merge_corrects_legacy_bias_against_modern(tmp_path):
               resampling=Resampling.average, src_nodata=np.nan, dst_nodata=np.nan)
     k = (src == 4) & np.isfinite(ref)
     assert np.nanmedian(np.abs(z[k] - ref[k])) < 0.05
+
+
+def test_water_level_policy_rejects_unqced_preliminary_tide():
+    import frf_ground_truth as gtm
+    wl = {"instrument": "FRF:eopNoaaTide", "value": 0.235, "offset_s": -39.0, "qc_flag": "",
+          "status": "qc_unknown", "representative_eligible": "False"}
+    eta, st = gtm.water_level(wl, "qc_only")
+    assert eta is None and st["used"] is False and st["value_m"] == 0.235
+    eta, st = gtm.water_level(wl, "preliminary")
+    assert eta == 0.235 and st["used"] is True
+    good = {**wl, "status": "retrieved", "representative_eligible": "True"}
+    assert gtm.water_level(good, "qc_only")[0] == 0.235
+    far = {**good, "offset_s": 4000.0}
+    assert gtm.water_level(far, "qc_only")[0] is None
+    assert gtm.water_level(None, "qc_only")[0] is None

@@ -1,0 +1,119 @@
+{
+  "run": "duck_frf/Block38_s1_transects_duck/ext_near",
+  "ground_truth": "outputs/ground_truth_s1a_20211028_ext20",
+  "kind": "coastline_raw",
+  "dem_crs": "EPSG:32618",
+  "n_sar_vertices": 386,
+  "levels": {
+    "0": {
+      "n_contour_points": 6114,
+      "signed_distance_m": {
+        "median": 9.964904088410549,
+        "nmad": 32.975918234615115,
+        "p10_p90": [
+          -20.015067889508437,
+          208.9553250339137
+        ],
+        "max_abs": 434.69113838747984
+      },
+      "convention": "positive = SAR waterline east (seaward at Duck) of the DEM contour",
+      "alongshore_profile": [
+        {
+          "N_m": 4012337.499999999,
+          "n": 50,
+          "median_signed_m": 19.46494916864015
+        },
+        {
+          "N_m": 4010612.4999999995,
+          "n": 50,
+          "median_signed_m": 35.09091156773363
+        },
+        {
+          "N_m": 4009437.5,
+          "n": 50,
+          "median_signed_m": 10.754588239709847
+        },
+        {
+          "N_m": 4007700.0,
+          "n": 50,
+          "median_signed_m": -5.823672846412459
+        },
+        {
+          "N_m": 4005900.0,
+          "n": 50,
+          "median_signed_m": -3.449837050837232
+        },
+        {
+          "N_m": 4004637.499999999,
+          "n": 50,
+          "median_signed_m": 179.2490227316174
+        },
+        {
+          "N_m": 4003100.0,
+          "n": 50,
+          "median_signed_m": 19.530613633203757
+        },
+        {
+          "N_m": 4001500.0,
+          "n": 36,
+          "median_signed_m": 5.18656950412883
+        }
+      ]
+    },
+    "0.235": {
+      "n_contour_points": 5925,
+      "signed_distance_m": {
+        "median": 13.530728083849272,
+        "nmad": 32.80757846830647,
+        "p10_p90": [
+          -14.228569751523036,
+          215.5283912333209
+        ],
+        "max_abs": 437.8391710755958
+      },
+      "convention": "positive = SAR waterline east (seaward at Duck) of the DEM contour",
+      "alongshore_profile": [
+        {
+          "N_m": 4012337.499999999,
+          "n": 50,
+          "median_signed_m": 25.152280428366517
+        },
+        {
+          "N_m": 4010612.4999999995,
+          "n": 50,
+          "median_signed_m": 41.433215344634604
+        },
+        {
+          "N_m": 4009437.5,
+          "n": 50,
+          "median_signed_m": 14.912793348418177
+        },
+        {
+          "N_m": 4007700.0,
+          "n": 50,
+          "median_signed_m": -0.6468849421944469
+        },
+        {
+          "N_m": 4005900.0,
+          "n": 50,
+          "median_signed_m": 2.0975031187117565
+        },
+        {
+          "N_m": 4004637.499999999,
+          "n": 50,
+          "median_signed_m": 182.48977517342712
+        },
+        {
+          "N_m": 4003100.0,
+          "n": 50,
+          "median_signed_m": 22.14525680125356
+        },
+        {
+          "N_m": 4001500.0,
+          "n": 36,
+          "median_signed_m": 7.645393780519953
+        }
+      ]
+    }
+  }
+}

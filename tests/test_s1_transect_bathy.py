@@ -93,3 +93,27 @@ def test_grd_geometry_roundtrip():
     lon, lat = g.forward(123.4, 234.5)
     c = g.candidates(lon, lat)
     assert len(c) == 1 and c[0]["sample"] == pytest.approx(123.4, abs=1e-6) and c[0]["line"] == pytest.approx(234.5, abs=1e-6)
+
+
+def _smap(sig):
+    return {"sigma0": sig, "e0": 0.0, "n0": 0.0, "res": 10.0}
+
+
+def test_sea_side_picks_component_touching_that_side_not_padding_artifact():
+    # land (bright) on the west 30 columns, sea (dark) on the east 50: both touch N and S borders.
+    rng = np.random.default_rng(0)
+    sig = np.where(np.arange(80)[None, :] < 30, 1.0, 0.01) * rng.uniform(0.8, 1.2, (60, 80))
+    sea, info = tb.sea_mask_from_sar(_smap(sig), "E")
+    assert info["sea_class"] == "dark"
+    assert sea[:, 40:].all() and not sea[:, :25].any()
+    assert info["sea_side_contact_fraction"] == pytest.approx(1.0)
+    # the west side must select the land class: with border_value=1 padding both classes touched every side
+    land, info_w = tb.sea_mask_from_sar(_smap(sig), "W")
+    assert info_w["sea_class"] == "bright"
+
+
+def test_sea_side_tie_raises():
+    # diagonal-free split along N/S: both classes touch side E with equal length
+    sig = np.where(np.arange(60)[:, None] < 30, 1.0, 0.01) * np.ones((60, 80))
+    with pytest.raises(SystemExit):
+        tb.sea_mask_from_sar(_smap(sig), "E")

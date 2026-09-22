@@ -41,3 +41,23 @@ Caveats
 - Period is never taken from charts or from the result (circular).
 
 Site comparisons live in separate scripts (Duck: `duck_frf_compare.py`).
+
+## Block39 audit fixes (2026-09-22)
+
+- **Sea mask.** Morphology now runs on edge-replicated padding (`np.pad(..., mode="edge")`).
+  The previous `border_value=1` made *both* classes touch every bbox border, so
+  `--sea-side` degenerated to "largest component" and `edge_cells` in `run.json` was
+  meaningless. The sea is now the class component with the longest contact with that
+  side, a tie raises (pass `--coast`), and `sea_side_contact_fraction` is recorded.
+- **Exact footprints.** Window corners come from the outer pixel edges
+  (`s0-0.5 … s0+ns-0.5`), with the boundary densified every pixel and the sea test
+  applied to it, instead of the 3× subsampled interior grid (`run.json`/`windows.csv`
+  carry `footprint = "native pixel-edge corners"`). Window acceptance changed by
+  +2…+3 % (SLC near 5200 → 5364 ok, GRD near 5670 → 5853).
+- **Low-k cut.** The spectrum mask now excludes only DC; the cut is applied when the
+  peak is picked, as `k >= kmin_factor * pi / window` (`--kmin-factor`, default 4, i.e.
+  λ ≤ window/2). `peak_at_kmin_edge` flags peaks inside the first half-bin above it.
+  `--parts-from DIR` finalises the same partial spectra with a different factor.
+  Duck sweep (factor 2/3/4): median λ identical for 3 and 4, factor 2 keeps ~3 % fewer
+  windows identifiable (low-k clutter blobs) — the cut is not driving the result, and
+  ≤ 1 % of identified peaks sit at the edge.

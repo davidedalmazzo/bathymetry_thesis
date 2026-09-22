@@ -97,4 +97,12 @@ data_s1/
 duck_frf/Block38_s1_transects_duck/**/parts/
 *.pkl
 duck_frf/Block38_s1_transects_duck/**/window_spectra.npz
+duck_frf/Block39_s1_paper_confirm/**/parts/
+duck_frf/Block39_s1_paper_confirm/**/window_spectra.npz
+duck_frf/Block39_s1_paper_confirm/**/sigma0_seamask_utm.tif
 _cache/
+duck_frf/Block39_s1_paper_confirm/**/windows.csv
+duck_frf/Block39_s1_paper_confirm/**/forward_windows.csv
+duck_frf/Block39_s1_paper_confirm/**/combined_nearest/combined_windows.csv
+duck_frf/Block39_s1_paper_confirm/**/*_k2/transects.geojson
+duck_frf/Block39_s1_paper_confirm/**/*_k3/transects.geojson
