@@ -1,0 +1,74 @@
+{
+  "slc_far": {
+    "windows": 2213,
+    "by_class": {
+      "interpolated": 184,
+      "legacy_calibrated": 1083,
+      "mixed_source": 365,
+      "primary_admissible": 581
+    },
+    "primary_by_band": {
+      "A_0_12m": 0,
+      "B_12_20m": 0,
+      "C_20_30m": 581
+    },
+    "primary_at_sensitivity": {
+      "0.75": 622,
+      "1": 468
+    }
+  },
+  "grd_far": {
+    "windows": 2218,
+    "by_class": {
+      "interpolated": 173,
+      "legacy_calibrated": 1062,
+      "mixed_source": 382,
+      "primary_admissible": 601
+    },
+    "primary_by_band": {
+      "A_0_12m": 0,
+      "B_12_20m": 0,
+      "C_20_30m": 601
+    },
+    "primary_at_sensitivity": {
+      "0.75": 641,
+      "1": 486
+    }
+  },
+  "grd_near": {
+    "windows": 5853,
+    "by_class": {
+      "legacy_calibrated": 4237,
+      "mixed_source": 882,
+      "primary_admissible": 34,
+      "temporally_inadmissible": 700
+    },
+    "primary_by_band": {
+      "A_0_12m": 0,
+      "B_12_20m": 34,
+      "C_20_30m": 0
+    },
+    "primary_at_sensitivity": {
+      "0.75": 89,
+      "1": 2
+    }
+  },
+  "slc_near": {
+    "windows": 5364,
+    "by_class": {
+      "legacy_calibrated": 3818,
+      "mixed_source": 854,
+      "primary_admissible": 26,
+      "temporally_inadmissible": 666
+    },
+    "primary_by_band": {
+      "A_0_12m": 0,
+      "B_12_20m": 26,
+      "C_20_30m": 0
+    },
+    "primary_at_sensitivity": {
+      "0.75": 79,
+      "1": 7
+    }
+  }
+}

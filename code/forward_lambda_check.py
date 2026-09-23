@@ -132,6 +132,11 @@ def main(argv=None):
                     help="sar: sector centred on the SAR maximum (data-driven). fixed: sector centred on "
                          "--sector-bearing, an a-priori axial direction (gauge mean wave direction)")
     ap.add_argument("--sector-bearing", type=float, help="axial bearing (deg from N) for --sector-source fixed")
+    ap.add_argument("--admissible-csv", type=Path,
+                    help="Block40 window provenance CSV: certification is replaced by membership in the "
+                         "admissible set (column window_class == --admissible-class) for --admissible-run")
+    ap.add_argument("--admissible-run", help="value of the 'run' column to select in --admissible-csv")
+    ap.add_argument("--admissible-class", default="primary_admissible")
     ap.add_argument("--bootstrap", type=int, default=2000, help="block-bootstrap resamples for the confidence interval (0 disables)")
     ap.add_argument("--block-transects", type=int, default=9, help="transects per spatial block (>= 2*alongshore_average+1)")
     ap.add_argument("--block-distance-m", type=float, default=1024.0, help="along-transect block length (>= window length)")
@@ -155,6 +160,12 @@ def main(argv=None):
     power = sp["power"]                       # decompress once (npz members are re-read on every access)
     idx = {(int(t), float(d)): i for i, (t, d) in enumerate(zip(sp["transect"], sp["distance_m"]))}
     rows_in = [r for r in csv.DictReader(open(a.run / "windows.csv")) if r["status"] == "ok"]
+    admissible = None
+    if a.admissible_csv:
+        admissible = {(int(r["transect"]), float(r["distance_m"])) for r in csv.DictReader(open(a.admissible_csv))
+                      if (a.admissible_run is None or r["run"] == a.admissible_run) and r["window_class"] == a.admissible_class}
+        if not admissible:
+            raise SystemExit("empty admissible set")
     rng = np.random.default_rng(0); rows = []
     import pickle
     parts = out / "parts"
@@ -185,9 +196,12 @@ def main(argv=None):
         if not inside.any():
             continue
         d = depth[inside]; u = unc[inside]
-        cert = (np.all(np.isfinite(d)) and np.all(np.isfinite(u)) and np.nanmax(u) <= a.max_uncertainty
-                and np.all(interp[inside] == 0) and (a.min_year <= 0 or (np.all(np.isfinite(year[inside])) and np.nanmin(year[inside]) >= a.min_year))
-                and np.nanmax(d) <= a.max_depth and np.nanmin(d) > 0 and np.nanmean(d) >= a.min_depth)
+        if admissible is not None:
+            cert = key in admissible and np.all(np.isfinite(d)) and np.nanmin(d) > 0
+        else:
+            cert = (np.all(np.isfinite(d)) and np.all(np.isfinite(u)) and np.nanmax(u) <= a.max_uncertainty
+                    and np.all(interp[inside] == 0) and (a.min_year <= 0 or (np.all(np.isfinite(year[inside])) and np.nanmin(year[inside]) >= a.min_year))
+                    and np.nanmax(d) <= a.max_depth and np.nanmin(d) > 0 and np.nanmean(d) >= a.min_depth)
         o = {"transect": key[0], "distance_m": key[1], "E": float(r["E"]), "N": float(r["N"]), "certified": bool(cert),
              "depth_mean_m": float(np.nanmean(d)), "depth_p10_m": float(np.nanpercentile(d, 10)), "depth_p90_m": float(np.nanpercentile(d, 90)),
              "uncertainty_max_m": float(np.nanmax(u)) if np.any(np.isfinite(u)) else np.nan,
@@ -228,7 +242,8 @@ def main(argv=None):
     cert = [o for o in rows if o["certified"]]
     for o in cert:                       # spatial blocks for the bootstrap (non-overlapping in both directions)
         o["block"] = f"{int(o['transect']) // a.block_transects}_{int(o['distance_m'] // a.block_distance_m)}"
-    summ = {"reference_gauge": a.reference, "reference_peak_period_s": periods.get(a.reference), "periods_by_gauge_s": periods,
+    summ = {"certification": ("external admissible set: " + str(a.admissible_csv)) if admissible is not None else "block39 criteria",
+            "reference_gauge": a.reference, "reference_peak_period_s": periods.get(a.reference), "periods_by_gauge_s": periods,
             "sector": {"source": a.sector_source, "half_width_deg": a.sector, "bearing_deg": a.sector_bearing},
             "blocks": {"transects": a.block_transects, "distance_m": a.block_distance_m, "resamples": a.bootstrap},
             "criteria": {"max_depth_m": a.max_depth, "max_uncertainty_m": a.max_uncertainty, "min_year": a.min_year,

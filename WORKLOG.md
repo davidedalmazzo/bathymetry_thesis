@@ -1117,3 +1117,43 @@ Tests: 359 pass. Pre-existing failures in this Linux device shell only
 (`test_frf_block33.py`, `test_frf_operational.py`, `test_s1_iw_annotation.py`
 credentials, `test_scene_selection.py`): temporary directories outside the repo and
 file deletion not permitted in the shell — unrelated to these changes.
+
+### 2026-09-22 — Block40: stratified validation by bathymetric source and SLC variance audit
+
+Directory `duck_frf/Block40_stratified_validation/`; protocol and configuration frozen
+before the analysis (`BLOCK40_PROTOCOL.md`, `BLOCK40_CONFIG.json`); manifest with input,
+code and output SHA-256, versions and seeds (`BLOCK40_MANIFEST.json`). Inputs: the
+Block39 window sets and stored spectra, the `..._ext20` ground truth, the FRF dossier.
+No download, no catalogue query, no FRF request, no commit, no push. Scope: spatial
+`k`/`lambda` only — no `omega`, no temporal phase, no bathymetric inversion.
+
+New code: `block40_source_audit.py` (per-cell provenance -> `BLOCK40_SOURCE_INVENTORY.csv`,
+`BLOCK40_SOURCE_MASK.tif`), `block40_windows.py` (footprint fractions and the frozen 90 %
+classification), `block40_matched.py` (SLC/GRD pairing by geographic centre, stratified
+statistics, block bootstrap), `block40_variance_ladder.py` (single look / 2 looks / 2x2
+looks / DPSS multitaper on the same native windows, with ENL, lobe-width and
+lobe-displacement diagnostics), `block40_sensitivity.py` (water level, reference period,
+current, bathymetric term and hierarchical Monte Carlo), `block40_figures.py` (figures
+1-8), `block40_summary.py`, `block40_manifest.py`. `forward_lambda_check.py` gained
+`--admissible-csv/--admissible-run/--admissible-class` so certification can come from the
+Block40 classes instead of the Block39 criteria. 16 targeted tests in
+`tests/test_block40.py`.
+
+Results: provenance of every cell resolved (the 0.73 m contributor is the NOAA NGS
+2019-20 lidar, dune to 5.5 m depth; 20.7 % of cells interpolated 1868/1970 or
+generalisation, 42.4 % bias-corrected legacy, 18.8 % direct H12859 2016). Admissible
+windows with the 90 % rule: band A 0, band B 26 (SLC) / 34 (GRD), band C 581 / 601 —
+about 8 % of the scene. Primary contour-peak result: band C GRD +1.4 % (CI -5.4..+7.9),
+SLC -7.8 % (-14.3..-1.2); band B GRD -8.1 %, SLC -2.4 %. Strata carry opposite signs
+(+4..+6 % in 0-12 m, -1..-3 % on legacy), so the Block39 aggregate -0.8 % is a mixture.
+SLC ladder: -10.5 % / -14.2 % / -9.0 % / -8.0 % (tail below -25 %: 36.6 / 39.0 / 35.9 /
+29.8 %) against the GRD +1.4 % (4.5 %); ENL 0.81 -> 2.5; not monotone, no convergence.
+Budget: reference spectrum -16..+17 % dominant, estimator +6.6/+6.8 %, water level
+<= 0.8 %, bathymetric vertical 0.2-0.6 %, current ~1 %; survey age/morphology declared
+and not quantified; hierarchical MC median -6.1 %, p05/p95 -17.1..+15.4 %.
+
+Tests: 375 passed / 20 failed in the Linux device shell, all pre-existing environment
+failures (temporary directories outside the repository root, file deletion not permitted
+in that shell). The authoritative `.venv-umbra-thesis` run on Windows could not be
+executed from here (`Exec format error` on the Windows interpreter): Block40 is closed
+pending `.\.venv-umbra-thesis\Scripts\python.exe -m pytest -q`.

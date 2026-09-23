@@ -1,0 +1,184 @@
+{
+  "protocol": "BLOCK40_PROTOCOL.md",
+  "windows": 882,
+  "terms": {
+    "baseline_wr17_Ek_centroid": {
+      "n": 882,
+      "n_blocks": 23,
+      "median": -0.01014646983867351,
+      "p10_p90": [
+        -0.3647196137338472,
+        0.30924710886459844
+      ],
+      "rms": 0.4118541099366663,
+      "median_ci95_block_bootstrap": [
+        -0.08035555595208206,
+        0.0767384843332426
+      ],
+      "median_se_block_bootstrap": 0.037345619962918
+    },
+    "water_level_eta+0.000": {
+      "median": -0.01014646983867351,
+      "delta_vs_baseline": 0.0
+    },
+    "water_level_eta+0.235": {
+      "median": -0.014744937178298168,
+      "delta_vs_baseline": -0.004598467339624657
+    },
+    "water_level_eta-0.100": {
+      "median": -0.0073476553811850365,
+      "delta_vs_baseline": 0.0027988144574884743
+    },
+    "water_level_eta+0.435": {
+      "median": -0.017720151284378594,
+      "delta_vs_baseline": -0.007573681445705083
+    },
+    "reference_wr17_discrete_max": {
+      "median": -0.06527838595751806,
+      "delta_vs_baseline": -0.05513191611884455,
+      "n": 882
+    },
+    "reference_wr17_published_Tp": {
+      "median": -0.02786363088356364,
+      "delta_vs_baseline": -0.01771716104489013,
+      "n": 882
+    },
+    "reference_wr17_lobe_Tmin": {
+      "median": 0.1549257393337442,
+      "delta_vs_baseline": 0.16507220917241772,
+      "n": 882
+    },
+    "reference_wr17_lobe_Tmax": {
+      "median": -0.16753894174472295,
+      "delta_vs_baseline": -0.15739247190604944,
+      "n": 882
+    },
+    "reference_awac-11m": {
+      "median": 0.041687300223243295,
+      "delta_vs_baseline": 0.051833770061916806,
+      "n": 882
+    },
+    "reference_8m-array": {
+      "median": -0.08231492936330292,
+      "delta_vs_baseline": -0.07216845952462941,
+      "n": 882
+    },
+    "reference_waverider-26m": {
+      "median": -0.0709864479434989,
+      "delta_vs_baseline": -0.06083997810482539,
+      "n": 882
+    },
+    "current_diagnostic": {
+      "U_along_k_m_s": -0.10838895225312735,
+      "median": -0.05561017518354344,
+      "delta_vs_monochromatic_no_current": 0.009668210773974617,
+      "caveat": "AWAC profile-averaged current at 11 m, 38 min from the acquisition; not the surface current advecting the Bragg waves"
+    },
+    "bathymetry_vertical": {
+      "reference_depth_m": 26.396031379699707,
+      "by_class": {
+        "legacy_bias_corrected": {
+          "uncertainty_m": 0.3090894441604614,
+          "lambda_sensitivity_pct_at_median_depth": 0.38851514454774083
+        },
+        "bluetopo_interpolated_or_pre2010": {
+          "uncertainty_m": 1.0,
+          "lambda_sensitivity_pct_at_median_depth": 1.2373497116965115
+        },
+        "bluetopo_direct_h12859_2016": {
+          "uncertainty_m": 0.5,
+          "lambda_sensitivity_pct_at_median_depth": 0.6257504819771054
+        },
+        "bluetopo_direct_2019_2020_uncertain": {
+          "uncertainty_m": 1.0,
+          "lambda_sensitivity_pct_at_median_depth": 1.2373497116965115
+        },
+        "bluetopo_direct_2019_2020_certified": {
+          "uncertainty_m": 0.15325381536483765,
+          "lambda_sensitivity_pct_at_median_depth": 0.19332268672824782
+        },
+        "bluetopo_direct_other_date": {
+          "uncertainty_m": 1.0,
+          "lambda_sensitivity_pct_at_median_depth": 1.2373497116965115
+        },
+        "frf_survey_2021": {
+          "uncertainty_m": 0.15,
+          "lambda_sensitivity_pct_at_median_depth": 0.18923223997386884
+        }
+      },
+      "note": "vertical uncertainty only; survey age and morphological change are a separate, unquantified term"
+    },
+    "estimator_choice": {
+      "slc": {
+        "n": 4668,
+        "median_centroid_minus_contour": 0.06799271102179616,
+        "p10_p90": [
+          -0.0993204986012516,
+          0.6533530718249831
+        ],
+        "note": "systematic estimator difference, reported not suppressed"
+      },
+      "grd": {
+        "n": 4859,
+        "median_centroid_minus_contour": 0.06569409694928097,
+        "p10_p90": [
+          -0.08983016371883465,
+          0.30541410141002784
+        ],
+        "note": "systematic estimator difference, reported not suppressed"
+      }
+    },
+    "variance_reduction": {
+      "slc_single_look": {
+        "median": -0.10509686980398258,
+        "short_tail": 0.3657331136738056
+      },
+      "slc_incoherent_N2": {
+        "median": -0.1419481339640989,
+        "short_tail": 0.3904448105436573
+      },
+      "slc_incoherent_N4": {
+        "median": -0.09017190515891327,
+        "short_tail": 0.35914332784184516
+      },
+      "slc_multitaper_K4": {
+        "median": -0.08017349401913176,
+        "short_tail": 0.2981878088962109
+      },
+      "grd_esa": {
+        "median": 0.013799501642312029,
+        "short_tail": 0.04477611940298507
+      }
+    },
+    "spatial_block_bootstrap": {
+      "meaning": "variability between spatial blocks only, not a total uncertainty",
+      "baseline_ci95": [
+        -0.08035555595208206,
+        0.0767384843332426
+      ],
+      "n_blocks": 23,
+      "windows": 882,
+      "window_dependence": "windows overlap by 50-100 m steps; they are not independent"
+    }
+  },
+  "hierarchical_monte_carlo": {
+    "draws": 4000,
+    "seed": 0,
+    "distributions": {
+      "eta_m": "uniform(-0.1, 0.435)",
+      "reference_spectrum": "uniform over the declared frequency options",
+      "bathymetry_offset_m": "normal(0, 0.3266269076824188) common to the realisation (per-class value)"
+    },
+    "median_of_median_pct": -6.0971027281897765,
+    "p05_p95_pct": [
+      -17.08457633795576,
+      15.425214160574265
+    ],
+    "note": "scenario spread of the *median* bias; it does not include the spatial block-bootstrap term, which is reported separately, and terms are not summed in quadrature"
+  },
+  "not_included": [
+    "morphological change since each survey",
+    "azimuth cut-off / velocity bunching / MTF",
+    "temporal (omega) terms - out of Block40 scope"
+  ]
+}

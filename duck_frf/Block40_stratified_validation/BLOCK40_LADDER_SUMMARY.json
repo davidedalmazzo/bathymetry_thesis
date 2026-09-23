@@ -1,0 +1,131 @@
+{
+  "variants": {
+    "slc_single_look": {
+      "windows": 607,
+      "with_peak": 607,
+      "looks_averaged": 1,
+      "enl_annulus_median": 0.814546021170022,
+      "lobe_halfpower_width_median_rad_m": 0.01227184630308515,
+      "lobe_to_annulus_median": 9.651115994271189,
+      "lambda_shift_vs_single_look_median": 0.0,
+      "bearing_shift_deg_median": 0.0,
+      "peak_at_kmin_edge_fraction": 0.018121911037891267,
+      "n": 607,
+      "n_blocks": 22,
+      "median": -0.10509686980398258,
+      "p10_p90": [
+        -0.5920006010888552,
+        0.499747527407416
+      ],
+      "rms": 0.4999105918276291,
+      "median_ci95_block_bootstrap": [
+        -0.1893419162966771,
+        -0.05592565339281103
+      ],
+      "median_se_block_bootstrap": 0.03881812140811696,
+      "short_wavelength_tail_fraction": 0.3657331136738056,
+      "p05": -0.695696454221195
+    },
+    "slc_incoherent_N2": {
+      "windows": 607,
+      "with_peak": 607,
+      "looks_averaged": 2,
+      "enl_annulus_median": 1.4629718066666957,
+      "lobe_halfpower_width_median_rad_m": 0.015339807878856429,
+      "lobe_to_annulus_median": 5.271831248683964,
+      "lambda_shift_vs_single_look_median": 0.0029673655728588155,
+      "bearing_shift_deg_median": 0.4390395256816646,
+      "peak_at_kmin_edge_fraction": 0.0214168039538715,
+      "n": 607,
+      "n_blocks": 22,
+      "median": -0.1419481339640989,
+      "p10_p90": [
+        -0.621754420792399,
+        0.367333451638496
+      ],
+      "rms": 0.5330161343911474,
+      "median_ci95_block_bootstrap": [
+        -0.21735947833173627,
+        -0.08319783131623285
+      ],
+      "median_se_block_bootstrap": 0.03642968908374451,
+      "short_wavelength_tail_fraction": 0.3904448105436573,
+      "p05": -0.7083603846986707
+    },
+    "slc_incoherent_N4": {
+      "windows": 607,
+      "with_peak": 607,
+      "looks_averaged": 4,
+      "enl_annulus_median": 2.4786066102956497,
+      "lobe_halfpower_width_median_rad_m": 0.030679615757712858,
+      "lobe_to_annulus_median": 3.4075759997648447,
+      "lambda_shift_vs_single_look_median": -0.008564057569230954,
+      "bearing_shift_deg_median": -1.733517142683766,
+      "peak_at_kmin_edge_fraction": 0.014827018121911038,
+      "n": 607,
+      "n_blocks": 22,
+      "median": -0.09017190515891327,
+      "p10_p90": [
+        -0.5983753743647553,
+        0.5198211061485293
+      ],
+      "rms": 0.514119361792712,
+      "median_ci95_block_bootstrap": [
+        -0.1661513133451038,
+        -0.04344811034231799
+      ],
+      "median_se_block_bootstrap": 0.03814538383189602,
+      "short_wavelength_tail_fraction": 0.35914332784184516,
+      "p05": -0.6763341138209883
+    },
+    "slc_multitaper_K4": {
+      "windows": 607,
+      "with_peak": 607,
+      "looks_averaged": 4,
+      "enl_annulus_median": 2.427004107919625,
+      "lobe_halfpower_width_median_rad_m": 0.023009711818284644,
+      "lobe_to_annulus_median": 3.8474680750151253,
+      "lambda_shift_vs_single_look_median": 0.005819641760376637,
+      "bearing_shift_deg_median": 0.0,
+      "peak_at_kmin_edge_fraction": 0.044481054365733116,
+      "n": 607,
+      "n_blocks": 22,
+      "median": -0.08017349401913176,
+      "p10_p90": [
+        -0.6109761461374138,
+        0.5006891799123099
+      ],
+      "rms": 0.57946391169368,
+      "median_ci95_block_bootstrap": [
+        -0.15112182142101013,
+        -0.021670348885408086
+      ],
+      "median_se_block_bootstrap": 0.028789442717186347,
+      "short_wavelength_tail_fraction": 0.2981878088962109,
+      "p05": -0.698920705328168
+    },
+    "grd_esa": {
+      "paired_windows": 134,
+      "n": 134,
+      "n_blocks": 18,
+      "median": 0.013799501642312029,
+      "p10_p90": [
+        -0.18852938920068388,
+        0.6016613449105712
+      ],
+      "rms": 0.4828223026456711,
+      "median_ci95_block_bootstrap": [
+        -0.05088082630137969,
+        0.08449756063536562
+      ],
+      "median_se_block_bootstrap": 0.030701337438721454,
+      "short_wavelength_tail_fraction": 0.04477611940298507,
+      "p05": -0.23041359908129236
+    }
+  },
+  "note": [
+    "spatial variance reduction only; no temporal sub-aperture, no time assigned to looks",
+    "tapers, sub-blocks and averaged pixels are not independent acquisitions",
+    "the single-look reference here has no alongshore averaging, unlike the Block39 runs"
+  ]
+}
