@@ -1,0 +1,93 @@
+{
+  "reference_gauge": "FRF:waverider-26m",
+  "reference_peak_period_s": 10.81081081081081,
+  "periods_by_gauge_s": {
+    "FRF:waverider-17m": 11.76470588235294,
+    "FRF:awac-11m": 10.81081081081081,
+    "FRF:8m-array": 12.903225806451614,
+    "FRF:waverider-26m": 10.81081081081081
+  },
+  "criteria": {
+    "max_depth_m": 30.0,
+    "max_uncertainty_m": 0.5,
+    "min_year": 0,
+    "not_interpolated": true
+  },
+  "windows_total": 5670,
+  "windows_certified": 445,
+  "note": "overlapping windows (50 m step, 512 m windows, alongshore averaging) are strongly correlated; effective sample is far smaller",
+  "Ek_peak": {
+    "n": 445,
+    "median_lambdaSAR_over_lambdaPred_minus_1": 0.04760593909225497,
+    "p10_p90": [
+      -0.27801076909221667,
+      1.4583333333333335
+    ],
+    "rms": 0.54062667472267
+  },
+  "Ek_centroid": {
+    "n": 445,
+    "median_lambdaSAR_over_lambdaPred_minus_1": -0.04389690955902481,
+    "p10_p90": [
+      -0.2876396727918466,
+      0.22343216844988162
+    ],
+    "rms": 0.20437075777799937
+  },
+  "k2Ek_peak": {
+    "n": 445,
+    "median_lambdaSAR_over_lambdaPred_minus_1": 7.028436888658717,
+    "p10_p90": [
+      5.79460440737093,
+      17.041666666666668
+    ],
+    "rms": 9.298919380093901
+  },
+  "k2Ek_centroid": {
+    "n": 445,
+    "median_lambdaSAR_over_lambdaPred_minus_1": 6.726680800529063,
+    "p10_p90": [
+      5.649738712507743,
+      8.285715160715691
+    ],
+    "rms": 6.98016297317377
+  },
+  "paper_peak_vs_Ek_centroid": {
+    "n": 248,
+    "median_lambdaSAR_over_lambdaPred_minus_1": -0.17544993329695246,
+    "p10_p90": [
+      -0.3421985768969083,
+      0.11967112325157209
+    ],
+    "rms": 0.24648386536883068
+  },
+  "k2_weighting_note": "k^2 weighting of the full gauge spectrum is dominated by the high-frequency tail (no azimuth cut-off / system MTF / noise model); reported for completeness, not interpretable",
+  "depth_range_certified_m": [
+    21.00189781188965,
+    22.7337703704834
+  ],
+  "by_depth_bin": [
+    {
+      "depth_bin_m": [
+        21.0,
+        22.0
+      ],
+      "n": 339,
+      "lambda_sar_centroid_median_m": 147.7450414238319,
+      "lambda_pred_k2Ek_centroid_median_m": 18.919168591223997,
+      "lambda_pred_Ek_centroid_median_m": 138.84745762711847,
+      "lambda_sar_paper_median_m": 142.00325023365858
+    },
+    {
+      "depth_bin_m": [
+        22.0,
+        23.0
+      ],
+      "n": 106,
+      "lambda_sar_centroid_median_m": 142.54104585438333,
+      "lambda_pred_k2Ek_centroid_median_m": 18.919168591223997,
+      "lambda_pred_Ek_centroid_median_m": 138.84745762711847,
+      "lambda_sar_paper_median_m": 141.3302338585579
+    }
+  ]
+}
