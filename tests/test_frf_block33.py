@@ -309,7 +309,9 @@ def test_capped_stream_not_cached(tmp_path):
 
 def test_audit_distinguishes_unavailable_unresolved_mismatch(tmp_path):
     from run_block33_frf_verification import audit_entries,ROOT,digest
-    path=tmp_path/'small.txt';path.write_bytes(b'fixture')
+    # entries are ROOT-relative by design: the fixture must sit under ROOT, not in the system temp
+    fixture_dir=ROOT/'_tmp'/'pytest_audit_fixture';fixture_dir.mkdir(parents=True,exist_ok=True)
+    path=fixture_dir/'small.txt';path.write_bytes(b'fixture')
     entries=[{'path':path.relative_to(ROOT).as_posix(),'sha256':digest(b'fixture')},
              {'path':path.relative_to(ROOT).as_posix(),'sha256':digest(b'other')},
              {'path':'duck_frf/Block33_frf_offline_correction/nonexistent','sha256':'x'},

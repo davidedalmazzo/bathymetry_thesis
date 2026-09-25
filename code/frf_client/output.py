@@ -4,6 +4,7 @@ import json
 import math
 import re
 import sys
+import warnings
 from pathlib import Path
 from datetime import datetime, timezone
 import numpy as np
@@ -15,6 +16,17 @@ from .data import associate, qc_pass, utc, spectral_summary,mask_values
 from .client import qc_variable, historical_position, finite_list, ALIASES
 from .geometry import polygon, distances, inverse
 from .transport import save_json, digest
+
+
+def artifact_path(path, root):
+    """Manifest path of an artifact: relative to root (the working directory) when it lies
+    under it, as in every historical manifest; otherwise absolute and flagged, instead of
+    raising after the dossier has already been written (e.g. output on another drive).
+    dossier() emits one warning per dossier when any artifact is flagged."""
+    p, r = Path(path).resolve(), Path(root).resolve()
+    if p.is_relative_to(r):
+        return {"path": p.relative_to(r).as_posix()}
+    return {"path": p.as_posix(), "path_outside_working_directory": True}
 
 
 def table(path, rows):
@@ -244,7 +256,10 @@ def dossier(acquisition, products, inventory, errors, config, output, transport,
             manifest["cache_payloads"].append({"url":obj["url"],"sha256":obj["sha256"],"bytes":obj["bytes"]})
     for p in sorted(base.rglob("*")):
         if p.is_file() and p.name != "MANIFEST.json":
-            manifest["artifacts"].append({"path":p.resolve().relative_to(Path.cwd().resolve()).as_posix(),"bytes":p.stat().st_size,"sha256":digest(p.read_bytes())})
+            manifest["artifacts"].append({**artifact_path(p,Path.cwd()),"bytes":p.stat().st_size,"sha256":digest(p.read_bytes())})
+    outside=sum(bool(x.get("path_outside_working_directory")) for x in manifest["artifacts"])
+    if outside:
+        warnings.warn(f"{outside} artifact(s) of {base} lie outside the working directory; recorded with absolute paths",stacklevel=2)
     for p in sorted(Path("code/frf_client").glob("*.py")) + [Path("code/run_block32_frf_client.py"),Path("code/run_block30_frf_conditions.py"),Path("code/repository_paths.py"),Path("repository_paths.json")]:
         manifest["code_sources"].append({"path":str(p),"sha256":digest(p.read_bytes())})
     save_json(base/"MANIFEST.json",manifest)

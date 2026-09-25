@@ -15,6 +15,7 @@ pillow==12.3.0
 pluggy==1.6.0
 Pygments==2.21.0
 pyparsing==3.3.2
+pyproj==3.8.0
 pytest==9.1.1
 python-dateutil==2.9.0.post0
 rasterio==1.5.1

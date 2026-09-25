@@ -269,3 +269,11 @@ def test_auth_required_cross_host_redirect_and_retry_after(tmp_path):
     deferred=Transport(tmp_path/"deferred",opener=Opener([Response(b"",429,{"Retry-After":"120","Content-Length":"0"})]),rate_seconds=0)
     with pytest.raises(FetchError,match="retry_after_deferred"): deferred.get(URL)
     assert deferred.state["transactions"]==1
+
+
+def test_artifact_path_relative_inside_absolute_outside(tmp_path):
+    from frf_client.output import artifact_path
+    root=tmp_path/"repo";inside=root/"out"/"a.json";outside=tmp_path/"elsewhere"/"b.json"
+    for p in (inside,outside):p.parent.mkdir(parents=True);p.write_text("{}")
+    assert artifact_path(inside,root)=={"path":"out/a.json"}
+    assert artifact_path(outside,root)=={"path":outside.resolve().as_posix(),"path_outside_working_directory":True}
