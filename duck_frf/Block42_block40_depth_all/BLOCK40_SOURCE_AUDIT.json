@@ -1,0 +1,58 @@
+{
+  "acquisition_utc": "2021-10-28T23:06:36+00:00",
+  "class_names": {
+    "0": "none",
+    "1": "frf_survey_2021",
+    "2": "bluetopo_direct_2019_2020_certified",
+    "3": "bluetopo_direct_2019_2020_uncertain",
+    "4": "bluetopo_direct_h12859_2016",
+    "5": "bluetopo_direct_other_date",
+    "6": "bluetopo_interpolated_or_pre2010",
+    "7": "legacy_bias_corrected",
+    "8": "cudem"
+  },
+  "criteria": {
+    "direct": "coverage=1 and bathy_coverage=1 and survey id without 'interpolated'/'Generalization'",
+    "recent_window": [
+      "2019-01-01",
+      "2020-12-31"
+    ],
+    "max_empirical_nmad_m": 0.5
+  },
+  "frf_survey": {
+    "product": "FRF_geomorphology_DEMs_surveyDEM_20211021.nc",
+    "survey_time_utc": "2021-10-21T00:00:00+00:00",
+    "age_days": 7.96,
+    "footprint": "xFRF 50-950 m, yFRF -100..1100 m (never extrapolated)",
+    "declared_uncertainty_m": 0.15,
+    "datum": "NAVD88",
+    "native_grid_m": 20.0
+  },
+  "cells_total_with_bed": 2565094,
+  "cell_fraction_by_class": {
+    "none": 0.0011032734083039452,
+    "frf_survey_2021": 0.004208032921990383,
+    "bluetopo_direct_2019_2020_certified": 0.06297430035702395,
+    "bluetopo_direct_2019_2020_uncertain": 0.08457545805338908,
+    "bluetopo_direct_h12859_2016": 0.1882040190340003,
+    "bluetopo_direct_other_date": 0.027499187164291054,
+    "bluetopo_interpolated_or_pre2010": 0.20706024808447565,
+    "legacy_bias_corrected": 0.42366517562319356,
+    "cudem": 0.0007106952025929654
+  },
+  "cell_fraction_admissible_by_band": {
+    "0-12 m": 0.024379710576334212,
+    "12-20 m": 0.045190861944556016,
+    "20-30 m": 0.3222548032912382
+  },
+  "band_cells": {
+    "band1": 409849,
+    "band2": 562658,
+    "band3": 1494392
+  },
+  "notes": [
+    "declared uncertainty, empirical NMAD, survey age and morphological change are distinct quantities",
+    "a vertical NMAD is never reinterpreted as a morphological-change estimate",
+    "legacy grids carry a bias calibrated on the same area used for validation and are not independent truth"
+  ]
+}

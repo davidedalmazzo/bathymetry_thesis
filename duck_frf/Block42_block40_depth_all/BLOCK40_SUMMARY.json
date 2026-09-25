@@ -1,0 +1,524 @@
+{
+  "block": "Block40",
+  "scope": "spatial k/lambda audit only - omega is not measured, temporal phase is not validated, bathymetric inversion is not validated",
+  "protocol": "BLOCK40_PROTOCOL.md (frozen before the analysis)",
+  "q1_accuracy_on_direct_admissible_bathymetry": {
+    "primary_by_band_and_product": {
+      "A_0_12m/slc": {
+        "windows": 0,
+        "median_pct": null,
+        "ci95_pct": null,
+        "nmad_pct": null,
+        "blocks": null,
+        "sources": []
+      },
+      "A_0_12m/grd": {
+        "windows": 0,
+        "median_pct": null,
+        "ci95_pct": null,
+        "nmad_pct": null,
+        "blocks": null,
+        "sources": []
+      },
+      "B_12_20m/slc": {
+        "windows": 22,
+        "median_pct": -2.12,
+        "ci95_pct": [
+          -8.14,
+          13.14
+        ],
+        "nmad_pct": 17.73,
+        "blocks": 3,
+        "sources": [
+          "bluetopo_direct_2019_2020_certified"
+        ]
+      },
+      "B_12_20m/grd": {
+        "windows": 31,
+        "median_pct": -7.3,
+        "ci95_pct": [
+          -21.22,
+          8.92
+        ],
+        "nmad_pct": 12.98,
+        "blocks": 3,
+        "sources": [
+          "bluetopo_direct_2019_2020_certified"
+        ]
+      },
+      "C_20_30m/slc": {
+        "windows": 404,
+        "median_pct": -7.76,
+        "ci95_pct": [
+          -14.19,
+          -1.24
+        ],
+        "nmad_pct": 23.91,
+        "blocks": 19,
+        "sources": [
+          "bluetopo_direct_h12859_2016"
+        ]
+      },
+      "C_20_30m/grd": {
+        "windows": 425,
+        "median_pct": -0.21,
+        "ci95_pct": [
+          -5.27,
+          6.98
+        ],
+        "nmad_pct": 18.15,
+        "blocks": 19,
+        "sources": [
+          "bluetopo_direct_h12859_2016"
+        ]
+      }
+    },
+    "note": "band A has no admissible window: the contemporaneous FRF survey footprint never covers 90 % of a 512 m window (max 73 %)"
+  },
+  "q2_compensation_between_sources": {
+    "strata": {
+      "slc/B_12_20m/legacy_calibrated": {
+        "windows": 2196,
+        "median_pct": -9.16,
+        "ci95_pct": [
+          -12.67,
+          -4.66
+        ]
+      },
+      "slc/C_20_30m/legacy_calibrated": {
+        "windows": 1153,
+        "median_pct": -4.76,
+        "ci95_pct": [
+          -9.73,
+          0.66
+        ]
+      },
+      "slc/A_0_12m/mixed_source": {
+        "windows": 93,
+        "median_pct": 13.84,
+        "ci95_pct": [
+          3.68,
+          15.88
+        ]
+      },
+      "slc/B_12_20m/mixed_source": {
+        "windows": 309,
+        "median_pct": -1.56,
+        "ci95_pct": [
+          -10.73,
+          1.56
+        ]
+      },
+      "slc/C_20_30m/mixed_source": {
+        "windows": 28,
+        "median_pct": -12.18,
+        "ci95_pct": [
+          -17.83,
+          -4.14
+        ]
+      },
+      "slc/B_12_20m/primary_admissible": {
+        "windows": 22,
+        "median_pct": -2.12,
+        "ci95_pct": [
+          -8.14,
+          13.14
+        ]
+      },
+      "slc/C_20_30m/primary_admissible": {
+        "windows": 404,
+        "median_pct": -7.76,
+        "ci95_pct": [
+          -14.19,
+          -1.24
+        ]
+      },
+      "slc/A_0_12m/temporally_inadmissible": {
+        "windows": 433,
+        "median_pct": 5.42,
+        "ci95_pct": [
+          0.81,
+          10.46
+        ]
+      },
+      "slc/B_12_20m/temporally_inadmissible": {
+        "windows": 30,
+        "median_pct": -1.19,
+        "ci95_pct": [
+          -70.94,
+          6.75
+        ]
+      },
+      "grd/B_12_20m/legacy_calibrated": {
+        "windows": 2251,
+        "median_pct": -1.22,
+        "ci95_pct": [
+          -4.66,
+          2.61
+        ]
+      },
+      "grd/C_20_30m/legacy_calibrated": {
+        "windows": 1199,
+        "median_pct": -2.77,
+        "ci95_pct": [
+          -6.56,
+          2.58
+        ]
+      },
+      "grd/A_0_12m/mixed_source": {
+        "windows": 73,
+        "median_pct": 8.53,
+        "ci95_pct": [
+          7.0,
+          9.91
+        ]
+      },
+      "grd/B_12_20m/mixed_source": {
+        "windows": 386,
+        "median_pct": 1.83,
+        "ci95_pct": [
+          -2.57,
+          2.97
+        ]
+      },
+      "grd/B_12_20m/primary_admissible": {
+        "windows": 31,
+        "median_pct": -7.3,
+        "ci95_pct": [
+          -21.22,
+          8.92
+        ]
+      },
+      "grd/C_20_30m/primary_admissible": {
+        "windows": 425,
+        "median_pct": -0.21,
+        "ci95_pct": [
+          -5.27,
+          6.98
+        ]
+      },
+      "grd/A_0_12m/temporally_inadmissible": {
+        "windows": 486,
+        "median_pct": 7.82,
+        "ci95_pct": [
+          -1.85,
+          11.56
+        ]
+      }
+    },
+    "reading": "the strata do not share one sign: shallow windows (0-12 m, 2019 lidar bathymetry) are positive, legacy-dominated and primary H12859 windows are near zero or negative, so the Block39 aggregate mixes terms of opposite sign"
+  },
+  "q3_by_depth_band": {
+    "A_0_12m/slc": {
+      "windows": 0,
+      "median_pct": null,
+      "ci95_pct": null,
+      "nmad_pct": null,
+      "blocks": null,
+      "sources": []
+    },
+    "A_0_12m/grd": {
+      "windows": 0,
+      "median_pct": null,
+      "ci95_pct": null,
+      "nmad_pct": null,
+      "blocks": null,
+      "sources": []
+    },
+    "B_12_20m/slc": {
+      "windows": 22,
+      "median_pct": -2.12,
+      "ci95_pct": [
+        -8.14,
+        13.14
+      ],
+      "nmad_pct": 17.73,
+      "blocks": 3,
+      "sources": [
+        "bluetopo_direct_2019_2020_certified"
+      ]
+    },
+    "B_12_20m/grd": {
+      "windows": 31,
+      "median_pct": -7.3,
+      "ci95_pct": [
+        -21.22,
+        8.92
+      ],
+      "nmad_pct": 12.98,
+      "blocks": 3,
+      "sources": [
+        "bluetopo_direct_2019_2020_certified"
+      ]
+    },
+    "C_20_30m/slc": {
+      "windows": 404,
+      "median_pct": -7.76,
+      "ci95_pct": [
+        -14.19,
+        -1.24
+      ],
+      "nmad_pct": 23.91,
+      "blocks": 19,
+      "sources": [
+        "bluetopo_direct_h12859_2016"
+      ]
+    },
+    "C_20_30m/grd": {
+      "windows": 425,
+      "median_pct": -0.21,
+      "ci95_pct": [
+        -5.27,
+        6.98
+      ],
+      "nmad_pct": 18.15,
+      "blocks": 19,
+      "sources": [
+        "bluetopo_direct_h12859_2016"
+      ]
+    }
+  },
+  "q4_validatable_coverage": {
+    "cell_fraction_by_class": {
+      "none": 0.0011032734083039452,
+      "frf_survey_2021": 0.004208032921990383,
+      "bluetopo_direct_2019_2020_certified": 0.06297430035702395,
+      "bluetopo_direct_2019_2020_uncertain": 0.08457545805338908,
+      "bluetopo_direct_h12859_2016": 0.1882040190340003,
+      "bluetopo_direct_other_date": 0.027499187164291054,
+      "bluetopo_interpolated_or_pre2010": 0.20706024808447565,
+      "legacy_bias_corrected": 0.42366517562319356,
+      "cudem": 0.0007106952025929654
+    },
+    "cell_fraction_admissible_by_band": {
+      "0-12 m": 0.024379710576334212,
+      "12-20 m": 0.045190861944556016,
+      "20-30 m": 0.3222548032912382
+    },
+    "windows_by_run": {
+      "slc_far": {
+        "total": 2213,
+        "by_class": {
+          "interpolated": 184,
+          "legacy_calibrated": 1083,
+          "mixed_source": 365,
+          "primary_admissible": 581
+        },
+        "primary_by_band": {
+          "A_0_12m": 0,
+          "B_12_20m": 0,
+          "C_20_30m": 581
+        },
+        "primary_at_75_and_100_pct": {
+          "0.75": 622,
+          "1": 468
+        }
+      },
+      "grd_far": {
+        "total": 2218,
+        "by_class": {
+          "interpolated": 173,
+          "legacy_calibrated": 1062,
+          "mixed_source": 382,
+          "primary_admissible": 601
+        },
+        "primary_by_band": {
+          "A_0_12m": 0,
+          "B_12_20m": 0,
+          "C_20_30m": 601
+        },
+        "primary_at_75_and_100_pct": {
+          "0.75": 641,
+          "1": 486
+        }
+      },
+      "grd_near": {
+        "total": 5853,
+        "by_class": {
+          "legacy_calibrated": 4237,
+          "mixed_source": 882,
+          "primary_admissible": 34,
+          "temporally_inadmissible": 700
+        },
+        "primary_by_band": {
+          "A_0_12m": 0,
+          "B_12_20m": 34,
+          "C_20_30m": 0
+        },
+        "primary_at_75_and_100_pct": {
+          "0.75": 89,
+          "1": 2
+        }
+      },
+      "slc_near": {
+        "total": 5364,
+        "by_class": {
+          "legacy_calibrated": 3818,
+          "mixed_source": 854,
+          "primary_admissible": 26,
+          "temporally_inadmissible": 666
+        },
+        "primary_by_band": {
+          "A_0_12m": 0,
+          "B_12_20m": 26,
+          "C_20_30m": 0
+        },
+        "primary_at_75_and_100_pct": {
+          "0.75": 79,
+          "1": 7
+        }
+      }
+    }
+  },
+  "q5_variance_reduction": {
+    "slc_single_look": {
+      "median_pct": -9.02,
+      "ci95_pct": [
+        -20.32,
+        -5.22
+      ],
+      "short_tail_pct": 36.41,
+      "enl": 0.814546021170022,
+      "lobe_halfpower_width_rad_m": 0.01227184630308515,
+      "lambda_shift_vs_single_look_pct": 0.0
+    },
+    "slc_incoherent_N2": {
+      "median_pct": -14.19,
+      "ci95_pct": [
+        -21.75,
+        -7.63
+      ],
+      "short_tail_pct": 39.37,
+      "enl": 1.4629718066666957,
+      "lobe_halfpower_width_rad_m": 0.015339807878856429,
+      "lambda_shift_vs_single_look_pct": 0.3
+    },
+    "slc_incoherent_N4": {
+      "median_pct": -8.57,
+      "ci95_pct": [
+        -16.74,
+        -4.12
+      ],
+      "short_tail_pct": 36.41,
+      "enl": 2.4786066102956497,
+      "lobe_halfpower_width_rad_m": 0.030679615757712858,
+      "lambda_shift_vs_single_look_pct": -0.86
+    },
+    "slc_multitaper_K4": {
+      "median_pct": -8.02,
+      "ci95_pct": [
+        -13.57,
+        -2.24
+      ],
+      "short_tail_pct": 30.15,
+      "enl": 2.427004107919625,
+      "lobe_halfpower_width_rad_m": 0.023009711818284644,
+      "lambda_shift_vs_single_look_pct": 0.58
+    },
+    "grd_esa": {
+      "median_pct": 1.38,
+      "ci95_pct": [
+        -5.09,
+        7.89
+      ],
+      "short_tail_pct": 4.48,
+      "enl": null,
+      "lobe_halfpower_width_rad_m": null,
+      "lambda_shift_vs_single_look_pct": null
+    }
+  },
+  "q6_variance_vs_resolution": {
+    "reading": "the multitaper gives the largest improvement with the smallest resolution loss (width x1.9 vs x2.5 for 2x2 incoherent looks) and the smallest lobe displacement, so the gain follows variance reduction; the incoherent ladder is not monotone and none of the SLC variants reaches the GRD"
+  },
+  "q7_term_weights": {
+    "water_level_pct": {
+      "water_level_eta+0.000": 0.0,
+      "water_level_eta+0.235": -0.46,
+      "water_level_eta-0.100": 0.28,
+      "water_level_eta+0.435": -0.76
+    },
+    "reference_spectrum_pct": {
+      "reference_wr17_discrete_max": -5.51,
+      "reference_wr17_published_Tp": -1.77,
+      "reference_wr17_lobe_Tmin": 16.51,
+      "reference_wr17_lobe_Tmax": -15.74,
+      "reference_awac-11m": 5.18,
+      "reference_8m-array": -7.22,
+      "reference_waverider-26m": -6.08
+    },
+    "current_pct": 0.97,
+    "bathymetry_vertical_pct": {
+      "legacy_bias_corrected": 0.39,
+      "bluetopo_interpolated_or_pre2010": 1.24,
+      "bluetopo_direct_h12859_2016": 0.63,
+      "bluetopo_direct_2019_2020_uncertain": 1.24,
+      "bluetopo_direct_2019_2020_certified": 0.19,
+      "bluetopo_direct_other_date": 1.24,
+      "frf_survey_2021": 0.19
+    },
+    "estimator_pct": {
+      "slc": 6.8,
+      "grd": 6.57
+    },
+    "variance_reduction_pct": {
+      "slc_single_look": -9.02,
+      "slc_incoherent_N2": -14.19,
+      "slc_incoherent_N4": -8.57,
+      "slc_multitaper_K4": -8.02,
+      "grd_esa": 1.38
+    },
+    "hierarchical_monte_carlo_pct": {
+      "draws": 4000,
+      "seed": 0,
+      "distributions": {
+        "eta_m": "uniform(-0.1, 0.435)",
+        "reference_spectrum": "uniform over the declared frequency options",
+        "bathymetry_offset_m": "normal(0, 0.3266269076824188) common to the realisation (per-class value)"
+      },
+      "median_of_median_pct": -6.0971027281897765,
+      "p05_p95_pct": [
+        -17.08457633795576,
+        15.425214160574265
+      ],
+      "note": "scenario spread of the *median* bias; it does not include the spatial block-bootstrap term, which is reported separately, and terms are not summed in quadrature"
+    }
+  },
+  "q8_robust_conditional_unidentifiable": {
+    "robust": [
+      "GRD contour peak on direct H12859 bathymetry at 20-30 m",
+      "insensitivity to water level over the declared interval (<= 1 %)",
+      "the SLC single-look short-wavelength tail and its reduction by multitapering"
+    ],
+    "conditional": [
+      "band B 12-20 m (22-31 windows, one 2019 lidar contributor, wide CI)",
+      "any comparison with Block39 aggregates, which mix source classes",
+      "the radial centroid, which carries a +6.6/+6.8 % offset relative to the contour peak"
+    ],
+    "not_identifiable": [
+      "band A 0-12 m with the frozen 90 % rule and 512 m windows",
+      "the independence of nhatt/VIMS, whose bias was calibrated on the validation area",
+      "morphological change between each survey and 2021-10-28",
+      "any statement about omega, temporal phase or full bathymetric inversion"
+    ]
+  },
+  "pairing": {
+    "tolerance_near_m": 25.0,
+    "tolerance_far_m": 50.0,
+    "pairs": 1052,
+    "centre_offset_m": {
+      "median": 20.472925206538225,
+      "p90": 42.69544601560486,
+      "max": 49.975417475439876
+    },
+    "note": "footprints are physically equivalent, not pixel-identical"
+  },
+  "must_not_conclude": [
+    "temporal phase validated",
+    "omega measured",
+    "bathymetric inversion validated",
+    "source differences certainly caused by bar migration",
+    "overlapping windows independent",
+    "corrected nhatt/VIMS independent truth",
+    "the Block39 aggregate median (GRD -0.4 with all footprint depths; -0.8 published with the legacy random subsample %) as absolute accuracy"
+  ]
+}

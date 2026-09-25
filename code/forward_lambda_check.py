@@ -30,7 +30,12 @@ def k_from_omega(omega, h, iters=40):
     for _ in range(iters):
         t = np.tanh(k * h); f = G * k * t - omega ** 2
         df = G * t + G * k * h * (1 - t ** 2)
-        k = k - f / df
+        k_new = k - f / df
+        # stop once every element has converged (typically 5-6 steps from this start); the previous fixed
+        # 40 steps give the same root to within an ulp (Block41: speed only)
+        if np.all(np.abs(k_new - k) <= 1e-14 * np.abs(k_new)):
+            return k_new
+        k = k_new
     return k
 
 
@@ -51,6 +56,20 @@ def predicted_radial(freq, energy, depths, kbins, weight_k2):
         var = var * K ** 2
     S = np.histogram(K.ravel(), bins=kbins, weights=var.ravel())[0]
     return S / h.shape[0] / np.diff(kbins)
+
+
+def footprint_depths(d, mode, n, rng):
+    """Depths representing a footprint in the predicted E(k).
+
+    random: legacy subsample without replacement (all cells when fewer than n);
+    quantile: n mid-quantiles of the cell depths, deterministic (all cells when fewer than n);
+    all: every finite cell, i.e. the exact footprint average of the histogram."""
+    d = np.asarray(d, float)
+    if mode == "all" or d.size <= n:
+        return d if mode == "all" or mode == "quantile" else rng.choice(d, size=d.size, replace=False)
+    if mode == "quantile":
+        return np.quantile(d, (np.arange(n) + 0.5) / n)
+    return rng.choice(d, size=n, replace=False)
 
 
 def peak_and_centroid(kc, S):
@@ -141,6 +160,15 @@ def main(argv=None):
     ap.add_argument("--block-transects", type=int, default=9, help="transects per spatial block (>= 2*alongshore_average+1)")
     ap.add_argument("--block-distance-m", type=float, default=1024.0, help="along-transect block length (>= window length)")
     ap.add_argument("--depth-samples", type=int, default=60)
+    ap.add_argument("--depth-sampling", choices=("random", "quantile", "all"), default="all",
+                    help="footprint depths used for the predicted E(k). Default since Block41: all = every footprint "
+                         "cell (exact, deterministic). random = Block39/40 legacy subsample of --depth-samples "
+                         "drawn from one generator shared by all windows of the process (depends on --chunk); "
+                         "quantile = --depth-samples mid-quantiles (deterministic check only)")
+    ap.add_argument("--seed", type=int, default=0, help="seed of the depth generator for --depth-sampling random")
+    ap.add_argument("--mc-realizations", type=int, default=0,
+                    help="Block41: also store pred_Ek_centroid_k for N random subsamples seeded per window "
+                         "(order- and chunk-independent) plus the 'all' and 'quantile' values, as extra columns")
     ap.add_argument("--out", type=Path)
     ap.add_argument("--chunk", nargs=2, type=int, metavar=("I", "N"), help="process the I-th of N window slices, save partial rows")
     ap.add_argument("--finalize", type=int, metavar="N", help="merge N partial row files and write summary/figure")
@@ -166,7 +194,9 @@ def main(argv=None):
                       if (a.admissible_run is None or r["run"] == a.admissible_run) and r["window_class"] == a.admissible_class}
         if not admissible:
             raise SystemExit("empty admissible set")
-    rng = np.random.default_rng(0); rows = []
+    # depth subsampling and block bootstrap use separate generators: the bootstrap stream no longer depends on how
+    # many windows were processed before it (in the chunked Block39 runs it restarted at seed 0 in --finalize anyway)
+    depth_rng = np.random.default_rng(a.seed); rng = np.random.default_rng(0); rows = []
     import pickle
     parts = out / "parts"
     if a.finalize:
@@ -217,7 +247,8 @@ def main(argv=None):
             kbins, S_sar, th0, floor, th_max = sar_radial(P, mask, k, a.sector, thf)
             kc = 0.5 * (kbins[1:] + kbins[:-1])
             kp, kcen, band = peak_and_centroid(kc, S_sar)
-            hs = rng.choice(d[np.isfinite(d)], size=min(a.depth_samples, np.isfinite(d).sum()), replace=False)
+            dd = d[np.isfinite(d)]
+            hs = footprint_depths(dd, a.depth_sampling, a.depth_samples, depth_rng)
             o.update(sar_axial_deg=th0, sar_sector_source=a.sector_source, sar_max_axial_deg=th_max,
                      sar_peak_k=kp, sar_centroid_k=kcen, sar_band_k=band)
             for tag, w in (("Ek", False), ("k2Ek", True)):
@@ -226,6 +257,13 @@ def main(argv=None):
                 S_p = predicted_radial(freq, energy, hs, kf, w)
                 pk, pc, pb = peak_and_centroid(kfc, S_p)
                 o.update({f"pred_{tag}_peak_k": pk, f"pred_{tag}_centroid_k": pc, f"pred_{tag}_band_k": pb})
+            if a.mc_realizations:
+                variants = {"all": dd, "quantile": footprint_depths(dd, "quantile", a.depth_samples, None)}
+                for i in range(a.mc_realizations):
+                    wr = np.random.default_rng([1000 + i, key[0], int(round(key[1] * 10))])
+                    variants[f"mc{i:02d}"] = footprint_depths(dd, "random", a.depth_samples, wr)
+                for name, hv in variants.items():
+                    o[f"pred_Ek_centroid_k_{name}"] = peak_and_centroid(kfc, predicted_radial(freq, energy, hv, kf, False))[1]
             for inst, T in periods.items():
                 o[f"lambda_Tpeak_{inst.split(':')[-1]}_m"] = float(np.mean(2 * np.pi / k_from_omega(2 * np.pi / T, hs)))
         rows.append(o)
@@ -242,7 +280,9 @@ def main(argv=None):
     cert = [o for o in rows if o["certified"]]
     for o in cert:                       # spatial blocks for the bootstrap (non-overlapping in both directions)
         o["block"] = f"{int(o['transect']) // a.block_transects}_{int(o['distance_m'] // a.block_distance_m)}"
-    summ = {"certification": ("external admissible set: " + str(a.admissible_csv)) if admissible is not None else "block39 criteria",
+    summ = {"depth_sampling": {"mode": a.depth_sampling, "samples": a.depth_samples, "seed": a.seed,
+                               "mc_realizations": a.mc_realizations},
+            "certification": ("external admissible set: " + str(a.admissible_csv)) if admissible is not None else "block39 criteria",
             "reference_gauge": a.reference, "reference_peak_period_s": periods.get(a.reference), "periods_by_gauge_s": periods,
             "sector": {"source": a.sector_source, "half_width_deg": a.sector, "bearing_deg": a.sector_bearing},
             "blocks": {"transects": a.block_transects, "distance_m": a.block_distance_m, "resamples": a.bootstrap},

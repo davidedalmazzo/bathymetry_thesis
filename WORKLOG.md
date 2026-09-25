@@ -1157,3 +1157,67 @@ failures (temporary directories outside the repository root, file deletion not p
 in that shell). The authoritative `.venv-umbra-thesis` run on Windows could not be
 executed from here (`Exec format error` on the Windows interpreter): Block40 is closed
 pending `.\.venv-umbra-thesis\Scripts\python.exe -m pytest -q`.
+
+### 2026-09-23 — Authoritative test run, environment fixes, Block39 reproducibility check
+
+- Authoritative run in `.venv-umbra-thesis` on Windows: initially 406 passed / 17 failed.
+  - 16 failures came from `relative_to(cwd)` with the pytest temporary directory on C:
+    and the repository on D:. `frf_client/output.py` gained `artifact_path()`: paths
+    under the working directory are relative; paths outside it are absolute and flagged
+    `path_outside_working_directory`, with one warning per dossier.
+  - 1 failure was the missing `pyproj`, now in `requirements-thesis.txt` (3.8.0).
+  - The audit fixture of `test_frf_block33.py` now lives under `_tmp/`.
+  - After the fixes: 424 passed, including the new
+    `test_artifact_path_relative_inside_absolute_outside`.
+  - Block40 is now verified in the authoritative environment.
+- New `code/repro_block39.py` re-runs the Block39 forward check in the current
+  environment and compares it with the committed outputs.
+  - The differences come from path separators and float32 depths (5.7e-6 m).
+  - More importantly, predictions depend on how runs are chunked: one random generator
+    draws 60 footprint depths for every window of a process. This is investigated in
+    Block41.
+
+### 2026-09-24 — Block41: footprint depth sampling audit
+
+- `forward_lambda_check.py`:
+  - `--depth-sampling {random,quantile,all}`. `random` is the legacy mode and consumes
+    the same RNG stream; `all` uses every footprint cell and is the new default.
+  - `--seed` and `--mc-realizations N`, with per-window seeded realizations.
+  - The bootstrap uses its own generator. `k_from_omega` stops at a relative step of
+    1e-14 (about 7× faster).
+- `code/block41_depth_sampling.py`: phase A runs the forward passes with Monte Carlo
+  columns; phase B combines 23 realizations and re-runs `block40_matched`. Outputs:
+  `duck_frf/Block41_depth_sampling/BLOCK41_DEPTH_SAMPLING.json`,
+  `BLOCK41_SUMMARY.csv`. Tests: `tests/test_block41.py`.
+- **Block39 headline.** The legacy realization reproduces Block39 exactly.
+  - GRD: legacy −0.77 %, `all` −0.39 % (−3.79 … +2.58), MC sd 0.17 points.
+  - SLC: legacy −4.81 %, `all` −4.69 % (−8.52 … −0.66), MC sd 0.07 points.
+- **Block40 strata with `all`.**
+  - C GRD −0.21 % (−5.27 … +6.98); the published +1.38 % is the MC maximum.
+  - C SLC −7.76 % (−14.19 … −1.24), MC sd 0.01 points.
+  - B GRD −7.30 %. Its upper CI bound ranges from −1.0 to +9.7 % across realizations
+    (sd 3.2 points).
+  - B SLC −2.12 % (MC sd 2.6 points).
+
+### 2026-09-25 — Block42: Block40 re-run with `--depth-sampling all`
+
+- `code/block42_rerun_block40.py` rebuilds every Block40 output in
+  `duck_frf/Block42_block40_depth_all/` (Block40 untouched).
+  - Forward passes with `all` for the Block40 configuration and for the fixed-72°
+    fallback.
+  - Downstream Block40 scripts run unchanged.
+  - `BLOCK42_COMPARISON.json` lists every changed numeric leaf.
+- Tests: `pytest tests/test_block41.py tests/test_block40.py` → 18 passed.
+- **Results** (report: `duck_frf/BLOCK42_REPORT.md`).
+  - Band C: GRD −0.21 %, SLC −7.76 % (unchanged). On the 119 paired windows, SLC is
+    −1.24 % and GRD +1.43 %, with a paired difference of +4.1 points. The band-level gap
+    mostly reflects different window sets.
+  - Band B GRD: CI −21.22 … +8.92 %, so no longer significant; band B is not
+    interpretable.
+  - Compensation between sources is stronger: 0–12 m GRD mixed +5.0 → +8.5 %, SLC mixed
+    +11.5 → +13.8 %.
+  - Ladder: −9.0 / −14.2 / −8.6 / −8.0 % against GRD +1.4 %; short-λ tail
+    36 / 39 / 36 / 30 % against 4.5 %.
+  - Estimator offset +6.6/+6.8 % unchanged.
+- `block40_summary.py` no longer hard-codes the "Block39 aggregate −0.8 %"; it reads
+  the value from Block41 when present.

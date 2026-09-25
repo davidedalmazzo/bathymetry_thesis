@@ -1,0 +1,59 @@
+{
+  "block": "Block40",
+  "frozen_utc": "2026-09-22",
+  "head_commit_at_freeze": "7b168a5",
+  "scope": "spatial k/lambda audit only; no omega, no temporal phase, no bathymetric inversion",
+  "inputs": {
+    "slc_safe": "duck_frf/Block37_s1_iw_spatial_trial/extracted_safe/S1A_IW_SLC__1SDV_20211028T230636_20211028T230703_040326_04C765_B6FA.SAFE",
+    "grd_safe": "data_s1/S1A_IW_GRDH_1SDV_20211028T230637_20211028T230702_040326_04C765_8C9F.SAFE",
+    "block39_runs": ["duck_frf/Block39_s1_paper_confirm/slc/near_k4", "duck_frf/Block39_s1_paper_confirm/slc/far_k4",
+                     "duck_frf/Block39_s1_paper_confirm/grd/near_k4", "duck_frf/Block39_s1_paper_confirm/grd/far_k4"],
+    "ground_truth": "outputs/ground_truth_s1a_20211028_ext20",
+    "frf_survey_npz": "outputs/ground_truth_s1a_20211028/frf_survey_dem.npz",
+    "frf_dossier": "outputs/ground_truth_s1a_20211028/frf_observations/s1a_20211028_duck"
+  },
+  "admissibility": {
+    "direct_requires": {"coverage": 1, "bathy_coverage": 1,
+                        "survey_id_must_not_contain": ["interpolated", "Generalization"]},
+    "band_A_0_12m": {"source": "FRF survey DEM 2021-10-21 footprint only", "extrapolation": false},
+    "band_B_12_20m": {"survey_date_start_between": ["2019-01-01", "2020-12-31"],
+                      "max_empirical_nmad_vs_frf_m": 0.5,
+                      "no_frf_overlap": "excluded from primary (uncertifiable)",
+                      "fallback_to_legacy": false},
+    "band_C_20_30m": {"survey": "H12859 (2016-02-23..2016-03-23)", "declared_uncertainty_source": "BlueTopo RAT as found"},
+    "window_threshold_primary": 0.90,
+    "window_threshold_sensitivities": [0.75, 1.0],
+    "window_classes": ["primary_admissible", "mixed_source", "direct_but_uncertain", "interpolated",
+                       "legacy_calibrated", "temporally_inadmissible", "provenance_unknown"]
+  },
+  "estimation": {
+    "reference_gauge": "FRF:waverider-17m",
+    "primary_estimator": "contour_peak",
+    "secondary_estimator": "radial_centroid",
+    "contour_levels": 20,
+    "contour_scale": "log10",
+    "kmin_factor": 4.0,
+    "sector_axial_bearing_deg": 66.34,
+    "sector_half_width_deg": 30.0,
+    "sector_source": "WR17 waveMeanDirectionPeakFrequency at acquisition (peak dir 70 deg, spread 23.2 deg)",
+    "depth_range_m": [7.0, 27.0],
+    "depth_bands_m": [[0, 12], [12, 20], [20, 30]],
+    "water_level_applied_as_truth": false,
+    "current_primary_m_s": 0.0
+  },
+  "pairing": {"max_centre_offset_near_m": 25.0, "max_centre_offset_far_m": 50.0,
+              "require_same_depth_band": true, "require_same_source_class": true},
+  "variance_ladder": ["slc_single_look", "slc_incoherent_N2", "slc_incoherent_N4", "slc_multitaper_K4", "grd_esa"],
+  "multitaper": {"family": "dpss_2d_outer", "NW": 2.5, "K": 4},
+  "scenarios": {
+    "eta_m": [0.0, 0.235, -0.100, 0.435],
+    "eta_prudential_interval_m": [-0.100, 0.435],
+    "eta_prudential_rationale": "preliminary tide +/-0.10 m plus 0..+0.20 m unmodelled setup, declared before results",
+    "frequency": ["wr17_discrete_max", "wr17_published_waveTp", "wr17_dominant_lobe_half_power", "awac-11m", "8m-array", "waverider-26m"],
+    "current_diagnostic_m_s": {"east": 0.014136990532279015, "north": -0.3023550510406494,
+                               "instrument": "FRF:awac-11m depth-profile average", "offset_s": 2301.0}
+  },
+  "statistics": {"block_transects": 9, "block_distance_m": 1024.0, "bootstrap_resamples": 2000, "seed": 0,
+                 "statistic": "lambda_SAR / lambda_predicted - 1",
+                 "block_bootstrap_meaning": "spatial variability between blocks only, not a total uncertainty"}
+}

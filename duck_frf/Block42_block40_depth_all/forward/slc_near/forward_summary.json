@@ -1,0 +1,158 @@
+{
+  "depth_sampling": {
+    "mode": "all",
+    "samples": 60,
+    "seed": 0,
+    "mc_realizations": 0
+  },
+  "certification": "external admissible set: duck_frf\\Block42_block40_depth_all\\BLOCK40_WINDOW_PROVENANCE.csv",
+  "reference_gauge": "FRF:waverider-17m",
+  "reference_peak_period_s": 11.76470588235294,
+  "periods_by_gauge_s": {
+    "FRF:waverider-17m": 11.76470588235294,
+    "FRF:awac-11m": 10.81081081081081,
+    "FRF:8m-array": 12.903225806451614,
+    "FRF:waverider-26m": 10.81081081081081
+  },
+  "sector": {
+    "source": "fixed",
+    "half_width_deg": 30.0,
+    "bearing_deg": 66.34
+  },
+  "blocks": {
+    "transects": 9,
+    "distance_m": 1024.0,
+    "resamples": 2000
+  },
+  "criteria": {
+    "max_depth_m": 30.0,
+    "max_uncertainty_m": 0.5,
+    "min_year": 0,
+    "not_interpolated": true
+  },
+  "windows_total": 5364,
+  "windows_certified": 26,
+  "note": "overlapping windows (50 m step, 512 m windows, alongshore averaging) are strongly correlated; effective sample is far smaller",
+  "Ek_peak": {
+    "n": 26,
+    "n_blocks": 3,
+    "median": -0.025200894528239037,
+    "p10_p90": [
+      -0.14826865246083643,
+      0.18608975339492062
+    ],
+    "rms": 0.12665060597317085,
+    "median_ci95_block_bootstrap": [
+      -0.07072618536547237,
+      0.21204446321660564
+    ],
+    "median_se_block_bootstrap": 0.08630267276432207
+  },
+  "Ek_centroid": {
+    "n": 26,
+    "n_blocks": 3,
+    "median": -0.025216618979053362,
+    "p10_p90": [
+      -0.12931506814329008,
+      0.12896025002855716
+    ],
+    "rms": 0.09640204723701291,
+    "median_ci95_block_bootstrap": [
+      -0.05937440274207184,
+      0.17846555518321106
+    ],
+    "median_se_block_bootstrap": 0.07449685711969255
+  },
+  "k2Ek_peak": {
+    "n": 26,
+    "n_blocks": 3,
+    "median": 5.293304305756301,
+    "p10_p90": [
+      4.586477443882737,
+      6.6770230307078
+    ],
+    "rms": 5.51418316798445,
+    "median_ci95_block_bootstrap": [
+      5.126837577875083,
+      6.555684955441568
+    ],
+    "median_se_block_bootstrap": 0.49011776850219385
+  },
+  "k2Ek_centroid": {
+    "n": 26,
+    "n_blocks": 3,
+    "median": 5.337192474343104,
+    "p10_p90": [
+      4.685494608880647,
+      6.016877616674856
+    ],
+    "rms": 5.346472854165649,
+    "median_ci95_block_bootstrap": [
+      5.244875898131233,
+      6.216399103594499
+    ],
+    "median_se_block_bootstrap": 0.3146315575914681
+  },
+  "paper_peak_vs_Ek_centroid": {
+    "n": 22,
+    "n_blocks": 3,
+    "median": -0.021248416574145945,
+    "p10_p90": [
+      -0.20700103484133822,
+      0.1150713280028418
+    ],
+    "rms": 0.12802759414483136,
+    "median_ci95_block_bootstrap": [
+      -0.08142620054338545,
+      0.13139490045559843
+    ],
+    "median_se_block_bootstrap": 0.06605972148905803
+  },
+  "paper_peak_by_dominant_source": {
+    "bluetopo_modern": {
+      "n": 22,
+      "n_blocks": 3,
+      "median": -0.021248416574145945,
+      "p10_p90": [
+        -0.20700103484133822,
+        0.1150713280028418
+      ],
+      "rms": 0.12802759414483136,
+      "median_ci95_block_bootstrap": [
+        -0.08142620054338545,
+        0.13139490045559843
+      ],
+      "median_se_block_bootstrap": 0.06372676680163263
+    }
+  },
+  "statistic": "lambda_SAR / lambda_predicted - 1; CI from a bootstrap over spatial blocks",
+  "k2_weighting_note": "k^2 weighting of the full gauge spectrum is dominated by the high-frequency tail (no azimuth cut-off / system MTF / noise model); reported for completeness, not interpretable",
+  "depth_range_certified_m": [
+    11.798256874084473,
+    12.540339469909668
+  ],
+  "by_depth_bin": [
+    {
+      "depth_bin_m": [
+        11.0,
+        12.0
+      ],
+      "n": 8,
+      "lambda_sar_centroid_median_m": 108.14488545165443,
+      "lambda_pred_k2Ek_centroid_median_m": 17.925601750547028,
+      "lambda_pred_Ek_centroid_median_m": 116.71728343310981,
+      "lambda_sar_paper_median_m": 102.25836764015608
+    },
+    {
+      "depth_bin_m": [
+        12.0,
+        13.0
+      ],
+      "n": 18,
+      "lambda_sar_centroid_median_m": 114.66776150233255,
+      "lambda_pred_k2Ek_centroid_median_m": 17.925601750547028,
+      "lambda_pred_Ek_centroid_median_m": 112.52807796664692,
+      "lambda_sar_paper_median_m": 117.16840758841332
+    }
+  ]
+}

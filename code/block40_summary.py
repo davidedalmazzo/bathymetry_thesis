@@ -23,6 +23,16 @@ def main(argv=None):
     ladder = json.loads((out / "BLOCK40_LADDER_SUMMARY.json").read_text())
     budget = json.loads((out / "BLOCK40_UNCERTAINTY_BUDGET.json").read_text())
 
+    # Block39 aggregate GRD median quoted in the caveats: taken from Block41 (all footprint cells) when
+    # available, otherwise the published Block39 value obtained with the legacy random 60-depth subsample.
+    b41 = ROOT / "duck_frf/Block41_depth_sampling/BLOCK41_DEPTH_SAMPLING.json"
+    if b41.exists():
+        m = json.loads(b41.read_text())["summary"]["b39/grd"]["median"]
+        b39_aggregate = "%+.1f with all footprint depths; %+.1f published with the legacy random subsample" % (
+            m["all_pct"], m["legacy_pct"])
+    else:
+        b39_aggregate = "-0.8, published with the legacy random 60-depth subsample"
+
     def pct(x):
         return None if x is None else round(100 * x, 2)
 
@@ -90,7 +100,7 @@ def main(argv=None):
         "must_not_conclude": ["temporal phase validated", "omega measured", "bathymetric inversion validated",
                               "source differences certainly caused by bar migration",
                               "overlapping windows independent", "corrected nhatt/VIMS independent truth",
-                              "the aggregate -0.8 % of Block39 as absolute accuracy"]}
+                              ("the Block39 aggregate median (GRD %s %%) as absolute accuracy" % b39_aggregate)]}
     (out / "BLOCK40_SUMMARY.json").write_text(json.dumps(summ, indent=2, default=float))
     print(json.dumps(summ["q1_accuracy_on_direct_admissible_bathymetry"], indent=1, default=float))
 
